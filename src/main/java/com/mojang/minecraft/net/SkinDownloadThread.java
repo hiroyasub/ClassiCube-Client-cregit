@@ -87,7 +87,7 @@ operator|)
 operator|new
 name|URL
 argument_list|(
-literal|"http://www.classicube.net/static/skins/"
+literal|"http://www.minecraft.net/skin/"
 operator|+
 name|player
 operator|.
