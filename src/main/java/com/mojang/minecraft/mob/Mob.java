@@ -2131,7 +2131,7 @@ name|int
 name|var2
 parameter_list|)
 block|{
-comment|//System.out.println("this");
+comment|// System.out.println("this");
 if|if
 condition|(
 operator|!
@@ -2644,7 +2644,7 @@ name|multiply
 operator|=
 literal|10F
 expr_stmt|;
-comment|//6x with momentum
+comment|// 6x with momentum
 block|}
 else|else
 block|{
@@ -2652,7 +2652,7 @@ name|multiply
 operator|=
 literal|1.0F
 expr_stmt|;
-comment|//1x
+comment|// 1x
 block|}
 block|}
 if|else if
@@ -2670,14 +2670,14 @@ name|multiply
 operator|=
 literal|90F
 expr_stmt|;
-comment|//6x
+comment|// 6x
 block|}
 else|else
 name|multiply
 operator|=
 literal|15F
 expr_stmt|;
-comment|//1x
+comment|// 1x
 block|}
 if|if
 condition|(
@@ -2688,6 +2688,11 @@ operator|!
 name|this
 operator|.
 name|flyingMode
+operator|&&
+operator|!
+name|this
+operator|.
+name|noPhysics
 condition|)
 block|{
 name|y1
@@ -2779,11 +2784,26 @@ operator|!
 name|this
 operator|.
 name|flyingMode
+operator|&&
+operator|!
+name|this
+operator|.
+name|noPhysics
 condition|)
 block|{
 name|y1
 operator|=
 name|y
+expr_stmt|;
+if|if
+condition|(
+name|multiply
+operator|>
+literal|5
+condition|)
+name|multiply
+operator|=
+literal|5F
 expr_stmt|;
 name|moveRelative
 argument_list|(
