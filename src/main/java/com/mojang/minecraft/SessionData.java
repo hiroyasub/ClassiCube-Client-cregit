@@ -496,15 +496,6 @@ name|add
 argument_list|(
 name|Block
 operator|.
-name|BEDROCK
-argument_list|)
-expr_stmt|;
-name|allowedBlocks
-operator|.
-name|add
-argument_list|(
-name|Block
-operator|.
 name|WATER
 argument_list|)
 expr_stmt|;
