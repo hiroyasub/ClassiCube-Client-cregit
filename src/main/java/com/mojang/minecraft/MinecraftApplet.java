@@ -207,6 +207,8 @@ name|getHeight
 argument_list|()
 argument_list|,
 name|fullscreen
+argument_list|,
+literal|true
 argument_list|)
 expr_stmt|;
 name|minecraft
