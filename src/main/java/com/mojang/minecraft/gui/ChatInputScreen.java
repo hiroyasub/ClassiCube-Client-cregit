@@ -59,7 +59,7 @@ name|ChatInputScreen
 extends|extends
 name|GuiScreen
 block|{
-specifier|private
+specifier|public
 name|String
 name|message
 init|=
