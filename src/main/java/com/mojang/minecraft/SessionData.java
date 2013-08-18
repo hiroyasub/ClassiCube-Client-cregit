@@ -136,15 +136,6 @@ name|add
 argument_list|(
 name|Block
 operator|.
-name|GRASS
-argument_list|)
-expr_stmt|;
-name|allowedBlocks
-operator|.
-name|add
-argument_list|(
-name|Block
-operator|.
 name|DIRT
 argument_list|)
 expr_stmt|;
