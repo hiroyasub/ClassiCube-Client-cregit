@@ -190,6 +190,15 @@ name|add
 argument_list|(
 name|Block
 operator|.
+name|DOUBLE_SLAB
+argument_list|)
+expr_stmt|;
+name|allowedBlocks
+operator|.
+name|add
+argument_list|(
+name|Block
+operator|.
 name|MOSSY_COBBLESTONE
 argument_list|)
 expr_stmt|;
