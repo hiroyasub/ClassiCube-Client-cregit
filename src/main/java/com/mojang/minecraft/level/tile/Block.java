@@ -154,7 +154,7 @@ specifier|public
 class|class
 name|Block
 block|{
-specifier|protected
+specifier|public
 name|Block
 parameter_list|(
 name|int
