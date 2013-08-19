@@ -105,6 +105,27 @@ extends|extends
 name|Thread
 block|{
 specifier|public
+specifier|static
+name|String
+name|StatusString
+init|=
+literal|""
+decl_stmt|;
+specifier|public
+specifier|static
+name|String
+name|PercentString
+init|=
+literal|""
+decl_stmt|;
+specifier|public
+specifier|static
+name|boolean
+name|Done
+init|=
+literal|false
+decl_stmt|;
+specifier|public
 name|ResourceDownloadThread
 parameter_list|(
 name|File
@@ -114,6 +135,7 @@ name|Minecraft
 name|minecraft
 parameter_list|)
 block|{
+comment|//minecraft.fontRenderer.render("Resource download started", 2, 32, 16777215);
 name|this
 operator|.
 name|minecraft
@@ -170,6 +192,11 @@ argument_list|)
 throw|;
 block|}
 block|}
+specifier|public
+specifier|static
+name|FileOutputStream
+name|fos
+decl_stmt|;
 annotation|@
 name|Override
 specifier|public
@@ -241,9 +268,6 @@ decl_stmt|;
 name|File
 name|file
 decl_stmt|;
-name|FileOutputStream
-name|fos
-decl_stmt|;
 name|File
 name|folder
 init|=
@@ -307,6 +331,14 @@ argument_list|()
 expr_stmt|;
 try|try
 block|{
+name|PercentString
+operator|=
+literal|"5%"
+expr_stmt|;
+name|StatusString
+operator|=
+literal|"Downloading music and sounds..."
+expr_stmt|;
 name|System
 operator|.
 name|out
@@ -316,6 +348,11 @@ argument_list|(
 literal|"Downloading music and sounds..."
 argument_list|)
 expr_stmt|;
+name|int
+name|Percent
+init|=
+literal|5
+decl_stmt|;
 for|for
 control|(
 name|int
@@ -333,6 +370,20 @@ name|i
 operator|++
 control|)
 block|{
+if|if
+condition|(
+name|Percent
+operator|>=
+literal|50
+condition|)
+name|Percent
+operator|=
+literal|50
+expr_stmt|;
+name|Percent
+operator|+=
+literal|1
+expr_stmt|;
 name|file
 operator|=
 operator|new
@@ -355,6 +406,23 @@ name|exists
 argument_list|()
 condition|)
 block|{
+name|PercentString
+operator|=
+name|Percent
+operator|+
+literal|"%"
+expr_stmt|;
+name|StatusString
+operator|=
+literal|"Downloading http://s3.amazonaws.com/MinecraftResources/"
+operator|+
+name|files
+index|[
+name|i
+index|]
+operator|+
+literal|"..."
+expr_stmt|;
 name|System
 operator|.
 name|out
@@ -420,6 +488,17 @@ operator|<<
 literal|24
 argument_list|)
 expr_stmt|;
+name|StatusString
+operator|=
+literal|"Downloaded http://s3.amazonaws.com/MinecraftResources/"
+operator|+
+name|files
+index|[
+name|i
+index|]
+operator|+
+literal|"!"
+expr_stmt|;
 name|System
 operator|.
 name|out
@@ -438,6 +517,14 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+name|PercentString
+operator|=
+literal|"65%"
+expr_stmt|;
+name|StatusString
+operator|=
+literal|"Downloaded music and sounds!"
+expr_stmt|;
 name|System
 operator|.
 name|out
@@ -446,6 +533,10 @@ name|println
 argument_list|(
 literal|"Downloaded music and sounds!"
 argument_list|)
+expr_stmt|;
+name|StatusString
+operator|=
+literal|"Downloading lwjgl..."
 expr_stmt|;
 name|System
 operator|.
@@ -622,6 +713,10 @@ argument_list|(
 name|file
 argument_list|)
 expr_stmt|;
+name|StatusString
+operator|=
+literal|"Downloaded lwjgl..."
+expr_stmt|;
 name|System
 operator|.
 name|out
@@ -630,6 +725,18 @@ name|println
 argument_list|(
 literal|"Downloaded lwjgl..."
 argument_list|)
+expr_stmt|;
+name|StatusString
+operator|=
+literal|""
+expr_stmt|;
+name|PercentString
+operator|=
+literal|""
+expr_stmt|;
+name|Done
+operator|=
+literal|true
 expr_stmt|;
 block|}
 catch|catch

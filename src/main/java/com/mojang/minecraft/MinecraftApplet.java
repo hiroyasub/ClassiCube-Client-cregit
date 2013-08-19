@@ -43,6 +43,16 @@ begin_import
 import|import
 name|java
 operator|.
+name|awt
+operator|.
+name|Graphics
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
 name|net
 operator|.
 name|MalformedURLException
