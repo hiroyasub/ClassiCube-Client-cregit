@@ -1861,6 +1861,20 @@ argument_list|(
 literal|"Unknown OS - Let's Try Linux (tm)"
 argument_list|)
 expr_stmt|;
+name|System
+operator|.
+name|out
+operator|.
+name|println
+argument_list|(
+name|System
+operator|.
+name|getProperty
+argument_list|(
+literal|"os.name"
+argument_list|)
+argument_list|)
+expr_stmt|;
 name|minecraftFolder
 operator|=
 operator|new
