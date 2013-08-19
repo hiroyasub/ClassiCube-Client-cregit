@@ -1877,8 +1877,6 @@ name|File
 argument_list|(
 name|home
 argument_list|,
-literal|'.'
-operator|+
 name|folder
 operator|+
 literal|'/'
