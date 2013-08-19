@@ -1867,12 +1867,7 @@ name|out
 operator|.
 name|println
 argument_list|(
-name|System
-operator|.
-name|getProperty
-argument_list|(
-literal|"os.name"
-argument_list|)
+name|osName
 argument_list|)
 expr_stmt|;
 name|minecraftFolder
