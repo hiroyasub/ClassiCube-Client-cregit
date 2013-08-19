@@ -294,11 +294,7 @@ index|[
 literal|6
 index|]
 operator|=
-name|Block
-operator|.
-name|LEAVES
-operator|.
-name|id
+literal|0
 expr_stmt|;
 name|player
 operator|.
