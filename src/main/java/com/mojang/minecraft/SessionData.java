@@ -499,15 +499,6 @@ operator|.
 name|OBSIDIAN
 argument_list|)
 expr_stmt|;
-operator|<<
-operator|<<
-operator|<<
-operator|<
-name|HEAD
-operator|==
-operator|==
-operator|==
-operator|=
 name|allowedBlocks
 operator|.
 name|add
@@ -517,10 +508,6 @@ operator|.
 name|BEDROCK
 argument_list|)
 expr_stmt|;
-operator|>>>
-operator|>>>
-operator|>
-literal|83e10a6b3068600e87357d5106a01fae42703cab
 name|allowedBlocks
 operator|.
 name|add
