@@ -892,9 +892,11 @@ specifier|private
 name|boolean
 name|isApplet
 decl_stmt|;
+specifier|public
 name|String
 name|server
 decl_stmt|;
+specifier|public
 name|int
 name|port
 decl_stmt|;
