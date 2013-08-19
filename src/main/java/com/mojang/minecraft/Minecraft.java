@@ -1858,10 +1858,25 @@ name|out
 operator|.
 name|println
 argument_list|(
-literal|"UNKNOWN OS!!!"
+literal|"Unknown OS - Let's Try Linux (tm)"
 argument_list|)
 expr_stmt|;
-return|return;
+name|minecraftFolder
+operator|=
+operator|new
+name|File
+argument_list|(
+name|home
+argument_list|,
+literal|'.'
+operator|+
+name|folder
+operator|+
+literal|'/'
+argument_list|)
+expr_stmt|;
+break|break;
+comment|//return;
 case|case
 literal|2
 case|:
