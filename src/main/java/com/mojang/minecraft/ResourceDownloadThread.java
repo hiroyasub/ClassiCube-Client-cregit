@@ -106,20 +106,6 @@ name|Thread
 block|{
 specifier|public
 specifier|static
-name|String
-name|StatusString
-init|=
-literal|""
-decl_stmt|;
-specifier|public
-specifier|static
-name|String
-name|PercentString
-init|=
-literal|""
-decl_stmt|;
-specifier|public
-specifier|static
 name|boolean
 name|Done
 init|=
@@ -134,6 +120,8 @@ parameter_list|,
 name|Minecraft
 name|minecraft
 parameter_list|)
+throws|throws
+name|IOException
 block|{
 comment|//minecraft.fontRenderer.render("Resource download started", 2, 32, 16777215);
 name|this
@@ -331,10 +319,14 @@ argument_list|()
 expr_stmt|;
 try|try
 block|{
+name|GameSettings
+operator|.
 name|PercentString
 operator|=
 literal|"5%"
 expr_stmt|;
+name|GameSettings
+operator|.
 name|StatusString
 operator|=
 literal|"Downloading music and sounds..."
@@ -406,12 +398,16 @@ name|exists
 argument_list|()
 condition|)
 block|{
+name|GameSettings
+operator|.
 name|PercentString
 operator|=
 name|Percent
 operator|+
 literal|"%"
 expr_stmt|;
+name|GameSettings
+operator|.
 name|StatusString
 operator|=
 literal|"Downloading http://s3.amazonaws.com/MinecraftResources/"
@@ -488,6 +484,8 @@ operator|<<
 literal|24
 argument_list|)
 expr_stmt|;
+name|GameSettings
+operator|.
 name|StatusString
 operator|=
 literal|"Downloaded http://s3.amazonaws.com/MinecraftResources/"
@@ -517,10 +515,14 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+name|GameSettings
+operator|.
 name|PercentString
 operator|=
 literal|"65%"
 expr_stmt|;
+name|GameSettings
+operator|.
 name|StatusString
 operator|=
 literal|"Downloaded music and sounds!"
@@ -534,6 +536,8 @@ argument_list|(
 literal|"Downloaded music and sounds!"
 argument_list|)
 expr_stmt|;
+name|GameSettings
+operator|.
 name|StatusString
 operator|=
 literal|"Downloading lwjgl..."
@@ -713,6 +717,8 @@ argument_list|(
 name|file
 argument_list|)
 expr_stmt|;
+name|GameSettings
+operator|.
 name|StatusString
 operator|=
 literal|"Downloaded lwjgl..."
@@ -726,10 +732,14 @@ argument_list|(
 literal|"Downloaded lwjgl..."
 argument_list|)
 expr_stmt|;
+name|GameSettings
+operator|.
 name|StatusString
 operator|=
 literal|""
 expr_stmt|;
+name|GameSettings
+operator|.
 name|PercentString
 operator|=
 literal|""
