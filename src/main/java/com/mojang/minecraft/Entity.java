@@ -1227,7 +1227,7 @@ operator|)
 operator|/
 literal|2.0F
 expr_stmt|;
-comment|//if((this.bb.y0 + this.heightOffset - this.ySlideOffset)> y){
+comment|// if((this.bb.y0 + this.heightOffset - this.ySlideOffset)> y){
 name|this
 operator|.
 name|y
@@ -1246,7 +1246,7 @@ name|this
 operator|.
 name|ySlideOffset
 expr_stmt|;
-comment|//}
+comment|// }
 name|this
 operator|.
 name|z
@@ -1267,7 +1267,7 @@ operator|)
 operator|/
 literal|2.0F
 expr_stmt|;
-comment|//this.yd = 0;
+comment|// this.yd = 0;
 block|}
 else|else
 block|{
@@ -2228,6 +2228,7 @@ operator|*
 literal|0.6D
 operator|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|this
@@ -2283,8 +2284,6 @@ operator|>
 operator|(
 name|float
 operator|)
-name|this
-operator|.
 name|nextStep
 operator|&&
 name|var19
@@ -2298,13 +2297,8 @@ operator|.
 name|nextStep
 expr_stmt|;
 name|Tile$SoundType
-name|var20
-decl_stmt|;
-if|if
-condition|(
-operator|(
-name|var20
-operator|=
+name|TileSoundType
+init|=
 name|Block
 operator|.
 name|blocks
@@ -2313,7 +2307,22 @@ name|var19
 index|]
 operator|.
 name|stepsound
-operator|)
+decl_stmt|;
+if|if
+condition|(
+name|TileSoundType
+operator|==
+literal|null
+condition|)
+name|TileSoundType
+operator|=
+name|Tile$SoundType
+operator|.
+name|none
+expr_stmt|;
+if|if
+condition|(
+name|TileSoundType
 operator|!=
 name|Tile$SoundType
 operator|.
@@ -2326,18 +2335,18 @@ name|playSound
 argument_list|(
 literal|"step."
 operator|+
-name|var20
+name|TileSoundType
 operator|.
 name|name
 argument_list|,
-name|var20
+name|TileSoundType
 operator|.
 name|getVolume
 argument_list|()
 operator|*
 literal|0.75F
 argument_list|,
-name|var20
+name|TileSoundType
 operator|.
 name|getPitch
 argument_list|()
@@ -2352,7 +2361,6 @@ name|ySlideOffset
 operator|*=
 literal|0.4F
 expr_stmt|;
-block|}
 block|}
 specifier|protected
 name|void

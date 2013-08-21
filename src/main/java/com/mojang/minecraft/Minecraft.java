@@ -931,6 +931,13 @@ name|HackState
 decl_stmt|;
 specifier|public
 specifier|static
+name|boolean
+name|PlayerIsRunning
+init|=
+literal|false
+decl_stmt|;
+specifier|public
+specifier|static
 name|File
 name|mcDir
 decl_stmt|;
@@ -1549,13 +1556,6 @@ operator|!=
 literal|null
 condition|)
 block|{
-name|SoundPlayer
-name|var1
-init|=
-name|this
-operator|.
-name|soundPlayer
-decl_stmt|;
 name|this
 operator|.
 name|soundPlayer
@@ -1574,13 +1574,6 @@ operator|!=
 literal|null
 condition|)
 block|{
-name|ResourceDownloadThread
-name|var4
-init|=
-name|this
-operator|.
-name|resourceThread
-decl_stmt|;
 name|this
 operator|.
 name|resourceThread
@@ -1718,17 +1711,11 @@ expr_stmt|;
 block|}
 block|}
 specifier|public
-specifier|final
-name|void
-name|run
+specifier|static
+name|File
+name|GetMinecraftDirectory
 parameter_list|()
 block|{
-name|this
-operator|.
-name|running
-operator|=
-literal|true
-expr_stmt|;
 name|String
 name|folder
 init|=
@@ -1889,7 +1876,6 @@ literal|'/'
 argument_list|)
 expr_stmt|;
 break|break;
-comment|//return;
 case|case
 literal|2
 case|:
@@ -2016,9 +2002,26 @@ name|minecraftFolder
 argument_list|)
 throw|;
 block|}
+return|return
+name|minecraftFolder
+return|;
+block|}
+specifier|public
+specifier|final
+name|void
+name|run
+parameter_list|()
+block|{
+name|this
+operator|.
+name|running
+operator|=
+literal|true
+expr_stmt|;
 name|mcDir
 operator|=
-name|minecraftFolder
+name|GetMinecraftDirectory
+argument_list|()
 expr_stmt|;
 try|try
 block|{
@@ -2027,16 +2030,6 @@ name|var1
 init|=
 name|this
 decl_stmt|;
-comment|//if(minecraftFolder.exists())
-comment|//{
-comment|//} else {
-comment|//		JOptionPane.showMessageDialog(null,
-comment|//				"Welcome to the MCraft Client Alpha 1!" +
-comment|//						"\nPleave give MCraft some time to download required files." +
-comment|//						"\nTHIS CAN TAKE A LONG TIME DEPENDING ON YOUR INTERNET SPEED.",
-comment|//				"Welcome to MCraft Client",
-comment|//				JOptionPane.INFORMATION_MESSAGE);
-comment|//	}
 name|var1
 operator|.
 name|resourceThread
@@ -2341,7 +2334,7 @@ name|GameSettings
 argument_list|(
 name|this
 argument_list|,
-name|minecraftFolder
+name|mcDir
 argument_list|)
 expr_stmt|;
 name|this
