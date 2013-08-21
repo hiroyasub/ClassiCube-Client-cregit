@@ -1610,6 +1610,22 @@ block|{
 if|if
 condition|(
 name|var5
+operator|!=
+literal|null
+condition|)
+block|{
+if|if
+condition|(
+name|var5
+operator|.
+name|level
+operator|!=
+literal|null
+condition|)
+block|{
+if|if
+condition|(
+name|var5
 operator|.
 name|level
 operator|.
@@ -1671,6 +1687,8 @@ argument_list|)
 operator|)
 argument_list|)
 expr_stmt|;
+block|}
+block|}
 block|}
 block|}
 catch|catch
@@ -2170,7 +2188,7 @@ operator|.
 name|create
 argument_list|()
 expr_stmt|;
-comment|//Display.create(new PixelFormat(8, 16, 0, 16));
+comment|// Display.create(new PixelFormat(8, 16, 0, 16));
 block|}
 catch|catch
 parameter_list|(
@@ -2389,6 +2407,8 @@ argument_list|,
 name|this
 operator|.
 name|textureManager
+argument_list|,
+literal|1
 argument_list|)
 expr_stmt|;
 name|IntBuffer
@@ -2869,8 +2889,9 @@ operator|=
 literal|false
 expr_stmt|;
 block|}
-comment|//var1.resourceThread = new ResourceDownloadThread(mcDir, var1);
-comment|//var1.resourceThread.start();
+comment|// var1.resourceThread = new ResourceDownloadThread(mcDir,
+comment|// var1);
+comment|// var1.resourceThread.start();
 block|}
 catch|catch
 parameter_list|(
