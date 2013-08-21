@@ -313,7 +313,7 @@ block|{
 name|boolean
 name|RunFakeNetwork
 init|=
-literal|false
+literal|true
 decl_stmt|;
 name|MCraftApplet
 name|applet
