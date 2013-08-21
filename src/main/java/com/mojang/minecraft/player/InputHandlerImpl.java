@@ -112,6 +112,13 @@ index|[
 literal|4
 index|]
 expr_stmt|;
+if|if
+condition|(
+name|settings
+operator|.
+name|CanSpeed
+condition|)
+block|{
 name|running
 operator|=
 name|keyStates
@@ -119,6 +126,7 @@ index|[
 literal|5
 index|]
 expr_stmt|;
+block|}
 name|flyingUp
 operator|=
 name|keyStates

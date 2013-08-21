@@ -408,6 +408,12 @@ name|int
 name|settingCount
 decl_stmt|;
 specifier|public
+name|boolean
+name|CanSpeed
+init|=
+literal|true
+decl_stmt|;
+specifier|public
 name|int
 name|smoothing
 init|=
