@@ -273,6 +273,11 @@ name|Obsidian
 argument_list|(
 literal|49
 argument_list|)
+block|,
+name|TestBlock
+argument_list|(
+literal|50
+argument_list|)
 block|;
 specifier|private
 name|int
