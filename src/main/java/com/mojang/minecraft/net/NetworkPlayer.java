@@ -246,7 +246,7 @@ name|var3
 operator|=
 name|FontRenderer
 operator|.
-name|stripColor
+name|StripColors
 argument_list|(
 name|var3
 argument_list|)
