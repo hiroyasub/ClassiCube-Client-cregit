@@ -23,6 +23,18 @@ name|GameSettings
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|Minecraft
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
@@ -120,6 +132,15 @@ name|CanSpeed
 condition|)
 block|{
 name|running
+operator|=
+name|keyStates
+index|[
+literal|5
+index|]
+expr_stmt|;
+name|Minecraft
+operator|.
+name|PlayerIsRunning
 operator|=
 name|keyStates
 index|[
