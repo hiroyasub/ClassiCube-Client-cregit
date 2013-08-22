@@ -733,7 +733,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|CreamClay
+name|Clay
 decl_stmt|;
 specifier|public
 specifier|static
@@ -6595,7 +6595,7 @@ operator|=
 name|blockCache
 expr_stmt|;
 comment|//--------------------------------------
-name|WhiteClay
+name|Clay
 operator|=
 operator|(
 operator|new
@@ -6820,7 +6820,7 @@ argument_list|,
 literal|0.8F
 argument_list|)
 expr_stmt|;
-name|CreamClay
+name|WhiteClay
 operator|=
 operator|(
 operator|new

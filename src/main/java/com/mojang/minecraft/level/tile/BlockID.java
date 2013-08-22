@@ -324,7 +324,7 @@ argument_list|(
 literal|59
 argument_list|)
 block|,
-name|WhiteClay
+name|Clay
 argument_list|(
 literal|60
 argument_list|)
@@ -369,7 +369,7 @@ argument_list|(
 literal|68
 argument_list|)
 block|,
-name|CreamClay
+name|WhiteClay
 argument_list|(
 literal|69
 argument_list|)
