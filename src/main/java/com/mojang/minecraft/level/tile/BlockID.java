@@ -274,7 +274,7 @@ argument_list|(
 literal|49
 argument_list|)
 block|,
-name|TestBlock
+name|CobblestoneSlab
 argument_list|(
 literal|50
 argument_list|)

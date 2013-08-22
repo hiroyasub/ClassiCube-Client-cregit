@@ -619,7 +619,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|TESTBLOCK
+name|COBBLESTONESLAB
 decl_stmt|;
 specifier|public
 name|int
@@ -6198,11 +6198,11 @@ name|var10000
 operator|=
 operator|(
 operator|new
-name|StoneBlock
+name|CobblestoneSlabBlock
 argument_list|(
 literal|50
 argument_list|,
-literal|37
+literal|false
 argument_list|)
 operator|)
 operator|.
@@ -6216,7 +6216,7 @@ literal|1.0F
 argument_list|,
 literal|1.0F
 argument_list|,
-literal|10.0F
+literal|2.0F
 argument_list|)
 expr_stmt|;
 name|var0
@@ -6227,7 +6227,13 @@ name|var1
 operator|=
 name|var10000
 expr_stmt|;
-name|TESTBLOCK
+name|var10000
+operator|.
+name|explodes
+operator|=
+literal|false
+expr_stmt|;
+name|COBBLESTONESLAB
 operator|=
 name|var1
 expr_stmt|;
