@@ -29,6 +29,22 @@ end_import
 
 begin_import
 import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|level
+operator|.
+name|liquid
+operator|.
+name|LiquidType
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|util

@@ -191,6 +191,16 @@ argument_list|)
 decl_stmt|;
 if|if
 condition|(
+name|this
+operator|.
+name|id
+operator|!=
+literal|52
+condition|)
+block|{
+comment|//ignore webs
+if|if
+condition|(
 operator|!
 name|level
 operator|.
@@ -229,6 +239,7 @@ argument_list|,
 literal|0
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 block|}
 block|}
