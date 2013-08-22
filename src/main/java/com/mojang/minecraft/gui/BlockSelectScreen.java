@@ -106,7 +106,7 @@ block|{
 name|int
 name|BlocksPerRow
 init|=
-literal|12
+literal|14
 decl_stmt|;
 name|int
 name|Spacing
@@ -171,7 +171,7 @@ operator|*
 name|Spacing
 operator|+
 operator|-
-literal|108
+literal|128
 operator|-
 literal|3
 decl_stmt|;
@@ -191,7 +191,7 @@ operator|*
 name|Spacing
 operator|+
 operator|-
-literal|60
+literal|45
 operator|+
 literal|3
 decl_stmt|;
@@ -266,9 +266,9 @@ name|width
 operator|/
 literal|2
 operator|-
-literal|120
+literal|140
 argument_list|,
-literal|30
+literal|50
 argument_list|,
 name|this
 operator|.
@@ -276,9 +276,9 @@ name|width
 operator|/
 literal|2
 operator|+
-literal|120
+literal|140
 argument_list|,
-literal|180
+literal|200
 argument_list|,
 operator|-
 literal|1878719232
@@ -309,7 +309,7 @@ operator|*
 name|Spacing
 operator|+
 operator|-
-literal|108
+literal|128
 expr_stmt|;
 name|drawCenteredString
 argument_list|(
@@ -328,7 +328,7 @@ name|width
 operator|/
 literal|2
 argument_list|,
-literal|165
+literal|185
 argument_list|,
 literal|16777215
 argument_list|)
@@ -348,7 +348,7 @@ name|width
 operator|/
 literal|2
 argument_list|,
-literal|40
+literal|60
 argument_list|,
 literal|16777215
 argument_list|)
@@ -449,7 +449,7 @@ operator|*
 name|Spacing
 operator|+
 operator|-
-literal|108
+literal|128
 decl_stmt|;
 name|int
 name|var6
@@ -467,7 +467,7 @@ operator|*
 name|Spacing
 operator|+
 operator|-
-literal|60
+literal|45
 decl_stmt|;
 name|GL11
 operator|.
