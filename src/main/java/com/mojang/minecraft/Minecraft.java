@@ -2462,8 +2462,6 @@ argument_list|,
 name|this
 operator|.
 name|textureManager
-argument_list|,
-literal|1
 argument_list|)
 expr_stmt|;
 name|IntBuffer

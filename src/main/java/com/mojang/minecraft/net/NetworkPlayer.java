@@ -128,7 +128,7 @@ specifier|public
 class|class
 name|NetworkPlayer
 extends|extends
-name|Spider
+name|HumanoidMob
 block|{
 specifier|public
 specifier|static
@@ -339,7 +339,16 @@ name|yRot
 operator|=
 name|var7
 expr_stmt|;
-comment|// this.armor = this.helmet = false;
+name|this
+operator|.
+name|armor
+operator|=
+name|this
+operator|.
+name|helmet
+operator|=
+literal|false
+expr_stmt|;
 name|this
 operator|.
 name|renderOffset
