@@ -70,7 +70,7 @@ parameter_list|)
 block|{
 name|super
 argument_list|(
-literal|52
+literal|51
 argument_list|)
 expr_stmt|;
 name|this
