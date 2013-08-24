@@ -2799,10 +2799,17 @@ block|}
 block|}
 if|else if
 condition|(
+operator|(
 name|this
 operator|.
 name|isInLava
 argument_list|()
+operator|||
+name|this
+operator|.
+name|isInSpiderWeb
+argument_list|()
+operator|)
 operator|&&
 operator|!
 name|this

@@ -750,12 +750,21 @@ name|this
 operator|.
 name|jumping
 operator|&&
+operator|(
 name|this
 operator|.
 name|mob
 operator|.
 name|isInLava
 argument_list|()
+operator|||
+name|this
+operator|.
+name|mob
+operator|.
+name|isInSpiderWeb
+argument_list|()
+operator|)
 condition|)
 block|{
 if|if
@@ -838,9 +847,14 @@ block|}
 if|else if
 condition|(
 name|var9
+operator|||
+name|var2
+operator|.
+name|isInSpiderWeb
+argument_list|()
 condition|)
 block|{
-comment|//elseif in lava
+comment|//elseif in lava or spiders web
 if|if
 condition|(
 operator|!
@@ -1194,11 +1208,23 @@ operator|.
 name|isInLava
 argument_list|()
 decl_stmt|;
+name|boolean
+name|var3
+init|=
+name|this
+operator|.
+name|mob
+operator|.
+name|isInSpiderWeb
+argument_list|()
+decl_stmt|;
 if|if
 condition|(
 name|var1
 operator|||
 name|var2
+operator|||
+name|var3
 condition|)
 block|{
 name|this
