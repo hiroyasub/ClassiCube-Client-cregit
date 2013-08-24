@@ -59,6 +59,20 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
+name|mob
+operator|.
+name|Spider
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
 name|render
 operator|.
 name|TextureManager
@@ -114,7 +128,7 @@ specifier|public
 class|class
 name|NetworkPlayer
 extends|extends
-name|HumanoidMob
+name|Spider
 block|{
 specifier|public
 specifier|static
@@ -246,7 +260,7 @@ name|var3
 operator|=
 name|FontRenderer
 operator|.
-name|StripColors
+name|stripColor
 argument_list|(
 name|var3
 argument_list|)
@@ -325,16 +339,7 @@ name|yRot
 operator|=
 name|var7
 expr_stmt|;
-name|this
-operator|.
-name|armor
-operator|=
-name|this
-operator|.
-name|helmet
-operator|=
-literal|false
-expr_stmt|;
+comment|// this.armor = this.helmet = false;
 name|this
 operator|.
 name|renderOffset

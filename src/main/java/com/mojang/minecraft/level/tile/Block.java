@@ -6255,7 +6255,7 @@ name|WEB
 operator|=
 operator|(
 operator|new
-name|FlowerBlock
+name|SaplingBlock
 argument_list|(
 literal|52
 argument_list|,

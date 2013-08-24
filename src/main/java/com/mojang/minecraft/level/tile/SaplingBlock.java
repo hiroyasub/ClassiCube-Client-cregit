@@ -57,9 +57,9 @@ parameter_list|)
 block|{
 name|super
 argument_list|(
-literal|6
+name|var1
 argument_list|,
-literal|15
+name|var2
 argument_list|)
 expr_stmt|;
 name|float
@@ -115,6 +115,17 @@ parameter_list|,
 name|Random
 name|rand
 parameter_list|)
+block|{
+if|if
+condition|(
+name|this
+operator|.
+name|id
+operator|!=
+name|WEB
+operator|.
+name|id
+condition|)
 block|{
 name|int
 name|var6
@@ -233,6 +244,7 @@ argument_list|,
 literal|0
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 block|}
 block|}

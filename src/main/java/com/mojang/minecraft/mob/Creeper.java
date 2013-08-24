@@ -190,6 +190,8 @@ name|getBrightness
 argument_list|(
 name|var1
 argument_list|)
+operator|+
+literal|20
 return|;
 block|}
 block|}

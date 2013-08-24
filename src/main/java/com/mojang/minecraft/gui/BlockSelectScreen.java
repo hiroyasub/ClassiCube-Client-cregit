@@ -632,11 +632,11 @@ block|{
 if|if
 condition|(
 name|id
-operator|==
+operator|<=
 literal|0
 operator|||
 name|id
-operator|==
+operator|>=
 literal|255
 condition|)
 return|return
