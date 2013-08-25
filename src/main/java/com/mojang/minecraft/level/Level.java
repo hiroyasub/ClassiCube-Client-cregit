@@ -6012,6 +6012,7 @@ name|var22
 operator|>
 literal|0
 operator|&&
+operator|(
 name|var21
 operator|.
 name|getLiquidType
@@ -6020,6 +6021,7 @@ operator|==
 name|LiquidType
 operator|.
 name|NOT_LIQUID
+operator|)
 condition|)
 block|{
 name|MovingObjectPosition

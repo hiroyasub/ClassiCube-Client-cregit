@@ -293,6 +293,16 @@ name|Sandstone
 argument_list|(
 literal|53
 argument_list|)
+block|,
+name|Snow
+argument_list|(
+literal|54
+argument_list|)
+block|,
+name|Fire
+argument_list|(
+literal|55
+argument_list|)
 block|;
 specifier|private
 name|int

@@ -30,7 +30,7 @@ operator|=
 operator|new
 name|LiquidType
 index|[
-literal|4
+literal|5
 index|]
 expr_stmt|;
 name|values
@@ -80,6 +80,18 @@ operator|new
 name|LiquidType
 argument_list|(
 literal|2
+argument_list|)
+decl_stmt|;
+specifier|public
+specifier|static
+specifier|final
+name|LiquidType
+name|SNOW
+init|=
+operator|new
+name|LiquidType
+argument_list|(
+literal|3
 argument_list|)
 decl_stmt|;
 block|}
