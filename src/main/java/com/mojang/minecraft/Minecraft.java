@@ -1326,11 +1326,6 @@ condition|(
 name|this
 operator|.
 name|hasMouse
-operator|&&
-operator|!
-name|var1
-operator|.
-name|grabsMouse
 condition|)
 block|{
 name|this
@@ -15038,39 +15033,18 @@ operator|.
 name|key
 condition|)
 block|{
+comment|//this.player.inventory.selected = 0;
+comment|//this.player.inventory.replaceSlot(Block.blocks[6]);
+comment|//GameSettings.CanReplaceSlot = false;
 name|this
 operator|.
-name|player
+name|gamemode
 operator|.
-name|inventory
-operator|.
-name|selected
-operator|=
-literal|0
+name|openInventory
+argument_list|()
 expr_stmt|;
-name|this
-operator|.
-name|player
-operator|.
-name|inventory
-operator|.
-name|replaceSlot
-argument_list|(
-name|Block
-operator|.
-name|blocks
-index|[
-literal|6
-index|]
-argument_list|)
-expr_stmt|;
-name|GameSettings
-operator|.
-name|CanReplaceSlot
-operator|=
-literal|false
-expr_stmt|;
-comment|// this.gamemode.openInventory();
+comment|// this.level.customLightColour = new ColorCache(1/255F, 120/255F, 120/255F);
+comment|//this.level.customShadowColour = new ColorCache(120/255F, 1/255F, 120/255F);
 comment|/* 							 * if(this.notifyScreen == null){ this.notifyScreen 							 * = new GuiNotificationScreen("Test", 							 * "Click Save all parts) the second thing (to delete this (to delete this (to delete this my dog is fat a potential health hazard payment tacos click Save all parts) 3 poor 1 hour homes for rent society has been dreaming of she was very pretty I jut woke up clear your mind part, empty it and (to delete this [new part] click Save all parts) part, empty it and [new part] ) A point and figure chart shows the trend hitting" 							 * ); int var2 = this.width * 240 / this.height; int 							 * var3 = this.height * 240 / this.height; 							 * ((GuiScreen) this.notifyScreen).open(this, var2, 							 * var3); } else{ this.notifyScreen = new 							 * GuiNotificationScreen("Test", 							 * "Click \nSave all parts) the second thing (to delete this (to delete this (to delete this my dog is fat a potential health hazard payment tacos click Save all parts) 3 poor 1 hour homes for rent society has been dreaming of she was very pretty I jut woke up clear your mind part, empty it and (to delete this [new part] click Save all parts) part, empty it and [new part] ) A point and figure chart shows the trend hitting" 							 * ); int var2 = this.width * 240 / this.height; int 							 * var3 = this.height * 240 / this.height; 							 * ((GuiScreen) this.notifyScreen).open(this, var2, 							 * var3); } 							 */
 block|}
 if|if
