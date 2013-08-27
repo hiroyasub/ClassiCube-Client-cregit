@@ -49,7 +49,12 @@ argument_list|,
 literal|4
 argument_list|)
 block|;
-specifier|private
+specifier|public
+specifier|final
+name|int
+name|id
+decl_stmt|;
+specifier|public
 specifier|static
 specifier|final
 name|Minecraft$OS
@@ -81,6 +86,12 @@ name|int
 name|id
 parameter_list|)
 block|{
+name|this
+operator|.
+name|id
+operator|=
+name|id
+expr_stmt|;
 block|}
 block|}
 end_enum

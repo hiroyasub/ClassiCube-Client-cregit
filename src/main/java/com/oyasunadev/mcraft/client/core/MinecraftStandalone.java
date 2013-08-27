@@ -332,9 +332,9 @@ parameter_list|()
 block|{
 name|setSize
 argument_list|(
-literal|1020
+literal|1024
 argument_list|,
-literal|510
+literal|512
 argument_list|)
 expr_stmt|;
 comment|// setResizable(false);

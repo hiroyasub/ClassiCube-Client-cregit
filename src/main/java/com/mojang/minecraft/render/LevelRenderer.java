@@ -614,7 +614,7 @@ init|=
 name|this
 decl_stmt|;
 name|float
-name|var10
+name|waterLevel
 init|=
 literal|0.5F
 decl_stmt|;
@@ -624,9 +624,9 @@ name|glColor4f
 argument_list|(
 literal|0.5F
 argument_list|,
-name|var10
+name|waterLevel
 argument_list|,
-name|var10
+name|waterLevel
 argument_list|,
 literal|1.0F
 argument_list|)
@@ -639,7 +639,7 @@ operator|.
 name|instance
 decl_stmt|;
 name|float
-name|var12
+name|groundLevel
 init|=
 name|this
 operator|.
@@ -761,9 +761,9 @@ operator|+=
 name|var5
 control|)
 block|{
-name|var10
+name|waterLevel
 operator|=
-name|var12
+name|groundLevel
 expr_stmt|;
 if|if
 condition|(
@@ -792,7 +792,7 @@ operator|.
 name|height
 condition|)
 block|{
-name|var10
+name|waterLevel
 operator|=
 literal|0.0F
 expr_stmt|;
@@ -806,7 +806,7 @@ name|float
 operator|)
 name|var7
 argument_list|,
-name|var10
+name|waterLevel
 argument_list|,
 operator|(
 name|float
@@ -838,7 +838,7 @@ operator|+
 name|var5
 operator|)
 argument_list|,
-name|var10
+name|waterLevel
 argument_list|,
 operator|(
 name|float
@@ -873,7 +873,7 @@ operator|+
 name|var5
 operator|)
 argument_list|,
-name|var10
+name|waterLevel
 argument_list|,
 operator|(
 name|float
@@ -897,7 +897,7 @@ name|float
 operator|)
 name|var7
 argument_list|,
-name|var10
+name|waterLevel
 argument_list|,
 operator|(
 name|float
@@ -1007,7 +1007,7 @@ operator|+
 name|var5
 operator|)
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|,
 literal|0.0F
 argument_list|,
@@ -1016,7 +1016,7 @@ name|float
 operator|)
 name|var5
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|)
 expr_stmt|;
 name|var11
@@ -1028,13 +1028,13 @@ name|float
 operator|)
 name|var7
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|,
 literal|0.0F
 argument_list|,
 literal|0.0F
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|)
 expr_stmt|;
 name|var11
@@ -1046,7 +1046,7 @@ name|float
 operator|)
 name|var7
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|,
 operator|(
 name|float
@@ -1059,7 +1059,7 @@ name|height
 argument_list|,
 literal|0.0F
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|)
 expr_stmt|;
 name|var11
@@ -1075,7 +1075,7 @@ operator|+
 name|var5
 operator|)
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|,
 operator|(
 name|float
@@ -1091,7 +1091,7 @@ name|float
 operator|)
 name|var5
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|)
 expr_stmt|;
 name|var11
@@ -1188,7 +1188,7 @@ name|vertexUV
 argument_list|(
 literal|0.0F
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|,
 operator|(
 name|float
@@ -1206,7 +1206,7 @@ name|vertexUV
 argument_list|(
 literal|0.0F
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|,
 operator|(
 name|float
@@ -1247,7 +1247,7 @@ name|float
 operator|)
 name|var5
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|)
 expr_stmt|;
 name|var11
@@ -1265,7 +1265,7 @@ name|var7
 argument_list|,
 literal|0.0F
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|)
 expr_stmt|;
 name|var11
@@ -1290,7 +1290,7 @@ name|var7
 argument_list|,
 literal|0.0F
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|)
 expr_stmt|;
 name|var11
@@ -1322,7 +1322,7 @@ name|float
 operator|)
 name|var5
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|)
 expr_stmt|;
 name|var11
@@ -1338,7 +1338,7 @@ name|level
 operator|.
 name|width
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|,
 operator|(
 name|float
@@ -1370,7 +1370,7 @@ name|level
 operator|.
 name|width
 argument_list|,
-name|var12
+name|groundLevel
 argument_list|,
 operator|(
 name|float
@@ -1421,7 +1421,7 @@ argument_list|,
 literal|1.0F
 argument_list|)
 expr_stmt|;
-name|var10
+name|waterLevel
 operator|=
 name|this
 operator|.
@@ -1555,7 +1555,7 @@ block|{
 name|float
 name|var13
 init|=
-name|var10
+name|waterLevel
 operator|-
 literal|0.1F
 decl_stmt|;
