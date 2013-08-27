@@ -58,6 +58,17 @@ name|CLIENT_TYPE
 init|=
 literal|0x01
 decl_stmt|;
+specifier|public
+specifier|static
+specifier|final
+name|byte
+name|SupportLevel
+init|=
+operator|(
+name|byte
+operator|)
+literal|1
+decl_stmt|;
 block|}
 end_class
 

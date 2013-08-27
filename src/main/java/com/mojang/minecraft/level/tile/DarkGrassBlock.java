@@ -266,21 +266,7 @@ name|var8
 argument_list|)
 condition|)
 block|{
-name|level
-operator|.
-name|setTile
-argument_list|(
-name|var6
-argument_list|,
-name|var7
-argument_list|,
-name|var8
-argument_list|,
-name|DARKGRASS
-operator|.
-name|id
-argument_list|)
-expr_stmt|;
+comment|//level.setTile(var6, var7, var8, DARKGRASS.id);
 block|}
 block|}
 block|}

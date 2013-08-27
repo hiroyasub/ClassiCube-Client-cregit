@@ -743,7 +743,9 @@ argument_list|()
 operator|*
 name|charWidth
 argument_list|,
-literal|2
+name|BufferedImage
+operator|.
+name|TYPE_INT_ARGB_PRE
 argument_list|)
 decl_stmt|;
 name|Graphics

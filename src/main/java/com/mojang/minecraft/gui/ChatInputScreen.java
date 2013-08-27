@@ -83,6 +83,18 @@ name|Keyboard
 import|;
 end_import
 
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
+name|GL11
+import|;
+end_import
+
 begin_class
 specifier|public
 specifier|final

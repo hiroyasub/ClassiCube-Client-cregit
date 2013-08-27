@@ -1384,7 +1384,6 @@ literal|16777215
 argument_list|)
 expr_stmt|;
 comment|// lol fuck that.
-comment|//var5.render("Minecraft 0.30", 2, 12, 16777215);
 if|if
 condition|(
 name|this

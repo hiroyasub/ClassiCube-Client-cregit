@@ -119,6 +119,13 @@ literal|""
 decl_stmt|;
 specifier|public
 specifier|static
+name|boolean
+name|CanReplaceSlot
+init|=
+literal|true
+decl_stmt|;
+specifier|public
+specifier|static
 name|List
 argument_list|<
 name|String

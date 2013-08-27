@@ -362,7 +362,7 @@ specifier|public
 specifier|static
 specifier|final
 name|PacketType
-name|UPDATE_ALLOWED_BlOCKS
+name|CUSTOM_BLOCK_SUPPORT_LEVEL
 decl_stmt|;
 comment|//19
 specifier|public
@@ -851,7 +851,7 @@ name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-name|UPDATE_ALLOWED_BlOCKS
+name|CUSTOM_BLOCK_SUPPORT_LEVEL
 operator|=
 operator|new
 name|PacketType

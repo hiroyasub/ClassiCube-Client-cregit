@@ -100,10 +100,16 @@ name|height
 decl_stmt|;
 specifier|protected
 name|List
+argument_list|<
+name|Button
+argument_list|>
 name|buttons
 init|=
 operator|new
 name|ArrayList
+argument_list|<
+name|Button
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|public
