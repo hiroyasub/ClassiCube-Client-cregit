@@ -13,6 +13,26 @@ name|util
 package|;
 end_package
 
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|ArrayList
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|List
+import|;
+end_import
+
 begin_comment
 comment|/**  * Created with IntelliJ IDEA.  * User: Oliver Yasuna  * Date: 9/30/12  * Time: 7:57 PM  */
 end_comment
@@ -56,7 +76,7 @@ specifier|final
 name|byte
 name|CLIENT_TYPE
 init|=
-literal|0x01
+literal|0x42
 decl_stmt|;
 specifier|public
 specifier|static
@@ -68,6 +88,21 @@ operator|(
 name|byte
 operator|)
 literal|1
+decl_stmt|;
+specifier|public
+specifier|static
+name|List
+argument_list|<
+name|ExtData
+argument_list|>
+name|ServerSupportedExtensions
+init|=
+operator|new
+name|ArrayList
+argument_list|<
+name|ExtData
+argument_list|>
+argument_list|()
 decl_stmt|;
 block|}
 end_class
