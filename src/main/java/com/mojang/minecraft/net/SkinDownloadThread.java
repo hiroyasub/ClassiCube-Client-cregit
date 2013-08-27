@@ -91,7 +91,17 @@ literal|"http://www.classicube.net/static/skins/"
 operator|+
 name|player
 operator|.
+name|SkinName
+operator|==
+literal|null
+condition|?
+name|player
+operator|.
 name|name
+else|:
+name|player
+operator|.
+name|SkinName
 operator|+
 literal|".png"
 argument_list|)
