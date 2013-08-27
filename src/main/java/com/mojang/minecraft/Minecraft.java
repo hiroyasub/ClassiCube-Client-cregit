@@ -15094,11 +15094,11 @@ operator|.
 name|releaseAllKeys
 argument_list|()
 expr_stmt|;
-name|ChatInputScreen
+name|ChatInputScreenExtension
 name|s
 init|=
 operator|new
-name|ChatInputScreen
+name|ChatInputScreenExtension
 argument_list|()
 decl_stmt|;
 name|this
@@ -15110,7 +15110,7 @@ argument_list|)
 expr_stmt|;
 name|s
 operator|.
-name|message
+name|inputLine
 operator|=
 literal|"/"
 expr_stmt|;
@@ -15271,7 +15271,7 @@ operator|.
 name|setCurrentScreen
 argument_list|(
 operator|new
-name|ChatInputScreen
+name|ChatInputScreenExtension
 argument_list|()
 argument_list|)
 expr_stmt|;
