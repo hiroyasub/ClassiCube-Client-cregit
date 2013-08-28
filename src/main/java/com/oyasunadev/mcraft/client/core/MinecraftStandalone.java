@@ -393,7 +393,7 @@ block|{
 name|boolean
 name|RunFakeNetwork
 init|=
-literal|true
+literal|false
 decl_stmt|;
 name|MCraftApplet
 name|applet
@@ -439,7 +439,7 @@ name|minecraft
 operator|.
 name|host
 operator|=
-literal|"75.70.55.0"
+literal|"127.0.0.1"
 expr_stmt|;
 name|minecraft
 operator|.
@@ -460,7 +460,7 @@ operator|=
 operator|new
 name|SessionData
 argument_list|(
-literal|"Jonty800"
+literal|"SexyScoot"
 argument_list|,
 literal|"noidea"
 argument_list|)
@@ -485,7 +485,7 @@ name|minecraft
 operator|.
 name|server
 operator|=
-literal|"75.70.55.0"
+literal|"127.0.0.1"
 expr_stmt|;
 name|minecraft
 operator|.
