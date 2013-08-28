@@ -422,13 +422,6 @@ name|REMOVE_SELECTION_CUBOID
 decl_stmt|;
 comment|//27
 specifier|public
-specifier|static
-specifier|final
-name|PacketType
-name|EXT_PLAYER
-decl_stmt|;
-comment|//28
-specifier|public
 name|int
 name|length
 decl_stmt|;
@@ -873,10 +866,9 @@ operator|new
 name|Class
 index|[]
 block|{
-name|byte
-index|[]
+name|Byte
 operator|.
-expr|class
+name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
@@ -1100,25 +1092,6 @@ name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-name|EXT_PLAYER
-operator|=
-operator|new
-name|PacketType
-argument_list|(
-operator|new
-name|Class
-index|[]
-block|{
-name|Byte
-operator|.
-name|TYPE
-block|,
-name|String
-operator|.
-name|class
-block|}
-argument_list|)
-expr_stmt|;
 comment|//set names
 name|EXT_INFO
 operator|.
@@ -1142,7 +1115,7 @@ name|CUSTOM_BLOCK_SUPPORT_LEVEL
 operator|.
 name|extName
 operator|=
-literal|"CustomBlockSupportLevel"
+literal|"CustomBlocks"
 expr_stmt|;
 name|HOLDTHIS
 operator|.
@@ -1192,13 +1165,6 @@ name|extName
 operator|=
 literal|"RemoveSelectionCuboid"
 expr_stmt|;
-name|EXT_PLAYER
-operator|.
-name|extName
-operator|=
-literal|""
-expr_stmt|;
-comment|//not supported (Was ExtPlayer)
 name|nextOpcode
 operator|=
 literal|0

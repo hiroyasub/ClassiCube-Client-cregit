@@ -342,6 +342,7 @@ name|str1
 argument_list|)
 expr_stmt|;
 block|}
+block|}
 name|this
 operator|.
 name|minecraft
@@ -355,7 +356,6 @@ literal|null
 argument_list|)
 expr_stmt|;
 return|return;
-block|}
 block|}
 name|int
 name|i
