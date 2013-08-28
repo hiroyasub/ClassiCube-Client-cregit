@@ -439,7 +439,7 @@ name|minecraft
 operator|.
 name|host
 operator|=
-literal|"127.0.0.1"
+literal|"75.70.55.0"
 expr_stmt|;
 name|minecraft
 operator|.
@@ -451,7 +451,7 @@ name|host
 operator|+
 literal|":"
 operator|+
-literal|"25565"
+literal|"25566"
 expr_stmt|;
 name|minecraft
 operator|.
@@ -485,13 +485,13 @@ name|minecraft
 operator|.
 name|server
 operator|=
-literal|"127.0.0.1"
+literal|"75.70.55.0"
 expr_stmt|;
 name|minecraft
 operator|.
 name|port
 operator|=
-literal|25565
+literal|25566
 expr_stmt|;
 block|}
 name|canvas
