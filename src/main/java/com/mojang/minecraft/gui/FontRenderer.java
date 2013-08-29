@@ -568,7 +568,6 @@ operator|.
 name|glPushMatrix
 argument_list|()
 expr_stmt|;
-comment|/* 			 * if(shadow){ if(RenderScale< 1F){ float f3 = 1.0F * RenderScale; 			 * GL11.glTranslatef(-f3, -f3, 0.0F); } if(RenderScale> 1F){ float 			 * f3 = 1.0F * RenderScale; GL11.glTranslatef(+f3, +f3, 0.0F); } } 			 */
 name|GL11
 operator|.
 name|glBindTexture
