@@ -1687,7 +1687,7 @@ name|mc
 operator|.
 name|currentScreen
 operator|instanceof
-name|ChatInputScreen
+name|ChatInputScreenExtension
 condition|)
 block|{
 name|var25
