@@ -361,8 +361,6 @@ name|renderOffset
 operator|=
 literal|0.6875F
 expr_stmt|;
-name|this
-operator|.
 name|downloadSkin
 argument_list|()
 expr_stmt|;

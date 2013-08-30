@@ -89,6 +89,7 @@ name|URL
 argument_list|(
 literal|"http://www.classicube.net/static/skins/"
 operator|+
+operator|(
 name|player
 operator|.
 name|SkinName
@@ -102,6 +103,7 @@ else|:
 name|player
 operator|.
 name|SkinName
+operator|)
 operator|+
 literal|".png"
 argument_list|)

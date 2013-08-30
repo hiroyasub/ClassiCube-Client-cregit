@@ -5971,11 +5971,11 @@ name|block
 operator|=
 operator|(
 operator|new
-name|MetalBlock
+name|Block
 argument_list|(
 literal|41
 argument_list|,
-literal|40
+literal|24
 argument_list|)
 operator|)
 operator|.
@@ -6010,11 +6010,11 @@ name|block
 operator|=
 operator|(
 operator|new
-name|MetalBlock
+name|Block
 argument_list|(
 literal|42
 argument_list|,
-literal|39
+literal|23
 argument_list|)
 operator|)
 operator|.
