@@ -181,6 +181,8 @@ block|,
 name|saveLocationKey
 block|,
 name|loadLocationKey
+block|,
+name|runKey
 block|}
 expr_stmt|;
 name|settingCount
@@ -393,6 +395,18 @@ argument_list|(
 literal|"Load location"
 argument_list|,
 literal|19
+argument_list|)
+decl_stmt|;
+specifier|public
+name|KeyBinding
+name|runKey
+init|=
+operator|new
+name|KeyBinding
+argument_list|(
+literal|"Run"
+argument_list|,
+literal|42
 argument_list|)
 decl_stmt|;
 specifier|public
