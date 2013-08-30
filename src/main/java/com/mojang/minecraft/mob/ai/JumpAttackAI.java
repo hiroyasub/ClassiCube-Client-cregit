@@ -32,12 +32,7 @@ specifier|public
 name|JumpAttackAI
 parameter_list|()
 block|{
-name|this
-operator|.
-name|runSpeed
-operator|*=
-literal|0.8F
-expr_stmt|;
+comment|// this.runSpeed *= 0.8F;
 block|}
 specifier|protected
 name|void

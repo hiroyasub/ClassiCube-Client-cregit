@@ -120,12 +120,7 @@ name|defaultLookAngle
 operator|=
 literal|30
 expr_stmt|;
-name|var5
-operator|.
-name|runSpeed
-operator|=
-literal|1.0F
-expr_stmt|;
+comment|// var5.runSpeed = 1.0F;
 name|this
 operator|.
 name|ai

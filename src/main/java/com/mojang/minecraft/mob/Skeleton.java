@@ -108,12 +108,7 @@ name|deathScore
 operator|=
 literal|120
 expr_stmt|;
-name|var5
-operator|.
-name|runSpeed
-operator|=
-literal|0.3F
-expr_stmt|;
+comment|//var5.runSpeed = 0.3F;
 name|var5
 operator|.
 name|damage
