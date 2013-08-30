@@ -59,46 +59,10 @@ name|void
 name|update
 parameter_list|()
 block|{
-name|this
-operator|.
-name|jumping
-operator|=
-name|player
-operator|.
-name|input
-operator|.
-name|jumping
-expr_stmt|;
-name|this
-operator|.
-name|running
-operator|=
-name|player
-operator|.
-name|input
-operator|.
-name|running
-expr_stmt|;
-name|this
-operator|.
-name|xxa
-operator|=
-name|player
-operator|.
-name|input
-operator|.
-name|xxa
-expr_stmt|;
-name|this
-operator|.
-name|yya
-operator|=
-name|player
-operator|.
-name|input
-operator|.
-name|yya
-expr_stmt|;
+comment|//this.jumping = player.input.jumping;
+comment|//this.running = player.input.running;
+comment|//this.xxa = player.input.xxa;
+comment|//this.yya = player.input.yya;
 block|}
 specifier|public
 specifier|static
