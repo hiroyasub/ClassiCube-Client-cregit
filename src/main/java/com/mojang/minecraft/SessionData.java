@@ -107,8 +107,14 @@ expr_stmt|;
 block|}
 static|static
 block|{
-name|AddStandardMinecraftBlocks
-argument_list|()
+comment|//AddStandardMinecraftBlocks();
+name|SetAllowedBlocks
+argument_list|(
+operator|(
+name|byte
+operator|)
+literal|1
+argument_list|)
 expr_stmt|;
 block|}
 specifier|public
