@@ -95,12 +95,6 @@ name|render
 init|=
 literal|true
 decl_stmt|;
-specifier|private
-name|boolean
-name|unused
-init|=
-literal|false
-decl_stmt|;
 specifier|public
 name|ModelPart
 parameter_list|(

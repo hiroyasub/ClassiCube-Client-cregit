@@ -106,7 +106,7 @@ name|lowNeighbours
 decl_stmt|,
 name|highNeighbours
 decl_stmt|;
-comment|//private boolean[] step2Flags;
+comment|// private boolean[] step2Flags;
 specifier|private
 specifier|static
 specifier|final
@@ -255,11 +255,6 @@ literal|1
 index|]
 index|[]
 expr_stmt|;
-name|int
-name|xListLength
-init|=
-literal|2
-decl_stmt|;
 for|for
 control|(
 name|int
@@ -288,13 +283,6 @@ literal|3
 argument_list|)
 operator|+
 literal|1
-expr_stmt|;
-name|xListLength
-operator|+=
-name|classDimensions
-index|[
-name|i
-index|]
 expr_stmt|;
 name|classSubclasses
 index|[
@@ -441,19 +429,20 @@ argument_list|(
 literal|4
 argument_list|)
 expr_stmt|;
-comment|//System.out.println("multiplier: "+multiplier);
-comment|//System.out.println("rangeBits: "+rangeBits);
-comment|//System.out.println("xListLength: "+xListLength);
-name|int
-name|floorValues
-init|=
-literal|0
-decl_stmt|;
+comment|// System.out.println("multiplier: "+multiplier);
+comment|// System.out.println("rangeBits: "+rangeBits);
+comment|// System.out.println("xListLength: "+xListLength);
 name|ArrayList
+argument_list|<
+name|Integer
+argument_list|>
 name|alXList
 init|=
 operator|new
 name|ArrayList
+argument_list|<
+name|Integer
+argument_list|>
 argument_list|()
 decl_stmt|;
 name|alXList
@@ -480,8 +469,8 @@ name|rangeBits
 argument_list|)
 argument_list|)
 expr_stmt|;
-comment|//System.out.println("partitions: "+partitions);
-comment|//System.out.println("classDimensions.length: "+classDimensions.length);
+comment|// System.out.println("partitions: "+partitions);
+comment|// System.out.println("classDimensions.length: "+classDimensions.length);
 for|for
 control|(
 name|int
@@ -568,6 +557,9 @@ name|length
 index|]
 expr_stmt|;
 name|Iterator
+argument_list|<
+name|Integer
+argument_list|>
 name|iter
 init|=
 name|alXList
@@ -682,7 +674,7 @@ name|VorbisFormatException
 throws|,
 name|IOException
 block|{
-comment|//System.out.println("decodeFloor");
+comment|// System.out.println("decodeFloor");
 if|if
 condition|(
 operator|!
@@ -692,7 +684,7 @@ name|getBit
 argument_list|()
 condition|)
 block|{
-comment|//System.out.println("null");
+comment|// System.out.println("null");
 return|return
 literal|null
 return|;
@@ -863,10 +855,10 @@ name|getHuffmanRoot
 argument_list|()
 argument_list|)
 expr_stmt|;
-comment|//cval=vorbis.getSetupHeader().getCodeBooks()[classMasterbooks[cls]].readInt(source);
-comment|//System.out.println("cval: "+cval);
+comment|// cval=vorbis.getSetupHeader().getCodeBooks()[classMasterbooks[cls]].readInt(source);
+comment|// System.out.println("cval: "+cval);
 block|}
-comment|//System.out.println("0: "+cls+" "+cdim+" "+cbits+" "+csub+" "+cval);
+comment|// System.out.println("0: "+cls+" "+cdim+" "+cbits+" "+csub+" "+cval);
 for|for
 control|(
 name|int
@@ -882,7 +874,7 @@ name|j
 operator|++
 control|)
 block|{
-comment|//System.out.println("a: "+cls+" "+cval+" "+csub);
+comment|// System.out.println("a: "+cls+" "+cval+" "+csub);
 name|int
 name|book
 init|=
@@ -935,9 +927,9 @@ name|getHuffmanRoot
 argument_list|()
 argument_list|)
 expr_stmt|;
-comment|//clone.yList[j+offset]=vorbis.getSetupHeader().getCodeBooks()[book].readInt(source);
-comment|//System.out.println("b: "+(j+offset)+" "+book+" "+clone.yList[j+offset]);
-comment|//System.out.println("");
+comment|// clone.yList[j+offset]=vorbis.getSetupHeader().getCodeBooks()[book].readInt(source);
+comment|// System.out.println("b: "+(j+offset)+" "+book+" "+clone.yList[j+offset]);
+comment|// System.out.println("");
 block|}
 else|else
 block|{
@@ -959,17 +951,17 @@ operator|+=
 name|cdim
 expr_stmt|;
 block|}
-comment|//System.out.println("");
-comment|//for(int i=0; i<clone.xList.length; i++) {
-comment|//   System.out.println(i+" = "+clone.xList[i]);
-comment|//}
-comment|//System.out.println("");
-comment|//for(int i=0; i<clone.yList.length; i++) {
-comment|//   System.out.println(i+" = "+clone.yList[i]);
-comment|//}
-comment|//System.out.println("offset: "+offset);
-comment|//System.out.println("yList.length: "+clone.yList.length);
-comment|//System.exit(0);
+comment|// System.out.println("");
+comment|// for(int i=0; i<clone.xList.length; i++) {
+comment|// System.out.println(i+" = "+clone.xList[i]);
+comment|// }
+comment|// System.out.println("");
+comment|// for(int i=0; i<clone.yList.length; i++) {
+comment|// System.out.println(i+" = "+clone.yList[i]);
+comment|// }
+comment|// System.out.println("offset: "+offset);
+comment|// System.out.println("yList.length: "+clone.yList.length);
+comment|// System.exit(0);
 return|return
 name|clone
 return|;
@@ -1045,7 +1037,8 @@ index|[
 name|i
 index|]
 decl_stmt|;
-comment|//Util.lowNeighbour(xList, i);
+comment|// Util.lowNeighbour(xList,
+comment|// i);
 specifier|final
 name|int
 name|highNeighbourOffset
@@ -1055,7 +1048,8 @@ index|[
 name|i
 index|]
 decl_stmt|;
-comment|//Util.highNeighbour(xList, i);
+comment|// Util.highNeighbour(xList,
+comment|// i);
 specifier|final
 name|int
 name|predicted
@@ -1717,97 +1711,11 @@ index|]
 operator|=
 name|btmp
 expr_stmt|;
-comment|//swap(x, j, j-1);
-comment|//swap(y, j, j-1);
-comment|//swap(b, j, j-1);
+comment|// swap(x, j, j-1);
+comment|// swap(y, j, j-1);
+comment|// swap(b, j, j-1);
 block|}
 block|}
-block|}
-specifier|private
-specifier|final
-specifier|static
-name|void
-name|swap
-parameter_list|(
-name|int
-name|x
-index|[]
-parameter_list|,
-name|int
-name|a
-parameter_list|,
-name|int
-name|b
-parameter_list|)
-block|{
-name|int
-name|t
-init|=
-name|x
-index|[
-name|a
-index|]
-decl_stmt|;
-name|x
-index|[
-name|a
-index|]
-operator|=
-name|x
-index|[
-name|b
-index|]
-expr_stmt|;
-name|x
-index|[
-name|b
-index|]
-operator|=
-name|t
-expr_stmt|;
-block|}
-specifier|private
-specifier|final
-specifier|static
-name|void
-name|swap
-parameter_list|(
-name|boolean
-name|x
-index|[]
-parameter_list|,
-name|int
-name|a
-parameter_list|,
-name|int
-name|b
-parameter_list|)
-block|{
-name|boolean
-name|t
-init|=
-name|x
-index|[
-name|a
-index|]
-decl_stmt|;
-name|x
-index|[
-name|a
-index|]
-operator|=
-name|x
-index|[
-name|b
-index|]
-expr_stmt|;
-name|x
-index|[
-name|b
-index|]
-operator|=
-name|t
-expr_stmt|;
 block|}
 block|}
 end_class

@@ -301,10 +301,6 @@ return|;
 block|}
 else|else
 block|{
-name|var3
-operator|=
-name|var3
-expr_stmt|;
 name|int
 name|var4
 init|=

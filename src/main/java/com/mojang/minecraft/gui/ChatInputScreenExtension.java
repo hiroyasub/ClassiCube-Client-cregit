@@ -210,6 +210,9 @@ name|history
 init|=
 operator|new
 name|Vector
+argument_list|<
+name|String
+argument_list|>
 argument_list|()
 decl_stmt|;
 name|int

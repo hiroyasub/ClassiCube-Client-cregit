@@ -683,6 +683,9 @@ operator|.
 name|textureManager
 decl_stmt|;
 name|Iterator
+argument_list|<
+name|?
+argument_list|>
 name|iterator
 init|=
 name|this

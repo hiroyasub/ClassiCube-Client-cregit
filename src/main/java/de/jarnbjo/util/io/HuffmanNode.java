@@ -40,7 +40,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  *  Representation of a node in a Huffman tree, used to read  *  Huffman compressed codewords from e.g. a Vorbis stream.  */
+comment|/**  * Representation of a node in a Huffman tree, used to read Huffman compressed  * codewords from e.g. a Vorbis stream.  */
 end_comment
 
 begin_class
@@ -49,10 +49,6 @@ specifier|public
 class|class
 name|HuffmanNode
 block|{
-specifier|private
-name|HuffmanNode
-name|parent
-decl_stmt|;
 specifier|private
 name|int
 name|depth
@@ -75,7 +71,7 @@ name|full
 init|=
 literal|false
 decl_stmt|;
-comment|/** 	 *   creates a new Huffman tree root node 	 */
+comment|/**      * creates a new Huffman tree root node      */
 specifier|public
 name|HuffmanNode
 parameter_list|()
@@ -93,12 +89,6 @@ name|HuffmanNode
 name|parent
 parameter_list|)
 block|{
-name|this
-operator|.
-name|parent
-operator|=
-name|parent
-expr_stmt|;
 if|if
 condition|(
 name|parent
@@ -249,15 +239,6 @@ return|return
 name|value
 return|;
 block|}
-specifier|private
-name|HuffmanNode
-name|getParent
-parameter_list|()
-block|{
-return|return
-name|parent
-return|;
-block|}
 specifier|protected
 name|int
 name|getDepth
@@ -328,26 +309,7 @@ operator|=
 name|value
 return|;
 block|}
-specifier|private
-name|void
-name|setValue
-parameter_list|(
-name|Integer
-name|value
-parameter_list|)
-block|{
-name|full
-operator|=
-literal|true
-expr_stmt|;
-name|this
-operator|.
-name|value
-operator|=
-name|value
-expr_stmt|;
-block|}
-comment|/** 	 *  creates a new tree node at the first free location at the given 	 *  depth, and assigns the value to it 	 * 	 *  @param depth the tree depth of the new node (codeword length in bits) 	 *  @param value the node's new value     */
+comment|/**      * creates a new tree node at the first free location at the given depth,      * and assigns the value to it      *       * @param depth      *            the tree depth of the new node (codeword length in bits)      * @param value      *            the node's new value      */
 specifier|public
 name|boolean
 name|setNewValue

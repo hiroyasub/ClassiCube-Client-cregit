@@ -144,10 +144,16 @@ argument_list|)
 decl_stmt|;
 specifier|public
 name|List
+argument_list|<
+name|Chunk
+argument_list|>
 name|chunks
 init|=
 operator|new
 name|ArrayList
+argument_list|<
+name|Chunk
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -2229,9 +2235,6 @@ expr_stmt|;
 block|}
 for|for
 control|(
-name|var1
-operator|=
-name|var1
 init|;
 name|var1
 operator|<=
