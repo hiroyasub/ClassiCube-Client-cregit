@@ -535,6 +535,14 @@ argument_list|(
 literal|"Downloaded music and sounds!"
 argument_list|)
 expr_stmt|;
+if|if
+condition|(
+operator|!
+name|minecraft
+operator|.
+name|isApplet
+condition|)
+block|{
 name|GameSettings
 operator|.
 name|StatusString
@@ -716,6 +724,7 @@ argument_list|(
 name|file
 argument_list|)
 expr_stmt|;
+block|}
 name|GameSettings
 operator|.
 name|StatusString

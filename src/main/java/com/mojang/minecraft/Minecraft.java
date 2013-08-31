@@ -15682,12 +15682,6 @@ operator|.
 name|currentScreen
 operator|==
 literal|null
-operator|||
-name|this
-operator|.
-name|currentScreen
-operator|.
-name|grabsMouse
 condition|)
 block|{
 name|int
