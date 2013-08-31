@@ -123,7 +123,6 @@ parameter_list|)
 throws|throws
 name|IOException
 block|{
-comment|//minecraft.fontRenderer.render("Resource download started", 2, 32, 16777215);
 name|this
 operator|.
 name|minecraft
@@ -560,7 +559,7 @@ name|Minecraft
 operator|.
 name|mcDir
 argument_list|,
-literal|"lwjgl-2.8.4.zip"
+literal|"lwjgl-2.9.0.zip"
 argument_list|)
 expr_stmt|;
 if|if
@@ -605,7 +604,7 @@ operator|=
 operator|new
 name|URL
 argument_list|(
-literal|"http://downloads.sourceforge.net/project/java-game-lib/Official%20Releases/LWJGL%202.8.4/lwjgl-2.8.4.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fjava-game-lib%2Ffiles%2FOfficial%2520Releases%2FLWJGL%25202.8.4%2F&ts=1349465612&use_mirror=hivelocity"
+literal|"http://downloads.sourceforge.net/project/java-game-lib/Official%20Releases/LWJGL%202.9.0/lwjgl-2.9.0.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fjava-game-lib%2Ffiles%2FOfficial%2520Releases%2FLWJGL%25202.9.0%2F&ts=1377932992&use_mirror=garr"
 argument_list|)
 expr_stmt|;
 name|rbc
@@ -661,7 +660,7 @@ name|Minecraft
 operator|.
 name|mcDir
 argument_list|,
-literal|"lwjgl-2.8.4/lwjgl-2.8.4/jar"
+literal|"lwjgl-2.9.0/lwjgl-2.9.0/jar"
 argument_list|)
 argument_list|,
 operator|new
@@ -684,7 +683,7 @@ name|Minecraft
 operator|.
 name|mcDir
 argument_list|,
-literal|"lwjgl-2.8.4/lwjgl-2.8.4/native"
+literal|"lwjgl-2.9.0/lwjgl-2.9.0/native"
 argument_list|)
 argument_list|,
 operator|new
@@ -708,7 +707,7 @@ name|Minecraft
 operator|.
 name|mcDir
 argument_list|,
-literal|"lwjgl-2.8.4"
+literal|"lwjgl-2.9.0"
 argument_list|)
 argument_list|)
 expr_stmt|;
