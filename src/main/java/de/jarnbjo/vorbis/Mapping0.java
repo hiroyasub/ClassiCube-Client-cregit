@@ -98,7 +98,7 @@ operator|+
 literal|1
 expr_stmt|;
 block|}
-comment|//System.out.println("submaps: "+submaps);
+comment|// System.out.println("submaps: "+submaps);
 name|int
 name|channels
 init|=
@@ -122,7 +122,7 @@ operator|-
 literal|1
 argument_list|)
 decl_stmt|;
-comment|//System.out.println("ilogChannels: "+ilogChannels);
+comment|// System.out.println("ilogChannels: "+ilogChannels);
 if|if
 condition|(
 name|source

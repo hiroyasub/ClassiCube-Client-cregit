@@ -990,7 +990,8 @@ name|GL_NEAREST
 argument_list|)
 expr_stmt|;
 block|}
-comment|//GL11.glTexEnvi(GL11.GL_TEXTURE_ENV, GL11.GL_TEXTURE_ENV_MODE, GL11.GL_MODULATE);
+comment|// GL11.glTexEnvi(GL11.GL_TEXTURE_ENV, GL11.GL_TEXTURE_ENV_MODE,
+comment|// GL11.GL_MODULATE);
 name|int
 name|width
 init|=
@@ -1801,7 +1802,9 @@ operator|*
 name|level
 argument_list|)
 expr_stmt|;
-comment|// Create transparency for each level.
+comment|// Create
+comment|// transparency for
+comment|// each level.
 name|mipData
 operator|=
 name|mipData1

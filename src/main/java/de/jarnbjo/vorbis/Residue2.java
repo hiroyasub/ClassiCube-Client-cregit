@@ -320,7 +320,7 @@ operator|==
 literal|0
 condition|)
 block|{
-comment|//int temp=look.getPhraseBook().readInt(source);
+comment|// int temp=look.getPhraseBook().readInt(source);
 name|int
 name|temp
 init|=

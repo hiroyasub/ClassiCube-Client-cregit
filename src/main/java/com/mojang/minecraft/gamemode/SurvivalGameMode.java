@@ -310,7 +310,8 @@ block|}
 block|}
 else|else
 block|{
-comment|// TODO: I think if I don't set hits to 0 you can continue breaking from where you left off.
+comment|// TODO: I think if I don't set hits to 0 you can continue breaking
+comment|// from where you left off.
 name|hits
 operator|=
 literal|0

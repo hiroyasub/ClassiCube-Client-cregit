@@ -26,7 +26,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  *  Implementation of the<code>BitInputStream</code> interface,  *  using a byte array as data source. */
+comment|/**  * Implementation of the<code>BitInputStream</code> interface, using a byte  * array as data source.  */
 end_comment
 
 begin_class
@@ -749,7 +749,7 @@ return|return
 name|res
 return|;
 block|}
-comment|/** 	 *<p>reads an integer encoded as "signed rice" as described in 	 *  the FLAC audio format specification</p> 	 *	 	 *<p><b>not supported for little endian</b></p> 	 * 	 *  @param order  	 *  @return the decoded integer value read from the stream 	 * 	 *  @throws IOException if an I/O error occurs 	 *  @throws UnsupportedOperationException if the method is not supported by the implementation 	 */
+comment|/**      *<p>      * reads an integer encoded as "signed rice" as described in the FLAC audio      * format specification      *</p>      *       *<p>      *<b>not supported for little endian</b>      *</p>      *       * @param order      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|int
 name|readSignedRice
@@ -1109,7 +1109,7 @@ literal|1
 operator|)
 return|;
 block|}
-comment|/** 	 *<p>fills the array from<code>offset</code> with<code>len</code>  	 *  integers encoded as "signed rice" as described in 	 *  the FLAC audio format specification</p> 	 *	 	 *<p><b>not supported for little endian</b></p> 	 * 	 *  @param order  	 *  @param buffer 	 *  @param offset 	 *  @param len  	 *  @return the decoded integer value read from the stream 	 * 	 *  @throws IOException if an I/O error occurs 	 *  @throws UnsupportedOperationException if the method is not supported by the implementation 	 */
+comment|/**      *<p>      * fills the array from<code>offset</code> with<code>len</code> integers      * encoded as "signed rice" as described in the FLAC audio format      * specification      *</p>      *       *<p>      *<b>not supported for little endian</b>      *</p>      *       * @param order      * @param buffer      * @param offset      * @param len      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|void
 name|readSignedRice
@@ -1599,7 +1599,7 @@ operator|=
 name|endian
 expr_stmt|;
 block|}
-comment|/** 	 *  @return the byte array used as a source for this instance 	 */
+comment|/**      * @return the byte array used as a source for this instance      */
 specifier|public
 name|byte
 index|[]

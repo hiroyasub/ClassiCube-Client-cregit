@@ -940,7 +940,7 @@ operator|-
 literal|2147483648
 argument_list|)
 expr_stmt|;
-comment|//  System.out.println(""+temp.length);
+comment|// System.out.println(""+temp.length);
 name|char
 index|[]
 name|temp
@@ -1098,8 +1098,11 @@ argument_list|,
 literal|14737632
 argument_list|)
 expr_stmt|;
-comment|// drawString(this.fontRenderer, "> " + this.inputLine + (this.tickCount / 6 % 2 == 0 ? this.caretPos + 1 : -1), 4, this.height - 12, -3092272);
-comment|//drawString(this.fontRenderer, "> " + this.inputLine + (this.tickCount / 6 % 2 == 0 ? "" : "_"), 4, this.height - 12, -3092272);
+comment|// drawString(this.fontRenderer, "> " + this.inputLine + (this.tickCount
+comment|// / 6 % 2 == 0 ? this.caretPos + 1 : -1), 4, this.height - 12,
+comment|// -3092272);
+comment|// drawString(this.fontRenderer, "> " + this.inputLine + (this.tickCount
+comment|// / 6 % 2 == 0 ? "" : "_"), 4, this.height - 12, -3092272);
 block|}
 specifier|protected
 specifier|final

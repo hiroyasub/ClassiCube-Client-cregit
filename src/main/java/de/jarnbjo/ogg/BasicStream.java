@@ -34,7 +34,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading  * an Ogg stream from a URL. This class performs  *  no internal caching, and will not read data from the network before  *  requested to do so. It is intended to be used in non-realtime applications  *  like file download managers or similar.  */
+comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading an  * Ogg stream from a URL. This class performs no internal caching, and will not  * read data from the network before requested to do so. It is intended to be  * used in non-realtime applications like file download managers or similar.  */
 end_comment
 
 begin_class
@@ -280,7 +280,7 @@ literal|"Method not supported by this class"
 argument_list|)
 throw|;
 block|}
-comment|/**  	 *  @return always<code>false</code> 	 */
+comment|/**      * @return always<code>false</code>      */
 specifier|public
 name|boolean
 name|isSeekable

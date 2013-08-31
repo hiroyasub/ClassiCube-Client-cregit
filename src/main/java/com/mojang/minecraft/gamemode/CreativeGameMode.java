@@ -213,7 +213,7 @@ name|Player
 name|player
 parameter_list|)
 block|{
-comment|//default starting blocks
+comment|// default starting blocks
 name|Block
 index|[]
 name|blocks
@@ -303,7 +303,7 @@ literal|false
 expr_stmt|;
 block|}
 block|}
-comment|//if one of them is banned, instead pick 9 blocks from allowed blocks
+comment|// if one of them is banned, instead pick 9 blocks from allowed blocks
 if|if
 condition|(
 operator|!
@@ -353,7 +353,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|//set them
+comment|// set them
 for|for
 control|(
 name|int
