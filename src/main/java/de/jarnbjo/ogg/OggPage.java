@@ -892,16 +892,6 @@ index|[
 name|pageSegments
 index|]
 decl_stmt|;
-name|byte
-index|[]
-name|tmpBuf
-init|=
-operator|new
-name|byte
-index|[
-literal|1
-index|]
-decl_stmt|;
 for|for
 control|(
 name|int

@@ -81,10 +81,16 @@ name|ObjectInputStream
 block|{
 specifier|private
 name|Set
+argument_list|<
+name|String
+argument_list|>
 name|classes
 init|=
 operator|new
 name|HashSet
+argument_list|<
+name|String
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|public

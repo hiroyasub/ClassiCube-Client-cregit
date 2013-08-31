@@ -1041,6 +1041,15 @@ return|return
 name|localHashMap
 return|;
 block|}
+annotation|@
+name|SuppressWarnings
+argument_list|(
+block|{
+literal|"deprecation"
+block|,
+literal|"static-access"
+block|}
+argument_list|)
 specifier|public
 name|void
 name|downloadSkin

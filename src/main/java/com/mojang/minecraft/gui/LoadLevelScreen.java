@@ -754,9 +754,6 @@ decl_stmt|;
 name|Level
 name|var5
 decl_stmt|;
-name|boolean
-name|var10000
-decl_stmt|;
 if|if
 condition|(
 operator|(
@@ -777,10 +774,6 @@ operator|==
 literal|null
 condition|)
 block|{
-name|var10000
-operator|=
-literal|false
-expr_stmt|;
 block|}
 else|else
 block|{
@@ -790,10 +783,6 @@ name|setLevel
 argument_list|(
 name|var5
 argument_list|)
-expr_stmt|;
-name|var10000
-operator|=
-literal|true
 expr_stmt|;
 block|}
 name|this

@@ -34,6 +34,15 @@ name|EndOfOggStreamException
 extends|extends
 name|IOException
 block|{
+comment|/**      *       */
+specifier|private
+specifier|static
+specifier|final
+name|long
+name|serialVersionUID
+init|=
+literal|1L
+decl_stmt|;
 specifier|public
 name|EndOfOggStreamException
 parameter_list|()

@@ -57,18 +57,6 @@ end_import
 
 begin_import
 import|import
-name|de
-operator|.
-name|jarnbjo
-operator|.
-name|vorbis
-operator|.
-name|*
-import|;
-end_import
-
-begin_import
-import|import
 name|javax
 operator|.
 name|sound
@@ -255,6 +243,9 @@ block|{
 try|try
 block|{
 name|Collection
+argument_list|<
+name|LogicalOggStreamImpl
+argument_list|>
 name|streams
 init|=
 name|oggStream
@@ -557,6 +548,9 @@ block|{
 try|try
 block|{
 name|Collection
+argument_list|<
+name|LogicalOggStreamImpl
+argument_list|>
 name|streams
 init|=
 name|oggStream
@@ -763,17 +757,6 @@ block|{
 specifier|private
 name|VorbisStream
 name|source
-decl_stmt|;
-specifier|private
-name|byte
-index|[]
-name|buffer
-init|=
-operator|new
-name|byte
-index|[
-literal|8192
-index|]
 decl_stmt|;
 specifier|public
 name|VorbisInputStream

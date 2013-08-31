@@ -67,16 +67,6 @@ name|org
 operator|.
 name|lwjgl
 operator|.
-name|LWJGLException
-import|;
-end_import
-
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
 name|opengl
 operator|.
 name|*
@@ -142,16 +132,6 @@ operator|.
 name|nio
 operator|.
 name|ByteBuffer
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|nio
-operator|.
-name|FloatBuffer
 import|;
 end_import
 

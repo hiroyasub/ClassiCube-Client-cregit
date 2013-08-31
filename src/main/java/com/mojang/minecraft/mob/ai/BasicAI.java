@@ -953,6 +953,9 @@ name|yya
 argument_list|)
 expr_stmt|;
 name|List
+argument_list|<
+name|Entity
+argument_list|>
 name|var11
 decl_stmt|;
 if|if

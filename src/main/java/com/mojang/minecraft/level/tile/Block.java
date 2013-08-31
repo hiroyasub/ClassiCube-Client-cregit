@@ -161,18 +161,6 @@ name|Random
 import|;
 end_import
 
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
-name|opengl
-operator|.
-name|GL11
-import|;
-end_import
-
 begin_class
 specifier|public
 class|class
@@ -861,7 +849,7 @@ name|boolean
 name|physics
 parameter_list|)
 block|{
-name|this
+name|Block
 operator|.
 name|physics
 index|[
@@ -939,7 +927,7 @@ name|int
 name|tickDelay
 parameter_list|)
 block|{
-name|this
+name|Block
 operator|.
 name|tickDelay
 index|[

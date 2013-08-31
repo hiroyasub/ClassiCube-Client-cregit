@@ -77,6 +77,11 @@ specifier|final
 class|class
 name|ParticleManager
 block|{
+annotation|@
+name|SuppressWarnings
+argument_list|(
+literal|"rawtypes"
+argument_list|)
 specifier|public
 name|List
 index|[]
@@ -92,6 +97,11 @@ specifier|public
 name|TextureManager
 name|textureManager
 decl_stmt|;
+annotation|@
+name|SuppressWarnings
+argument_list|(
+literal|"rawtypes"
+argument_list|)
 specifier|public
 name|ParticleManager
 parameter_list|(
@@ -150,6 +160,11 @@ argument_list|()
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|SuppressWarnings
+argument_list|(
+literal|"unchecked"
+argument_list|)
 specifier|public
 specifier|final
 name|void

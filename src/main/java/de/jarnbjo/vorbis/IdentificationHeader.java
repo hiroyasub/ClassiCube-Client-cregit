@@ -37,50 +37,6 @@ name|BitInputStream
 import|;
 end_import
 
-begin_import
-import|import
-name|java
-operator|.
-name|awt
-operator|.
-name|*
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|awt
-operator|.
-name|event
-operator|.
-name|*
-import|;
-end_import
-
-begin_import
-import|import
-name|javax
-operator|.
-name|swing
-operator|.
-name|*
-import|;
-end_import
-
-begin_import
-import|import
-name|javax
-operator|.
-name|swing
-operator|.
-name|event
-operator|.
-name|*
-import|;
-end_import
-
 begin_comment
 comment|/**  */
 end_comment
@@ -109,10 +65,6 @@ decl_stmt|,
 name|blockSize1
 decl_stmt|;
 specifier|private
-name|boolean
-name|framingFlag
-decl_stmt|;
-specifier|private
 name|MdctFloat
 index|[]
 name|mdct
@@ -123,7 +75,7 @@ index|[
 literal|2
 index|]
 decl_stmt|;
-comment|//private MdctLong[] mdctInt=new MdctLong[2];
+comment|// private MdctLong[] mdctInt=new MdctLong[2];
 specifier|private
 specifier|static
 specifier|final
@@ -144,9 +96,9 @@ name|VorbisFormatException
 throws|,
 name|IOException
 block|{
-comment|//equalizer=new Equalizer();
-comment|//equalizer.pack();
-comment|//equalizer.show();
+comment|// equalizer=new Equalizer();
+comment|// equalizer.pack();
+comment|// equalizer.show();
 name|long
 name|leading
 init|=
@@ -278,19 +230,8 @@ argument_list|(
 name|blockSize1
 argument_list|)
 expr_stmt|;
-comment|//mdctInt[0]=new MdctLong(blockSize0);
-comment|//mdctInt[1]=new MdctLong(blockSize1);
-name|framingFlag
-operator|=
-name|source
-operator|.
-name|getInt
-argument_list|(
-literal|8
-argument_list|)
-operator|!=
-literal|0
-expr_stmt|;
+comment|// mdctInt[0]=new MdctLong(blockSize0);
+comment|// mdctInt[1]=new MdctLong(blockSize1);
 block|}
 specifier|public
 name|int

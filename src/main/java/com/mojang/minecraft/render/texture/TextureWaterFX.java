@@ -81,12 +81,6 @@ index|[
 literal|256
 index|]
 decl_stmt|;
-specifier|private
-name|int
-name|updates
-init|=
-literal|0
-decl_stmt|;
 specifier|public
 name|TextureWaterFX
 parameter_list|()
@@ -107,11 +101,6 @@ name|void
 name|animate
 parameter_list|()
 block|{
-operator|++
-name|this
-operator|.
-name|updates
-expr_stmt|;
 name|int
 name|var1
 decl_stmt|;

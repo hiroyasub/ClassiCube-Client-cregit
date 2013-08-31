@@ -246,7 +246,7 @@ name|out
 operator|.
 name|writeLong
 argument_list|(
-name|var1
+name|Level
 operator|.
 name|serialVersionUID
 argument_list|)

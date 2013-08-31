@@ -155,12 +155,6 @@ name|Socket
 name|sock
 decl_stmt|;
 specifier|private
-name|boolean
-name|unused
-init|=
-literal|false
-decl_stmt|;
-specifier|private
 name|byte
 index|[]
 name|stringBytes
@@ -423,6 +417,11 @@ operator|=
 literal|null
 expr_stmt|;
 block|}
+annotation|@
+name|SuppressWarnings
+argument_list|(
+literal|"rawtypes"
+argument_list|)
 specifier|public
 specifier|final
 name|void
@@ -900,6 +899,11 @@ block|}
 block|}
 block|}
 block|}
+annotation|@
+name|SuppressWarnings
+argument_list|(
+literal|"rawtypes"
+argument_list|)
 specifier|public
 name|Object
 name|readObject

@@ -638,13 +638,6 @@ throw|;
 block|}
 block|}
 specifier|private
-specifier|static
-name|long
-name|totalTime
-init|=
-literal|0
-decl_stmt|;
-specifier|private
 name|boolean
 name|createHuffmanTree
 parameter_list|(

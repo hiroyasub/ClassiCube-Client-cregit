@@ -16,6 +16,11 @@ specifier|public
 class|class
 name|PacketType
 block|{
+annotation|@
+name|SuppressWarnings
+argument_list|(
+literal|"rawtypes"
+argument_list|)
 specifier|private
 name|PacketType
 parameter_list|(
@@ -434,6 +439,11 @@ specifier|public
 name|byte
 name|opcode
 decl_stmt|;
+annotation|@
+name|SuppressWarnings
+argument_list|(
+literal|"rawtypes"
+argument_list|)
 specifier|public
 name|Class
 index|[]

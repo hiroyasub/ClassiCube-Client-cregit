@@ -41,10 +41,6 @@ extends|extends
 name|AudioInputStream
 block|{
 specifier|private
-name|AudioInputStream
-name|stream
-decl_stmt|;
-specifier|private
 name|boolean
 name|fading
 init|=

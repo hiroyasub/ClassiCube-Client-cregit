@@ -45,6 +45,9 @@ block|{
 comment|/**     * Returns a collection of objects implementing<code>LogicalOggStream</code>     * for accessing the separate logical streams within this physical Ogg stream.     *     * @return a collection of objects implementing<code>LogicalOggStream</code>     *         which are representing the logical streams contained within this     *         physical stream     *     * @see LogicalOggStream     */
 specifier|public
 name|Collection
+argument_list|<
+name|LogicalOggStreamImpl
+argument_list|>
 name|getLogicalStreams
 parameter_list|()
 function_decl|;

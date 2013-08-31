@@ -108,7 +108,12 @@ name|deathScore
 operator|=
 literal|120
 expr_stmt|;
-comment|//var5.runSpeed = 0.3F;
+name|var5
+operator|.
+name|runSpeed
+operator|=
+literal|0.3F
+expr_stmt|;
 name|var5
 operator|.
 name|damage
@@ -205,10 +210,6 @@ name|Skeleton
 name|var0
 parameter_list|)
 block|{
-name|var0
-operator|=
-name|var0
-expr_stmt|;
 name|int
 name|var1
 init|=

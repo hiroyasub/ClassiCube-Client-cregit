@@ -13,26 +13,6 @@ end_package
 
 begin_import
 import|import
-name|java
-operator|.
-name|util
-operator|.
-name|ArrayList
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|List
-import|;
-end_import
-
-begin_import
-import|import
 name|com
 operator|.
 name|mojang
@@ -80,18 +60,6 @@ operator|.
 name|input
 operator|.
 name|Keyboard
-import|;
-end_import
-
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
-name|opengl
-operator|.
-name|GL11
 import|;
 end_import
 

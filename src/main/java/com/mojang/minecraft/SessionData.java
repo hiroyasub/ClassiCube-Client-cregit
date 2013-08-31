@@ -41,16 +41,6 @@ name|java
 operator|.
 name|util
 operator|.
-name|Arrays
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
 name|List
 import|;
 end_import
@@ -64,6 +54,9 @@ block|{
 specifier|public
 specifier|static
 name|List
+argument_list|<
+name|Block
+argument_list|>
 name|allowedBlocks
 decl_stmt|;
 specifier|public
@@ -125,7 +118,7 @@ name|byte
 name|SupportLevel
 parameter_list|)
 block|{
-comment|//latest
+comment|// latest
 if|if
 condition|(
 name|SupportLevel
@@ -294,7 +287,7 @@ name|i
 operator|++
 control|)
 block|{
-comment|//ignore air
+comment|// ignore air
 name|ab
 operator|.
 name|add

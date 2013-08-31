@@ -368,6 +368,9 @@ operator|*
 literal|0.8F
 expr_stmt|;
 name|List
+argument_list|<
+name|?
+argument_list|>
 name|var3
 decl_stmt|;
 if|if
