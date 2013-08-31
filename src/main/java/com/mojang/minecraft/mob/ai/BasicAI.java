@@ -400,7 +400,7 @@ operator|.
 name|flyingUp
 condition|)
 block|{
-comment|//System.out.println("flying up");
+comment|// System.out.println("flying up");
 if|if
 condition|(
 name|this
@@ -436,7 +436,7 @@ operator|.
 name|flyingDown
 condition|)
 block|{
-comment|//System.out.println("flying down");
+comment|// System.out.println("flying down");
 if|if
 condition|(
 name|this
@@ -522,7 +522,6 @@ operator|.
 name|flyingUp
 condition|)
 block|{
-comment|//System.out.println("flying up");
 if|if
 condition|(
 name|this
@@ -558,7 +557,6 @@ operator|.
 name|flyingDown
 condition|)
 block|{
-comment|//System.out.println("flying down");
 if|if
 condition|(
 name|this
@@ -643,7 +641,7 @@ operator|.
 name|flyingUp
 condition|)
 block|{
-comment|//System.out.println("flying up");
+comment|// System.out.println("flying up");
 if|if
 condition|(
 name|this
@@ -679,7 +677,7 @@ operator|.
 name|flyingDown
 condition|)
 block|{
-comment|//System.out.println("flying down");
+comment|// System.out.println("flying down");
 if|if
 condition|(
 name|this
@@ -750,21 +748,12 @@ name|this
 operator|.
 name|jumping
 operator|&&
-operator|(
 name|this
 operator|.
 name|mob
 operator|.
 name|isInLava
 argument_list|()
-operator|||
-name|this
-operator|.
-name|mob
-operator|.
-name|isInSpiderWeb
-argument_list|()
-operator|)
 condition|)
 block|{
 if|if
@@ -794,6 +783,35 @@ operator|=
 literal|0.06F
 expr_stmt|;
 block|}
+block|}
+if|else if
+condition|(
+name|this
+operator|.
+name|mob
+operator|.
+name|isInSpiderWeb
+argument_list|()
+condition|)
+block|{
+if|if
+condition|(
+name|this
+operator|.
+name|mob
+operator|.
+name|yd
+operator|>
+literal|0.01f
+condition|)
+name|this
+operator|.
+name|mob
+operator|.
+name|yd
+operator|=
+literal|0.01F
+expr_stmt|;
 block|}
 block|}
 name|boolean
@@ -805,11 +823,19 @@ name|isInWater
 argument_list|()
 decl_stmt|;
 name|boolean
-name|var9
+name|isInLava
 init|=
 name|var2
 operator|.
 name|isInLava
+argument_list|()
+decl_stmt|;
+name|boolean
+name|isInSpiderWeb
+init|=
+name|var2
+operator|.
+name|isInSpiderWeb
 argument_list|()
 decl_stmt|;
 if|if
@@ -824,7 +850,7 @@ condition|(
 name|var7
 condition|)
 block|{
-comment|//if in water
+comment|// if in water
 if|if
 condition|(
 operator|!
@@ -846,15 +872,9 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|var9
-operator|||
-name|var2
-operator|.
-name|isInSpiderWeb
-argument_list|()
+name|isInLava
 condition|)
 block|{
-comment|//elseif in lava or spiders web
 if|if
 condition|(
 operator|!
@@ -872,6 +892,18 @@ operator|.
 name|yd
 operator|+=
 literal|0.08F
+expr_stmt|;
+block|}
+if|else if
+condition|(
+name|isInSpiderWeb
+condition|)
+block|{
+name|var2
+operator|.
+name|yd
+operator|+=
+literal|0.06F
 expr_stmt|;
 block|}
 if|else if
@@ -881,7 +913,7 @@ operator|.
 name|onGround
 condition|)
 block|{
-comment|//if on the ground
+comment|// if on the ground
 name|this
 operator|.
 name|jumpFromGround
@@ -1199,7 +1231,7 @@ name|isInWater
 argument_list|()
 decl_stmt|;
 name|boolean
-name|var2
+name|isInLava
 init|=
 name|this
 operator|.
@@ -1209,7 +1241,7 @@ name|isInLava
 argument_list|()
 decl_stmt|;
 name|boolean
-name|var3
+name|isInSpiderWeb
 init|=
 name|this
 operator|.
@@ -1222,9 +1254,9 @@ if|if
 condition|(
 name|var1
 operator|||
-name|var2
+name|isInLava
 operator|||
-name|var3
+name|isInSpiderWeb
 condition|)
 block|{
 name|this
