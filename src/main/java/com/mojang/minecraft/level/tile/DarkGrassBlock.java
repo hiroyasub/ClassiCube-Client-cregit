@@ -250,7 +250,7 @@ name|var8
 argument_list|)
 condition|)
 block|{
-comment|//level.setTile(var6, var7, var8, DARKGRASS.id);
+comment|// level.setTile(var6, var7, var8, DARKGRASS.id);
 block|}
 block|}
 block|}

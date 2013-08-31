@@ -298,7 +298,7 @@ literal|"The file has no setup header."
 argument_list|)
 throw|;
 block|}
-comment|//currentPcm=new int[identificationHeader.getChannels()][16384];
+comment|// currentPcm=new int[identificationHeader.getChannels()][16384];
 name|currentPcm
 operator|=
 operator|new
@@ -317,7 +317,7 @@ operator|*
 literal|2
 index|]
 expr_stmt|;
-comment|//new BufferThread().start();
+comment|// new BufferThread().start();
 block|}
 specifier|public
 name|IdentificationHeader

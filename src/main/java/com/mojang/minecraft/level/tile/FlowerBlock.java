@@ -210,7 +210,7 @@ operator|!=
 literal|53
 condition|)
 block|{
-comment|//ignore webs
+comment|// ignore webs
 if|if
 condition|(
 operator|!

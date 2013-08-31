@@ -350,7 +350,7 @@ name|i
 operator|<=
 literal|41
 operator|*
-literal|6
+literal|4
 condition|;
 name|i
 operator|+=

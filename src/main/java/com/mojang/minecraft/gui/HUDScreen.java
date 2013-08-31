@@ -2626,7 +2626,8 @@ operator|+
 literal|8
 condition|)
 block|{
-comment|// if your mouse if hovered over this name
+comment|// if your mouse if hovered over
+comment|// this name
 name|this
 operator|.
 name|hoveredPlayer

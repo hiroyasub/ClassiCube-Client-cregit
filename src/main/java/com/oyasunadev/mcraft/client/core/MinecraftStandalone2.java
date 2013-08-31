@@ -460,7 +460,7 @@ comment|//	}
 end_comment
 
 begin_comment
-comment|//}
+comment|// }
 end_comment
 
 end_unit

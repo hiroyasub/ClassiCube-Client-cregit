@@ -44,7 +44,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  *  Implementation of the<code>PhysicalOggStream</code> interface for reading  *  and caching an Ogg stream from a URL. This class reads the data as fast as  *  possible from the URL, caches it locally either in memory or on disk, and  *  supports seeking within the available data.  */
+comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading  * and caching an Ogg stream from a URL. This class reads the data as fast as  * possible from the URL, caches it locally either in memory or on disk, and  * supports seeking within the available data.  */
 end_comment
 
 begin_class
@@ -139,7 +139,7 @@ specifier|private
 name|LoaderThread
 name|loaderThread
 decl_stmt|;
-comment|/** 	 *  Creates an instance of this class, using a memory cache. 	 */
+comment|/**      * Creates an instance of this class, using a memory cache.      */
 specifier|public
 name|CachedUrlStream
 parameter_list|(
@@ -159,7 +159,7 @@ literal|null
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 *  Creates an instance of this class, using the specified file as cache. The 	 *  file is not automatically deleted when this class is disposed. 	 */
+comment|/**      * Creates an instance of this class, using the specified file as cache. The      * file is not automatically deleted when this class is disposed.      */
 specifier|public
 name|CachedUrlStream
 parameter_list|(
@@ -279,7 +279,7 @@ operator|<
 literal|20
 condition|)
 block|{
-comment|//System.out.print("pageOffsets.size(): "+pageOffsets.size()+"\r");
+comment|// System.out.print("pageOffsets.size(): "+pageOffsets.size()+"\r");
 try|try
 block|{
 name|Thread
@@ -298,8 +298,8 @@ parameter_list|)
 block|{
 block|}
 block|}
-comment|//System.out.println();
-comment|//System.out.println("caching "+pageOffsets.size()+"/20 pages\r");
+comment|// System.out.println();
+comment|// System.out.println("caching "+pageOffsets.size()+"/20 pages\r");
 block|}
 specifier|public
 name|Collection
@@ -352,7 +352,7 @@ return|return
 name|cacheLength
 return|;
 block|}
-comment|/*    private OggPage getNextPage() throws EndOfOggStreamException, IOException, OggFormatException  {       return getNextPage(false);    }     private OggPage getNextPage(boolean skipData) throws EndOfOggStreamException, IOException, OggFormatException  {       return OggPage.create(sourceStream, skipData);    }    */
+comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *       * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
 specifier|public
 name|OggPage
 name|getOggPage
@@ -888,7 +888,7 @@ name|bosDone
 operator|=
 literal|true
 expr_stmt|;
-comment|//System.out.println("bosDone=true;");
+comment|// System.out.println("bosDone=true;");
 block|}
 if|if
 condition|(
@@ -985,7 +985,7 @@ operator|.
 name|getAbsoluteGranulePosition
 argument_list|()
 expr_stmt|;
-comment|//System.out.println("read page: "+pageNumber);
+comment|// System.out.println("read page: "+pageNumber);
 block|}
 block|}
 catch|catch

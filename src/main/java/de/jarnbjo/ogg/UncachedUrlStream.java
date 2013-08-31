@@ -44,7 +44,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  *  Implementation of the<code>PhysicalOggStream</code> interface for reading  *  an Ogg stream from a URL. This class performs only the necessary caching  *  to provide continous playback. Seeking within the stream is not supported.  */
+comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading an  * Ogg stream from a URL. This class performs only the necessary caching to  * provide continous playback. Seeking within the stream is not supported.  */
 end_comment
 
 begin_class
@@ -120,7 +120,7 @@ name|PAGECACHE_SIZE
 init|=
 literal|10
 decl_stmt|;
-comment|/** Creates an instance of the<code>PhysicalOggStream</code> interface 	 *  suitable for reading an Ogg stream from a URL.  	 */
+comment|/**      * Creates an instance of the<code>PhysicalOggStream</code> interface      * suitable for reading an Ogg stream from a URL.      */
 specifier|public
 name|UncachedUrlStream
 parameter_list|(
@@ -204,9 +204,9 @@ name|ex
 parameter_list|)
 block|{
 block|}
-comment|//System.out.print("caching "+pageCache.size()+"/"+PAGECACHE_SIZE+" pages\r");
+comment|// System.out.print("caching "+pageCache.size()+"/"+PAGECACHE_SIZE+" pages\r");
 block|}
-comment|//System.out.println();
+comment|// System.out.println();
 block|}
 specifier|public
 name|Collection
@@ -250,8 +250,8 @@ name|close
 argument_list|()
 expr_stmt|;
 block|}
-comment|/*    public long getCacheLength() {       return cacheLength;    }    */
-comment|/*    private OggPage getNextPage() throws EndOfOggStreamException, IOException, OggFormatException  {       return getNextPage(false);    }     private OggPage getNextPage(boolean skipData) throws EndOfOggStreamException, IOException, OggFormatException  {       return OggPage.create(sourceStream, skipData);    }    */
+comment|/*      * public long getCacheLength() { return cacheLength; }      */
+comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *       * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
 specifier|public
 name|OggPage
 name|getOggPage
@@ -295,9 +295,9 @@ init|(
 name|drainLock
 init|)
 block|{
-comment|//OggPage page=(OggPage)pageCache.getFirst();
-comment|//pageCache.removeFirst();
-comment|//return page;
+comment|// OggPage page=(OggPage)pageCache.getFirst();
+comment|// pageCache.removeFirst();
+comment|// return page;
 return|return
 operator|(
 name|OggPage
@@ -584,7 +584,7 @@ name|bosDone
 return|;
 block|}
 block|}
-comment|/**  	 *  @return always<code>false</code> 	 */
+comment|/**      * @return always<code>false</code>      */
 specifier|public
 name|boolean
 name|isSeekable

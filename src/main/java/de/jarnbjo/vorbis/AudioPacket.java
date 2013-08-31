@@ -461,7 +461,7 @@ operator|=
 name|getComputedWindow
 argument_list|()
 expr_stmt|;
-comment|//new double[n];
+comment|// new double[n];
 name|channelFloors
 operator|=
 operator|new
@@ -853,7 +853,7 @@ operator|>
 literal|0
 condition|)
 block|{
-comment|//magnitudeVector[j]=m;
+comment|// magnitudeVector[j]=m;
 name|angleVector
 index|[
 name|j

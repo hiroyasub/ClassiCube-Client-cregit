@@ -318,7 +318,7 @@ operator|+
 literal|1
 argument_list|)
 decl_stmt|;
-comment|//comments.put(key, value);
+comment|// comments.put(key, value);
 name|addComment
 argument_list|(
 name|key

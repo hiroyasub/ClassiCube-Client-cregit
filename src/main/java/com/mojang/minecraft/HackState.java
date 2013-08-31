@@ -16,15 +16,15 @@ name|HackState
 block|{
 name|HacksTagEnabled
 block|,
-comment|//+Hax
+comment|// +Hax
 name|HacksTagDisabled
 block|,
-comment|//-Hax
+comment|// -Hax
 name|OpHacks
 block|,
-comment|//+ophacks
+comment|// +ophacks
 name|NoHacksTagShown
-comment|//Just an motd (Default)
+comment|// Just an motd (Default)
 block|}
 end_enum
 

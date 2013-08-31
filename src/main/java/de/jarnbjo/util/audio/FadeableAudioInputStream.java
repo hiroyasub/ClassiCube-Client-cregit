@@ -144,7 +144,7 @@ argument_list|,
 name|length
 argument_list|)
 decl_stmt|;
-comment|//System.out.println("read "+read);
+comment|// System.out.println("read "+read);
 if|if
 condition|(
 name|fading
@@ -274,7 +274,7 @@ argument_list|(
 name|phi
 argument_list|)
 expr_stmt|;
-comment|//System.out.println("gain "+gain);
+comment|// System.out.println("gain "+gain);
 name|l
 operator|=
 operator|(
