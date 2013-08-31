@@ -336,91 +336,91 @@ specifier|final
 name|PacketType
 name|UPDATE_PLAYER_TYPE
 decl_stmt|;
-comment|//------------------------------------------------
+comment|// ------------------------------------------------
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|EXT_INFO
 decl_stmt|;
-comment|//16
+comment|// 16
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|EXT_ENTRY
 decl_stmt|;
-comment|//17
+comment|// 17
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|CLICK_DISTANCE
 decl_stmt|;
-comment|//18
+comment|// 18
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|CUSTOM_BLOCK_SUPPORT_LEVEL
 decl_stmt|;
-comment|//19
+comment|// 19
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|HOLDTHIS
 decl_stmt|;
-comment|//20
+comment|// 20
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|SET_TEXT_HOTKEY
 decl_stmt|;
-comment|//21
+comment|// 21
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|EXT_ADD_PLAYER_NAME
 decl_stmt|;
-comment|//22
+comment|// 22
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|EXT_ADD_ENTITY
 decl_stmt|;
-comment|//23
+comment|// 23
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|EXT_REMOVE_PLAYER_NAME
 decl_stmt|;
-comment|//24
+comment|// 24
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|ENV_SET_COLOR
 decl_stmt|;
-comment|//25
+comment|// 25
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|SELECTION_CUBOID
 decl_stmt|;
-comment|//26
+comment|// 26
 specifier|public
 specifier|static
 specifier|final
 name|PacketType
 name|REMOVE_SELECTION_CUBOID
 decl_stmt|;
-comment|//27
+comment|// 27
 specifier|public
 name|int
 name|length
@@ -803,7 +803,7 @@ name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-comment|//--------------------------------------------------------------
+comment|// --------------------------------------------------------------
 name|EXT_INFO
 operator|=
 operator|new
@@ -927,7 +927,7 @@ operator|new
 name|Class
 index|[]
 block|{
-name|Byte
+name|Short
 operator|.
 name|TYPE
 block|,
@@ -949,7 +949,10 @@ name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-comment|//check [0] unsigned byte
+comment|// check
+comment|// [0]
+comment|// unsigned
+comment|// byte
 name|EXT_ADD_ENTITY
 operator|=
 operator|new
@@ -973,7 +976,7 @@ name|class
 block|}
 argument_list|)
 expr_stmt|;
-comment|//check [0] unsigned byte
+comment|// check [0] unsigned byte
 name|EXT_REMOVE_PLAYER_NAME
 operator|=
 operator|new
@@ -983,9 +986,9 @@ operator|new
 name|Class
 index|[]
 block|{
-name|String
+name|Short
 operator|.
-name|class
+name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
@@ -1016,7 +1019,7 @@ name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-comment|//byte, ubyte, ubyte, ubyte
+comment|// byte, ubyte, ubyte, ubyte
 name|SELECTION_CUBOID
 operator|=
 operator|new
@@ -1076,7 +1079,7 @@ name|class
 block|}
 argument_list|)
 expr_stmt|;
-comment|//last 4 are ubyte
+comment|// last 4 are ubyte
 name|REMOVE_SELECTION_CUBOID
 operator|=
 operator|new
@@ -1092,7 +1095,7 @@ name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-comment|//set names
+comment|// set names
 name|EXT_INFO
 operator|.
 name|extName
