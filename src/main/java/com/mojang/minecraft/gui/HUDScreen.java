@@ -43,18 +43,6 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
-name|PlayerListComparator
-import|;
-end_import
-
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
 name|PlayerListNameData
 import|;
 end_import
@@ -183,16 +171,6 @@ name|java
 operator|.
 name|util
 operator|.
-name|Collections
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
 name|List
 import|;
 end_import
@@ -217,10 +195,16 @@ name|Screen
 block|{
 specifier|public
 name|List
+argument_list|<
+name|ChatLine
+argument_list|>
 name|chat
 init|=
 operator|new
 name|ArrayList
+argument_list|<
+name|ChatLine
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -1923,6 +1907,9 @@ literal|2
 expr_stmt|;
 block|}
 name|List
+argument_list|<
+name|String
+argument_list|>
 name|playersOnWorld
 init|=
 name|this
@@ -2639,7 +2626,8 @@ operator|+
 literal|8
 condition|)
 block|{
-comment|// if your mouse if hovered over this name
+comment|// if your mouse if hovered over
+comment|// this name
 name|this
 operator|.
 name|hoveredPlayer
@@ -2693,6 +2681,9 @@ name|int
 name|Page
 parameter_list|,
 name|List
+argument_list|<
+name|PlayerListNameData
+argument_list|>
 name|playerListNames
 parameter_list|)
 block|{

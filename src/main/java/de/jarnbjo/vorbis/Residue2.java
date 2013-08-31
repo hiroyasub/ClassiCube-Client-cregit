@@ -25,16 +25,6 @@ end_import
 
 begin_import
 import|import
-name|java
-operator|.
-name|util
-operator|.
-name|*
-import|;
-end_import
-
-begin_import
-import|import
 name|de
 operator|.
 name|jarnbjo
@@ -134,29 +124,6 @@ name|vorbis
 argument_list|,
 name|mode
 argument_list|)
-decl_stmt|;
-name|CodeBook
-name|codeBook
-init|=
-name|vorbis
-operator|.
-name|getSetupHeader
-argument_list|()
-operator|.
-name|getCodeBooks
-argument_list|()
-index|[
-name|getClassBook
-argument_list|()
-index|]
-decl_stmt|;
-name|int
-name|classvalsPerCodeword
-init|=
-name|codeBook
-operator|.
-name|getDimensions
-argument_list|()
 decl_stmt|;
 name|int
 name|nToRead
@@ -353,7 +320,7 @@ operator|==
 literal|0
 condition|)
 block|{
-comment|//int temp=look.getPhraseBook().readInt(source);
+comment|// int temp=look.getPhraseBook().readInt(source);
 name|int
 name|temp
 init|=

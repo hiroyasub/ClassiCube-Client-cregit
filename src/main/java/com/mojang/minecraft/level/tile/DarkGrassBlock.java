@@ -29,22 +29,6 @@ end_import
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|level
-operator|.
-name|liquid
-operator|.
-name|LiquidType
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|util
@@ -266,7 +250,7 @@ name|var8
 argument_list|)
 condition|)
 block|{
-comment|//level.setTile(var6, var7, var8, DARKGRASS.id);
+comment|// level.setTile(var6, var7, var8, DARKGRASS.id);
 block|}
 block|}
 block|}

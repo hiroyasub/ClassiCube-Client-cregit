@@ -931,7 +931,7 @@ name|z1
 else|:
 literal|false
 block_content|)
-block|:false
+block|: false
 function|;
 block|}
 end_class
@@ -1121,12 +1121,12 @@ name|z1
 else|:
 literal|false
 block_content|)
-block|:false
+block|: false
 function|;
 end_function
 
 begin_function
-unit|}     public
+unit|}      public
 name|boolean
 name|contains
 parameter_list|(
@@ -1186,12 +1186,12 @@ name|z1
 else|:
 literal|false
 block_content|)
-block|:false
+block|: false
 function|;
 end_function
 
 begin_function
-unit|}     public
+unit|}      public
 name|float
 name|getSize
 parameter_list|()

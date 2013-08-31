@@ -44,7 +44,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading  * an Ogg stream from a URL. This class performs  *  no internal caching, and will not read data from the network before  *  requested to do so. It is intended to be used in non-realtime applications  *  like file download managers or similar.  */
+comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading an  * Ogg stream from a URL. This class performs no internal caching, and will not  * read data from the network before requested to do so. It is intended to be  * used in non-realtime applications like file download managers or similar.  */
 end_comment
 
 begin_class
@@ -69,29 +69,6 @@ name|InputStream
 name|sourceStream
 decl_stmt|;
 specifier|private
-name|Object
-name|drainLock
-init|=
-operator|new
-name|Object
-argument_list|()
-decl_stmt|;
-specifier|private
-name|LinkedList
-name|pageCache
-init|=
-operator|new
-name|LinkedList
-argument_list|()
-decl_stmt|;
-specifier|private
-name|long
-name|numberOfSamples
-init|=
-operator|-
-literal|1
-decl_stmt|;
-specifier|private
 name|int
 name|contentLength
 init|=
@@ -105,23 +82,25 @@ literal|0
 decl_stmt|;
 specifier|private
 name|HashMap
+argument_list|<
+name|Integer
+argument_list|,
+name|LogicalOggStreamImpl
+argument_list|>
 name|logicalStreams
 init|=
 operator|new
 name|HashMap
+argument_list|<
+name|Integer
+argument_list|,
+name|LogicalOggStreamImpl
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|private
 name|OggPage
 name|firstPage
-decl_stmt|;
-specifier|private
-specifier|static
-specifier|final
-name|int
-name|PAGECACHE_SIZE
-init|=
-literal|20
 decl_stmt|;
 specifier|public
 name|OnDemandUrlStream
@@ -186,11 +165,6 @@ operator|new
 name|LogicalOggStreamImpl
 argument_list|(
 name|this
-argument_list|,
-name|firstPage
-operator|.
-name|getStreamSerialNumber
-argument_list|()
 argument_list|)
 decl_stmt|;
 name|logicalStreams
@@ -219,6 +193,9 @@ expr_stmt|;
 block|}
 specifier|public
 name|Collection
+argument_list|<
+name|LogicalOggStreamImpl
+argument_list|>
 name|getLogicalStreams
 parameter_list|()
 block|{
@@ -333,30 +310,6 @@ name|page
 return|;
 block|}
 block|}
-specifier|private
-name|LogicalOggStream
-name|getLogicalStream
-parameter_list|(
-name|int
-name|serialNumber
-parameter_list|)
-block|{
-return|return
-operator|(
-name|LogicalOggStream
-operator|)
-name|logicalStreams
-operator|.
-name|get
-argument_list|(
-operator|new
-name|Integer
-argument_list|(
-name|serialNumber
-argument_list|)
-argument_list|)
-return|;
-block|}
 specifier|public
 name|void
 name|setTime
@@ -375,7 +328,7 @@ literal|"Method not supported by this class"
 argument_list|)
 throw|;
 block|}
-comment|/**  	 *  @return always<code>false</code> 	 */
+comment|/**      * @return always<code>false</code>      */
 specifier|public
 name|boolean
 name|isSeekable

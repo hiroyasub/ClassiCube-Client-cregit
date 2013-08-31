@@ -1311,6 +1311,9 @@ name|copy
 argument_list|()
 decl_stmt|;
 name|ArrayList
+argument_list|<
+name|AABB
+argument_list|>
 name|var10
 init|=
 name|this

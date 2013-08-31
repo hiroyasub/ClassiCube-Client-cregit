@@ -87,10 +87,20 @@ name|books
 decl_stmt|;
 specifier|protected
 name|HashMap
+argument_list|<
+name|Mode
+argument_list|,
+name|Look
+argument_list|>
 name|looks
 init|=
 operator|new
 name|HashMap
+argument_list|<
+name|Mode
+argument_list|,
+name|Look
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|protected
@@ -169,11 +179,6 @@ index|[
 name|classifications
 index|]
 expr_stmt|;
-name|int
-name|acc
-init|=
-literal|0
-decl_stmt|;
 for|for
 control|(
 name|int
@@ -237,18 +242,6 @@ literal|3
 operator|)
 operator||
 name|lowBits
-expr_stmt|;
-name|acc
-operator|+=
-name|Util
-operator|.
-name|icount
-argument_list|(
-name|cascade
-index|[
-name|i
-index|]
-argument_list|)
 expr_stmt|;
 block|}
 name|books
@@ -389,7 +382,7 @@ block|{
 case|case
 literal|0
 case|:
-comment|//System.out.println("residue type 0");
+comment|// System.out.println("residue type 0");
 return|return
 operator|new
 name|Residue0
@@ -402,7 +395,7 @@ return|;
 case|case
 literal|1
 case|:
-comment|//System.out.println("residue type 1");
+comment|// System.out.println("residue type 1");
 return|return
 operator|new
 name|Residue2
@@ -415,7 +408,7 @@ return|;
 case|case
 literal|2
 case|:
-comment|//System.out.println("residue type 2");
+comment|// System.out.println("residue type 2");
 return|return
 operator|new
 name|Residue2
@@ -476,7 +469,7 @@ name|VorbisFormatException
 throws|,
 name|IOException
 function_decl|;
-comment|//public abstract double[][] getDecodedVectors();
+comment|// public abstract double[][] getDecodedVectors();
 specifier|protected
 name|int
 name|getBegin
@@ -606,7 +599,7 @@ name|Mode
 name|key
 parameter_list|)
 block|{
-comment|//return new Look(source, key);
+comment|// return new Look(source, key);
 name|Look
 name|look
 init|=
@@ -704,10 +697,6 @@ parameter_list|)
 block|{
 name|int
 name|dim
-init|=
-literal|0
-decl_stmt|,
-name|acc
 init|=
 literal|0
 decl_stmt|,

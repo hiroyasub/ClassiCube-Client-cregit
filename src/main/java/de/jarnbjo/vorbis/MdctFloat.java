@@ -17,30 +17,6 @@ begin_class
 class|class
 name|MdctFloat
 block|{
-specifier|static
-specifier|private
-specifier|final
-name|float
-name|cPI3_8
-init|=
-literal|0.38268343236508977175f
-decl_stmt|;
-specifier|static
-specifier|private
-specifier|final
-name|float
-name|cPI2_8
-init|=
-literal|0.70710678118654752441f
-decl_stmt|;
-specifier|static
-specifier|private
-specifier|final
-name|float
-name|cPI1_8
-init|=
-literal|0.92387953251128675613f
-decl_stmt|;
 specifier|private
 name|int
 name|n
@@ -66,30 +42,6 @@ name|equalizer
 decl_stmt|;
 specifier|private
 name|float
-name|scale
-decl_stmt|;
-specifier|private
-name|int
-name|itmp1
-decl_stmt|,
-name|itmp2
-decl_stmt|,
-name|itmp3
-decl_stmt|,
-name|itmp4
-decl_stmt|,
-name|itmp5
-decl_stmt|,
-name|itmp6
-decl_stmt|,
-name|itmp7
-decl_stmt|,
-name|itmp8
-decl_stmt|,
-name|itmp9
-decl_stmt|;
-specifier|private
-name|float
 name|dtmp1
 decl_stmt|,
 name|dtmp2
@@ -97,16 +49,6 @@ decl_stmt|,
 name|dtmp3
 decl_stmt|,
 name|dtmp4
-decl_stmt|,
-name|dtmp5
-decl_stmt|,
-name|dtmp6
-decl_stmt|,
-name|dtmp7
-decl_stmt|,
-name|dtmp8
-decl_stmt|,
-name|dtmp9
 decl_stmt|;
 specifier|protected
 name|MdctFloat
@@ -137,13 +79,6 @@ operator|/
 literal|4
 index|]
 expr_stmt|;
-name|int
-name|n2
-init|=
-name|n
-operator|>>>
-literal|1
-decl_stmt|;
 name|log2n
 operator|=
 operator|(
@@ -558,7 +493,7 @@ operator|&
 name|mask
 operator|)
 expr_stmt|;
-comment|//	bitrev[i*2]=((~acc)&mask)-1;
+comment|// bitrev[i*2]=((~acc)&mask)-1;
 name|bitrev
 index|[
 name|i
@@ -572,17 +507,11 @@ name|acc
 expr_stmt|;
 block|}
 block|}
-name|scale
-operator|=
-literal|4.f
-operator|/
-name|n
-expr_stmt|;
 block|}
-comment|//void clear(){
-comment|//}
-comment|//void forward(float[] in, float[] out){
-comment|//}
+comment|// void clear(){
+comment|// }
+comment|// void forward(float[] in, float[] out){
+comment|// }
 specifier|private
 name|float
 index|[]
@@ -652,14 +581,14 @@ index|[]
 name|pcm
 parameter_list|)
 block|{
-comment|//, float[] out){
+comment|// , float[] out){
 name|float
 index|[]
 name|in
 init|=
 name|frq
 decl_stmt|;
-comment|//, out=buf;
+comment|// , out=buf;
 if|if
 condition|(
 name|_x
@@ -871,16 +800,16 @@ name|dtmp2
 operator|*
 name|dtmp4
 expr_stmt|;
-comment|//A-=2;
-comment|//x[xO++]=-in[inO+2]*trig[A+1] - in[inO]*trig[A];
-comment|//x[xO++]= in[inO]*trig[A+1] - in[inO+2]*trig[A];
-comment|//inO+=4;
+comment|// A-=2;
+comment|// x[xO++]=-in[inO+2]*trig[A+1] - in[inO]*trig[A];
+comment|// x[xO++]= in[inO]*trig[A+1] - in[inO+2]*trig[A];
+comment|// inO+=4;
 block|}
 name|inO
 operator|=
 name|n2
 expr_stmt|;
-comment|//-4;
+comment|// -4;
 for|for
 control|(
 name|i
@@ -957,10 +886,10 @@ name|dtmp1
 operator|*
 name|dtmp3
 expr_stmt|;
-comment|//A-=2;
-comment|//x[xO++]=in[inO]*trig[A+1] + in[inO+2]*trig[A];
-comment|//x[xO++]=in[inO]*trig[A] - in[inO+2]*trig[A+1];
-comment|//inO-=4;
+comment|// A-=2;
+comment|// x[xO++]=in[inO]*trig[A+1] + in[inO+2]*trig[A];
+comment|// x[xO++]=in[inO]*trig[A] - in[inO+2]*trig[A+1];
+comment|// inO-=4;
 block|}
 block|}
 name|float
@@ -1092,11 +1021,11 @@ operator|*
 name|dtmp4
 operator|)
 decl_stmt|;
-comment|/* 	         float temp1= (xxx[xx] * trig[B+1] - xxx[xx+1] * trig[B]);//*32767.0f; 	         float temp2=-(xxx[xx] * trig[B] + xxx[xx+1] * trig[B+1]);//*32767.0f;             */
-comment|//if(temp1>32767.0f) temp1=32767.0f;
-comment|//if(temp1<-32768.0f) temp1=-32768.0f;
-comment|//if(temp2>32767.0f) temp2=32767.0f;
-comment|//if(temp2<-32768.0f) temp2=-32768.0f;
+comment|/* 		 * float temp1= (xxx[xx] * trig[B+1] - xxx[xx+1] * 		 * trig[B]);//*32767.0f; float temp2=-(xxx[xx] * trig[B] + 		 * xxx[xx+1] * trig[B+1]);//*32767.0f; 		 */
+comment|// if(temp1>32767.0f) temp1=32767.0f;
+comment|// if(temp1<-32768.0f) temp1=-32768.0f;
+comment|// if(temp2>32767.0f) temp2=32767.0f;
+comment|// if(temp2<-32768.0f) temp2=-32768.0f;
 name|pcm
 index|[
 name|o1
@@ -1178,8 +1107,8 @@ expr_stmt|;
 name|o4
 operator|--
 expr_stmt|;
-comment|//xx+=2;
-comment|//B+=2;
+comment|// xx+=2;
+comment|// B+=2;
 block|}
 block|}
 block|}
@@ -1586,7 +1515,7 @@ name|wA
 operator|*
 name|AOv
 expr_stmt|;
-comment|/*                   wB     =w[w1]   -w[w2];                   x[w1]  =w[w1]   +w[w2];                    wA     =w[++w1] -w[++w2];                   x[w1]  =w[w1]   +w[w2];                    x[w2]  =wA*AEv  - wB*AOv;                   x[w2-1]=wB*AEv  + wA*AOv;                   */
+comment|/* 			 * wB =w[w1] -w[w2]; x[w1] =w[w1] +w[w2]; 			 *  			 * wA =w[++w1] -w[++w2]; x[w1] =w[w1] +w[w2]; 			 *  			 * x[w2] =wA*AEv - wB*AOv; x[w2-1]=wB*AEv + wA*AOv; 			 */
 name|w1
 operator|-=
 name|k0

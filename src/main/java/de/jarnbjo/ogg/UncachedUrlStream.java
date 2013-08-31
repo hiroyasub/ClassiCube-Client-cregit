@@ -44,7 +44,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  *  Implementation of the<code>PhysicalOggStream</code> interface for reading  *  an Ogg stream from a URL. This class performs only the necessary caching  *  to provide continous playback. Seeking within the stream is not supported.  */
+comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading an  * Ogg stream from a URL. This class performs only the necessary caching to  * provide continous playback. Seeking within the stream is not supported.  */
 end_comment
 
 begin_class
@@ -78,25 +78,34 @@ argument_list|()
 decl_stmt|;
 specifier|private
 name|LinkedList
+argument_list|<
+name|OggPage
+argument_list|>
 name|pageCache
 init|=
 operator|new
 name|LinkedList
+argument_list|<
+name|OggPage
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|private
-name|long
-name|numberOfSamples
-init|=
-operator|-
-literal|1
-decl_stmt|;
-specifier|private
 name|HashMap
+argument_list|<
+name|Integer
+argument_list|,
+name|LogicalOggStreamImpl
+argument_list|>
 name|logicalStreams
 init|=
 operator|new
 name|HashMap
+argument_list|<
+name|Integer
+argument_list|,
+name|LogicalOggStreamImpl
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -111,7 +120,7 @@ name|PAGECACHE_SIZE
 init|=
 literal|10
 decl_stmt|;
-comment|/** Creates an instance of the<code>PhysicalOggStream</code> interface 	 *  suitable for reading an Ogg stream from a URL.  	 */
+comment|/**      * Creates an instance of the<code>PhysicalOggStream</code> interface      * suitable for reading an Ogg stream from a URL.      */
 specifier|public
 name|UncachedUrlStream
 parameter_list|(
@@ -195,12 +204,15 @@ name|ex
 parameter_list|)
 block|{
 block|}
-comment|//System.out.print("caching "+pageCache.size()+"/"+PAGECACHE_SIZE+" pages\r");
+comment|// System.out.print("caching "+pageCache.size()+"/"+PAGECACHE_SIZE+" pages\r");
 block|}
-comment|//System.out.println();
+comment|// System.out.println();
 block|}
 specifier|public
 name|Collection
+argument_list|<
+name|LogicalOggStreamImpl
+argument_list|>
 name|getLogicalStreams
 parameter_list|()
 block|{
@@ -238,8 +250,8 @@ name|close
 argument_list|()
 expr_stmt|;
 block|}
-comment|/*    public long getCacheLength() {       return cacheLength;    }    */
-comment|/*    private OggPage getNextPage() throws EndOfOggStreamException, IOException, OggFormatException  {       return getNextPage(false);    }     private OggPage getNextPage(boolean skipData) throws EndOfOggStreamException, IOException, OggFormatException  {       return OggPage.create(sourceStream, skipData);    }    */
+comment|/*      * public long getCacheLength() { return cacheLength; }      */
+comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *       * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
 specifier|public
 name|OggPage
 name|getOggPage
@@ -283,9 +295,9 @@ init|(
 name|drainLock
 init|)
 block|{
-comment|//OggPage page=(OggPage)pageCache.getFirst();
-comment|//pageCache.removeFirst();
-comment|//return page;
+comment|// OggPage page=(OggPage)pageCache.getFirst();
+comment|// pageCache.removeFirst();
+comment|// return page;
 return|return
 operator|(
 name|OggPage
@@ -351,26 +363,16 @@ name|source
 decl_stmt|;
 specifier|private
 name|LinkedList
+argument_list|<
+name|OggPage
+argument_list|>
 name|pageCache
-decl_stmt|;
-specifier|private
-name|RandomAccessFile
-name|drain
-decl_stmt|;
-specifier|private
-name|byte
-index|[]
-name|memoryCache
 decl_stmt|;
 specifier|private
 name|boolean
 name|bosDone
 init|=
 literal|false
-decl_stmt|;
-specifier|private
-name|int
-name|pageNumber
 decl_stmt|;
 specifier|public
 name|LoaderThread
@@ -379,6 +381,9 @@ name|InputStream
 name|source
 parameter_list|,
 name|LinkedList
+argument_list|<
+name|OggPage
+argument_list|>
 name|pageCache
 parameter_list|)
 block|{
@@ -406,16 +411,6 @@ name|boolean
 name|eos
 init|=
 literal|false
-decl_stmt|;
-name|byte
-index|[]
-name|buffer
-init|=
-operator|new
-name|byte
-index|[
-literal|8192
-index|]
 decl_stmt|;
 while|while
 condition|(
@@ -502,11 +497,6 @@ argument_list|(
 name|UncachedUrlStream
 operator|.
 name|this
-argument_list|,
-name|op
-operator|.
-name|getStreamSerialNumber
-argument_list|()
 argument_list|)
 expr_stmt|;
 name|logicalStreams
@@ -533,11 +523,6 @@ name|op
 argument_list|)
 expr_stmt|;
 block|}
-comment|//los.addPageNumberMapping(pageNumber);
-comment|//los.addGranulePosition(op.getAbsoluteGranulePosition());
-name|pageNumber
-operator|++
-expr_stmt|;
 while|while
 condition|(
 name|pageCache
@@ -599,7 +584,7 @@ name|bosDone
 return|;
 block|}
 block|}
-comment|/**  	 *  @return always<code>false</code> 	 */
+comment|/**      * @return always<code>false</code>      */
 specifier|public
 name|boolean
 name|isSeekable

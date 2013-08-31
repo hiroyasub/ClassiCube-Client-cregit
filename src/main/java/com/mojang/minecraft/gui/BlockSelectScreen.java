@@ -627,7 +627,7 @@ operator|==
 name|var2
 condition|)
 block|{
-comment|//lastRotation += 0.7F;
+comment|// lastRotation += 0.7F;
 name|GL11
 operator|.
 name|glScalef

@@ -25,16 +25,6 @@ end_import
 
 begin_import
 import|import
-name|java
-operator|.
-name|util
-operator|.
-name|*
-import|;
-end_import
-
-begin_import
-import|import
 name|de
 operator|.
 name|jarnbjo
@@ -87,16 +77,6 @@ decl_stmt|;
 specifier|private
 name|AudioPacket
 name|lastAudioPacket
-decl_stmt|,
-name|nextAudioPacket
-decl_stmt|;
-specifier|private
-name|LinkedList
-name|audioPackets
-init|=
-operator|new
-name|LinkedList
-argument_list|()
 decl_stmt|;
 specifier|private
 name|byte
@@ -136,39 +116,12 @@ init|=
 literal|5
 decl_stmt|;
 specifier|private
-name|int
-name|bitIndex
-init|=
-literal|0
-decl_stmt|;
-specifier|private
-name|byte
-name|lastByte
-init|=
-operator|(
-name|byte
-operator|)
-literal|0
-decl_stmt|;
-specifier|private
-name|boolean
-name|initialized
-init|=
-literal|false
-decl_stmt|;
-specifier|private
 name|Object
 name|streamLock
 init|=
 operator|new
 name|Object
 argument_list|()
-decl_stmt|;
-specifier|private
-name|int
-name|pageCounter
-init|=
-literal|0
 decl_stmt|;
 specifier|private
 name|int
@@ -345,7 +298,7 @@ literal|"The file has no setup header."
 argument_list|)
 throw|;
 block|}
-comment|//currentPcm=new int[identificationHeader.getChannels()][16384];
+comment|// currentPcm=new int[identificationHeader.getChannels()][16384];
 name|currentPcm
 operator|=
 operator|new
@@ -364,7 +317,7 @@ operator|*
 literal|2
 index|]
 expr_stmt|;
-comment|//new BufferThread().start();
+comment|// new BufferThread().start();
 block|}
 specifier|public
 name|IdentificationHeader
@@ -440,15 +393,11 @@ init|(
 name|streamLock
 init|)
 block|{
-specifier|final
-name|int
-name|channels
-init|=
 name|identificationHeader
 operator|.
 name|getChannels
 argument_list|()
-decl_stmt|;
+expr_stmt|;
 if|if
 condition|(
 name|lastAudioPacket
@@ -592,9 +541,6 @@ name|VorbisFormatException
 throws|,
 name|IOException
 block|{
-name|pageCounter
-operator|++
-expr_stmt|;
 name|byte
 index|[]
 name|data

@@ -79,7 +79,7 @@ block|{
 case|case
 literal|0
 case|:
-comment|//System.out.println("mapping type 0");
+comment|// System.out.println("mapping type 0");
 return|return
 operator|new
 name|Mapping0

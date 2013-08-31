@@ -25,16 +25,6 @@ end_import
 
 begin_import
 import|import
-name|java
-operator|.
-name|util
-operator|.
-name|*
-import|;
-end_import
-
-begin_import
-import|import
 name|de
 operator|.
 name|jarnbjo
@@ -471,7 +461,7 @@ operator|=
 name|getComputedWindow
 argument_list|()
 expr_stmt|;
-comment|//new double[n];
+comment|// new double[n];
 name|channelFloors
 operator|=
 operator|new
@@ -666,19 +656,6 @@ literal|false
 expr_stmt|;
 block|}
 block|}
-name|Residue
-index|[]
-name|decodedResidues
-init|=
-operator|new
-name|Residue
-index|[
-name|mapping
-operator|.
-name|getSubmaps
-argument_list|()
-index|]
-decl_stmt|;
 for|for
 control|(
 name|int
@@ -810,15 +787,6 @@ name|i
 operator|--
 control|)
 block|{
-name|double
-name|newA
-init|=
-literal|0
-decl_stmt|,
-name|newM
-init|=
-literal|0
-decl_stmt|;
 specifier|final
 name|float
 index|[]
@@ -885,7 +853,7 @@ operator|>
 literal|0
 condition|)
 block|{
-comment|//magnitudeVector[j]=m;
+comment|// magnitudeVector[j]=m;
 name|angleVector
 index|[
 name|j

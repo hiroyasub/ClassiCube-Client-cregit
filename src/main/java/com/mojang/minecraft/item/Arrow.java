@@ -623,6 +623,9 @@ literal|true
 expr_stmt|;
 block|}
 name|List
+argument_list|<
+name|Entity
+argument_list|>
 name|blockMapEntitiesList
 init|=
 name|level
