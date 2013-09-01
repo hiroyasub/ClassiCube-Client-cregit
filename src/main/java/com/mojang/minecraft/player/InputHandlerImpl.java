@@ -47,6 +47,18 @@ name|Keyboard
 import|;
 end_import
 
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|input
+operator|.
+name|Mouse
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
@@ -74,6 +86,14 @@ name|updateMovement
 parameter_list|()
 block|{
 comment|// wow this shouldn't be neccesary.
+if|if
+condition|(
+name|Mouse
+operator|.
+name|isGrabbed
+argument_list|()
+condition|)
+block|{
 name|keyStates
 index|[
 literal|0
@@ -171,6 +191,7 @@ name|key
 argument_list|)
 expr_stmt|;
 comment|// this also apparently fixes the mouse bug? such confusion.
+block|}
 name|xxa
 operator|=
 literal|0.0F
