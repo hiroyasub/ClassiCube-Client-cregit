@@ -95,6 +95,28 @@ end_import
 
 begin_import
 import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|LWJGLException
+import|;
+end_import
+
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
+name|AWTGLCanvas
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|awt
@@ -199,6 +221,8 @@ name|String
 index|[]
 name|args
 parameter_list|)
+throws|throws
+name|LWJGLException
 block|{
 name|MinecraftStandalone
 name|minecraftStandalone
@@ -219,11 +243,13 @@ name|MinecraftStandalone
 parameter_list|()
 block|{
 block|}
-comment|/**      * Start Minecraft Classic.      */
+comment|/**      * Start Minecraft Classic.      * @throws LWJGLException       */
 specifier|public
 name|void
 name|startMinecraft
 parameter_list|()
+throws|throws
+name|LWJGLException
 block|{
 name|MinecraftFrame
 name|minecraftFrame
@@ -313,11 +339,13 @@ specifier|private
 name|Minecraft
 name|minecraft
 decl_stmt|;
-comment|/** 	 * Start Minecraft Classic. 	 */
+comment|/** 	 * Start Minecraft Classic. 	 * @throws LWJGLException  	 */
 specifier|public
 name|void
 name|startMinecraft
 parameter_list|()
+throws|throws
+name|LWJGLException
 block|{
 name|boolean
 name|RunFakeNetwork
@@ -332,11 +360,11 @@ name|MCraftApplet
 argument_list|()
 decl_stmt|;
 specifier|final
-name|MinecraftCanvas
+name|AWTGLCanvas
 name|canvas
 init|=
 operator|new
-name|MinecraftCanvas
+name|AWTGLCanvas
 argument_list|()
 decl_stmt|;
 name|minecraft
@@ -423,13 +451,7 @@ operator|=
 literal|25566
 expr_stmt|;
 block|}
-name|canvas
-operator|.
-name|setMinecraft
-argument_list|(
-name|minecraft
-argument_list|)
-expr_stmt|;
+comment|//canvas.setMinecraft(minecraft);
 name|canvas
 operator|.
 name|setSize
