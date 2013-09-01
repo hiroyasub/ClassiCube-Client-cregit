@@ -395,13 +395,7 @@ operator|>=
 literal|0
 condition|)
 block|{
-name|keyStates
-index|[
-name|index
-index|]
-operator|=
-name|state
-expr_stmt|;
+comment|//keyStates[index] = state;
 block|}
 block|}
 specifier|private
