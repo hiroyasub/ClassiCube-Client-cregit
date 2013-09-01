@@ -587,18 +587,6 @@ name|lwjgl
 operator|.
 name|opengl
 operator|.
-name|AWTGLCanvas
-import|;
-end_import
-
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
-name|opengl
-operator|.
 name|Display
 import|;
 end_import
@@ -804,7 +792,7 @@ name|String
 name|host
 decl_stmt|;
 specifier|public
-name|AWTGLCanvas
+name|Canvas
 name|canvas
 decl_stmt|;
 specifier|public
@@ -1034,7 +1022,7 @@ decl_stmt|;
 specifier|public
 name|Minecraft
 parameter_list|(
-name|AWTGLCanvas
+name|Canvas
 name|var1
 parameter_list|,
 name|MinecraftApplet
