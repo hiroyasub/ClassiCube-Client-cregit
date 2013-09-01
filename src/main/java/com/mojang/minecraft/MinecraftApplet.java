@@ -59,6 +59,28 @@ name|URL
 import|;
 end_import
 
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|LWJGLException
+import|;
+end_import
+
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
+name|AWTGLCanvas
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
@@ -75,7 +97,7 @@ init|=
 literal|1L
 decl_stmt|;
 specifier|private
-name|Canvas
+name|AWTGLCanvas
 name|canvas
 decl_stmt|;
 specifier|private
@@ -155,6 +177,8 @@ name|void
 name|init
 parameter_list|()
 block|{
+try|try
+block|{
 name|canvas
 operator|=
 operator|new
@@ -163,6 +187,20 @@ argument_list|(
 name|this
 argument_list|)
 expr_stmt|;
+block|}
+catch|catch
+parameter_list|(
+name|LWJGLException
+name|e
+parameter_list|)
+block|{
+comment|// TODO Auto-generated catch block
+name|e
+operator|.
+name|printStackTrace
+argument_list|()
+expr_stmt|;
+block|}
 name|boolean
 name|fullscreen
 init|=
