@@ -12217,19 +12217,8 @@ operator|!=
 literal|2
 condition|)
 block|{
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Reading Packet: "
-operator|+
-name|packetType
-operator|.
-name|opcode
-argument_list|)
-expr_stmt|;
+comment|//System.out.println("Reading Packet: "
+comment|//    + packetType.opcode);
 block|}
 name|networkHandler
 operator|.
@@ -12300,20 +12289,8 @@ operator|!=
 literal|2
 condition|)
 block|{
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Reading object: "
-operator|+
-name|packetParams
-index|[
-name|i
-index|]
-argument_list|)
-expr_stmt|;
+comment|//System.out.println("Reading object: "
+comment|//	+ packetParams[i]);
 block|}
 block|}
 name|NetworkManager
@@ -12648,34 +12625,10 @@ argument_list|,
 name|toSendParams
 argument_list|)
 expr_stmt|;
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Sent: "
-operator|+
-name|temp
-operator|.
-name|get
-argument_list|(
-name|k
-argument_list|)
-operator|.
-name|Name
-argument_list|)
-expr_stmt|;
+comment|//System.out.println("Sent: "
+comment|//	+ temp.get(k).Name);
 block|}
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Done"
-argument_list|)
-expr_stmt|;
+comment|//System.out.println("Done");
 block|}
 block|}
 if|else if
@@ -13682,15 +13635,8 @@ operator|.
 name|CUSTOM_BLOCK_SUPPORT_LEVEL
 condition|)
 block|{
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Custom block packet"
-argument_list|)
-expr_stmt|;
+comment|//System.out
+comment|//	.println("Custom block packet");
 name|byte
 name|SupportLevel
 init|=
