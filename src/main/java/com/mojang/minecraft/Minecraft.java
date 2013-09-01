@@ -3691,38 +3691,6 @@ name|this
 operator|.
 name|renderer
 decl_stmt|;
-if|if
-condition|(
-name|this
-operator|.
-name|renderer
-operator|.
-name|displayActive
-operator|&&
-operator|!
-name|Display
-operator|.
-name|isActive
-argument_list|()
-condition|)
-block|{
-name|renderer
-operator|.
-name|minecraft
-operator|.
-name|pause
-argument_list|()
-expr_stmt|;
-block|}
-name|renderer
-operator|.
-name|displayActive
-operator|=
-name|Display
-operator|.
-name|isActive
-argument_list|()
-expr_stmt|;
 name|int
 name|var68
 decl_stmt|;
@@ -10664,6 +10632,38 @@ operator|.
 name|update
 argument_list|()
 expr_stmt|;
+if|if
+condition|(
+name|this
+operator|.
+name|renderer
+operator|.
+name|displayActive
+operator|&&
+operator|!
+name|Display
+operator|.
+name|isActive
+argument_list|()
+condition|)
+block|{
+name|renderer
+operator|.
+name|minecraft
+operator|.
+name|pause
+argument_list|()
+expr_stmt|;
+block|}
+name|renderer
+operator|.
+name|displayActive
+operator|=
+name|Display
+operator|.
+name|isActive
+argument_list|()
+expr_stmt|;
 block|}
 block|}
 if|if
@@ -12202,24 +12202,6 @@ argument_list|()
 expr_stmt|;
 break|break;
 block|}
-if|if
-condition|(
-name|packetType
-operator|.
-name|opcode
-operator|!=
-literal|8
-operator|&&
-name|packetType
-operator|.
-name|opcode
-operator|!=
-literal|2
-condition|)
-block|{
-comment|//System.out.println("Reading Packet: "
-comment|//    + packetType.opcode);
-block|}
 name|networkHandler
 operator|.
 name|in
@@ -12274,24 +12256,6 @@ name|i
 index|]
 argument_list|)
 expr_stmt|;
-if|if
-condition|(
-name|packetType
-operator|.
-name|opcode
-operator|!=
-literal|8
-operator|&&
-name|packetType
-operator|.
-name|opcode
-operator|!=
-literal|2
-condition|)
-block|{
-comment|//System.out.println("Reading object: "
-comment|//	+ packetParams[i]);
-block|}
 block|}
 name|NetworkManager
 name|networkManager
@@ -12340,11 +12304,21 @@ index|[
 literal|1
 index|]
 decl_stmt|;
-comment|//System.out
-comment|//	.println("Connecting to AppName: "
-comment|//		+ AppName
-comment|//		+ " with extension count: "
-comment|//		+ ExtensionCount);
+name|System
+operator|.
+name|out
+operator|.
+name|println
+argument_list|(
+literal|"Connecting to AppName: "
+operator|+
+name|AppName
+operator|+
+literal|" with extension count: "
+operator|+
+name|ExtensionCount
+argument_list|)
+expr_stmt|;
 name|recievedExtensionLength
 operator|=
 name|ExtensionCount
@@ -12615,10 +12589,7 @@ argument_list|,
 name|toSendParams
 argument_list|)
 expr_stmt|;
-comment|//System.out.println("Sent: "
-comment|//	+ temp.get(k).Name);
 block|}
-comment|//System.out.println("Done");
 block|}
 block|}
 if|else if

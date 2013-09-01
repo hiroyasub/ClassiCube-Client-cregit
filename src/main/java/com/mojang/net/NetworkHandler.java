@@ -435,8 +435,6 @@ modifier|...
 name|var2
 parameter_list|)
 block|{
-comment|//if (var1.opcode != 8&& var1.opcode != 2&& var1.opcode != 3)
-comment|//System.out.println("Sending Packet: " + var1.opcode);
 if|if
 condition|(
 name|this
