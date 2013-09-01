@@ -435,39 +435,8 @@ modifier|...
 name|var2
 parameter_list|)
 block|{
-if|if
-condition|(
-name|var1
-operator|.
-name|opcode
-operator|!=
-literal|8
-operator|&&
-name|var1
-operator|.
-name|opcode
-operator|!=
-literal|2
-operator|&&
-name|var1
-operator|.
-name|opcode
-operator|!=
-literal|3
-condition|)
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Sending Packet: "
-operator|+
-name|var1
-operator|.
-name|opcode
-argument_list|)
-expr_stmt|;
+comment|//if (var1.opcode != 8&& var1.opcode != 2&& var1.opcode != 3)
+comment|//System.out.println("Sending Packet: " + var1.opcode);
 if|if
 condition|(
 name|this
