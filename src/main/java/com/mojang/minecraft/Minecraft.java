@@ -1421,6 +1421,12 @@ operator|.
 name|setIngameFocus
 argument_list|()
 expr_stmt|;
+name|this
+operator|.
+name|hasMouse
+operator|=
+literal|true
+expr_stmt|;
 block|}
 block|}
 block|}
