@@ -322,7 +322,7 @@ block|{
 name|boolean
 name|RunFakeNetwork
 init|=
-literal|false
+literal|true
 decl_stmt|;
 name|MCraftApplet
 name|applet
@@ -389,7 +389,7 @@ operator|=
 operator|new
 name|SessionData
 argument_list|(
-literal|"Scoot1"
+literal|"Jonty800"
 argument_list|,
 literal|"noidea"
 argument_list|)
