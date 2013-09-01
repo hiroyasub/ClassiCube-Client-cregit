@@ -12590,15 +12590,6 @@ name|toSendParams
 argument_list|)
 expr_stmt|;
 block|}
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Done"
-argument_list|)
-expr_stmt|;
 block|}
 block|}
 if|else if
@@ -13605,15 +13596,8 @@ operator|.
 name|CUSTOM_BLOCK_SUPPORT_LEVEL
 condition|)
 block|{
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Custom block packet"
-argument_list|)
-expr_stmt|;
+comment|//System.out
+comment|//	.println("Custom block packet");
 name|byte
 name|SupportLevel
 init|=
