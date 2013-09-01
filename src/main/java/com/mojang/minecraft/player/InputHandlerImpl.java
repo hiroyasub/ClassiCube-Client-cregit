@@ -87,6 +87,7 @@ name|settings
 operator|.
 name|forwardKey
 argument_list|)
+expr_stmt|;
 name|keystate
 index|[
 literal|1
@@ -100,6 +101,7 @@ name|settings
 operator|.
 name|backKey
 argument_list|)
+expr_stmt|;
 name|keystate
 index|[
 literal|2
@@ -113,6 +115,7 @@ name|settings
 operator|.
 name|leftkey
 argument_list|)
+expr_stmt|;
 name|keystate
 index|[
 literal|3
@@ -126,6 +129,7 @@ name|settings
 operator|.
 name|rightKey
 argument_list|)
+expr_stmt|;
 name|keystate
 index|[
 literal|4
@@ -139,6 +143,7 @@ name|settings
 operator|.
 name|jumpKey
 argument_list|)
+expr_stmt|;
 name|keystate
 index|[
 literal|5
@@ -152,6 +157,7 @@ name|settings
 operator|.
 name|runKey
 argument_list|)
+expr_stmt|;
 name|xxa
 operator|=
 literal|0.0F
@@ -395,7 +401,13 @@ operator|>=
 literal|0
 condition|)
 block|{
-comment|//keyStates[index] = state;
+name|keyStates
+index|[
+name|index
+index|]
+operator|=
+name|state
+expr_stmt|;
 block|}
 block|}
 specifier|private
