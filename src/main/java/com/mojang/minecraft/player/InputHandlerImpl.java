@@ -74,7 +74,7 @@ name|updateMovement
 parameter_list|()
 block|{
 comment|// wow this shouldn't be neccesary.
-name|keystate
+name|keyStates
 index|[
 literal|0
 index|]
@@ -86,9 +86,11 @@ argument_list|(
 name|settings
 operator|.
 name|forwardKey
+operator|.
+name|key
 argument_list|)
 expr_stmt|;
-name|keystate
+name|keyStates
 index|[
 literal|1
 index|]
@@ -100,9 +102,11 @@ argument_list|(
 name|settings
 operator|.
 name|backKey
+operator|.
+name|key
 argument_list|)
 expr_stmt|;
-name|keystate
+name|keyStates
 index|[
 literal|2
 index|]
@@ -113,10 +117,12 @@ name|isKeyDown
 argument_list|(
 name|settings
 operator|.
-name|leftkey
+name|leftKey
+operator|.
+name|key
 argument_list|)
 expr_stmt|;
-name|keystate
+name|keyStates
 index|[
 literal|3
 index|]
@@ -128,9 +134,11 @@ argument_list|(
 name|settings
 operator|.
 name|rightKey
+operator|.
+name|key
 argument_list|)
 expr_stmt|;
-name|keystate
+name|keyStates
 index|[
 literal|4
 index|]
@@ -142,9 +150,11 @@ argument_list|(
 name|settings
 operator|.
 name|jumpKey
+operator|.
+name|key
 argument_list|)
 expr_stmt|;
-name|keystate
+name|keyStates
 index|[
 literal|5
 index|]
@@ -156,8 +166,11 @@ argument_list|(
 name|settings
 operator|.
 name|runKey
+operator|.
+name|key
 argument_list|)
 expr_stmt|;
+comment|// this also apparently fixes the mouse bug? such confusion.
 name|xxa
 operator|=
 literal|0.0F
