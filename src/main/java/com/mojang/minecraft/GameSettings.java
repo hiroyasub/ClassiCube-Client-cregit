@@ -275,7 +275,7 @@ specifier|public
 name|boolean
 name|limitFramerate
 init|=
-literal|false
+literal|true
 decl_stmt|;
 specifier|public
 name|KeyBinding
