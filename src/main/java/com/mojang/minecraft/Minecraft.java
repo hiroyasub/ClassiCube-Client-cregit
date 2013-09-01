@@ -12340,21 +12340,11 @@ index|[
 literal|1
 index|]
 decl_stmt|;
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Connecting to AppName: "
-operator|+
-name|AppName
-operator|+
-literal|" with extension count: "
-operator|+
-name|ExtensionCount
-argument_list|)
-expr_stmt|;
+comment|//System.out
+comment|//	.println("Connecting to AppName: "
+comment|//		+ AppName
+comment|//		+ " with extension count: "
+comment|//		+ ExtensionCount);
 name|recievedExtensionLength
 operator|=
 name|ExtensionCount
