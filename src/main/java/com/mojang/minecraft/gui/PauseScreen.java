@@ -150,7 +150,7 @@ literal|4
 operator|+
 literal|72
 argument_list|,
-literal|"Load level.."
+literal|"Change texture pack.."
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -212,7 +212,7 @@ operator|)
 operator|.
 name|active
 operator|=
-literal|false
+literal|true
 expr_stmt|;
 operator|(
 operator|(
@@ -230,7 +230,7 @@ operator|)
 operator|.
 name|active
 operator|=
-literal|false
+literal|true
 expr_stmt|;
 block|}
 if|if
@@ -278,7 +278,7 @@ operator|)
 operator|.
 name|active
 operator|=
-literal|false
+literal|true
 expr_stmt|;
 operator|(
 operator|(
@@ -296,7 +296,7 @@ operator|)
 operator|.
 name|active
 operator|=
-literal|false
+literal|true
 expr_stmt|;
 block|}
 block|}
@@ -363,17 +363,6 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|this
-operator|.
-name|minecraft
-operator|.
-name|session
-operator|!=
-literal|null
-condition|)
-block|{
-if|if
-condition|(
 name|var1
 operator|.
 name|id
@@ -411,13 +400,12 @@ operator|.
 name|setCurrentScreen
 argument_list|(
 operator|new
-name|LoadLevelScreen
+name|TextureSelectionScreen
 argument_list|(
 name|this
 argument_list|)
 argument_list|)
 expr_stmt|;
-block|}
 block|}
 if|if
 condition|(

@@ -2598,6 +2598,14 @@ operator|.
 name|textureManager
 argument_list|)
 expr_stmt|;
+name|this
+operator|.
+name|HackState
+operator|=
+name|HackState
+operator|.
+name|HacksTagEnabled
+expr_stmt|;
 name|IntBuffer
 name|var9
 decl_stmt|;
