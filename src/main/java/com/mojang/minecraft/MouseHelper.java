@@ -38,16 +38,6 @@ specifier|public
 class|class
 name|MouseHelper
 block|{
-comment|/** Mouse delta X this frame */
-specifier|public
-name|int
-name|deltaX
-decl_stmt|;
-comment|/** Mouse delta Y this frame */
-specifier|public
-name|int
-name|deltaY
-decl_stmt|;
 comment|/**      * Grabs the mouse cursor it doesn't move and isn't seen.      */
 specifier|public
 name|void
@@ -60,18 +50,6 @@ name|setGrabbed
 argument_list|(
 literal|true
 argument_list|)
-expr_stmt|;
-name|this
-operator|.
-name|deltaX
-operator|=
-literal|0
-expr_stmt|;
-name|this
-operator|.
-name|deltaY
-operator|=
-literal|0
 expr_stmt|;
 block|}
 comment|/**      * Ungrabs the mouse cursor so it can be moved and set it to the center of the screen      */
@@ -105,30 +83,6 @@ name|setGrabbed
 argument_list|(
 literal|false
 argument_list|)
-expr_stmt|;
-block|}
-specifier|public
-name|void
-name|mouseXYChange
-parameter_list|()
-block|{
-name|this
-operator|.
-name|deltaX
-operator|=
-name|Mouse
-operator|.
-name|getDX
-argument_list|()
-expr_stmt|;
-name|this
-operator|.
-name|deltaY
-operator|=
-name|Mouse
-operator|.
-name|getDY
-argument_list|()
 expr_stmt|;
 block|}
 block|}
