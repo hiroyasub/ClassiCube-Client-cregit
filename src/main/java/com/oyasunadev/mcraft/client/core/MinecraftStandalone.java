@@ -491,11 +491,6 @@ name|int
 name|Port
 parameter_list|)
 block|{
-name|boolean
-name|RunFakeNetwork
-init|=
-literal|false
-decl_stmt|;
 name|MCraftApplet
 name|applet
 init|=
@@ -571,6 +566,11 @@ name|port
 operator|=
 name|Port
 expr_stmt|;
+name|boolean
+name|RunFakeNetwork
+init|=
+literal|true
+decl_stmt|;
 if|if
 condition|(
 name|RunFakeNetwork
