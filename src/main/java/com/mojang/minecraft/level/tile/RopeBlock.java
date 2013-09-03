@@ -41,12 +41,12 @@ begin_class
 specifier|public
 specifier|final
 class|class
-name|SaplingBlock
+name|RopeBlock
 extends|extends
 name|FlowerBlock
 block|{
 specifier|protected
-name|SaplingBlock
+name|RopeBlock
 parameter_list|(
 name|int
 name|var1
@@ -65,7 +65,7 @@ expr_stmt|;
 name|float
 name|var3
 init|=
-literal|0.4F
+literal|0.3F
 decl_stmt|;
 name|this
 operator|.
@@ -87,7 +87,7 @@ literal|0.5F
 argument_list|,
 name|var3
 operator|*
-literal|2.0F
+literal|3.0F
 argument_list|,
 name|var3
 operator|+

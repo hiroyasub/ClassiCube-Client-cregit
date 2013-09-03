@@ -171,7 +171,7 @@ literal|6
 operator|+
 literal|120
 operator|+
-literal|12
+literal|26
 argument_list|,
 literal|"Controls..."
 argument_list|)

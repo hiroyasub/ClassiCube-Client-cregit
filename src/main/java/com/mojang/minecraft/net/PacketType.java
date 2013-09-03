@@ -441,6 +441,13 @@ name|CHANGE_MODEL
 decl_stmt|;
 comment|// 29
 specifier|public
+specifier|static
+specifier|final
+name|PacketType
+name|ENV_SET_MAP_APPEARANCE
+decl_stmt|;
+comment|//30
+specifier|public
 name|int
 name|length
 decl_stmt|;
@@ -973,10 +980,6 @@ name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-comment|// check
-comment|// [0]
-comment|// unsigned
-comment|// byte
 name|EXT_ADD_ENTITY
 operator|=
 operator|new
@@ -1000,7 +1003,6 @@ name|class
 block|}
 argument_list|)
 expr_stmt|;
-comment|// check [0] unsigned byte
 name|EXT_REMOVE_PLAYER_NAME
 operator|=
 operator|new
@@ -1029,21 +1031,20 @@ name|Byte
 operator|.
 name|TYPE
 block|,
-name|Byte
+name|Integer
 operator|.
 name|TYPE
 block|,
-name|Byte
+name|Integer
 operator|.
 name|TYPE
 block|,
-name|Byte
+name|Integer
 operator|.
 name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-comment|// byte, ubyte, ubyte, ubyte
 name|SELECTION_CUBOID
 operator|=
 operator|new
@@ -1085,25 +1086,24 @@ name|Short
 operator|.
 name|TYPE
 block|,
-name|Byte
+name|Integer
 operator|.
-name|class
+name|TYPE
 block|,
-name|Byte
+name|Integer
 operator|.
-name|class
+name|TYPE
 block|,
-name|Byte
+name|Integer
 operator|.
-name|class
+name|TYPE
 block|,
-name|Byte
+name|Integer
 operator|.
-name|class
+name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
-comment|// last 4 are ubyte
 name|REMOVE_SELECTION_CUBOID
 operator|=
 operator|new
@@ -1158,6 +1158,33 @@ block|,
 name|String
 operator|.
 name|class
+block|}
+argument_list|)
+expr_stmt|;
+name|ENV_SET_MAP_APPEARANCE
+operator|=
+operator|new
+name|PacketType
+argument_list|(
+operator|new
+name|Class
+index|[]
+block|{
+name|String
+operator|.
+name|class
+block|,
+name|Byte
+operator|.
+name|TYPE
+block|,
+name|Byte
+operator|.
+name|TYPE
+block|,
+name|Short
+operator|.
+name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
@@ -1245,6 +1272,12 @@ operator|.
 name|extName
 operator|=
 literal|"ChangeModel"
+expr_stmt|;
+name|ENV_SET_MAP_APPEARANCE
+operator|.
+name|extName
+operator|=
+literal|"EnvSetMapAppearance"
 expr_stmt|;
 name|nextOpcode
 operator|=

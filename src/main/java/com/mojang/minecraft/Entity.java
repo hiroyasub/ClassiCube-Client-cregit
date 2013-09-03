@@ -2507,7 +2507,7 @@ return|;
 block|}
 specifier|public
 name|boolean
-name|isInSpiderWeb
+name|isInOrOnRope
 parameter_list|()
 block|{
 return|return
@@ -2533,7 +2533,7 @@ argument_list|)
 argument_list|,
 name|Block
 operator|.
-name|WEB
+name|ROPE
 argument_list|)
 return|;
 block|}
