@@ -59,6 +59,12 @@ init|=
 literal|false
 decl_stmt|;
 specifier|public
+name|boolean
+name|noClip
+init|=
+literal|false
+decl_stmt|;
+specifier|public
 name|void
 name|updateMovement
 parameter_list|()

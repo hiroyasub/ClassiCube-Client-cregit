@@ -2636,6 +2636,14 @@ operator|.
 name|textureManager
 argument_list|)
 expr_stmt|;
+if|if
+condition|(
+name|this
+operator|.
+name|session
+operator|==
+literal|null
+condition|)
 name|this
 operator|.
 name|HackState
