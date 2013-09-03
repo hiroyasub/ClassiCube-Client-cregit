@@ -262,7 +262,7 @@ operator|.
 name|size
 argument_list|()
 operator|>=
-literal|5
+literal|1
 condition|)
 block|{
 name|this
@@ -286,16 +286,7 @@ name|this
 operator|.
 name|status
 operator|=
-name|this
-operator|.
-name|textures
-operator|.
-name|get
-argument_list|(
-literal|0
-argument_list|)
-operator|.
-name|location
+literal|"Finished loading textures"
 expr_stmt|;
 name|this
 operator|.
@@ -355,6 +346,7 @@ operator|++
 name|var2
 control|)
 block|{
+comment|//take first 5 only
 operator|(
 operator|(
 name|Button
@@ -631,7 +623,12 @@ name|var1
 operator|.
 name|id
 operator|<
-literal|5
+name|this
+operator|.
+name|textures
+operator|.
+name|size
+argument_list|()
 condition|)
 block|{
 name|this
@@ -682,6 +679,8 @@ operator|new
 name|TextureDialog
 argument_list|(
 name|this
+argument_list|,
+name|minecraft
 argument_list|)
 operator|)
 operator|.
@@ -804,15 +803,6 @@ name|printStackTrace
 argument_list|()
 expr_stmt|;
 block|}
-name|this
-operator|.
-name|minecraft
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
-expr_stmt|;
 name|this
 operator|.
 name|minecraft
@@ -1038,7 +1028,6 @@ operator|!=
 literal|null
 condition|)
 block|{
-comment|//this.openTexture(this.selectedFile);
 name|this
 operator|.
 name|selectedFile

@@ -92,7 +92,7 @@ literal|0.0F
 argument_list|,
 literal|1.0F
 argument_list|,
-literal|0.25F
+literal|0.20F
 argument_list|,
 literal|1.0F
 argument_list|)
