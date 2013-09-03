@@ -788,9 +788,13 @@ if|else if
 condition|(
 name|this
 operator|.
+name|jumping
+operator|&&
+name|this
+operator|.
 name|mob
 operator|.
-name|isInSpiderWeb
+name|isInOrOnRope
 argument_list|()
 condition|)
 block|{
@@ -802,7 +806,7 @@ name|mob
 operator|.
 name|yd
 operator|>
-literal|0.01f
+literal|0.02f
 condition|)
 name|this
 operator|.
@@ -810,7 +814,7 @@ name|mob
 operator|.
 name|yd
 operator|=
-literal|0.01F
+literal|0.02F
 expr_stmt|;
 block|}
 block|}
@@ -831,11 +835,11 @@ name|isInLava
 argument_list|()
 decl_stmt|;
 name|boolean
-name|isInSpiderWeb
+name|isInOrOnRope
 init|=
 name|var2
 operator|.
-name|isInSpiderWeb
+name|isInOrOnRope
 argument_list|()
 decl_stmt|;
 if|if
@@ -896,14 +900,26 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|isInSpiderWeb
+name|isInOrOnRope
 condition|)
 block|{
+if|if
+condition|(
+operator|!
+name|running
+condition|)
 name|var2
 operator|.
 name|yd
 operator|+=
-literal|0.06F
+literal|0.1F
+expr_stmt|;
+else|else
+name|var2
+operator|.
+name|yd
+operator|+=
+literal|0.15F
 expr_stmt|;
 block|}
 if|else if
@@ -1250,7 +1266,7 @@ name|this
 operator|.
 name|mob
 operator|.
-name|isInSpiderWeb
+name|isInOrOnRope
 argument_list|()
 decl_stmt|;
 if|if

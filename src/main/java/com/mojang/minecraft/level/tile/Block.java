@@ -637,7 +637,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|WEB
+name|ROPE
 decl_stmt|;
 specifier|public
 specifier|static
@@ -6317,11 +6317,11 @@ name|COBBLESTONESLAB
 operator|=
 name|blockCache
 expr_stmt|;
-name|WEB
+name|ROPE
 operator|=
 operator|(
 operator|new
-name|SaplingBlock
+name|RopeBlock
 argument_list|(
 literal|51
 argument_list|,
