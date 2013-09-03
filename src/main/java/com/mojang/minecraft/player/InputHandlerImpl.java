@@ -228,14 +228,6 @@ literal|1
 decl_stmt|;
 if|if
 condition|(
-name|Mouse
-operator|.
-name|isGrabbed
-argument_list|()
-condition|)
-block|{
-if|if
-condition|(
 name|key
 operator|==
 name|settings
@@ -344,7 +336,6 @@ index|]
 operator|=
 name|state
 expr_stmt|;
-block|}
 block|}
 block|}
 specifier|private
