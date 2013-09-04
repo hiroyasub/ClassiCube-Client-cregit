@@ -14283,6 +14283,13 @@ index|]
 decl_stmt|;
 if|if
 condition|(
+name|block
+operator|==
+literal|null
+condition|)
+return|return;
+if|if
+condition|(
 name|AllowPlacement
 operator|==
 literal|0
