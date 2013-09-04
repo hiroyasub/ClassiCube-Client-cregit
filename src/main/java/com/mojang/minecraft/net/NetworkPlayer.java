@@ -429,6 +429,12 @@ operator|new
 name|SkinDownloadThread
 argument_list|(
 name|this
+argument_list|,
+name|this
+operator|.
+name|minecraft
+operator|.
+name|skinServer
 argument_list|)
 operator|)
 operator|.

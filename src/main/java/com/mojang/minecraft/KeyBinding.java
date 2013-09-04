@@ -9,11 +9,32 @@ name|minecraft
 package|;
 end_package
 
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|Serializable
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
 name|KeyBinding
+implements|implements
+name|Serializable
 block|{
+comment|/**      *       */
+specifier|private
+specifier|static
+specifier|final
+name|long
+name|serialVersionUID
+init|=
+literal|1L
+decl_stmt|;
 specifier|public
 name|KeyBinding
 parameter_list|(
