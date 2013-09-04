@@ -67,20 +67,6 @@ name|GuiScreen
 import|;
 end_import
 
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|gui
-operator|.
-name|InputValueScreen
-import|;
-end_import
-
 begin_empty_stmt
 empty_stmt|;
 end_empty_stmt
