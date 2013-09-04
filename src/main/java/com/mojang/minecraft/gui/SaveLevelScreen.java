@@ -25,6 +25,22 @@ end_import
 
 begin_import
 import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|gui
+operator|.
+name|inputscreens
+operator|.
+name|InputValueScreen
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|io
