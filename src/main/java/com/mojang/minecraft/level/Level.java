@@ -413,10 +413,12 @@ name|boolean
 name|growTrees
 decl_stmt|;
 specifier|public
+specifier|transient
 name|ColorCache
 name|customShadowColour
 decl_stmt|;
 specifier|public
+specifier|transient
 name|ColorCache
 name|customLightColour
 decl_stmt|;

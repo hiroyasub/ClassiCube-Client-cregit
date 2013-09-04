@@ -2131,7 +2131,6 @@ name|int
 name|var2
 parameter_list|)
 block|{
-comment|// System.out.println("this");
 if|if
 condition|(
 operator|!

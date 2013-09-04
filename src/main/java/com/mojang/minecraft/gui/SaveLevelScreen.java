@@ -299,7 +299,7 @@ operator|.
 name|setCurrentScreen
 argument_list|(
 operator|new
-name|LevelNameScreen
+name|InputValueScreen
 argument_list|(
 name|this
 argument_list|,
@@ -320,6 +320,8 @@ operator|.
 name|text
 argument_list|,
 name|var1
+argument_list|,
+literal|"Enter level name..."
 argument_list|)
 argument_list|)
 expr_stmt|;

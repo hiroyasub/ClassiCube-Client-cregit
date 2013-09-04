@@ -238,6 +238,7 @@ class|class
 name|ProgressBarDisplay
 block|{
 specifier|public
+specifier|static
 name|String
 name|text
 init|=
@@ -248,6 +249,7 @@ name|Minecraft
 name|minecraft
 decl_stmt|;
 specifier|public
+specifier|static
 name|String
 name|title
 init|=
