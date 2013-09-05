@@ -241,7 +241,7 @@ argument_list|)
 block|,
 name|DoubleStair
 argument_list|(
-literal|4
+literal|43
 argument_list|)
 block|,
 name|Stair
@@ -279,7 +279,7 @@ argument_list|(
 literal|50
 argument_list|)
 block|,
-name|SpiderWeb
+name|Rope
 argument_list|(
 literal|51
 argument_list|)
