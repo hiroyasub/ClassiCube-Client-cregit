@@ -309,6 +309,12 @@ init|=
 literal|true
 decl_stmt|;
 specifier|public
+name|boolean
+name|thirdPersonMode
+init|=
+literal|false
+decl_stmt|;
+specifier|public
 name|KeyBinding
 name|forwardKey
 init|=
