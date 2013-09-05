@@ -9,10 +9,22 @@ name|minecraft
 package|;
 end_package
 
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|Serializable
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
 name|ColorCache
+implements|implements
+name|Serializable
 block|{
 specifier|public
 name|float
