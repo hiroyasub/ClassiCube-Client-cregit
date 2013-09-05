@@ -1242,7 +1242,7 @@ name|this
 operator|.
 name|yd
 operator|+=
-literal|0.05F
+literal|0.06F
 expr_stmt|;
 block|}
 if|else if
