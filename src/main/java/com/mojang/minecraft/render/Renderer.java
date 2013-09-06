@@ -511,6 +511,9 @@ name|applyBobbing
 parameter_list|(
 name|float
 name|var1
+parameter_list|,
+name|boolean
+name|enabled
 parameter_list|)
 block|{
 name|Player
@@ -583,6 +586,11 @@ operator|)
 operator|*
 name|var1
 decl_stmt|;
+if|if
+condition|(
+name|enabled
+condition|)
+block|{
 name|GL11
 operator|.
 name|glTranslatef
@@ -675,6 +683,7 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
+block|}
 name|GL11
 operator|.
 name|glRotatef

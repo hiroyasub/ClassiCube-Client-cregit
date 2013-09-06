@@ -2523,12 +2523,13 @@ name|bb
 operator|.
 name|grow
 argument_list|(
+operator|-
+literal|0.5F
+argument_list|,
 literal|0.0F
 argument_list|,
 operator|-
-literal|0.4F
-argument_list|,
-literal|0.0F
+literal|0.5F
 argument_list|)
 argument_list|,
 name|Block
