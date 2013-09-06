@@ -305,8 +305,6 @@ throw|;
 block|}
 else|else
 block|{
-name|this
-operator|.
 name|title
 operator|=
 name|var1
@@ -583,8 +581,6 @@ argument_list|(
 literal|"server.detail"
 argument_list|)
 decl_stmt|;
-name|this
-operator|.
 name|text
 operator|=
 name|str
@@ -805,7 +801,6 @@ return|return
 literal|true
 return|;
 block|}
-comment|/*      * public static void InitEnv(Minecraft minecraft) { if (serverConfig ==      * null) return; int i1; if (serverConfig.containsKey("environment.level"))      * { i1 = Integer.parseInt(serverConfig.get("environment.level")); if (i1>=      * 0) { minecraft.level.waterLevel = i1;      * System.out.println("Changing water level to " + i1); } }      *       * if (serverConfig.containsKey("environment.fog")) { i1 =      * Integer.parseInt(serverConfig.get("environment.fog")); if (i1>= 0) {      * minecraft.level.fogColor = i1;      * System.out.println("Changing fog colour to " + i1); } }      *       * if (serverConfig.containsKey("environment.sky")) { i1 =      * Integer.parseInt(serverConfig.get("environment.sky")); if (i1>= 0) {      * minecraft.level.skyColor = i1;      * System.out.println("Changing sky colour to " + i1); } }      *       * if (serverConfig.containsKey("environment.cloud")) { i1 =      * Integer.parseInt(serverConfig.get("environment.cloud")); if (i1>= 0) {      * minecraft.level.cloudColor = i1;      * System.out.println("Changing cloud colour to " + i1); } }      *       * }      */
 specifier|public
 specifier|static
 name|HashMap
@@ -2178,8 +2173,6 @@ name|var1
 argument_list|)
 condition|)
 block|{
-name|this
-operator|.
 name|text
 operator|=
 name|var1
@@ -2219,8 +2212,6 @@ return|return;
 block|}
 if|if
 condition|(
-name|this
-operator|.
 name|text
 operator|.
 name|toLowerCase
@@ -2243,8 +2234,6 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|this
-operator|.
 name|text
 operator|.
 name|toLowerCase
@@ -2275,8 +2264,6 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|this
-operator|.
 name|text
 operator|.
 name|toLowerCase
@@ -2287,8 +2274,6 @@ argument_list|(
 literal|"+ophacks"
 argument_list|)
 operator|||
-name|this
-operator|.
 name|text
 operator|.
 name|toLowerCase
@@ -2839,8 +2824,6 @@ name|fontRenderer
 operator|.
 name|render
 argument_list|(
-name|this
-operator|.
 name|title
 argument_list|,
 operator|(
@@ -2854,8 +2837,6 @@ name|fontRenderer
 operator|.
 name|getWidth
 argument_list|(
-name|this
-operator|.
 name|title
 argument_list|)
 operator|)
@@ -2881,8 +2862,6 @@ name|fontRenderer
 operator|.
 name|render
 argument_list|(
-name|this
-operator|.
 name|text
 argument_list|,
 operator|(
@@ -2896,8 +2875,6 @@ name|fontRenderer
 operator|.
 name|getWidth
 argument_list|(
-name|this
-operator|.
 name|text
 argument_list|)
 operator|)
