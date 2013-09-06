@@ -164,6 +164,15 @@ index|]
 expr_stmt|;
 if|if
 condition|(
+name|this
+operator|.
+name|settings
+operator|.
+name|HacksEnabled
+condition|)
+block|{
+if|if
+condition|(
 name|settings
 operator|.
 name|CanSpeed
@@ -200,6 +209,7 @@ index|[
 literal|7
 index|]
 expr_stmt|;
+block|}
 block|}
 block|}
 specifier|private

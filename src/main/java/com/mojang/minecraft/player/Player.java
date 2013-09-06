@@ -290,8 +290,6 @@ literal|0
 decl_stmt|;
 name|boolean
 name|HacksEnabled
-init|=
-literal|true
 decl_stmt|;
 specifier|public
 specifier|static
@@ -561,6 +559,14 @@ block|}
 block|}
 else|else
 block|{
+name|this
+operator|.
+name|HacksEnabled
+operator|=
+name|settings
+operator|.
+name|HacksEnabled
+expr_stmt|;
 name|this
 operator|.
 name|input
