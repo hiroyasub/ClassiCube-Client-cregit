@@ -1129,9 +1129,9 @@ name|boolean
 name|IsApplet
 parameter_list|)
 block|{
-comment|//this.selectionBoxes.add(new SelectionBoxData((byte) 1, "",
-comment|//new ColorCache(0F, 1.0F, 0F, 0.6F), new CustomAABB(12, 45, 30,
-comment|//20, 30, 40)));
+comment|// this.selectionBoxes.add(new SelectionBoxData((byte) 1, "",
+comment|// new ColorCache(0F, 1.0F, 0F, 0.6F), new CustomAABB(12, 45, 30,
+comment|// 20, 30, 40)));
 comment|/* 	 * for(int i = 0; i< 140; i++){ String group = "Guest"; if(i> 8)group = 	 * "Owner"; if(i> 11) group = "Test"; if( i> 18) group = "Test2"; if(i 	 *> 32) group = "Last group"; if(i> 35) group = "jk"; if(i> 40) group 	 * = "rollin"; if(i> 45) group = "aaaaa"; 	 * this.playerListNameData.add(new PlayerListNameData((short) i, "" +i, 	 * "" +i, group, (byte)1)); 	 *  	 * } Collections.sort(playerListNameData, new PlayerListComparator()); 	 */
 name|this
 operator|.
@@ -17073,6 +17073,15 @@ name|this
 operator|.
 name|settings
 operator|.
+name|HacksEnabled
+condition|)
+block|{
+if|if
+condition|(
+name|this
+operator|.
+name|settings
+operator|.
 name|HackType
 operator|==
 literal|0
@@ -17227,6 +17236,34 @@ name|flyingMode
 expr_stmt|;
 block|}
 block|}
+block|}
+block|}
+else|else
+block|{
+name|this
+operator|.
+name|player
+operator|.
+name|flyingMode
+operator|=
+literal|false
+expr_stmt|;
+name|this
+operator|.
+name|player
+operator|.
+name|noPhysics
+operator|=
+literal|false
+expr_stmt|;
+name|this
+operator|.
+name|player
+operator|.
+name|hovered
+operator|=
+literal|false
+expr_stmt|;
 block|}
 if|if
 condition|(

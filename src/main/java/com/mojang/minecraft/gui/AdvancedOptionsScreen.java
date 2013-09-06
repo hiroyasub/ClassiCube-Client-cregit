@@ -642,9 +642,12 @@ if|if
 condition|(
 name|var1
 operator|.
-name|id
-operator|==
-literal|12
+name|text
+operator|.
+name|contains
+argument_list|(
+literal|"VBO"
+argument_list|)
 condition|)
 block|{
 name|this
