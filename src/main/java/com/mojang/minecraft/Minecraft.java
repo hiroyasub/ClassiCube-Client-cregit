@@ -2090,7 +2090,7 @@ block|}
 specifier|public
 specifier|static
 name|File
-name|GetMinecraftDirectory
+name|getMinecraftDirectory
 parameter_list|()
 block|{
 name|String
@@ -2106,8 +2106,6 @@ operator|.
 name|getProperty
 argument_list|(
 literal|"user.home"
-argument_list|,
-literal|"."
 argument_list|)
 decl_stmt|;
 name|File
@@ -2152,8 +2150,6 @@ name|File
 argument_list|(
 name|home
 argument_list|,
-literal|'.'
-operator|+
 name|folder
 operator|+
 literal|'/'
@@ -2187,8 +2183,6 @@ name|File
 argument_list|(
 name|appData
 argument_list|,
-literal|"."
-operator|+
 name|folder
 operator|+
 literal|'/'
@@ -2204,8 +2198,6 @@ name|File
 argument_list|(
 name|home
 argument_list|,
-literal|'.'
-operator|+
 name|folder
 operator|+
 literal|'/'
@@ -2764,7 +2756,7 @@ expr_stmt|;
 block|}
 name|mcDir
 operator|=
-name|GetMinecraftDirectory
+name|getMinecraftDirectory
 argument_list|()
 expr_stmt|;
 try|try
@@ -2864,8 +2856,6 @@ operator|)
 literal|1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|isSinglePlayer
 operator|=
 literal|true
@@ -13992,7 +13982,7 @@ init|=
 operator|new
 name|File
 argument_list|(
-name|GetMinecraftDirectory
+name|getMinecraftDirectory
 argument_list|()
 argument_list|,
 literal|"/skins/terrain"

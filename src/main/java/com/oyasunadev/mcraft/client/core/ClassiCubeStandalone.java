@@ -589,7 +589,7 @@ expr_stmt|;
 name|boolean
 name|RunFakeNetwork
 init|=
-literal|false
+literal|true
 decl_stmt|;
 if|if
 condition|(

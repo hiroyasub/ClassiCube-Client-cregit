@@ -202,7 +202,7 @@ name|File
 argument_list|(
 name|Minecraft
 operator|.
-name|GetMinecraftDirectory
+name|getMinecraftDirectory
 argument_list|()
 operator|.
 name|getPath
@@ -262,7 +262,7 @@ name|File
 argument_list|(
 name|Minecraft
 operator|.
-name|GetMinecraftDirectory
+name|getMinecraftDirectory
 argument_list|()
 operator|.
 name|getPath

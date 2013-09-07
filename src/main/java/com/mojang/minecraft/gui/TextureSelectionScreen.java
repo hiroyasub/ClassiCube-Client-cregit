@@ -201,7 +201,7 @@ name|File
 argument_list|(
 name|minecraft
 operator|.
-name|GetMinecraftDirectory
+name|getMinecraftDirectory
 argument_list|()
 operator|+
 literal|"/texturepacks"
