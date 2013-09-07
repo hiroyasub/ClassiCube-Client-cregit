@@ -2319,7 +2319,18 @@ operator|=
 literal|0f
 expr_stmt|;
 block|}
-else|else
+if|else if
+condition|(
+name|this
+operator|.
+name|settings
+operator|.
+name|minecraft
+operator|.
+name|session
+operator|==
+literal|null
+condition|)
 block|{
 name|this
 operator|.

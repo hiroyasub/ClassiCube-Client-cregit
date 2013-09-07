@@ -461,7 +461,8 @@ name|KeyBinding
 index|[]
 name|bindings
 decl_stmt|;
-specifier|private
+specifier|public
+specifier|transient
 name|Minecraft
 name|minecraft
 decl_stmt|;

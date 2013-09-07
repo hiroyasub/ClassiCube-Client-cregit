@@ -1915,6 +1915,13 @@ name|getWaterLevel
 argument_list|()
 condition|)
 block|{
+if|if
+condition|(
+operator|!
+name|this
+operator|.
+name|networkMode
+condition|)
 name|var4
 operator|=
 name|Block
