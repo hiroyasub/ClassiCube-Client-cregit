@@ -208,11 +208,7 @@ operator|.
 name|id
 operator|!=
 literal|53
-condition|)
-block|{
-comment|// ignore webs
-if|if
-condition|(
+operator|&&
 operator|!
 name|level
 operator|.
@@ -251,7 +247,6 @@ argument_list|,
 literal|0
 argument_list|)
 expr_stmt|;
-block|}
 block|}
 block|}
 block|}

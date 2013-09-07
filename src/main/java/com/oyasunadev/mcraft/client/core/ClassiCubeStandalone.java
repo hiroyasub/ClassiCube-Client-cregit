@@ -230,10 +230,7 @@ condition|(
 name|args
 operator|!=
 literal|null
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|args
 operator|.
 name|length
@@ -281,7 +278,6 @@ index|[
 literal|4
 index|]
 expr_stmt|;
-block|}
 block|}
 name|ClassiCubeStandalone
 name|classicubeStandalone

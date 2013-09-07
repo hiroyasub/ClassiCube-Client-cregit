@@ -11,18 +11,6 @@ name|gui
 package|;
 end_package
 
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|GameSettings
-import|;
-end_import
-
 begin_class
 specifier|public
 class|class
@@ -51,9 +39,6 @@ decl_stmt|;
 specifier|public
 name|ScaledResolution
 parameter_list|(
-name|GameSettings
-name|par1GameSettings
-parameter_list|,
 name|int
 name|par2
 parameter_list|,

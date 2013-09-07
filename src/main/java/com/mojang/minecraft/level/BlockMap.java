@@ -144,11 +144,6 @@ operator|new
 name|BlockMap$Slot
 argument_list|(
 name|this
-argument_list|,
-operator|(
-name|SyntheticClass
-operator|)
-literal|null
 argument_list|)
 decl_stmt|;
 specifier|private
@@ -159,11 +154,6 @@ operator|new
 name|BlockMap$Slot
 argument_list|(
 name|this
-argument_list|,
-operator|(
-name|SyntheticClass
-operator|)
-literal|null
 argument_list|)
 decl_stmt|;
 specifier|public

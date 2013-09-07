@@ -1333,9 +1333,7 @@ name|var2
 expr_stmt|;
 operator|new
 name|SleepForeverThread
-argument_list|(
-name|this
-argument_list|)
+argument_list|()
 expr_stmt|;
 name|this
 operator|.
@@ -2661,8 +2659,6 @@ init|=
 operator|-
 literal|0.1F
 decl_stmt|;
-annotation|@
-name|Override
 specifier|public
 specifier|final
 name|void
@@ -2952,15 +2948,13 @@ name|Display
 operator|.
 name|create
 argument_list|(
-operator|(
 operator|new
 name|PixelFormat
 argument_list|()
-operator|)
 operator|.
 name|withDepthBits
 argument_list|(
-literal|24
+literal|16
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -2971,6 +2965,15 @@ name|LWJGLException
 name|var58
 parameter_list|)
 block|{
+name|System
+operator|.
+name|out
+operator|.
+name|println
+argument_list|(
+literal|"Failed to create display with depth bits"
+argument_list|)
+expr_stmt|;
 try|try
 block|{
 name|Display
@@ -3206,6 +3209,11 @@ name|image
 argument_list|,
 literal|16
 argument_list|,
+name|image
+operator|.
+name|getWidth
+argument_list|()
+operator|/
 literal|16
 argument_list|)
 expr_stmt|;
@@ -4263,21 +4271,6 @@ name|timer
 operator|.
 name|delta
 decl_stmt|;
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|render
-operator|.
-name|Renderer
-name|renderer
-init|=
-name|this
-operator|.
-name|renderer
-decl_stmt|;
 if|if
 condition|(
 name|this
@@ -4623,32 +4616,6 @@ name|float
 name|var80
 init|=
 name|var65
-decl_stmt|;
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|render
-operator|.
-name|Renderer
-name|var82
-init|=
-name|renderer
-decl_stmt|;
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|render
-operator|.
-name|Renderer
-name|var27
-init|=
-name|renderer
 decl_stmt|;
 name|float
 name|var29
@@ -5052,7 +5019,7 @@ literal|0.0F
 operator|)
 condition|)
 block|{
-name|var27
+name|renderer
 operator|.
 name|entity
 operator|=
@@ -5067,7 +5034,7 @@ block|}
 block|}
 if|if
 condition|(
-name|var27
+name|renderer
 operator|.
 name|entity
 operator|!=
@@ -5075,7 +5042,7 @@ literal|null
 operator|&&
 operator|!
 operator|(
-name|var27
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5085,7 +5052,7 @@ name|CreativeGameMode
 operator|)
 condition|)
 block|{
-name|var27
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5094,7 +5061,7 @@ operator|=
 operator|new
 name|MovingObjectPosition
 argument_list|(
-name|var27
+name|renderer
 operator|.
 name|entity
 argument_list|)
@@ -5134,7 +5101,7 @@ break|break;
 block|}
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5184,7 +5151,7 @@ block|}
 name|Player
 name|var126
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5193,7 +5160,7 @@ decl_stmt|;
 name|Level
 name|var119
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5202,7 +5169,7 @@ decl_stmt|;
 name|LevelRenderer
 name|var89
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5211,7 +5178,7 @@ decl_stmt|;
 name|ParticleManager
 name|var93
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5225,13 +5192,13 @@ literal|0
 argument_list|,
 literal|0
 argument_list|,
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
 name|width
 argument_list|,
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5241,7 +5208,7 @@ expr_stmt|;
 name|Level
 name|var26
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5254,7 +5221,7 @@ operator|/
 operator|(
 literal|4
 operator|-
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5320,7 +5287,7 @@ operator|)
 operator|/
 literal|255.0F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|=
@@ -5336,7 +5303,7 @@ operator|)
 operator|/
 literal|255.0F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|=
@@ -5352,7 +5319,7 @@ operator|)
 operator|/
 literal|255.0F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|=
@@ -5366,69 +5333,69 @@ operator|)
 operator|/
 literal|255.0F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|+=
 operator|(
 name|var30
 operator|-
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|)
 operator|*
 name|var29
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|+=
 operator|(
 name|var117
 operator|-
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|)
 operator|*
 name|var29
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|+=
 operator|(
 name|var32
 operator|-
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|)
 operator|*
 name|var29
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|*=
-name|var82
+name|renderer
 operator|.
 name|fogColorMultiplier
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|*=
-name|var82
+name|renderer
 operator|.
 name|fogColorMultiplier
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|*=
-name|var82
+name|renderer
 operator|.
 name|fogColorMultiplier
 expr_stmt|;
@@ -5507,19 +5474,19 @@ operator|.
 name|WATER
 condition|)
 block|{
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|=
 literal|0.02F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|=
 literal|0.02F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|=
@@ -5535,19 +5502,19 @@ operator|.
 name|LAVA
 condition|)
 block|{
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|=
 literal|0.6F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|=
 literal|0.1F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|=
@@ -5557,7 +5524,7 @@ block|}
 block|}
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5569,19 +5536,19 @@ block|{
 name|var74
 operator|=
 operator|(
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|*
 literal|30.0F
 operator|+
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|*
 literal|59.0F
 operator|+
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|*
@@ -5593,13 +5560,13 @@ expr_stmt|;
 name|var33
 operator|=
 operator|(
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|*
 literal|30.0F
 operator|+
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|*
@@ -5611,13 +5578,13 @@ expr_stmt|;
 name|var34
 operator|=
 operator|(
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|*
 literal|30.0F
 operator|+
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|*
@@ -5626,19 +5593,19 @@ operator|)
 operator|/
 literal|100.0F
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogRed
 operator|=
 name|var74
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 operator|=
 name|var33
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 operator|=
@@ -5649,15 +5616,15 @@ name|GL11
 operator|.
 name|glClearColor
 argument_list|(
-name|var82
+name|renderer
 operator|.
 name|fogRed
 argument_list|,
-name|var82
+name|renderer
 operator|.
 name|fogBlue
 argument_list|,
-name|var82
+name|renderer
 operator|.
 name|fogGreen
 argument_list|,
@@ -5671,7 +5638,7 @@ argument_list|(
 literal|16640
 argument_list|)
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogColorMultiplier
 operator|=
@@ -5684,14 +5651,14 @@ argument_list|(
 literal|2884
 argument_list|)
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|fogEnd
 operator|=
 literal|512
 operator|>>
 operator|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5720,7 +5687,7 @@ literal|0.07F
 expr_stmt|;
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5757,7 +5724,7 @@ block|}
 name|Player
 name|var116
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5812,7 +5779,7 @@ argument_list|,
 operator|(
 name|float
 operator|)
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5821,7 +5788,7 @@ operator|/
 operator|(
 name|float
 operator|)
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5829,7 +5796,7 @@ name|height
 argument_list|,
 literal|0.05F
 argument_list|,
-name|var82
+name|renderer
 operator|.
 name|fogEnd
 argument_list|)
@@ -5848,7 +5815,7 @@ argument_list|()
 expr_stmt|;
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5879,20 +5846,20 @@ literal|0.0F
 argument_list|)
 expr_stmt|;
 block|}
-name|var82
+name|renderer
 operator|.
 name|hurtEffect
 argument_list|(
 name|var80
 argument_list|)
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|applyBobbing
 argument_list|(
 name|var80
 argument_list|,
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -5903,7 +5870,7 @@ argument_list|)
 expr_stmt|;
 name|var116
 operator|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -6058,7 +6025,7 @@ decl_stmt|;
 name|LevelRenderer
 name|var101
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -6100,7 +6067,7 @@ expr_stmt|;
 block|}
 name|var101
 operator|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -6110,7 +6077,7 @@ name|Collections
 operator|.
 name|sort
 argument_list|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -6208,7 +6175,7 @@ operator|=
 literal|false
 expr_stmt|;
 block|}
-name|var82
+name|renderer
 operator|.
 name|updateFog
 argument_list|()
@@ -6236,7 +6203,19 @@ name|int
 name|var110
 decl_stmt|;
 name|ShapeRenderer
+operator|.
+name|tryVBO
+operator|=
+name|settings
+operator|.
+name|VBOs
+expr_stmt|;
+name|ShapeRenderer
 name|shapeRenderer
+init|=
+name|ShapeRenderer
+operator|.
+name|instance
 decl_stmt|;
 name|int
 name|var114
@@ -6420,14 +6399,6 @@ literal|513
 argument_list|)
 expr_stmt|;
 name|shapeRenderer
-operator|=
-name|ShapeRenderer
-operator|.
-name|instance
-expr_stmt|;
-name|ShapeRenderer
-operator|.
-name|instance
 operator|.
 name|begin
 argument_list|()
@@ -6543,7 +6514,7 @@ block|}
 block|}
 block|}
 block|}
-name|var82
+name|renderer
 operator|.
 name|setLighting
 argument_list|(
@@ -6553,7 +6524,7 @@ expr_stmt|;
 name|Vec3D
 name|var103
 init|=
-name|var82
+name|renderer
 operator|.
 name|getPlayerVector
 argument_list|(
@@ -6579,14 +6550,14 @@ argument_list|,
 name|var80
 argument_list|)
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|setLighting
 argument_list|(
 literal|false
 argument_list|)
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|updateFog
 argument_list|()
@@ -6763,16 +6734,7 @@ argument_list|,
 name|var110
 argument_list|)
 expr_stmt|;
-name|ShapeRenderer
-name|var121
-init|=
-name|ShapeRenderer
-operator|.
-name|instance
-decl_stmt|;
-name|ShapeRenderer
-operator|.
-name|instance
+name|shapeRenderer
 operator|.
 name|begin
 argument_list|()
@@ -6818,7 +6780,7 @@ operator|)
 operator|.
 name|render
 argument_list|(
-name|var121
+name|shapeRenderer
 argument_list|,
 name|var107
 argument_list|,
@@ -6834,7 +6796,7 @@ name|var32
 argument_list|)
 expr_stmt|;
 block|}
-name|var121
+name|shapeRenderer
 operator|.
 name|end
 argument_list|()
@@ -6875,7 +6837,7 @@ argument_list|)
 expr_stmt|;
 comment|// rock
 comment|// edges
-name|var82
+name|renderer
 operator|.
 name|updateFog
 argument_list|()
@@ -7038,12 +7000,6 @@ operator|=
 name|var69
 expr_stmt|;
 block|}
-name|shapeRenderer
-operator|=
-name|ShapeRenderer
-operator|.
-name|instance
-expr_stmt|;
 name|var74
 operator|=
 literal|0.0F
@@ -7744,7 +7700,7 @@ argument_list|(
 literal|3553
 argument_list|)
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|updateFog
 argument_list|()
@@ -7754,7 +7710,7 @@ name|var108
 decl_stmt|;
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -7773,7 +7729,7 @@ expr_stmt|;
 name|MovingObjectPosition
 name|var10001
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -7797,13 +7753,6 @@ name|var101
 operator|=
 name|var89
 expr_stmt|;
-name|ShapeRenderer
-name|var113
-init|=
-name|ShapeRenderer
-operator|.
-name|instance
-decl_stmt|;
 name|GL11
 operator|.
 name|glEnable
@@ -8067,12 +8016,12 @@ name|var34
 operator|)
 argument_list|)
 expr_stmt|;
-name|var113
+name|shapeRenderer
 operator|.
 name|begin
 argument_list|()
 expr_stmt|;
-name|var113
+name|shapeRenderer
 operator|.
 name|noColor
 argument_list|()
@@ -8102,7 +8051,7 @@ name|var73
 operator|.
 name|renderSide
 argument_list|(
-name|var113
+name|shapeRenderer
 argument_list|,
 name|var102
 operator|.
@@ -8133,7 +8082,7 @@ operator|)
 argument_list|)
 expr_stmt|;
 block|}
-name|var113
+name|shapeRenderer
 operator|.
 name|end
 argument_list|()
@@ -8167,7 +8116,7 @@ argument_list|)
 expr_stmt|;
 name|var10001
 operator|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -8681,7 +8630,7 @@ argument_list|,
 literal|771
 argument_list|)
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|updateFog
 argument_list|()
@@ -8780,7 +8729,7 @@ argument_list|)
 expr_stmt|;
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -9014,19 +8963,12 @@ expr_stmt|;
 comment|// GL11.glBegin(GL11.GL_QUADS);
 comment|// Front Face
 comment|// Bottom Left
-name|ShapeRenderer
-name|sr
-init|=
-name|ShapeRenderer
-operator|.
-name|instance
-decl_stmt|;
-name|sr
+name|shapeRenderer
 operator|.
 name|begin
 argument_list|()
 expr_stmt|;
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9044,7 +8986,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Bottom Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9062,7 +9004,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Top Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9080,7 +9022,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Top Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9099,7 +9041,7 @@ argument_list|)
 expr_stmt|;
 comment|// Back Face
 comment|// Bottom Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9117,7 +9059,7 @@ name|z0
 argument_list|)
 expr_stmt|;
 comment|// Top Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9135,7 +9077,7 @@ name|z0
 argument_list|)
 expr_stmt|;
 comment|// Top Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9153,7 +9095,7 @@ name|z0
 argument_list|)
 expr_stmt|;
 comment|// Bottom Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9173,7 +9115,7 @@ expr_stmt|;
 comment|// Top Face
 comment|// Top Left
 comment|// Bottom Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9190,7 +9132,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9208,7 +9150,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Bottom Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9226,7 +9168,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Top Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9245,7 +9187,7 @@ argument_list|)
 expr_stmt|;
 comment|// Bottom Face
 comment|// Top Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9263,7 +9205,7 @@ name|z0
 argument_list|)
 expr_stmt|;
 comment|// Top Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9281,7 +9223,7 @@ name|z0
 argument_list|)
 expr_stmt|;
 comment|// Bottom Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9299,7 +9241,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Bottom Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9318,7 +9260,7 @@ argument_list|)
 expr_stmt|;
 comment|// Right face
 comment|// Bottom Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9336,7 +9278,7 @@ name|z0
 argument_list|)
 expr_stmt|;
 comment|// Top Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9354,7 +9296,7 @@ name|z0
 argument_list|)
 expr_stmt|;
 comment|// Top Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9372,7 +9314,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Bottom Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9391,7 +9333,7 @@ argument_list|)
 expr_stmt|;
 comment|// Left Face
 comment|// Bottom Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9409,7 +9351,7 @@ name|z0
 argument_list|)
 expr_stmt|;
 comment|// Bottom Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9427,7 +9369,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Top Right
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9445,7 +9387,7 @@ name|z1
 argument_list|)
 expr_stmt|;
 comment|// Top Left
-name|sr
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9462,7 +9404,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|sr
+name|shapeRenderer
 operator|.
 name|end
 argument_list|()
@@ -9490,21 +9432,14 @@ operator|+
 literal|0.2F
 argument_list|)
 expr_stmt|;
-name|ShapeRenderer
-name|var2
-init|=
-name|ShapeRenderer
-operator|.
-name|instance
-decl_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|startDrawing
 argument_list|(
 literal|3
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9521,7 +9456,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9538,7 +9473,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9555,7 +9490,7 @@ operator|.
 name|z1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9572,7 +9507,7 @@ operator|.
 name|z1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9589,19 +9524,19 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|end
 argument_list|()
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|startDrawing
 argument_list|(
 literal|3
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9618,7 +9553,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9635,7 +9570,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9652,7 +9587,7 @@ operator|.
 name|z1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9669,7 +9604,7 @@ operator|.
 name|z1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9686,19 +9621,19 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|end
 argument_list|()
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|startDrawing
 argument_list|(
 literal|1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9715,7 +9650,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9732,7 +9667,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9749,7 +9684,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9766,7 +9701,7 @@ operator|.
 name|z0
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9783,7 +9718,7 @@ operator|.
 name|z1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9800,7 +9735,7 @@ operator|.
 name|z1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9817,7 +9752,7 @@ operator|.
 name|z1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|vertex
 argument_list|(
@@ -9834,7 +9769,7 @@ operator|.
 name|z1
 argument_list|)
 expr_stmt|;
-name|var2
+name|shapeRenderer
 operator|.
 name|end
 argument_list|()
@@ -9880,7 +9815,7 @@ comment|// ------------------
 block|}
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -9892,14 +9827,14 @@ name|var97
 init|=
 name|var80
 decl_stmt|;
-name|var27
+name|renderer
 operator|=
-name|var82
+name|renderer
 expr_stmt|;
 name|Level
 name|var109
 init|=
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -9932,13 +9867,6 @@ name|player
 operator|.
 name|z
 expr_stmt|;
-name|ShapeRenderer
-name|var84
-init|=
-name|ShapeRenderer
-operator|.
-name|instance
-decl_stmt|;
 name|GL11
 operator|.
 name|glDisable
@@ -9979,7 +9907,7 @@ name|glBindTexture
 argument_list|(
 literal|3553
 argument_list|,
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -10085,7 +10013,7 @@ name|var74
 operator|=
 operator|(
 operator|(
-name|var27
+name|renderer
 operator|.
 name|levelTicks
 operator|+
@@ -10165,12 +10093,12 @@ operator|*
 literal|0.7F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|begin
 argument_list|()
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -10193,7 +10121,7 @@ operator|*
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -10220,7 +10148,7 @@ operator|*
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -10247,7 +10175,7 @@ operator|*
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -10270,7 +10198,7 @@ operator|*
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -10295,7 +10223,7 @@ operator|*
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -10320,7 +10248,7 @@ operator|*
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -10345,7 +10273,7 @@ operator|*
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -10370,7 +10298,7 @@ operator|*
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|var84
+name|shapeRenderer
 operator|.
 name|end
 argument_list|()
@@ -10395,20 +10323,20 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|entity
 operator|!=
 literal|null
 condition|)
 block|{
-name|var82
+name|renderer
 operator|.
 name|entity
 operator|.
 name|renderHover
 argument_list|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -10432,7 +10360,7 @@ argument_list|()
 expr_stmt|;
 if|if
 condition|(
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -10463,20 +10391,20 @@ literal|0.0F
 argument_list|)
 expr_stmt|;
 block|}
-name|var82
+name|renderer
 operator|.
 name|hurtEffect
 argument_list|(
 name|var80
 argument_list|)
 expr_stmt|;
-name|var82
+name|renderer
 operator|.
 name|applyBobbing
 argument_list|(
 name|var80
 argument_list|,
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -10488,13 +10416,13 @@ expr_stmt|;
 name|HeldBlock
 name|var112
 init|=
-name|var82
+name|renderer
 operator|.
 name|heldBlock
 decl_stmt|;
 name|var117
 operator|=
-name|var82
+name|renderer
 operator|.
 name|heldBlock
 operator|.
@@ -10855,13 +10783,6 @@ argument_list|,
 literal|1.0F
 argument_list|)
 expr_stmt|;
-name|ShapeRenderer
-name|var123
-init|=
-name|ShapeRenderer
-operator|.
-name|instance
-decl_stmt|;
 if|if
 condition|(
 name|var112
@@ -10934,7 +10855,7 @@ name|block
 operator|.
 name|renderPreview
 argument_list|(
-name|var123
+name|shapeRenderer
 argument_list|)
 expr_stmt|;
 block|}
@@ -11073,7 +10994,7 @@ expr_stmt|;
 if|if
 condition|(
 operator|!
-name|var82
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -11425,10 +11346,11 @@ condition|(
 name|this
 operator|.
 name|canvas
-operator|==
+operator|!=
 literal|null
 condition|)
 block|{
+comment|// check this, changed @FindBugs
 name|this
 operator|.
 name|canvas
@@ -12347,7 +12269,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 name|TextureManager
-name|var19
+name|texManager
 init|=
 name|this
 operator|.
@@ -12361,7 +12283,7 @@ literal|0
 init|;
 name|var16
 operator|<
-name|var19
+name|texManager
 operator|.
 name|animations
 operator|.
@@ -12373,12 +12295,12 @@ name|var16
 control|)
 block|{
 name|TextureFX
-name|var3
+name|texFX
 decl_stmt|;
 operator|(
-name|var3
+name|texFX
 operator|=
-name|var19
+name|texManager
 operator|.
 name|animations
 operator|.
@@ -12390,36 +12312,36 @@ operator|)
 operator|.
 name|anaglyph
 operator|=
-name|var19
+name|texManager
 operator|.
 name|settings
 operator|.
 name|anaglyph
 expr_stmt|;
-name|var3
+name|texFX
 operator|.
 name|animate
 argument_list|()
 expr_stmt|;
-name|var19
+name|texManager
 operator|.
 name|textureBuffer
 operator|.
 name|clear
 argument_list|()
 expr_stmt|;
-name|var19
+name|texManager
 operator|.
 name|textureBuffer
 operator|.
 name|put
 argument_list|(
-name|var3
+name|texFX
 operator|.
 name|textureData
 argument_list|)
 expr_stmt|;
-name|var19
+name|texManager
 operator|.
 name|textureBuffer
 operator|.
@@ -12430,7 +12352,7 @@ argument_list|)
 operator|.
 name|limit
 argument_list|(
-name|var3
+name|texFX
 operator|.
 name|textureData
 operator|.
@@ -12445,7 +12367,7 @@ literal|3553
 argument_list|,
 literal|0
 argument_list|,
-name|var3
+name|texFX
 operator|.
 name|textureId
 operator|%
@@ -12453,7 +12375,7 @@ literal|16
 operator|<<
 literal|4
 argument_list|,
-name|var3
+name|texFX
 operator|.
 name|textureId
 operator|/
@@ -12469,7 +12391,7 @@ literal|6408
 argument_list|,
 literal|5121
 argument_list|,
-name|var19
+name|texManager
 operator|.
 name|textureBuffer
 argument_list|)
@@ -12932,10 +12854,7 @@ name|j
 index|]
 operator|!=
 literal|null
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|PacketType
 operator|.
 name|packets
@@ -12975,7 +12894,6 @@ name|Version
 argument_list|)
 argument_list|)
 expr_stmt|;
-block|}
 block|}
 block|}
 name|String
@@ -15383,8 +15301,6 @@ name|networkManager
 operator|.
 name|minecraft
 argument_list|,
-name|var5
-argument_list|,
 name|var34
 argument_list|,
 name|var36
@@ -17619,6 +17535,8 @@ comment|// this.selectionBoxes.add(new
 comment|// SelectionBoxData((byte) 1,"",new
 comment|// ColorCache(0F,0F,0F,0.6F), new
 comment|// CustomAABB(12,45,30, 20, 30, 40)));
+comment|// this.textureManager.customEdgeBlock =
+comment|// textureManager.textureAtlas.get(5);
 block|}
 if|if
 condition|(
@@ -18052,21 +17970,6 @@ operator|!=
 literal|null
 condition|)
 block|{
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|render
-operator|.
-name|Renderer
-name|var29
-init|=
-name|this
-operator|.
-name|renderer
-decl_stmt|;
 operator|++
 name|this
 operator|.
@@ -18077,11 +17980,11 @@ expr_stmt|;
 name|HeldBlock
 name|var41
 init|=
-name|var29
+name|renderer
 operator|.
 name|heldBlock
 decl_stmt|;
-name|var29
+name|renderer
 operator|.
 name|heldBlock
 operator|.
@@ -18242,29 +18145,16 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var29
+name|renderer
 operator|.
 name|minecraft
 operator|.
 name|raining
 condition|)
 block|{
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|render
-operator|.
-name|Renderer
-name|var39
-init|=
-name|var29
-decl_stmt|;
 name|var27
 operator|=
-name|var29
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -18273,7 +18163,7 @@ expr_stmt|;
 name|Level
 name|var32
 init|=
-name|var29
+name|renderer
 operator|.
 name|minecraft
 operator|.
@@ -18325,7 +18215,7 @@ name|var60
 init|=
 name|var40
 operator|+
-name|var39
+name|renderer
 operator|.
 name|random
 operator|.
@@ -18341,7 +18231,7 @@ name|var52
 init|=
 name|var45
 operator|+
-name|var39
+name|renderer
 operator|.
 name|random
 operator|.
@@ -18384,7 +18274,7 @@ block|{
 name|float
 name|var56
 init|=
-name|var39
+name|renderer
 operator|.
 name|random
 operator|.
@@ -18394,14 +18284,14 @@ decl_stmt|;
 name|float
 name|var62
 init|=
-name|var39
+name|renderer
 operator|.
 name|random
 operator|.
 name|nextFloat
 argument_list|()
 decl_stmt|;
-name|var39
+name|renderer
 operator|.
 name|minecraft
 operator|.

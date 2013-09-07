@@ -828,10 +828,7 @@ name|mob
 operator|.
 name|isInOrOnRope
 argument_list|()
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|this
 operator|.
 name|mob
@@ -840,6 +837,7 @@ name|yd
 operator|>
 literal|0.02f
 condition|)
+block|{
 name|this
 operator|.
 name|mob

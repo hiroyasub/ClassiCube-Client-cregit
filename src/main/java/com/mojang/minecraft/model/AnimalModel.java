@@ -67,9 +67,6 @@ name|AnimalModel
 parameter_list|(
 name|int
 name|var1
-parameter_list|,
-name|float
-name|var2
 parameter_list|)
 block|{
 name|this

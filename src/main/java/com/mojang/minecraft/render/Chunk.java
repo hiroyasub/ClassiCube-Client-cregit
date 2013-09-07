@@ -173,9 +173,6 @@ name|int
 name|var4
 parameter_list|,
 name|int
-name|var5
-parameter_list|,
-name|int
 name|var6
 parameter_list|)
 block|{

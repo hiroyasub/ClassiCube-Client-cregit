@@ -30,7 +30,7 @@ parameter_list|)
 block|{
 name|super
 argument_list|(
-literal|17
+name|var1
 argument_list|)
 expr_stmt|;
 name|this

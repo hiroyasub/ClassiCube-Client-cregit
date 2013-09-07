@@ -33,9 +33,9 @@ parameter_list|)
 block|{
 name|super
 argument_list|(
-literal|3
+name|var1
 argument_list|,
-literal|2
+name|var2
 argument_list|)
 expr_stmt|;
 block|}

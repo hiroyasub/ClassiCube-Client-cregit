@@ -101,10 +101,7 @@ operator|.
 name|playing
 operator|==
 literal|null
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|this
 operator|.
 name|music
@@ -152,7 +149,6 @@ name|clear
 argument_list|()
 expr_stmt|;
 block|}
-block|}
 if|if
 condition|(
 name|this
@@ -162,10 +158,7 @@ operator|.
 name|playing
 operator|!=
 literal|null
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|this
 operator|.
 name|music
@@ -273,7 +266,6 @@ break|break;
 block|}
 block|}
 block|}
-block|}
 if|if
 condition|(
 name|this
@@ -283,10 +275,7 @@ operator|.
 name|playing
 operator|!=
 literal|null
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|this
 operator|.
 name|music
@@ -333,7 +322,6 @@ name|playing
 operator|=
 name|var2
 expr_stmt|;
-block|}
 block|}
 name|Thread
 operator|.

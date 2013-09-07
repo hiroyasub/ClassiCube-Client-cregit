@@ -500,8 +500,6 @@ name|var4
 operator|<<
 literal|4
 argument_list|,
-literal|16
-argument_list|,
 name|this
 operator|.
 name|baseListId

@@ -18,10 +18,7 @@ name|Thread
 block|{
 specifier|public
 name|SleepForeverThread
-parameter_list|(
-name|Minecraft
-name|minecraft
-parameter_list|)
+parameter_list|()
 block|{
 name|setDaemon
 argument_list|(

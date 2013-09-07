@@ -74,8 +74,6 @@ name|var3
 argument_list|,
 literal|200
 argument_list|,
-literal|20
-argument_list|,
 name|var4
 argument_list|)
 expr_stmt|;
@@ -94,9 +92,6 @@ name|var3
 parameter_list|,
 name|int
 name|var4
-parameter_list|,
-name|int
-name|var5
 parameter_list|,
 name|String
 name|var6

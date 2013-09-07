@@ -1919,8 +1919,6 @@ literal|1
 argument_list|,
 literal|0
 argument_list|,
-literal|0
-argument_list|,
 name|var51
 argument_list|)
 expr_stmt|;
@@ -1943,8 +1941,6 @@ operator|.
 name|depth
 operator|-
 literal|1
-argument_list|,
-literal|0
 argument_list|,
 name|var51
 argument_list|)
@@ -1982,8 +1978,6 @@ literal|1
 argument_list|,
 name|var54
 argument_list|,
-literal|0
-argument_list|,
 name|var51
 argument_list|)
 expr_stmt|;
@@ -2006,8 +2000,6 @@ operator|-
 literal|1
 argument_list|,
 name|var54
-argument_list|,
-literal|0
 argument_list|,
 name|var51
 argument_list|)
@@ -2142,8 +2134,6 @@ argument_list|,
 name|var12
 argument_list|,
 name|var23
-argument_list|,
-literal|0
 argument_list|,
 name|var51
 argument_list|)
@@ -2318,8 +2308,6 @@ argument_list|,
 name|var54
 argument_list|,
 name|var24
-argument_list|,
-literal|0
 argument_list|,
 name|Block
 operator|.
@@ -4330,9 +4318,6 @@ name|var2
 parameter_list|,
 name|int
 name|var3
-parameter_list|,
-name|int
-name|var4
 parameter_list|,
 name|int
 name|var5

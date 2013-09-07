@@ -225,10 +225,7 @@ condition|(
 name|args
 operator|!=
 literal|null
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|args
 operator|.
 name|length
@@ -269,7 +266,6 @@ index|[
 literal|3
 index|]
 expr_stmt|;
-block|}
 block|}
 name|MinecraftStandalone
 name|minecraftStandalone

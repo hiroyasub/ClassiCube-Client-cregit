@@ -38,12 +38,12 @@ name|TextureFX
 block|{
 specifier|protected
 name|float
-name|field_1133_g
+name|a
 index|[]
 decl_stmt|;
 specifier|protected
 name|float
-name|field_1132_h
+name|b
 index|[]
 decl_stmt|;
 specifier|public
@@ -59,7 +59,7 @@ operator|.
 name|textureId
 argument_list|)
 expr_stmt|;
-name|field_1133_g
+name|a
 operator|=
 operator|new
 name|float
@@ -67,7 +67,7 @@ index|[
 literal|320
 index|]
 expr_stmt|;
-name|field_1132_h
+name|b
 operator|=
 operator|new
 name|float
@@ -121,7 +121,7 @@ decl_stmt|;
 name|float
 name|f
 init|=
-name|field_1133_g
+name|a
 index|[
 name|i
 operator|+
@@ -210,7 +210,7 @@ condition|)
 block|{
 name|f
 operator|+=
-name|field_1133_g
+name|a
 index|[
 name|l1
 operator|+
@@ -225,7 +225,7 @@ operator|++
 expr_stmt|;
 block|}
 block|}
-name|field_1132_h
+name|b
 index|[
 name|i
 operator|+
@@ -252,7 +252,7 @@ operator|>=
 literal|19
 condition|)
 block|{
-name|field_1132_h
+name|b
 index|[
 name|i
 operator|+
@@ -299,13 +299,13 @@ name|float
 name|af
 index|[]
 init|=
-name|field_1132_h
+name|b
 decl_stmt|;
-name|field_1132_h
+name|b
 operator|=
-name|field_1133_g
+name|a
 expr_stmt|;
-name|field_1133_g
+name|a
 operator|=
 name|af
 expr_stmt|;
@@ -327,7 +327,7 @@ block|{
 name|float
 name|f1
 init|=
-name|field_1133_g
+name|a
 index|[
 name|l
 index|]

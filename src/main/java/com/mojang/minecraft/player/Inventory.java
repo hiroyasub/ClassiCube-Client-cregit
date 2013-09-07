@@ -419,10 +419,7 @@ condition|(
 name|GameSettings
 operator|.
 name|CanReplaceSlot
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|var1
 operator|>=
 literal|0
@@ -447,7 +444,6 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-block|}
 specifier|public
 name|void
 name|replaceSlot
@@ -461,10 +457,7 @@ condition|(
 name|GameSettings
 operator|.
 name|CanReplaceSlot
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|var1
 operator|!=
 literal|null
@@ -521,7 +514,6 @@ name|var1
 operator|.
 name|id
 expr_stmt|;
-block|}
 block|}
 block|}
 specifier|public

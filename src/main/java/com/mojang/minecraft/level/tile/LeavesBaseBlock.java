@@ -48,9 +48,6 @@ name|var1
 parameter_list|,
 name|int
 name|var2
-parameter_list|,
-name|boolean
-name|var3
 parameter_list|)
 block|{
 name|super

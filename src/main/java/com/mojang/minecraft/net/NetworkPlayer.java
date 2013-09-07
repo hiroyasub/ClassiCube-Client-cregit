@@ -125,6 +125,7 @@ init|=
 literal|77479605454997290L
 decl_stmt|;
 specifier|private
+specifier|transient
 name|List
 argument_list|<
 name|PositionUpdate
@@ -139,6 +140,7 @@ argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|transient
 name|Minecraft
 name|minecraft
 decl_stmt|;
@@ -183,6 +185,7 @@ init|=
 literal|0
 decl_stmt|;
 specifier|private
+specifier|transient
 name|TextureManager
 name|textures
 decl_stmt|;
@@ -197,9 +200,6 @@ name|NetworkPlayer
 parameter_list|(
 name|Minecraft
 name|var1
-parameter_list|,
-name|int
-name|var2
 parameter_list|,
 name|String
 name|var3

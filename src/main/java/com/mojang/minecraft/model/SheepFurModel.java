@@ -26,8 +26,6 @@ block|{
 name|super
 argument_list|(
 literal|12
-argument_list|,
-literal|0.0F
 argument_list|)
 expr_stmt|;
 name|this

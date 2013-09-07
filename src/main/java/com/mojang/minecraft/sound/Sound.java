@@ -44,7 +44,6 @@ init|=
 literal|1.0F
 decl_stmt|;
 specifier|private
-specifier|static
 name|short
 index|[]
 name|data

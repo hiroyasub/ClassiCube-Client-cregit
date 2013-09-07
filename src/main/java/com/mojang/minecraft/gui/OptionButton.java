@@ -45,8 +45,6 @@ name|var3
 argument_list|,
 literal|150
 argument_list|,
-literal|20
-argument_list|,
 name|var4
 argument_list|)
 expr_stmt|;

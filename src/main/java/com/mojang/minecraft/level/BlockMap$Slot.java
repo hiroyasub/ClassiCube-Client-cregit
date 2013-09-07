@@ -64,7 +64,7 @@ specifier|final
 name|BlockMap
 name|blockMap
 decl_stmt|;
-specifier|private
+specifier|public
 name|BlockMap$Slot
 parameter_list|(
 name|BlockMap
@@ -428,22 +428,6 @@ name|var1
 argument_list|)
 expr_stmt|;
 block|}
-block|}
-comment|// $FF: synthetic method
-name|BlockMap$Slot
-parameter_list|(
-name|BlockMap
-name|var1
-parameter_list|,
-name|SyntheticClass
-name|var2
-parameter_list|)
-block|{
-name|this
-argument_list|(
-name|var1
-argument_list|)
-expr_stmt|;
 block|}
 comment|// $FF: synthetic method
 specifier|static

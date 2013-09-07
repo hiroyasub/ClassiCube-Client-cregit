@@ -452,7 +452,7 @@ name|ySpawn
 decl_stmt|;
 for|for
 control|(
-name|float
+name|double
 name|var3
 init|=
 operator|(
@@ -482,6 +482,9 @@ name|var1
 argument_list|,
 name|var2
 argument_list|,
+operator|(
+name|float
+operator|)
 name|var3
 argument_list|)
 expr_stmt|;
