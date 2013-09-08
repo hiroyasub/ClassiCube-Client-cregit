@@ -50,6 +50,32 @@ name|dtmp3
 decl_stmt|,
 name|dtmp4
 decl_stmt|;
+specifier|private
+name|float
+index|[]
+name|_x
+init|=
+operator|new
+name|float
+index|[
+literal|1024
+index|]
+decl_stmt|;
+comment|// void clear(){
+comment|// }
+comment|// void forward(float[] in, float[] out){
+comment|// }
+specifier|private
+name|float
+index|[]
+name|_w
+init|=
+operator|new
+name|float
+index|[
+literal|1024
+index|]
+decl_stmt|;
 specifier|protected
 name|MdctFloat
 parameter_list|(
@@ -507,48 +533,6 @@ name|acc
 expr_stmt|;
 block|}
 block|}
-block|}
-comment|// void clear(){
-comment|// }
-comment|// void forward(float[] in, float[] out){
-comment|// }
-specifier|private
-name|float
-index|[]
-name|_x
-init|=
-operator|new
-name|float
-index|[
-literal|1024
-index|]
-decl_stmt|;
-specifier|private
-name|float
-index|[]
-name|_w
-init|=
-operator|new
-name|float
-index|[
-literal|1024
-index|]
-decl_stmt|;
-specifier|protected
-name|void
-name|setEqualizer
-parameter_list|(
-name|float
-index|[]
-name|equalizer
-parameter_list|)
-block|{
-name|this
-operator|.
-name|equalizer
-operator|=
-name|equalizer
-expr_stmt|;
 block|}
 specifier|protected
 name|float
@@ -1776,6 +1760,22 @@ block|}
 return|return
 name|x
 return|;
+block|}
+specifier|protected
+name|void
+name|setEqualizer
+parameter_list|(
+name|float
+index|[]
+name|equalizer
+parameter_list|)
+block|{
+name|this
+operator|.
+name|equalizer
+operator|=
+name|equalizer
+expr_stmt|;
 block|}
 block|}
 end_class

@@ -22,7 +22,7 @@ name|PrinterModel
 extends|extends
 name|Model
 block|{
-comment|//fields
+comment|// fields
 name|ModelPart
 name|Base
 decl_stmt|;
@@ -166,7 +166,7 @@ operator|-
 literal|7F
 argument_list|)
 expr_stmt|;
-comment|//RightWall.setTextureSize(128, 128);
+comment|// RightWall.setTextureSize(128, 128);
 name|RightWall
 operator|.
 name|mirror
@@ -226,7 +226,7 @@ operator|-
 literal|7F
 argument_list|)
 expr_stmt|;
-comment|//LeftWall.setTextureSize(128, 128);
+comment|// LeftWall.setTextureSize(128, 128);
 name|LeftWall
 operator|.
 name|mirror
@@ -346,7 +346,7 @@ operator|-
 literal|6.5F
 argument_list|)
 expr_stmt|;
-comment|//WholeBase.setTextureSize(128, 128);
+comment|// WholeBase.setTextureSize(128, 128);
 name|WholeBase
 operator|.
 name|mirror
@@ -466,7 +466,7 @@ argument_list|,
 literal|5.8F
 argument_list|)
 expr_stmt|;
-comment|//  Back.setTextureSize(128, 128);
+comment|// Back.setTextureSize(128, 128);
 name|Back
 operator|.
 name|mirror
@@ -525,7 +525,7 @@ argument_list|,
 literal|0F
 argument_list|)
 expr_stmt|;
-comment|//TopLeftNobble.setTextureSize(128, 128);
+comment|// TopLeftNobble.setTextureSize(128, 128);
 name|TopLeftNobble
 operator|.
 name|mirror

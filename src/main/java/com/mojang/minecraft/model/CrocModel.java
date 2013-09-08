@@ -30,6 +30,28 @@ name|CrocModel
 extends|extends
 name|Model
 block|{
+comment|// fields
+name|ModelPart
+name|Tail
+decl_stmt|;
+name|ModelPart
+name|head
+decl_stmt|;
+name|ModelPart
+name|body
+decl_stmt|;
+name|ModelPart
+name|leg1
+decl_stmt|;
+name|ModelPart
+name|leg2
+decl_stmt|;
+name|ModelPart
+name|leg4
+decl_stmt|;
+name|ModelPart
+name|leg3
+decl_stmt|;
 specifier|public
 name|CrocModel
 parameter_list|()
@@ -631,7 +653,7 @@ name|float
 name|f5
 parameter_list|)
 block|{
-comment|//super.setRotationAngles(f, f1, f2, f3, f4, f5);
+comment|// super.setRotationAngles(f, f1, f2, f3, f4, f5);
 name|Tail
 operator|.
 name|yaw
@@ -656,28 +678,6 @@ literal|0
 argument_list|)
 expr_stmt|;
 block|}
-comment|//fields
-name|ModelPart
-name|Tail
-decl_stmt|;
-name|ModelPart
-name|head
-decl_stmt|;
-name|ModelPart
-name|body
-decl_stmt|;
-name|ModelPart
-name|leg1
-decl_stmt|;
-name|ModelPart
-name|leg2
-decl_stmt|;
-name|ModelPart
-name|leg4
-decl_stmt|;
-name|ModelPart
-name|leg3
-decl_stmt|;
 block|}
 end_class
 

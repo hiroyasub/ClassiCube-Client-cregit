@@ -39,6 +39,18 @@ extends|extends
 name|BasicAI
 block|{
 specifier|public
+specifier|static
+specifier|final
+name|long
+name|serialVersionUID
+init|=
+literal|0L
+decl_stmt|;
+specifier|private
+name|Player
+name|player
+decl_stmt|;
+specifier|public
 name|Player$1
 parameter_list|(
 name|Player
@@ -130,18 +142,6 @@ operator|.
 name|yya
 expr_stmt|;
 block|}
-specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
-specifier|private
-name|Player
-name|player
-decl_stmt|;
 block|}
 end_class
 

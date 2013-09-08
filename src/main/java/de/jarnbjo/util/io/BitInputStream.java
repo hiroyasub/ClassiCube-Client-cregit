@@ -52,11 +52,28 @@ name|BIG_ENDIAN
 init|=
 literal|1
 decl_stmt|;
+comment|/**      * causes the read pointer to be moved to the beginning of the next byte,      * remaining bits in the current byte are discarded      *       * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+specifier|public
+name|void
+name|align
+parameter_list|()
+function_decl|;
 comment|/**      * reads one bit (as a boolean) from the input stream      *       * @return<code>true</code> if the next bit is 1,<code>false</code>      *         otherwise      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|boolean
 name|getBit
 parameter_list|()
+throws|throws
+name|IOException
+function_decl|;
+comment|/**      * reads a huffman codeword based on the<code>root</code> parameter and      * returns the decoded value      *       * @param root      *            the root of the Huffman tree used to decode the codeword      * @return the decoded unsigned integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+specifier|public
+name|int
+name|getInt
+parameter_list|(
+name|HuffmanNode
+name|root
+parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
@@ -71,10 +88,10 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/**      * reads<code>bits</code> number of bits from the input stream      *       * @return the signed integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+comment|/**      * reads<code>bits</code> number of bits from the input stream      *       * @return the unsigned long value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
-name|int
-name|getSignedInt
+name|long
+name|getLong
 parameter_list|(
 name|int
 name|bits
@@ -82,13 +99,13 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/**      * reads a huffman codeword based on the<code>root</code> parameter and      * returns the decoded value      *       * @param root      *            the root of the Huffman tree used to decode the codeword      * @return the decoded unsigned integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+comment|/**      * reads<code>bits</code> number of bits from the input stream      *       * @return the signed integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|int
-name|getInt
+name|getSignedInt
 parameter_list|(
-name|HuffmanNode
-name|root
+name|int
+name|bits
 parameter_list|)
 throws|throws
 name|IOException
@@ -124,23 +141,6 @@ name|len
 parameter_list|)
 throws|throws
 name|IOException
-function_decl|;
-comment|/**      * reads<code>bits</code> number of bits from the input stream      *       * @return the unsigned long value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
-specifier|public
-name|long
-name|getLong
-parameter_list|(
-name|int
-name|bits
-parameter_list|)
-throws|throws
-name|IOException
-function_decl|;
-comment|/**      * causes the read pointer to be moved to the beginning of the next byte,      * remaining bits in the current byte are discarded      *       * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
-specifier|public
-name|void
-name|align
-parameter_list|()
 function_decl|;
 comment|/**      * changes the endian mode used when reading bit-wise from the stream,      * changing the mode mid-stream will cause the read cursor to move to the      * beginning of the next byte (as if calling the<code>allign</code> method      *       * @see #align()      *       * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public

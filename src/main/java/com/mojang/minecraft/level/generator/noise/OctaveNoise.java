@@ -32,6 +32,15 @@ name|OctaveNoise
 extends|extends
 name|Noise
 block|{
+specifier|private
+name|PerlinNoise
+index|[]
+name|perlin
+decl_stmt|;
+specifier|private
+name|int
+name|octaves
+decl_stmt|;
 specifier|public
 name|OctaveNoise
 parameter_list|(
@@ -152,15 +161,6 @@ return|return
 name|result
 return|;
 block|}
-specifier|private
-name|PerlinNoise
-index|[]
-name|perlin
-decl_stmt|;
-specifier|private
-name|int
-name|octaves
-decl_stmt|;
 block|}
 end_class
 

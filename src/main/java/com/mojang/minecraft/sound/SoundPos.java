@@ -17,11 +17,11 @@ interface|interface
 name|SoundPos
 block|{
 name|float
-name|getRotationDiff
+name|getDistanceSq
 parameter_list|()
 function_decl|;
 name|float
-name|getDistanceSq
+name|getRotationDiff
 parameter_list|()
 function_decl|;
 block|}

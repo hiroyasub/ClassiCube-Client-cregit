@@ -17,6 +17,15 @@ class|class
 name|SoundData
 block|{
 specifier|public
+name|short
+index|[]
+name|data
+decl_stmt|;
+specifier|public
+name|float
+name|length
+decl_stmt|;
+specifier|public
 name|SoundData
 parameter_list|(
 name|short
@@ -40,15 +49,6 @@ operator|=
 name|length
 expr_stmt|;
 block|}
-specifier|public
-name|short
-index|[]
-name|data
-decl_stmt|;
-specifier|public
-name|float
-name|length
-decl_stmt|;
 block|}
 end_class
 

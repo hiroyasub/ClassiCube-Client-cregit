@@ -63,6 +63,10 @@ block|{
 name|String
 name|skinServer
 decl_stmt|;
+specifier|private
+name|Minecraft
+name|minecraft
+decl_stmt|;
 specifier|public
 name|SkinDownloadThread
 parameter_list|(
@@ -244,10 +248,6 @@ block|}
 block|}
 block|}
 block|}
-specifier|private
-name|Minecraft
-name|minecraft
-decl_stmt|;
 block|}
 end_class
 

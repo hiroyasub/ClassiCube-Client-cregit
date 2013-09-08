@@ -15,6 +15,14 @@ class|class
 name|ChatLine
 block|{
 specifier|public
+name|String
+name|message
+decl_stmt|;
+specifier|public
+name|int
+name|time
+decl_stmt|;
+specifier|public
 name|ChatLine
 parameter_list|(
 name|String
@@ -34,14 +42,6 @@ operator|=
 literal|0
 expr_stmt|;
 block|}
-specifier|public
-name|String
-name|message
-decl_stmt|;
-specifier|public
-name|int
-name|time
-decl_stmt|;
 block|}
 end_class
 

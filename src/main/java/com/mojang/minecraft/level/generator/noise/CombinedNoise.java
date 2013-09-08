@@ -23,6 +23,14 @@ name|CombinedNoise
 extends|extends
 name|Noise
 block|{
+specifier|private
+name|Noise
+name|noise1
+decl_stmt|;
+specifier|private
+name|Noise
+name|noise2
+decl_stmt|;
 specifier|public
 name|CombinedNoise
 parameter_list|(
@@ -79,14 +87,6 @@ name|z
 argument_list|)
 return|;
 block|}
-specifier|private
-name|Noise
-name|noise1
-decl_stmt|;
-specifier|private
-name|Noise
-name|noise2
-decl_stmt|;
 block|}
 end_class
 

@@ -36,6 +36,14 @@ init|=
 literal|1L
 decl_stmt|;
 specifier|public
+name|String
+name|name
+decl_stmt|;
+specifier|public
+name|int
+name|key
+decl_stmt|;
+specifier|public
 name|KeyBinding
 parameter_list|(
 name|String
@@ -58,14 +66,6 @@ operator|=
 name|key
 expr_stmt|;
 block|}
-specifier|public
-name|String
-name|name
-decl_stmt|;
-specifier|public
-name|int
-name|key
-decl_stmt|;
 block|}
 end_class
 

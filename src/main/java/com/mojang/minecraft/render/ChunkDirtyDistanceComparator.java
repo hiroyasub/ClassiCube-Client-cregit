@@ -45,6 +45,10 @@ argument_list|<
 name|Chunk
 argument_list|>
 block|{
+specifier|private
+name|Player
+name|player
+decl_stmt|;
 specifier|public
 name|ChunkDirtyDistanceComparator
 parameter_list|(
@@ -156,10 +160,6 @@ literal|1
 return|;
 block|}
 block|}
-specifier|private
-name|Player
-name|player
-decl_stmt|;
 block|}
 end_class
 

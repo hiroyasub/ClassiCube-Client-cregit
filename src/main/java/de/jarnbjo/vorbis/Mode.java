@@ -171,11 +171,11 @@ return|;
 block|}
 specifier|protected
 name|int
-name|getWindowType
+name|getMapping
 parameter_list|()
 block|{
 return|return
-name|windowType
+name|mapping
 return|;
 block|}
 specifier|protected
@@ -189,11 +189,11 @@ return|;
 block|}
 specifier|protected
 name|int
-name|getMapping
+name|getWindowType
 parameter_list|()
 block|{
 return|return
-name|mapping
+name|windowType
 return|;
 block|}
 block|}

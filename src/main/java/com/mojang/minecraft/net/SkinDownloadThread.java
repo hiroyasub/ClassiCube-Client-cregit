@@ -51,6 +51,10 @@ block|{
 name|String
 name|skinServer
 decl_stmt|;
+specifier|private
+name|NetworkPlayer
+name|player
+decl_stmt|;
 specifier|public
 name|SkinDownloadThread
 parameter_list|(
@@ -232,10 +236,6 @@ expr_stmt|;
 block|}
 block|}
 block|}
-specifier|private
-name|NetworkPlayer
-name|player
-decl_stmt|;
 block|}
 end_class
 
