@@ -251,14 +251,14 @@ class|class
 name|ClassiCubeStandalone
 block|{
 comment|/**      * A class representing the Minecraft Classic game.      */
-specifier|private
+specifier|public
 class|class
 name|MinecraftFrame
 extends|extends
 name|JFrame
 block|{
 comment|/** 	 * Override the MinecraftApplet class because we need to fake the 	 * Document Base and Code Base. 	 */
-specifier|private
+specifier|public
 class|class
 name|MCraftApplet
 extends|extends
@@ -390,13 +390,13 @@ return|;
 block|}
 block|}
 comment|/** 	 * A canvas for the Minecraft thread. 	 */
-specifier|private
+specifier|public
 class|class
 name|MinecraftCanvas
 extends|extends
 name|Canvas
 block|{
-specifier|private
+specifier|public
 name|Image
 name|image
 decl_stmt|;
@@ -1159,7 +1159,7 @@ name|minecraft
 expr_stmt|;
 block|}
 comment|/** 	     * Start the Minecraft client thread. 	     */
-specifier|private
+specifier|public
 specifier|synchronized
 name|void
 name|startThread

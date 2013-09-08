@@ -763,8 +763,6 @@ argument_list|()
 operator|.
 name|getResourceAsStream
 argument_list|(
-literal|"/resources"
-operator|+
 literal|"/rsbg.jpg"
 argument_list|)
 argument_list|)
@@ -787,8 +785,6 @@ argument_list|()
 operator|.
 name|getResourceAsStream
 argument_list|(
-literal|"/resources"
-operator|+
 literal|"/bg.jpg"
 argument_list|)
 argument_list|)
@@ -1077,7 +1073,7 @@ expr_stmt|;
 name|boolean
 name|RunFakeNetwork
 init|=
-literal|false
+literal|true
 decl_stmt|;
 if|if
 condition|(

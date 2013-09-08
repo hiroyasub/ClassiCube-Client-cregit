@@ -3351,19 +3351,6 @@ name|textureFile
 init|=
 literal|"/terrain.png"
 decl_stmt|;
-if|if
-condition|(
-operator|!
-name|isApplet
-condition|)
-block|{
-name|textureFile
-operator|=
-literal|"/resources"
-operator|+
-name|textureFile
-expr_stmt|;
-block|}
 name|BufferedImage
 name|image
 init|=
@@ -3459,7 +3446,7 @@ literal|"org.lwjgl.librarypath"
 argument_list|,
 name|mcDir
 operator|+
-literal|"/native/"
+literal|"/natives/"
 operator|+
 name|getOSfolderName
 argument_list|(
@@ -3475,7 +3462,7 @@ literal|"net.java.games.input.librarypath"
 argument_list|,
 name|mcDir
 operator|+
-literal|"/native/"
+literal|"/natives/"
 operator|+
 name|getOSfolderName
 argument_list|(
