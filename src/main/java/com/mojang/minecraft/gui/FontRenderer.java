@@ -203,7 +203,7 @@ name|String
 name|fontImage
 parameter_list|,
 name|TextureManager
-name|textures
+name|textureManager
 parameter_list|)
 throws|throws
 name|IOException
@@ -344,7 +344,7 @@ decl_stmt|;
 for|for
 control|(
 name|boolean
-name|var9
+name|empty
 init|=
 literal|false
 init|;
@@ -353,7 +353,7 @@ operator|<
 literal|8
 operator|&&
 operator|!
-name|var9
+name|empty
 condition|;
 name|chWidth
 operator|++
@@ -370,7 +370,7 @@ operator|)
 operator|+
 name|chWidth
 decl_stmt|;
-name|var9
+name|empty
 operator|=
 literal|true
 expr_stmt|;
@@ -385,7 +385,7 @@ name|var11
 operator|<
 literal|8
 operator|&&
-name|var9
+name|empty
 condition|;
 operator|++
 name|var11
@@ -422,7 +422,7 @@ operator|>
 literal|128
 condition|)
 block|{
-name|var9
+name|empty
 operator|=
 literal|false
 expr_stmt|;
@@ -460,7 +460,7 @@ name|this
 operator|.
 name|fontId
 operator|=
-name|textures
+name|textureManager
 operator|.
 name|load
 argument_list|(

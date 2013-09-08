@@ -2322,7 +2322,7 @@ name|printStackTrace
 argument_list|()
 expr_stmt|;
 block|}
-comment|/*if (this.canvas != null) { // check this, changed @FindBugs 		    this.canvas.requestFocus(); 		}*/
+comment|/* 		 * if (this.canvas != null) { // check this, changed @FindBugs 		 * this.canvas.requestFocus(); } 		 */
 block|}
 else|else
 block|{
@@ -3788,6 +3788,18 @@ argument_list|(
 name|this
 argument_list|,
 name|mcDir
+argument_list|)
+expr_stmt|;
+name|ShapeRenderer
+operator|.
+name|instance
+operator|=
+operator|new
+name|ShapeRenderer
+argument_list|(
+literal|2097152
+argument_list|,
+name|this
 argument_list|)
 expr_stmt|;
 name|this
@@ -6864,14 +6876,6 @@ decl_stmt|;
 name|int
 name|var110
 decl_stmt|;
-name|ShapeRenderer
-operator|.
-name|tryVBO
-operator|=
-name|settings
-operator|.
-name|VBOs
-expr_stmt|;
 name|ShapeRenderer
 name|shapeRenderer
 init|=

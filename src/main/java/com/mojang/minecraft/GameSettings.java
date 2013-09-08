@@ -1249,12 +1249,6 @@ argument_list|(
 literal|"true"
 argument_list|)
 expr_stmt|;
-name|ShapeRenderer
-operator|.
-name|tryVBO
-operator|=
-name|VBOs
-expr_stmt|;
 block|}
 if|if
 condition|(
