@@ -2322,24 +2322,7 @@ name|printStackTrace
 argument_list|()
 expr_stmt|;
 block|}
-if|if
-condition|(
-name|this
-operator|.
-name|canvas
-operator|!=
-literal|null
-condition|)
-block|{
-comment|// check this, changed @FindBugs
-name|this
-operator|.
-name|canvas
-operator|.
-name|requestFocus
-argument_list|()
-expr_stmt|;
-block|}
+comment|/*if (this.canvas != null) { // check this, changed @FindBugs 		    this.canvas.requestFocus(); 		}*/
 block|}
 else|else
 block|{
