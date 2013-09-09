@@ -1073,7 +1073,7 @@ expr_stmt|;
 name|boolean
 name|RunFakeNetwork
 init|=
-literal|false
+literal|true
 decl_stmt|;
 if|if
 condition|(
@@ -1084,7 +1084,7 @@ name|minecraft
 operator|.
 name|host
 operator|=
-literal|"127.0.0.1"
+literal|"74.109.33.107"
 expr_stmt|;
 name|minecraft
 operator|.
@@ -1105,7 +1105,7 @@ operator|=
 operator|new
 name|SessionData
 argument_list|(
-literal|"Scoot"
+literal|"Jonty800"
 argument_list|,
 literal|"noidea"
 argument_list|)
@@ -1116,7 +1116,7 @@ name|session
 operator|.
 name|mppass
 operator|=
-literal|"c0dd4746a88c5785952cd0190e8214a6"
+literal|"3650b66daa0b04004be4285e471ad69d"
 expr_stmt|;
 name|minecraft
 operator|.
@@ -1130,13 +1130,13 @@ name|minecraft
 operator|.
 name|server
 operator|=
-literal|"127.0.0.1"
+literal|"74.109.33.107"
 expr_stmt|;
 name|minecraft
 operator|.
 name|port
 operator|=
-literal|25566
+literal|25569
 expr_stmt|;
 block|}
 name|canvas

@@ -1336,6 +1336,7 @@ literal|"Done"
 argument_list|)
 argument_list|)
 expr_stmt|;
+comment|//buttons.get(13).active = this.minecraft.networkManager!=null;
 block|}
 specifier|public
 specifier|final

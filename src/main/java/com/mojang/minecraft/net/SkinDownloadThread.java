@@ -188,6 +188,13 @@ name|getResponseCode
 argument_list|()
 operator|==
 literal|404
+operator|||
+name|connection
+operator|.
+name|getResponseCode
+argument_list|()
+operator|==
+literal|403
 condition|)
 block|{
 return|return;
