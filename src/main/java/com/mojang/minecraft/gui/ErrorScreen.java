@@ -13,16 +13,6 @@ end_package
 
 begin_import
 import|import
-name|java
-operator|.
-name|awt
-operator|.
-name|Canvas
-import|;
-end_import
-
-begin_import
-import|import
 name|org
 operator|.
 name|lwjgl
@@ -42,26 +32,6 @@ operator|.
 name|minecraft
 operator|.
 name|Minecraft
-import|;
-end_import
-
-begin_import
-import|import
-name|com
-operator|.
-name|oyasunadev
-operator|.
-name|mcraft
-operator|.
-name|client
-operator|.
-name|core
-operator|.
-name|ClassiCubeStandalone
-operator|.
-name|MinecraftFrame
-operator|.
-name|MinecraftCanvas
 import|;
 end_import
 

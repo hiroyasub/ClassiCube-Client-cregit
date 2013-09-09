@@ -183,12 +183,12 @@ name|GameSettings
 name|settings
 decl_stmt|;
 specifier|private
-name|int
+name|short
 index|[]
 name|font
 init|=
 operator|new
-name|int
+name|short
 index|[
 literal|256
 index|]
@@ -453,6 +453,9 @@ index|[
 name|character
 index|]
 operator|=
+operator|(
+name|short
+operator|)
 name|chWidth
 expr_stmt|;
 block|}

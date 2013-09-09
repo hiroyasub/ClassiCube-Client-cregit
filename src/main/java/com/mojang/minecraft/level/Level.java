@@ -328,7 +328,7 @@ argument_list|()
 decl_stmt|;
 specifier|private
 specifier|transient
-name|int
+name|short
 index|[]
 name|blockers
 decl_stmt|;
@@ -706,6 +706,9 @@ operator|.
 name|width
 index|]
 operator|=
+operator|(
+name|short
+operator|)
 name|var8
 expr_stmt|;
 if|if
@@ -4820,7 +4823,7 @@ operator|.
 name|blockers
 operator|=
 operator|new
-name|int
+name|short
 index|[
 name|this
 operator|.
@@ -4839,6 +4842,9 @@ name|this
 operator|.
 name|blockers
 argument_list|,
+operator|(
+name|short
+operator|)
 name|this
 operator|.
 name|depth
@@ -6734,7 +6740,7 @@ operator|.
 name|blockers
 operator|=
 operator|new
-name|int
+name|short
 index|[
 name|var1
 operator|*
@@ -6749,6 +6755,9 @@ name|this
 operator|.
 name|blockers
 argument_list|,
+operator|(
+name|short
+operator|)
 name|this
 operator|.
 name|depth

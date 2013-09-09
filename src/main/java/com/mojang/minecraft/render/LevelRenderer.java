@@ -57,7 +57,7 @@ name|java
 operator|.
 name|nio
 operator|.
-name|IntBuffer
+name|ShortBuffer
 import|;
 end_import
 
@@ -132,12 +132,12 @@ name|int
 name|listId
 decl_stmt|;
 specifier|public
-name|IntBuffer
+name|ShortBuffer
 name|buffer
 init|=
 name|BufferUtils
 operator|.
-name|createIntBuffer
+name|createShortBuffer
 argument_list|(
 literal|65536
 argument_list|)
@@ -187,12 +187,12 @@ name|Minecraft
 name|minecraft
 decl_stmt|;
 specifier|private
-name|int
+name|short
 index|[]
 name|chunkDataCache
 init|=
 operator|new
-name|int
+name|short
 index|[
 literal|'\uc350'
 index|]
