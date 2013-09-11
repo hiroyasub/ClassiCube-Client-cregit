@@ -265,11 +265,11 @@ specifier|final
 name|boolean
 name|play
 parameter_list|(
-name|short
+name|int
 index|[]
 name|var1
 parameter_list|,
-name|short
+name|int
 index|[]
 name|var2
 parameter_list|,

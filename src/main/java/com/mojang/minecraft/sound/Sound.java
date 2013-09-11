@@ -44,12 +44,12 @@ init|=
 literal|1.0F
 decl_stmt|;
 specifier|private
-name|short
+name|int
 index|[]
 name|data
 init|=
 operator|new
-name|short
+name|int
 index|[
 literal|1
 index|]
@@ -104,11 +104,11 @@ specifier|final
 name|boolean
 name|play
 parameter_list|(
-name|short
+name|int
 index|[]
 name|var1
 parameter_list|,
-name|short
+name|int
 index|[]
 name|var2
 parameter_list|,
@@ -128,7 +128,7 @@ block|{
 name|data
 operator|=
 operator|new
-name|short
+name|int
 index|[
 name|var3
 index|]

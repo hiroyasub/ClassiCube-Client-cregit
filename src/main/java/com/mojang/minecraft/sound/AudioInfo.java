@@ -26,7 +26,7 @@ specifier|public
 name|int
 name|update
 parameter_list|(
-name|short
+name|int
 index|[]
 name|var1
 parameter_list|,
