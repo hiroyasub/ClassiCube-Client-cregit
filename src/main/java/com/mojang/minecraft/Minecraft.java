@@ -4011,12 +4011,7 @@ literal|"org.lwjgl.librarypath"
 argument_list|,
 name|mcDir
 operator|+
-literal|"/natives/"
-operator|+
-name|getOSfolderName
-argument_list|(
-name|s
-argument_list|)
+literal|"/natives"
 argument_list|)
 expr_stmt|;
 name|System
@@ -4027,12 +4022,7 @@ literal|"net.java.games.input.librarypath"
 argument_list|,
 name|mcDir
 operator|+
-literal|"/natives/"
-operator|+
-name|getOSfolderName
-argument_list|(
-name|s
-argument_list|)
+literal|"/natives"
 argument_list|)
 expr_stmt|;
 block|}

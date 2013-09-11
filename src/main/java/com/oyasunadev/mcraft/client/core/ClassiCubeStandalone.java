@@ -1673,6 +1673,8 @@ operator|>
 literal|3
 condition|)
 block|{
+try|try
+block|{
 name|server
 operator|=
 name|args
@@ -1725,6 +1727,14 @@ literal|5
 index|]
 argument_list|)
 expr_stmt|;
+block|}
+catch|catch
+parameter_list|(
+name|Exception
+name|e
+parameter_list|)
+block|{
+block|}
 block|}
 name|ClassiCubeStandalone
 name|classicubeStandalone

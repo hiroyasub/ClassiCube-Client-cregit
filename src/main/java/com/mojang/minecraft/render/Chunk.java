@@ -265,7 +265,7 @@ specifier|final
 name|int
 name|appendLists
 parameter_list|(
-name|short
+name|int
 index|[]
 name|var1
 parameter_list|,
@@ -307,16 +307,11 @@ name|var2
 operator|++
 index|]
 operator|=
-operator|(
-name|short
-operator|)
-operator|(
 name|this
 operator|.
 name|baseListId
 operator|+
 name|var3
-operator|)
 expr_stmt|;
 block|}
 return|return
