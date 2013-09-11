@@ -1723,6 +1723,10 @@ name|int
 name|recievedExtensionLength
 decl_stmt|;
 specifier|public
+name|MonitoringThread
+name|monitoringThread
+decl_stmt|;
+specifier|public
 name|Minecraft
 parameter_list|(
 name|Canvas
@@ -4400,6 +4404,14 @@ argument_list|,
 name|this
 operator|.
 name|textureManager
+argument_list|)
+expr_stmt|;
+name|monitoringThread
+operator|=
+operator|new
+name|MonitoringThread
+argument_list|(
+literal|1000
 argument_list|)
 expr_stmt|;
 name|this
