@@ -1424,7 +1424,7 @@ name|height
 operator|/
 literal|6
 operator|+
-literal|128
+literal|152
 argument_list|,
 literal|16711680
 argument_list|)

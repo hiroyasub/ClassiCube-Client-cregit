@@ -3907,6 +3907,8 @@ operator|/
 literal|16
 argument_list|)
 expr_stmt|;
+empty_stmt|;
+comment|//   Shader.loadShader(getMinecraftDirectory() +"/shaders/water.vert", null);
 if|if
 condition|(
 name|this
@@ -4931,6 +4933,7 @@ argument_list|(
 literal|3553
 argument_list|)
 expr_stmt|;
+comment|//Shader.draw();
 if|if
 condition|(
 operator|!
@@ -6707,7 +6710,6 @@ operator|.
 name|update
 argument_list|()
 decl_stmt|;
-comment|// var76.init();
 name|Frustrum
 name|var100
 init|=
@@ -9492,6 +9494,7 @@ name|buffer
 argument_list|)
 expr_stmt|;
 block|}
+comment|//Shader.endDraw();
 name|GL11
 operator|.
 name|glDepthMask
@@ -11043,6 +11046,9 @@ block|}
 block|}
 if|if
 condition|(
+operator|!
+name|isSinglePlayer
+operator|&&
 name|this
 operator|.
 name|networkManager
@@ -11056,6 +11062,17 @@ operator|.
 name|players
 operator|!=
 literal|null
+operator|&&
+name|this
+operator|.
+name|networkManager
+operator|.
+name|players
+operator|.
+name|size
+argument_list|()
+operator|>
+literal|0
 condition|)
 block|{
 if|if

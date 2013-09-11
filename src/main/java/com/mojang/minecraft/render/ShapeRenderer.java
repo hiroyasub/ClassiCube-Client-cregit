@@ -258,7 +258,7 @@ specifier|public
 name|ShapeRenderer
 parameter_list|(
 name|int
-name|var1
+name|size
 parameter_list|,
 name|Minecraft
 name|minecraft
@@ -274,7 +274,7 @@ name|this
 operator|.
 name|bufferSize
 operator|=
-name|var1
+name|size
 expr_stmt|;
 name|this
 operator|.
@@ -284,7 +284,7 @@ name|GLAllocation
 operator|.
 name|createDirectByteBuffer
 argument_list|(
-name|var1
+name|size
 operator|*
 literal|4
 argument_list|)
@@ -329,7 +329,7 @@ operator|=
 operator|new
 name|int
 index|[
-name|var1
+name|size
 index|]
 expr_stmt|;
 name|this

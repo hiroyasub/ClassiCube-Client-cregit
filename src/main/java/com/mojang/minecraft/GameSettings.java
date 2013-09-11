@@ -2134,7 +2134,7 @@ name|player
 operator|.
 name|input
 operator|.
-name|noclip
+name|noClip
 operator|=
 literal|false
 expr_stmt|;
@@ -2163,7 +2163,7 @@ name|player
 operator|.
 name|input
 operator|.
-name|noClip
+name|noclip
 operator|=
 literal|false
 expr_stmt|;
