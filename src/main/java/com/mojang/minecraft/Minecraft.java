@@ -4075,7 +4075,7 @@ name|canvas
 argument_list|)
 expr_stmt|;
 block|}
-if|else if
+if|if
 condition|(
 name|this
 operator|.

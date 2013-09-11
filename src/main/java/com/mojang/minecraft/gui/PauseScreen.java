@@ -564,7 +564,7 @@ name|this
 operator|.
 name|height
 operator|-
-literal|30
+literal|36
 argument_list|,
 name|this
 operator|.
@@ -602,7 +602,7 @@ name|this
 operator|.
 name|height
 operator|-
-literal|52
+literal|58
 argument_list|,
 name|w
 argument_list|,
