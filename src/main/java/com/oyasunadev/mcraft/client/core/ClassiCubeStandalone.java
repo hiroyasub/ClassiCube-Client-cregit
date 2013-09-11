@@ -931,11 +931,6 @@ decl_stmt|;
 name|int
 name|numRead
 decl_stmt|;
-name|long
-name|numWritten
-init|=
-literal|0
-decl_stmt|;
 while|while
 condition|(
 operator|(
@@ -963,10 +958,6 @@ literal|0
 argument_list|,
 name|numRead
 argument_list|)
-expr_stmt|;
-name|numWritten
-operator|+=
-name|numRead
 expr_stmt|;
 block|}
 block|}
