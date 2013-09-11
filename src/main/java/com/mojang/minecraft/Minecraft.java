@@ -1893,6 +1893,10 @@ name|applet
 operator|=
 name|var2
 expr_stmt|;
+operator|new
+name|SleepForeverThread
+argument_list|()
+expr_stmt|;
 name|this
 operator|.
 name|canvas
@@ -4411,11 +4415,7 @@ operator|.
 name|initAtlas
 argument_list|()
 expr_stmt|;
-name|OpenGlHelper
-operator|.
-name|initializeTextures
-argument_list|()
-expr_stmt|;
+comment|//OpenGlHelper.initializeTextures();
 if|if
 condition|(
 name|this
