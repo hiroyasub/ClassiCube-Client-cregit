@@ -1130,13 +1130,13 @@ name|minecraft
 operator|.
 name|server
 operator|=
-literal|"74.109.33.107"
+literal|"127.0.0.1"
 expr_stmt|;
 name|minecraft
 operator|.
 name|port
 operator|=
-literal|25569
+literal|25566
 expr_stmt|;
 block|}
 name|canvas

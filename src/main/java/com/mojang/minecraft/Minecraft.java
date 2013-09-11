@@ -3774,6 +3774,11 @@ operator|.
 name|initAtlas
 argument_list|()
 expr_stmt|;
+name|OpenGlHelper
+operator|.
+name|initializeTextures
+argument_list|()
+expr_stmt|;
 if|if
 condition|(
 name|this
