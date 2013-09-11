@@ -117,12 +117,6 @@ name|var4
 expr_stmt|;
 name|this
 operator|.
-name|height
-operator|=
-literal|20
-expr_stmt|;
-name|this
-operator|.
 name|text
 operator|=
 name|var6

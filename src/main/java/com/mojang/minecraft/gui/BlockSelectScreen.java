@@ -133,7 +133,7 @@ operator|.
 name|size
 argument_list|()
 operator|<=
-literal|49
+literal|50
 decl_stmt|;
 name|int
 name|BlocksPerRow
