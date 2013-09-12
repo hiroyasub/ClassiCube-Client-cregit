@@ -16,6 +16,14 @@ specifier|public
 interface|interface
 name|Audio
 block|{
+specifier|public
+name|boolean
+name|isFootStep
+parameter_list|(
+name|boolean
+name|really
+parameter_list|)
+function_decl|;
 name|boolean
 name|play
 parameter_list|(

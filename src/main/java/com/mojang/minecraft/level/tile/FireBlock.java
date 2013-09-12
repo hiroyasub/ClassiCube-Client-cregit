@@ -198,7 +198,7 @@ block|}
 specifier|public
 specifier|final
 name|boolean
-name|isCube
+name|isOpaque
 parameter_list|()
 block|{
 return|return

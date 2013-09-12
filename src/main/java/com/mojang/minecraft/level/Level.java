@@ -6432,6 +6432,9 @@ name|var3
 parameter_list|,
 name|float
 name|var4
+parameter_list|,
+name|boolean
+name|footStep
 parameter_list|)
 block|{
 if|if

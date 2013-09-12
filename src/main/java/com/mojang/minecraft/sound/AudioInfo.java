@@ -23,6 +23,12 @@ init|=
 literal|1.0F
 decl_stmt|;
 specifier|public
+name|boolean
+name|isFootstep
+init|=
+literal|false
+decl_stmt|;
+specifier|public
 name|int
 name|update
 parameter_list|(

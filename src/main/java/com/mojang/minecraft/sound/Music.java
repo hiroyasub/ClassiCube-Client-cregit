@@ -514,6 +514,21 @@ name|finished
 return|;
 block|}
 block|}
+annotation|@
+name|Override
+specifier|public
+name|boolean
+name|isFootStep
+parameter_list|(
+name|boolean
+name|really
+parameter_list|)
+block|{
+comment|// TODO Auto-generated method stub
+return|return
+literal|false
+return|;
+block|}
 block|}
 end_class
 

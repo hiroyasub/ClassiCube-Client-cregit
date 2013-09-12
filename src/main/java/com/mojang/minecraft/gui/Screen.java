@@ -591,6 +591,15 @@ argument_list|(
 literal|3553
 argument_list|)
 expr_stmt|;
+name|GL11
+operator|.
+name|glAlphaFunc
+argument_list|(
+literal|516
+argument_list|,
+literal|0.5F
+argument_list|)
+expr_stmt|;
 block|}
 specifier|public
 specifier|static

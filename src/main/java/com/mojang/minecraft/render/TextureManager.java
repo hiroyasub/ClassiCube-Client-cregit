@@ -1309,20 +1309,7 @@ argument_list|,
 name|mipData1
 argument_list|)
 expr_stmt|;
-name|GL11
-operator|.
-name|glAlphaFunc
-argument_list|(
-name|GL11
-operator|.
-name|GL_GEQUAL
-argument_list|,
-literal|0.1F
-operator|*
-name|level
-argument_list|)
-expr_stmt|;
-comment|// Create
+comment|//GL11.glAlphaFunc(GL11.GL_GEQUAL, 0.1F * level); // Create
 comment|// transparency for
 comment|// each level.
 name|mipData
