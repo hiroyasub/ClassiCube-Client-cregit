@@ -1715,6 +1715,15 @@ index|[
 literal|4
 index|]
 expr_stmt|;
+if|if
+condition|(
+name|args
+operator|.
+name|length
+operator|>=
+literal|4
+condition|)
+block|{
 name|startFullScreen
 operator|=
 name|Boolean
@@ -1727,6 +1736,7 @@ literal|5
 index|]
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 catch|catch
 parameter_list|(

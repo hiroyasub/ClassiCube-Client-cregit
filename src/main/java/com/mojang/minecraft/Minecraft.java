@@ -1720,7 +1720,7 @@ block|{
 comment|// this.selectionBoxes.add(new SelectionBoxData((byte) 1, "",
 comment|// new ColorCache(0F, 1.0F, 0F, 0.6F), new CustomAABB(12, 45, 30,
 comment|// 20, 30, 40)));
-comment|/* 	 * for(int i = 0; i< 140; i++){ String group = "Guest"; if(i> 8)group = 	 * "Owner"; if(i> 11) group = "Test"; if( i> 18) group = "Test2"; if(i 	 *> 32) group = "Last group"; if(i> 35) group = "jk"; if(i> 40) group 	 * = "rollin"; if(i> 45) group = "aaaaa"; 	 * this.playerListNameData.add(new PlayerListNameData((short) i, "" +i, 	 * "" +i, group, (byte)1)); 	 *  	 * } Collections.sort(playerListNameData, new PlayerListComparator()); 	 */
+comment|/* 		 * for(int i = 0; i< 140; i++){ String group = "Guest"; if(i> 8)group = 		 * "Owner"; if(i> 11) group = "Test"; if( i> 18) group = "Test2"; if(i 		 *> 32) group = "Last group"; if(i> 35) group = "jk"; if(i> 40) group 		 * = "rollin"; if(i> 45) group = "aaaaa"; 		 * this.playerListNameData.add(new PlayerListNameData((short) i, "" +i, 		 * "" +i, group, (byte)1)); 		 *  		 * } Collections.sort(playerListNameData, new PlayerListComparator()); 		 */
 name|this
 operator|.
 name|isApplet
@@ -2366,7 +2366,7 @@ name|printStackTrace
 argument_list|()
 expr_stmt|;
 block|}
-comment|/* 		 * if (this.canvas != null) { // check this, changed @FindBugs 		 * this.canvas.requestFocus(); } 		 */
+comment|/* 				 * if (this.canvas != null) { // check this, changed @FindBugs 				 * this.canvas.requestFocus(); } 				 */
 block|}
 else|else
 block|{
@@ -18034,7 +18034,7 @@ operator|==
 literal|null
 condition|)
 block|{
-comment|/* 			 * for (int j = 0; j< this.hotKeys.size(); j++) { // 			 * check // through // all // stored // hotkeys 			 * HotKeyData hkData = this.hotKeys.get(j); String label 			 * = hkData.label; String action = hkData.action; int 			 * keyCode = hkData.keyCode; byte keyMods = 			 * hkData.keyMods; 			 *  			 * List<Integer> heldKeys = new ArrayList<Integer>(); if 			 * ((keyMods& 1) != 0) heldKeys.add(29); // ctrl (left) 			 * if ((keyMods& 2) != 0) heldKeys.add(42); // shift 			 * (left) if ((keyMods& 4) != 0) heldKeys.add(56); // 			 * alt (left) 			 *  			 * // Check if the key(s) are pressed if 			 * (Keyboard.getEventKey() == keyCode) { boolean 			 * canSendHotkey = true; for (int k = 0; k< 			 * heldKeys.size(); k++) { if 			 * (!Keyboard.isKeyDown(heldKeys.get(k))) canSendHotkey 			 * = false; } if (action.endsWith("\n")) { // check 			 * whether to // send message or // open window 			 * this.hud.addChat("Sending HotKey: " + label); action 			 * = action.replace("\n", ""); 			 * this.networkManager.netHandler.send( 			 * PacketType.CHAT_MESSAGE, new Object[] { 			 * Integer.valueOf(-1), action }); } else { // open 			 * window this.hud.addChat("Opening HotKey: " + label); 			 * ChatInputScreenExtension cisExt = new 			 * ChatInputScreenExtension(); cisExt.inputLine = 			 * action; this.setCurrentScreen(cisExt); } } } 			 */
+comment|/* 						 * for (int j = 0; j< this.hotKeys.size(); j++) { // 						 * check // through // all // stored // hotkeys 						 * HotKeyData hkData = this.hotKeys.get(j); String label 						 * = hkData.label; String action = hkData.action; int 						 * keyCode = hkData.keyCode; byte keyMods = 						 * hkData.keyMods; 						 *  						 * List<Integer> heldKeys = new ArrayList<Integer>(); if 						 * ((keyMods& 1) != 0) heldKeys.add(29); // ctrl (left) 						 * if ((keyMods& 2) != 0) heldKeys.add(42); // shift 						 * (left) if ((keyMods& 4) != 0) heldKeys.add(56); // 						 * alt (left) 						 *  						 * // Check if the key(s) are pressed if 						 * (Keyboard.getEventKey() == keyCode) { boolean 						 * canSendHotkey = true; for (int k = 0; k< 						 * heldKeys.size(); k++) { if 						 * (!Keyboard.isKeyDown(heldKeys.get(k))) canSendHotkey 						 * = false; } if (action.endsWith("\n")) { // check 						 * whether to // send message or // open window 						 * this.hud.addChat("Sending HotKey: " + label); action 						 * = action.replace("\n", ""); 						 * this.networkManager.netHandler.send( 						 * PacketType.CHAT_MESSAGE, new Object[] { 						 * Integer.valueOf(-1), action }); } else { // open 						 * window this.hud.addChat("Opening HotKey: " + label); 						 * ChatInputScreenExtension cisExt = new 						 * ChatInputScreenExtension(); cisExt.inputLine = 						 * action; this.setCurrentScreen(cisExt); } } } 						 */
 block|}
 if|if
 condition|(
@@ -19955,7 +19955,7 @@ argument_list|()
 operator|.
 name|contains
 argument_list|(
-literal|"connecting..."
+literal|"connecting.."
 argument_list|)
 condition|?
 literal|""

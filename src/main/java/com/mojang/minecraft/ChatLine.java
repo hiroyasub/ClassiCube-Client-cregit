@@ -154,7 +154,7 @@ argument_list|()
 operator|.
 name|contains
 argument_list|(
-literal|"connecting..."
+literal|"connecting.."
 argument_list|)
 condition|?
 literal|""
@@ -168,6 +168,10 @@ condition|(
 name|serverName
 operator|==
 literal|""
+operator|||
+name|Minecraft
+operator|.
+name|isSinglePlayer
 condition|)
 return|return;
 name|serverName
