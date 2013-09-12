@@ -756,7 +756,7 @@ argument_list|(
 name|huffmanRoot
 argument_list|)
 return|;
-comment|/* 	 * HuffmanNode node; for(node=huffmanRoot; node.value==null; 	 * node=source.getBit()?node.o1:node.o0); return node.value.intValue(); 	 */
+comment|/* 		 * HuffmanNode node; for(node=huffmanRoot; node.value==null; 		 * node=source.getBit()?node.o1:node.o0); return node.value.intValue(); 		 */
 block|}
 specifier|protected
 name|void
@@ -894,7 +894,7 @@ block|}
 block|}
 block|}
 block|}
-comment|/*      * public void readVAdd(double[] a, ReadableBitChannel source, int offset,      * int length) throws FormatException, IOException {      *       * int i,j,entry; int t;      *       * if(dimensions>8){ for(i=0;i<length;){ entry = readInt(source);      * //if(entry==-1)return(-1); //t=entry*dimensions; for(j=0;j<dimensions;){      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; } } }      * else{ for(i=0;i<length;){ entry=readInt(source);      * //if(entry==-1)return(-1); //t=entry*dim; j=0; switch(dimensions){ case      * 8: a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 7:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 6:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 5:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 4:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 3:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 2:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 1:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 0:      * break; } } } }      */
+comment|/* 	 * public void readVAdd(double[] a, ReadableBitChannel source, int offset, 	 * int length) throws FormatException, IOException { 	 *  	 * int i,j,entry; int t; 	 *  	 * if(dimensions>8){ for(i=0;i<length;){ entry = readInt(source); 	 * //if(entry==-1)return(-1); //t=entry*dimensions; for(j=0;j<dimensions;){ 	 * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; } } } 	 * else{ for(i=0;i<length;){ entry=readInt(source); 	 * //if(entry==-1)return(-1); //t=entry*dim; j=0; switch(dimensions){ case 	 * 8: a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 7: 	 * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 6: 	 * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 5: 	 * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 4: 	 * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 3: 	 * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 2: 	 * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 1: 	 * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 0: 	 * break; } } } } 	 */
 block|}
 end_class
 

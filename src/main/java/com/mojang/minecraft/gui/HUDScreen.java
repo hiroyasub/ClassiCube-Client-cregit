@@ -3059,7 +3059,11 @@ operator|+
 literal|8
 condition|)
 block|{
-comment|// if your mouse if hovered
+comment|// if
+comment|// your
+comment|// mouse
+comment|// if
+comment|// hovered
 comment|// over
 comment|// this name
 name|this

@@ -1574,7 +1574,7 @@ function|;
 end_function
 
 begin_function
-unit|}      public
+unit|}  	public
 name|boolean
 name|intersects
 parameter_list|(
@@ -1642,7 +1642,7 @@ function|;
 end_function
 
 begin_function
-unit|}      public
+unit|}  	public
 name|boolean
 name|intersectsInner
 parameter_list|(

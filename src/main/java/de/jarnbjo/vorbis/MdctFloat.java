@@ -565,7 +565,9 @@ index|[]
 name|pcm
 parameter_list|)
 block|{
-comment|// , float[] out){
+comment|// ,
+comment|// float[]
+comment|// out){
 name|float
 index|[]
 name|in
@@ -1005,7 +1007,7 @@ operator|*
 name|dtmp4
 operator|)
 decl_stmt|;
-comment|/* 		 * float temp1= (xxx[xx] * trig[B+1] - xxx[xx+1] * 		 * trig[B]);//*32767.0f; float temp2=-(xxx[xx] * trig[B] + 		 * xxx[xx+1] * trig[B+1]);//*32767.0f; 		 */
+comment|/* 				 * float temp1= (xxx[xx] * trig[B+1] - xxx[xx+1] * 				 * trig[B]);//*32767.0f; float temp2=-(xxx[xx] * trig[B] + 				 * xxx[xx+1] * trig[B+1]);//*32767.0f; 				 */
 comment|// if(temp1>32767.0f) temp1=32767.0f;
 comment|// if(temp1<-32768.0f) temp1=-32768.0f;
 comment|// if(temp2>32767.0f) temp2=32767.0f;
@@ -1499,7 +1501,7 @@ name|wA
 operator|*
 name|AOv
 expr_stmt|;
-comment|/* 			 * wB =w[w1] -w[w2]; x[w1] =w[w1] +w[w2]; 			 *  			 * wA =w[++w1] -w[++w2]; x[w1] =w[w1] +w[w2]; 			 *  			 * x[w2] =wA*AEv - wB*AOv; x[w2-1]=wB*AEv + wA*AOv; 			 */
+comment|/* 						 * wB =w[w1] -w[w2]; x[w1] =w[w1] +w[w2]; 						 *  						 * wA =w[++w1] -w[++w2]; x[w1] =w[w1] +w[w2]; 						 *  						 * x[w2] =wA*AEv - wB*AOv; x[w2-1]=wB*AEv + wA*AOv; 						 */
 name|w1
 operator|-=
 name|k0

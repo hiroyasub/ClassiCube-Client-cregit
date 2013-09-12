@@ -71,7 +71,7 @@ name|full
 init|=
 literal|false
 decl_stmt|;
-comment|/**      * creates a new Huffman tree root node      */
+comment|/** 	 * creates a new Huffman tree root node 	 */
 specifier|public
 name|HuffmanNode
 parameter_list|()
@@ -309,7 +309,7 @@ operator|=
 name|value
 return|;
 block|}
-comment|/**      * creates a new tree node at the first free location at the given depth,      * and assigns the value to it      *       * @param depth      *            the tree depth of the new node (codeword length in bits)      * @param value      *            the node's new value      */
+comment|/** 	 * creates a new tree node at the first free location at the given depth, 	 * and assigns the value to it 	 *  	 * @param depth 	 *            the tree depth of the new node (codeword length in bits) 	 * @param value 	 *            the node's new value 	 */
 specifier|public
 name|boolean
 name|setNewValue
