@@ -44,12 +44,12 @@ init|=
 literal|1.0F
 decl_stmt|;
 specifier|private
-name|int
+name|short
 index|[]
 name|data
 init|=
 operator|new
-name|int
+name|short
 index|[
 literal|1
 index|]
@@ -128,7 +128,7 @@ block|{
 name|data
 operator|=
 operator|new
-name|int
+name|short
 index|[
 name|var3
 index|]

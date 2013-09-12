@@ -183,12 +183,12 @@ name|GameSettings
 name|settings
 decl_stmt|;
 specifier|private
-name|short
+name|int
 index|[]
 name|font
 init|=
 operator|new
-name|short
+name|int
 index|[
 literal|256
 index|]
@@ -203,7 +203,7 @@ name|String
 name|fontImage
 parameter_list|,
 name|TextureManager
-name|textureManager
+name|textures
 parameter_list|)
 throws|throws
 name|IOException
@@ -344,7 +344,7 @@ decl_stmt|;
 for|for
 control|(
 name|boolean
-name|empty
+name|var9
 init|=
 literal|false
 init|;
@@ -353,7 +353,7 @@ operator|<
 literal|8
 operator|&&
 operator|!
-name|empty
+name|var9
 condition|;
 name|chWidth
 operator|++
@@ -370,7 +370,7 @@ operator|)
 operator|+
 name|chWidth
 decl_stmt|;
-name|empty
+name|var9
 operator|=
 literal|true
 expr_stmt|;
@@ -385,7 +385,7 @@ name|var11
 operator|<
 literal|8
 operator|&&
-name|empty
+name|var9
 condition|;
 operator|++
 name|var11
@@ -422,7 +422,7 @@ operator|>
 literal|128
 condition|)
 block|{
-name|empty
+name|var9
 operator|=
 literal|false
 expr_stmt|;
@@ -453,9 +453,6 @@ index|[
 name|character
 index|]
 operator|=
-operator|(
-name|short
-operator|)
 name|chWidth
 expr_stmt|;
 block|}
@@ -463,7 +460,7 @@ name|this
 operator|.
 name|fontId
 operator|=
-name|textureManager
+name|textures
 operator|.
 name|load
 argument_list|(

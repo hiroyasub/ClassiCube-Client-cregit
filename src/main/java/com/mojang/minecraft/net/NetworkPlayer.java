@@ -462,15 +462,6 @@ name|var1
 init|=
 literal|5
 decl_stmt|;
-if|if
-condition|(
-name|this
-operator|.
-name|moveQueue
-operator|==
-literal|null
-condition|)
-return|return;
 do|do
 block|{
 if|if

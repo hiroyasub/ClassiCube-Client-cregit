@@ -186,10 +186,12 @@ name|connection
 operator|.
 name|getResponseCode
 argument_list|()
-operator|!=
+operator|==
 literal|404
 condition|)
 block|{
+return|return;
+block|}
 name|player
 operator|.
 name|newTexture
@@ -204,7 +206,6 @@ name|getInputStream
 argument_list|()
 argument_list|)
 expr_stmt|;
-block|}
 block|}
 catch|catch
 parameter_list|(

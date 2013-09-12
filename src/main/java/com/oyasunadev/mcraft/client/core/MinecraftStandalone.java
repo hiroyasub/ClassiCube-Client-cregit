@@ -1084,7 +1084,7 @@ name|minecraft
 operator|.
 name|host
 operator|=
-literal|"74.109.33.107"
+literal|"127.0.0.1"
 expr_stmt|;
 name|minecraft
 operator|.
@@ -1105,7 +1105,7 @@ operator|=
 operator|new
 name|SessionData
 argument_list|(
-literal|"Jonty800"
+literal|"Scoot"
 argument_list|,
 literal|"noidea"
 argument_list|)
@@ -1116,7 +1116,7 @@ name|session
 operator|.
 name|mppass
 operator|=
-literal|"3650b66daa0b04004be4285e471ad69d"
+literal|"c0dd4746a88c5785952cd0190e8214a6"
 expr_stmt|;
 name|minecraft
 operator|.

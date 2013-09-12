@@ -356,9 +356,6 @@ literal|0
 argument_list|,
 literal|4410
 argument_list|,
-operator|(
-name|short
-operator|)
 literal|0
 argument_list|)
 expr_stmt|;
@@ -372,9 +369,6 @@ literal|0
 argument_list|,
 literal|4410
 argument_list|,
-operator|(
-name|short
-operator|)
 literal|0
 argument_list|)
 expr_stmt|;
