@@ -48,7 +48,7 @@ specifier|public
 name|boolean
 name|visible
 decl_stmt|;
-specifier|protected
+specifier|public
 name|Button
 parameter_list|(
 name|int

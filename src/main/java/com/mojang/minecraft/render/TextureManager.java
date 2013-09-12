@@ -466,6 +466,9 @@ name|textureAtlas
 init|=
 operator|new
 name|ArrayList
+argument_list|<
+name|BufferedImage
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|public

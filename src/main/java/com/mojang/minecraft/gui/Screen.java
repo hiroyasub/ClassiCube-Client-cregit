@@ -327,6 +327,15 @@ name|int
 name|var5
 parameter_list|)
 block|{
+name|GL11
+operator|.
+name|glAlphaFunc
+argument_list|(
+literal|516
+argument_list|,
+literal|0.0F
+argument_list|)
+expr_stmt|;
 name|float
 name|var6
 init|=
