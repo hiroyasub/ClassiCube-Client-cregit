@@ -2379,6 +2379,13 @@ operator|=
 literal|0f
 expr_stmt|;
 block|}
+else|else
+block|{
+name|isOnIce
+operator|=
+literal|true
+expr_stmt|;
+block|}
 block|}
 block|}
 annotation|@

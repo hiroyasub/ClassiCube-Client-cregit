@@ -11184,7 +11184,7 @@ name|viewBobbing
 argument_list|)
 expr_stmt|;
 name|HeldBlock
-name|var112
+name|heldBlock
 init|=
 name|renderer
 operator|.
@@ -11199,11 +11199,11 @@ operator|.
 name|lastPos
 operator|+
 operator|(
-name|var112
+name|heldBlock
 operator|.
 name|pos
 operator|-
-name|var112
+name|heldBlock
 operator|.
 name|lastPos
 operator|)
@@ -11212,7 +11212,7 @@ name|var80
 expr_stmt|;
 name|var116
 operator|=
-name|var112
+name|heldBlock
 operator|.
 name|minecraft
 operator|.
@@ -11277,7 +11277,7 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|var112
+name|heldBlock
 operator|.
 name|minecraft
 operator|.
@@ -11304,7 +11304,7 @@ literal|0.8F
 expr_stmt|;
 if|if
 condition|(
-name|var112
+name|heldBlock
 operator|.
 name|moving
 condition|)
@@ -11319,7 +11319,7 @@ operator|(
 name|var74
 operator|=
 operator|(
-name|var112
+name|heldBlock
 operator|.
 name|offset
 operator|+
@@ -11427,7 +11427,7 @@ argument_list|)
 expr_stmt|;
 if|if
 condition|(
-name|var112
+name|heldBlock
 operator|.
 name|moving
 condition|)
@@ -11442,7 +11442,7 @@ operator|(
 name|var74
 operator|=
 operator|(
-name|var112
+name|heldBlock
 operator|.
 name|offset
 operator|+
@@ -11504,7 +11504,7 @@ block|}
 name|ColorCache
 name|color
 init|=
-name|var112
+name|heldBlock
 operator|.
 name|minecraft
 operator|.
@@ -11555,7 +11555,7 @@ argument_list|)
 expr_stmt|;
 if|if
 condition|(
-name|var112
+name|heldBlock
 operator|.
 name|block
 operator|!=
@@ -11609,7 +11609,7 @@ name|glBindTexture
 argument_list|(
 literal|3553
 argument_list|,
-name|var112
+name|heldBlock
 operator|.
 name|minecraft
 operator|.
@@ -11621,7 +11621,7 @@ literal|"/terrain.png"
 argument_list|)
 argument_list|)
 expr_stmt|;
-name|var112
+name|heldBlock
 operator|.
 name|block
 operator|.
@@ -11638,7 +11638,7 @@ name|var116
 operator|.
 name|bindTexture
 argument_list|(
-name|var112
+name|heldBlock
 operator|.
 name|minecraft
 operator|.
@@ -11707,7 +11707,7 @@ operator|!
 operator|(
 name|var127
 operator|=
-name|var112
+name|heldBlock
 operator|.
 name|minecraft
 operator|.
@@ -11752,7 +11752,7 @@ operator|.
 name|glPopMatrix
 argument_list|()
 expr_stmt|;
-name|var112
+name|heldBlock
 operator|.
 name|minecraft
 operator|.
