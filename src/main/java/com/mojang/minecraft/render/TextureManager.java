@@ -4951,6 +4951,19 @@ block|}
 name|initAtlas
 argument_list|()
 expr_stmt|;
+if|if
+condition|(
+name|this
+operator|.
+name|settings
+operator|.
+name|minecraft
+operator|.
+name|networkManager
+operator|!=
+literal|null
+condition|)
+block|{
 for|for
 control|(
 name|NetworkPlayer
@@ -5004,6 +5017,7 @@ argument_list|(
 name|this
 argument_list|)
 expr_stmt|;
+block|}
 return|return
 name|textureID
 return|;

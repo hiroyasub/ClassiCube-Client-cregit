@@ -3874,6 +3874,27 @@ literal|1000
 argument_list|)
 expr_stmt|;
 comment|// 1s refresh
+if|if
+condition|(
+name|settings
+operator|.
+name|lastUsedTexturePack
+operator|!=
+literal|null
+condition|)
+block|{
+name|this
+operator|.
+name|textureManager
+operator|.
+name|loadTexturePack
+argument_list|(
+name|settings
+operator|.
+name|lastUsedTexturePack
+argument_list|)
+expr_stmt|;
+block|}
 name|this
 operator|.
 name|textureManager
