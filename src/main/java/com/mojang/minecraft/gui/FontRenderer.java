@@ -182,7 +182,7 @@ specifier|private
 name|GameSettings
 name|settings
 decl_stmt|;
-specifier|private
+specifier|public
 name|int
 index|[]
 name|font

@@ -40,6 +40,12 @@ init|=
 literal|false
 decl_stmt|;
 specifier|public
+name|int
+name|scaling
+init|=
+literal|1
+decl_stmt|;
+specifier|public
 name|TextureFX
 parameter_list|(
 name|int

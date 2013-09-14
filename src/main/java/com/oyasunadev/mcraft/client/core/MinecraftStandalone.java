@@ -1096,7 +1096,7 @@ name|host
 operator|+
 literal|":"
 operator|+
-literal|"25566"
+literal|"25565"
 expr_stmt|;
 name|minecraft
 operator|.
@@ -1105,7 +1105,7 @@ operator|=
 operator|new
 name|SessionData
 argument_list|(
-literal|"Scoot"
+literal|"Scoot1"
 argument_list|,
 literal|"noidea"
 argument_list|)
