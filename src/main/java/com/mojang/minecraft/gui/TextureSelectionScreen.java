@@ -349,15 +349,7 @@ operator|.
 name|clear
 argument_list|()
 expr_stmt|;
-name|this
-operator|.
-name|minecraft
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
-expr_stmt|;
+comment|//this.minecraft.levelRenderer.refresh();
 try|try
 block|{
 name|this
