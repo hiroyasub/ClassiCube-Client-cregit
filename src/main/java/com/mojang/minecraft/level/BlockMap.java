@@ -1537,7 +1537,7 @@ if|if
 condition|(
 name|var2
 operator|.
-name|isBoxInFrustrum
+name|isBoxInFrustum
 argument_list|(
 name|var6
 argument_list|,
@@ -1616,7 +1616,7 @@ if|if
 condition|(
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1628,7 +1628,7 @@ name|var18
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1640,7 +1640,7 @@ name|var13
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1652,7 +1652,7 @@ name|var14
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1673,7 +1673,7 @@ if|if
 condition|(
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1685,7 +1685,7 @@ name|var15
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1697,7 +1697,7 @@ name|var13
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1709,7 +1709,7 @@ name|var14
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1730,7 +1730,7 @@ if|if
 condition|(
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1742,7 +1742,7 @@ name|var18
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1754,7 +1754,7 @@ name|var17
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1766,7 +1766,7 @@ name|var14
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1787,7 +1787,7 @@ if|if
 condition|(
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1799,7 +1799,7 @@ name|var15
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1811,7 +1811,7 @@ name|var17
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1823,7 +1823,7 @@ name|var14
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1844,7 +1844,7 @@ if|if
 condition|(
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1856,7 +1856,7 @@ name|var18
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1868,7 +1868,7 @@ name|var13
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1880,7 +1880,7 @@ name|var16
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1901,7 +1901,7 @@ if|if
 condition|(
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1913,7 +1913,7 @@ name|var15
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1925,7 +1925,7 @@ name|var13
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1937,7 +1937,7 @@ name|var16
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1958,7 +1958,7 @@ if|if
 condition|(
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1970,7 +1970,7 @@ name|var18
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1982,7 +1982,7 @@ name|var17
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -1994,7 +1994,7 @@ name|var16
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -2015,7 +2015,7 @@ if|if
 condition|(
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -2027,7 +2027,7 @@ name|var15
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -2039,7 +2039,7 @@ name|var17
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -2051,7 +2051,7 @@ name|var16
 operator|+
 name|var19
 operator|.
-name|frustrum
+name|frustum
 index|[
 name|var20
 index|]
@@ -2138,7 +2138,7 @@ condition|(
 operator|!
 name|var2
 operator|.
-name|isBoxInFrustrum
+name|isBoxInFrustum
 argument_list|(
 name|var24
 operator|.

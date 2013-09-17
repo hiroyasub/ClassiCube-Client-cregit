@@ -143,7 +143,7 @@ if|if
 condition|(
 name|color
 operator|>
-literal|1
+literal|1.0F
 condition|)
 return|return
 literal|1F
@@ -152,10 +152,10 @@ if|if
 condition|(
 name|color
 operator|<
-literal|0.01F
+literal|0.00F
 condition|)
 return|return
-literal|0.01F
+literal|0.00F
 return|;
 return|return
 name|color

@@ -212,9 +212,9 @@ name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
-name|this
-operator|.
-name|parent
+operator|new
+name|PauseScreen
+argument_list|()
 argument_list|)
 expr_stmt|;
 block|}
