@@ -82,13 +82,17 @@ specifier|public
 class|class
 name|ChatClickData
 block|{
+specifier|private
+specifier|final
 name|String
 name|urlPattern
 init|=
 literal|"((https?|ftp|sftp|gopher|telnet|file):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)"
 decl_stmt|;
+specifier|private
+specifier|final
 name|Pattern
-name|pattern
+name|compiledPattern
 init|=
 name|Pattern
 operator|.
@@ -177,7 +181,7 @@ block|{
 name|Matcher
 name|urlMatcher
 init|=
-name|pattern
+name|compiledPattern
 operator|.
 name|matcher
 argument_list|(
@@ -274,7 +278,7 @@ decl_stmt|;
 name|Matcher
 name|m
 init|=
-name|pattern
+name|compiledPattern
 operator|.
 name|matcher
 argument_list|(

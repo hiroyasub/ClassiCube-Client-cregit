@@ -220,7 +220,7 @@ name|buttons
 operator|.
 name|get
 argument_list|(
-literal|2
+literal|1
 argument_list|)
 operator|)
 operator|.

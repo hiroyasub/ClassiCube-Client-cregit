@@ -893,7 +893,8 @@ parameter_list|)
 throws|throws
 name|IOException
 block|{
-comment|//      System.out.println("---" + src.getWidth() + " - " + src.getHeight() + " - " + x + " - " + y);
+comment|// System.out.println("---" + src.getWidth() + " - " + src.getHeight() +
+comment|// " - " + x + " - " + y);
 name|BufferedImage
 name|clipping
 init|=
@@ -909,7 +910,7 @@ operator|.
 name|TYPE_INT_ARGB
 argument_list|)
 decl_stmt|;
-comment|//src.getType());
+comment|// src.getType());
 name|Graphics2D
 name|area
 init|=

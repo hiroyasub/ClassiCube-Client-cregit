@@ -93,6 +93,18 @@ name|lwjgl
 operator|.
 name|opengl
 operator|.
+name|GL13
+import|;
+end_import
+
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
 name|GLContext
 import|;
 end_import
@@ -244,6 +256,7 @@ specifier|private
 name|int
 name|bufferSize
 decl_stmt|;
+comment|//private FBO fbo;
 specifier|public
 name|ShapeRenderer
 parameter_list|(
@@ -842,6 +855,7 @@ operator|*
 literal|4
 argument_list|)
 expr_stmt|;
+comment|//fbo.bind(0);
 if|if
 condition|(
 name|this
@@ -1376,6 +1390,7 @@ name|GL_NORMAL_ARRAY
 argument_list|)
 expr_stmt|;
 block|}
+comment|//fbo.unbind();
 block|}
 name|int
 name|var1

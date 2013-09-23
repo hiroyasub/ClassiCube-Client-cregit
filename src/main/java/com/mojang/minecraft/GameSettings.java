@@ -214,7 +214,7 @@ literal|true
 decl_stmt|;
 specifier|public
 name|boolean
-name|showFrameRate
+name|showDebug
 init|=
 literal|false
 decl_stmt|;
@@ -668,10 +668,10 @@ name|id
 operator|==
 literal|3
 condition|?
-literal|"Show FPS: "
+literal|"Show Debug: "
 operator|+
 operator|(
-name|showFrameRate
+name|showDebug
 condition|?
 literal|"ON"
 else|:
@@ -1005,11 +1005,11 @@ index|]
 operator|.
 name|equals
 argument_list|(
-literal|"showFrameRate"
+literal|"showDebug"
 argument_list|)
 condition|)
 block|{
-name|showFrameRate
+name|showDebug
 operator|=
 name|setting
 index|[
@@ -1484,9 +1484,9 @@ name|writer
 operator|.
 name|println
 argument_list|(
-literal|"showFrameRate:"
+literal|"showDebug:"
 operator|+
-name|showFrameRate
+name|showDebug
 argument_list|)
 expr_stmt|;
 name|writer
@@ -1747,10 +1747,10 @@ operator|==
 literal|3
 condition|)
 block|{
-name|showFrameRate
+name|showDebug
 operator|=
 operator|!
-name|showFrameRate
+name|showDebug
 expr_stmt|;
 block|}
 if|if

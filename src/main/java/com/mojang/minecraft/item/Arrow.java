@@ -1039,6 +1039,11 @@ operator|.
 name|end
 argument_list|()
 expr_stmt|;
+name|shapeRenderer
+operator|.
+name|begin
+argument_list|()
+expr_stmt|;
 for|for
 control|(
 name|int
@@ -1143,12 +1148,12 @@ argument_list|,
 name|unknown2
 argument_list|)
 expr_stmt|;
+block|}
 name|shapeRenderer
 operator|.
 name|end
 argument_list|()
 expr_stmt|;
-block|}
 name|GL11
 operator|.
 name|glColor4f

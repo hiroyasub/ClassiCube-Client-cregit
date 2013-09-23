@@ -157,7 +157,7 @@ return|return
 literal|true
 return|;
 block|}
-specifier|private
+specifier|public
 specifier|transient
 name|List
 argument_list|<
@@ -462,6 +462,15 @@ name|var1
 init|=
 literal|5
 decl_stmt|;
+if|if
+condition|(
+name|this
+operator|.
+name|moveQueue
+operator|!=
+literal|null
+condition|)
+block|{
 do|do
 block|{
 if|if
@@ -512,6 +521,7 @@ operator|>
 literal|10
 condition|)
 do|;
+block|}
 name|this
 operator|.
 name|onGround

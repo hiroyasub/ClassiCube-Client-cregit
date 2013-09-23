@@ -432,6 +432,12 @@ expr_stmt|;
 block|}
 if|if
 condition|(
+name|this
+operator|.
+name|mob
+operator|instanceof
+name|Player
+operator|&&
 operator|(
 operator|(
 name|Player

@@ -2244,7 +2244,7 @@ if|if
 condition|(
 name|minecraft
 operator|.
-name|HackState
+name|hackState
 operator|==
 literal|null
 condition|)
@@ -2264,7 +2264,7 @@ block|{
 comment|// presume singleplayer
 name|minecraft
 operator|.
-name|HackState
+name|hackState
 operator|=
 name|HackState
 operator|.
@@ -2283,11 +2283,21 @@ name|contains
 argument_list|(
 literal|"+hax"
 argument_list|)
+operator|||
+name|text
+operator|.
+name|toLowerCase
+argument_list|()
+operator|.
+name|contains
+argument_list|(
+literal|"+noclip"
+argument_list|)
 condition|)
 block|{
 name|minecraft
 operator|.
-name|HackState
+name|hackState
 operator|=
 name|HackState
 operator|.
@@ -2309,7 +2319,7 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|HackState
+name|hackState
 operator|=
 name|HackState
 operator|.
@@ -2349,7 +2359,7 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|HackState
+name|hackState
 operator|=
 name|HackState
 operator|.
@@ -2382,7 +2392,7 @@ else|else
 block|{
 name|minecraft
 operator|.
-name|HackState
+name|hackState
 operator|=
 name|HackState
 operator|.
