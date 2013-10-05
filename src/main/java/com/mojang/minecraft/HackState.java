@@ -9,24 +9,26 @@ name|minecraft
 package|;
 end_package
 
-begin_enum
+begin_class
 specifier|public
-enum|enum
+class|class
 name|HackState
 block|{
-name|HacksTagEnabled
-block|,
-comment|// +Hax
-name|HacksTagDisabled
-block|,
-comment|// -Hax
+specifier|public
+specifier|static
+name|boolean
+name|Noclip
+decl_stmt|,
+name|Speed
+decl_stmt|,
+name|Fly
+decl_stmt|,
 name|OpHacks
-block|,
-comment|// +ophacks
-name|NoHacksTagShown
-comment|// Just an motd (Default)
+init|=
+literal|true
+decl_stmt|;
 block|}
-end_enum
+end_class
 
 end_unit
 
