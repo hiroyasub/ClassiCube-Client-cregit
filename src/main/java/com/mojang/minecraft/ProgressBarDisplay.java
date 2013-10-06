@@ -2205,7 +2205,7 @@ name|void
 name|setText
 parameter_list|(
 name|String
-name|var1
+name|message
 parameter_list|)
 block|{
 if|if
@@ -2226,20 +2226,15 @@ throw|;
 block|}
 else|else
 block|{
-if|if
-condition|(
-operator|!
 name|passServerCommand
 argument_list|(
-name|var1
+name|message
 argument_list|)
-condition|)
-block|{
+expr_stmt|;
 name|text
 operator|=
-name|var1
+name|message
 expr_stmt|;
-block|}
 if|if
 condition|(
 name|this
@@ -2307,14 +2302,14 @@ expr_stmt|;
 block|}
 else|else
 block|{
-comment|//enable all, it's either +hax or nothing at all
+comment|// enable all, it's either +hax or nothing at all
 name|HackState
 operator|.
 name|setAllEnabled
 argument_list|()
 expr_stmt|;
 block|}
-comment|//then we can manually disable others here
+comment|// then we can manually disable others here
 if|if
 condition|(
 name|joinedString
