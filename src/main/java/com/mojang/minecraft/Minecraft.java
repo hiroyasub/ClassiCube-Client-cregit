@@ -18595,9 +18595,8 @@ condition|(
 name|HackState
 operator|.
 name|Noclip
-operator|&&
-name|isSinglePlayer
 operator|||
+operator|(
 name|HackState
 operator|.
 name|Noclip
@@ -18609,6 +18608,7 @@ operator|.
 name|userType
 operator|>=
 literal|100
+operator|)
 condition|)
 block|{
 name|this
@@ -18801,9 +18801,6 @@ operator|.
 name|key
 condition|)
 block|{
-comment|// this.player.inventory.selected = 0;
-comment|// this.player.inventory.replaceSlot(Block.blocks[6]);
-comment|// GameSettings.CanReplaceSlot = false;
 name|this
 operator|.
 name|gamemode
@@ -18811,12 +18808,6 @@ operator|.
 name|openInventory
 argument_list|()
 expr_stmt|;
-comment|// this.selectionBoxes.add(new
-comment|// SelectionBoxData((byte) 1,"",new
-comment|// ColorCache(0F,0F,0F,0.6F), new
-comment|// CustomAABB(12,45,30, 20, 30, 40)));
-comment|// this.textureManager.customEdgeBlock =
-comment|// textureManager.textureAtlas.get(5);
 block|}
 if|if
 condition|(
@@ -18902,6 +18893,7 @@ operator|.
 name|KEY_TAB
 argument_list|)
 condition|)
+comment|//for tabbing player list
 return|return;
 if|else if
 condition|(

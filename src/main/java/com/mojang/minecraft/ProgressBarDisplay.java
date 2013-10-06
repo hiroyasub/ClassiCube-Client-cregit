@@ -2305,25 +2305,16 @@ name|setAllDisabled
 argument_list|()
 expr_stmt|;
 block|}
-if|else if
-condition|(
-name|joinedString
-operator|.
-name|indexOf
-argument_list|(
-literal|"+hax"
-argument_list|)
-operator|>
-operator|-
-literal|1
-condition|)
+else|else
 block|{
+comment|//enable all, it's either +hax or nothing at all
 name|HackState
 operator|.
 name|setAllEnabled
 argument_list|()
 expr_stmt|;
 block|}
+comment|//then we can manually disable others here
 if|if
 condition|(
 name|joinedString
