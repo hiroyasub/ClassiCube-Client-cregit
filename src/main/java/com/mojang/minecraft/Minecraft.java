@@ -18596,6 +18596,12 @@ name|HackState
 operator|.
 name|Noclip
 operator|&&
+name|isSinglePlayer
+operator|||
+name|HackState
+operator|.
+name|Noclip
+operator|&&
 name|this
 operator|.
 name|player
