@@ -2858,12 +2858,12 @@ if|if
 condition|(
 name|yd
 operator|>
-literal|.06F
+literal|.05F
 condition|)
 block|{
 name|yd
 operator|=
-literal|.045F
+literal|.04F
 expr_stmt|;
 block|}
 name|moveRelative
