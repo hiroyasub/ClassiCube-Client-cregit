@@ -120,10 +120,15 @@ literal|false
 decl_stmt|;
 specifier|public
 name|int
-name|HackState
+name|HacksMode
 init|=
 literal|0
 decl_stmt|;
+comment|// java doesn't have package aliasing
+comment|// eg import x as y
+comment|// so this has to be unique from the module name
+comment|// so that I can import that module to check status of
+comment|// noclip, fly, and speed.
 specifier|public
 name|void
 name|calc

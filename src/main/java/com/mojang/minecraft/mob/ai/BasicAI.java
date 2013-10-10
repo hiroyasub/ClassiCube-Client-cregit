@@ -461,7 +461,7 @@ operator|)
 operator|.
 name|input
 operator|.
-name|HackState
+name|HacksMode
 operator|==
 literal|0
 condition|)
