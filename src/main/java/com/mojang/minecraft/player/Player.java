@@ -433,6 +433,21 @@ operator|.
 name|HackType
 operator|==
 literal|0
+operator|||
+operator|!
+operator|(
+name|HackState
+operator|.
+name|Fly
+operator|||
+name|HackState
+operator|.
+name|Speed
+operator|||
+name|HackState
+operator|.
+name|Noclip
+operator|)
 condition|)
 block|{
 name|this
@@ -456,11 +471,13 @@ name|input
 operator|.
 name|updateMovement
 argument_list|(
-name|settings
-operator|.
-name|HackType
+literal|0
 argument_list|)
 expr_stmt|;
+comment|// for the event that hacktype
+comment|// is 1 but server has -hax.
+comment|// Otherwise you won't be able to move without manually setting
+comment|// your hacktype back to 'normal' in the options menu.
 name|super
 operator|.
 name|aiStep
