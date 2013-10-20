@@ -467,6 +467,10 @@ condition|(
 name|this
 operator|.
 name|hasHair
+operator|&&
+name|model
+operator|instanceof
+name|HumanoidModel
 condition|)
 block|{
 name|GL11
