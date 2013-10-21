@@ -317,13 +317,6 @@ condition|)
 block|{
 try|try
 block|{
-if|if
-condition|(
-name|block
-operator|==
-literal|null
-condition|)
-block|{
 name|block
 operator|=
 operator|new
@@ -346,7 +339,6 @@ operator|.
 name|textureId
 argument_list|)
 expr_stmt|;
-block|}
 name|GL11
 operator|.
 name|glPushMatrix
@@ -467,6 +459,10 @@ condition|(
 name|this
 operator|.
 name|hasHair
+operator|&&
+name|model
+operator|instanceof
+name|HumanoidModel
 condition|)
 block|{
 name|GL11
