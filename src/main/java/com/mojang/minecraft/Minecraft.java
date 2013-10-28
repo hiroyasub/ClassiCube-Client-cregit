@@ -2892,6 +2892,17 @@ name|Block
 operator|.
 name|blocks
 index|[
+literal|0
+index|]
+decl_stmt|;
+try|try
+block|{
+name|block
+operator|=
+name|Block
+operator|.
+name|blocks
+index|[
 name|this
 operator|.
 name|level
@@ -2905,7 +2916,16 @@ argument_list|,
 name|z
 argument_list|)
 index|]
-decl_stmt|;
+expr_stmt|;
+block|}
+catch|catch
+parameter_list|(
+name|NullPointerException
+name|e
+parameter_list|)
+block|{
+return|return;
+block|}
 comment|// if mouse click left
 if|if
 condition|(
