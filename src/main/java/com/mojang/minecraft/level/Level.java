@@ -5047,7 +5047,7 @@ operator|==
 literal|0
 return|;
 block|}
-specifier|private
+specifier|public
 name|boolean
 name|isInBounds
 parameter_list|(
