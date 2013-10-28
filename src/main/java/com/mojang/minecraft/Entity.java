@@ -3220,20 +3220,20 @@ block|}
 block|}
 else|else
 block|{
-name|var3
+name|var2
 operator|=
+operator|(
+name|float
+operator|)
 name|this
 operator|.
 name|level
 operator|.
-name|zSpawn
-operator|+
-literal|0.05F
+name|ySpawn
 expr_stmt|;
 break|break;
 block|}
 block|}
-comment|/*float var1 = (float) Math.floor(this.level.xSpawn); 			float var2 = (float) this.level.ySpawn + 0.05F;  			float var3 = (float) Math.floor(this.level.zSpawn); 			this.setPos(var1, var2, (float) var3);  			this.xd = this.yd = this.zd = 0.0F; 			this.yRot = this.level.rotSpawn; 			this.xRot = 0.0F;*/
 block|}
 block|}
 specifier|public
