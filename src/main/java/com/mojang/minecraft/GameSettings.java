@@ -2068,7 +2068,7 @@ operator|.
 name|clear
 argument_list|()
 expr_stmt|;
-comment|//minecraft.levelRenderer.refresh();
+comment|// minecraft.levelRenderer.refresh();
 block|}
 if|if
 condition|(
@@ -2108,7 +2108,7 @@ operator|.
 name|clear
 argument_list|()
 expr_stmt|;
-comment|//minecraft.levelRenderer.refresh();
+comment|// minecraft.levelRenderer.refresh();
 block|}
 if|if
 condition|(
@@ -2146,18 +2146,6 @@ operator|.
 name|input
 operator|.
 name|fly
-operator|=
-literal|false
-expr_stmt|;
-name|this
-operator|.
-name|minecraft
-operator|.
-name|player
-operator|.
-name|input
-operator|.
-name|noClip
 operator|=
 literal|false
 expr_stmt|;

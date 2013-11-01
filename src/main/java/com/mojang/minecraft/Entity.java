@@ -2460,17 +2460,6 @@ operator|.
 name|input
 operator|.
 name|noclip
-operator|||
-operator|(
-operator|(
-name|Player
-operator|)
-name|this
-operator|)
-operator|.
-name|input
-operator|.
-name|noClip
 operator|)
 condition|)
 block|{

@@ -60,9 +60,9 @@ literal|false
 decl_stmt|;
 specifier|public
 name|boolean
-name|noClip
+name|canMove
 init|=
-literal|false
+literal|true
 decl_stmt|;
 specifier|public
 name|float

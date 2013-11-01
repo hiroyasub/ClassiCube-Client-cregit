@@ -428,6 +428,16 @@ parameter_list|()
 block|{
 if|if
 condition|(
+operator|!
+name|this
+operator|.
+name|input
+operator|.
+name|canMove
+condition|)
+return|return;
+if|if
+condition|(
 name|settings
 operator|.
 name|HackType
