@@ -15198,23 +15198,9 @@ argument_list|(
 name|file
 argument_list|)
 expr_stmt|;
-if|if
-condition|(
-name|image
-operator|.
-name|getWidth
-argument_list|()
-operator|!=
-literal|256
-operator|||
-name|image
-operator|.
-name|getHeight
-argument_list|()
-operator|!=
-literal|256
-condition|)
-return|return;
+comment|//if (image.getWidth() != 256
+comment|//	|| image.getHeight() != 256)
+comment|//	return;
 name|this
 operator|.
 name|textureManager
