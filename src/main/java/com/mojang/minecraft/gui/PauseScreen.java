@@ -762,6 +762,11 @@ name|redColor
 init|=
 literal|16737380
 decl_stmt|;
+name|String
+name|VersionString
+init|=
+literal|"0.11"
+decl_stmt|;
 specifier|public
 specifier|final
 name|void
@@ -774,6 +779,41 @@ name|int
 name|var2
 parameter_list|)
 block|{
+name|String
+name|titlePrint
+init|=
+name|ProgressBarDisplay
+operator|.
+name|title
+decl_stmt|;
+name|String
+name|t
+init|=
+name|titlePrint
+operator|.
+name|toLowerCase
+argument_list|()
+decl_stmt|;
+if|if
+condition|(
+name|t
+operator|.
+name|contains
+argument_list|(
+literal|"loading level"
+argument_list|)
+operator|||
+name|t
+operator|.
+name|contains
+argument_list|(
+literal|"generating level.."
+argument_list|)
+condition|)
+name|titlePrint
+operator|=
+literal|"SinglePlayer"
+expr_stmt|;
 name|drawFadingBox
 argument_list|(
 literal|0
@@ -819,9 +859,7 @@ name|this
 operator|.
 name|fontRenderer
 argument_list|,
-name|ProgressBarDisplay
-operator|.
-name|title
+name|titlePrint
 argument_list|,
 name|this
 operator|.
@@ -833,9 +871,7 @@ name|fontRenderer
 operator|.
 name|getWidth
 argument_list|(
-name|ProgressBarDisplay
-operator|.
-name|title
+name|titlePrint
 argument_list|)
 operator|-
 literal|15
@@ -851,7 +887,11 @@ name|this
 operator|.
 name|fontRenderer
 argument_list|,
-literal|"ClassiCube 0.1"
+literal|"ClassiCube "
+operator|+
+name|this
+operator|.
+name|VersionString
 argument_list|,
 name|this
 operator|.
@@ -863,7 +903,11 @@ name|fontRenderer
 operator|.
 name|getWidth
 argument_list|(
-literal|"ClassiCube 0.1"
+literal|"ClassiCube "
+operator|+
+name|this
+operator|.
+name|VersionString
 argument_list|)
 operator|-
 literal|15
@@ -873,13 +917,9 @@ argument_list|,
 literal|14474460
 argument_list|)
 expr_stmt|;
-name|int
-name|colorToUse
+name|double
+name|cpuUsage
 init|=
-name|greenColor
-decl_stmt|;
-if|if
-condition|(
 name|this
 operator|.
 name|minecraft
@@ -888,6 +928,29 @@ name|monitoringThread
 operator|.
 name|getAvarageUsagePerCPU
 argument_list|()
+decl_stmt|;
+name|double
+name|roundedCpuUsage
+init|=
+name|Math
+operator|.
+name|round
+argument_list|(
+name|cpuUsage
+operator|*
+literal|100.0
+argument_list|)
+operator|/
+literal|100.0
+decl_stmt|;
+name|int
+name|colorToUse
+init|=
+name|greenColor
+decl_stmt|;
+if|if
+condition|(
+name|cpuUsage
 operator|>=
 literal|21
 condition|)
@@ -897,14 +960,7 @@ name|orangeColor
 expr_stmt|;
 if|else if
 condition|(
-name|this
-operator|.
-name|minecraft
-operator|.
-name|monitoringThread
-operator|.
-name|getAvarageUsagePerCPU
-argument_list|()
+name|cpuUsage
 operator|>=
 literal|30
 condition|)
@@ -914,14 +970,7 @@ name|redColor
 expr_stmt|;
 if|else if
 condition|(
-name|this
-operator|.
-name|minecraft
-operator|.
-name|monitoringThread
-operator|.
-name|getAvarageUsagePerCPU
-argument_list|()
+name|cpuUsage
 operator|<=
 literal|20
 condition|)
@@ -934,14 +983,7 @@ name|s
 init|=
 literal|"Average CPU: "
 operator|+
-name|this
-operator|.
-name|minecraft
-operator|.
-name|monitoringThread
-operator|.
-name|getAvarageUsagePerCPU
-argument_list|()
+name|roundedCpuUsage
 operator|+
 literal|"%"
 decl_stmt|;
@@ -974,7 +1016,7 @@ name|colorToUse
 argument_list|)
 expr_stmt|;
 name|long
-name|d
+name|dMem
 init|=
 name|this
 operator|.
@@ -995,7 +1037,7 @@ decl_stmt|;
 name|float
 name|percent
 init|=
-name|d
+name|dMem
 operator|*
 literal|100L
 operator|/
@@ -1041,7 +1083,7 @@ name|percent
 operator|+
 literal|"% ("
 operator|+
-name|d
+name|dMem
 operator|/
 literal|1024L
 operator|/

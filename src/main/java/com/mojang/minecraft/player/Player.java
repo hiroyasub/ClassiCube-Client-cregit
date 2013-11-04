@@ -1174,7 +1174,7 @@ operator|.
 name|resetKeys
 argument_list|()
 expr_stmt|;
-return|return;
+comment|//return;<- messes up flying, you mug
 block|}
 name|this
 operator|.

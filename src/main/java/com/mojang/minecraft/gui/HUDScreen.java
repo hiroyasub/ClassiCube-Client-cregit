@@ -1682,25 +1682,8 @@ expr_stmt|;
 block|}
 block|}
 block|}
-if|if
-condition|(
-name|Minecraft
-operator|.
-name|isSinglePlayer
-condition|)
-name|var5
-operator|.
-name|render
-argument_list|(
-literal|"Development Build"
-argument_list|,
-literal|2
-argument_list|,
-literal|32
-argument_list|,
-literal|16777215
-argument_list|)
-expr_stmt|;
+comment|//if (Minecraft.isSinglePlayer)
+comment|//var5.render("Development Build", 2, 32, 16777215);
 if|if
 condition|(
 name|this
@@ -1732,7 +1715,7 @@ name|var5
 operator|.
 name|render
 argument_list|(
-literal|"ClassiCube 0.1"
+literal|"ClassiCube"
 argument_list|,
 literal|2
 argument_list|,

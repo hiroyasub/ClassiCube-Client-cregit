@@ -316,21 +316,7 @@ name|fileChannel2
 init|=
 literal|null
 decl_stmt|;
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Copy "
-operator|+
-name|paramFile1
-operator|+
-literal|" to "
-operator|+
-name|paramFile2
-argument_list|)
-expr_stmt|;
+comment|//System.out.println("Copy " + paramFile1 + " to " + paramFile2);
 try|try
 block|{
 if|if
@@ -535,30 +521,8 @@ operator|!=
 literal|null
 condition|)
 block|{
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-operator|new
-name|StringBuilder
-argument_list|()
-operator|.
-name|append
-argument_list|(
-literal|"Read line: "
-argument_list|)
-operator|.
-name|append
-argument_list|(
-name|str
-argument_list|)
-operator|.
-name|toString
-argument_list|()
-argument_list|)
-expr_stmt|;
+comment|//System.out
+comment|//.println(new StringBuilder().append("Read line: ").append(str).toString());
 name|String
 index|[]
 name|arrayOfString
@@ -602,52 +566,9 @@ name|trim
 argument_list|()
 argument_list|)
 expr_stmt|;
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-operator|new
-name|StringBuilder
-argument_list|()
-operator|.
-name|append
-argument_list|(
-literal|"Adding config "
-argument_list|)
-operator|.
-name|append
-argument_list|(
-name|arrayOfString
-index|[
-literal|0
-index|]
-operator|.
-name|trim
-argument_list|()
-argument_list|)
-operator|.
-name|append
-argument_list|(
-literal|" = "
-argument_list|)
-operator|.
-name|append
-argument_list|(
-name|arrayOfString
-index|[
-literal|1
-index|]
-operator|.
-name|trim
-argument_list|()
-argument_list|)
-operator|.
-name|toString
-argument_list|()
-argument_list|)
-expr_stmt|;
+comment|//System.out.println(new StringBuilder().append("Adding config ")
+comment|//	.append(arrayOfString[0].trim()).append(" = ")
+comment|//	.append(arrayOfString[1].trim()).toString());
 block|}
 block|}
 name|bufferedReader
@@ -1013,30 +934,8 @@ parameter_list|)
 throws|throws
 name|IOException
 block|{
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-operator|new
-name|StringBuilder
-argument_list|()
-operator|.
-name|append
-argument_list|(
-literal|"Making connection to "
-argument_list|)
-operator|.
-name|append
-argument_list|(
-name|url
-argument_list|)
-operator|.
-name|toString
-argument_list|()
-argument_list|)
-expr_stmt|;
+comment|//System.out.println(new StringBuilder().append("Making connection to ").append(url)
+comment|//.toString());
 name|URLConnection
 name|localURLConnection
 init|=
@@ -1361,17 +1260,7 @@ operator|.
 name|username
 argument_list|)
 decl_stmt|;
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"Fetching config from: "
-operator|+
-name|Url
-argument_list|)
-expr_stmt|;
+comment|//System.out.println("Fetching config from: " + Url);
 name|serverConfig
 operator|=
 name|fetchConfig

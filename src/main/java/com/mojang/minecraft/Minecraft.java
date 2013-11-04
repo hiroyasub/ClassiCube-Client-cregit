@@ -14300,14 +14300,6 @@ name|k
 argument_list|)
 operator|.
 name|Version
-operator|+
-literal|" and packet id: "
-operator|+
-name|PacketType
-operator|.
-name|EXT_ENTRY
-operator|.
-name|opcode
 argument_list|)
 expr_stmt|;
 name|toSendParams
@@ -14531,43 +14523,8 @@ operator|.
 name|shortValue
 argument_list|()
 decl_stmt|;
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-name|ID
-operator|+
-literal|" "
-operator|+
-name|Name
-operator|+
-literal|" "
-operator|+
-name|X1
-operator|+
-literal|" "
-operator|+
-name|Y1
-operator|+
-literal|" "
-operator|+
-name|Z1
-operator|+
-literal|" "
-operator|+
-name|X2
-operator|+
-literal|" "
-operator|+
-name|Y2
-operator|+
-literal|" "
-operator|+
-name|Z2
-argument_list|)
-expr_stmt|;
+comment|//System.out.println(ID + " " + Name + " " + X1 + " " + Y1
+comment|//	+ " " + Z1 + " " + X2 + " " + Y2 + " " + Z2);
 name|SelectionBoxData
 name|data
 init|=
@@ -15727,7 +15684,7 @@ name|out
 operator|.
 name|println
 argument_list|(
-literal|"Custom block packet"
+literal|"Custom blocks packet recieved"
 argument_list|)
 expr_stmt|;
 name|byte
