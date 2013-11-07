@@ -1409,6 +1409,15 @@ name|File
 name|getMinecraftDirectory
 parameter_list|()
 block|{
+if|if
+condition|(
+name|mcDir
+operator|!=
+literal|null
+condition|)
+return|return
+name|mcDir
+return|;
 name|String
 name|folder
 init|=
@@ -15158,6 +15167,15 @@ expr_stmt|;
 comment|//if (image.getWidth() != 256
 comment|//	|| image.getHeight() != 256)
 comment|//	return;
+name|this
+operator|.
+name|textureManager
+operator|.
+name|animations
+operator|.
+name|clear
+argument_list|()
+expr_stmt|;
 name|this
 operator|.
 name|textureManager
