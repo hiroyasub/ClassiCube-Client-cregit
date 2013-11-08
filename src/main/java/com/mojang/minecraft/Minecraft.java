@@ -14532,8 +14532,10 @@ operator|.
 name|shortValue
 argument_list|()
 decl_stmt|;
-comment|//System.out.println(ID + " " + Name + " " + X1 + " " + Y1
-comment|//	+ " " + Z1 + " " + X2 + " " + Y2 + " " + Z2);
+comment|// System.out.println(ID + " " + Name +
+comment|// " " + X1 + " " + Y1
+comment|// + " " + Z1 + " " + X2 + " " + Y2 +
+comment|// " " + Z2);
 name|SelectionBoxData
 name|data
 init|=
@@ -15164,9 +15166,9 @@ argument_list|(
 name|file
 argument_list|)
 expr_stmt|;
-comment|//if (image.getWidth() != 256
-comment|//	|| image.getHeight() != 256)
-comment|//	return;
+comment|// if (image.getWidth() != 256
+comment|// || image.getHeight() != 256)
+comment|// return;
 name|this
 operator|.
 name|textureManager
@@ -18150,6 +18152,14 @@ operator|instanceof
 name|BlockSelectScreen
 condition|)
 block|{
+while|while
+condition|(
+name|Mouse
+operator|.
+name|next
+argument_list|()
+condition|)
+block|{
 if|if
 condition|(
 operator|(
@@ -18175,9 +18185,11 @@ argument_list|(
 name|var25
 argument_list|)
 expr_stmt|;
+break|break;
 block|}
 block|}
-if|if
+block|}
+if|else if
 condition|(
 name|this
 operator|.
