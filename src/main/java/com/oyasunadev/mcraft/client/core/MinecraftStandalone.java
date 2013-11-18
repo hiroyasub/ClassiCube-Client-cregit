@@ -1073,7 +1073,7 @@ expr_stmt|;
 name|boolean
 name|RunFakeNetwork
 init|=
-literal|false
+literal|true
 decl_stmt|;
 if|if
 condition|(
@@ -1105,7 +1105,7 @@ operator|=
 operator|new
 name|SessionData
 argument_list|(
-literal|"Scoot1"
+literal|"Scoot"
 argument_list|,
 literal|"noidea"
 argument_list|)
