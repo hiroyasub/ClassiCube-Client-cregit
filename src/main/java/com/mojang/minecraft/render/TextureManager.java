@@ -3977,7 +3977,7 @@ decl_stmt|;
 name|String
 name|snowName
 init|=
-literal|"clouds.png"
+literal|"snow.png"
 decl_stmt|;
 if|if
 condition|(
