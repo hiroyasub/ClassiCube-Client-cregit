@@ -18241,6 +18241,13 @@ argument_list|)
 expr_stmt|;
 break|break;
 block|}
+name|this
+operator|.
+name|currentScreen
+operator|.
+name|mouseEvent
+argument_list|()
+expr_stmt|;
 block|}
 block|}
 if|else if
