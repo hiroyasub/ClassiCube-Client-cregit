@@ -1091,7 +1091,7 @@ name|ENV_SET_WEATHER_TYPE
 operator|.
 name|extName
 operator|=
-literal|"EnvSetWeatherType"
+literal|"EnvWeatherType"
 expr_stmt|;
 name|nextOpcode
 operator|=
