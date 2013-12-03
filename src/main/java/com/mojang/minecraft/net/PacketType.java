@@ -251,6 +251,13 @@ name|ENV_SET_MAP_APPEARANCE
 decl_stmt|;
 comment|// 30
 specifier|public
+specifier|static
+specifier|final
+name|PacketType
+name|ENV_SET_WEATHER_TYPE
+decl_stmt|;
+comment|// 31
+specifier|public
 name|int
 name|length
 decl_stmt|;
@@ -991,6 +998,21 @@ name|TYPE
 block|}
 argument_list|)
 expr_stmt|;
+name|ENV_SET_WEATHER_TYPE
+operator|=
+operator|new
+name|PacketType
+argument_list|(
+operator|new
+name|Class
+index|[]
+block|{
+name|Short
+operator|.
+name|TYPE
+block|}
+argument_list|)
+expr_stmt|;
 comment|// set names
 name|EXT_INFO
 operator|.
@@ -1064,6 +1086,12 @@ operator|.
 name|extName
 operator|=
 literal|"EnvMapAppearance"
+expr_stmt|;
+name|ENV_SET_WEATHER_TYPE
+operator|.
+name|extName
+operator|=
+literal|"EnvSetWeatherType"
 expr_stmt|;
 name|nextOpcode
 operator|=
