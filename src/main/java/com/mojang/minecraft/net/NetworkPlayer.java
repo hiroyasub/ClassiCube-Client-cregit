@@ -434,8 +434,11 @@ condition|(
 name|this
 operator|.
 name|modelName
-operator|==
+operator|.
+name|equals
+argument_list|(
 literal|"humanoid"
+argument_list|)
 condition|)
 block|{
 name|downloadSkin
@@ -667,8 +670,11 @@ condition|(
 name|this
 operator|.
 name|modelName
-operator|==
+operator|.
+name|equals
+argument_list|(
 literal|"humanoid"
+argument_list|)
 condition|)
 block|{
 name|this
@@ -720,11 +726,15 @@ return|return;
 block|}
 if|else if
 condition|(
+operator|!
 name|this
 operator|.
 name|modelName
-operator|!=
+operator|.
+name|equals
+argument_list|(
 literal|"humanoid"
+argument_list|)
 condition|)
 block|{
 name|GL11
