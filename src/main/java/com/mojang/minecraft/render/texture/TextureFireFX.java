@@ -54,7 +54,7 @@ name|super
 argument_list|(
 name|Block
 operator|.
-name|FIRE
+name|fire
 operator|.
 name|textureId
 argument_list|)

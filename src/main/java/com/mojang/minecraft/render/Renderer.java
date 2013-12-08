@@ -1178,7 +1178,7 @@ argument_list|()
 operator|!=
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 condition|)
 block|{
 name|LiquidType
@@ -1216,7 +1216,7 @@ name|var6
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 condition|)
 block|{
 name|GL11
@@ -1329,7 +1329,7 @@ name|var6
 operator|==
 name|LiquidType
 operator|.
-name|LAVA
+name|lava
 condition|)
 block|{
 name|GL11

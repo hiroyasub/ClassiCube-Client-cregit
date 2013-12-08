@@ -352,7 +352,7 @@ argument_list|)
 operator|==
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 operator|&&
 operator|(
 operator|!

@@ -112,7 +112,7 @@ if|if
 condition|(
 name|this
 operator|!=
-name|SLAB
+name|stoneSlab
 condition|)
 block|{
 name|super
@@ -189,7 +189,7 @@ name|getDrop
 parameter_list|()
 block|{
 return|return
-name|SLAB
+name|stoneSlab
 operator|.
 name|id
 return|;
@@ -259,7 +259,7 @@ if|if
 condition|(
 name|this
 operator|!=
-name|SLAB
+name|stoneSlab
 condition|)
 block|{
 name|super
@@ -291,7 +291,7 @@ argument_list|,
 name|z
 argument_list|)
 operator|==
-name|SLAB
+name|stoneSlab
 operator|.
 name|id
 condition|)
@@ -321,7 +321,7 @@ literal|1
 argument_list|,
 name|z
 argument_list|,
-name|DOUBLE_SLAB
+name|stoneDoubleSlab
 operator|.
 name|id
 argument_list|)
@@ -353,7 +353,7 @@ if|if
 condition|(
 name|this
 operator|==
-name|SLAB
+name|stoneSlab
 condition|)
 block|{
 empty_stmt|;

@@ -145,7 +145,7 @@ name|var2
 operator|==
 name|LiquidType
 operator|.
-name|LAVA
+name|lava
 condition|)
 block|{
 name|this
@@ -254,7 +254,7 @@ name|type
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 condition|)
 block|{
 for|for
@@ -329,7 +329,7 @@ argument_list|)
 operator|==
 name|Block
 operator|.
-name|SPONGE
+name|sponge
 operator|.
 name|id
 condition|)
@@ -653,7 +653,7 @@ name|type
 operator|==
 name|LiquidType
 operator|.
-name|LAVA
+name|lava
 condition|)
 block|{
 specifier|final
@@ -761,7 +761,7 @@ name|type
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 condition|?
 literal|1
 else|:
@@ -781,7 +781,7 @@ name|type
 operator|==
 name|LiquidType
 operator|.
-name|LAVA
+name|lava
 condition|?
 literal|5
 else|:
@@ -885,19 +885,19 @@ name|type
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 operator|&&
 name|var6
 operator|==
 name|LiquidType
 operator|.
-name|LAVA
+name|lava
 operator|||
 name|var6
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 operator|&&
 name|this
 operator|.
@@ -905,7 +905,7 @@ name|type
 operator|==
 name|LiquidType
 operator|.
-name|LAVA
+name|lava
 condition|)
 block|{
 name|var1
@@ -920,7 +920,7 @@ name|var4
 argument_list|,
 name|Block
 operator|.
-name|STONE
+name|obsidian
 operator|.
 name|id
 argument_list|)
@@ -1129,7 +1129,7 @@ name|type
 operator|!=
 name|LiquidType
 operator|.
-name|LAVA
+name|lava
 condition|)
 do|;
 operator|++
@@ -1143,7 +1143,7 @@ name|type
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 operator|||
 operator|!
 name|var8

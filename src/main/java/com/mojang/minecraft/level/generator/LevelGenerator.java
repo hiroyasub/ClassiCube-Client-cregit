@@ -768,7 +768,7 @@ name|var20
 operator|==
 name|Block
 operator|.
-name|LAVA
+name|lava
 operator|.
 name|id
 operator|||
@@ -776,7 +776,7 @@ name|var20
 operator|==
 name|Block
 operator|.
-name|STATIONARY_LAVA
+name|stationaryLava
 operator|.
 name|id
 operator|)
@@ -786,7 +786,7 @@ name|var25
 operator|==
 name|Block
 operator|.
-name|WATER
+name|water
 operator|.
 name|id
 operator|||
@@ -794,7 +794,7 @@ name|var25
 operator|==
 name|Block
 operator|.
-name|STATIONARY_WATER
+name|stationaryWater
 operator|.
 name|id
 operator|)
@@ -814,7 +814,7 @@ name|byte
 operator|)
 name|Block
 operator|.
-name|STONE
+name|stone
 operator|.
 name|id
 expr_stmt|;
@@ -1787,7 +1787,7 @@ name|var28
 operator|=
 name|Block
 operator|.
-name|DIRT
+name|dirt
 operator|.
 name|id
 expr_stmt|;
@@ -1803,7 +1803,7 @@ name|var28
 operator|=
 name|Block
 operator|.
-name|STONE
+name|stone
 operator|.
 name|id
 expr_stmt|;
@@ -1819,7 +1819,7 @@ name|var28
 operator|=
 name|Block
 operator|.
-name|LAVA
+name|lava
 operator|.
 name|id
 expr_stmt|;
@@ -2494,7 +2494,7 @@ index|]
 operator|==
 name|Block
 operator|.
-name|STONE
+name|stone
 operator|.
 name|id
 condition|)
@@ -2522,7 +2522,7 @@ name|populateOre
 argument_list|(
 name|Block
 operator|.
-name|COAL_ORE
+name|coalOre
 operator|.
 name|id
 argument_list|,
@@ -2539,7 +2539,7 @@ name|populateOre
 argument_list|(
 name|Block
 operator|.
-name|IRON_ORE
+name|ironOre
 operator|.
 name|id
 argument_list|,
@@ -2556,7 +2556,7 @@ name|populateOre
 argument_list|(
 name|Block
 operator|.
-name|GOLD_ORE
+name|goldOre
 operator|.
 name|id
 argument_list|,
@@ -2584,7 +2584,7 @@ name|var51
 operator|=
 name|Block
 operator|.
-name|STATIONARY_WATER
+name|stationaryWater
 operator|.
 name|id
 expr_stmt|;
@@ -3019,7 +3019,7 @@ name|var24
 argument_list|,
 name|Block
 operator|.
-name|STATIONARY_LAVA
+name|stationaryLava
 operator|.
 name|id
 argument_list|)
@@ -3246,7 +3246,7 @@ operator|)
 operator|==
 name|Block
 operator|.
-name|WATER
+name|water
 operator|.
 name|id
 operator|||
@@ -3254,7 +3254,7 @@ name|var28
 operator|==
 name|Block
 operator|.
-name|STATIONARY_WATER
+name|stationaryWater
 operator|.
 name|id
 operator|)
@@ -3282,7 +3282,7 @@ name|byte
 operator|)
 name|Block
 operator|.
-name|GRAVEL
+name|gravel
 operator|.
 name|id
 expr_stmt|;
@@ -3298,7 +3298,7 @@ name|var63
 operator|=
 name|Block
 operator|.
-name|GRASS
+name|grass
 operator|.
 name|id
 expr_stmt|;
@@ -3319,7 +3319,7 @@ name|var63
 operator|=
 name|Block
 operator|.
-name|SAND
+name|sand
 operator|.
 name|id
 expr_stmt|;
@@ -3650,7 +3650,7 @@ operator|)
 operator|==
 name|Block
 operator|.
-name|GRASS
+name|grass
 operator|.
 name|id
 condition|)
@@ -3674,7 +3674,7 @@ name|byte
 operator|)
 name|Block
 operator|.
-name|DANDELION
+name|dandelion
 operator|.
 name|id
 expr_stmt|;
@@ -3698,7 +3698,7 @@ name|byte
 operator|)
 name|Block
 operator|.
-name|ROSE
+name|rose
 operator|.
 name|id
 expr_stmt|;
@@ -4056,7 +4056,7 @@ operator|)
 operator|==
 name|Block
 operator|.
-name|STONE
+name|stone
 operator|.
 name|id
 condition|)
@@ -4080,7 +4080,7 @@ name|byte
 operator|)
 name|Block
 operator|.
-name|BROWN_MUSHROOM
+name|brownMushroom
 operator|.
 name|id
 expr_stmt|;
@@ -4104,7 +4104,7 @@ name|byte
 operator|)
 name|Block
 operator|.
-name|RED_MUSHROOM
+name|redMushroom
 operator|.
 name|id
 expr_stmt|;
@@ -4974,7 +4974,7 @@ index|]
 operator|==
 name|Block
 operator|.
-name|STONE
+name|stone
 operator|.
 name|id
 condition|)

@@ -165,7 +165,7 @@ name|remove
 argument_list|(
 name|Block
 operator|.
-name|BEDROCK
+name|bedrock
 argument_list|)
 expr_stmt|;
 comment|//players cant delete this
@@ -260,7 +260,7 @@ name|remove
 argument_list|(
 name|Block
 operator|.
-name|BEDROCK
+name|bedrock
 argument_list|)
 expr_stmt|;
 name|allowedBlocks
@@ -329,7 +329,7 @@ name|remove
 argument_list|(
 name|Block
 operator|.
-name|BEDROCK
+name|bedrock
 argument_list|)
 expr_stmt|;
 name|allowedBlocks

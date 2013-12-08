@@ -47,12 +47,6 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
-name|textureId
-operator|=
-literal|48
-expr_stmt|;
 block|}
 specifier|public
 specifier|final

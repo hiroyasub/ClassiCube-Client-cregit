@@ -1605,7 +1605,7 @@ argument_list|()
 operator|==
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 operator|)
 condition|)
 block|{
@@ -1972,7 +1972,7 @@ argument_list|()
 operator|!=
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 condition|)
 block|{
 return|return
@@ -4505,7 +4505,7 @@ name|var11
 operator|=
 name|Block
 operator|.
-name|BEDROCK
+name|bedrock
 operator|.
 name|getCollisionBox
 argument_list|(
@@ -4617,7 +4617,7 @@ argument_list|()
 operator|!=
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 operator|)
 operator|&&
 name|var3
@@ -4671,7 +4671,7 @@ literal|0
 condition|?
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 else|:
 name|Block
 operator|.
@@ -5535,7 +5535,7 @@ argument_list|()
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 return|;
 block|}
 specifier|public
@@ -5795,7 +5795,7 @@ operator|)
 operator|==
 name|Block
 operator|.
-name|GRASS
+name|grass
 operator|.
 name|id
 operator|&&
@@ -5824,7 +5824,7 @@ name|var3
 argument_list|,
 name|Block
 operator|.
-name|DIRT
+name|dirt
 operator|.
 name|id
 argument_list|)
@@ -5969,7 +5969,7 @@ name|var6
 argument_list|,
 name|Block
 operator|.
-name|LEAVES
+name|leaves
 operator|.
 name|id
 argument_list|)
@@ -6006,7 +6006,7 @@ name|var3
 argument_list|,
 name|Block
 operator|.
-name|LOG
+name|log
 operator|.
 name|id
 argument_list|)
@@ -6224,7 +6224,7 @@ name|var4
 operator|=
 name|Block
 operator|.
-name|WATER
+name|water
 operator|.
 name|id
 expr_stmt|;

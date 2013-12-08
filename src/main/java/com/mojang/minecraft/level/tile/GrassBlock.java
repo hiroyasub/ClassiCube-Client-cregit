@@ -78,7 +78,7 @@ name|getDrop
 parameter_list|()
 block|{
 return|return
-name|DIRT
+name|dirt
 operator|.
 name|getDrop
 argument_list|()
@@ -169,7 +169,7 @@ name|y
 argument_list|,
 name|z
 argument_list|,
-name|DIRT
+name|dirt
 operator|.
 name|id
 argument_list|)
@@ -247,7 +247,7 @@ argument_list|,
 name|var8
 argument_list|)
 operator|==
-name|DIRT
+name|dirt
 operator|.
 name|id
 operator|&&
@@ -273,7 +273,7 @@ name|var7
 argument_list|,
 name|var8
 argument_list|,
-name|GRASS
+name|dirt
 operator|.
 name|id
 argument_list|)

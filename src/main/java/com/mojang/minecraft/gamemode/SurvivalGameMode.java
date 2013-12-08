@@ -623,7 +623,7 @@ index|]
 operator|=
 name|Block
 operator|.
-name|TNT
+name|tnt
 operator|.
 name|id
 expr_stmt|;
@@ -770,7 +770,7 @@ name|block
 operator|==
 name|Block
 operator|.
-name|RED_MUSHROOM
+name|redMushroom
 operator|&&
 name|minecraft
 operator|.
@@ -803,7 +803,7 @@ name|block
 operator|==
 name|Block
 operator|.
-name|BROWN_MUSHROOM
+name|brownMushroom
 operator|&&
 name|minecraft
 operator|.
