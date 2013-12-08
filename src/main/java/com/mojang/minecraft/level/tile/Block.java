@@ -505,7 +505,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|stone
+name|STONE
 init|=
 operator|(
 operator|new
@@ -539,7 +539,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|grass
+name|GRASS
 init|=
 operator|(
 operator|new
@@ -573,7 +573,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|dirt
+name|DIRT
 init|=
 operator|(
 operator|new
@@ -607,7 +607,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|cobblestone
+name|COBLESTONE
 init|=
 operator|(
 operator|new
@@ -641,7 +641,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|plank
+name|WOOD
 init|=
 operator|(
 operator|new
@@ -676,7 +676,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|sapling
+name|SAPLING
 init|=
 operator|(
 operator|new
@@ -710,7 +710,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|bedrock
+name|BEDROCK
 init|=
 operator|(
 operator|new
@@ -744,7 +744,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|water
+name|WATER
 init|=
 operator|(
 operator|new
@@ -777,7 +777,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|stationaryWater
+name|STATIONARY_WATER
 init|=
 operator|(
 operator|new
@@ -810,7 +810,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|lava
+name|LAVA
 init|=
 operator|(
 operator|new
@@ -843,7 +843,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|stationaryLava
+name|STATIONARY_LAVA
 init|=
 operator|(
 operator|new
@@ -876,7 +876,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|sand
+name|SAND
 init|=
 operator|(
 operator|new
@@ -910,7 +910,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|gravel
+name|GRAVEL
 init|=
 operator|(
 operator|new
@@ -944,7 +944,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|goldOre
+name|GOLD_ORE
 init|=
 operator|(
 operator|new
@@ -978,7 +978,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|ironOre
+name|IRON_ORE
 init|=
 operator|(
 operator|new
@@ -1012,7 +1012,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|coalOre
+name|COAL_ORE
 init|=
 operator|(
 operator|new
@@ -1046,7 +1046,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|log
+name|LOG
 init|=
 operator|(
 operator|new
@@ -1075,7 +1075,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|leaves
+name|LEAVES
 init|=
 operator|(
 operator|new
@@ -1109,7 +1109,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|sponge
+name|SPONGE
 init|=
 operator|(
 operator|new
@@ -1143,7 +1143,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|glass
+name|GLASS
 init|=
 operator|(
 operator|new
@@ -1177,7 +1177,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolRed
+name|RED_WOOL
 init|=
 operator|(
 operator|new
@@ -1211,7 +1211,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolOrange
+name|ORANGE_WOOL
 init|=
 operator|(
 operator|new
@@ -1245,7 +1245,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolYellow
+name|YELLOW_WOOL
 init|=
 operator|(
 operator|new
@@ -1279,7 +1279,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolLime
+name|LIME_WOOL
 init|=
 operator|(
 operator|new
@@ -1313,7 +1313,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolGreen
+name|GREEN_WOOL
 init|=
 operator|(
 operator|new
@@ -1347,7 +1347,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolAquaGreen
+name|AQUA_GREEN_WOOL
 init|=
 operator|(
 operator|new
@@ -1381,7 +1381,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolCyan
+name|CYAN_WOOL
 init|=
 operator|(
 operator|new
@@ -1415,7 +1415,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolBlue
+name|BLUE_WOOL
 init|=
 operator|(
 operator|new
@@ -1449,7 +1449,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolPurple
+name|PURPLE_WOOL
 init|=
 operator|(
 operator|new
@@ -1483,7 +1483,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolIndigo
+name|INDIGO_WOOL
 init|=
 operator|(
 operator|new
@@ -1517,7 +1517,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolViolet
+name|VIOLET_WOOL
 init|=
 operator|(
 operator|new
@@ -1551,7 +1551,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolMagenta
+name|MAGENTA_WOOL
 init|=
 operator|(
 operator|new
@@ -1585,7 +1585,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolPink
+name|PINK_WOOL
 init|=
 operator|(
 operator|new
@@ -1619,7 +1619,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolBlack
+name|BLACK_WOOL
 init|=
 operator|(
 operator|new
@@ -1653,7 +1653,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolGray
+name|GRAY_WOOL
 init|=
 operator|(
 operator|new
@@ -1687,7 +1687,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolWhite
+name|WHITE_WOOL
 init|=
 operator|(
 operator|new
@@ -1721,7 +1721,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|dandelion
+name|DANDELION
 init|=
 operator|(
 operator|new
@@ -1755,7 +1755,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|rose
+name|ROSE
 init|=
 operator|(
 operator|new
@@ -1789,7 +1789,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|brownMushroom
+name|BROWN_MUSHROOM
 init|=
 operator|(
 operator|new
@@ -1823,7 +1823,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|redMushroom
+name|RED_MUSHROOM
 init|=
 operator|(
 operator|new
@@ -1857,7 +1857,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|goldBlock
+name|GOLD_BLOCK
 init|=
 operator|(
 operator|new
@@ -1891,7 +1891,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|ironBlock
+name|IRON_BLOCK
 init|=
 operator|(
 operator|new
@@ -1925,7 +1925,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|stoneDoubleSlab
+name|DOUBLE_SLAB
 init|=
 operator|(
 operator|new
@@ -1956,7 +1956,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|stoneSlab
+name|SLAB
 init|=
 operator|(
 operator|new
@@ -1987,7 +1987,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|brick
+name|BRICK
 init|=
 operator|(
 operator|new
@@ -2021,7 +2021,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|tnt
+name|TNT
 init|=
 operator|(
 operator|new
@@ -2055,7 +2055,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|bookshelf
+name|BOOKSHELF
 init|=
 operator|(
 operator|new
@@ -2089,7 +2089,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|cobblestoneMossy
+name|MOSSY_COBBLESTONE
 init|=
 operator|(
 operator|new
@@ -2123,7 +2123,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|obsidian
+name|OBSIDIAN
 init|=
 operator|(
 operator|new
@@ -2157,7 +2157,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|slabCobblestone
+name|COBBLESTONE_SLAB
 init|=
 operator|(
 operator|new
@@ -2193,7 +2193,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|rope
+name|ROPE
 init|=
 operator|(
 operator|new
@@ -2205,7 +2205,7 @@ operator|)
 operator|.
 name|setStepSound
 argument_list|(
-name|soundLadderFootstep
+name|soundClothFootstep
 argument_list|)
 operator|.
 name|setTextureId
@@ -2227,7 +2227,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|sandstone
+name|SANDSTONE
 init|=
 operator|(
 operator|new
@@ -2261,7 +2261,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|snow
+name|SNOW
 init|=
 operator|new
 name|SnowBlock
@@ -2293,7 +2293,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|fire
+name|FIRE
 init|=
 operator|new
 name|FireBlock
@@ -2325,7 +2325,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolLightPink
+name|LIGHT_PINK_WOOL
 init|=
 operator|(
 operator|new
@@ -2359,7 +2359,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolForestGreen
+name|FOREST_GREEN_WOOL
 init|=
 operator|(
 operator|new
@@ -2393,7 +2393,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolBrown
+name|BROWN_WOOL
 init|=
 operator|(
 operator|new
@@ -2427,7 +2427,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|woolDeepBlue
+name|DEEP_BLUE_WOOL
 init|=
 operator|(
 operator|new
@@ -2461,7 +2461,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|wollTurqoise
+name|TURQOISE_WOOL
 init|=
 operator|(
 operator|new
@@ -2495,7 +2495,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|ice
+name|ICE
 init|=
 operator|(
 operator|new
@@ -2529,7 +2529,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|ceramicTile
+name|CERAMIC_TOLE
 init|=
 operator|(
 operator|new
@@ -2563,7 +2563,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|magma
+name|MAGMA
 init|=
 operator|(
 operator|new
@@ -2597,7 +2597,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|quartz
+name|QUARTZ
 init|=
 operator|(
 operator|new
@@ -2631,7 +2631,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|crate
+name|CRATE
 init|=
 operator|(
 operator|new
@@ -2665,7 +2665,7 @@ specifier|public
 specifier|static
 specifier|final
 name|Block
-name|stonebrick
+name|STONEBRICK
 init|=
 operator|(
 operator|new

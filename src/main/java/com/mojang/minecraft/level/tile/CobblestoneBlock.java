@@ -41,7 +41,7 @@ name|getDrop
 parameter_list|()
 block|{
 return|return
-name|cobblestone
+name|COBLESTONE
 operator|.
 name|id
 return|;

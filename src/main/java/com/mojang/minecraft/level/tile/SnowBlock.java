@@ -111,7 +111,7 @@ if|if
 condition|(
 name|this
 operator|!=
-name|snow
+name|SNOW
 condition|)
 block|{
 name|super
@@ -208,7 +208,7 @@ name|getDrop
 parameter_list|()
 block|{
 return|return
-name|snow
+name|SNOW
 operator|.
 name|id
 return|;

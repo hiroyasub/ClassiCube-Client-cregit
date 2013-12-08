@@ -4505,7 +4505,7 @@ name|var11
 operator|=
 name|Block
 operator|.
-name|bedrock
+name|BEDROCK
 operator|.
 name|getCollisionBox
 argument_list|(
@@ -5795,7 +5795,7 @@ operator|)
 operator|==
 name|Block
 operator|.
-name|grass
+name|GRASS
 operator|.
 name|id
 operator|&&
@@ -5824,7 +5824,7 @@ name|var3
 argument_list|,
 name|Block
 operator|.
-name|dirt
+name|DIRT
 operator|.
 name|id
 argument_list|)
@@ -5969,7 +5969,7 @@ name|var6
 argument_list|,
 name|Block
 operator|.
-name|leaves
+name|LEAVES
 operator|.
 name|id
 argument_list|)
@@ -6006,7 +6006,7 @@ name|var3
 argument_list|,
 name|Block
 operator|.
-name|log
+name|LOG
 operator|.
 name|id
 argument_list|)
@@ -6224,7 +6224,7 @@ name|var4
 operator|=
 name|Block
 operator|.
-name|water
+name|WATER
 operator|.
 name|id
 expr_stmt|;

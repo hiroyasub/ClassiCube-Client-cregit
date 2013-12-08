@@ -117,7 +117,7 @@ name|this
 operator|.
 name|id
 operator|!=
-name|rope
+name|ROPE
 operator|.
 name|id
 condition|)
@@ -154,13 +154,13 @@ operator|&&
 operator|(
 name|var6
 operator|==
-name|dirt
+name|DIRT
 operator|.
 name|id
 operator|||
 name|var6
 operator|==
-name|grass
+name|GRASS
 operator|.
 name|id
 operator|)

@@ -89,7 +89,7 @@ name|super
 argument_list|(
 name|Block
 operator|.
-name|water
+name|WATER
 operator|.
 name|textureId
 argument_list|)

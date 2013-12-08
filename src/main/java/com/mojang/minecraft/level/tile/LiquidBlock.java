@@ -329,7 +329,7 @@ argument_list|)
 operator|==
 name|Block
 operator|.
-name|sponge
+name|SPONGE
 operator|.
 name|id
 condition|)
@@ -920,7 +920,7 @@ name|var4
 argument_list|,
 name|Block
 operator|.
-name|obsidian
+name|OBSIDIAN
 operator|.
 name|id
 argument_list|)

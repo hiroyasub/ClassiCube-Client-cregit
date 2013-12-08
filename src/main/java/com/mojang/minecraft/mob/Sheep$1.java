@@ -217,7 +217,7 @@ argument_list|)
 operator|!=
 name|Block
 operator|.
-name|grass
+name|GRASS
 operator|.
 name|id
 condition|)
@@ -259,7 +259,7 @@ name|var5
 argument_list|,
 name|Block
 operator|.
-name|dirt
+name|DIRT
 operator|.
 name|id
 argument_list|)
@@ -346,7 +346,7 @@ argument_list|)
 operator|==
 name|Block
 operator|.
-name|grass
+name|GRASS
 operator|.
 name|id
 condition|)

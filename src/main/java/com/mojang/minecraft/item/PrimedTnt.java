@@ -365,7 +365,7 @@ name|z
 argument_list|,
 name|Block
 operator|.
-name|tnt
+name|TNT
 operator|.
 name|id
 argument_list|)
@@ -425,7 +425,7 @@ name|addResource
 argument_list|(
 name|Block
 operator|.
-name|tnt
+name|TNT
 operator|.
 name|id
 argument_list|)
@@ -587,7 +587,7 @@ name|instance
 decl_stmt|;
 name|Block
 operator|.
-name|tnt
+name|TNT
 operator|.
 name|renderPreview
 argument_list|(
@@ -709,7 +709,7 @@ argument_list|)
 expr_stmt|;
 name|Block
 operator|.
-name|tnt
+name|TNT
 operator|.
 name|renderPreview
 argument_list|(
@@ -1018,7 +1018,7 @@ name|unknown3
 argument_list|,
 name|Block
 operator|.
-name|tnt
+name|TNT
 argument_list|)
 decl_stmt|;
 name|level

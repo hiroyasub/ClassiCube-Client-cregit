@@ -399,7 +399,7 @@ name|z
 argument_list|,
 name|Block
 operator|.
-name|brownMushroom
+name|BROWN_MUSHROOM
 operator|.
 name|id
 argument_list|)
@@ -500,7 +500,7 @@ name|z
 argument_list|,
 name|Block
 operator|.
-name|woolWhite
+name|WHITE_WOOL
 operator|.
 name|id
 argument_list|)

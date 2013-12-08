@@ -357,7 +357,7 @@ name|var6
 argument_list|,
 name|Block
 operator|.
-name|leaves
+name|LEAVES
 argument_list|)
 argument_list|)
 expr_stmt|;

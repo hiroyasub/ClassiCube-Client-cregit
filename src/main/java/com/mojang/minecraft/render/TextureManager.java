@@ -3315,7 +3315,7 @@ name|get
 argument_list|(
 name|Block
 operator|.
-name|bedrock
+name|BEDROCK
 operator|.
 name|textureId
 argument_list|)
@@ -3352,7 +3352,7 @@ name|get
 argument_list|(
 name|Block
 operator|.
-name|water
+name|WATER
 operator|.
 name|textureId
 argument_list|)
@@ -3389,7 +3389,7 @@ name|get
 argument_list|(
 name|Block
 operator|.
-name|dirt
+name|DIRT
 operator|.
 name|textureId
 argument_list|)

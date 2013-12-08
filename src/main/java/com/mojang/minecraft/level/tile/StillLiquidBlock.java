@@ -304,7 +304,7 @@ name|var4
 argument_list|,
 name|Block
 operator|.
-name|stone
+name|STONE
 operator|.
 name|id
 argument_list|)

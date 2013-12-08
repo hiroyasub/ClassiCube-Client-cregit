@@ -47,7 +47,7 @@ name|getDrop
 parameter_list|()
 block|{
 return|return
-name|plank
+name|WOOD
 operator|.
 name|id
 return|;

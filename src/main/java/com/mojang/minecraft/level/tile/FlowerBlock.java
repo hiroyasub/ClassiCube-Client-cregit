@@ -752,13 +752,13 @@ argument_list|)
 operator|||
 name|var6
 operator|!=
-name|dirt
+name|DIRT
 operator|.
 name|id
 operator|&&
 name|var6
 operator|!=
-name|grass
+name|GRASS
 operator|.
 name|id
 condition|)
