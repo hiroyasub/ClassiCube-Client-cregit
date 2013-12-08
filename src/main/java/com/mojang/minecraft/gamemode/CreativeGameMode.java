@@ -189,7 +189,7 @@ name|STONE
 block|,
 name|Block
 operator|.
-name|COBBLESTONE
+name|COBLESTONE
 block|,
 name|Block
 operator|.

@@ -273,7 +273,7 @@ name|var7
 argument_list|,
 name|var8
 argument_list|,
-name|GRASS
+name|DIRT
 operator|.
 name|id
 argument_list|)

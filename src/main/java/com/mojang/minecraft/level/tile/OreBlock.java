@@ -26,16 +26,11 @@ name|OreBlock
 parameter_list|(
 name|int
 name|var1
-parameter_list|,
-name|int
-name|var2
 parameter_list|)
 block|{
 name|super
 argument_list|(
 name|var1
-argument_list|,
-name|var2
 argument_list|)
 expr_stmt|;
 block|}

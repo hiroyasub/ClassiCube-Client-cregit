@@ -68,16 +68,11 @@ name|SandBlock
 parameter_list|(
 name|int
 name|var1
-parameter_list|,
-name|int
-name|var2
 parameter_list|)
 block|{
 name|super
 argument_list|(
 name|var1
-argument_list|,
-name|var2
 argument_list|)
 expr_stmt|;
 block|}
@@ -177,7 +172,7 @@ operator|)
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 condition|?
 literal|true
 else|:
@@ -185,7 +180,7 @@ name|var12
 operator|==
 name|LiquidType
 operator|.
-name|LAVA
+name|lava
 operator|)
 operator|)
 operator|||
@@ -230,7 +225,7 @@ argument_list|()
 operator|!=
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 condition|)
 block|{
 name|var1

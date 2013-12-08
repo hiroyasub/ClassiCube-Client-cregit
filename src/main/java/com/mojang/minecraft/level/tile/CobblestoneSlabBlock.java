@@ -52,8 +52,6 @@ block|{
 name|super
 argument_list|(
 name|var1
-argument_list|,
-literal|6
 argument_list|)
 expr_stmt|;
 name|this
@@ -112,7 +110,7 @@ if|if
 condition|(
 name|this
 operator|!=
-name|COBBLESTONESLAB
+name|COBBLESTONE_SLAB
 condition|)
 block|{
 name|super
@@ -189,7 +187,7 @@ name|getDrop
 parameter_list|()
 block|{
 return|return
-name|COBBLESTONESLAB
+name|COBBLESTONE_SLAB
 operator|.
 name|id
 return|;
@@ -253,7 +251,7 @@ if|if
 condition|(
 name|this
 operator|!=
-name|COBBLESTONESLAB
+name|COBBLESTONE_SLAB
 condition|)
 block|{
 name|super
@@ -285,7 +283,7 @@ argument_list|,
 name|z
 argument_list|)
 operator|==
-name|COBBLESTONESLAB
+name|COBBLESTONE_SLAB
 operator|.
 name|id
 condition|)
@@ -315,7 +313,7 @@ literal|1
 argument_list|,
 name|z
 argument_list|,
-name|COBBLESTONE
+name|COBBLESTONE_SLAB
 operator|.
 name|id
 argument_list|)
@@ -347,7 +345,7 @@ if|if
 condition|(
 name|this
 operator|==
-name|COBBLESTONESLAB
+name|COBBLESTONE_SLAB
 condition|)
 block|{
 empty_stmt|;

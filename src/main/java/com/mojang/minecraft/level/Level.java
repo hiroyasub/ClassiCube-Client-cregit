@@ -1605,7 +1605,7 @@ argument_list|()
 operator|==
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 operator|)
 condition|)
 block|{
@@ -1972,7 +1972,7 @@ argument_list|()
 operator|!=
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 condition|)
 block|{
 return|return
@@ -4617,7 +4617,7 @@ argument_list|()
 operator|!=
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 operator|)
 operator|&&
 name|var3
@@ -4671,7 +4671,7 @@ literal|0
 condition|?
 name|LiquidType
 operator|.
-name|NOT_LIQUID
+name|notLiquid
 else|:
 name|Block
 operator|.
@@ -5535,7 +5535,7 @@ argument_list|()
 operator|==
 name|LiquidType
 operator|.
-name|WATER
+name|water
 return|;
 block|}
 specifier|public

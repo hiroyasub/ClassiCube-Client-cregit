@@ -27,7 +27,7 @@ specifier|public
 specifier|static
 specifier|final
 name|LiquidType
-name|NOT_LIQUID
+name|notLiquid
 init|=
 operator|new
 name|LiquidType
@@ -39,7 +39,7 @@ specifier|public
 specifier|static
 specifier|final
 name|LiquidType
-name|WATER
+name|water
 init|=
 operator|new
 name|LiquidType
@@ -51,7 +51,7 @@ specifier|public
 specifier|static
 specifier|final
 name|LiquidType
-name|LAVA
+name|lava
 init|=
 operator|new
 name|LiquidType
@@ -63,7 +63,7 @@ specifier|public
 specifier|static
 specifier|final
 name|LiquidType
-name|SNOW
+name|snow
 init|=
 operator|new
 name|LiquidType
