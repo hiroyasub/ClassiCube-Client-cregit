@@ -15015,14 +15015,13 @@ argument_list|()
 decl_stmt|;
 if|if
 condition|(
-operator|!
 name|this
 operator|.
 name|settings
 operator|.
 name|canServerChangeTextures
 condition|)
-return|return;
+block|{
 if|if
 condition|(
 name|sideBlock
@@ -15234,9 +15233,27 @@ argument_list|(
 name|file
 argument_list|)
 expr_stmt|;
-comment|// if (image.getWidth() != 256
-comment|// || image.getHeight() != 256)
-comment|// return;
+if|if
+condition|(
+name|image
+operator|.
+name|getWidth
+argument_list|()
+operator|%
+literal|16
+operator|==
+literal|0
+operator|&&
+name|image
+operator|.
+name|getHeight
+argument_list|()
+operator|%
+literal|16
+operator|==
+literal|0
+condition|)
+block|{
 name|this
 operator|.
 name|textureManager
@@ -15254,6 +15271,7 @@ name|currentTerrainPng
 operator|=
 name|image
 expr_stmt|;
+block|}
 block|}
 block|}
 name|this
@@ -15280,6 +15298,7 @@ operator|.
 name|refresh
 argument_list|()
 expr_stmt|;
+block|}
 block|}
 if|else if
 condition|(
