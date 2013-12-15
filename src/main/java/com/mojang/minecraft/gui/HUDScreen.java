@@ -3093,14 +3093,11 @@ decl_stmt|;
 name|String
 name|listName
 init|=
-name|FontRenderer
-operator|.
-name|stripColor
-argument_list|(
+operator|(
 name|pi
 operator|.
 name|listName
-argument_list|)
+operator|)
 decl_stmt|;
 if|if
 condition|(
