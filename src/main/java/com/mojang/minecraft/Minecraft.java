@@ -18168,7 +18168,8 @@ name|player
 operator|.
 name|inventory
 operator|.
-name|selected
+name|getSelected
+argument_list|()
 else|:
 name|Integer
 operator|.
