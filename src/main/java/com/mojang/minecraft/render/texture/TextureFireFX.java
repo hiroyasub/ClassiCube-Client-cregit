@@ -138,9 +138,6 @@ operator|*
 literal|16
 index|]
 operator|*
-operator|(
-name|float
-operator|)
 name|k
 decl_stmt|;
 for|for
@@ -237,9 +234,6 @@ operator|=
 name|f
 operator|/
 operator|(
-operator|(
-name|float
-operator|)
 name|k
 operator|*
 literal|1.06F

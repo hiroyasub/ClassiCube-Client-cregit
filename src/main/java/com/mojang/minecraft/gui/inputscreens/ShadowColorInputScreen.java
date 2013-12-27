@@ -188,6 +188,8 @@ argument_list|)
 expr_stmt|;
 comment|// TODO Auto-generated constructor stub
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void

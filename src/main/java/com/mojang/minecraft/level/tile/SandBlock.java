@@ -267,6 +267,8 @@ name|var5
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -302,6 +304,8 @@ name|var4
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

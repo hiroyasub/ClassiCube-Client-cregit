@@ -111,6 +111,8 @@ name|defaultHex
 init|=
 literal|"ffffff"
 decl_stmt|;
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void

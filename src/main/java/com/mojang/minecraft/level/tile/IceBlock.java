@@ -95,6 +95,8 @@ operator|=
 literal|true
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -160,6 +162,8 @@ name|side
 argument_list|)
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -170,6 +174,8 @@ return|return
 literal|1
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -180,6 +186,8 @@ return|return
 literal|true
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean

@@ -579,14 +579,8 @@ name|glOrtho
 argument_list|(
 literal|0.0D
 argument_list|,
-operator|(
-name|double
-operator|)
 name|var1
 argument_list|,
-operator|(
-name|double
-operator|)
 name|var2
 argument_list|,
 literal|0.0D
@@ -724,9 +718,6 @@ name|float
 name|var2
 init|=
 operator|(
-name|float
-operator|)
-operator|(
 name|var3
 operator|=
 name|this
@@ -751,9 +742,6 @@ condition|)
 block|{
 name|var1
 operator|+=
-operator|(
-name|float
-operator|)
 name|var3
 operator|.
 name|deathTime
@@ -796,9 +784,6 @@ argument_list|(
 operator|(
 name|var2
 operator|/=
-operator|(
-name|float
-operator|)
 name|var3
 operator|.
 name|hurtDuration

@@ -86,6 +86,8 @@ literal|1.0F
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -201,6 +203,8 @@ return|return
 literal|null
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -213,6 +217,8 @@ operator|.
 name|id
 return|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|int
@@ -228,6 +234,8 @@ operator|.
 name|textureId
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -238,6 +246,8 @@ return|return
 literal|false
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -248,6 +258,8 @@ return|return
 literal|true
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean

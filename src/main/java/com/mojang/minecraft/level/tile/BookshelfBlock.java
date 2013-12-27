@@ -34,6 +34,8 @@ name|var1
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -44,6 +46,8 @@ return|return
 literal|0
 return|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|int

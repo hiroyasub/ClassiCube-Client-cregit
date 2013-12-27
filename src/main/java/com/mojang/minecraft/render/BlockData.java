@@ -120,9 +120,6 @@ name|var1
 operator|.
 name|x
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|x
@@ -134,9 +131,6 @@ name|var1
 operator|.
 name|y
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|y
@@ -148,9 +142,6 @@ name|var1
 operator|.
 name|z
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|z

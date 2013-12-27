@@ -196,12 +196,16 @@ name|flyingDown
 init|=
 literal|false
 decl_stmt|;
+annotation|@
+name|Override
 specifier|public
 name|void
 name|beforeRemove
 parameter_list|()
 block|{
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|hurt
@@ -257,6 +261,8 @@ operator|=
 literal|0.84F
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|tick
@@ -1168,9 +1174,6 @@ condition|(
 operator|(
 name|var10
 operator|=
-operator|(
-name|Entity
-operator|)
 name|var11
 operator|.
 name|get
@@ -1305,9 +1308,6 @@ name|mob
 operator|.
 name|xRot
 operator|=
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|defaultLookAngle

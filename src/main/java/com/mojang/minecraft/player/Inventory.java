@@ -565,9 +565,6 @@ name|this
 operator|.
 name|replaceSlot
 argument_list|(
-operator|(
-name|Block
-operator|)
 name|SessionData
 operator|.
 name|allowedBlocks

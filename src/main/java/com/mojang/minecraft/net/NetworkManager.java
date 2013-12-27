@@ -298,9 +298,6 @@ block|{
 name|NetworkPlayer
 name|networkPlayer
 init|=
-operator|(
-name|NetworkPlayer
-operator|)
 name|playerIterator
 operator|.
 name|next

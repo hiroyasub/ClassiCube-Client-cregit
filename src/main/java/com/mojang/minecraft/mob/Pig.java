@@ -128,6 +128,8 @@ operator|=
 literal|"/mob/pig.png"
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|die

@@ -56,9 +56,6 @@ name|Math
 operator|.
 name|sin
 argument_list|(
-operator|(
-name|double
-operator|)
 name|var0
 operator|*
 literal|3.141592653589793D
@@ -142,9 +139,6 @@ name|Math
 operator|.
 name|sqrt
 argument_list|(
-operator|(
-name|double
-operator|)
 name|var0
 argument_list|)
 return|;

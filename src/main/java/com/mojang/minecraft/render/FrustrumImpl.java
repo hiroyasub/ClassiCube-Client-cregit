@@ -39,16 +39,6 @@ name|org
 operator|.
 name|lwjgl
 operator|.
-name|BufferUtils
-import|;
-end_import
-
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
 name|opengl
 operator|.
 name|GL11

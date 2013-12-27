@@ -300,9 +300,6 @@ index|[
 name|i
 index|]
 operator|=
-operator|(
-name|Block
-operator|)
 name|SessionData
 operator|.
 name|allowedBlocks

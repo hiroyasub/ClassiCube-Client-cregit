@@ -107,6 +107,8 @@ name|textureId
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -180,9 +182,6 @@ name|MathHelper
 operator|.
 name|sin
 argument_list|(
-operator|(
-name|float
-operator|)
 name|var2
 operator|*
 literal|3.1415927F
@@ -205,9 +204,6 @@ name|MathHelper
 operator|.
 name|sin
 argument_list|(
-operator|(
-name|float
-operator|)
 name|var1
 operator|*
 literal|3.1415927F

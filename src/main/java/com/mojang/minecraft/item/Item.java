@@ -436,9 +436,6 @@ init|=
 name|rot
 operator|+
 operator|(
-operator|(
-name|float
-operator|)
 name|tickCount
 operator|+
 name|unknown0

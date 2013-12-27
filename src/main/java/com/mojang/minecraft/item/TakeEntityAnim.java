@@ -199,9 +199,6 @@ init|=
 operator|(
 name|distance
 operator|=
-operator|(
-name|float
-operator|)
 name|time
 operator|/
 literal|3.0F

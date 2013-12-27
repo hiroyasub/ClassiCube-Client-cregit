@@ -226,9 +226,6 @@ block|{
 name|Block
 name|b
 init|=
-operator|(
-name|Block
-operator|)
 name|SessionData
 operator|.
 name|allowedBlocks
@@ -406,6 +403,8 @@ operator|-
 literal|1
 return|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void
@@ -462,6 +461,8 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -705,9 +706,6 @@ block|{
 name|Block
 name|var4
 init|=
-operator|(
-name|Block
-operator|)
 name|SessionData
 operator|.
 name|allowedBlocks
@@ -769,14 +767,8 @@ name|GL11
 operator|.
 name|glTranslatef
 argument_list|(
-operator|(
-name|float
-operator|)
 name|var5
 argument_list|,
-operator|(
-name|float
-operator|)
 name|var6
 argument_list|,
 literal|0.0F
@@ -938,6 +930,8 @@ operator|new
 name|TimerTask
 argument_list|()
 block|{
+annotation|@
+name|Override
 specifier|public
 name|void
 name|run

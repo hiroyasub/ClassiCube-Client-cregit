@@ -738,9 +738,6 @@ name|var8
 init|=
 name|var1
 operator|+
-operator|(
-name|float
-operator|)
 name|var4
 decl_stmt|;
 name|float
@@ -748,9 +745,6 @@ name|var9
 init|=
 name|var2
 operator|+
-operator|(
-name|float
-operator|)
 name|var5
 decl_stmt|;
 name|float
@@ -758,9 +752,6 @@ name|var10
 init|=
 name|var3
 operator|+
-operator|(
-name|float
-operator|)
 name|var6
 decl_stmt|;
 name|var1

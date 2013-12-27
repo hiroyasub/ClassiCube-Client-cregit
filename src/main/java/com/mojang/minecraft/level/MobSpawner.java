@@ -293,9 +293,6 @@ name|nextFloat
 argument_list|()
 argument_list|)
 operator|*
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|level
@@ -590,9 +587,6 @@ block|{
 name|float
 name|var15
 init|=
-operator|(
-name|float
-operator|)
 name|var11
 operator|+
 literal|0.5F
@@ -600,9 +594,6 @@ decl_stmt|;
 name|float
 name|var16
 init|=
-operator|(
-name|float
-operator|)
 name|var12
 operator|+
 literal|1.0F
@@ -610,9 +601,6 @@ decl_stmt|;
 name|float
 name|var17
 init|=
-operator|(
-name|float
-operator|)
 name|var13
 operator|+
 literal|0.5F
@@ -683,9 +671,6 @@ name|var18
 operator|=
 name|var15
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|level
@@ -696,9 +681,6 @@ name|var19
 operator|=
 name|var16
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|level
@@ -709,9 +691,6 @@ name|var20
 operator|=
 name|var17
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|level

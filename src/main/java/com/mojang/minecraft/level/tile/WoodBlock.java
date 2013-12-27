@@ -40,6 +40,8 @@ operator|=
 literal|20
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -52,6 +54,8 @@ operator|.
 name|id
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -69,6 +73,8 @@ operator|+
 literal|3
 return|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|int

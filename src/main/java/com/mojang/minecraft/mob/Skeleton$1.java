@@ -74,6 +74,8 @@ operator|=
 name|var1
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -90,6 +92,8 @@ name|parent
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

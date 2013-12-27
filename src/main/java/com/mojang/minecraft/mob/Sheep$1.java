@@ -88,6 +88,8 @@ operator|=
 name|var1
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void
@@ -306,10 +308,6 @@ name|mob
 operator|.
 name|xRot
 operator|=
-operator|(
-name|float
-operator|)
-operator|(
 literal|40
 operator|+
 name|this
@@ -323,7 +321,6 @@ operator|%
 literal|2
 operator|*
 literal|10
-operator|)
 expr_stmt|;
 block|}
 block|}

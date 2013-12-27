@@ -71,6 +71,8 @@ literal|true
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -84,6 +86,8 @@ name|getDrop
 argument_list|()
 return|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|int
@@ -111,6 +115,8 @@ literal|3
 operator|)
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

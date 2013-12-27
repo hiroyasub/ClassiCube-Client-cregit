@@ -219,9 +219,6 @@ decl_stmt|;
 return|return
 name|par0
 operator|>
-operator|(
-name|double
-operator|)
 name|var2
 condition|?
 name|var2

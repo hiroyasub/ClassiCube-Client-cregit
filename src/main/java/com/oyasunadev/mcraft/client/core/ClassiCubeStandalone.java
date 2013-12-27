@@ -1514,6 +1514,8 @@ operator|new
 name|Runnable
 argument_list|()
 block|{
+annotation|@
+name|Override
 specifier|public
 name|void
 name|run
@@ -1622,6 +1624,12 @@ block|}
 block|}
 specifier|public
 specifier|static
+name|String
+index|[]
+name|storedArgs
+decl_stmt|;
+specifier|public
+specifier|static
 name|void
 name|main
 parameter_list|(
@@ -1630,6 +1638,10 @@ index|[]
 name|args
 parameter_list|)
 block|{
+name|storedArgs
+operator|=
+name|args
+expr_stmt|;
 name|String
 name|player
 init|=

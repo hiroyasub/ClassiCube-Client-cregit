@@ -101,9 +101,6 @@ name|var1
 operator|.
 name|x
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|Bounds
@@ -117,9 +114,6 @@ name|var1
 operator|.
 name|y
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|Bounds
@@ -133,9 +127,6 @@ name|var1
 operator|.
 name|z
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|Bounds
@@ -172,9 +163,6 @@ name|var1
 operator|.
 name|x
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|Bounds
@@ -188,9 +176,6 @@ name|var1
 operator|.
 name|y
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|Bounds
@@ -204,9 +189,6 @@ name|var1
 operator|.
 name|z
 operator|-
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|Bounds

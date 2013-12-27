@@ -133,9 +133,6 @@ name|LogicalOggStreamImpl
 name|OggStream
 init|=
 operator|(
-name|LogicalOggStreamImpl
-operator|)
-operator|(
 operator|new
 name|OnDemandUrlStream
 argument_list|(
@@ -491,9 +488,6 @@ name|SoundData
 argument_list|(
 name|var5
 argument_list|,
-operator|(
-name|float
-operator|)
 operator|(
 name|var13
 operator|=

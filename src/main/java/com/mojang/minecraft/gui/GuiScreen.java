@@ -399,9 +399,6 @@ name|var7
 operator|=
 name|var4
 operator|=
-operator|(
-name|Button
-operator|)
 name|this
 operator|.
 name|buttons
@@ -545,9 +542,6 @@ block|{
 name|Button
 name|var10000
 init|=
-operator|(
-name|Button
-operator|)
 name|this
 operator|.
 name|buttons

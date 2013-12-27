@@ -955,10 +955,6 @@ operator|(
 name|var9
 operator|=
 operator|(
-name|byte
-index|[]
-operator|)
-operator|(
 operator|(
 name|byte
 index|[]

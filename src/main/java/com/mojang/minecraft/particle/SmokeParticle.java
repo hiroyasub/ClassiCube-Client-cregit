@@ -158,6 +158,8 @@ operator|=
 literal|true
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|render
@@ -204,6 +206,8 @@ name|var7
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|tick
@@ -277,9 +281,6 @@ operator|(
 name|float
 operator|)
 operator|(
-operator|(
-name|double
-operator|)
 name|this
 operator|.
 name|yd

@@ -178,10 +178,6 @@ return|;
 block|}
 block|}
 return|return
-operator|(
-name|Model
-operator|)
-operator|(
 name|var1
 operator|.
 name|equals
@@ -326,7 +322,6 @@ operator|.
 name|sheepFur
 else|:
 literal|null
-operator|)
 operator|)
 operator|)
 operator|)

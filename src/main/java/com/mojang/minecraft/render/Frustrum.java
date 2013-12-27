@@ -86,9 +86,6 @@ literal|0
 decl_stmt|;
 if|if
 condition|(
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -99,9 +96,6 @@ index|]
 operator|*
 name|F
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -112,9 +106,6 @@ index|]
 operator|*
 name|F1
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -125,9 +116,6 @@ index|]
 operator|*
 name|F2
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -138,9 +126,6 @@ index|]
 operator|<=
 literal|0.0F
 operator|&&
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -151,9 +136,6 @@ index|]
 operator|*
 name|F3
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -164,9 +146,6 @@ index|]
 operator|*
 name|F1
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -177,9 +156,6 @@ index|]
 operator|*
 name|F2
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -190,9 +166,6 @@ index|]
 operator|<=
 literal|0.0F
 operator|&&
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -203,9 +176,6 @@ index|]
 operator|*
 name|F
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -216,9 +186,6 @@ index|]
 operator|*
 name|F4
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -229,9 +196,6 @@ index|]
 operator|*
 name|F2
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -242,9 +206,6 @@ index|]
 operator|<=
 literal|0.0F
 operator|&&
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -255,9 +216,6 @@ index|]
 operator|*
 name|F3
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -268,9 +226,6 @@ index|]
 operator|*
 name|F4
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -281,9 +236,6 @@ index|]
 operator|*
 name|F2
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -294,9 +246,6 @@ index|]
 operator|<=
 literal|0.0F
 operator|&&
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -307,9 +256,6 @@ index|]
 operator|*
 name|F
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -320,9 +266,6 @@ index|]
 operator|*
 name|F1
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -333,9 +276,6 @@ index|]
 operator|*
 name|F5
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -346,9 +286,6 @@ index|]
 operator|<=
 literal|0.0F
 operator|&&
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -359,9 +296,6 @@ index|]
 operator|*
 name|F3
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -372,9 +306,6 @@ index|]
 operator|*
 name|F1
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -385,9 +316,6 @@ index|]
 operator|*
 name|F5
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -398,9 +326,6 @@ index|]
 operator|<=
 literal|0.0F
 operator|&&
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -411,9 +336,6 @@ index|]
 operator|*
 name|F
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -424,9 +346,6 @@ index|]
 operator|*
 name|F4
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -437,9 +356,6 @@ index|]
 operator|*
 name|F5
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -450,9 +366,6 @@ index|]
 operator|<=
 literal|0.0F
 operator|&&
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -463,9 +376,6 @@ index|]
 operator|*
 name|F3
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -476,9 +386,6 @@ index|]
 operator|*
 name|F4
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i
@@ -489,9 +396,6 @@ index|]
 operator|*
 name|F5
 operator|+
-operator|(
-name|float
-operator|)
 name|frustum
 index|[
 name|i

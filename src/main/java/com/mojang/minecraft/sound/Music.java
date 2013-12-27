@@ -182,9 +182,6 @@ name|LogicalOggStreamImpl
 name|var3
 init|=
 operator|(
-name|LogicalOggStreamImpl
-operator|)
-operator|(
 operator|new
 name|OnDemandUrlStream
 argument_list|(
@@ -260,6 +257,8 @@ name|start
 argument_list|()
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean

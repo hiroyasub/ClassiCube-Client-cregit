@@ -248,10 +248,6 @@ name|glDeleteLists
 argument_list|(
 name|par0
 argument_list|,
-operator|(
-operator|(
-name|Integer
-operator|)
 name|displayLists
 operator|.
 name|remove
@@ -263,7 +259,6 @@ argument_list|(
 name|par0
 argument_list|)
 argument_list|)
-operator|)
 operator|.
 name|intValue
 argument_list|()

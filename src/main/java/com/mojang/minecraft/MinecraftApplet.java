@@ -129,6 +129,8 @@ name|stopGameThread
 argument_list|()
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|URL
 name|getCodeBase
@@ -160,6 +162,8 @@ return|return
 literal|null
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|URL
 name|getDocumentBase
@@ -191,6 +195,8 @@ return|return
 literal|null
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|init

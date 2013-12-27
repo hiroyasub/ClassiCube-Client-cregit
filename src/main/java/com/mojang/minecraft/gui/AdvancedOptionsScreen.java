@@ -333,6 +333,8 @@ operator|.
 name|VBOs
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void
@@ -1046,6 +1048,8 @@ expr_stmt|;
 block|}
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -1471,6 +1475,8 @@ operator|>=
 literal|100
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

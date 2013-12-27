@@ -30,6 +30,8 @@ name|ZombieModel
 extends|extends
 name|HumanoidModel
 block|{
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

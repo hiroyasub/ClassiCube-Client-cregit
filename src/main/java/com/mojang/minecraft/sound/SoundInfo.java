@@ -75,6 +75,8 @@ operator|=
 name|var3
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -94,9 +96,6 @@ name|this
 operator|.
 name|seek
 operator|>=
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|data
@@ -190,14 +189,8 @@ operator|(
 name|int
 operator|)
 operator|(
-operator|(
-name|float
-operator|)
 name|var5
 operator|+
-operator|(
-name|float
-operator|)
 operator|(
 name|var6
 operator|-
@@ -209,9 +202,6 @@ name|this
 operator|.
 name|seek
 operator|-
-operator|(
-name|float
-operator|)
 name|var4
 operator|)
 operator|)
@@ -231,9 +221,6 @@ name|this
 operator|.
 name|seek
 operator|>=
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|data

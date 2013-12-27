@@ -75,6 +75,8 @@ operator|=
 name|var2
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void
@@ -105,10 +107,6 @@ operator|++
 name|var2
 control|)
 block|{
-operator|(
-operator|(
-name|Button
-operator|)
 name|this
 operator|.
 name|buttons
@@ -117,7 +115,6 @@ name|get
 argument_list|(
 name|var2
 argument_list|)
-operator|)
 operator|.
 name|text
 operator|=
@@ -191,6 +188,8 @@ literal|"<"
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void
@@ -225,10 +224,6 @@ argument_list|,
 name|var2
 argument_list|)
 expr_stmt|;
-operator|(
-operator|(
-name|Button
-operator|)
 name|this
 operator|.
 name|buttons
@@ -239,7 +234,6 @@ name|this
 operator|.
 name|selected
 argument_list|)
-operator|)
 operator|.
 name|text
 operator|=
@@ -275,6 +269,8 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -385,6 +381,8 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

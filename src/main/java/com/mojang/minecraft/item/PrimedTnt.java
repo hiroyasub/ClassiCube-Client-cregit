@@ -619,10 +619,6 @@ argument_list|,
 literal|1.0F
 argument_list|,
 operator|(
-name|float
-operator|)
-operator|(
-operator|(
 name|life
 operator|/
 literal|4
@@ -631,7 +627,6 @@ literal|1
 operator|)
 operator|%
 literal|2
-operator|)
 operator|*
 literal|0.4F
 argument_list|)
@@ -654,17 +649,12 @@ argument_list|,
 literal|1.0F
 argument_list|,
 operator|(
-name|float
-operator|)
-operator|(
-operator|(
 name|life
 operator|+
 literal|1
 operator|)
 operator|%
 literal|2
-operator|)
 operator|*
 literal|0.6F
 argument_list|)

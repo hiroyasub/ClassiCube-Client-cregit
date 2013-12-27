@@ -31,6 +31,8 @@ name|GameOverScreen
 extends|extends
 name|GuiScreen
 block|{
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void
@@ -124,6 +126,8 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -210,10 +214,6 @@ operator|==
 literal|null
 condition|)
 block|{
-operator|(
-operator|(
-name|Button
-operator|)
 name|this
 operator|.
 name|buttons
@@ -222,7 +222,6 @@ name|get
 argument_list|(
 literal|1
 argument_list|)
-operator|)
 operator|.
 name|active
 operator|=
@@ -230,6 +229,8 @@ literal|false
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

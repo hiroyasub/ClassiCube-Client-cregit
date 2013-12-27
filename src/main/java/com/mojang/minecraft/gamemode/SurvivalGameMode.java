@@ -205,9 +205,6 @@ operator|.
 name|cracks
 operator|=
 operator|(
-operator|(
-name|float
-operator|)
 name|hits
 operator|+
 name|time
@@ -215,9 +212,6 @@ operator|-
 literal|1.0F
 operator|)
 operator|/
-operator|(
-name|float
-operator|)
 name|hardness
 expr_stmt|;
 block|}

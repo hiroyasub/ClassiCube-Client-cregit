@@ -25,18 +25,6 @@ name|Level
 import|;
 end_import
 
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|util
-operator|.
-name|MathHelper
-import|;
-end_import
-
 begin_class
 specifier|public
 class|class
@@ -127,6 +115,8 @@ name|var4
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|float
 name|getBrightness
@@ -138,9 +128,6 @@ block|{
 name|float
 name|var2
 init|=
-operator|(
-name|float
-operator|)
 operator|(
 literal|20
 operator|-

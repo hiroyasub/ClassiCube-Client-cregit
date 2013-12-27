@@ -198,9 +198,6 @@ operator|)
 operator|/
 literal|2.0F
 operator|*
-operator|(
-name|float
-operator|)
 name|this
 operator|.
 name|damage
@@ -488,14 +485,8 @@ name|Math
 operator|.
 name|atan2
 argument_list|(
-operator|(
-name|double
-operator|)
 name|var5
 argument_list|,
-operator|(
-name|double
-operator|)
 name|var3
 argument_list|)
 operator|*
@@ -522,14 +513,8 @@ name|Math
 operator|.
 name|atan2
 argument_list|(
-operator|(
-name|double
-operator|)
 name|var4
 argument_list|,
-operator|(
-name|double
-operator|)
 name|var6
 argument_list|)
 operator|*
@@ -580,6 +565,8 @@ block|}
 block|}
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|hurt
@@ -651,6 +638,8 @@ name|var1
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|protected
 name|void
 name|update

@@ -346,6 +346,8 @@ return|return
 literal|true
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -512,6 +514,8 @@ else|:
 literal|false
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -627,6 +631,8 @@ return|return
 literal|false
 return|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|ColorCache
@@ -726,6 +732,8 @@ return|return
 literal|null
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -736,6 +744,8 @@ return|return
 literal|0
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|LiquidType
@@ -748,6 +758,8 @@ operator|.
 name|type
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -768,6 +780,8 @@ else|:
 literal|0
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -788,6 +802,8 @@ else|:
 literal|0
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -798,6 +814,8 @@ return|return
 literal|false
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -808,6 +826,8 @@ return|return
 literal|true
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -818,6 +838,8 @@ return|return
 literal|false
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -837,6 +859,8 @@ name|var4
 parameter_list|)
 block|{
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|onNeighborChange
@@ -942,6 +966,8 @@ name|var5
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -976,6 +1002,8 @@ name|movingId
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -1028,6 +1056,8 @@ name|side
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|update

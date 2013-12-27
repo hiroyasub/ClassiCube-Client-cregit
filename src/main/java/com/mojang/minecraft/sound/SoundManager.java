@@ -442,12 +442,6 @@ condition|(
 operator|(
 name|var4
 operator|=
-operator|(
-name|List
-argument_list|<
-name|?
-argument_list|>
-operator|)
 name|this
 operator|.
 name|music
@@ -609,12 +603,6 @@ condition|(
 operator|(
 name|var4
 operator|=
-operator|(
-name|List
-argument_list|<
-name|?
-argument_list|>
-operator|)
 name|this
 operator|.
 name|sounds

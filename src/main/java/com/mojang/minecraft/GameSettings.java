@@ -1847,9 +1847,6 @@ argument_list|()
 expr_stmt|;
 name|image
 operator|=
-operator|(
-name|BufferedImage
-operator|)
 name|textureManager
 operator|.
 name|textureImages
@@ -1965,9 +1962,6 @@ expr_stmt|;
 block|}
 name|i
 operator|=
-operator|(
-name|Integer
-operator|)
 name|textureManager
 operator|.
 name|textures

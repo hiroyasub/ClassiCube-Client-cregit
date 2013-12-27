@@ -156,6 +156,8 @@ operator|=
 name|var1
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|void
@@ -411,6 +413,8 @@ expr_stmt|;
 block|}
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -440,6 +444,8 @@ argument_list|()
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|onOpen
@@ -504,10 +510,6 @@ literal|"---"
 argument_list|)
 argument_list|)
 expr_stmt|;
-operator|(
-operator|(
-name|Button
-operator|)
 name|this
 operator|.
 name|buttons
@@ -516,16 +518,11 @@ name|get
 argument_list|(
 name|var1
 argument_list|)
-operator|)
 operator|.
 name|visible
 operator|=
 literal|false
 expr_stmt|;
-operator|(
-operator|(
-name|Button
-operator|)
 name|this
 operator|.
 name|buttons
@@ -534,7 +531,6 @@ name|get
 argument_list|(
 name|var1
 argument_list|)
-operator|)
 operator|.
 name|active
 operator|=
@@ -775,6 +771,8 @@ name|parent
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|render
@@ -931,6 +929,8 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|run
@@ -1202,6 +1202,8 @@ literal|true
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

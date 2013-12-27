@@ -114,6 +114,8 @@ operator|=
 name|var1
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -156,6 +158,8 @@ literal|true
 return|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

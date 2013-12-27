@@ -34,6 +34,8 @@ parameter_list|()
 block|{
 comment|// this.runSpeed *= 0.8F;
 block|}
+annotation|@
+name|Override
 specifier|protected
 name|void
 name|jumpFromGround

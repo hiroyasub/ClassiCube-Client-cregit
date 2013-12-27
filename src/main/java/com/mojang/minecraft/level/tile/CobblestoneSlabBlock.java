@@ -85,6 +85,8 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -180,6 +182,8 @@ operator|)
 operator|)
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|int
@@ -192,6 +196,8 @@ operator|.
 name|id
 return|;
 block|}
+annotation|@
+name|Override
 specifier|protected
 specifier|final
 name|int
@@ -205,6 +211,8 @@ return|return
 literal|16
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -217,6 +225,8 @@ operator|.
 name|doubleSlab
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|boolean
@@ -229,6 +239,8 @@ operator|.
 name|doubleSlab
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
@@ -320,6 +332,8 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void

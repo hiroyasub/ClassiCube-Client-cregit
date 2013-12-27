@@ -23,6 +23,8 @@ name|BlockModel
 parameter_list|()
 block|{
 block|}
+annotation|@
+name|Override
 specifier|public
 name|void
 name|render

@@ -90,6 +90,8 @@ literal|0.5F
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 specifier|final
 name|void
