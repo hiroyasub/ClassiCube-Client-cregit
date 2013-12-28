@@ -1007,7 +1007,7 @@ operator|new
 name|Class
 index|[]
 block|{
-name|Short
+name|Byte
 operator|.
 name|TYPE
 block|}
