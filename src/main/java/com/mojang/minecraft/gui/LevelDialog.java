@@ -139,13 +139,13 @@ init|=
 operator|new
 name|FileNameExtensionFilter
 argument_list|(
-literal|"Minecraft levels"
+literal|"ClassicWorld format (.cw)"
 argument_list|,
 operator|new
 name|String
 index|[]
 block|{
-literal|"dat"
+literal|"cw"
 block|}
 argument_list|)
 decl_stmt|;
@@ -279,6 +279,19 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
+name|e
+parameter_list|)
+block|{
+comment|// TODO Auto-generated catch block
+name|e
+operator|.
+name|printStackTrace
+argument_list|()
+expr_stmt|;
+block|}
+catch|catch
+parameter_list|(
+name|Exception
 name|e
 parameter_list|)
 block|{

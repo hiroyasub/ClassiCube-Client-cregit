@@ -158,7 +158,7 @@ argument_list|()
 operator|.
 name|endsWith
 argument_list|(
-literal|".dat"
+literal|".cw"
 argument_list|)
 condition|)
 block|{
@@ -177,7 +177,7 @@ operator|.
 name|getName
 argument_list|()
 operator|+
-literal|".dat"
+literal|".cw"
 argument_list|)
 expr_stmt|;
 block|}
@@ -213,7 +213,6 @@ name|FileNotFoundException
 name|e
 parameter_list|)
 block|{
-comment|// TODO Auto-generated catch block
 name|e
 operator|.
 name|printStackTrace
@@ -226,7 +225,18 @@ name|IOException
 name|e
 parameter_list|)
 block|{
-comment|// TODO Auto-generated catch block
+name|e
+operator|.
+name|printStackTrace
+argument_list|()
+expr_stmt|;
+block|}
+catch|catch
+parameter_list|(
+name|Exception
+name|e
+parameter_list|)
+block|{
 name|e
 operator|.
 name|printStackTrace

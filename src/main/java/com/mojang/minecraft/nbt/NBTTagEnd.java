@@ -62,6 +62,8 @@ argument_list|)
 expr_stmt|;
 block|}
 comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes      */
+annotation|@
+name|Override
 name|void
 name|load
 parameter_list|(
@@ -73,6 +75,8 @@ name|IOException
 block|{
 block|}
 comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes      */
+annotation|@
+name|Override
 name|void
 name|write
 parameter_list|(
@@ -84,6 +88,8 @@ name|IOException
 block|{
 block|}
 comment|/**      * Gets the type byte for the tag.      */
+annotation|@
+name|Override
 specifier|public
 name|byte
 name|getId
@@ -96,6 +102,8 @@ operator|)
 literal|0
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|String
 name|toString
@@ -106,6 +114,8 @@ literal|"END"
 return|;
 block|}
 comment|/**      * Creates a clone of the tag.      */
+annotation|@
+name|Override
 specifier|public
 name|NBTBase
 name|copy

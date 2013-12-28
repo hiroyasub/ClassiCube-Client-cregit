@@ -175,16 +175,6 @@ end_import
 
 begin_import
 import|import
-name|javax
-operator|.
-name|swing
-operator|.
-name|SwingWorker
-import|;
-end_import
-
-begin_import
-import|import
 name|org
 operator|.
 name|lwjgl

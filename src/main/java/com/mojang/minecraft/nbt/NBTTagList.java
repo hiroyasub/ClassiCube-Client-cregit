@@ -81,10 +81,16 @@ block|{
 comment|/** The array list containing the tags encapsulated in this list. */
 specifier|private
 name|List
+argument_list|<
+name|NBTBase
+argument_list|>
 name|tagList
 init|=
 operator|new
 name|ArrayList
+argument_list|<
+name|NBTBase
+argument_list|>
 argument_list|()
 decl_stmt|;
 comment|/**      * The type byte for the tags in the list - they must all be of the same type.      */
@@ -116,6 +122,8 @@ argument_list|)
 expr_stmt|;
 block|}
 comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes      */
+annotation|@
+name|Override
 name|void
 name|write
 parameter_list|(
@@ -140,10 +148,6 @@ name|this
 operator|.
 name|tagType
 operator|=
-operator|(
-operator|(
-name|NBTBase
-operator|)
 name|this
 operator|.
 name|tagList
@@ -152,7 +156,6 @@ name|get
 argument_list|(
 literal|0
 argument_list|)
-operator|)
 operator|.
 name|getId
 argument_list|()
@@ -208,10 +211,6 @@ operator|++
 name|i
 control|)
 block|{
-operator|(
-operator|(
-name|NBTBase
-operator|)
 name|this
 operator|.
 name|tagList
@@ -220,7 +219,6 @@ name|get
 argument_list|(
 name|i
 argument_list|)
-operator|)
 operator|.
 name|write
 argument_list|(
@@ -230,6 +228,8 @@ expr_stmt|;
 block|}
 block|}
 comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes      */
+annotation|@
+name|Override
 name|void
 name|load
 parameter_list|(
@@ -262,6 +262,9 @@ name|tagList
 operator|=
 operator|new
 name|ArrayList
+argument_list|<
+name|NBTBase
+argument_list|>
 argument_list|()
 expr_stmt|;
 for|for
@@ -315,6 +318,8 @@ expr_stmt|;
 block|}
 block|}
 comment|/**      * Gets the type byte for the tag.      */
+annotation|@
+name|Override
 specifier|public
 name|byte
 name|getId
@@ -327,6 +332,8 @@ operator|)
 literal|9
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|String
 name|toString
@@ -392,9 +399,6 @@ name|par1
 parameter_list|)
 block|{
 return|return
-operator|(
-name|NBTBase
-operator|)
 name|this
 operator|.
 name|tagList
@@ -415,9 +419,6 @@ name|par1
 parameter_list|)
 block|{
 return|return
-operator|(
-name|NBTBase
-operator|)
 name|this
 operator|.
 name|tagList
@@ -444,6 +445,8 @@ argument_list|()
 return|;
 block|}
 comment|/**      * Creates a clone of the tag.      */
+annotation|@
+name|Override
 specifier|public
 name|NBTBase
 name|copy
@@ -470,6 +473,9 @@ operator|.
 name|tagType
 expr_stmt|;
 name|Iterator
+argument_list|<
+name|NBTBase
+argument_list|>
 name|iterator
 init|=
 name|this
@@ -490,9 +496,6 @@ block|{
 name|NBTBase
 name|nbtbase
 init|=
-operator|(
-name|NBTBase
-operator|)
 name|iterator
 operator|.
 name|next
@@ -520,6 +523,8 @@ return|return
 name|nbttaglist
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|boolean
 name|equals
@@ -575,6 +580,8 @@ return|return
 literal|false
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|int
 name|hashCode

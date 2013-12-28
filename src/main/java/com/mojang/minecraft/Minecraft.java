@@ -13061,6 +13061,8 @@ condition|(
 name|level
 operator|!=
 literal|null
+operator|&&
+name|isSinglePlayer
 condition|)
 block|{
 if|if
@@ -13068,8 +13070,6 @@ condition|(
 name|level
 operator|.
 name|creativeMode
-operator|&&
-name|isSinglePlayer
 condition|)
 block|{
 operator|new
@@ -13407,20 +13407,15 @@ if|if
 condition|(
 name|serverName
 operator|==
-literal|""
-condition|)
-block|{
-return|return;
-block|}
-if|if
-condition|(
-name|serverName
-operator|==
 literal|"Loading level"
 operator|||
 name|serverName
 operator|==
 literal|"Connecting.."
+operator|||
+name|serverName
+operator|==
+literal|""
 condition|)
 block|{
 name|serverName

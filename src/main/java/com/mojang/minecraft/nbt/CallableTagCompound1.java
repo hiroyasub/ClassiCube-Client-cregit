@@ -28,6 +28,9 @@ class|class
 name|CallableTagCompound1
 implements|implements
 name|Callable
+argument_list|<
+name|Object
+argument_list|>
 block|{
 specifier|final
 name|String
@@ -95,6 +98,8 @@ argument_list|()
 index|]
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|Object
 name|call

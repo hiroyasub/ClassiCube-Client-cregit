@@ -91,10 +91,20 @@ block|{
 comment|/**      * The key-value pairs for the tag. Each key is a UTF string, each value is a tag.      */
 specifier|private
 name|Map
+argument_list|<
+name|String
+argument_list|,
+name|NBTBase
+argument_list|>
 name|tagMap
 init|=
 operator|new
 name|HashMap
+argument_list|<
+name|String
+argument_list|,
+name|NBTBase
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -121,6 +131,8 @@ argument_list|)
 expr_stmt|;
 block|}
 comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes      */
+annotation|@
+name|Override
 name|void
 name|write
 parameter_list|(
@@ -131,6 +143,9 @@ throws|throws
 name|IOException
 block|{
 name|Iterator
+argument_list|<
+name|NBTBase
+argument_list|>
 name|iterator
 init|=
 name|this
@@ -181,6 +196,8 @@ argument_list|)
 expr_stmt|;
 block|}
 comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes      */
+annotation|@
+name|Override
 name|void
 name|load
 parameter_list|(
@@ -238,6 +255,9 @@ block|}
 comment|/**      * Returns all the values in the tagMap HashMap.      */
 specifier|public
 name|Collection
+argument_list|<
+name|NBTBase
+argument_list|>
 name|getTags
 parameter_list|()
 block|{
@@ -251,6 +271,8 @@ argument_list|()
 return|;
 block|}
 comment|/**      * Gets the type byte for the tag.      */
+annotation|@
+name|Override
 specifier|public
 name|byte
 name|getId
@@ -1288,6 +1310,8 @@ name|par1Str
 argument_list|)
 expr_stmt|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|String
 name|toString
@@ -1309,6 +1333,9 @@ decl_stmt|;
 for|for
 control|(
 name|Iterator
+argument_list|<
+name|String
+argument_list|>
 name|iterator
 init|=
 name|this
@@ -1379,6 +1406,8 @@ argument_list|()
 return|;
 block|}
 comment|/**      * Creates a clone of the tag.      */
+annotation|@
+name|Override
 specifier|public
 name|NBTBase
 name|copy
@@ -1397,6 +1426,9 @@ argument_list|()
 argument_list|)
 decl_stmt|;
 name|Iterator
+argument_list|<
+name|String
+argument_list|>
 name|iterator
 init|=
 name|this
@@ -1457,6 +1489,8 @@ return|return
 name|nbttagcompound
 return|;
 block|}
+annotation|@
+name|Override
 specifier|public
 name|boolean
 name|equals
@@ -1509,6 +1543,8 @@ literal|false
 return|;
 block|}
 block|}
+annotation|@
+name|Override
 specifier|public
 name|int
 name|hashCode
@@ -1531,6 +1567,11 @@ block|}
 comment|/**      * Return the tag map for this compound.      */
 specifier|static
 name|Map
+argument_list|<
+name|String
+argument_list|,
+name|NBTBase
+argument_list|>
 name|getTagMap
 parameter_list|(
 name|NBTTagCompound

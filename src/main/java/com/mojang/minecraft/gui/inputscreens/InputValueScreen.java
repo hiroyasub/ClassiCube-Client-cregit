@@ -292,6 +292,19 @@ name|printStackTrace
 argument_list|()
 expr_stmt|;
 block|}
+catch|catch
+parameter_list|(
+name|Exception
+name|e
+parameter_list|)
+block|{
+comment|// TODO Auto-generated catch block
+name|e
+operator|.
+name|printStackTrace
+argument_list|()
+expr_stmt|;
+block|}
 name|minecraft
 operator|.
 name|setCurrentScreen
