@@ -33,6 +33,18 @@ end_import
 
 begin_import
 import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
+name|GL11
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -103,18 +115,6 @@ name|TextureManager
 import|;
 end_import
 
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
-name|opengl
-operator|.
-name|GL11
-import|;
-end_import
-
 begin_class
 specifier|public
 specifier|final
@@ -174,8 +174,6 @@ specifier|public
 name|BlockSelectScreen
 parameter_list|()
 block|{
-name|this
-operator|.
 name|grabsMouse
 operator|=
 literal|true
@@ -218,9 +216,11 @@ name|id
 operator|>
 literal|255
 condition|)
+block|{
 return|return
 literal|""
 return|;
+block|}
 try|try
 block|{
 name|Block
@@ -241,9 +241,11 @@ name|b
 operator|==
 literal|null
 condition|)
+block|{
 return|return
 literal|""
 return|;
+block|}
 name|int
 name|ID
 init|=
@@ -270,11 +272,14 @@ name|bid
 operator|==
 literal|null
 condition|)
+block|{
 name|s
 operator|=
 literal|""
 expr_stmt|;
+block|}
 else|else
+block|{
 name|s
 operator|=
 name|bid
@@ -282,6 +287,7 @@ operator|.
 name|name
 argument_list|()
 expr_stmt|;
+block|}
 block|}
 catch|catch
 parameter_list|(
@@ -331,8 +337,6 @@ block|{
 name|int
 name|var4
 init|=
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -351,8 +355,6 @@ decl_stmt|;
 name|int
 name|var5
 init|=
-name|this
-operator|.
 name|height
 operator|/
 literal|2
@@ -427,8 +429,6 @@ operator|==
 literal|0
 condition|)
 block|{
-name|this
-operator|.
 name|minecraft
 operator|.
 name|player
@@ -437,8 +437,6 @@ name|inventory
 operator|.
 name|replaceSlot
 argument_list|(
-name|this
-operator|.
 name|getBlockOnScreen
 argument_list|(
 name|var1
@@ -447,8 +445,6 @@ name|var2
 argument_list|)
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -477,8 +473,6 @@ parameter_list|)
 block|{
 name|var1
 operator|=
-name|this
-operator|.
 name|getBlockOnScreen
 argument_list|(
 name|var1
@@ -493,8 +487,6 @@ condition|)
 block|{
 name|drawFadingBox
 argument_list|(
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -503,8 +495,6 @@ literal|140
 argument_list|,
 literal|30
 argument_list|,
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -525,8 +515,6 @@ else|else
 block|{
 name|drawFadingBox
 argument_list|(
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -535,8 +523,6 @@ literal|140
 argument_list|,
 literal|30
 argument_list|,
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -562,8 +548,6 @@ condition|)
 block|{
 name|var2
 operator|=
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -584,8 +568,6 @@ condition|)
 block|{
 name|drawCenteredString
 argument_list|(
-name|this
-operator|.
 name|fontRenderer
 argument_list|,
 name|GetBlockName
@@ -593,8 +575,6 @@ argument_list|(
 name|var1
 argument_list|)
 argument_list|,
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -609,8 +589,6 @@ else|else
 block|{
 name|drawCenteredString
 argument_list|(
-name|this
-operator|.
 name|fontRenderer
 argument_list|,
 name|GetBlockName
@@ -618,8 +596,6 @@ argument_list|(
 name|var1
 argument_list|)
 argument_list|,
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -633,14 +609,10 @@ block|}
 block|}
 name|drawCenteredString
 argument_list|(
-name|this
-operator|.
 name|fontRenderer
 argument_list|,
 literal|"Select block"
 argument_list|,
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -653,8 +625,6 @@ expr_stmt|;
 name|TextureManager
 name|var7
 init|=
-name|this
-operator|.
 name|minecraft
 operator|.
 name|textureManager
@@ -730,8 +700,6 @@ expr_stmt|;
 name|int
 name|var5
 init|=
-name|this
-operator|.
 name|width
 operator|/
 literal|2
@@ -748,8 +716,6 @@ decl_stmt|;
 name|int
 name|var6
 init|=
-name|this
-operator|.
 name|height
 operator|/
 literal|2
@@ -910,8 +876,6 @@ name|void
 name|Rotate
 parameter_list|()
 block|{
-name|this
-operator|.
 name|lastRotation
 operator|+=
 literal|2.7F

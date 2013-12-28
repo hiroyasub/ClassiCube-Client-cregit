@@ -15,6 +15,16 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Random
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -79,16 +89,6 @@ name|MathHelper
 import|;
 end_import
 
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Random
-import|;
-end_import
-
 begin_class
 specifier|public
 class|class
@@ -108,8 +108,6 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|setPhysics
 argument_list|(
 literal|true
@@ -120,8 +118,6 @@ name|var3
 init|=
 literal|0.2F
 decl_stmt|;
-name|this
-operator|.
 name|setBounds
 argument_list|(
 literal|0.5F
@@ -301,8 +297,6 @@ init|=
 operator|(
 name|var15
 operator|=
-name|this
-operator|.
 name|getTextureId
 argument_list|(
 literal|15
@@ -710,8 +704,6 @@ argument_list|)
 decl_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|id
 operator|!=
 literal|53

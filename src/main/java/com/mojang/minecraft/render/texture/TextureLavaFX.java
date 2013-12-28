@@ -270,8 +270,6 @@ literal|15
 expr_stmt|;
 name|var3
 operator|+=
-name|this
-operator|.
 name|red
 index|[
 name|var8
@@ -285,8 +283,6 @@ index|]
 expr_stmt|;
 block|}
 block|}
-name|this
-operator|.
 name|green
 index|[
 name|var1
@@ -303,8 +299,6 @@ operator|/
 literal|10.0F
 operator|+
 operator|(
-name|this
-operator|.
 name|blue
 index|[
 operator|(
@@ -324,8 +318,6 @@ literal|4
 operator|)
 index|]
 operator|+
-name|this
-operator|.
 name|blue
 index|[
 operator|(
@@ -347,8 +339,6 @@ literal|4
 operator|)
 index|]
 operator|+
-name|this
-operator|.
 name|blue
 index|[
 operator|(
@@ -372,8 +362,6 @@ literal|4
 operator|)
 index|]
 operator|+
-name|this
-operator|.
 name|blue
 index|[
 operator|(
@@ -400,8 +388,6 @@ literal|4.0F
 operator|*
 literal|0.8F
 expr_stmt|;
-name|this
-operator|.
 name|blue
 index|[
 name|var1
@@ -413,8 +399,6 @@ literal|4
 operator|)
 index|]
 operator|+=
-name|this
-operator|.
 name|alpha
 index|[
 name|var1
@@ -430,8 +414,6 @@ literal|0.01F
 expr_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|blue
 index|[
 name|var1
@@ -446,8 +428,6 @@ operator|<
 literal|0.0F
 condition|)
 block|{
-name|this
-operator|.
 name|blue
 index|[
 name|var1
@@ -462,8 +442,6 @@ operator|=
 literal|0.0F
 expr_stmt|;
 block|}
-name|this
-operator|.
 name|alpha
 index|[
 name|var1
@@ -487,8 +465,6 @@ operator|<
 literal|0.005D
 condition|)
 block|{
-name|this
-operator|.
 name|alpha
 index|[
 name|var1
@@ -509,20 +485,12 @@ name|float
 index|[]
 name|var10
 init|=
-name|this
-operator|.
 name|green
 decl_stmt|;
-name|this
-operator|.
 name|green
 operator|=
-name|this
-operator|.
 name|red
 expr_stmt|;
-name|this
-operator|.
 name|red
 operator|=
 name|var10
@@ -546,8 +514,6 @@ condition|(
 operator|(
 name|var3
 operator|=
-name|this
-operator|.
 name|red
 index|[
 name|var2
@@ -621,8 +587,6 @@ operator|)
 expr_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|anaglyph
 condition|)
 block|{
@@ -685,8 +649,6 @@ operator|=
 name|var1
 expr_stmt|;
 block|}
-name|this
-operator|.
 name|textureData
 index|[
 name|var2
@@ -699,8 +661,6 @@ name|byte
 operator|)
 name|var5
 expr_stmt|;
-name|this
-operator|.
 name|textureData
 index|[
 operator|(
@@ -717,8 +677,6 @@ name|byte
 operator|)
 name|var6
 expr_stmt|;
-name|this
-operator|.
 name|textureData
 index|[
 operator|(
@@ -735,8 +693,6 @@ name|byte
 operator|)
 name|var7
 expr_stmt|;
-name|this
-operator|.
 name|textureData
 index|[
 operator|(

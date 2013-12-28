@@ -13,6 +13,26 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|io
+operator|.
+name|IOException
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|net
+operator|.
+name|URL
+import|;
+end_import
+
+begin_import
+import|import
 name|de
 operator|.
 name|jarnbjo
@@ -83,26 +103,6 @@ name|VorbisStream
 import|;
 end_import
 
-begin_import
-import|import
-name|java
-operator|.
-name|io
-operator|.
-name|IOException
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|net
-operator|.
-name|URL
-import|;
-end_import
-
 begin_comment
 comment|// TODO.
 end_comment
@@ -132,13 +132,11 @@ block|{
 name|LogicalOggStreamImpl
 name|OggStream
 init|=
-operator|(
 operator|new
 name|OnDemandUrlStream
 argument_list|(
 name|var0
 argument_list|)
-operator|)
 operator|.
 name|getLogicalStreams
 argument_list|()

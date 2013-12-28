@@ -28,8 +28,6 @@ argument_list|(
 literal|12
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|=
 operator|new
@@ -40,8 +38,6 @@ argument_list|,
 literal|0
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|setBounds
@@ -64,8 +60,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|setPosition
@@ -78,8 +72,6 @@ operator|-
 literal|8.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|=
 operator|new
@@ -90,8 +82,6 @@ argument_list|,
 literal|8
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|setBounds
@@ -114,8 +104,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|setPosition

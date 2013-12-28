@@ -126,14 +126,12 @@ index|[
 name|i
 operator|+
 operator|(
-operator|(
 name|j
 operator|+
 literal|1
 operator|)
 operator|%
 literal|20
-operator|)
 operator|*
 literal|16
 index|]
@@ -444,8 +442,6 @@ literal|2.0F
 expr_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|anaglyph
 condition|)
 block|{

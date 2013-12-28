@@ -54,8 +54,6 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|doubleSlab
 operator|=
 name|var2
@@ -66,8 +64,6 @@ operator|!
 name|var2
 condition|)
 block|{
-name|this
-operator|.
 name|setBounds
 argument_list|(
 literal|0.0F
@@ -138,7 +134,6 @@ literal|1
 condition|?
 literal|true
 else|:
-operator|(
 operator|!
 name|super
 operator|.
@@ -157,7 +152,6 @@ argument_list|)
 condition|?
 literal|false
 else|:
-operator|(
 name|side
 operator|==
 literal|0
@@ -175,11 +169,7 @@ argument_list|,
 name|z
 argument_list|)
 operator|!=
-name|this
-operator|.
 name|id
-operator|)
-operator|)
 return|;
 block|}
 annotation|@
@@ -220,8 +210,6 @@ name|isCube
 parameter_list|()
 block|{
 return|return
-name|this
-operator|.
 name|doubleSlab
 return|;
 block|}
@@ -234,8 +222,6 @@ name|isSolid
 parameter_list|()
 block|{
 return|return
-name|this
-operator|.
 name|doubleSlab
 return|;
 block|}

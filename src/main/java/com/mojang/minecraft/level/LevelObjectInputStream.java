@@ -107,8 +107,6 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|classes
 operator|.
 name|add
@@ -116,8 +114,6 @@ argument_list|(
 literal|"Player$1"
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|classes
 operator|.
 name|add
@@ -125,8 +121,6 @@ argument_list|(
 literal|"Creeper$1"
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|classes
 operator|.
 name|add
@@ -154,8 +148,6 @@ name|readClassDescriptor
 argument_list|()
 decl_stmt|;
 return|return
-name|this
-operator|.
 name|classes
 operator|.
 name|contains

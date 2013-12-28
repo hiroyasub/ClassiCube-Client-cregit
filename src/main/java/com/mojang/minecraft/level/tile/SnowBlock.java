@@ -68,8 +68,6 @@ name|id
 operator|=
 name|var1
 expr_stmt|;
-name|this
-operator|.
 name|setBounds
 argument_list|(
 literal|0.0F
@@ -139,7 +137,6 @@ literal|1
 condition|?
 literal|true
 else|:
-operator|(
 operator|!
 name|super
 operator|.
@@ -158,7 +155,6 @@ argument_list|)
 condition|?
 literal|false
 else|:
-operator|(
 name|side
 operator|==
 literal|0
@@ -176,11 +172,7 @@ argument_list|,
 name|z
 argument_list|)
 operator|!=
-name|this
-operator|.
 name|id
-operator|)
-operator|)
 return|;
 block|}
 annotation|@
@@ -229,8 +221,6 @@ name|texture
 parameter_list|)
 block|{
 return|return
-name|this
-operator|.
 name|textureId
 return|;
 block|}

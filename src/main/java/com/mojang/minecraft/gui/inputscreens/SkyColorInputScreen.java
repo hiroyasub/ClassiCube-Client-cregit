@@ -133,8 +133,6 @@ name|id
 operator|==
 literal|0
 operator|&&
-name|this
-operator|.
 name|name
 operator|.
 name|length
@@ -146,15 +144,11 @@ block|{
 name|Minecraft
 name|var10000
 init|=
-name|this
-operator|.
 name|minecraft
 decl_stmt|;
 name|String
 name|var2
 init|=
-name|this
-operator|.
 name|name
 decl_stmt|;
 name|Minecraft
@@ -184,8 +178,6 @@ operator|.
 name|refresh
 argument_list|()
 expr_stmt|;
-name|this
-operator|.
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -195,8 +187,6 @@ name|AdvancedOptionsScreen
 argument_list|(
 name|parent
 argument_list|,
-name|this
-operator|.
 name|minecraft
 operator|.
 name|settings
@@ -213,8 +203,6 @@ operator|==
 literal|1
 condition|)
 block|{
-name|this
-operator|.
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -224,8 +212,6 @@ name|AdvancedOptionsScreen
 argument_list|(
 name|parent
 argument_list|,
-name|this
-operator|.
 name|minecraft
 operator|.
 name|settings
@@ -242,8 +228,6 @@ operator|==
 literal|800
 condition|)
 block|{
-name|this
-operator|.
 name|minecraft
 operator|.
 name|level
@@ -259,8 +243,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|minecraft
 operator|.
 name|levelRenderer
@@ -268,8 +250,6 @@ operator|.
 name|refresh
 argument_list|()
 expr_stmt|;
-name|this
-operator|.
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -279,8 +259,6 @@ name|AdvancedOptionsScreen
 argument_list|(
 name|parent
 argument_list|,
-name|this
-operator|.
 name|minecraft
 operator|.
 name|settings

@@ -33,8 +33,6 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|textureId
 operator|=
 literal|20
@@ -91,7 +89,6 @@ literal|1
 condition|?
 literal|21
 else|:
-operator|(
 name|texture
 operator|==
 literal|0
@@ -99,7 +96,6 @@ condition|?
 literal|21
 else|:
 literal|20
-operator|)
 return|;
 block|}
 block|}

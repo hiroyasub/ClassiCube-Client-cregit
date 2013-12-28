@@ -64,8 +64,6 @@ literal|1
 condition|?
 literal|4
 else|:
-name|this
-operator|.
 name|textureId
 return|;
 block|}

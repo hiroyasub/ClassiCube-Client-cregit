@@ -75,8 +75,6 @@ name|float
 name|var1
 parameter_list|)
 block|{
-name|this
-operator|.
 name|head
 operator|=
 operator|new
@@ -87,8 +85,6 @@ argument_list|,
 literal|0
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|setBounds
@@ -111,8 +107,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|headwear
 operator|=
 operator|new
@@ -123,8 +117,6 @@ argument_list|,
 literal|0
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|headwear
 operator|.
 name|setBounds
@@ -149,8 +141,6 @@ operator|+
 literal|0.5F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|=
 operator|new
@@ -161,8 +151,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|setBounds
@@ -184,8 +172,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|=
 operator|new
@@ -196,8 +182,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|setBounds
@@ -220,8 +204,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|setPosition
@@ -234,8 +216,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|=
 operator|new
@@ -246,16 +226,12 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|mirror
 operator|=
 literal|true
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|setBounds
@@ -278,8 +254,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|setPosition
@@ -291,8 +265,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightLeg
 operator|=
 operator|new
@@ -303,8 +275,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightLeg
 operator|.
 name|setBounds
@@ -326,8 +296,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightLeg
 operator|.
 name|setPosition
@@ -340,8 +308,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|=
 operator|new
@@ -352,16 +318,12 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|.
 name|mirror
 operator|=
 literal|true
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|.
 name|setBounds
@@ -383,8 +345,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|.
 name|setPosition
@@ -423,8 +383,6 @@ name|float
 name|var6
 parameter_list|)
 block|{
-name|this
-operator|.
 name|setRotationAngles
 argument_list|(
 name|var1
@@ -440,8 +398,6 @@ argument_list|,
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|render
@@ -449,8 +405,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|render
@@ -458,8 +412,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|render
@@ -467,8 +419,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|render
@@ -476,8 +426,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightLeg
 operator|.
 name|render
@@ -485,8 +433,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|.
 name|render
@@ -518,8 +464,6 @@ name|float
 name|var6
 parameter_list|)
 block|{
-name|this
-operator|.
 name|head
 operator|.
 name|yaw
@@ -528,8 +472,6 @@ name|var4
 operator|/
 literal|57.295776F
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|pitch
@@ -538,8 +480,6 @@ name|var5
 operator|/
 literal|57.295776F
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|pitch
@@ -559,8 +499,6 @@ literal|2.0F
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|roll
@@ -580,8 +518,6 @@ operator|)
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|pitch
@@ -599,8 +535,6 @@ literal|2.0F
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|roll
@@ -620,8 +554,6 @@ operator|)
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|rightLeg
 operator|.
 name|pitch
@@ -639,8 +571,6 @@ literal|1.4F
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|.
 name|pitch
@@ -660,8 +590,6 @@ literal|1.4F
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|roll
@@ -679,8 +607,6 @@ literal|0.05F
 operator|+
 literal|0.05F
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|roll
@@ -698,8 +624,6 @@ literal|0.05F
 operator|+
 literal|0.05F
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|pitch
@@ -715,8 +639,6 @@ argument_list|)
 operator|*
 literal|0.05F
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|pitch

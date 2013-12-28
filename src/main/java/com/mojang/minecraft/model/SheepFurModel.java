@@ -28,8 +28,6 @@ argument_list|(
 literal|12
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|=
 operator|new
@@ -40,8 +38,6 @@ argument_list|,
 literal|0
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|setBounds
@@ -64,8 +60,6 @@ argument_list|,
 literal|0.6F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|setPosition
@@ -78,8 +72,6 @@ operator|-
 literal|8.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|=
 operator|new
@@ -90,8 +82,6 @@ argument_list|,
 literal|8
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|setBounds
@@ -114,8 +104,6 @@ argument_list|,
 literal|1.75F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|setPosition
@@ -132,8 +120,6 @@ name|var1
 init|=
 literal|0.5F
 decl_stmt|;
-name|this
-operator|.
 name|leg1
 operator|=
 operator|new
@@ -144,8 +130,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg1
 operator|.
 name|setBounds
@@ -167,8 +151,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg1
 operator|.
 name|setPosition
@@ -181,8 +163,6 @@ argument_list|,
 literal|7.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg2
 operator|=
 operator|new
@@ -193,8 +173,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg2
 operator|.
 name|setBounds
@@ -216,8 +194,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg2
 operator|.
 name|setPosition
@@ -229,8 +205,6 @@ argument_list|,
 literal|7.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg3
 operator|=
 operator|new
@@ -241,8 +215,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg3
 operator|.
 name|setBounds
@@ -264,8 +236,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg3
 operator|.
 name|setPosition
@@ -279,8 +249,6 @@ operator|-
 literal|5.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg4
 operator|=
 operator|new
@@ -291,8 +259,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg4
 operator|.
 name|setBounds
@@ -314,8 +280,6 @@ argument_list|,
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg4
 operator|.
 name|setPosition

@@ -95,8 +95,6 @@ argument_list|()
 index|]
 return|;
 block|}
-annotation|@
-name|Override
 specifier|public
 name|Object
 name|call

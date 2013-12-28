@@ -51,7 +51,6 @@ name|SLAB
 operator|.
 name|id
 else|:
-operator|(
 name|this
 operator|==
 name|GOLD_ORE
@@ -60,7 +59,6 @@ name|GOLD_BLOCK
 operator|.
 name|id
 else|:
-operator|(
 name|this
 operator|==
 name|IRON_ORE
@@ -69,11 +67,7 @@ name|IRON_BLOCK
 operator|.
 name|id
 else|:
-name|this
-operator|.
 name|id
-operator|)
-operator|)
 return|;
 block|}
 annotation|@

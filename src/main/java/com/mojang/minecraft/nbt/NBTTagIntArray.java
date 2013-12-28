@@ -101,8 +101,6 @@ name|par2ArrayOfInteger
 expr_stmt|;
 block|}
 comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes      */
-annotation|@
-name|Override
 name|void
 name|write
 parameter_list|(
@@ -157,8 +155,6 @@ expr_stmt|;
 block|}
 block|}
 comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes      */
-annotation|@
-name|Override
 name|void
 name|load
 parameter_list|(
@@ -216,8 +212,6 @@ expr_stmt|;
 block|}
 block|}
 comment|/**      * Gets the type byte for the tag.      */
-annotation|@
-name|Override
 specifier|public
 name|byte
 name|getId
@@ -230,8 +224,6 @@ operator|)
 literal|11
 return|;
 block|}
-annotation|@
-name|Override
 specifier|public
 name|String
 name|toString
@@ -250,8 +242,6 @@ literal|" bytes]"
 return|;
 block|}
 comment|/**      * Creates a clone of the tag.      */
-annotation|@
-name|Override
 specifier|public
 name|NBTBase
 name|copy
@@ -305,8 +295,6 @@ name|aint
 argument_list|)
 return|;
 block|}
-annotation|@
-name|Override
 specifier|public
 name|boolean
 name|equals
@@ -374,8 +362,6 @@ argument_list|)
 return|;
 block|}
 block|}
-annotation|@
-name|Override
 specifier|public
 name|int
 name|hashCode

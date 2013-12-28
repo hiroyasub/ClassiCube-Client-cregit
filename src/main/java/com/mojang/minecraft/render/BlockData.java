@@ -120,8 +120,6 @@ name|var1
 operator|.
 name|x
 operator|-
-name|this
-operator|.
 name|x
 decl_stmt|;
 name|float
@@ -131,8 +129,6 @@ name|var1
 operator|.
 name|y
 operator|-
-name|this
-operator|.
 name|y
 decl_stmt|;
 name|float
@@ -142,8 +138,6 @@ name|var1
 operator|.
 name|z
 operator|-
-name|this
-operator|.
 name|z
 decl_stmt|;
 return|return

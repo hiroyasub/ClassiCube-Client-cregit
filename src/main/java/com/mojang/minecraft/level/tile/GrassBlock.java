@@ -15,6 +15,16 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Random
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -24,16 +34,6 @@ operator|.
 name|level
 operator|.
 name|Level
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Random
 import|;
 end_import
 
@@ -57,14 +57,10 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|textureId
 operator|=
 literal|3
 expr_stmt|;
-name|this
-operator|.
 name|setPhysics
 argument_list|(
 literal|true
@@ -104,7 +100,6 @@ literal|1
 condition|?
 literal|0
 else|:
-operator|(
 name|texture
 operator|==
 literal|0
@@ -112,7 +107,6 @@ condition|?
 literal|2
 else|:
 literal|3
-operator|)
 return|;
 block|}
 annotation|@

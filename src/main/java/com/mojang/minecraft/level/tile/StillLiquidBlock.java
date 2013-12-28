@@ -15,6 +15,16 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Random
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -43,16 +53,6 @@ name|LiquidType
 import|;
 end_import
 
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Random
-import|;
-end_import
-
 begin_class
 specifier|public
 specifier|final
@@ -78,22 +78,16 @@ argument_list|,
 name|var2
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|movingId
 operator|=
 name|var1
 operator|-
 literal|1
 expr_stmt|;
-name|this
-operator|.
 name|stillId
 operator|=
 name|var1
 expr_stmt|;
-name|this
-operator|.
 name|setPhysics
 argument_list|(
 literal|false
@@ -265,8 +259,6 @@ argument_list|()
 decl_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -285,8 +277,6 @@ name|LiquidType
 operator|.
 name|water
 operator|&&
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -329,8 +319,6 @@ name|var3
 argument_list|,
 name|var4
 argument_list|,
-name|this
-operator|.
 name|movingId
 argument_list|)
 expr_stmt|;
@@ -344,8 +332,6 @@ name|var3
 argument_list|,
 name|var4
 argument_list|,
-name|this
-operator|.
 name|movingId
 argument_list|)
 expr_stmt|;

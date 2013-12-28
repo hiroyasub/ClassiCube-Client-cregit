@@ -11,20 +11,6 @@ end_package
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|player
-operator|.
-name|Player
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|net
@@ -50,6 +36,20 @@ operator|.
 name|imageio
 operator|.
 name|ImageIO
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|player
+operator|.
+name|Player
 import|;
 end_import
 

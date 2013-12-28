@@ -13,6 +13,26 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|util
+operator|.
+name|ArrayList
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|List
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -48,26 +68,6 @@ operator|.
 name|render
 operator|.
 name|TextureManager
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|ArrayList
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|List
 import|;
 end_import
 
@@ -126,8 +126,6 @@ operator|=
 name|this
 expr_stmt|;
 block|}
-name|this
-operator|.
 name|textureManager
 operator|=
 name|var2
@@ -147,8 +145,6 @@ operator|++
 name|var3
 control|)
 block|{
-name|this
-operator|.
 name|particles
 index|[
 name|var3
@@ -192,8 +188,6 @@ operator|.
 name|getParticleTexture
 argument_list|()
 decl_stmt|;
-name|this
-operator|.
 name|particles
 index|[
 name|var2
@@ -235,8 +229,6 @@ literal|0
 init|;
 name|var2
 operator|<
-name|this
-operator|.
 name|particles
 index|[
 name|var1
@@ -258,8 +250,6 @@ operator|=
 operator|(
 name|Particle
 operator|)
-name|this
-operator|.
 name|particles
 index|[
 name|var1
@@ -281,8 +271,6 @@ operator|.
 name|removed
 condition|)
 block|{
-name|this
-operator|.
 name|particles
 index|[
 name|var1

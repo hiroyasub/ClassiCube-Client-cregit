@@ -21,9 +21,7 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
-name|level
-operator|.
-name|Level
+name|ColorCache
 import|;
 end_import
 
@@ -35,7 +33,9 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
-name|ColorCache
+name|level
+operator|.
+name|Level
 import|;
 end_import
 

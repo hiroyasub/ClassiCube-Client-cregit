@@ -15,6 +15,16 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Random
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -24,16 +34,6 @@ operator|.
 name|level
 operator|.
 name|Level
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Random
 import|;
 end_import
 
@@ -62,8 +62,6 @@ name|var3
 init|=
 literal|0.4F
 decl_stmt|;
-name|this
-operator|.
 name|setBounds
 argument_list|(
 literal|0.5F
@@ -115,8 +113,6 @@ parameter_list|)
 block|{
 if|if
 condition|(
-name|this
-operator|.
 name|id
 operator|!=
 name|ROPE
@@ -218,8 +214,6 @@ name|y
 argument_list|,
 name|z
 argument_list|,
-name|this
-operator|.
 name|id
 argument_list|)
 expr_stmt|;

@@ -23,8 +23,6 @@ specifier|public
 name|SkeletonModel
 parameter_list|()
 block|{
-name|this
-operator|.
 name|rightArm
 operator|=
 operator|new
@@ -35,8 +33,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|setBounds
@@ -59,8 +55,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightArm
 operator|.
 name|setPosition
@@ -73,8 +67,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|=
 operator|new
@@ -85,16 +77,12 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|mirror
 operator|=
 literal|true
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|setBounds
@@ -117,8 +105,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftArm
 operator|.
 name|setPosition
@@ -130,8 +116,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightLeg
 operator|=
 operator|new
@@ -142,8 +126,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightLeg
 operator|.
 name|setBounds
@@ -165,8 +147,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|rightLeg
 operator|.
 name|setPosition
@@ -179,8 +159,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|=
 operator|new
@@ -191,16 +169,12 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|.
 name|mirror
 operator|=
 literal|true
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|.
 name|setBounds
@@ -222,8 +196,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leftLeg
 operator|.
 name|setPosition

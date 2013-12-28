@@ -247,7 +247,9 @@ name|parent
 operator|==
 literal|null
 condition|)
+block|{
 break|break;
+block|}
 block|}
 comment|// If topParent isn't a KeyEventDispatcher then we must be in some
 comment|// Plugin version that doesn't need the workaround.

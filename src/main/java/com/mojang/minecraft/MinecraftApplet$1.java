@@ -207,8 +207,6 @@ name|MinecraftApplet
 name|minecraftApplet
 parameter_list|)
 block|{
-name|this
-operator|.
 name|applet
 operator|=
 name|minecraftApplet
@@ -560,13 +558,9 @@ literal|0
 argument_list|,
 literal|0
 argument_list|,
-name|this
-operator|.
 name|getWidth
 argument_list|()
 argument_list|,
-name|this
-operator|.
 name|getHeight
 argument_list|()
 argument_list|,
@@ -769,13 +763,9 @@ literal|0
 argument_list|,
 literal|0
 argument_list|,
-name|this
-operator|.
 name|getWidth
 argument_list|()
 argument_list|,
-name|this
-operator|.
 name|getHeight
 argument_list|()
 argument_list|,

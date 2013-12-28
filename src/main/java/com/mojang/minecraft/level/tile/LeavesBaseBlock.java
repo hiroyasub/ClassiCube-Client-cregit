@@ -92,14 +92,10 @@ argument_list|)
 decl_stmt|;
 return|return
 operator|!
-name|this
-operator|.
 name|showNeighborSides
 operator|&&
 name|var6
 operator|==
-name|this
-operator|.
 name|id
 condition|?
 literal|false

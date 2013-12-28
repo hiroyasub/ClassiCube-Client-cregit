@@ -15,6 +15,16 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Random
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -24,16 +34,6 @@ operator|.
 name|level
 operator|.
 name|Level
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Random
 import|;
 end_import
 
@@ -62,8 +62,6 @@ name|var3
 init|=
 literal|0.2F
 decl_stmt|;
-name|this
-operator|.
 name|setBounds
 argument_list|(
 literal|0.5F

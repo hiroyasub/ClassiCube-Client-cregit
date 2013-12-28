@@ -69,8 +69,6 @@ name|int
 name|var1
 parameter_list|)
 block|{
-name|this
-operator|.
 name|head
 operator|.
 name|setBounds
@@ -93,8 +91,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|setPosition
@@ -109,8 +105,6 @@ operator|-
 literal|6.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|=
 operator|new
@@ -121,8 +115,6 @@ argument_list|,
 literal|8
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|setBounds
@@ -145,8 +137,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|setPosition
@@ -160,8 +150,6 @@ argument_list|,
 literal|2.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg1
 operator|=
 operator|new
@@ -172,8 +160,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg1
 operator|.
 name|setBounds
@@ -195,8 +181,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg1
 operator|.
 name|setPosition
@@ -211,8 +195,6 @@ argument_list|,
 literal|7.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg2
 operator|=
 operator|new
@@ -223,8 +205,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg2
 operator|.
 name|setBounds
@@ -246,8 +226,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg2
 operator|.
 name|setPosition
@@ -261,8 +239,6 @@ argument_list|,
 literal|7.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg3
 operator|=
 operator|new
@@ -273,8 +249,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg3
 operator|.
 name|setBounds
@@ -296,8 +270,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg3
 operator|.
 name|setPosition
@@ -313,8 +285,6 @@ operator|-
 literal|5.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg4
 operator|=
 operator|new
@@ -325,8 +295,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg4
 operator|.
 name|setBounds
@@ -348,8 +316,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg4
 operator|.
 name|setPosition
@@ -391,8 +357,6 @@ name|float
 name|var6
 parameter_list|)
 block|{
-name|this
-operator|.
 name|head
 operator|.
 name|yaw
@@ -401,8 +365,6 @@ name|var4
 operator|/
 literal|57.295776F
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|pitch
@@ -411,16 +373,12 @@ name|var5
 operator|/
 literal|57.295776F
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|pitch
 operator|=
 literal|1.5707964F
 expr_stmt|;
-name|this
-operator|.
 name|leg1
 operator|.
 name|pitch
@@ -438,8 +396,6 @@ literal|1.4F
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|leg2
 operator|.
 name|pitch
@@ -459,8 +415,6 @@ literal|1.4F
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|leg3
 operator|.
 name|pitch
@@ -480,8 +434,6 @@ literal|1.4F
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|leg4
 operator|.
 name|pitch
@@ -499,8 +451,6 @@ literal|1.4F
 operator|*
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|head
 operator|.
 name|render
@@ -508,8 +458,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|body
 operator|.
 name|render
@@ -517,8 +465,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg1
 operator|.
 name|render
@@ -526,8 +472,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg2
 operator|.
 name|render
@@ -535,8 +479,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg3
 operator|.
 name|render
@@ -544,8 +486,6 @@ argument_list|(
 name|var6
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|leg4
 operator|.
 name|render

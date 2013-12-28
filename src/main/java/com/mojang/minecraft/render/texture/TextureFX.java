@@ -52,8 +52,6 @@ name|int
 name|textureID
 parameter_list|)
 block|{
-name|this
-operator|.
 name|textureId
 operator|=
 name|textureID

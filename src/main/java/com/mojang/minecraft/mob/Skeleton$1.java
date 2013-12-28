@@ -67,8 +67,6 @@ name|Skeleton
 name|var1
 parameter_list|)
 block|{
-name|this
-operator|.
 name|parent
 operator|=
 name|var1
@@ -86,8 +84,6 @@ name|Skeleton
 operator|.
 name|shootRandomArrow
 argument_list|(
-name|this
-operator|.
 name|parent
 argument_list|)
 expr_stmt|;
@@ -123,8 +119,6 @@ name|health
 operator|>
 literal|0
 operator|&&
-name|this
-operator|.
 name|random
 operator|.
 name|nextInt
@@ -134,15 +128,11 @@ argument_list|)
 operator|==
 literal|0
 operator|&&
-name|this
-operator|.
 name|attackTarget
 operator|!=
 literal|null
 condition|)
 block|{
-name|this
-operator|.
 name|parent
 operator|.
 name|shootArrow

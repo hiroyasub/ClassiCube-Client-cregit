@@ -115,8 +115,6 @@ name|z
 operator|=
 name|z
 expr_stmt|;
-name|this
-operator|.
 name|face
 operator|=
 name|side

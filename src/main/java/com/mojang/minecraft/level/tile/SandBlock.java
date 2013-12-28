@@ -100,7 +100,9 @@ name|Minecraft
 operator|.
 name|isSinglePlayer
 condition|)
+block|{
 return|return;
+block|}
 name|int
 name|var11
 init|=
@@ -158,7 +160,6 @@ condition|?
 literal|true
 else|:
 operator|(
-operator|(
 name|var12
 operator|=
 name|blocks
@@ -181,7 +182,6 @@ operator|==
 name|LiquidType
 operator|.
 name|lava
-operator|)
 operator|)
 operator|||
 name|var5
@@ -290,8 +290,6 @@ name|int
 name|var5
 parameter_list|)
 block|{
-name|this
-operator|.
 name|fall
 argument_list|(
 name|var1
@@ -324,8 +322,6 @@ name|int
 name|z
 parameter_list|)
 block|{
-name|this
-operator|.
 name|fall
 argument_list|(
 name|level

@@ -13,6 +13,18 @@ end_package
 
 begin_import
 import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
+name|GL11
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -127,18 +139,6 @@ name|TextureManager
 import|;
 end_import
 
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
-name|opengl
-operator|.
-name|GL11
-import|;
-end_import
-
 begin_class
 specifier|public
 class|class
@@ -233,8 +233,6 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|modelName
 operator|=
 literal|"humanoid"
@@ -281,8 +279,6 @@ parameter_list|)
 block|{
 if|if
 condition|(
-name|this
-operator|.
 name|modelName
 operator|==
 literal|"sheep"
@@ -311,8 +307,6 @@ if|else if
 condition|(
 name|isInteger
 argument_list|(
-name|this
-operator|.
 name|modelName
 argument_list|)
 condition|)
@@ -332,8 +326,6 @@ name|Integer
 operator|.
 name|parseInt
 argument_list|(
-name|this
-operator|.
 name|modelName
 argument_list|)
 index|]
@@ -394,8 +386,6 @@ name|Exception
 name|e
 parameter_list|)
 block|{
-name|this
-operator|.
 name|modelName
 operator|=
 literal|"humanoid"
@@ -429,8 +419,6 @@ name|modelCache
 operator|.
 name|getModel
 argument_list|(
-name|this
-operator|.
 name|modelName
 argument_list|)
 decl_stmt|;
@@ -443,8 +431,6 @@ argument_list|)
 expr_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|allowAlpha
 condition|)
 block|{
@@ -458,8 +444,6 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|this
-operator|.
 name|hasHair
 operator|&&
 name|model
@@ -529,12 +513,8 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|this
-operator|.
 name|armor
 operator|||
-name|this
-operator|.
 name|helmet
 condition|)
 block|{
@@ -580,8 +560,6 @@ name|head
 operator|.
 name|render
 operator|=
-name|this
-operator|.
 name|helmet
 expr_stmt|;
 name|modelArmour
@@ -590,8 +568,6 @@ name|body
 operator|.
 name|render
 operator|=
-name|this
-operator|.
 name|armor
 expr_stmt|;
 name|modelArmour
@@ -600,8 +576,6 @@ name|rightArm
 operator|.
 name|render
 operator|=
-name|this
-operator|.
 name|armor
 expr_stmt|;
 name|modelArmour
@@ -610,8 +584,6 @@ name|leftArm
 operator|.
 name|render
 operator|=
-name|this
-operator|.
 name|armor
 expr_stmt|;
 name|modelArmour

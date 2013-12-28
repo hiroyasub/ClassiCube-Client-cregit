@@ -353,8 +353,6 @@ name|int
 name|z
 parameter_list|)
 block|{
-name|this
-operator|.
 name|breakBlock
 argument_list|(
 name|x

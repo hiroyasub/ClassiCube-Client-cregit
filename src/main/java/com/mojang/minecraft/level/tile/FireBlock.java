@@ -21,6 +21,18 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
+name|ColorCache
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
 name|level
 operator|.
 name|Level
@@ -67,18 +79,6 @@ name|MathHelper
 import|;
 end_import
 
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|ColorCache
-import|;
-end_import
-
 begin_class
 specifier|public
 specifier|final
@@ -104,8 +104,6 @@ name|var3
 init|=
 literal|0.4F
 decl_stmt|;
-name|this
-operator|.
 name|setBounds
 argument_list|(
 literal|0.5F
@@ -311,8 +309,6 @@ init|=
 operator|(
 name|var15
 operator|=
-name|this
-operator|.
 name|getTextureId
 argument_list|(
 literal|15

@@ -15,6 +15,28 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Random
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|ColorCache
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -71,28 +93,6 @@ name|ShapeRenderer
 import|;
 end_import
 
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|ColorCache
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Random
-import|;
-end_import
-
 begin_class
 specifier|public
 class|class
@@ -127,14 +127,10 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|type
 operator|=
 name|var2
 expr_stmt|;
-name|this
-operator|.
 name|textureId
 operator|=
 literal|14
@@ -148,8 +144,6 @@ operator|.
 name|lava
 condition|)
 block|{
-name|this
-operator|.
 name|textureId
 operator|=
 literal|30
@@ -164,14 +158,10 @@ index|]
 operator|=
 literal|true
 expr_stmt|;
-name|this
-operator|.
 name|movingId
 operator|=
 name|var1
 expr_stmt|;
-name|this
-operator|.
 name|stillId
 operator|=
 name|var1
@@ -188,8 +178,6 @@ name|var3
 init|=
 literal|0.1F
 decl_stmt|;
-name|this
-operator|.
 name|setBounds
 argument_list|(
 name|var4
@@ -221,8 +209,6 @@ operator|+
 literal|1.0F
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|setPhysics
 argument_list|(
 literal|true
@@ -248,8 +234,6 @@ parameter_list|)
 block|{
 if|if
 condition|(
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -398,7 +382,6 @@ operator|.
 name|height
 condition|?
 operator|(
-operator|(
 name|var6
 operator|=
 name|level
@@ -413,17 +396,12 @@ name|z
 argument_list|)
 operator|)
 operator|!=
-name|this
-operator|.
 name|movingId
 operator|&&
 name|var6
 operator|!=
-name|this
-operator|.
 name|stillId
 condition|?
-operator|(
 name|side
 operator|==
 literal|1
@@ -506,10 +484,8 @@ name|z
 argument_list|,
 name|side
 argument_list|)
-operator|)
 else|:
 literal|false
-operator|)
 else|:
 literal|false
 return|;
@@ -574,8 +550,6 @@ block|{
 if|if
 condition|(
 operator|!
-name|this
-operator|.
 name|canFlow
 argument_list|(
 name|var1
@@ -604,8 +578,6 @@ name|var3
 argument_list|,
 name|var4
 argument_list|,
-name|this
-operator|.
 name|movingId
 argument_list|)
 condition|)
@@ -620,8 +592,6 @@ name|var3
 argument_list|,
 name|var4
 argument_list|,
-name|this
-operator|.
 name|movingId
 argument_list|)
 expr_stmt|;
@@ -653,8 +623,6 @@ parameter_list|)
 block|{
 if|if
 condition|(
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -699,6 +667,7 @@ name|c
 return|;
 block|}
 else|else
+block|{
 return|return
 name|level
 operator|.
@@ -711,6 +680,7 @@ argument_list|,
 name|z
 argument_list|)
 return|;
+block|}
 block|}
 annotation|@
 name|Override
@@ -753,8 +723,6 @@ name|getLiquidType
 parameter_list|()
 block|{
 return|return
-name|this
-operator|.
 name|type
 return|;
 block|}
@@ -767,8 +735,6 @@ name|getRenderPass
 parameter_list|()
 block|{
 return|return
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -789,8 +755,6 @@ name|getTickDelay
 parameter_list|()
 block|{
 return|return
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -903,8 +867,6 @@ argument_list|()
 decl_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -923,8 +885,6 @@ name|LiquidType
 operator|.
 name|water
 operator|&&
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -996,8 +956,6 @@ name|y
 argument_list|,
 name|z
 argument_list|,
-name|this
-operator|.
 name|movingId
 argument_list|)
 expr_stmt|;
@@ -1107,8 +1065,6 @@ operator|!=
 literal|0
 operator|||
 operator|!
-name|this
-operator|.
 name|canFlow
 argument_list|(
 name|level
@@ -1137,8 +1093,6 @@ name|y
 argument_list|,
 name|z
 argument_list|,
-name|this
-operator|.
 name|movingId
 argument_list|)
 condition|)
@@ -1153,8 +1107,6 @@ do|while
 condition|(
 name|var6
 operator|&&
-name|this
-operator|.
 name|type
 operator|!=
 name|LiquidType
@@ -1167,8 +1119,6 @@ name|y
 expr_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|type
 operator|==
 name|LiquidType
@@ -1183,8 +1133,6 @@ name|var8
 operator|=
 name|var8
 operator||
-name|this
-operator|.
 name|flow
 argument_list|(
 name|level
@@ -1198,8 +1146,6 @@ argument_list|,
 name|z
 argument_list|)
 operator||
-name|this
-operator|.
 name|flow
 argument_list|(
 name|level
@@ -1213,8 +1159,6 @@ argument_list|,
 name|z
 argument_list|)
 operator||
-name|this
-operator|.
 name|flow
 argument_list|(
 name|level
@@ -1228,8 +1172,6 @@ operator|-
 literal|1
 argument_list|)
 operator||
-name|this
-operator|.
 name|flow
 argument_list|(
 name|level
@@ -1260,8 +1202,6 @@ name|y
 argument_list|,
 name|z
 argument_list|,
-name|this
-operator|.
 name|stillId
 argument_list|)
 expr_stmt|;
@@ -1278,8 +1218,6 @@ name|y
 argument_list|,
 name|z
 argument_list|,
-name|this
-operator|.
 name|movingId
 argument_list|)
 expr_stmt|;

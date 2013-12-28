@@ -71,8 +71,6 @@ name|void
 name|update
 parameter_list|()
 block|{
-name|this
-operator|.
 name|jumping
 operator|=
 name|player
@@ -81,8 +79,6 @@ name|input
 operator|.
 name|jumping
 expr_stmt|;
-name|this
-operator|.
 name|running
 operator|=
 name|player
@@ -91,8 +87,6 @@ name|input
 operator|.
 name|running
 expr_stmt|;
-name|this
-operator|.
 name|flying
 operator|=
 name|player
@@ -101,8 +95,6 @@ name|input
 operator|.
 name|flying
 expr_stmt|;
-name|this
-operator|.
 name|flyingUp
 operator|=
 name|player
@@ -111,8 +103,6 @@ name|input
 operator|.
 name|flyingUp
 expr_stmt|;
-name|this
-operator|.
 name|flyingDown
 operator|=
 name|player
@@ -121,8 +111,6 @@ name|input
 operator|.
 name|flyingDown
 expr_stmt|;
-name|this
-operator|.
 name|xxa
 operator|=
 name|player
@@ -131,8 +119,6 @@ name|input
 operator|.
 name|xxa
 expr_stmt|;
-name|this
-operator|.
 name|yya
 operator|=
 name|player

@@ -83,20 +83,14 @@ argument_list|,
 name|var4
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|modelName
 operator|=
 literal|"zombie"
 expr_stmt|;
-name|this
-operator|.
 name|textureName
 operator|=
 literal|"/mob/zombie.png"
 expr_stmt|;
-name|this
-operator|.
 name|heightOffset
 operator|=
 literal|1.62F
@@ -108,8 +102,6 @@ operator|new
 name|BasicAttackAI
 argument_list|()
 decl_stmt|;
-name|this
-operator|.
 name|deathScore
 operator|=
 literal|80
@@ -121,8 +113,6 @@ operator|=
 literal|30
 expr_stmt|;
 comment|// var5.runSpeed = 1.0F;
-name|this
-operator|.
 name|ai
 operator|=
 name|var5

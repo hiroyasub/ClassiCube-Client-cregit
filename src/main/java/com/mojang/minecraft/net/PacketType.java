@@ -1056,7 +1056,7 @@ name|extName
 operator|=
 literal|"ExtPlayerList"
 expr_stmt|;
-comment|//3 packets in here
+comment|// 3 packets in here
 name|ENV_SET_COLOR
 operator|.
 name|extName
@@ -1116,10 +1116,8 @@ operator|=
 operator|(
 name|byte
 operator|)
-operator|(
 name|nextOpcode
 operator|++
-operator|)
 expr_stmt|;
 name|packets
 index|[

@@ -46,6 +46,11 @@ name|flyingUp
 init|=
 literal|false
 decl_stmt|;
+name|boolean
+name|canMove
+init|=
+literal|true
+decl_stmt|;
 specifier|public
 name|boolean
 name|flyingDown
@@ -57,12 +62,6 @@ name|boolean
 name|flying
 init|=
 literal|false
-decl_stmt|;
-specifier|public
-name|boolean
-name|canMove
-init|=
-literal|true
 decl_stmt|;
 specifier|public
 name|float
@@ -102,18 +101,6 @@ literal|false
 decl_stmt|;
 specifier|public
 name|boolean
-name|fly
-init|=
-literal|false
-decl_stmt|;
-specifier|public
-name|boolean
-name|noclip
-init|=
-literal|false
-decl_stmt|;
-specifier|public
-name|boolean
 name|cliplock
 init|=
 literal|false
@@ -129,12 +116,6 @@ comment|// eg import x as y
 comment|// so this has to be unique from the module name
 comment|// so that I can import that module to check status of
 comment|// noclip, fly, and speed.
-specifier|public
-name|void
-name|calc
-parameter_list|()
-block|{
-block|}
 specifier|public
 name|void
 name|resetKeys

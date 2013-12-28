@@ -378,6 +378,7 @@ name|GameSettings
 operator|.
 name|CanReplaceSlot
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -385,6 +386,7 @@ argument_list|(
 name|blockSelectScreen
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 block|}
 end_class

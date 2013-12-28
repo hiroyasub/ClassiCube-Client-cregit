@@ -30,8 +30,6 @@ index|[]
 name|var1
 parameter_list|)
 block|{
-name|this
-operator|.
 name|vertices
 operator|=
 name|var1

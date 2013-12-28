@@ -166,8 +166,6 @@ name|Level
 name|var1
 parameter_list|)
 block|{
-name|this
-operator|.
 name|level
 operator|=
 name|var1
@@ -234,8 +232,6 @@ block|}
 name|int
 name|var6
 init|=
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -248,16 +244,12 @@ decl_stmt|;
 name|int
 name|var7
 init|=
-name|this
-operator|.
 name|level
 operator|.
 name|random
 operator|.
 name|nextInt
 argument_list|(
-name|this
-operator|.
 name|level
 operator|.
 name|width
@@ -274,8 +266,6 @@ name|Math
 operator|.
 name|min
 argument_list|(
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -283,8 +273,6 @@ operator|.
 name|nextFloat
 argument_list|()
 argument_list|,
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -293,8 +281,6 @@ name|nextFloat
 argument_list|()
 argument_list|)
 operator|*
-name|this
-operator|.
 name|level
 operator|.
 name|depth
@@ -303,16 +289,12 @@ decl_stmt|;
 name|int
 name|var9
 init|=
-name|this
-operator|.
 name|level
 operator|.
 name|random
 operator|.
 name|nextInt
 argument_list|(
-name|this
-operator|.
 name|level
 operator|.
 name|height
@@ -321,8 +303,6 @@ decl_stmt|;
 if|if
 condition|(
 operator|!
-name|this
-operator|.
 name|level
 operator|.
 name|isSolidTile
@@ -334,8 +314,6 @@ argument_list|,
 name|var9
 argument_list|)
 operator|&&
-name|this
-operator|.
 name|level
 operator|.
 name|getLiquid
@@ -353,8 +331,6 @@ name|notLiquid
 operator|&&
 operator|(
 operator|!
-name|this
-operator|.
 name|level
 operator|.
 name|isLit
@@ -366,8 +342,6 @@ argument_list|,
 name|var9
 argument_list|)
 operator|||
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -428,8 +402,6 @@ control|)
 block|{
 name|var11
 operator|+=
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -439,8 +411,6 @@ argument_list|(
 literal|6
 argument_list|)
 operator|-
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -452,8 +422,6 @@ argument_list|)
 expr_stmt|;
 name|var12
 operator|+=
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -463,8 +431,6 @@ argument_list|(
 literal|1
 argument_list|)
 operator|-
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -476,8 +442,6 @@ argument_list|)
 expr_stmt|;
 name|var13
 operator|+=
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -487,8 +451,6 @@ argument_list|(
 literal|6
 argument_list|)
 operator|-
-name|this
-operator|.
 name|level
 operator|.
 name|random
@@ -514,8 +476,6 @@ literal|0
 operator|&&
 name|var12
 operator|<
-name|this
-operator|.
 name|level
 operator|.
 name|depth
@@ -524,22 +484,16 @@ literal|2
 operator|&&
 name|var11
 operator|<
-name|this
-operator|.
 name|level
 operator|.
 name|width
 operator|&&
 name|var13
 operator|<
-name|this
-operator|.
 name|level
 operator|.
 name|height
 operator|&&
-name|this
-operator|.
 name|level
 operator|.
 name|isSolidTile
@@ -554,8 +508,6 @@ name|var13
 argument_list|)
 operator|&&
 operator|!
-name|this
-operator|.
 name|level
 operator|.
 name|isSolidTile
@@ -568,8 +520,6 @@ name|var13
 argument_list|)
 operator|&&
 operator|!
-name|this
-operator|.
 name|level
 operator|.
 name|isSolidTile
@@ -671,8 +621,6 @@ name|var18
 operator|=
 name|var15
 operator|-
-name|this
-operator|.
 name|level
 operator|.
 name|xSpawn
@@ -681,8 +629,6 @@ name|var19
 operator|=
 name|var16
 operator|-
-name|this
-operator|.
 name|level
 operator|.
 name|ySpawn
@@ -691,8 +637,6 @@ name|var20
 operator|=
 name|var17
 operator|-
-name|this
-operator|.
 name|level
 operator|.
 name|zSpawn
@@ -734,8 +678,6 @@ operator|=
 operator|new
 name|Zombie
 argument_list|(
-name|this
-operator|.
 name|level
 argument_list|,
 name|var15
@@ -758,8 +700,6 @@ operator|=
 operator|new
 name|Skeleton
 argument_list|(
-name|this
-operator|.
 name|level
 argument_list|,
 name|var15
@@ -782,8 +722,6 @@ operator|=
 operator|new
 name|Pig
 argument_list|(
-name|this
-operator|.
 name|level
 argument_list|,
 name|var15
@@ -806,8 +744,6 @@ operator|=
 operator|new
 name|Creeper
 argument_list|(
-name|this
-operator|.
 name|level
 argument_list|,
 name|var15
@@ -830,8 +766,6 @@ operator|=
 operator|new
 name|Spider
 argument_list|(
-name|this
-operator|.
 name|level
 argument_list|,
 name|var15
@@ -854,8 +788,6 @@ operator|=
 operator|new
 name|Sheep
 argument_list|(
-name|this
-operator|.
 name|level
 argument_list|,
 name|var15
@@ -868,8 +800,6 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|this
-operator|.
 name|level
 operator|.
 name|isFree
@@ -888,8 +818,6 @@ block|{
 operator|++
 name|var4
 expr_stmt|;
-name|this
-operator|.
 name|level
 operator|.
 name|addEntity

@@ -105,7 +105,6 @@ literal|4
 condition|?
 name|unknown2
 else|:
-operator|(
 name|unknown0
 operator|!=
 literal|12
@@ -117,7 +116,6 @@ condition|?
 name|unknown3
 else|:
 name|unknown1
-operator|)
 decl_stmt|;
 return|return
 operator|(

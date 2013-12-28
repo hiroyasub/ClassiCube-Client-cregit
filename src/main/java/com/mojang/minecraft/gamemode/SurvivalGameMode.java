@@ -333,8 +333,6 @@ block|{
 name|int
 name|block
 init|=
-name|this
-operator|.
 name|minecraft
 operator|.
 name|level
@@ -640,14 +638,10 @@ name|void
 name|resetHits
 parameter_list|()
 block|{
-name|this
-operator|.
 name|hits
 operator|=
 literal|0
 expr_stmt|;
-name|this
-operator|.
 name|hitDelay
 operator|=
 literal|0

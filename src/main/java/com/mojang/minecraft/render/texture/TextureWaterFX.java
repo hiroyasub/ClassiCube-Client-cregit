@@ -185,8 +185,6 @@ literal|15
 expr_stmt|;
 name|var3
 operator|+=
-name|this
-operator|.
 name|red
 index|[
 name|var5
@@ -199,8 +197,6 @@ operator|)
 index|]
 expr_stmt|;
 block|}
-name|this
-operator|.
 name|blue
 index|[
 name|var1
@@ -216,8 +212,6 @@ name|var3
 operator|/
 literal|3.3F
 operator|+
-name|this
-operator|.
 name|green
 index|[
 name|var1
@@ -261,8 +255,6 @@ operator|++
 name|var2
 control|)
 block|{
-name|this
-operator|.
 name|green
 index|[
 name|var1
@@ -274,8 +266,6 @@ literal|4
 operator|)
 index|]
 operator|+=
-name|this
-operator|.
 name|alpha
 index|[
 name|var1
@@ -291,8 +281,6 @@ literal|0.05F
 expr_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|green
 index|[
 name|var1
@@ -307,8 +295,6 @@ operator|<
 literal|0.0F
 condition|)
 block|{
-name|this
-operator|.
 name|green
 index|[
 name|var1
@@ -323,8 +309,6 @@ operator|=
 literal|0.0F
 expr_stmt|;
 block|}
-name|this
-operator|.
 name|alpha
 index|[
 name|var1
@@ -348,8 +332,6 @@ operator|<
 literal|0.05D
 condition|)
 block|{
-name|this
-operator|.
 name|alpha
 index|[
 name|var1
@@ -370,20 +352,12 @@ name|float
 index|[]
 name|var8
 init|=
-name|this
-operator|.
 name|blue
 decl_stmt|;
-name|this
-operator|.
 name|blue
 operator|=
-name|this
-operator|.
 name|red
 expr_stmt|;
-name|this
-operator|.
 name|red
 operator|=
 name|var8
@@ -407,8 +381,6 @@ condition|(
 operator|(
 name|var3
 operator|=
-name|this
-operator|.
 name|red
 index|[
 name|var2
@@ -488,8 +460,6 @@ operator|)
 decl_stmt|;
 if|if
 condition|(
-name|this
-operator|.
 name|anaglyph
 condition|)
 block|{
@@ -549,8 +519,6 @@ operator|=
 name|var7
 expr_stmt|;
 block|}
-name|this
-operator|.
 name|textureData
 index|[
 name|var2
@@ -563,8 +531,6 @@ name|byte
 operator|)
 name|var5
 expr_stmt|;
-name|this
-operator|.
 name|textureData
 index|[
 operator|(
@@ -581,8 +547,6 @@ name|byte
 operator|)
 name|var6
 expr_stmt|;
-name|this
-operator|.
 name|textureData
 index|[
 operator|(
@@ -599,8 +563,6 @@ name|byte
 operator|)
 name|var1
 expr_stmt|;
-name|this
-operator|.
 name|textureData
 index|[
 operator|(

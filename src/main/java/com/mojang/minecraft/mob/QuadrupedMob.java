@@ -61,8 +61,6 @@ argument_list|(
 name|var1
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|setSize
 argument_list|(
 literal|1.4F
@@ -81,8 +79,6 @@ argument_list|,
 name|var4
 argument_list|)
 expr_stmt|;
-name|this
-operator|.
 name|modelName
 operator|=
 literal|"pig"
