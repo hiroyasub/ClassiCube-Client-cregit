@@ -169,9 +169,6 @@ block|{
 name|NBTBase
 name|nbtbase
 init|=
-operator|(
-name|NBTBase
-operator|)
 name|iterator
 operator|.
 name|next
@@ -656,9 +653,6 @@ name|par1Str
 parameter_list|)
 block|{
 return|return
-operator|(
-name|NBTBase
-operator|)
 name|this
 operator|.
 name|tagMap
@@ -1375,9 +1369,6 @@ control|)
 block|{
 name|s1
 operator|=
-operator|(
-name|String
-operator|)
 name|iterator
 operator|.
 name|next
@@ -1452,9 +1443,6 @@ block|{
 name|String
 name|s
 init|=
-operator|(
-name|String
-operator|)
 name|iterator
 operator|.
 name|next
@@ -1466,10 +1454,6 @@ name|setTag
 argument_list|(
 name|s
 argument_list|,
-operator|(
-operator|(
-name|NBTBase
-operator|)
 name|this
 operator|.
 name|tagMap
@@ -1478,7 +1462,6 @@ name|get
 argument_list|(
 name|s
 argument_list|)
-operator|)
 operator|.
 name|copy
 argument_list|()

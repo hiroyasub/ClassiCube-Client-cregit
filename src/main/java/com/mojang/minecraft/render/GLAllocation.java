@@ -297,17 +297,12 @@ name|GL11
 operator|.
 name|glDeleteTextures
 argument_list|(
-operator|(
-operator|(
-name|Integer
-operator|)
 name|textures
 operator|.
 name|get
 argument_list|(
 name|var0
 argument_list|)
-operator|)
 operator|.
 name|intValue
 argument_list|()

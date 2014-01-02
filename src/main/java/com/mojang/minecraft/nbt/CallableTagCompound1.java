@@ -72,10 +72,6 @@ name|NBTBase
 operator|.
 name|NBTTypes
 index|[
-operator|(
-operator|(
-name|NBTBase
-operator|)
 name|NBTTagCompound
 operator|.
 name|getTagMap
@@ -91,7 +87,6 @@ name|this
 operator|.
 name|field_82585_a
 argument_list|)
-operator|)
 operator|.
 name|getId
 argument_list|()
