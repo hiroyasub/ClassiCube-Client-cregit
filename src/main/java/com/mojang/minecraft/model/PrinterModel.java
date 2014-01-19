@@ -107,6 +107,12 @@ operator|-
 literal|8F
 argument_list|)
 expr_stmt|;
+name|Base
+operator|.
+name|allowTransparency
+operator|=
+literal|true
+expr_stmt|;
 comment|// Base.setTextureSize(128, 128);
 name|Base
 operator|.
@@ -165,6 +171,12 @@ argument_list|,
 operator|-
 literal|7F
 argument_list|)
+expr_stmt|;
+name|RightWall
+operator|.
+name|allowTransparency
+operator|=
+literal|true
 expr_stmt|;
 comment|// RightWall.setTextureSize(128, 128);
 name|RightWall
@@ -226,6 +238,12 @@ operator|-
 literal|7F
 argument_list|)
 expr_stmt|;
+name|LeftWall
+operator|.
+name|allowTransparency
+operator|=
+literal|true
+expr_stmt|;
 comment|// LeftWall.setTextureSize(128, 128);
 name|LeftWall
 operator|.
@@ -285,6 +303,12 @@ argument_list|,
 operator|-
 literal|7F
 argument_list|)
+expr_stmt|;
+name|MiddleComp
+operator|.
+name|allowTransparency
+operator|=
+literal|true
 expr_stmt|;
 comment|// MiddleComp.setTextureSize(128, 128);
 name|MiddleComp
@@ -346,6 +370,12 @@ operator|-
 literal|6.5F
 argument_list|)
 expr_stmt|;
+name|WholeBase
+operator|.
+name|allowTransparency
+operator|=
+literal|true
+expr_stmt|;
 comment|// WholeBase.setTextureSize(128, 128);
 name|WholeBase
 operator|.
@@ -405,6 +435,12 @@ literal|13F
 argument_list|,
 literal|7F
 argument_list|)
+expr_stmt|;
+name|Rack
+operator|.
+name|allowTransparency
+operator|=
+literal|true
 expr_stmt|;
 comment|// Rack.setTextureSize(128, 128);
 name|Rack
@@ -466,6 +502,12 @@ argument_list|,
 literal|5.8F
 argument_list|)
 expr_stmt|;
+name|Back
+operator|.
+name|allowTransparency
+operator|=
+literal|true
+expr_stmt|;
 comment|// Back.setTextureSize(128, 128);
 name|Back
 operator|.
@@ -525,6 +567,12 @@ argument_list|,
 literal|0F
 argument_list|)
 expr_stmt|;
+name|TopLeftNobble
+operator|.
+name|allowTransparency
+operator|=
+literal|true
+expr_stmt|;
 comment|// TopLeftNobble.setTextureSize(128, 128);
 name|TopLeftNobble
 operator|.
@@ -582,6 +630,12 @@ literal|16F
 argument_list|,
 literal|0F
 argument_list|)
+expr_stmt|;
+name|TopRightNobble
+operator|.
+name|allowTransparency
+operator|=
+literal|true
 expr_stmt|;
 comment|// TopRightNobble.setTextureSize(128, 128);
 name|TopRightNobble
@@ -643,6 +697,12 @@ operator|-
 literal|3F
 argument_list|)
 expr_stmt|;
+name|TopMiddleNobble
+operator|.
+name|allowTransparency
+operator|=
+literal|true
+expr_stmt|;
 comment|// TopMiddleNobble.setTextureSize(128, 128);
 name|TopMiddleNobble
 operator|.
@@ -703,6 +763,12 @@ operator|-
 literal|7F
 argument_list|)
 expr_stmt|;
+name|LeftLine
+operator|.
+name|allowTransparency
+operator|=
+literal|true
+expr_stmt|;
 comment|// LeftLine.setTextureSize(128, 128);
 name|LeftLine
 operator|.
@@ -761,6 +827,12 @@ argument_list|,
 operator|-
 literal|7F
 argument_list|)
+expr_stmt|;
+name|RightLine
+operator|.
+name|allowTransparency
+operator|=
+literal|true
 expr_stmt|;
 comment|// RightLine.setTextureSize(128, 128);
 name|RightLine
