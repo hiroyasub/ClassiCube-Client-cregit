@@ -2672,18 +2672,26 @@ name|GL11
 operator|.
 name|glEnable
 argument_list|(
-literal|3042
+name|GL11
+operator|.
+name|GL_BLEND
 argument_list|)
 expr_stmt|;
+comment|// 3042
 name|GL11
 operator|.
 name|glBlendFunc
 argument_list|(
-literal|770
+name|GL11
+operator|.
+name|GL_SRC_ALPHA
 argument_list|,
-literal|1
+name|GL11
+operator|.
+name|GL_ONE
 argument_list|)
 expr_stmt|;
+comment|// 770, 1
 name|bindTexture
 argument_list|(
 name|var1
@@ -2710,26 +2718,37 @@ name|GL11
 operator|.
 name|glDisable
 argument_list|(
-literal|3042
+name|GL11
+operator|.
+name|GL_BLEND
 argument_list|)
 expr_stmt|;
+comment|// 3042
 name|GL11
 operator|.
 name|glBlendFunc
 argument_list|(
-literal|770
+name|GL11
+operator|.
+name|GL_SRC_ALPHA
 argument_list|,
-literal|771
+name|GL11
+operator|.
+name|GL_ONE_MINUS_SRC_ALPHA
 argument_list|)
 expr_stmt|;
+comment|// 770, 771
 block|}
 name|GL11
 operator|.
 name|glEnable
 argument_list|(
-literal|3008
+name|GL11
+operator|.
+name|GL_ALPHA_TEST
 argument_list|)
 expr_stmt|;
+comment|// 3008
 if|if
 condition|(
 name|allowAlpha
@@ -2739,9 +2758,12 @@ name|GL11
 operator|.
 name|glEnable
 argument_list|(
-literal|2884
+name|GL11
+operator|.
+name|GL_CULL_FACE
 argument_list|)
 expr_stmt|;
+comment|// 2884
 block|}
 name|GL11
 operator|.
@@ -2765,6 +2787,7 @@ block|}
 block|}
 annotation|@
 name|Override
+comment|/** 	 * @param var1 	 * @param var2 	 * @param var3 	 * @param var4 	 * @param var5 	 */
 specifier|public
 name|void
 name|renderModel
