@@ -23,6 +23,10 @@ name|SessionData
 import|;
 end_import
 
+begin_comment
+comment|/**  * Manages the Models built into the Client.  */
+end_comment
+
 begin_class
 specifier|public
 specifier|final
@@ -129,15 +133,17 @@ operator|new
 name|CrocModel
 argument_list|()
 decl_stmt|;
+comment|/** 	 * Gets a model from its name. 	 * You can also get block models by providing their ID. 	 * @param modelName String representing the name of the model 	 * @return The Model with the name that was requested or null if not found. 	 */
 specifier|public
 specifier|final
 name|Model
 name|getModel
 parameter_list|(
 name|String
-name|var1
+name|modelName
 parameter_list|)
 block|{
+comment|// Try to match with a Block ID
 for|for
 control|(
 name|int
@@ -160,7 +166,7 @@ control|)
 block|{
 if|if
 condition|(
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -178,7 +184,7 @@ return|;
 block|}
 block|}
 return|return
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -187,7 +193,7 @@ argument_list|)
 condition|?
 name|human
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -196,7 +202,7 @@ argument_list|)
 condition|?
 name|armoredHuman
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -205,7 +211,7 @@ argument_list|)
 condition|?
 name|creeper
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -214,7 +220,7 @@ argument_list|)
 condition|?
 name|chicken
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -223,7 +229,7 @@ argument_list|)
 condition|?
 name|skeleton
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -232,7 +238,7 @@ argument_list|)
 condition|?
 name|printer
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -241,7 +247,7 @@ argument_list|)
 condition|?
 name|croc
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -250,7 +256,7 @@ argument_list|)
 condition|?
 name|zombie
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -259,7 +265,7 @@ argument_list|)
 condition|?
 name|pig
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -268,7 +274,7 @@ argument_list|)
 condition|?
 name|sheep
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(
@@ -277,7 +283,7 @@ argument_list|)
 condition|?
 name|spider
 else|:
-name|var1
+name|modelName
 operator|.
 name|equals
 argument_list|(

@@ -2787,7 +2787,6 @@ block|}
 block|}
 annotation|@
 name|Override
-comment|/** 	 * @param var1 	 * @param var2 	 * @param var3 	 * @param var4 	 * @param var5 	 */
 specifier|public
 name|void
 name|renderModel
@@ -2814,12 +2813,8 @@ name|float
 name|var7
 parameter_list|)
 block|{
-name|modelCache
-operator|.
 name|getModel
-argument_list|(
-name|modelName
-argument_list|)
+argument_list|()
 operator|.
 name|render
 argument_list|(
