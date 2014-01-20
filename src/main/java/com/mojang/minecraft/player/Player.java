@@ -2244,9 +2244,7 @@ name|ColorCache
 name|c
 init|=
 name|getBrightnessColor
-argument_list|(
-name|var2
-argument_list|)
+argument_list|()
 decl_stmt|;
 name|GL11
 operator|.
