@@ -790,7 +790,6 @@ literal|90.0F
 expr_stmt|;
 block|}
 block|}
-comment|/** 	 * Checks if this entity's bounding box intersects 	 * @param var1 	 * @param var2 	 * @param var3 	 * @param var4 	 * @param var5 	 * @param var6 	 * @return 	 */
 specifier|public
 name|boolean
 name|intersects
