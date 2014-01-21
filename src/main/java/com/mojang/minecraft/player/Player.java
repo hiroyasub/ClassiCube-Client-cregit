@@ -2811,8 +2811,12 @@ name|float
 name|var7
 parameter_list|)
 block|{
+name|modelCache
+operator|.
 name|getModel
-argument_list|()
+argument_list|(
+name|modelName
+argument_list|)
 operator|.
 name|render
 argument_list|(
