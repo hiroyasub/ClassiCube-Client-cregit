@@ -158,7 +158,7 @@ parameter_list|)
 block|{
 name|minecraft
 operator|.
-name|online
+name|isOnline
 operator|=
 literal|true
 expr_stmt|;

@@ -925,7 +925,7 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;
@@ -1020,7 +1020,7 @@ parameter_list|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;
@@ -1311,7 +1311,7 @@ condition|(
 operator|!
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 name|minecraft
@@ -1390,7 +1390,7 @@ if|if
 condition|(
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 name|pass

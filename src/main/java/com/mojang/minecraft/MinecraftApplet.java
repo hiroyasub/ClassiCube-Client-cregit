@@ -557,7 +557,7 @@ expr_stmt|;
 block|}
 name|minecraft
 operator|.
-name|levelLoaded
+name|isLevelLoaded
 operator|=
 literal|true
 expr_stmt|;
@@ -595,7 +595,7 @@ parameter_list|()
 block|{
 name|minecraft
 operator|.
-name|waiting
+name|isWaiting
 operator|=
 literal|false
 expr_stmt|;
@@ -636,7 +636,7 @@ parameter_list|()
 block|{
 name|minecraft
 operator|.
-name|waiting
+name|isWaiting
 operator|=
 literal|true
 expr_stmt|;
@@ -655,7 +655,7 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;

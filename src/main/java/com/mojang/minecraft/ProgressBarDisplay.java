@@ -1377,7 +1377,7 @@ condition|(
 operator|!
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 throw|throw
@@ -1841,7 +1841,7 @@ condition|(
 operator|!
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 throw|throw
@@ -2103,7 +2103,7 @@ condition|(
 operator|!
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 throw|throw
