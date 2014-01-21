@@ -123,7 +123,7 @@ operator|.
 name|BEDROCK
 argument_list|)
 expr_stmt|;
-comment|// players cant delete this
+comment|// players can't delete this
 block|}
 name|allowedBlocks
 operator|=
