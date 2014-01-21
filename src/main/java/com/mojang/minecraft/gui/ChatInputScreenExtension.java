@@ -526,7 +526,9 @@ if|if
 condition|(
 name|paramInt
 operator|==
-literal|1
+name|Keyboard
+operator|.
+name|KEY_ESCAPE
 condition|)
 block|{
 name|minecraft
