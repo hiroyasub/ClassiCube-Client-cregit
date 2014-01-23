@@ -1268,7 +1268,7 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;
@@ -1363,7 +1363,7 @@ parameter_list|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;
@@ -1372,7 +1372,7 @@ block|}
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 		 * Start Minecraft Classic. 		 */
+comment|/** 		 * Starts Minecraft Classic 		 *  		 * @param Player 		 *            Player name 		 * @param Server 		 *            Server address 		 * @param Mppass 		 *            The player's MPPass 		 * @param Port 		 *            Server port 		 * @param skinServer 		 *            The url of the skin server. 		 * @param fullscreen 		 *            True if the game should be in fullScreen. 		 */
 specifier|public
 name|void
 name|startMinecraft
@@ -1605,7 +1605,7 @@ condition|(
 operator|!
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 name|minecraft
@@ -1684,7 +1684,7 @@ if|if
 condition|(
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 name|pass

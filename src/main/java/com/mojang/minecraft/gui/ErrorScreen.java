@@ -84,7 +84,7 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;

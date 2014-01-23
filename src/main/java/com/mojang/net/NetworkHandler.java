@@ -270,7 +270,7 @@ argument_list|)
 expr_stmt|;
 name|m
 operator|.
-name|online
+name|isOnline
 operator|=
 literal|false
 expr_stmt|;

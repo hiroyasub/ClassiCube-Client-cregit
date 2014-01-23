@@ -285,9 +285,7 @@ name|ColorCache
 name|var21
 init|=
 name|getBrightnessColor
-argument_list|(
-name|var2
-argument_list|)
+argument_list|()
 decl_stmt|;
 name|var1
 operator|.
