@@ -15279,6 +15279,8 @@ operator|.
 name|GRASS
 condition|)
 block|{
+name|ID
+operator|=
 operator|(
 operator|(
 name|GrassBlock
@@ -15301,6 +15303,8 @@ operator|.
 name|TNT
 condition|)
 block|{
+name|ID
+operator|=
 operator|(
 operator|(
 name|TNTBlock
