@@ -3530,7 +3530,8 @@ return|return
 name|aabb
 return|;
 block|}
-specifier|protected
+comment|/** 	 * Gets the texture ID of a block depending on the side you want to use. 	 * @param texture Side of the block to render. 	 * @return ID of the texture side requested. 	 */
+specifier|public
 name|int
 name|getTextureId
 parameter_list|(
@@ -3540,6 +3541,25 @@ parameter_list|)
 block|{
 return|return
 name|textureId
+return|;
+block|}
+comment|/** 	 * Gets the texture ID of a block depending on the side you want to use. 	 * @param side Side of the block to render. 	 * @return ID of the texture side requested. 	 */
+specifier|public
+name|int
+name|getTextureId
+parameter_list|(
+name|TextureSide
+name|side
+parameter_list|)
+block|{
+return|return
+name|getTextureId
+argument_list|(
+name|side
+operator|.
+name|getID
+argument_list|()
+argument_list|)
 return|;
 block|}
 specifier|public
