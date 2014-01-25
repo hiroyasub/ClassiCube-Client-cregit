@@ -1373,6 +1373,31 @@ expr_stmt|;
 block|}
 block|}
 block|}
+comment|/** 	 * The background color of the chat. 	 * Currently black with 20% alpha 	 */
+specifier|public
+specifier|static
+name|int
+name|ChatRGB
+init|=
+operator|new
+name|java
+operator|.
+name|awt
+operator|.
+name|Color
+argument_list|(
+literal|0
+argument_list|,
+literal|0
+argument_list|,
+literal|0
+argument_list|,
+literal|51
+argument_list|)
+operator|.
+name|getRGB
+argument_list|()
+decl_stmt|;
 annotation|@
 name|Override
 specifier|public
@@ -1386,6 +1411,7 @@ name|int
 name|paramInt2
 parameter_list|)
 block|{
+comment|//super.drawBox(2, height - 14, width - 2, height - 2, -2147483648);
 name|super
 operator|.
 name|drawBox
@@ -1404,8 +1430,7 @@ name|height
 operator|-
 literal|2
 argument_list|,
-operator|-
-literal|2147483648
+name|ChatRGB
 argument_list|)
 expr_stmt|;
 name|char
@@ -1536,7 +1561,7 @@ name|drawString
 argument_list|(
 name|fontRenderer
 argument_list|,
-literal|"> "
+literal|">>> "
 operator|+
 name|string
 argument_list|,
