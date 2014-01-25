@@ -1392,7 +1392,7 @@ literal|0
 argument_list|,
 literal|0
 argument_list|,
-literal|51
+literal|204
 argument_list|)
 operator|.
 name|getRGB
@@ -1561,7 +1561,7 @@ name|drawString
 argument_list|(
 name|fontRenderer
 argument_list|,
-literal|">>> "
+literal|"> "
 operator|+
 name|string
 argument_list|,
