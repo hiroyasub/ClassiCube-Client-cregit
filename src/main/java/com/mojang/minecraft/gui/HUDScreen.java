@@ -1871,7 +1871,7 @@ argument_list|,
 operator|(
 name|width
 operator|/
-literal|2
+literal|3
 operator|)
 operator|-
 operator|(
@@ -1881,8 +1881,8 @@ name|getWidth
 argument_list|(
 name|Announcement
 argument_list|)
-operator|+
-literal|50
+operator|/
+literal|2
 operator|)
 argument_list|,
 literal|35
