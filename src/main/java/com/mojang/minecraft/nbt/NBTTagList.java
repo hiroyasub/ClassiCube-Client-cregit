@@ -353,7 +353,7 @@ literal|" entries of type "
 operator|+
 name|NBTBase
 operator|.
-name|getname
+name|getTagName
 argument_list|(
 name|this
 operator|.

@@ -1330,7 +1330,7 @@ name|Iterator
 argument_list|<
 name|String
 argument_list|>
-name|iterator
+name|iter
 init|=
 name|this
 operator|.
@@ -1342,7 +1342,7 @@ operator|.
 name|iterator
 argument_list|()
 init|;
-name|iterator
+name|iter
 operator|.
 name|hasNext
 argument_list|()
@@ -1369,7 +1369,7 @@ control|)
 block|{
 name|s1
 operator|=
-name|iterator
+name|iter
 operator|.
 name|next
 argument_list|()
