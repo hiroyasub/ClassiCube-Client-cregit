@@ -1157,7 +1157,7 @@ block|}
 specifier|public
 specifier|static
 name|String
-name|stripColors
+name|stripColor
 parameter_list|(
 name|String
 name|message
