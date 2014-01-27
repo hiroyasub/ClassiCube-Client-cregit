@@ -464,7 +464,7 @@ name|getName
 argument_list|()
 argument_list|)
 decl_stmt|;
-name|nbttaglist
+name|finalTagList
 operator|.
 name|tagType
 operator|=

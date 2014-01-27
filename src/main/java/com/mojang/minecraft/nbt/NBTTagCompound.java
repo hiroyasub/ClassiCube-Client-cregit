@@ -939,7 +939,7 @@ name|e
 parameter_list|)
 block|{
 throw|throw
-name|classcastexception
+name|e
 throw|;
 block|}
 block|}

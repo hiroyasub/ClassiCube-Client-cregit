@@ -351,7 +351,7 @@ parameter_list|)
 block|{
 switch|switch
 condition|(
-name|tagTypeID
+name|typeID
 condition|)
 block|{
 case|case
@@ -482,7 +482,7 @@ comment|/**      * Returns the string name of a tag with the specified type, or 
 specifier|public
 specifier|static
 name|String
-name|getname
+name|getTagName
 parameter_list|(
 name|byte
 name|typeID
@@ -490,7 +490,7 @@ parameter_list|)
 block|{
 switch|switch
 condition|(
-name|tagTypeID
+name|typeID
 condition|)
 block|{
 case|case
