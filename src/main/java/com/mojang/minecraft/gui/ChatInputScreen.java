@@ -620,9 +620,9 @@ name|height
 operator|-
 literal|2
 argument_list|,
-name|Integer
+name|ChatInputScreenExtension
 operator|.
-name|MIN_VALUE
+name|ChatRGB
 argument_list|)
 expr_stmt|;
 name|drawString
