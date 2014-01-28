@@ -899,7 +899,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/* 		 * if (paramInt == Keyboard.KEY_TAB) { String namePart = this.inputLine; 		 * if (namePart == null || namePart.length() == 0) return; List<String> 		 * potentials = new ArrayList<String>(); for (int index = 0; index< 		 * this.minecraft.networkManager.players.size(); index++) { if 		 * (this.minecraft 		 * .networkManager.players.get(index).name.toLowerCase().contains 		 * (namePart .toLowerCase())) { 		 * potentials.add(this.minecraft.networkManager 		 * .players.get(index).name); } } if (potentials.size() == 0) return; if 		 * (potentials.size() == 1) { this.inputLine = potentials.get(0); } else 		 * { try { this.minecraft.hud.addChat(joinToString((String[]) 		 * potentials.toArray())); } catch (Exception e) { e.printStackTrace(); 		 * } } } 		 */
+comment|/* 	 * if (paramInt == Keyboard.KEY_TAB) { String namePart = this.inputLine; 	 * if (namePart == null || namePart.length() == 0) return; List<String> 	 * potentials = new ArrayList<String>(); for (int index = 0; index< 	 * this.minecraft.networkManager.players.size(); index++) { if 	 * (this.minecraft 	 * .networkManager.players.get(index).name.toLowerCase().contains 	 * (namePart .toLowerCase())) { 	 * potentials.add(this.minecraft.networkManager 	 * .players.get(index).name); } } if (potentials.size() == 0) return; if 	 * (potentials.size() == 1) { this.inputLine = potentials.get(0); } else 	 * { try { this.minecraft.hud.addChat(joinToString((String[]) 	 * potentials.toArray())); } catch (Exception e) { e.printStackTrace(); 	 * } } } 	 */
 if|if
 condition|(
 name|paramInt
@@ -1373,7 +1373,7 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|/** 	 * The background color of the chat. 	 */
+comment|/**      * The background color of the chat.      */
 specifier|public
 specifier|static
 name|int
@@ -1392,7 +1392,7 @@ literal|0
 argument_list|,
 literal|0
 argument_list|,
-literal|85
+literal|130
 argument_list|)
 operator|.
 name|getRGB
@@ -1411,28 +1411,7 @@ name|int
 name|paramInt2
 parameter_list|)
 block|{
-comment|//super.drawBox(2, height - 14, width - 2, height - 2, -2147483648);
-name|super
-operator|.
-name|drawBox
-argument_list|(
-literal|2
-argument_list|,
-name|height
-operator|-
-literal|14
-argument_list|,
-name|width
-operator|-
-literal|2
-argument_list|,
-name|height
-operator|-
-literal|2
-argument_list|,
-name|ChatRGB
-argument_list|)
-expr_stmt|;
+comment|// super.drawBox(2, height - 14, width - 2, height - 2, -2147483648);
 name|char
 index|[]
 name|temp
@@ -1532,6 +1511,11 @@ name|string
 init|=
 literal|""
 decl_stmt|;
+name|String
+name|messageNoCaret
+init|=
+literal|""
+decl_stmt|;
 for|for
 control|(
 name|int
@@ -1549,6 +1533,21 @@ name|i
 operator|++
 control|)
 block|{
+if|if
+condition|(
+name|i
+operator|!=
+name|caretPos
+condition|)
+block|{
+name|messageNoCaret
+operator|+=
+name|temp
+index|[
+name|i
+index|]
+expr_stmt|;
+block|}
 name|string
 operator|+=
 name|temp
@@ -1557,6 +1556,60 @@ name|i
 index|]
 expr_stmt|;
 block|}
+name|int
+name|x1
+init|=
+literal|2
+decl_stmt|;
+comment|/* Add the beginning position of the box 		 * + the length of '> _' 		 * + the length of the trimmed message 		 * + the x position of the '>  _' string. 		 */
+name|int
+name|x2
+init|=
+name|x1
+operator|+
+name|fontRenderer
+operator|.
+name|getWidth
+argument_list|(
+literal|"> _"
+operator|+
+name|messageNoCaret
+operator|.
+name|trim
+argument_list|()
+argument_list|)
+operator|+
+literal|4
+decl_stmt|;
+name|int
+name|y1
+init|=
+name|height
+operator|-
+literal|14
+decl_stmt|;
+name|int
+name|y2
+init|=
+name|y1
+operator|+
+literal|12
+decl_stmt|;
+name|super
+operator|.
+name|drawBox
+argument_list|(
+name|x1
+argument_list|,
+name|y1
+argument_list|,
+name|x2
+argument_list|,
+name|y2
+argument_list|,
+name|ChatRGB
+argument_list|)
+expr_stmt|;
 name|drawString
 argument_list|(
 name|fontRenderer

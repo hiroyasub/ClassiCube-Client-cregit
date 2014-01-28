@@ -2091,7 +2091,7 @@ block|{
 name|int
 name|chatX
 init|=
-literal|1
+literal|2
 decl_stmt|;
 name|int
 name|chatY
@@ -2105,9 +2105,14 @@ argument_list|()
 operator|*
 literal|9
 operator|-
-literal|27
+literal|30
 decl_stmt|;
 comment|// The longest line's length
+name|String
+name|longestMessageNoColor
+init|=
+literal|""
+decl_stmt|;
 name|String
 name|longestMessage
 init|=
@@ -2140,15 +2145,23 @@ operator|.
 name|length
 argument_list|()
 operator|>
-name|longestMessage
+name|longestMessageNoColor
 operator|.
 name|length
 argument_list|()
 condition|)
+block|{
 name|longestMessage
+operator|=
+name|line
+operator|.
+name|string
+expr_stmt|;
+name|longestMessageNoColor
 operator|=
 name|lineNoColor
 expr_stmt|;
+block|}
 block|}
 name|int
 name|messageWidth
@@ -2163,27 +2176,14 @@ decl_stmt|;
 name|int
 name|chatWidth
 init|=
-operator|(
-name|longestMessage
-operator|.
-name|length
-argument_list|()
-operator|>=
-literal|64
-operator|)
-condition|?
+name|chatX
+operator|+
 name|messageWidth
 operator|+
-literal|2
-else|:
-name|width
-operator|-
-name|messageWidth
-operator|-
-literal|5
+literal|6
 decl_stmt|;
-comment|// Get the chat lines, multiply by their height to get the chat height.
-comment|// Add the first Y-position(y1) of the chat to get the end point. (y2)
+comment|// Get the chat lines, multiply by their height to get the chat
+comment|// height.
 name|int
 name|chatHeight
 init|=
@@ -2196,7 +2196,7 @@ argument_list|()
 operator|*
 literal|9
 operator|+
-literal|2
+literal|6
 decl_stmt|;
 name|drawBox
 argument_list|(
@@ -2274,7 +2274,7 @@ name|render
 argument_list|(
 name|message
 argument_list|,
-literal|2
+literal|4
 argument_list|,
 name|height
 operator|-
@@ -2301,7 +2301,7 @@ literal|1
 argument_list|,
 literal|8
 argument_list|,
-literal|2
+literal|4
 argument_list|,
 name|height
 operator|-
