@@ -3525,12 +3525,12 @@ operator|+
 name|z2
 argument_list|)
 decl_stmt|;
-empty_stmt|;
 return|return
 name|aabb
 return|;
 block|}
-specifier|protected
+comment|/** 	 * Gets the texture ID of a block depending on the side you want to use. 	 * @param texture Side of the block to render. 	 * @return ID of the texture side requested. 	 */
+specifier|public
 name|int
 name|getTextureId
 parameter_list|(
@@ -3540,6 +3540,25 @@ parameter_list|)
 block|{
 return|return
 name|textureId
+return|;
+block|}
+comment|/** 	 * Gets the texture ID of a block depending on the side you want to use. 	 * @param side Side of the block to render. 	 * @return ID of the texture side requested. 	 */
+specifier|public
+name|int
+name|getTextureId
+parameter_list|(
+name|TextureSide
+name|side
+parameter_list|)
+block|{
+return|return
+name|getTextureId
+argument_list|(
+name|side
+operator|.
+name|getID
+argument_list|()
+argument_list|)
 return|;
 block|}
 specifier|public
@@ -4571,12 +4590,13 @@ expr_stmt|;
 block|}
 comment|// TODO past here.
 comment|// TODO.
+comment|/** 	 * Renders a side of this block. 	 * @param renderer Shape renderer that will render this. 	 * @param var2 	 * @param var3 	 * @param var4 	 * @param side Side of the block to render. See @{TextureSide} 	 */
 specifier|public
 name|void
 name|renderSide
 parameter_list|(
 name|ShapeRenderer
-name|var1
+name|renderer
 parameter_list|,
 name|int
 name|var2
@@ -4588,34 +4608,33 @@ name|int
 name|var4
 parameter_list|,
 name|int
-name|var5
+name|side
 parameter_list|)
 block|{
 name|int
-name|var6
-decl_stmt|;
-name|float
-name|var7
-decl_stmt|;
-name|float
-name|var8
+name|sideID
 init|=
-operator|(
-name|var7
-operator|=
-operator|(
-name|var6
-operator|=
 name|getTextureId
 argument_list|(
-name|var5
+name|side
 argument_list|)
+decl_stmt|;
+name|float
+name|var7
+init|=
+operator|(
+name|sideID
 operator|)
 operator|%
 literal|16
 operator|/
 literal|16.0F
-operator|)
+decl_stmt|;
+comment|// Which place in the grid of the texture file are we in?
+name|float
+name|var8
+init|=
+name|var7
 operator|+
 literal|0.0624375F
 decl_stmt|;
@@ -4628,7 +4647,7 @@ init|=
 operator|(
 name|var16
 operator|=
-name|var6
+name|sideID
 operator|/
 literal|16
 operator|/
@@ -4681,12 +4700,12 @@ name|z2
 decl_stmt|;
 if|if
 condition|(
-name|var5
+name|side
 operator|==
 literal|0
 condition|)
 block|{
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4701,7 +4720,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4716,7 +4735,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4731,7 +4750,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4747,14 +4766,14 @@ name|var9
 argument_list|)
 expr_stmt|;
 block|}
-if|if
+if|else if
 condition|(
-name|var5
+name|side
 operator|==
 literal|1
 condition|)
 block|{
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4769,7 +4788,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4784,7 +4803,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4799,7 +4818,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4815,14 +4834,14 @@ name|var9
 argument_list|)
 expr_stmt|;
 block|}
-if|if
+if|else if
 condition|(
-name|var5
+name|side
 operator|==
 literal|2
 condition|)
 block|{
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4837,7 +4856,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4852,7 +4871,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4867,7 +4886,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4883,14 +4902,14 @@ name|var16
 argument_list|)
 expr_stmt|;
 block|}
-if|if
+if|else if
 condition|(
-name|var5
+name|side
 operator|==
 literal|3
 condition|)
 block|{
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4905,7 +4924,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4920,7 +4939,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4935,7 +4954,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4951,14 +4970,14 @@ name|var16
 argument_list|)
 expr_stmt|;
 block|}
-if|if
+if|else if
 condition|(
-name|var5
+name|side
 operator|==
 literal|4
 condition|)
 block|{
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4973,7 +4992,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -4988,7 +5007,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -5003,7 +5022,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -5019,14 +5038,14 @@ name|var16
 argument_list|)
 expr_stmt|;
 block|}
-if|if
+if|else if
 condition|(
-name|var5
+name|side
 operator|==
 literal|5
 condition|)
 block|{
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -5041,7 +5060,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -5056,7 +5075,7 @@ argument_list|,
 name|var16
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -5071,7 +5090,7 @@ argument_list|,
 name|var9
 argument_list|)
 expr_stmt|;
-name|var1
+name|renderer
 operator|.
 name|vertexUV
 argument_list|(
