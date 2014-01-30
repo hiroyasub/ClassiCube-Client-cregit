@@ -115,7 +115,7 @@ name|setPosition
 argument_list|(
 literal|0.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 operator|-
 literal|3.0F
@@ -149,6 +149,17 @@ argument_list|,
 literal|6
 argument_list|,
 literal|6
+argument_list|,
+literal|0.0F
+argument_list|)
+expr_stmt|;
+name|neck
+operator|.
+name|setPosition
+argument_list|(
+literal|0.0F
+argument_list|,
+literal|16.0F
 argument_list|,
 literal|0.0F
 argument_list|)
@@ -191,7 +202,7 @@ name|setPosition
 argument_list|(
 literal|0.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 literal|9.0F
 argument_list|)
@@ -235,7 +246,7 @@ argument_list|(
 operator|-
 literal|4.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 literal|2.0F
 argument_list|)
@@ -278,7 +289,7 @@ name|setPosition
 argument_list|(
 literal|4.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 literal|2.0F
 argument_list|)
@@ -322,7 +333,7 @@ argument_list|(
 operator|-
 literal|4.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 literal|1.0F
 argument_list|)
@@ -365,7 +376,7 @@ name|setPosition
 argument_list|(
 literal|4.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 literal|1.0F
 argument_list|)
@@ -409,7 +420,7 @@ argument_list|(
 operator|-
 literal|4.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 literal|0.0F
 argument_list|)
@@ -452,7 +463,7 @@ name|setPosition
 argument_list|(
 literal|4.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 literal|0.0F
 argument_list|)
@@ -496,7 +507,7 @@ argument_list|(
 operator|-
 literal|4.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 operator|-
 literal|1.0F
@@ -540,7 +551,7 @@ name|setPosition
 argument_list|(
 literal|4.0F
 argument_list|,
-literal|0.0F
+literal|16.0F
 argument_list|,
 operator|-
 literal|1.0F
