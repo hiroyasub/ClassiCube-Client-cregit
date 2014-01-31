@@ -196,6 +196,17 @@ operator|.
 name|getInputStream
 argument_list|()
 argument_list|)
+operator|.
+name|getSubimage
+argument_list|(
+literal|0
+argument_list|,
+literal|0
+argument_list|,
+literal|64
+argument_list|,
+literal|32
+argument_list|)
 expr_stmt|;
 return|return;
 block|}
