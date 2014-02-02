@@ -1273,7 +1273,7 @@ argument_list|>
 argument_list|()
 decl_stmt|;
 comment|/** 	 * True if we are in full screen mode, false if otherwise. 	 */
-specifier|private
+specifier|public
 name|boolean
 name|isFullScreen
 init|=
