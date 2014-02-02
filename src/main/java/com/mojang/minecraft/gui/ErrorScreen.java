@@ -136,6 +136,19 @@ expr_stmt|;
 comment|// this.buttons.add(new Button(0, this.width / 2 - 100, this.height / 4
 comment|// + 96, this.minecraft
 comment|// .isOnline() ? "Try to reconnect..." : "Restart ClassiCube"));
+if|if
+condition|(
+name|minecraft
+operator|.
+name|isFullScreen
+condition|)
+block|{
+name|minecraft
+operator|.
+name|toggleFullscreen
+argument_list|()
+expr_stmt|;
+block|}
 block|}
 annotation|@
 name|Override
