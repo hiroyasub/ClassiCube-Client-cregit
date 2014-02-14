@@ -7893,6 +7893,13 @@ name|var35
 operator|=
 literal|0.0F
 expr_stmt|;
+if|if
+condition|(
+name|settings
+operator|.
+name|showClouds
+condition|)
+block|{
 name|shapeRenderer
 operator|.
 name|begin
@@ -8176,6 +8183,7 @@ operator|.
 name|end
 argument_list|()
 expr_stmt|;
+block|}
 name|GL11
 operator|.
 name|glDisable
