@@ -335,7 +335,7 @@ name|width
 operator|/
 literal|2
 operator|-
-literal|155
+literal|77
 operator|+
 literal|10
 operator|%
