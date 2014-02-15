@@ -18667,6 +18667,11 @@ argument_list|)
 expr_stmt|;
 break|break;
 block|}
+name|currentScreen
+operator|.
+name|mouseEvent
+argument_list|()
+expr_stmt|;
 block|}
 while|while
 condition|(
