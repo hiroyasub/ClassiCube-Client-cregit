@@ -241,6 +241,12 @@ name|UserDetail
 operator|=
 literal|""
 expr_stmt|;
+name|ProgressBarDisplay
+operator|.
+name|title
+operator|=
+literal|"SinglePlayer"
+expr_stmt|;
 name|minecraft
 operator|.
 name|shutdown
@@ -721,7 +727,7 @@ literal|4
 operator|+
 literal|24
 argument_list|,
-literal|"Save level.."
+literal|"Save level..."
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -746,7 +752,7 @@ literal|4
 operator|+
 literal|48
 argument_list|,
-literal|"Change texture pack.."
+literal|"Change texture pack..."
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -765,11 +771,23 @@ literal|2
 operator|-
 literal|100
 argument_list|,
+operator|(
+operator|(
 name|height
 operator|/
 literal|4
 operator|+
-literal|120
+literal|48
+operator|)
+operator|+
+operator|(
+name|height
+operator|-
+literal|36
+operator|)
+operator|)
+operator|/
+literal|2
 argument_list|,
 literal|"Quit and play Single Player"
 argument_list|)
@@ -791,10 +809,8 @@ operator|-
 literal|100
 argument_list|,
 name|height
-operator|/
-literal|4
-operator|+
-literal|142
+operator|-
+literal|36
 argument_list|,
 literal|"Back to game"
 argument_list|)
@@ -942,7 +958,7 @@ literal|4
 operator|+
 literal|48
 argument_list|,
-literal|"Save level.."
+literal|"Save level..."
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -967,7 +983,7 @@ literal|4
 operator|+
 literal|72
 argument_list|,
-literal|"Load level.."
+literal|"Load level..."
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -992,7 +1008,7 @@ literal|4
 operator|+
 literal|96
 argument_list|,
-literal|"Change texture pack.."
+literal|"Change texture pack..."
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -1012,10 +1028,8 @@ operator|-
 literal|100
 argument_list|,
 name|height
-operator|/
-literal|4
-operator|+
-literal|142
+operator|-
+literal|36
 argument_list|,
 literal|"Back to game"
 argument_list|)
@@ -1135,19 +1149,11 @@ argument_list|()
 decl_stmt|;
 if|if
 condition|(
-name|t
+name|minecraft
 operator|.
-name|contains
-argument_list|(
-literal|"loading level"
-argument_list|)
-operator|||
-name|t
-operator|.
-name|contains
-argument_list|(
-literal|"generating level.."
-argument_list|)
+name|session
+operator|==
+literal|null
 condition|)
 block|{
 name|titlePrint

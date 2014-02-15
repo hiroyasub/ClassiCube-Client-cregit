@@ -171,13 +171,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|var4
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
-expr_stmt|;
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -242,13 +235,6 @@ literal|"99ccff"
 argument_list|,
 literal|16
 argument_list|)
-expr_stmt|;
-name|minecraft
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
 expr_stmt|;
 name|minecraft
 operator|.

@@ -373,6 +373,13 @@ name|creativeMode
 decl_stmt|;
 specifier|public
 name|int
+name|cloudLevel
+init|=
+operator|-
+literal|1
+decl_stmt|;
+specifier|public
+name|int
 name|waterLevel
 decl_stmt|;
 specifier|public
