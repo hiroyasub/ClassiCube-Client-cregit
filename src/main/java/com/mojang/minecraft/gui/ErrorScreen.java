@@ -23,7 +23,7 @@ name|client
 operator|.
 name|core
 operator|.
-name|MinecraftStandalone
+name|ClassiCubeStandalone
 import|;
 end_import
 
@@ -84,24 +84,23 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|isRunning
-operator|=
-literal|false
-expr_stmt|;
-name|minecraft
-operator|.
 name|shutdown
 argument_list|()
 expr_stmt|;
-comment|// System.exit(0);
-name|MinecraftStandalone
+name|ClassiCubeStandalone
 operator|.
 name|main
 argument_list|(
-name|MinecraftStandalone
+name|ClassiCubeStandalone
 operator|.
 name|storedArgs
 argument_list|)
+expr_stmt|;
+name|minecraft
+operator|.
+name|isRunning
+operator|=
+literal|false
 expr_stmt|;
 block|}
 block|}
@@ -133,9 +132,45 @@ operator|.
 name|clear
 argument_list|()
 expr_stmt|;
-comment|// this.buttons.add(new Button(0, this.width / 2 - 100, this.height / 4
-comment|// + 96, this.minecraft
-comment|// .isOnline() ? "Try to reconnect..." : "Restart ClassiCube"));
+name|this
+operator|.
+name|buttons
+operator|.
+name|add
+argument_list|(
+operator|new
+name|Button
+argument_list|(
+literal|0
+argument_list|,
+name|this
+operator|.
+name|width
+operator|/
+literal|2
+operator|-
+literal|100
+argument_list|,
+name|this
+operator|.
+name|height
+operator|/
+literal|4
+operator|+
+literal|96
+argument_list|,
+name|minecraft
+operator|.
+name|session
+operator|!=
+literal|null
+condition|?
+literal|"Try to reconnect..."
+else|:
+literal|"Restart ClassiCube"
+argument_list|)
+argument_list|)
+expr_stmt|;
 if|if
 condition|(
 name|minecraft
@@ -149,6 +184,17 @@ name|toggleFullscreen
 argument_list|()
 expr_stmt|;
 block|}
+name|buttons
+operator|.
+name|get
+argument_list|(
+literal|0
+argument_list|)
+operator|.
+name|active
+operator|=
+literal|false
+expr_stmt|;
 block|}
 annotation|@
 name|Override
