@@ -177,6 +177,18 @@ name|MathHelper
 import|;
 end_import
 
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|input
+operator|.
+name|Keyboard
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
@@ -207,6 +219,12 @@ name|int
 name|jumpCount
 init|=
 literal|0
+decl_stmt|;
+specifier|private
+name|int
+name|flyToggleTimer
+init|=
+literal|7
 decl_stmt|;
 name|boolean
 name|HacksEnabled
@@ -400,6 +418,8 @@ name|void
 name|aiStep
 parameter_list|()
 block|{
+comment|//Almost working double-jump fly toggle
+comment|/*if (this.flyToggleTimer> 0)                 {                     --this.flyToggleTimer;                 }                 if (HackState.Fly&& settings.HackType == 0&& Keyboard.isKeyDown(settings.jumpKey.key))                 {                     if (this.flyToggleTimer == 0)                     {                         this.flyToggleTimer = 7;                     }                     else                     {                         this.flyingMode = !this.flyingMode;                         this.flyToggleTimer = 0;                     }                 }*/
 if|if
 condition|(
 name|settings

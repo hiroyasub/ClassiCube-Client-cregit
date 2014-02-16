@@ -15077,6 +15077,11 @@ operator|/
 literal|255.0F
 argument_list|)
 expr_stmt|;
+name|levelRenderer
+operator|.
+name|refresh
+argument_list|()
+expr_stmt|;
 break|break;
 case|case
 literal|4
@@ -15102,13 +15107,13 @@ operator|/
 literal|255.0F
 argument_list|)
 expr_stmt|;
-break|break;
-block|}
 name|levelRenderer
 operator|.
 name|refresh
 argument_list|()
 expr_stmt|;
+break|break;
+block|}
 block|}
 if|else if
 condition|(
