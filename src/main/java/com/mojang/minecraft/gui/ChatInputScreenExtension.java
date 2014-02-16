@@ -615,7 +615,50 @@ operator|.
 name|trim
 argument_list|()
 decl_stmt|;
+name|System
+operator|.
+name|out
+operator|.
+name|println
+argument_list|(
+literal|"("
+operator|+
+name|str1
+operator|+
+literal|")"
+argument_list|)
+expr_stmt|;
 if|if
+condition|(
+name|str1
+operator|.
+name|toLowerCase
+argument_list|()
+operator|.
+name|startsWith
+argument_list|(
+literal|"/client"
+argument_list|)
+condition|)
+block|{
+name|minecraft
+operator|.
+name|hud
+operator|.
+name|addChat
+argument_list|(
+literal|"&aClient&ecommands coming soon! (Maybe?)"
+argument_list|)
+expr_stmt|;
+name|history
+operator|.
+name|add
+argument_list|(
+name|str1
+argument_list|)
+expr_stmt|;
+block|}
+if|else if
 condition|(
 name|str1
 operator|.
@@ -1574,6 +1617,13 @@ argument_list|(
 literal|"> _"
 operator|+
 name|messageNoCaret
+operator|.
+name|replace
+argument_list|(
+literal|" "
+argument_list|,
+literal|".."
+argument_list|)
 operator|.
 name|trim
 argument_list|()
