@@ -67,12 +67,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|rightArm
-operator|.
-name|allowTransparency
-operator|=
-literal|true
-expr_stmt|;
 name|leftArm
 operator|=
 operator|new
@@ -122,12 +116,6 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|leftArm
-operator|.
-name|allowTransparency
-operator|=
-literal|true
-expr_stmt|;
 name|rightLeg
 operator|=
 operator|new
@@ -170,12 +158,6 @@ literal|12.0F
 argument_list|,
 literal|0.0F
 argument_list|)
-expr_stmt|;
-name|rightLeg
-operator|.
-name|allowTransparency
-operator|=
-literal|true
 expr_stmt|;
 name|leftLeg
 operator|=
@@ -225,7 +207,7 @@ argument_list|,
 literal|0.0F
 argument_list|)
 expr_stmt|;
-name|leftLeg
+name|head
 operator|.
 name|allowTransparency
 operator|=
