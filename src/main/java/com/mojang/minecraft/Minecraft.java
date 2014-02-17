@@ -19148,15 +19148,6 @@ name|getEventKey
 argument_list|()
 operator|==
 literal|53
-operator|&&
-name|networkManager
-operator|!=
-literal|null
-operator|&&
-name|networkManager
-operator|.
-name|isConnected
-argument_list|()
 condition|)
 block|{
 name|player
