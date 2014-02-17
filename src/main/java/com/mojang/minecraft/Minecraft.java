@@ -19554,15 +19554,6 @@ operator|.
 name|chatKey
 operator|.
 name|key
-operator|&&
-name|networkManager
-operator|!=
-literal|null
-operator|&&
-name|networkManager
-operator|.
-name|isConnected
-argument_list|()
 condition|)
 block|{
 name|player
