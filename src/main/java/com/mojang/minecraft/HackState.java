@@ -23,6 +23,8 @@ name|Speed
 decl_stmt|,
 name|Fly
 decl_stmt|,
+name|Respawn
+decl_stmt|,
 name|OpHacks
 init|=
 literal|true
@@ -42,6 +44,10 @@ operator|=
 literal|false
 expr_stmt|;
 name|Fly
+operator|=
+literal|false
+expr_stmt|;
+name|Respawn
 operator|=
 literal|false
 expr_stmt|;
@@ -65,6 +71,10 @@ operator|=
 literal|true
 expr_stmt|;
 name|Fly
+operator|=
+literal|true
+expr_stmt|;
+name|Respawn
 operator|=
 literal|true
 expr_stmt|;

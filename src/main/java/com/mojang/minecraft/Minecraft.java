@@ -19018,15 +19018,7 @@ if|if
 condition|(
 name|HackState
 operator|.
-name|Noclip
-operator|||
-name|HackState
-operator|.
-name|Fly
-operator|||
-name|HackState
-operator|.
-name|Speed
+name|Respawn
 condition|)
 block|{
 if|if
