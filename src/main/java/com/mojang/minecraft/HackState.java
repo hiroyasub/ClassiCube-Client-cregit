@@ -47,10 +47,6 @@ name|Fly
 operator|=
 literal|false
 expr_stmt|;
-name|Respawn
-operator|=
-literal|false
-expr_stmt|;
 name|OpHacks
 operator|=
 literal|false
