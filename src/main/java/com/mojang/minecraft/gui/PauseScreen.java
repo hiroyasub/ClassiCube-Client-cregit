@@ -129,6 +129,15 @@ operator|!=
 literal|null
 condition|)
 block|{
+name|minecraft
+operator|.
+name|networkManager
+operator|.
+name|netHandler
+operator|.
+name|close
+argument_list|()
+expr_stmt|;
 if|if
 condition|(
 name|var1
