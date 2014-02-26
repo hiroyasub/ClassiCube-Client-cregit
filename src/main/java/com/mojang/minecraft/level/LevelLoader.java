@@ -364,13 +364,13 @@ name|level
 operator|.
 name|height
 operator|=
-name|Y
+name|Z
 expr_stmt|;
 name|level
 operator|.
 name|depth
 operator|=
-name|Z
+name|Y
 expr_stmt|;
 name|level
 operator|.
