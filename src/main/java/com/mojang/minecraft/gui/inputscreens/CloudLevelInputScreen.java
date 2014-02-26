@@ -229,7 +229,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|depth
+name|height
 operator|+
 literal|2
 expr_stmt|;

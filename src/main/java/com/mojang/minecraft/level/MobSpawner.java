@@ -320,7 +320,7 @@ name|this
 operator|.
 name|level
 operator|.
-name|depth
+name|height
 operator|)
 decl_stmt|;
 name|int
@@ -338,7 +338,7 @@ name|this
 operator|.
 name|level
 operator|.
-name|height
+name|length
 argument_list|)
 decl_stmt|;
 if|if
@@ -551,7 +551,7 @@ name|this
 operator|.
 name|level
 operator|.
-name|depth
+name|height
 operator|-
 literal|2
 operator|&&
@@ -569,7 +569,7 @@ name|this
 operator|.
 name|level
 operator|.
-name|height
+name|length
 operator|&&
 name|this
 operator|.

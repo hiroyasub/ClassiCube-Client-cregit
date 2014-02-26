@@ -362,13 +362,13 @@ name|X
 expr_stmt|;
 name|level
 operator|.
-name|height
+name|length
 operator|=
 name|Z
 expr_stmt|;
 name|level
 operator|.
-name|depth
+name|height
 operator|=
 name|Y
 expr_stmt|;

@@ -795,13 +795,13 @@ name|spawner
 operator|.
 name|level
 operator|.
-name|height
+name|length
 operator|*
 name|spawner
 operator|.
 name|level
 operator|.
-name|depth
+name|height
 operator|/
 literal|64
 operator|/

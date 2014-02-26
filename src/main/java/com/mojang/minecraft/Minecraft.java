@@ -7887,7 +7887,7 @@ name|var89
 operator|.
 name|level
 operator|.
-name|depth
+name|height
 operator|+
 literal|2
 expr_stmt|;
@@ -7973,7 +7973,7 @@ name|var101
 operator|.
 name|level
 operator|.
-name|height
+name|length
 operator|+
 literal|2048
 condition|;
@@ -8351,7 +8351,7 @@ name|var101
 operator|.
 name|level
 operator|.
-name|depth
+name|height
 operator|+
 literal|10
 expr_stmt|;
@@ -8390,7 +8390,7 @@ name|var101
 operator|.
 name|level
 operator|.
-name|height
+name|length
 operator|+
 literal|2048
 condition|;
