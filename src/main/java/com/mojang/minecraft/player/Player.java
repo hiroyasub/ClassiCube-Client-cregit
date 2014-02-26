@@ -177,6 +177,18 @@ name|MathHelper
 import|;
 end_import
 
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|input
+operator|.
+name|Keyboard
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class

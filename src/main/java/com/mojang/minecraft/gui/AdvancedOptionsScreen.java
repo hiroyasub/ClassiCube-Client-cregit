@@ -369,6 +369,29 @@ operator|==
 literal|100
 condition|)
 block|{
+name|minecraft
+operator|.
+name|setCurrentScreen
+argument_list|(
+operator|new
+name|CloudOptionsScreen
+argument_list|(
+name|this
+argument_list|,
+name|settings
+argument_list|)
+argument_list|)
+expr_stmt|;
+block|}
+if|if
+condition|(
+name|var1
+operator|.
+name|id
+operator|==
+literal|200
+condition|)
+block|{
 name|WaterLevelInputScreen
 name|screen
 init|=
@@ -410,7 +433,7 @@ name|var1
 operator|.
 name|id
 operator|==
-literal|200
+literal|300
 condition|)
 block|{
 name|SkyColorInputScreen
@@ -437,61 +460,6 @@ argument_list|,
 name|height
 argument_list|,
 literal|"Enter new value for sky color..."
-argument_list|)
-decl_stmt|;
-name|screen
-operator|.
-name|allowedChars
-operator|=
-literal|"ABCDEFabcdef1234567890"
-expr_stmt|;
-name|screen
-operator|.
-name|stringLimit
-operator|=
-literal|6
-expr_stmt|;
-name|minecraft
-operator|.
-name|setCurrentScreen
-argument_list|(
-name|screen
-argument_list|)
-expr_stmt|;
-block|}
-if|if
-condition|(
-name|var1
-operator|.
-name|id
-operator|==
-literal|300
-condition|)
-block|{
-name|CloudColorInputScreen
-name|screen
-init|=
-operator|new
-name|CloudColorInputScreen
-argument_list|(
-name|parent
-argument_list|,
-literal|""
-operator|+
-name|Integer
-operator|.
-name|toHexString
-argument_list|(
-name|minecraft
-operator|.
-name|level
-operator|.
-name|cloudColor
-argument_list|)
-argument_list|,
-name|height
-argument_list|,
-literal|"Enter new value for cloud color..."
 argument_list|)
 decl_stmt|;
 name|screen
@@ -1003,7 +971,7 @@ operator|>>
 literal|1
 operator|)
 argument_list|,
-literal|"Water Level"
+literal|"Clouds"
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -1043,7 +1011,7 @@ operator|>>
 literal|1
 operator|)
 argument_list|,
-literal|"Sky Color"
+literal|"Water Level"
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -1083,7 +1051,7 @@ operator|>>
 literal|1
 operator|)
 argument_list|,
-literal|"Cloud Color"
+literal|"Sky Color"
 argument_list|)
 argument_list|)
 expr_stmt|;

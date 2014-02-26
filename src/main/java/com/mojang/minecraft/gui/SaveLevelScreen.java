@@ -134,7 +134,7 @@ argument_list|)
 operator|.
 name|text
 operator|=
-literal|"Save file..."
+literal|"Done"
 expr_stmt|;
 block|}
 annotation|@

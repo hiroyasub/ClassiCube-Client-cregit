@@ -359,7 +359,7 @@ name|short
 operator|)
 name|level
 operator|.
-name|depth
+name|length
 argument_list|)
 expr_stmt|;
 name|master

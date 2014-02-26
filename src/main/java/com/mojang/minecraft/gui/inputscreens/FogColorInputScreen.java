@@ -175,13 +175,6 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|var4
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
-expr_stmt|;
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -246,13 +239,6 @@ name|defaultHex
 argument_list|,
 literal|16
 argument_list|)
-expr_stmt|;
-name|minecraft
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
 expr_stmt|;
 name|minecraft
 operator|.

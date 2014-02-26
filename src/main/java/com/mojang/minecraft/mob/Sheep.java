@@ -519,7 +519,7 @@ name|modelCache
 operator|.
 name|getModel
 argument_list|(
-name|modelName
+literal|"sheep"
 argument_list|)
 operator|)
 operator|.
@@ -594,6 +594,13 @@ expr_stmt|;
 if|if
 condition|(
 name|hasFur
+operator|||
+name|modelName
+operator|.
+name|equals
+argument_list|(
+literal|"sheep.fur"
+argument_list|)
 condition|)
 block|{
 name|GL11

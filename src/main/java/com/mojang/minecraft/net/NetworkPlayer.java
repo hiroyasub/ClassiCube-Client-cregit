@@ -644,7 +644,7 @@ condition|(
 operator|!
 name|modelName
 operator|.
-name|equals
+name|startsWith
 argument_list|(
 literal|"humanoid"
 argument_list|)
@@ -663,6 +663,13 @@ argument_list|(
 literal|"/mob/"
 operator|+
 name|modelName
+operator|.
+name|replace
+argument_list|(
+literal|'.'
+argument_list|,
+literal|'_'
+argument_list|)
 operator|+
 literal|".png"
 argument_list|)

@@ -1652,6 +1652,7 @@ operator|.
 name|glPopMatrix
 argument_list|()
 expr_stmt|;
+block|}
 name|fontRenderer
 operator|.
 name|render
@@ -1851,7 +1852,6 @@ operator|.
 name|glPopMatrix
 argument_list|()
 expr_stmt|;
-block|}
 name|GL11
 operator|.
 name|glPushMatrix

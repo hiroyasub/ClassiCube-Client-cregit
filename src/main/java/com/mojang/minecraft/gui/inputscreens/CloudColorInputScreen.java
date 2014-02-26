@@ -35,7 +35,7 @@ name|minecraft
 operator|.
 name|gui
 operator|.
-name|AdvancedOptionsScreen
+name|Button
 import|;
 end_import
 
@@ -49,7 +49,7 @@ name|minecraft
 operator|.
 name|gui
 operator|.
-name|Button
+name|CloudOptionsScreen
 import|;
 end_import
 
@@ -175,19 +175,12 @@ argument_list|,
 literal|16
 argument_list|)
 expr_stmt|;
-name|var4
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
-expr_stmt|;
 name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
 operator|new
-name|AdvancedOptionsScreen
+name|CloudOptionsScreen
 argument_list|(
 name|parent
 argument_list|,
@@ -212,7 +205,7 @@ operator|.
 name|setCurrentScreen
 argument_list|(
 operator|new
-name|AdvancedOptionsScreen
+name|CloudOptionsScreen
 argument_list|(
 name|parent
 argument_list|,
@@ -249,17 +242,10 @@ argument_list|)
 expr_stmt|;
 name|minecraft
 operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
-expr_stmt|;
-name|minecraft
-operator|.
 name|setCurrentScreen
 argument_list|(
 operator|new
-name|AdvancedOptionsScreen
+name|CloudOptionsScreen
 argument_list|(
 name|parent
 argument_list|,

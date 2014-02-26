@@ -569,7 +569,7 @@ name|yChunks
 operator|=
 name|level
 operator|.
-name|depth
+name|height
 operator|/
 literal|16
 expr_stmt|;
@@ -577,7 +577,7 @@ name|zChunks
 operator|=
 name|level
 operator|.
-name|height
+name|length
 operator|/
 literal|16
 expr_stmt|;
@@ -878,14 +878,14 @@ name|var5
 operator|>
 name|level
 operator|.
-name|height
+name|length
 condition|)
 block|{
 name|var5
 operator|=
 name|level
 operator|.
-name|height
+name|length
 expr_stmt|;
 block|}
 name|int
@@ -945,7 +945,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 operator|+
 name|var5
 operator|*
@@ -984,7 +984,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 condition|)
 block|{
 name|waterLevel
@@ -1202,7 +1202,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 argument_list|,
 literal|0.0F
 argument_list|,
@@ -1223,7 +1223,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 argument_list|,
 name|var5
 argument_list|,
@@ -1244,7 +1244,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 argument_list|,
 name|var5
 argument_list|,
@@ -1263,7 +1263,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 argument_list|,
 literal|0.0F
 argument_list|,
@@ -1318,7 +1318,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 condition|;
 name|var7
 operator|+=
@@ -1578,14 +1578,14 @@ name|var4
 operator|>
 name|level
 operator|.
-name|height
+name|length
 condition|)
 block|{
 name|var4
 operator|=
 name|level
 operator|.
-name|height
+name|length
 expr_stmt|;
 block|}
 name|var5
@@ -1640,7 +1640,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 operator|+
 name|var4
 operator|*
@@ -1682,7 +1682,7 @@ name|var9
 operator|.
 name|level
 operator|.
-name|height
+name|length
 condition|)
 block|{
 name|var11
@@ -1855,11 +1855,11 @@ name|width
 argument_list|,
 name|level
 operator|.
-name|depth
+name|height
 argument_list|,
 name|level
 operator|.
-name|height
+name|length
 argument_list|)
 expr_stmt|;
 block|}
