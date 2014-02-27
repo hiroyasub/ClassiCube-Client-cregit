@@ -259,7 +259,12 @@ name|out
 operator|.
 name|println
 argument_list|(
-literal|"Saving level"
+literal|"Saving level "
+operator|+
+name|fullFilePath
+operator|.
+name|getAbsolutePath
+argument_list|()
 argument_list|)
 expr_stmt|;
 if|if
