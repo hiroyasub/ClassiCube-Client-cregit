@@ -1114,17 +1114,6 @@ literal|"Chat Logs"
 argument_list|)
 argument_list|)
 expr_stmt|;
-name|buttons
-operator|.
-name|get
-argument_list|(
-literal|3
-argument_list|)
-operator|.
-name|active
-operator|=
-literal|false
-expr_stmt|;
 block|}
 block|}
 annotation|@

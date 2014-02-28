@@ -231,7 +231,7 @@ name|out
 operator|.
 name|println
 argument_list|(
-literal|"Loading "
+literal|"Loading level "
 operator|+
 name|fullFilePath
 operator|.
