@@ -884,14 +884,14 @@ name|size
 operator|>
 name|level
 operator|.
-name|height
+name|length
 condition|)
 block|{
 name|size
 operator|=
 name|level
 operator|.
-name|height
+name|length
 expr_stmt|;
 block|}
 name|int
@@ -961,7 +961,7 @@ name|z
 operator|<
 name|level
 operator|.
-name|height
+name|length
 operator|+
 name|size
 operator|*
@@ -997,7 +997,7 @@ name|z
 operator|<
 name|level
 operator|.
-name|height
+name|length
 condition|)
 block|{
 name|y
@@ -1168,7 +1168,7 @@ name|groundLevel
 argument_list|,
 name|level
 operator|.
-name|height
+name|length
 argument_list|,
 literal|0.0F
 argument_list|,
@@ -1187,7 +1187,7 @@ name|groundLevel
 argument_list|,
 name|level
 operator|.
-name|height
+name|length
 argument_list|,
 name|size
 argument_list|,
@@ -1206,7 +1206,7 @@ literal|0.0F
 argument_list|,
 name|level
 operator|.
-name|height
+name|length
 argument_list|,
 name|size
 argument_list|,
@@ -1223,7 +1223,7 @@ literal|0.0F
 argument_list|,
 name|level
 operator|.
-name|height
+name|length
 argument_list|,
 literal|0.0F
 argument_list|,
@@ -1243,7 +1243,7 @@ name|z
 operator|<
 name|level
 operator|.
-name|height
+name|length
 condition|;
 name|z
 operator|+=
@@ -1505,7 +1505,7 @@ name|z
 operator|<
 name|level
 operator|.
-name|height
+name|length
 operator|+
 name|size
 operator|*
@@ -1543,7 +1543,7 @@ name|z
 operator|>=
 name|level
 operator|.
-name|height
+name|length
 condition|)
 block|{
 name|renderer
