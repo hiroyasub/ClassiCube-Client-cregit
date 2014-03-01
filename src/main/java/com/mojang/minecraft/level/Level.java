@@ -940,7 +940,7 @@ decl_stmt|;
 name|int
 name|var9
 init|=
-literal|20
+literal|1024
 decl_stmt|;
 while|while
 condition|(
