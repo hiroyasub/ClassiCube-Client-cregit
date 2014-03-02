@@ -319,10 +319,10 @@ init|=
 literal|true
 decl_stmt|;
 specifier|public
-name|boolean
+name|byte
 name|thirdPersonMode
 init|=
-literal|false
+literal|0
 decl_stmt|;
 specifier|public
 name|KeyBinding

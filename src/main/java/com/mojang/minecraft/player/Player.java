@@ -2292,10 +2292,11 @@ parameter_list|)
 block|{
 if|if
 condition|(
-operator|!
 name|settings
 operator|.
 name|thirdPersonMode
+operator|==
+literal|0
 condition|)
 block|{
 return|return;
