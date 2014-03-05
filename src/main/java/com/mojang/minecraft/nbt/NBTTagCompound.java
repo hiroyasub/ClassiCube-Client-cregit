@@ -88,7 +88,7 @@ name|NBTTagCompound
 extends|extends
 name|NBTBase
 block|{
-comment|/**      * The key-value pairs for the tag. Each key is a UTF string, each value is a tag.      */
+comment|/** 	 * The key-value pairs for the tag. Each key is a UTF string, each value is a tag. 	 */
 specifier|private
 name|Map
 argument_list|<
@@ -130,7 +130,7 @@ name|name
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes      */
+comment|/** 	 * Write the actual data contents of the tag, implemented in NBT extension classes 	 */
 annotation|@
 name|Override
 name|void
@@ -192,7 +192,7 @@ literal|0
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes      */
+comment|/** 	 * Read the actual data contents of the tag, implemented in NBT extension classes 	 */
 annotation|@
 name|Override
 name|void
@@ -249,7 +249,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Returns all the values in the tagMap HashMap.      */
+comment|/** 	 * Returns all the values in the tagMap HashMap. 	 */
 specifier|public
 name|Collection
 argument_list|<
@@ -267,7 +267,7 @@ name|values
 argument_list|()
 return|;
 block|}
-comment|/**      * Gets the type byte for the tag.      */
+comment|/** 	 * Gets the type byte for the tag. 	 */
 annotation|@
 name|Override
 specifier|public
@@ -282,7 +282,7 @@ operator|)
 literal|10
 return|;
 block|}
-comment|/**      * Stores the given tag into the map with the given string key. This is mostly used to store tag lists.      */
+comment|/** 	 * Stores the given tag into the map with the given string key. This is mostly used to store tag lists. 	 */
 specifier|public
 name|void
 name|setTag
@@ -311,7 +311,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagByte with the given byte value into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagByte with the given byte value into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setByte
@@ -341,7 +341,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagShort with the given short value into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagShort with the given short value into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setShort
@@ -371,7 +371,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagInt with the given integer value into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagInt with the given integer value into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setInteger
@@ -401,7 +401,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagLong with the given long value into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagLong with the given long value into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setLong
@@ -431,7 +431,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagFloat with the given float value into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagFloat with the given float value into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setFloat
@@ -461,7 +461,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagDouble with the given double value into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagDouble with the given double value into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setDouble
@@ -491,7 +491,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagString with the given string value into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagString with the given string value into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setString
@@ -521,7 +521,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagByteArray with the given array as data into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagByteArray with the given array as data into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setByteArray
@@ -552,7 +552,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagIntArray with the given array as data into the map with the given string key.      */
+comment|/** 	 * Stores a new NBTTagIntArray with the given array as data into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setIntArray
@@ -583,7 +583,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores the given NBTTagCompound into the map with the given string key.      */
+comment|/** 	 * Stores the given NBTTagCompound into the map with the given string key. 	 */
 specifier|public
 name|void
 name|setCompoundTag
@@ -612,7 +612,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores the given boolean value as a NBTTagByte, storing 1 for true and 0 for false, using the given string key.      */
+comment|/** 	 * Stores the given boolean value as a NBTTagByte, storing 1 for true and 0 for false, using the given string key. 	 */
 specifier|public
 name|void
 name|setBoolean
@@ -643,7 +643,7 @@ operator|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * gets a generic tag with the specified name      */
+comment|/** 	 * gets a generic tag with the specified name 	 */
 specifier|public
 name|NBTBase
 name|getTag
@@ -663,7 +663,7 @@ name|name
 argument_list|)
 return|;
 block|}
-comment|/**      * Returns whether the given string has been previously stored as a key in the map.      */
+comment|/** 	 * Returns whether the given string has been previously stored as a key in the map. 	 */
 specifier|public
 name|boolean
 name|hasKey
@@ -683,7 +683,7 @@ name|name
 argument_list|)
 return|;
 block|}
-comment|/**      * Retrieves a byte value using the specified key, or 0 if no such key was stored.      */
+comment|/** 	 * Retrieves a byte value using the specified key, or 0 if no such key was stored. 	 */
 specifier|public
 name|byte
 name|getByte
@@ -735,7 +735,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a short value using the specified key, or 0 if no such key was stored.      */
+comment|/** 	 * Retrieves a short value using the specified key, or 0 if no such key was stored. 	 */
 specifier|public
 name|short
 name|getShort
@@ -787,7 +787,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves an integer value using the specified key, or 0 if no such key was stored.      */
+comment|/** 	 * Retrieves an integer value using the specified key, or 0 if no such key was stored. 	 */
 specifier|public
 name|int
 name|getInteger
@@ -839,7 +839,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a long value using the specified key, or 0 if no such key was stored.      */
+comment|/** 	 * Retrieves a long value using the specified key, or 0 if no such key was stored. 	 */
 specifier|public
 name|long
 name|getLong
@@ -891,7 +891,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a float value using the specified key, or 0 if no such key was stored.      */
+comment|/** 	 * Retrieves a float value using the specified key, or 0 if no such key was stored. 	 */
 specifier|public
 name|float
 name|getFloat
@@ -943,7 +943,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a double value using the specified key, or 0 if no such key was stored.      */
+comment|/** 	 * Retrieves a double value using the specified key, or 0 if no such key was stored. 	 */
 specifier|public
 name|double
 name|getDouble
@@ -995,7 +995,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a string value using the specified key, or an empty string if no such key was stored.      */
+comment|/** 	 * Retrieves a string value using the specified key, or an empty string if no such key was stored. 	 */
 specifier|public
 name|String
 name|getString
@@ -1047,7 +1047,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a byte array using the specified key, or a zero-length array if no such key was stored.      */
+comment|/** 	 * Retrieves a byte array using the specified key, or a zero-length array if no such key was stored. 	 */
 specifier|public
 name|byte
 index|[]
@@ -1104,7 +1104,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves an int array using the specified key, or a zero-length array if no such key was stored.      */
+comment|/** 	 * Retrieves an int array using the specified key, or a zero-length array if no such key was stored. 	 */
 specifier|public
 name|int
 index|[]
@@ -1161,7 +1161,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a NBTTagCompound subtag matching the specified key, or a new empty NBTTagCompound if no such key was      * stored.      */
+comment|/** 	 * Retrieves a NBTTagCompound subtag matching the specified key, or a new empty NBTTagCompound if no such key was 	 * stored. 	 */
 specifier|public
 name|NBTTagCompound
 name|getCompoundTag
@@ -1213,7 +1213,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a NBTTagList subtag matching the specified key, or a new empty NBTTagList if no such key was stored.      */
+comment|/** 	 * Retrieves a NBTTagList subtag matching the specified key, or a new empty NBTTagList if no such key was stored. 	 */
 specifier|public
 name|NBTTagList
 name|getTagList
@@ -1265,7 +1265,7 @@ name|e
 throw|;
 block|}
 block|}
-comment|/**      * Retrieves a boolean value using the specified key, or false if no such key was stored. This uses the getByte      * method.      */
+comment|/** 	 * Retrieves a boolean value using the specified key, or false if no such key was stored. This uses the getByte 	 * method. 	 */
 specifier|public
 name|boolean
 name|getBoolean
@@ -1285,7 +1285,7 @@ operator|!=
 literal|0
 return|;
 block|}
-comment|/**      * Remove the specified tag.      */
+comment|/** 	 * Remove the specified tag. 	 */
 specifier|public
 name|void
 name|removeTag
@@ -1381,7 +1381,7 @@ operator|+
 literal|"]"
 return|;
 block|}
-comment|/**      * Return whether this compound has no tags.      */
+comment|/** 	 * Return whether this compound has no tags. 	 */
 specifier|public
 name|boolean
 name|hasNoTags
@@ -1396,7 +1396,7 @@ name|isEmpty
 argument_list|()
 return|;
 block|}
-comment|/**      * Creates a clone of the tag.      */
+comment|/** 	 * Creates a clone of the tag. 	 */
 annotation|@
 name|Override
 specifier|public
@@ -1547,7 +1547,7 @@ name|hashCode
 argument_list|()
 return|;
 block|}
-comment|/**      * Return the tag map for this compound.      */
+comment|/** 	 * Return the tag map for this compound. 	 */
 specifier|static
 name|Map
 argument_list|<

@@ -1874,7 +1874,7 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|/**      * The background color of the chat.      */
+comment|/** 	 * The background color of the chat. 	 */
 specifier|public
 specifier|static
 name|int

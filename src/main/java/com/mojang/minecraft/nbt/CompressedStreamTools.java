@@ -170,7 +170,7 @@ specifier|public
 class|class
 name|CompressedStreamTools
 block|{
-comment|/**      * Load the gzipped compound from the inputstream.      */
+comment|/** 	 * Load the gzipped compound from the inputstream. 	 */
 specifier|public
 specifier|static
 name|NBTTagCompound
@@ -224,7 +224,7 @@ return|return
 name|nbttagcompound
 return|;
 block|}
-comment|/**      * Write the compound, gzipped, to the outputstream.      */
+comment|/** 	 * Write the compound, gzipped, to the outputstream. 	 */
 specifier|public
 specifier|static
 name|void
@@ -478,7 +478,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Reads from a CompressedStream.      */
+comment|/** 	 * Reads from a CompressedStream. 	 */
 specifier|public
 specifier|static
 name|NBTTagCompound
