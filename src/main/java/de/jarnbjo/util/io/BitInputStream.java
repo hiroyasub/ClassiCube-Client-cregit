@@ -34,7 +34,7 @@ specifier|public
 interface|interface
 name|BitInputStream
 block|{
-comment|/** 	 * constant for setting this stream's mode to little endian 	 *  	 * @see #setEndian(int) 	 */
+comment|/**      * constant for setting this stream's mode to little endian      *       * @see #setEndian(int)      */
 specifier|public
 specifier|static
 specifier|final
@@ -43,7 +43,7 @@ name|LITTLE_ENDIAN
 init|=
 literal|0
 decl_stmt|;
-comment|/** 	 * constant for setting this stream's mode to big endian 	 *  	 * @see #setEndian(int) 	 */
+comment|/**      * constant for setting this stream's mode to big endian      *       * @see #setEndian(int)      */
 specifier|public
 specifier|static
 specifier|final
@@ -52,13 +52,13 @@ name|BIG_ENDIAN
 init|=
 literal|1
 decl_stmt|;
-comment|/** 	 * causes the read pointer to be moved to the beginning of the next byte, 	 * remaining bits in the current byte are discarded 	 *  	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * causes the read pointer to be moved to the beginning of the next byte,      * remaining bits in the current byte are discarded      *       * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|void
 name|align
 parameter_list|()
 function_decl|;
-comment|/** 	 * reads one bit (as a boolean) from the input stream 	 *  	 * @return<code>true</code> if the next bit is 1,<code>false</code> 	 *		 otherwise 	 *  	 * @throws IOException 	 *			 if an I/O error occurs 	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * reads one bit (as a boolean) from the input stream      *       * @return<code>true</code> if the next bit is 1,<code>false</code>      *         otherwise      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|boolean
 name|getBit
@@ -66,7 +66,7 @@ parameter_list|()
 throws|throws
 name|IOException
 function_decl|;
-comment|/** 	 * reads a huffman codeword based on the<code>root</code> parameter and 	 * returns the decoded value 	 *  	 * @param root 	 *			the root of the Huffman tree used to decode the codeword 	 * @return the decoded unsigned integer value read from the stream 	 *  	 * @throws IOException 	 *			 if an I/O error occurs 	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * reads a huffman codeword based on the<code>root</code> parameter and      * returns the decoded value      *       * @param root      *            the root of the Huffman tree used to decode the codeword      * @return the decoded unsigned integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|int
 name|getInt
@@ -77,7 +77,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/** 	 * reads<code>bits</code> number of bits from the input stream 	 *  	 * @return the unsigned integer value read from the stream 	 *  	 * @throws IOException 	 *			 if an I/O error occurs 	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * reads<code>bits</code> number of bits from the input stream      *       * @return the unsigned integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|int
 name|getInt
@@ -88,7 +88,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/** 	 * reads<code>bits</code> number of bits from the input stream 	 *  	 * @return the unsigned long value read from the stream 	 *  	 * @throws IOException 	 *			 if an I/O error occurs 	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * reads<code>bits</code> number of bits from the input stream      *       * @return the unsigned long value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|long
 name|getLong
@@ -99,7 +99,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/** 	 * reads<code>bits</code> number of bits from the input stream 	 *  	 * @return the signed integer value read from the stream 	 *  	 * @throws IOException 	 *			 if an I/O error occurs 	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * reads<code>bits</code> number of bits from the input stream      *       * @return the signed integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|int
 name|getSignedInt
@@ -110,7 +110,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/** 	 * reads an integer encoded as "signed rice" as described in the FLAC audio 	 * format specification 	 *  	 * @param order 	 * @return the decoded integer value read from the stream 	 *  	 * @throws IOException 	 *			 if an I/O error occurs 	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * reads an integer encoded as "signed rice" as described in the FLAC audio      * format specification      *       * @param order      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|int
 name|readSignedRice
@@ -121,7 +121,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/** 	 * fills the array from<code>offset</code> with<code>len</code> integers 	 * encoded as "signed rice" as described in the FLAC audio format 	 * specification 	 *  	 * @param order 	 * @param buffer 	 * @param offset 	 * @param len 	 * @return the decoded integer value read from the stream 	 *  	 * @throws IOException 	 *			 if an I/O error occurs 	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * fills the array from<code>offset</code> with<code>len</code> integers      * encoded as "signed rice" as described in the FLAC audio format      * specification      *       * @param order      * @param buffer      * @param offset      * @param len      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|void
 name|readSignedRice
@@ -142,7 +142,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/** 	 * changes the endian mode used when reading bit-wise from the stream, 	 * changing the mode mid-stream will cause the read cursor to move to the 	 * beginning of the next byte (as if calling the<code>allign</code> method 	 *  	 * @see #align() 	 *  	 * @throws UnsupportedOperationException 	 *			 if the method is not supported by the implementation 	 */
+comment|/**      * changes the endian mode used when reading bit-wise from the stream,      * changing the mode mid-stream will cause the read cursor to move to the      * beginning of the next byte (as if calling the<code>allign</code> method      *       * @see #align()      *       * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|void
 name|setEndian

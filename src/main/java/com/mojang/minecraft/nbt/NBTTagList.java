@@ -93,7 +93,7 @@ name|NBTBase
 argument_list|>
 argument_list|()
 decl_stmt|;
-comment|/** 	 * The type byte for the tags in the list - they must all be of the same type. 	 */
+comment|/**      * The type byte for the tags in the list - they must all be of the same type.      */
 specifier|private
 name|byte
 name|tagType
@@ -121,7 +121,7 @@ name|data
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Write the actual data contents of the tag, implemented in NBT extension classes 	 */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes      */
 annotation|@
 name|Override
 name|void
@@ -227,7 +227,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/** 	 * Read the actual data contents of the tag, implemented in NBT extension classes 	 */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes      */
 annotation|@
 name|Override
 name|void
@@ -317,7 +317,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/** 	 * Gets the type byte for the tag. 	 */
+comment|/**      * Gets the type byte for the tag.      */
 annotation|@
 name|Override
 specifier|public
@@ -361,7 +361,7 @@ name|tagType
 argument_list|)
 return|;
 block|}
-comment|/** 	 * Adds the provided tag to the end of the list. There is no check to verify this tag is of the same type as any 	 * previous tag. 	 */
+comment|/**      * Adds the provided tag to the end of the list. There is no check to verify this tag is of the same type as any      * previous tag.      */
 specifier|public
 name|void
 name|appendTag
@@ -389,7 +389,7 @@ name|tag
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Removes a tag at the given index. 	 */
+comment|/**      * Removes a tag at the given index.      */
 specifier|public
 name|NBTBase
 name|removeTag
@@ -409,7 +409,7 @@ name|index
 argument_list|)
 return|;
 block|}
-comment|/** 	 * Retrieves the tag at the specified index from the list. 	 */
+comment|/**      * Retrieves the tag at the specified index from the list.      */
 specifier|public
 name|NBTBase
 name|tagAt
@@ -429,7 +429,7 @@ name|index
 argument_list|)
 return|;
 block|}
-comment|/** 	 * Returns the number of tags in the list. 	 */
+comment|/**      * Returns the number of tags in the list.      */
 specifier|public
 name|int
 name|tagCount
@@ -444,7 +444,7 @@ name|size
 argument_list|()
 return|;
 block|}
-comment|/** 	 * Creates a clone of the tag. 	 */
+comment|/**      * Creates a clone of the tag.      */
 annotation|@
 name|Override
 specifier|public

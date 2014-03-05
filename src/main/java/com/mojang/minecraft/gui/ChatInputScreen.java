@@ -615,7 +615,7 @@ name|x1
 init|=
 literal|2
 decl_stmt|;
-comment|/* Add the beginning position of the box 		 * + the length of '> _' 		 * + the length of the trimmed message 		 * + the x position of the '>  _' string. 		 */
+comment|/* Add the beginning position of the box          * + the length of '> _'          * + the length of the trimmed message          * + the x position of the '>  _' string.          */
 name|int
 name|x2
 init|=

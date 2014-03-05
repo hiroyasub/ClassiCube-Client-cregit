@@ -353,7 +353,7 @@ name|PAGECACHE_SIZE
 init|=
 literal|10
 decl_stmt|;
-comment|/** 	 * Creates an instance of the<code>PhysicalOggStream</code> interface 	 * suitable for reading an Ogg stream from a URL. 	 */
+comment|/**      * Creates an instance of the<code>PhysicalOggStream</code> interface      * suitable for reading an Ogg stream from a URL.      */
 specifier|public
 name|UncachedUrlStream
 parameter_list|(
@@ -482,8 +482,8 @@ argument_list|)
 argument_list|)
 return|;
 block|}
-comment|/* 	 * public long getCacheLength() { return cacheLength; } 	 */
-comment|/* 	 * private OggPage getNextPage() throws EndOfOggStreamException, 	 * IOException, OggFormatException { return getNextPage(false); } 	 *  	 * private OggPage getNextPage(boolean skipData) throws 	 * EndOfOggStreamException, IOException, OggFormatException { return 	 * OggPage.create(sourceStream, skipData); } 	 */
+comment|/*      * public long getCacheLength() { return cacheLength; }      */
+comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *       * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
 specifier|public
 name|Collection
 argument_list|<
@@ -566,7 +566,7 @@ operator|!
 name|closed
 return|;
 block|}
-comment|/** 	 * @return always<code>false</code> 	 */
+comment|/**      * @return always<code>false</code>      */
 specifier|public
 name|boolean
 name|isSeekable

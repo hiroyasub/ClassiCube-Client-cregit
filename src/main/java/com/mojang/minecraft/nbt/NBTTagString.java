@@ -103,7 +103,7 @@ operator|=
 name|data
 expr_stmt|;
 block|}
-comment|/** 	 * Write the actual data contents of the tag, implemented in NBT extension classes 	 */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes      */
 annotation|@
 name|Override
 name|void
@@ -125,7 +125,7 @@ name|data
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Read the actual data contents of the tag, implemented in NBT extension classes 	 */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes      */
 annotation|@
 name|Override
 name|void
@@ -147,7 +147,7 @@ name|readUTF
 argument_list|()
 expr_stmt|;
 block|}
-comment|/** 	 * Gets the type byte for the tag. 	 */
+comment|/**      * Gets the type byte for the tag.      */
 annotation|@
 name|Override
 specifier|public
@@ -177,7 +177,7 @@ operator|.
 name|data
 return|;
 block|}
-comment|/** 	 * Creates a clone of the tag. 	 */
+comment|/**      * Creates a clone of the tag.      */
 annotation|@
 name|Override
 specifier|public

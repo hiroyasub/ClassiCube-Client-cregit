@@ -26,7 +26,7 @@ name|KeyBinding
 implements|implements
 name|Serializable
 block|{
-comment|/** 	 *  	 */
+comment|/**      *       */
 specifier|private
 specifier|static
 specifier|final
