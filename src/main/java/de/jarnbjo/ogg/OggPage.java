@@ -72,7 +72,7 @@ literal|false
 argument_list|)
 return|;
 block|}
-comment|/** 	 * This method is called to create a new OggPage instance based on the 	 * specified byte array. 	 *  	 * @param source 	 *            the source from which the ogg page is generated 	 * @param skipData 	 *            if set to<code>true</code>, the actual page data is not read 	 *            into memory 	 * @return an ogg page created by reading data from the specified source, 	 *         starting at the current position 	 * @throws FormatException 	 *             if the data read from the specified source is not matching 	 *             the specification for an ogg page 	 * @throws EndOfStreamException 	 *             if it is not possible to read an entire ogg page from the 	 *             specified source 	 * @throws IOException 	 *             if some other I/O error is detected when reading from the 	 *             source 	 *  	 * @see #create(byte[]) 	 */
+comment|/** 	 * This method is called to create a new OggPage instance based on the 	 * specified byte array. 	 *  	 * @param source 	 *			the source from which the ogg page is generated 	 * @param skipData 	 *			if set to<code>true</code>, the actual page data is not read 	 *			into memory 	 * @return an ogg page created by reading data from the specified source, 	 *		 starting at the current position 	 * @throws FormatException 	 *			 if the data read from the specified source is not matching 	 *			 the specification for an ogg page 	 * @throws EndOfStreamException 	 *			 if it is not possible to read an entire ogg page from the 	 *			 specified source 	 * @throws IOException 	 *			 if some other I/O error is detected when reading from the 	 *			 source 	 *  	 * @see #create(byte[]) 	 */
 specifier|public
 specifier|static
 name|OggPage
@@ -129,7 +129,7 @@ literal|false
 argument_list|)
 return|;
 block|}
-comment|/** 	 * This method is called to read data from the current position in the 	 * specified InpuStream and create a new OggPage instance based on the data 	 * read. If the parameter<code>skipData</code> is set to<code>true</code>, 	 * the actual page segments (page data) is skipped and not read into memory. 	 * This mode is useful when scanning through an ogg file to build a seek 	 * table. 	 *  	 * @param source 	 *            the source from which the ogg page is generated 	 * @param skipData 	 *            if set to<code>true</code>, the actual page data is not read 	 *            into memory 	 * @return an ogg page created by reading data from the specified source, 	 *         starting at the current position 	 * @throws FormatException 	 *             if the data read from the specified source is not matching 	 *             the specification for an ogg page 	 * @throws EndOfStreamException 	 *             if it is not possible to read an entire ogg page from the 	 *             specified source 	 * @throws IOException 	 *             if some other I/O error is detected when reading from the 	 *             source 	 *  	 * @see #create(InputStream) 	 */
+comment|/** 	 * This method is called to read data from the current position in the 	 * specified InpuStream and create a new OggPage instance based on the data 	 * read. If the parameter<code>skipData</code> is set to<code>true</code>, 	 * the actual page segments (page data) is skipped and not read into memory. 	 * This mode is useful when scanning through an ogg file to build a seek 	 * table. 	 *  	 * @param source 	 *			the source from which the ogg page is generated 	 * @param skipData 	 *			if set to<code>true</code>, the actual page data is not read 	 *			into memory 	 * @return an ogg page created by reading data from the specified source, 	 *		 starting at the current position 	 * @throws FormatException 	 *			 if the data read from the specified source is not matching 	 *			 the specification for an ogg page 	 * @throws EndOfStreamException 	 *			 if it is not possible to read an entire ogg page from the 	 *			 specified source 	 * @throws IOException 	 *			 if some other I/O error is detected when reading from the 	 *			 source 	 *  	 * @see #create(InputStream) 	 */
 specifier|public
 specifier|static
 name|OggPage
@@ -935,7 +935,7 @@ literal|false
 argument_list|)
 return|;
 block|}
-comment|/** 	 * This method is called to read data from the current position in the 	 * specified RandomAccessFile and create a new OggPage instance based on the 	 * data read. If the parameter<code>skipData</code> is set to 	 *<code>true</code>, the actual page segments (page data) is skipped and 	 * not read into memory. This mode is useful when scanning through an ogg 	 * file to build a seek table. 	 *  	 * @param source 	 *            the source from which the ogg page is generated 	 * @param skipData 	 *            if set to<code>true</code>, the actual page data is not read 	 *            into memory 	 * @return an ogg page created by reading data from the specified source, 	 *         starting at the current position 	 * @throws FormatException 	 *             if the data read from the specified source is not matching 	 *             the specification for an ogg page 	 * @throws EndOfStreamException 	 *             if it is not possible to read an entire ogg page from the 	 *             specified source 	 * @throws IOException 	 *             if some other I/O error is detected when reading from the 	 *             source 	 *  	 * @see #create(RandomAccessFile) 	 */
+comment|/** 	 * This method is called to read data from the current position in the 	 * specified RandomAccessFile and create a new OggPage instance based on the 	 * data read. If the parameter<code>skipData</code> is set to 	 *<code>true</code>, the actual page segments (page data) is skipped and 	 * not read into memory. This mode is useful when scanning through an ogg 	 * file to build a seek table. 	 *  	 * @param source 	 *			the source from which the ogg page is generated 	 * @param skipData 	 *			if set to<code>true</code>, the actual page data is not read 	 *			into memory 	 * @return an ogg page created by reading data from the specified source, 	 *		 starting at the current position 	 * @throws FormatException 	 *			 if the data read from the specified source is not matching 	 *			 the specification for an ogg page 	 * @throws EndOfStreamException 	 *			 if it is not possible to read an entire ogg page from the 	 *			 specified source 	 * @throws IOException 	 *			 if some other I/O error is detected when reading from the 	 *			 source 	 *  	 * @see #create(RandomAccessFile) 	 */
 specifier|public
 specifier|static
 name|OggPage
@@ -1221,7 +1221,7 @@ operator|=
 name|data
 expr_stmt|;
 block|}
-comment|/** 	 * Returns the absolute granule position of the last complete packet 	 * contained in this Ogg page, or -1 if the page contains a single packet, 	 * which is not completed on this page. For pages containing Vorbis data, 	 * this value is the sample index within the Vorbis stream. The Vorbis 	 * stream does not necessarily start with sample index 0. 	 *  	 * @return the absolute granule position of the last packet completed on 	 *         this page 	 */
+comment|/** 	 * Returns the absolute granule position of the last complete packet 	 * contained in this Ogg page, or -1 if the page contains a single packet, 	 * which is not completed on this page. For pages containing Vorbis data, 	 * this value is the sample index within the Vorbis stream. The Vorbis 	 * stream does not necessarily start with sample index 0. 	 *  	 * @return the absolute granule position of the last packet completed on 	 *		 this page 	 */
 specifier|public
 name|long
 name|getAbsoluteGranulePosition
@@ -1344,7 +1344,7 @@ name|totalLength
 return|;
 block|}
 block|}
-comment|/** 	 * @return<code>true</code> if this page is the beginning of a logical 	 *         stream 	 */
+comment|/** 	 * @return<code>true</code> if this page is the beginning of a logical 	 *		 stream 	 */
 specifier|public
 name|boolean
 name|isBos

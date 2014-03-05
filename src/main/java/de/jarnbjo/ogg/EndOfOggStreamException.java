@@ -34,7 +34,7 @@ name|EndOfOggStreamException
 extends|extends
 name|IOException
 block|{
-comment|/**      *       */
+comment|/** 	 *  	 */
 specifier|private
 specifier|static
 specifier|final

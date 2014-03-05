@@ -309,7 +309,7 @@ operator|=
 name|value
 return|;
 block|}
-comment|/** 	 * creates a new tree node at the first free location at the given depth, 	 * and assigns the value to it 	 *  	 * @param depth 	 *            the tree depth of the new node (codeword length in bits) 	 * @param value 	 *            the node's new value 	 */
+comment|/** 	 * creates a new tree node at the first free location at the given depth, 	 * and assigns the value to it 	 *  	 * @param depth 	 *			the tree depth of the new node (codeword length in bits) 	 * @param value 	 *			the node's new value 	 */
 specifier|public
 name|boolean
 name|setNewValue

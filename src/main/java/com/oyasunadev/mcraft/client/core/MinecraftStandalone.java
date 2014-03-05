@@ -284,7 +284,7 @@ name|MCraftApplet
 extends|extends
 name|MinecraftApplet
 block|{
-comment|/** 	     *  	     */
+comment|/** 		 *  		 */
 specifier|private
 specifier|static
 specifier|final
@@ -862,7 +862,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 			 * Set the "minecraft" variable. 			 *  			 * @param minecraft 			 *            The new Minecraft variable. 			 */
+comment|/** 			 * Set the "minecraft" variable. 			 *  			 * @param minecraft 			 *			The new Minecraft variable. 			 */
 specifier|public
 name|void
 name|setMinecraft

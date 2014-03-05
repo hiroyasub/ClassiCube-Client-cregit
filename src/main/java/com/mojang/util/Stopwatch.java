@@ -181,7 +181,7 @@ operator|=
 literal|""
 expr_stmt|;
 block|}
-comment|/** 	 * Construct a new stop watch with the given id. Does not start any task. 	 *  	 * @param id 	 *            identifier for this stop watch. Handy when we have output from 	 *            multiple stop watches and need to distinguish between them. 	 */
+comment|/** 	 * Construct a new stop watch with the given id. Does not start any task. 	 *  	 * @param id 	 *			identifier for this stop watch. Handy when we have output from 	 *			multiple stop watches and need to distinguish between them. 	 */
 specifier|public
 name|Stopwatch
 parameter_list|(
@@ -412,7 +412,7 @@ name|sb
 operator|.
 name|append
 argument_list|(
-literal|"ms     %     Task name\n"
+literal|"ms	 %	 Task name\n"
 argument_list|)
 expr_stmt|;
 name|sb
@@ -589,7 +589,7 @@ literal|""
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Start a named task. The results are undefined if {@link #stop()} or 	 * timing methods are called without invoking this method. 	 *  	 * @param taskName 	 *            the name of the task to start 	 * @see #stop() 	 */
+comment|/** 	 * Start a named task. The results are undefined if {@link #stop()} or 	 * timing methods are called without invoking this method. 	 *  	 * @param taskName 	 *			the name of the task to start 	 * @see #stop() 	 */
 specifier|public
 name|void
 name|start

@@ -344,7 +344,7 @@ name|MCraftApplet
 extends|extends
 name|MinecraftApplet
 block|{
-comment|/** 	     *  	     */
+comment|/** 		 *  		 */
 specifier|private
 specifier|static
 specifier|final
@@ -1205,7 +1205,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 			 * Set the "minecraft" variable. 			 *  			 * @param minecraft 			 *            The new Minecraft variable. 			 */
+comment|/** 			 * Set the "minecraft" variable. 			 *  			 * @param minecraft 			 *			The new Minecraft variable. 			 */
 specifier|public
 name|void
 name|setMinecraft
@@ -1372,7 +1372,7 @@ block|}
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 		 * Starts Minecraft Classic 		 *  		 * @param Player 		 *            Player name 		 * @param Server 		 *            Server address 		 * @param Mppass 		 *            The player's MPPass 		 * @param Port 		 *            Server port 		 * @param skinServer 		 *            The url of the skin server. 		 * @param fullscreen 		 *            True if the game should be in fullScreen. 		 */
+comment|/** 		 * Starts Minecraft Classic 		 *  		 * @param Player 		 *			Player name 		 * @param Server 		 *			Server address 		 * @param Mppass 		 *			The player's MPPass 		 * @param Port 		 *			Server port 		 * @param skinServer 		 *			The url of the skin server. 		 * @param fullscreen 		 *			True if the game should be in fullScreen. 		 */
 specifier|public
 name|void
 name|startMinecraft
