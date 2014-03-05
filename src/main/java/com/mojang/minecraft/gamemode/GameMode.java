@@ -284,6 +284,12 @@ operator|!=
 name|Block
 operator|.
 name|soundNone
+operator|&&
+name|block
+operator|.
+name|stepSound
+operator|!=
+literal|null
 condition|)
 block|{
 name|level
