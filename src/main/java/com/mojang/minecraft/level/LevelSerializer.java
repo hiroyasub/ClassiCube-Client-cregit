@@ -273,6 +273,7 @@ name|level
 operator|==
 literal|null
 condition|)
+block|{
 throw|throw
 operator|new
 name|Exception
@@ -280,6 +281,7 @@ argument_list|(
 literal|"level"
 argument_list|)
 throw|;
+block|}
 name|NBTTagCompound
 name|master
 init|=

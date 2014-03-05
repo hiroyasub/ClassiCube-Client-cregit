@@ -137,6 +137,7 @@ name|id
 operator|==
 literal|0
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -152,6 +153,7 @@ name|settings
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|var1
@@ -160,6 +162,7 @@ name|id
 operator|==
 literal|1
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -171,6 +174,7 @@ name|this
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|var1
@@ -179,6 +183,7 @@ name|id
 operator|==
 literal|2
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -190,6 +195,7 @@ name|this
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|var1
@@ -442,6 +448,7 @@ name|id
 operator|==
 literal|0
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -457,6 +464,7 @@ name|settings
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|var1
@@ -465,6 +473,7 @@ name|id
 operator|==
 literal|1
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -476,6 +485,7 @@ name|this
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|var1
@@ -484,6 +494,7 @@ name|id
 operator|==
 literal|2
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -495,6 +506,7 @@ name|this
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|var1
@@ -503,6 +515,7 @@ name|id
 operator|==
 literal|3
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -514,6 +527,7 @@ name|this
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|var1
@@ -522,6 +536,7 @@ name|id
 operator|==
 literal|4
 condition|)
+block|{
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -533,6 +548,7 @@ name|this
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|var1

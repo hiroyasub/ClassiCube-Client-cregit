@@ -7971,6 +7971,7 @@ name|cloudLevel
 operator|<
 literal|0
 condition|)
+block|{
 name|level
 operator|.
 name|cloudLevel
@@ -7983,6 +7984,7 @@ name|height
 operator|+
 literal|2
 expr_stmt|;
+block|}
 name|var74
 operator|=
 name|level
@@ -15926,6 +15928,7 @@ operator|==
 operator|-
 literal|1
 condition|)
+block|{
 name|playerListNameData
 operator|.
 name|add
@@ -15945,7 +15948,9 @@ name|unusedRank
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 else|else
+block|{
 name|playerListNameData
 operator|.
 name|set
@@ -15967,6 +15972,7 @@ name|unusedRank
 argument_list|)
 argument_list|)
 expr_stmt|;
+block|}
 name|Collections
 operator|.
 name|sort
@@ -16504,6 +16510,7 @@ literal|"humanoid"
 expr_stmt|;
 block|}
 else|else
+block|{
 name|netPlayer
 operator|.
 name|modelName
@@ -16513,6 +16520,7 @@ operator|.
 name|toLowerCase
 argument_list|()
 expr_stmt|;
+block|}
 name|netPlayer
 operator|.
 name|bindTexture
@@ -16565,6 +16573,7 @@ literal|"humanoid"
 expr_stmt|;
 block|}
 else|else
+block|{
 name|thisPlayer
 operator|.
 name|modelName
@@ -16574,6 +16583,7 @@ operator|.
 name|toLowerCase
 argument_list|()
 expr_stmt|;
+block|}
 name|thisPlayer
 operator|.
 name|bindTexture
