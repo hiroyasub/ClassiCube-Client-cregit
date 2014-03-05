@@ -310,7 +310,7 @@ operator|!
 name|closed
 return|;
 block|}
-comment|/** 	 * @return always<code>false</code> 	 */
+comment|/**      * @return always<code>false</code>      */
 specifier|public
 name|boolean
 name|isSeekable

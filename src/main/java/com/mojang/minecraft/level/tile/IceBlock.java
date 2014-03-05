@@ -288,7 +288,7 @@ operator|++
 name|face
 control|)
 block|{
-comment|/* 			 * if (face == 0) { shapeRenderer.useNormal(0.0F, 1.0F, 0.0F); } 			 *  			 * if (face == 1) { shapeRenderer.useNormal(0.0F, -1.0F, 0.0F); } 			 *  			 * if (face == 2) { shapeRenderer.useNormal(0.0F, 0.0F, 1.0F); } 			 *  			 * if (face == 3) { shapeRenderer.useNormal(0.0F, 0.0F, -1.0F); } 			 *  			 * if (face == 4) { shapeRenderer.useNormal(1.0F, 0.0F, 0.0F); } 			 *  			 * if (face == 5) { shapeRenderer.useNormal(-1.0F, 0.0F, 0.0F); } 			 */
+comment|/*              * if (face == 0) { shapeRenderer.useNormal(0.0F, 1.0F, 0.0F); }              *               * if (face == 1) { shapeRenderer.useNormal(0.0F, -1.0F, 0.0F); }              *               * if (face == 2) { shapeRenderer.useNormal(0.0F, 0.0F, 1.0F); }              *               * if (face == 3) { shapeRenderer.useNormal(0.0F, 0.0F, -1.0F); }              *               * if (face == 4) { shapeRenderer.useNormal(1.0F, 0.0F, 0.0F); }              *               * if (face == 5) { shapeRenderer.useNormal(-1.0F, 0.0F, 0.0F); }              */
 name|renderInside
 argument_list|(
 name|shapeRenderer

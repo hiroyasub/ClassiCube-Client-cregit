@@ -77,7 +77,7 @@ name|LogicalOggStreamImpl
 argument_list|>
 argument_list|()
 decl_stmt|;
-comment|/** 	 * Creates access to the specified file through the 	 *<code>PhysicalOggStream</code> interface. The specified source file must 	 * have been opened for reading. 	 *  	 * @param source 	 *            the file to read from 	 *  	 * @throws OggFormatException 	 *             if the stream format is incorrect 	 * @throws IOException 	 *             if some other IO error occurs when reading the file 	 */
+comment|/**      * Creates access to the specified file through the      *<code>PhysicalOggStream</code> interface. The specified source file must      * have been opened for reading.      *       * @param source      *            the file to read from      *       * @throws OggFormatException      *             if the stream format is incorrect      * @throws IOException      *             if some other IO error occurs when reading the file      */
 specifier|public
 name|FileStream
 parameter_list|(
@@ -470,7 +470,7 @@ operator|!
 name|closed
 return|;
 block|}
-comment|/** 	 * @return always<code>true</code> 	 */
+comment|/**      * @return always<code>true</code>      */
 specifier|public
 name|boolean
 name|isSeekable

@@ -58,7 +58,7 @@ specifier|public
 name|ModelPart
 name|leftLeg
 decl_stmt|;
-comment|/** 	 * Creates a new humanoid model with the default scaling. 	 */
+comment|/**      * Creates a new humanoid model with the default scaling.      */
 specifier|public
 name|HumanoidModel
 parameter_list|()
@@ -69,7 +69,7 @@ literal|0.0F
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Creates a new humanoid model with the specified scaling. 	 * The scaling seems to make the model wider but still making it occupy the same space. 	 * @param var1 Scale value to use for the model. 	 */
+comment|/**      * Creates a new humanoid model with the specified scaling.      * The scaling seems to make the model wider but still making it occupy the same space.      * @param var1 Scale value to use for the model.      */
 specifier|public
 name|HumanoidModel
 parameter_list|(

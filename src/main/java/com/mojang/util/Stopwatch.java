@@ -44,7 +44,7 @@ specifier|public
 class|class
 name|Stopwatch
 block|{
-comment|/** 	 * Inner class to hold data about one task executed within the stop watch. 	 */
+comment|/**      * Inner class to hold data about one task executed within the stop watch.      */
 specifier|public
 specifier|static
 specifier|final
@@ -83,7 +83,7 @@ operator|=
 name|timeMillis
 expr_stmt|;
 block|}
-comment|/** 		 * Return the name of this task. 		 */
+comment|/**          * Return the name of this task.          */
 specifier|public
 name|String
 name|getTaskName
@@ -93,7 +93,7 @@ return|return
 name|taskName
 return|;
 block|}
-comment|/** 		 * Return the time in milliseconds this task took. 		 */
+comment|/**          * Return the time in milliseconds this task took.          */
 specifier|public
 name|long
 name|getTimeMillis
@@ -103,7 +103,7 @@ return|return
 name|timeMillis
 return|;
 block|}
-comment|/** 		 * Return the time in seconds this task took. 		 */
+comment|/**          * Return the time in seconds this task took.          */
 specifier|public
 name|double
 name|getTimeSeconds
@@ -116,7 +116,7 @@ literal|1000.0
 return|;
 block|}
 block|}
-comment|/** 	 * Identifier of this stop watch. Handy when we have output from multiple 	 * stop watches and need to distinguish between them in log or console 	 * output. 	 */
+comment|/**      * Identifier of this stop watch. Handy when we have output from multiple      * stop watches and need to distinguish between them in log or console      * output.      */
 specifier|private
 specifier|final
 name|String
@@ -171,7 +171,7 @@ specifier|private
 name|long
 name|totalTimeMillis
 decl_stmt|;
-comment|/** 	 * Construct a new stop watch. Does not start any task. 	 */
+comment|/**      * Construct a new stop watch. Does not start any task.      */
 specifier|public
 name|Stopwatch
 parameter_list|()
@@ -181,7 +181,7 @@ operator|=
 literal|""
 expr_stmt|;
 block|}
-comment|/** 	 * Construct a new stop watch with the given id. Does not start any task. 	 *  	 * @param id 	 *            identifier for this stop watch. Handy when we have output from 	 *            multiple stop watches and need to distinguish between them. 	 */
+comment|/**      * Construct a new stop watch with the given id. Does not start any task.      *       * @param id      *            identifier for this stop watch. Handy when we have output from      *            multiple stop watches and need to distinguish between them.      */
 specifier|public
 name|Stopwatch
 parameter_list|(
@@ -196,7 +196,7 @@ operator|=
 name|id
 expr_stmt|;
 block|}
-comment|/** 	 * Return the last task as a TaskInfo object. 	 */
+comment|/**      * Return the last task as a TaskInfo object.      */
 specifier|public
 name|TaskInfo
 name|getLastTaskInfo
@@ -223,7 +223,7 @@ return|return
 name|lastTaskInfo
 return|;
 block|}
-comment|/** 	 * Return the name of the last task. 	 */
+comment|/**      * Return the name of the last task.      */
 specifier|public
 name|String
 name|getLastTaskName
@@ -253,7 +253,7 @@ name|getTaskName
 argument_list|()
 return|;
 block|}
-comment|/** 	 * Return the time taken by the last task. 	 */
+comment|/**      * Return the time taken by the last task.      */
 specifier|public
 name|long
 name|getLastTaskTimeMillis
@@ -283,7 +283,7 @@ name|getTimeMillis
 argument_list|()
 return|;
 block|}
-comment|/** 	 * Return the number of tasks timed. 	 */
+comment|/**      * Return the number of tasks timed.      */
 specifier|public
 name|int
 name|getTaskCount
@@ -293,7 +293,7 @@ return|return
 name|taskCount
 return|;
 block|}
-comment|/** 	 * Return an array of the data for tasks performed. 	 */
+comment|/**      * Return an array of the data for tasks performed.      */
 specifier|public
 name|TaskInfo
 index|[]
@@ -330,7 +330,7 @@ index|]
 argument_list|)
 return|;
 block|}
-comment|/** 	 * Return the total time in milliseconds for all tasks. 	 */
+comment|/**      * Return the total time in milliseconds for all tasks.      */
 specifier|public
 name|long
 name|getTotalTimeMillis
@@ -340,7 +340,7 @@ return|return
 name|totalTimeMillis
 return|;
 block|}
-comment|/** 	 * Return the total time in seconds for all tasks. 	 */
+comment|/**      * Return the total time in seconds for all tasks.      */
 specifier|public
 name|double
 name|getTotalTimeSeconds
@@ -352,7 +352,7 @@ operator|/
 literal|1000.0
 return|;
 block|}
-comment|/** 	 * Return whether the stop watch is currently running. 	 */
+comment|/**      * Return whether the stop watch is currently running.      */
 specifier|public
 name|boolean
 name|isRunning
@@ -362,7 +362,7 @@ return|return
 name|running
 return|;
 block|}
-comment|/** 	 * Return a string with a table describing all tasks performed. For custom 	 * reporting, call getTaskInfo() and use the task info directly. 	 */
+comment|/**      * Return a string with a table describing all tasks performed. For custom      * reporting, call getTaskInfo() and use the task info directly.      */
 specifier|public
 name|String
 name|prettyPrint
@@ -542,7 +542,7 @@ name|toString
 argument_list|()
 return|;
 block|}
-comment|/** 	 * Determine whether the TaskInfo array is built over time. Set this to 	 * "false" when using a StopWatch for millions of intervals, or the task 	 * info structure will consume excessive memory. Default is "true". 	 */
+comment|/**      * Determine whether the TaskInfo array is built over time. Set this to      * "false" when using a StopWatch for millions of intervals, or the task      * info structure will consume excessive memory. Default is "true".      */
 specifier|public
 name|void
 name|setKeepTaskList
@@ -558,7 +558,7 @@ operator|=
 name|keepTaskList
 expr_stmt|;
 block|}
-comment|/** 	 * Return a short description of the total running time. 	 */
+comment|/**      * Return a short description of the total running time.      */
 specifier|public
 name|String
 name|shortSummary
@@ -575,7 +575,7 @@ name|getTotalTimeMillis
 argument_list|()
 return|;
 block|}
-comment|/** 	 * Start an unnamed task. The results are undefined if {@link #stop()} or 	 * timing methods are called without invoking this method. 	 *  	 * @see #stop() 	 */
+comment|/**      * Start an unnamed task. The results are undefined if {@link #stop()} or      * timing methods are called without invoking this method.      *       * @see #stop()      */
 specifier|public
 name|void
 name|start
@@ -589,7 +589,7 @@ literal|""
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Start a named task. The results are undefined if {@link #stop()} or 	 * timing methods are called without invoking this method. 	 *  	 * @param taskName 	 *            the name of the task to start 	 * @see #stop() 	 */
+comment|/**      * Start a named task. The results are undefined if {@link #stop()} or      * timing methods are called without invoking this method.      *       * @param taskName      *            the name of the task to start      * @see #stop()      */
 specifier|public
 name|void
 name|start
@@ -629,7 +629,7 @@ operator|=
 name|taskName
 expr_stmt|;
 block|}
-comment|/** 	 * Stop the current task. The results are undefined if timing methods are 	 * called without invoking at least one pair {@link #start()} / 	 * {@link #stop()} methods. 	 *  	 * @see #start() 	 */
+comment|/**      * Stop the current task. The results are undefined if timing methods are      * called without invoking at least one pair {@link #start()} /      * {@link #stop()} methods.      *       * @see #start()      */
 specifier|public
 name|void
 name|stop
@@ -700,7 +700,7 @@ operator|=
 literal|null
 expr_stmt|;
 block|}
-comment|/** 	 * Return an informative string describing all tasks performed For custom 	 * reporting, call {@code getTaskInfo()} and use the task info directly. 	 */
+comment|/**      * Return an informative string describing all tasks performed For custom      * reporting, call {@code getTaskInfo()} and use the task info directly.      */
 annotation|@
 name|Override
 specifier|public

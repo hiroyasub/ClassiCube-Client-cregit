@@ -600,7 +600,7 @@ specifier|private
 name|LoaderThread
 name|loaderThread
 decl_stmt|;
-comment|/** 	 * Creates an instance of this class, using a memory cache. 	 */
+comment|/**      * Creates an instance of this class, using a memory cache.      */
 specifier|public
 name|CachedUrlStream
 parameter_list|(
@@ -620,7 +620,7 @@ literal|null
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Creates an instance of this class, using the specified file as cache. The 	 * file is not automatically deleted when this class is disposed. 	 */
+comment|/**      * Creates an instance of this class, using the specified file as cache. The      * file is not automatically deleted when this class is disposed.      */
 specifier|public
 name|CachedUrlStream
 parameter_list|(
@@ -812,7 +812,7 @@ argument_list|)
 argument_list|)
 return|;
 block|}
-comment|/* 	 * private OggPage getNextPage() throws EndOfOggStreamException, 	 * IOException, OggFormatException { return getNextPage(false); } 	 *  	 * private OggPage getNextPage(boolean skipData) throws 	 * EndOfOggStreamException, IOException, OggFormatException { return 	 * OggPage.create(sourceStream, skipData); } 	 */
+comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *       * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
 specifier|public
 name|Collection
 argument_list|<
