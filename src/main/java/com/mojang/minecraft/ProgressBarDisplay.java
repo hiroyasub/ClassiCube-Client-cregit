@@ -1946,12 +1946,14 @@ operator|>
 operator|-
 literal|1
 condition|)
+block|{
 name|HackState
 operator|.
 name|Fly
 operator|=
 literal|true
 expr_stmt|;
+block|}
 if|else if
 condition|(
 name|joinedString
@@ -1964,12 +1966,14 @@ operator|>
 operator|-
 literal|1
 condition|)
+block|{
 name|HackState
 operator|.
 name|Fly
 operator|=
 literal|false
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|joinedString
@@ -1982,12 +1986,14 @@ operator|>
 operator|-
 literal|1
 condition|)
+block|{
 name|HackState
 operator|.
 name|Noclip
 operator|=
 literal|true
 expr_stmt|;
+block|}
 if|else if
 condition|(
 name|joinedString
@@ -2000,12 +2006,14 @@ operator|>
 operator|-
 literal|1
 condition|)
+block|{
 name|HackState
 operator|.
 name|Noclip
 operator|=
 literal|false
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|joinedString
@@ -2018,12 +2026,14 @@ operator|>
 operator|-
 literal|1
 condition|)
+block|{
 name|HackState
 operator|.
 name|Speed
 operator|=
 literal|true
 expr_stmt|;
+block|}
 if|else if
 condition|(
 name|joinedString
@@ -2036,12 +2046,14 @@ operator|>
 operator|-
 literal|1
 condition|)
+block|{
 name|HackState
 operator|.
 name|Speed
 operator|=
 literal|false
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|joinedString
@@ -2054,12 +2066,14 @@ operator|>
 operator|-
 literal|1
 condition|)
+block|{
 name|HackState
 operator|.
 name|Respawn
 operator|=
 literal|true
 expr_stmt|;
+block|}
 if|else if
 condition|(
 name|joinedString
@@ -2072,12 +2086,14 @@ operator|>
 operator|-
 literal|1
 condition|)
+block|{
 name|HackState
 operator|.
 name|Respawn
 operator|=
 literal|false
 expr_stmt|;
+block|}
 if|if
 condition|(
 operator|(

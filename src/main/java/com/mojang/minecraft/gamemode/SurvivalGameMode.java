@@ -629,12 +629,14 @@ name|health
 operator|>
 literal|30
 condition|)
+block|{
 name|player
 operator|.
 name|health
 operator|=
 literal|30
 expr_stmt|;
+block|}
 return|return
 literal|true
 return|;
@@ -673,12 +675,14 @@ name|health
 operator|>
 literal|15
 condition|)
+block|{
 name|player
 operator|.
 name|health
 operator|=
 literal|30
 expr_stmt|;
+block|}
 return|return
 literal|true
 return|;
@@ -725,6 +729,7 @@ name|TNT
 operator|.
 name|id
 condition|)
+block|{
 name|player
 operator|.
 name|inventory
@@ -734,6 +739,7 @@ argument_list|(
 name|i
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 name|player
 operator|.
@@ -777,7 +783,9 @@ name|spawner
 operator|.
 name|HasStopped
 condition|)
+block|{
 return|return;
+block|}
 name|int
 name|area
 init|=

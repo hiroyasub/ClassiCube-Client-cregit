@@ -345,10 +345,12 @@ literal|2
 expr_stmt|;
 block|}
 else|else
+block|{
 name|i
 operator|=
 literal|64
 expr_stmt|;
+block|}
 name|int
 name|j
 init|=

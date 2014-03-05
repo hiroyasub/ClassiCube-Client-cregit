@@ -203,9 +203,11 @@ if|if
 condition|(
 name|HasStopped
 condition|)
+block|{
 return|return
 literal|0
 return|;
+block|}
 name|int
 name|var4
 init|=
@@ -230,7 +232,9 @@ if|if
 condition|(
 name|HasStopped
 condition|)
+block|{
 break|break;
+block|}
 if|if
 condition|(
 name|var3
@@ -423,7 +427,9 @@ if|if
 condition|(
 name|HasStopped
 condition|)
+block|{
 break|break;
+block|}
 name|int
 name|var11
 init|=
@@ -458,7 +464,9 @@ if|if
 condition|(
 name|HasStopped
 condition|)
+block|{
 break|break;
+block|}
 name|var11
 operator|+=
 name|this
