@@ -52,7 +52,7 @@ block|;
 specifier|public
 specifier|final
 name|String
-name|name
+name|folderName
 decl_stmt|;
 specifier|public
 specifier|final
@@ -85,7 +85,7 @@ specifier|private
 name|OperatingSystem
 parameter_list|(
 name|String
-name|name
+name|folderName
 parameter_list|,
 name|int
 name|id
@@ -93,9 +93,9 @@ parameter_list|)
 block|{
 name|this
 operator|.
-name|name
+name|folderName
 operator|=
-name|name
+name|folderName
 expr_stmt|;
 name|this
 operator|.
