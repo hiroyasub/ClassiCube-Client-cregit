@@ -29,8 +29,8 @@ class|class
 name|MovingObjectPosition
 block|{
 specifier|public
-name|int
-name|entityPos
+name|boolean
+name|hasEntity
 decl_stmt|;
 specifier|public
 name|int
@@ -63,9 +63,9 @@ name|Entity
 name|entity
 parameter_list|)
 block|{
-name|entityPos
+name|hasEntity
 operator|=
-literal|1
+literal|true
 expr_stmt|;
 name|this
 operator|.
@@ -93,9 +93,9 @@ name|Vec3D
 name|blockPos
 parameter_list|)
 block|{
-name|entityPos
+name|hasEntity
 operator|=
-literal|0
+literal|false
 expr_stmt|;
 name|this
 operator|.
