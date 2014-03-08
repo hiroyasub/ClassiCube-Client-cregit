@@ -380,7 +380,12 @@ name|sin
 argument_list|(
 name|var8
 operator|*
-literal|3.1415927F
+operator|(
+name|float
+operator|)
+name|Math
+operator|.
+name|PI
 operator|/
 literal|2.0F
 operator|+
@@ -403,7 +408,12 @@ name|cos
 argument_list|(
 name|var8
 operator|*
-literal|3.1415927F
+operator|(
+name|float
+operator|)
+name|Math
+operator|.
+name|PI
 operator|/
 literal|2.0F
 operator|+

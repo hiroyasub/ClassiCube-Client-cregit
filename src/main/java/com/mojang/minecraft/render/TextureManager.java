@@ -1596,9 +1596,7 @@ argument_list|,
 name|mipData1
 argument_list|)
 expr_stmt|;
-comment|// GL11.glAlphaFunc(GL11.GL_GEQUAL, 0.1F * level); // Create
-comment|// transparency for
-comment|// each level.
+comment|// GL11.glAlphaFunc(GL11.GL_GEQUAL, 0.1F * level); // Create transparency for each level.
 name|mipData
 operator|=
 name|mipData1
@@ -1838,7 +1836,9 @@ name|GL12
 operator|.
 name|GL_TEXTURE_BASE_LEVEL
 argument_list|,
-literal|0
+name|GL11
+operator|.
+name|GL_POINTS
 argument_list|)
 expr_stmt|;
 name|GL11
@@ -1853,7 +1853,9 @@ name|GL12
 operator|.
 name|GL_TEXTURE_MAX_LEVEL
 argument_list|,
-literal|4
+name|GL11
+operator|.
+name|GL_TRIANGLES
 argument_list|)
 expr_stmt|;
 block|}
@@ -1894,8 +1896,7 @@ name|GL_NEAREST
 argument_list|)
 expr_stmt|;
 block|}
-comment|// GL11.glTexEnvi(GL11.GL_TEXTURE_ENV, GL11.GL_TEXTURE_ENV_MODE,
-comment|// GL11.GL_MODULATE);
+comment|// GL11.glTexEnvi(GL11.GL_TEXTURE_ENV, GL11.GL_TEXTURE_ENV_MODE, GL11.GL_MODULATE);
 name|int
 index|[]
 name|pixels
@@ -3963,7 +3964,7 @@ throw|throw
 operator|new
 name|RuntimeException
 argument_list|(
-literal|"!!"
+literal|"Failed to load texture"
 argument_list|,
 name|e
 argument_list|)
@@ -4116,6 +4117,7 @@ name|snowName
 init|=
 literal|"snow.png"
 decl_stmt|;
+comment|// TODO Factorize this shit
 if|if
 condition|(
 name|zip

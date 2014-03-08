@@ -1820,12 +1820,14 @@ name|Entity
 name|var1
 parameter_list|,
 name|int
-name|var2
+name|score
 parameter_list|)
 block|{
+name|this
+operator|.
 name|score
 operator|+=
-name|var2
+name|score
 expr_stmt|;
 block|}
 annotation|@
@@ -1835,7 +1837,7 @@ name|void
 name|bindTexture
 parameter_list|(
 name|TextureManager
-name|var1
+name|textureManager
 parameter_list|)
 block|{
 if|if
@@ -1945,7 +1947,7 @@ condition|)
 block|{
 name|newTextureId
 operator|=
-name|var1
+name|textureManager
 operator|.
 name|load
 argument_list|(
@@ -1970,9 +1972,11 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
-name|var1
+name|textureManager
 operator|.
 name|load
 argument_list|(
@@ -1997,9 +2001,11 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
-name|var1
+name|textureManager
 operator|.
 name|load
 argument_list|(
@@ -2032,7 +2038,7 @@ condition|)
 block|{
 name|var2
 operator|=
-name|var1
+name|textureManager
 operator|.
 name|load
 argument_list|(
@@ -2043,7 +2049,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|var2
 argument_list|)
@@ -2059,7 +2067,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|var2
 argument_list|)
@@ -2118,7 +2128,12 @@ operator|+
 name|yRot
 operator|)
 operator|*
-literal|3.1415927F
+operator|(
+name|float
+operator|)
+name|Math
+operator|.
+name|PI
 operator|/
 literal|180.0F
 argument_list|)
@@ -2138,7 +2153,12 @@ operator|+
 name|yRot
 operator|)
 operator|*
-literal|3.1415927F
+operator|(
+name|float
+operator|)
+name|Math
+operator|.
+name|PI
 operator|/
 literal|180.0F
 argument_list|)
@@ -2272,7 +2292,7 @@ name|void
 name|render
 parameter_list|(
 name|TextureManager
-name|var1
+name|textureManager
 parameter_list|,
 name|float
 name|var2
@@ -2506,6 +2526,7 @@ name|var9
 init|=
 literal|0.0625F
 decl_stmt|;
+comment|// 1 / 16
 name|float
 name|var10
 init|=
@@ -2606,24 +2627,29 @@ block|}
 else|else
 block|{
 name|var11
+operator|/=
+name|hurtDuration
+expr_stmt|;
+name|var11
 operator|=
 name|MathHelper
 operator|.
 name|sin
 argument_list|(
+name|var11
+operator|*
+name|var11
+operator|*
+name|var11
+operator|*
+name|var11
+operator|*
 operator|(
-name|var11
-operator|/=
-name|hurtDuration
+name|float
 operator|)
-operator|*
-name|var11
-operator|*
-name|var11
-operator|*
-name|var11
-operator|*
-literal|3.1415927F
+name|Math
+operator|.
+name|PI
 argument_list|)
 operator|*
 literal|14.0F
@@ -2651,9 +2677,6 @@ operator|)
 operator|/
 literal|20.0F
 expr_stmt|;
-if|if
-condition|(
-operator|(
 name|var11
 operator|+=
 name|var12
@@ -2661,7 +2684,10 @@ operator|*
 name|var12
 operator|*
 literal|800.0F
-operator|)
+expr_stmt|;
+if|if
+condition|(
+name|var11
 operator|>
 literal|90.0F
 condition|)
@@ -2821,7 +2847,9 @@ name|GL11
 operator|.
 name|glDisable
 argument_list|(
-literal|3008
+name|GL11
+operator|.
+name|GL_ALPHA_TEST
 argument_list|)
 expr_stmt|;
 block|}
@@ -2831,7 +2859,9 @@ name|GL11
 operator|.
 name|glDisable
 argument_list|(
-literal|2884
+name|GL11
+operator|.
+name|GL_CULL_FACE
 argument_list|)
 expr_stmt|;
 block|}
@@ -2862,12 +2892,12 @@ literal|5.0F
 expr_stmt|;
 name|bindTexture
 argument_list|(
-name|var1
+name|textureManager
 argument_list|)
 expr_stmt|;
 name|renderModel
 argument_list|(
-name|var1
+name|textureManager
 argument_list|,
 name|var8
 argument_list|,
@@ -2913,7 +2943,6 @@ operator|.
 name|GL_BLEND
 argument_list|)
 expr_stmt|;
-comment|// 3042
 name|GL11
 operator|.
 name|glBlendFunc
@@ -2927,15 +2956,14 @@ operator|.
 name|GL_ONE
 argument_list|)
 expr_stmt|;
-comment|// 770, 1
 name|bindTexture
 argument_list|(
-name|var1
+name|textureManager
 argument_list|)
 expr_stmt|;
 name|renderModel
 argument_list|(
-name|var1
+name|textureManager
 argument_list|,
 name|var8
 argument_list|,
@@ -2959,7 +2987,6 @@ operator|.
 name|GL_BLEND
 argument_list|)
 expr_stmt|;
-comment|// 3042
 name|GL11
 operator|.
 name|glBlendFunc
@@ -2973,7 +3000,6 @@ operator|.
 name|GL_ONE_MINUS_SRC_ALPHA
 argument_list|)
 expr_stmt|;
-comment|// 770, 771
 block|}
 name|GL11
 operator|.
@@ -2984,7 +3010,6 @@ operator|.
 name|GL_ALPHA_TEST
 argument_list|)
 expr_stmt|;
-comment|// 3008
 if|if
 condition|(
 name|allowAlpha
@@ -2999,7 +3024,6 @@ operator|.
 name|GL_CULL_FACE
 argument_list|)
 expr_stmt|;
-comment|// 2884
 block|}
 name|GL11
 operator|.
@@ -3092,19 +3116,21 @@ operator|.
 name|glTranslatef
 argument_list|(
 operator|-
-literal|0.5f
+literal|0.5F
 argument_list|,
-literal|0.4f
+literal|0.4F
 argument_list|,
 operator|-
-literal|0.5f
+literal|0.5F
 argument_list|)
 expr_stmt|;
 name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|var1
 operator|.
@@ -3165,7 +3191,9 @@ name|GL11
 operator|.
 name|glDisable
 argument_list|(
-literal|2884
+name|GL11
+operator|.
+name|GL_CULL_FACE
 argument_list|)
 expr_stmt|;
 name|HumanoidModel
@@ -3217,7 +3245,9 @@ name|GL11
 operator|.
 name|glEnable
 argument_list|(
-literal|2884
+name|GL11
+operator|.
+name|GL_CULL_FACE
 argument_list|)
 expr_stmt|;
 block|}
