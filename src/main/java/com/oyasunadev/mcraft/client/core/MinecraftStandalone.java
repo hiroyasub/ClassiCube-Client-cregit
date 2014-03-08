@@ -258,10 +258,6 @@ import|;
 end_import
 
 begin_comment
-comment|/**  * Created with IntelliJ IDEA.  * User: Oliver Yasuna  * Date: 9/30/12  * Time: 7:16 PM  */
-end_comment
-
-begin_comment
 comment|/**  * Run Minecraft Classic standalone version.  */
 end_comment
 
@@ -284,7 +280,6 @@ name|MCraftApplet
 extends|extends
 name|MinecraftApplet
 block|{
-comment|/**          *           */
 specifier|private
 specifier|static
 specifier|final
@@ -320,7 +315,7 @@ argument_list|>
 argument_list|()
 expr_stmt|;
 block|}
-comment|/**              * Fake the Code Base.              *               * @return new URL("http://minecraft.net:80/")              */
+comment|/**              * Fake the Code Base.              *              * @return new URL("http://minecraft.net:80/")              */
 annotation|@
 name|Override
 specifier|public
@@ -354,7 +349,7 @@ return|return
 literal|null
 return|;
 block|}
-comment|/**              * Fake the Document Base.              *               * @return new URL("http://minecraft.net:80/play.jsp")              */
+comment|/**              * Fake the Document Base.              *              * @return new URL("http://minecraft.net:80/play.jsp")              */
 annotation|@
 name|Override
 specifier|public
@@ -388,7 +383,7 @@ return|return
 literal|null
 return|;
 block|}
-comment|/**              * Return our own parameters variable.              *               * @param name              * @return              */
+comment|/**              * Return our own parameters variable.              *              * @param name              * @return              */
 annotation|@
 name|Override
 specifier|public
@@ -862,7 +857,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**              * Set the "minecraft" variable.              *               * @param minecraft              *            The new Minecraft variable.              */
+comment|/**              * Set the "minecraft" variable.              *              * @param minecraft              *            The new Minecraft variable.              */
 specifier|public
 name|void
 name|setMinecraft
@@ -961,7 +956,6 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|/**      *       */
 specifier|private
 specifier|static
 specifier|final

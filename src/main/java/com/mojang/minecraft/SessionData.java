@@ -62,7 +62,7 @@ decl_stmt|;
 specifier|public
 specifier|static
 name|void
-name|AddStandardMinecraftBlocks
+name|addStandardMinecraftBlocks
 parameter_list|()
 block|{
 name|ArrayList
@@ -133,16 +133,16 @@ block|}
 specifier|public
 specifier|static
 name|void
-name|SetAllowedBlocks
+name|setAllowedBlocks
 parameter_list|(
 name|byte
-name|SupportLevel
+name|supportLevel
 parameter_list|)
 block|{
 comment|// latest
 if|if
 condition|(
-name|SupportLevel
+name|supportLevel
 operator|==
 name|com
 operator|.
@@ -156,7 +156,7 @@ name|util
 operator|.
 name|Constants
 operator|.
-name|SupportLevel
+name|CUSTOM_BLOCK_SUPPORT_LEVEL
 condition|)
 block|{
 name|ArrayList
@@ -228,7 +228,7 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|SupportLevel
+name|supportLevel
 operator|==
 literal|1
 condition|)
@@ -299,13 +299,13 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|SupportLevel
+name|supportLevel
 operator|<=
 literal|0
 condition|)
 block|{
 comment|// minecraft
-name|AddStandardMinecraftBlocks
+name|addStandardMinecraftBlocks
 argument_list|()
 expr_stmt|;
 block|}
@@ -328,7 +328,7 @@ name|haspaid
 decl_stmt|;
 static|static
 block|{
-name|AddStandardMinecraftBlocks
+name|addStandardMinecraftBlocks
 argument_list|()
 expr_stmt|;
 comment|// init

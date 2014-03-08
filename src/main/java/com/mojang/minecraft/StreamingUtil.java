@@ -86,13 +86,13 @@ import|;
 end_import
 
 begin_comment
-comment|// Utility class to simplify working with streams efficiently
+comment|/**  * Utility class to deal with streams more efficiently.  */
 end_comment
 
 begin_class
 specifier|public
 class|class
-name|IOUtil
+name|StreamingUtil
 block|{
 specifier|private
 specifier|static
@@ -105,7 +105,7 @@ operator|*
 literal|1024
 decl_stmt|;
 comment|// 64 KB
-comment|// Reads given stream to the end, and writes its contents to a file
+comment|/**      * Reads given stream to the end, and writes its contents to a file      * @param inStream The input buffer stream.      * @param file The file to write to.      * @throws IOException      */
 specifier|public
 specifier|static
 name|void
@@ -120,6 +120,8 @@ parameter_list|)
 throws|throws
 name|IOException
 block|{
+try|try
+init|(
 name|ReadableByteChannel
 name|in
 init|=
@@ -129,8 +131,7 @@ name|newChannel
 argument_list|(
 name|inStream
 argument_list|)
-decl_stmt|;
-try|try
+init|)
 block|{
 if|if
 condition|(
@@ -155,6 +156,8 @@ name|createNewFile
 argument_list|()
 expr_stmt|;
 block|}
+try|try
+init|(
 name|FileOutputStream
 name|outStream
 init|=
@@ -163,8 +166,7 @@ name|FileOutputStream
 argument_list|(
 name|file
 argument_list|)
-decl_stmt|;
-try|try
+init|)
 block|{
 name|FileChannel
 name|out
@@ -208,22 +210,6 @@ name|count
 expr_stmt|;
 block|}
 block|}
-finally|finally
-block|{
-name|outStream
-operator|.
-name|close
-argument_list|()
-expr_stmt|;
-block|}
-block|}
-finally|finally
-block|{
-name|in
-operator|.
-name|close
-argument_list|()
-expr_stmt|;
 block|}
 block|}
 block|}
