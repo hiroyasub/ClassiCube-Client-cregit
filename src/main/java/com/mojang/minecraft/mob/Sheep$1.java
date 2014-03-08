@@ -105,7 +105,12 @@ name|sheep
 operator|.
 name|yRot
 operator|*
-literal|3.1415927F
+operator|(
+name|float
+operator|)
+name|Math
+operator|.
+name|PI
 operator|/
 literal|180.0F
 argument_list|)
@@ -121,7 +126,12 @@ name|sheep
 operator|.
 name|yRot
 operator|*
-literal|3.1415927F
+operator|(
+name|float
+operator|)
+name|Math
+operator|.
+name|PI
 operator|/
 literal|180.0F
 argument_list|)

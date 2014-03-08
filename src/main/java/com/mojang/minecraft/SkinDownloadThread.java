@@ -55,6 +55,22 @@ end_import
 
 begin_import
 import|import
+name|com
+operator|.
+name|oyasunadev
+operator|.
+name|mcraft
+operator|.
+name|client
+operator|.
+name|util
+operator|.
+name|Constants
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|awt
@@ -156,7 +172,9 @@ name|addRequestProperty
 argument_list|(
 literal|"User-Agent"
 argument_list|,
-literal|"Mozilla/4.76"
+name|Constants
+operator|.
+name|USER_AGENT
 argument_list|)
 expr_stmt|;
 name|connection
@@ -279,10 +297,10 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|var4
+name|e
 parameter_list|)
 block|{
-name|var4
+name|e
 operator|.
 name|printStackTrace
 argument_list|()

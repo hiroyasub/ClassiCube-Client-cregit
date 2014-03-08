@@ -607,7 +607,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|var1
 operator|.
@@ -621,7 +623,9 @@ name|GL11
 operator|.
 name|glDisable
 argument_list|(
-literal|2884
+name|GL11
+operator|.
+name|GL_CULL_FACE
 argument_list|)
 expr_stmt|;
 name|AnimalModel

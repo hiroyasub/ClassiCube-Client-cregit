@@ -1455,9 +1455,13 @@ name|GL11
 operator|.
 name|glBlendFunc
 argument_list|(
-literal|770
+name|GL11
+operator|.
+name|GL_SRC_ALPHA
 argument_list|,
-literal|771
+name|GL11
+operator|.
+name|GL_ONE_MINUS_SRC_ALPHA
 argument_list|)
 expr_stmt|;
 name|renderer
@@ -1695,7 +1699,9 @@ name|GL11
 operator|.
 name|glDisable
 argument_list|(
-literal|3042
+name|GL11
+operator|.
+name|GL_BLEND
 argument_list|)
 expr_stmt|;
 name|GL11
@@ -1866,7 +1872,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|textureManager
 operator|.

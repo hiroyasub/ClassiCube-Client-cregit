@@ -11,6 +11,18 @@ name|model
 package|;
 end_package
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|util
+operator|.
+name|Vertex
+import|;
+end_import
+
 begin_class
 specifier|public
 specifier|final

@@ -625,7 +625,7 @@ argument_list|()
 decl_stmt|;
 try|try
 block|{
-name|IOUtil
+name|StreamingUtil
 operator|.
 name|copyStreamToFile
 argument_list|(
@@ -1331,7 +1331,7 @@ argument_list|)
 decl_stmt|;
 try|try
 block|{
-name|IOUtil
+name|StreamingUtil
 operator|.
 name|copyStreamToFile
 argument_list|(
@@ -1521,7 +1521,7 @@ argument_list|)
 decl_stmt|;
 try|try
 block|{
-name|IOUtil
+name|StreamingUtil
 operator|.
 name|copyStreamToFile
 argument_list|(

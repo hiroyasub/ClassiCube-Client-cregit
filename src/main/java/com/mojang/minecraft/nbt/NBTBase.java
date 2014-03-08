@@ -257,8 +257,6 @@ argument_list|,
 name|s
 argument_list|)
 decl_stmt|;
-try|try
-block|{
 name|nbtbase
 operator|.
 name|load
@@ -269,17 +267,6 @@ expr_stmt|;
 return|return
 name|nbtbase
 return|;
-block|}
-catch|catch
-parameter_list|(
-name|IOException
-name|ioexception
-parameter_list|)
-block|{
-throw|throw
-name|ioexception
-throw|;
-block|}
 block|}
 block|}
 comment|/**      * Writes the specified tag to the given DataOutput, writing the type byte, the UTF string key and then calling the      * tag to write its data.      */
