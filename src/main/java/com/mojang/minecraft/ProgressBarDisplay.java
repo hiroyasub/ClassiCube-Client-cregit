@@ -157,6 +157,22 @@ end_import
 
 begin_import
 import|import
+name|com
+operator|.
+name|oyasunadev
+operator|.
+name|mcraft
+operator|.
+name|client
+operator|.
+name|util
+operator|.
+name|Constants
+import|;
+end_import
+
+begin_import
+import|import
 name|org
 operator|.
 name|lwjgl
@@ -1027,7 +1043,9 @@ name|addRequestProperty
 argument_list|(
 literal|"User-Agent"
 argument_list|,
-literal|"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:6.0) Gecko/20100101 Firefox/6.0 FirePHP/0.5"
+name|Constants
+operator|.
+name|USER_AGENT
 argument_list|)
 expr_stmt|;
 block|}

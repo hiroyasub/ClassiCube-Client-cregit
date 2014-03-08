@@ -129,9 +129,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
-name|model
+name|util
 operator|.
 name|Vec3D
 import|;
