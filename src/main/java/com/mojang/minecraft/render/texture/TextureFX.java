@@ -34,12 +34,6 @@ name|int
 name|textureId
 decl_stmt|;
 specifier|public
-name|boolean
-name|anaglyph
-init|=
-literal|false
-decl_stmt|;
-specifier|public
 name|int
 name|scaling
 init|=
