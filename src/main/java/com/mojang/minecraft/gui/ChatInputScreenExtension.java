@@ -1371,16 +1371,24 @@ operator|=
 literal|'\000'
 expr_stmt|;
 name|String
-name|str2
+name|clipboardText
 init|=
 name|getClipboard
 argument_list|()
 decl_stmt|;
+if|if
+condition|(
+name|clipboardText
+operator|!=
+literal|null
+condition|)
+block|{
 name|insertTextAtCaret
 argument_list|(
-name|str2
+name|clipboardText
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 if|else if
 condition|(
