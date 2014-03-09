@@ -88,7 +88,7 @@ name|var0
 operator|*
 literal|10430.378F
 operator|+
-literal|16384.0F
+literal|16384F
 operator|)
 operator|&
 literal|'\uffff'

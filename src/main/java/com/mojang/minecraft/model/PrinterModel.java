@@ -91,7 +91,7 @@ literal|1
 argument_list|,
 literal|16
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|Base
@@ -151,7 +151,7 @@ literal|5
 argument_list|,
 literal|14
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|RightWall
@@ -210,7 +210,7 @@ literal|5
 argument_list|,
 literal|14
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|LeftWall
@@ -270,7 +270,7 @@ literal|4
 argument_list|,
 literal|11
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|MiddleComp
@@ -330,7 +330,7 @@ literal|5
 argument_list|,
 literal|11
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|WholeBase
@@ -391,7 +391,7 @@ literal|8
 argument_list|,
 literal|1
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|Rack
@@ -451,7 +451,7 @@ literal|4
 argument_list|,
 literal|1
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|Back
@@ -510,7 +510,7 @@ literal|1
 argument_list|,
 literal|3
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|TopLeftNobble
@@ -569,7 +569,7 @@ literal|1
 argument_list|,
 literal|3
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|TopRightNobble
@@ -627,7 +627,7 @@ literal|1
 argument_list|,
 literal|6
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|TopMiddleNobble
@@ -687,7 +687,7 @@ literal|1
 argument_list|,
 literal|9
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|LeftLine
@@ -747,7 +747,7 @@ literal|1
 argument_list|,
 literal|9
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|RightLine

@@ -494,13 +494,13 @@ name|GL11
 operator|.
 name|glColor4f
 argument_list|(
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|)
 expr_stmt|;
 name|byte

@@ -175,7 +175,7 @@ name|heightOffset
 operator|=
 name|bbHeight
 operator|/
-literal|2.0F
+literal|2F
 expr_stmt|;
 name|this
 operator|.
@@ -194,7 +194,7 @@ name|gCol
 operator|=
 name|bCol
 operator|=
-literal|1.0F
+literal|1F
 expr_stmt|;
 name|xd
 operator|=
@@ -339,7 +339,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|3.0F
+literal|3F
 expr_stmt|;
 name|vo
 operator|=
@@ -351,7 +351,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|3.0F
+literal|3F
 expr_stmt|;
 name|size
 operator|=
@@ -446,7 +446,7 @@ name|tex
 operator|%
 literal|16
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 operator|+
 literal|0.0624375F
@@ -464,7 +464,7 @@ name|tex
 operator|/
 literal|16
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 operator|+
 literal|0.0624375F

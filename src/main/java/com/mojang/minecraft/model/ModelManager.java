@@ -40,7 +40,7 @@ init|=
 operator|new
 name|HumanoidModel
 argument_list|(
-literal|0.0F
+literal|0F
 argument_list|)
 decl_stmt|;
 specifier|private
@@ -50,7 +50,7 @@ init|=
 operator|new
 name|HumanoidModel
 argument_list|(
-literal|1.0F
+literal|1F
 argument_list|)
 decl_stmt|;
 specifier|private

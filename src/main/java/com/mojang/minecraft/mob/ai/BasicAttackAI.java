@@ -176,11 +176,11 @@ name|nextFloat
 argument_list|()
 operator|)
 operator|/
-literal|2.0F
+literal|2F
 operator|*
 name|damage
 operator|+
-literal|1.0F
+literal|1F
 operator|)
 decl_stmt|;
 name|var1
@@ -217,7 +217,7 @@ decl_stmt|;
 name|float
 name|var2
 init|=
-literal|16.0F
+literal|16F
 decl_stmt|;
 if|if
 condition|(
@@ -372,9 +372,9 @@ name|var2
 operator|*
 name|var2
 operator|*
-literal|2.0F
+literal|2F
 operator|*
-literal|2.0F
+literal|2F
 operator|&&
 name|random
 operator|.
@@ -429,7 +429,7 @@ operator|/
 literal|3.1415927410125732D
 operator|)
 operator|-
-literal|90.0F
+literal|90F
 expr_stmt|;
 name|mob
 operator|.
@@ -475,7 +475,7 @@ operator|*
 name|var5
 argument_list|)
 operator|<
-literal|2.0F
+literal|2F
 operator|&&
 name|attackDelay
 operator|==

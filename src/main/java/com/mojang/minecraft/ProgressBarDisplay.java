@@ -2185,12 +2185,12 @@ name|GL11
 operator|.
 name|glTranslatef
 argument_list|(
-literal|0.0F
+literal|0F
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
 operator|-
-literal|200.0F
+literal|200F
 argument_list|)
 expr_stmt|;
 block|}

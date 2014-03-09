@@ -165,7 +165,7 @@ block|{
 name|float
 name|var1
 init|=
-literal|4.0F
+literal|4F
 decl_stmt|;
 name|level
 operator|.
@@ -216,7 +216,7 @@ argument_list|()
 operator|*
 name|var1
 operator|/
-literal|4.0F
+literal|4F
 decl_stmt|;
 name|float
 name|var4
@@ -231,7 +231,7 @@ argument_list|()
 operator|*
 name|var1
 operator|/
-literal|4.0F
+literal|4F
 decl_stmt|;
 name|float
 name|var5
@@ -246,7 +246,7 @@ argument_list|()
 operator|*
 name|var1
 operator|/
-literal|4.0F
+literal|4F
 decl_stmt|;
 name|float
 name|var6

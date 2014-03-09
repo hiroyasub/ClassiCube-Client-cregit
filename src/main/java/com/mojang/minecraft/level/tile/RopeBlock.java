@@ -68,7 +68,7 @@ literal|0.5F
 operator|-
 name|var3
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
 literal|0.5F
 operator|-
@@ -80,7 +80,7 @@ literal|0.5F
 argument_list|,
 name|var3
 operator|*
-literal|3.0F
+literal|3F
 argument_list|,
 name|var3
 operator|+

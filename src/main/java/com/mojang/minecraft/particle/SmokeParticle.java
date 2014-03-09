@@ -80,11 +80,11 @@ name|var3
 argument_list|,
 name|var4
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|)
 expr_stmt|;
 name|xd

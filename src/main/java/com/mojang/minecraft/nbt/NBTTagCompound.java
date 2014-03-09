@@ -913,7 +913,7 @@ argument_list|(
 name|name
 argument_list|)
 condition|?
-literal|0.0F
+literal|0F
 else|:
 operator|(
 operator|(

@@ -1518,7 +1518,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var10000
@@ -1575,7 +1575,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var10000
@@ -1632,7 +1632,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var10000
@@ -1689,7 +1689,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var10000
@@ -1746,7 +1746,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var10000
@@ -1803,7 +1803,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var10000
@@ -1860,7 +1860,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var10000
@@ -1917,7 +1917,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var10000
@@ -2135,7 +2135,7 @@ name|var2
 operator|.
 name|xOld
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 decl_stmt|;
 name|int
@@ -2149,7 +2149,7 @@ name|var2
 operator|.
 name|yOld
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 decl_stmt|;
 name|int
@@ -2163,7 +2163,7 @@ name|var2
 operator|.
 name|zOld
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 decl_stmt|;
 name|int
@@ -2177,7 +2177,7 @@ name|var2
 operator|.
 name|x
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 decl_stmt|;
 name|int
@@ -2191,7 +2191,7 @@ name|var2
 operator|.
 name|y
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 decl_stmt|;
 name|int
@@ -2205,7 +2205,7 @@ name|var2
 operator|.
 name|z
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 decl_stmt|;
 if|if

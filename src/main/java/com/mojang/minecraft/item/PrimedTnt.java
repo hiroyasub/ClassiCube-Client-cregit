@@ -226,7 +226,7 @@ name|heightOffset
 operator|=
 name|bbHeight
 operator|/
-literal|2.0F
+literal|2F
 expr_stmt|;
 name|setPos
 argument_list|(
@@ -270,7 +270,7 @@ name|Math
 operator|.
 name|PI
 operator|/
-literal|180.0F
+literal|180F
 argument_list|)
 operator|*
 literal|0.02F
@@ -295,7 +295,7 @@ name|Math
 operator|.
 name|PI
 operator|/
-literal|180.0F
+literal|180F
 argument_list|)
 operator|*
 literal|0.02F
@@ -537,7 +537,7 @@ name|brightness
 argument_list|,
 name|brightness
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|)
 expr_stmt|;
 name|GL11
@@ -624,11 +624,11 @@ name|GL11
 operator|.
 name|glColor4f
 argument_list|(
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|,
 operator|(
 name|life
@@ -654,11 +654,11 @@ name|GL11
 operator|.
 name|glColor4f
 argument_list|(
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|,
 operator|(
 name|life
@@ -683,11 +683,11 @@ name|GL11
 operator|.
 name|glColor4f
 argument_list|(
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|,
 literal|0.9F
 argument_list|)
@@ -879,7 +879,7 @@ decl_stmt|;
 name|float
 name|radius
 init|=
-literal|4.0F
+literal|4F
 decl_stmt|;
 name|level
 operator|.
@@ -924,7 +924,7 @@ argument_list|()
 operator|*
 name|radius
 operator|/
-literal|4.0F
+literal|4F
 decl_stmt|;
 name|float
 name|unknown1
@@ -939,7 +939,7 @@ argument_list|()
 operator|*
 name|radius
 operator|/
-literal|4.0F
+literal|4F
 decl_stmt|;
 name|float
 name|unknown2
@@ -954,7 +954,7 @@ argument_list|()
 operator|*
 name|radius
 operator|/
-literal|4.0F
+literal|4F
 decl_stmt|;
 name|float
 name|unknown3
