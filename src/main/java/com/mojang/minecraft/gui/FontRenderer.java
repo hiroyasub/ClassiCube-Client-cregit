@@ -414,7 +414,7 @@ name|getScale
 parameter_list|()
 block|{
 return|return
-literal|7.0F
+literal|7F
 operator|/
 name|charHeight
 operator|*
@@ -602,7 +602,7 @@ decl_stmt|;
 name|float
 name|f2
 init|=
-literal|1.0F
+literal|1F
 operator|/
 name|f1
 decl_stmt|;
@@ -619,9 +619,9 @@ operator|*
 name|f2
 expr_stmt|;
 comment|// if(shadow){
-comment|// float f3 = 1.0F * this.userScale;
+comment|// float f3 = 1F * this.userScale;
 comment|// float f3 = x - (2 - x);
-comment|// GL11.glTranslatef(f3, f3, 0.0F);
+comment|// GL11.glTranslatef(f3, f3, 0F);
 comment|// x = x+f3;
 comment|// y= y+f3;
 comment|// }
@@ -873,11 +873,11 @@ name|y
 operator|+
 name|var13
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
 name|color
 operator|/
-literal|128.0F
+literal|128F
 argument_list|,
 operator|(
 name|var9
@@ -885,7 +885,7 @@ operator|+
 name|var13
 operator|)
 operator|/
-literal|128.0F
+literal|128F
 argument_list|)
 expr_stmt|;
 name|ShapeRenderer
@@ -904,7 +904,7 @@ name|y
 operator|+
 name|var13
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
 operator|(
 name|color
@@ -912,7 +912,7 @@ operator|+
 name|var13
 operator|)
 operator|/
-literal|128.0F
+literal|128F
 argument_list|,
 operator|(
 name|var9
@@ -920,7 +920,7 @@ operator|+
 name|var13
 operator|)
 operator|/
-literal|128.0F
+literal|128F
 argument_list|)
 expr_stmt|;
 name|ShapeRenderer
@@ -937,7 +937,7 @@ name|var13
 argument_list|,
 name|y
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
 operator|(
 name|color
@@ -945,11 +945,11 @@ operator|+
 name|var13
 operator|)
 operator|/
-literal|128.0F
+literal|128F
 argument_list|,
 name|var9
 operator|/
-literal|128.0F
+literal|128F
 argument_list|)
 expr_stmt|;
 name|ShapeRenderer
@@ -964,15 +964,15 @@ name|var7
 argument_list|,
 name|y
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
 name|color
 operator|/
-literal|128.0F
+literal|128F
 argument_list|,
 name|var9
 operator|/
-literal|128.0F
+literal|128F
 argument_list|)
 expr_stmt|;
 if|if
@@ -1006,8 +1006,8 @@ argument_list|()
 expr_stmt|;
 comment|// if (shadow)
 comment|// {
-comment|// float f3 = 1.0F * this.userScale;
-comment|// GL11.glTranslatef(f3, f3, 0.0F);
+comment|// float f3 = 1F * this.userScale;
+comment|// GL11.glTranslatef(f3, f3, 0F);
 comment|// }
 name|GL11
 operator|.
@@ -1017,7 +1017,7 @@ name|f1
 argument_list|,
 name|f1
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|)
 expr_stmt|;
 name|ShapeRenderer

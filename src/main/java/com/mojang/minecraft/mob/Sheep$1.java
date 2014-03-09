@@ -112,7 +112,7 @@ name|Math
 operator|.
 name|PI
 operator|/
-literal|180.0F
+literal|180F
 argument_list|)
 decl_stmt|;
 name|float
@@ -133,7 +133,7 @@ name|Math
 operator|.
 name|PI
 operator|/
-literal|180.0F
+literal|180F
 argument_list|)
 decl_stmt|;
 name|var1
@@ -174,7 +174,7 @@ name|mob
 operator|.
 name|y
 operator|-
-literal|2.0F
+literal|2F
 operator|)
 decl_stmt|;
 name|int
@@ -276,11 +276,11 @@ block|}
 block|}
 name|xxa
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 name|yya
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 name|mob
 operator|.

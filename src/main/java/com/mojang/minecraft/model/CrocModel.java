@@ -82,7 +82,7 @@ literal|2
 argument_list|,
 literal|17
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|Tail
@@ -150,7 +150,7 @@ literal|5
 argument_list|,
 literal|11
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|head
@@ -218,7 +218,7 @@ literal|16
 argument_list|,
 literal|8
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|body
@@ -284,7 +284,7 @@ literal|6
 argument_list|,
 literal|4
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|leg1
@@ -351,7 +351,7 @@ literal|6
 argument_list|,
 literal|4
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|leg2
@@ -417,7 +417,7 @@ literal|6
 argument_list|,
 literal|4
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|leg4
@@ -484,7 +484,7 @@ literal|6
 argument_list|,
 literal|4
 argument_list|,
-literal|0.0f
+literal|0F
 argument_list|)
 expr_stmt|;
 name|leg3

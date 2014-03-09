@@ -166,7 +166,7 @@ operator|.
 name|random
 argument_list|()
 operator|+
-literal|1.0D
+literal|1D
 operator|)
 decl_stmt|;
 for|for

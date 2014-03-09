@@ -109,12 +109,12 @@ block|{
 name|double
 name|result
 init|=
-literal|0.0D
+literal|0D
 decl_stmt|;
 name|double
 name|noiseLevel
 init|=
-literal|1.0D
+literal|1D
 decl_stmt|;
 comment|// unknown0
 for|for
@@ -154,7 +154,7 @@ name|noiseLevel
 expr_stmt|;
 name|noiseLevel
 operator|*=
-literal|2.0D
+literal|2D
 expr_stmt|;
 block|}
 return|return

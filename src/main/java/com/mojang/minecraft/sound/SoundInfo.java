@@ -31,7 +31,7 @@ specifier|private
 name|float
 name|seek
 init|=
-literal|0.0F
+literal|0F
 decl_stmt|;
 specifier|private
 name|float
@@ -58,7 +58,7 @@ name|pitch
 operator|=
 name|var2
 operator|*
-literal|44100.0F
+literal|44100F
 operator|/
 name|var1
 operator|.

@@ -637,7 +637,7 @@ name|var16
 init|=
 name|var12
 operator|+
-literal|1.0F
+literal|1F
 decl_stmt|;
 name|float
 name|var17
@@ -700,7 +700,7 @@ name|var20
 operator|*
 name|var20
 operator|<
-literal|256.0F
+literal|256F
 condition|)
 block|{
 continue|continue;
@@ -752,7 +752,7 @@ name|var20
 operator|*
 name|var20
 operator|<
-literal|256.0F
+literal|256F
 condition|)
 block|{
 continue|continue;

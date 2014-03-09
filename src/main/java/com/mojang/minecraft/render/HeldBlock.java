@@ -58,13 +58,13 @@ specifier|public
 name|float
 name|pos
 init|=
-literal|0.0F
+literal|0F
 decl_stmt|;
 specifier|public
 name|float
 name|lastPos
 init|=
-literal|0.0F
+literal|0F
 decl_stmt|;
 specifier|public
 name|int

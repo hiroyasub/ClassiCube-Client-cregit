@@ -1274,7 +1274,7 @@ name|fill
 argument_list|(
 name|vector2
 argument_list|,
-literal|1.0f
+literal|1F
 argument_list|)
 expr_stmt|;
 name|System

@@ -32,13 +32,13 @@ specifier|public
 name|float
 name|speed
 init|=
-literal|1.0F
+literal|1F
 decl_stmt|;
 specifier|public
 name|float
 name|elapsedDelta
 init|=
-literal|0.0F
+literal|0F
 decl_stmt|;
 name|long
 name|lastSysClock
@@ -49,7 +49,7 @@ decl_stmt|;
 name|double
 name|adjustment
 init|=
-literal|1.0D
+literal|1D
 decl_stmt|;
 specifier|public
 name|Timer

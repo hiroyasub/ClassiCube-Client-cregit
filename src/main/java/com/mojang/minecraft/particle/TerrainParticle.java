@@ -203,10 +203,10 @@ literal|16
 operator|+
 name|uo
 operator|/
-literal|4.0F
+literal|4F
 operator|)
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 operator|+
 literal|0.015609375F
@@ -227,10 +227,10 @@ literal|16
 operator|+
 name|vo
 operator|/
-literal|4.0F
+literal|4F
 operator|)
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 operator|+
 literal|0.015609375F

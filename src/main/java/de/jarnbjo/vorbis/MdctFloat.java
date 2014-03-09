@@ -1007,11 +1007,11 @@ operator|*
 name|dtmp4
 operator|)
 decl_stmt|;
-comment|/*                  * float temp1= (xxx[xx] * trig[B+1] - xxx[xx+1] *                  * trig[B]);//*32767.0f; float temp2=-(xxx[xx] * trig[B] +                  * xxx[xx+1] * trig[B+1]);//*32767.0f;                  */
-comment|// if(temp1>32767.0f) temp1=32767.0f;
-comment|// if(temp1<-32768.0f) temp1=-32768.0f;
-comment|// if(temp2>32767.0f) temp2=32767.0f;
-comment|// if(temp2<-32768.0f) temp2=-32768.0f;
+comment|/*                  * float temp1= (xxx[xx] * trig[B+1] - xxx[xx+1] *                  * trig[B]);//*32767F; float temp2=-(xxx[xx] * trig[B] +                  * xxx[xx+1] * trig[B+1]);//*32767F;                  */
+comment|// if(temp1>32767F) temp1=32767F;
+comment|// if(temp1<-32768F) temp1=-32768F;
+comment|// if(temp2>32767F) temp2=32767F;
+comment|// if(temp2<-32768F) temp2=-32768F;
 name|pcm
 index|[
 name|o1
@@ -1706,7 +1706,7 @@ operator|+
 name|wBCE
 operator|)
 operator|*
-literal|16383.0f
+literal|16383F
 expr_stmt|;
 name|x
 index|[
@@ -1723,7 +1723,7 @@ operator|-
 name|wACE
 operator|)
 operator|*
-literal|16383.0f
+literal|16383F
 expr_stmt|;
 name|x
 index|[
@@ -1739,7 +1739,7 @@ operator|-
 name|wACE
 operator|)
 operator|*
-literal|16383.0f
+literal|16383F
 expr_stmt|;
 name|x
 index|[
@@ -1755,7 +1755,7 @@ operator|-
 name|wBCE
 operator|)
 operator|*
-literal|16383.0f
+literal|16383F
 expr_stmt|;
 block|}
 block|}

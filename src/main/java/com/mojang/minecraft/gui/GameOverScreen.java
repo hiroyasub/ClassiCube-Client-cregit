@@ -240,11 +240,11 @@ name|GL11
 operator|.
 name|glScalef
 argument_list|(
-literal|2.0F
+literal|2F
 argument_list|,
-literal|2.0F
+literal|2F
 argument_list|,
-literal|2.0F
+literal|2F
 argument_list|)
 expr_stmt|;
 name|drawCenteredString

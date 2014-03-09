@@ -77,7 +77,7 @@ operator|>>>
 literal|24
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|red
@@ -90,7 +90,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|green
@@ -103,7 +103,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|blue
@@ -114,7 +114,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|ShapeRenderer
 name|renderer
@@ -180,7 +180,7 @@ name|x1
 argument_list|,
 name|y2
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|)
 expr_stmt|;
 name|renderer
@@ -191,7 +191,7 @@ name|x2
 argument_list|,
 name|y2
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|)
 expr_stmt|;
 name|renderer
@@ -202,7 +202,7 @@ name|x2
 argument_list|,
 name|y1
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|)
 expr_stmt|;
 name|renderer
@@ -213,7 +213,7 @@ name|x1
 argument_list|,
 name|y1
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|)
 expr_stmt|;
 name|renderer
@@ -400,7 +400,7 @@ name|glAlphaFunc
 argument_list|(
 literal|516
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|)
 expr_stmt|;
 name|float
@@ -412,7 +412,7 @@ operator|>>>
 literal|24
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|var7
@@ -425,7 +425,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|var8
@@ -438,7 +438,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|var12
@@ -449,7 +449,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|var9
@@ -460,7 +460,7 @@ operator|>>>
 literal|24
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|var10
@@ -473,7 +473,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|var11
@@ -486,7 +486,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|float
 name|var13
@@ -497,7 +497,7 @@ operator|&
 literal|255
 operator|)
 operator|/
-literal|255.0F
+literal|255F
 decl_stmt|;
 name|GL11
 operator|.

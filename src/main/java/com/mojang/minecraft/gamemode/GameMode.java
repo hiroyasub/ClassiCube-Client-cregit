@@ -318,10 +318,10 @@ operator|.
 name|getVolume
 argument_list|()
 operator|+
-literal|1.0F
+literal|1F
 operator|)
 operator|/
-literal|2.0F
+literal|2F
 argument_list|,
 name|block
 operator|.
@@ -390,7 +390,7 @@ specifier|public
 name|float
 name|reachDistance
 init|=
-literal|5.0f
+literal|5F
 decl_stmt|;
 specifier|public
 name|float

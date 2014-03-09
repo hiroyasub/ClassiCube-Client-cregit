@@ -145,7 +145,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 operator|&&
 name|frustum
 index|[
@@ -185,7 +185,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 operator|&&
 name|frustum
 index|[
@@ -225,7 +225,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 operator|&&
 name|frustum
 index|[
@@ -265,7 +265,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 operator|&&
 name|frustum
 index|[
@@ -305,7 +305,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 operator|&&
 name|frustum
 index|[
@@ -345,7 +345,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 operator|&&
 name|frustum
 index|[
@@ -385,7 +385,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 operator|&&
 name|frustum
 index|[
@@ -425,7 +425,7 @@ index|[
 literal|3
 index|]
 operator|<=
-literal|0.0F
+literal|0F
 condition|)
 block|{
 return|return

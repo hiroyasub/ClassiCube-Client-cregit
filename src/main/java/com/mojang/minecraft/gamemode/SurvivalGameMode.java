@@ -538,7 +538,7 @@ name|levelRenderer
 operator|.
 name|cracks
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 block|}
 else|else
@@ -554,7 +554,7 @@ name|hits
 operator|+
 name|time
 operator|-
-literal|1.0F
+literal|1F
 operator|)
 operator|/
 name|hardness
@@ -569,7 +569,7 @@ name|getReachDistance
 parameter_list|()
 block|{
 return|return
-literal|4.0F
+literal|4F
 return|;
 block|}
 annotation|@

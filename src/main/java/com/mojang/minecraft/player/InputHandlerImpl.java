@@ -580,11 +580,11 @@ condition|)
 block|{
 name|xxa
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 name|yya
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 if|if
 condition|(
@@ -692,15 +692,15 @@ else|else
 block|{
 name|move
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 name|strafe
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 name|elevate
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 if|if
 condition|(
@@ -714,7 +714,7 @@ condition|)
 block|{
 name|move
 operator|-=
-literal|1.0F
+literal|1F
 expr_stmt|;
 block|}
 if|if
@@ -729,7 +729,7 @@ condition|)
 block|{
 name|strafe
 operator|-=
-literal|1.0F
+literal|1F
 expr_stmt|;
 block|}
 if|if
@@ -744,7 +744,7 @@ condition|)
 block|{
 name|move
 operator|+=
-literal|1.0F
+literal|1F
 expr_stmt|;
 block|}
 if|if
@@ -759,7 +759,7 @@ condition|)
 block|{
 name|strafe
 operator|+=
-literal|1.0F
+literal|1F
 expr_stmt|;
 block|}
 if|if
@@ -802,7 +802,7 @@ block|}
 block|}
 name|mult
 operator|=
-literal|1.0F
+literal|1F
 expr_stmt|;
 if|if
 condition|(
@@ -816,7 +816,7 @@ condition|)
 block|{
 name|mult
 operator|=
-literal|5.0F
+literal|5F
 expr_stmt|;
 block|}
 if|else if
@@ -831,7 +831,7 @@ condition|)
 block|{
 name|mult
 operator|=
-literal|2.0F
+literal|2F
 expr_stmt|;
 block|}
 name|player

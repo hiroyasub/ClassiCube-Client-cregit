@@ -119,7 +119,7 @@ literal|105
 expr_stmt|;
 name|bobStrength
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 name|ai
 operator|=
