@@ -1241,11 +1241,12 @@ literal|"Done"
 argument_list|)
 argument_list|)
 expr_stmt|;
+comment|// [Allow server textures] requires you to be on a server
 name|buttons
 operator|.
 name|get
 argument_list|(
-literal|0
+literal|2
 argument_list|)
 operator|.
 name|active
@@ -1255,23 +1256,6 @@ operator|.
 name|session
 operator|!=
 literal|null
-expr_stmt|;
-name|buttons
-operator|.
-name|get
-argument_list|(
-literal|4
-argument_list|)
-operator|.
-name|active
-operator|=
-name|minecraft
-operator|.
-name|player
-operator|.
-name|userType
-operator|>=
-literal|100
 expr_stmt|;
 block|}
 annotation|@

@@ -411,6 +411,24 @@ literal|"Done"
 argument_list|)
 argument_list|)
 expr_stmt|;
+comment|// [Show Names] requires "OP"
+name|buttons
+operator|.
+name|get
+argument_list|(
+literal|9
+argument_list|)
+operator|.
+name|active
+operator|=
+name|minecraft
+operator|.
+name|player
+operator|.
+name|userType
+operator|>=
+literal|100
+expr_stmt|;
 block|}
 annotation|@
 name|Override
