@@ -2185,6 +2185,13 @@ name|flippedBuffer
 init|=
 literal|null
 decl_stmt|;
+name|int
+name|stride
+init|=
+name|width
+operator|*
+literal|3
+decl_stmt|;
 if|if
 condition|(
 name|originalBuffer
@@ -2226,7 +2233,7 @@ name|originalBuffer
 argument_list|,
 name|y
 operator|*
-name|width
+name|stride
 argument_list|,
 name|flippedBuffer
 argument_list|,
@@ -2238,11 +2245,9 @@ operator|-
 literal|1
 operator|)
 operator|*
-name|width
+name|stride
 argument_list|,
-name|width
-operator|*
-literal|3
+name|stride
 argument_list|)
 expr_stmt|;
 block|}
