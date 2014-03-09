@@ -216,7 +216,7 @@ operator|.
 name|random
 argument_list|()
 operator|+
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.01F
@@ -417,7 +417,7 @@ argument_list|()
 operator|*
 literal|3.1415927410125732D
 operator|*
-literal|2.0D
+literal|2D
 operator|)
 expr_stmt|;
 name|speed
@@ -761,7 +761,7 @@ argument_list|,
 name|var3
 argument_list|)
 operator|*
-literal|180.0D
+literal|180D
 operator|/
 literal|3.1415927410125732D
 operator|)
@@ -793,7 +793,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|2.0D
+literal|2D
 operator|)
 operator|*
 literal|180

@@ -1065,9 +1065,9 @@ operator|-
 literal|2
 operator|)
 operator|*
-literal|10.0D
+literal|10D
 operator|/
-literal|300.0D
+literal|300D
 argument_list|)
 expr_stmt|;
 name|var26
@@ -1085,9 +1085,9 @@ name|player
 operator|.
 name|airSupply
 operator|*
-literal|10.0D
+literal|10D
 operator|/
-literal|300.0D
+literal|300D
 argument_list|)
 operator|-
 name|var12

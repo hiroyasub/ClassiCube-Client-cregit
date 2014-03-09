@@ -209,9 +209,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|2.0D
+literal|2D
 operator|-
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.4F
@@ -229,9 +229,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|2.0D
+literal|2D
 operator|-
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.4F
@@ -249,9 +249,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|2.0D
+literal|2D
 operator|-
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.4F
@@ -273,7 +273,7 @@ operator|.
 name|random
 argument_list|()
 operator|+
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.15F
@@ -375,7 +375,7 @@ operator|(
 name|int
 operator|)
 operator|(
-literal|4.0D
+literal|4D
 operator|/
 operator|(
 name|Math

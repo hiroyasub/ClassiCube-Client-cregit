@@ -1024,7 +1024,7 @@ operator|*
 name|var10
 argument_list|)
 operator|/
-literal|6.0D
+literal|6D
 operator|+
 operator|-
 literal|4
@@ -1045,9 +1045,9 @@ operator|*
 name|var10
 argument_list|)
 operator|/
-literal|5.0D
+literal|5D
 operator|+
-literal|10.0D
+literal|10D
 operator|+
 operator|-
 literal|4
@@ -1063,9 +1063,9 @@ argument_list|,
 name|var12
 argument_list|)
 operator|/
-literal|8.0D
+literal|8D
 operator|>
-literal|0.0D
+literal|0D
 condition|)
 block|{
 name|var15
@@ -1090,10 +1090,10 @@ argument_list|,
 name|var15
 argument_list|)
 operator|/
-literal|2.0D
+literal|2D
 operator|)
 operator|<
-literal|0.0D
+literal|0D
 condition|)
 block|{
 name|var19
@@ -1255,7 +1255,7 @@ operator|<<
 literal|1
 argument_list|)
 operator|/
-literal|8.0D
+literal|8D
 decl_stmt|;
 name|var12
 operator|=
@@ -1272,7 +1272,7 @@ operator|<<
 literal|1
 argument_list|)
 operator|>
-literal|0.0D
+literal|0D
 condition|?
 literal|1
 else|:
@@ -1282,7 +1282,7 @@ if|if
 condition|(
 name|var21
 operator|>
-literal|2.0D
+literal|2D
 condition|)
 block|{
 name|var23
@@ -1441,7 +1441,7 @@ argument_list|,
 name|var11
 argument_list|)
 operator|/
-literal|24.0D
+literal|24D
 operator|)
 operator|-
 literal|4
@@ -2898,7 +2898,7 @@ argument_list|,
 name|var12
 argument_list|)
 operator|>
-literal|8.0D
+literal|8D
 decl_stmt|;
 name|boolean
 name|var57
@@ -2912,7 +2912,7 @@ argument_list|,
 name|var12
 argument_list|)
 operator|>
-literal|12.0D
+literal|12D
 decl_stmt|;
 name|var27
 operator|=

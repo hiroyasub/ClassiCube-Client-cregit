@@ -54,12 +54,12 @@ operator|*
 operator|(
 name|a
 operator|*
-literal|6.0D
+literal|6D
 operator|-
-literal|15.0D
+literal|15D
 operator|)
 operator|+
-literal|10.0D
+literal|10D
 operator|)
 return|;
 block|}

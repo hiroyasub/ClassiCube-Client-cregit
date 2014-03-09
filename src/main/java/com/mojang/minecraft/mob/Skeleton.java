@@ -82,9 +82,9 @@ name|random
 argument_list|()
 operator|)
 operator|*
-literal|3.0D
+literal|3D
 operator|+
-literal|4.0D
+literal|4D
 operator|)
 decl_stmt|;
 for|for
@@ -268,7 +268,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|45.0D
+literal|45D
 operator|-
 literal|22.5D
 operator|)
@@ -284,9 +284,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|45.0D
+literal|45D
 operator|-
-literal|10.0D
+literal|10D
 operator|)
 argument_list|,
 literal|1F

@@ -277,7 +277,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|360.0D
+literal|360D
 operator|)
 expr_stmt|;
 name|xd

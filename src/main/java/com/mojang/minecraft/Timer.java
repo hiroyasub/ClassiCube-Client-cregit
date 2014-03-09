@@ -49,7 +49,7 @@ decl_stmt|;
 name|double
 name|adjustment
 init|=
-literal|1.0D
+literal|1D
 decl_stmt|;
 specifier|public
 name|Timer

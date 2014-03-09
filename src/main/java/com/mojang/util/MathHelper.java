@@ -60,9 +60,9 @@ name|var0
 operator|*
 literal|3.141592653589793D
 operator|*
-literal|2.0D
+literal|2D
 operator|/
-literal|65536.0D
+literal|65536D
 argument_list|)
 expr_stmt|;
 block|}

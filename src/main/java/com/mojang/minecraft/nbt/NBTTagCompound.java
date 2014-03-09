@@ -965,7 +965,7 @@ argument_list|(
 name|name
 argument_list|)
 condition|?
-literal|0.0D
+literal|0D
 else|:
 operator|(
 operator|(

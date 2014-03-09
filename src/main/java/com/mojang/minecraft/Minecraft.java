@@ -3617,7 +3617,7 @@ name|GL11
 operator|.
 name|glClearDepth
 argument_list|(
-literal|1.0D
+literal|1D
 argument_list|)
 expr_stmt|;
 name|GL11
@@ -4597,7 +4597,7 @@ name|actualNowSeconds
 init|=
 name|actualNow
 operator|/
-literal|1000.0D
+literal|1000D
 decl_stmt|;
 name|double
 name|secondsPassed
@@ -4625,24 +4625,24 @@ if|if
 condition|(
 name|secondsPassed
 operator|<
-literal|0.0D
+literal|0D
 condition|)
 block|{
 name|secondsPassed
 operator|=
-literal|0.0D
+literal|0D
 expr_stmt|;
 block|}
 if|if
 condition|(
 name|secondsPassed
 operator|>
-literal|1.0D
+literal|1D
 condition|)
 block|{
 name|secondsPassed
 operator|=
-literal|1.0D
+literal|1D
 expr_stmt|;
 block|}
 comment|// Figure out how many ticks took place since last frame

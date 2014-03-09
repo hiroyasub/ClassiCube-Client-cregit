@@ -251,7 +251,7 @@ argument_list|()
 operator|*
 literal|3.1415927410125732D
 operator|*
-literal|2.0D
+literal|2D
 operator|)
 decl_stmt|;
 name|xd

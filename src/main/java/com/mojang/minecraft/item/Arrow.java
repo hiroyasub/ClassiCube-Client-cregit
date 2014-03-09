@@ -487,7 +487,7 @@ argument_list|,
 name|zd
 argument_list|)
 operator|*
-literal|180.0D
+literal|180D
 operator|/
 literal|3.1415927410125732D
 operator|)
@@ -509,7 +509,7 @@ argument_list|,
 name|unknown3
 argument_list|)
 operator|*
-literal|180.0D
+literal|180D
 operator|/
 literal|3.1415927410125732D
 operator|)
@@ -1558,7 +1558,7 @@ argument_list|,
 name|zd
 argument_list|)
 operator|*
-literal|180.0D
+literal|180D
 operator|/
 literal|3.1415927410125732D
 operator|)
@@ -1580,7 +1580,7 @@ argument_list|,
 name|unknown6
 argument_list|)
 operator|*
-literal|180.0D
+literal|180D
 operator|/
 literal|3.1415927410125732D
 operator|)

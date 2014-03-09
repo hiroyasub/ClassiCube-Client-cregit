@@ -123,7 +123,7 @@ operator|(
 name|int
 operator|)
 operator|(
-literal|8.0D
+literal|8D
 operator|/
 operator|(
 name|Math

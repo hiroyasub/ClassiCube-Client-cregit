@@ -424,7 +424,7 @@ argument_list|,
 name|var3
 argument_list|)
 operator|*
-literal|180.0D
+literal|180D
 operator|/
 literal|3.1415927410125732D
 operator|)
@@ -450,7 +450,7 @@ argument_list|,
 name|var6
 argument_list|)
 operator|*
-literal|180.0D
+literal|180D
 operator|/
 literal|3.1415927410125732D
 operator|)
