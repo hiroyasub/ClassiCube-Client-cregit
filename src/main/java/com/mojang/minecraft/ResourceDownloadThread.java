@@ -489,6 +489,8 @@ operator|+
 name|fileName
 argument_list|)
 decl_stmt|;
+try|try
+init|(
 name|InputStream
 name|is
 init|=
@@ -496,8 +498,7 @@ name|url
 operator|.
 name|openStream
 argument_list|()
-decl_stmt|;
-try|try
+init|)
 block|{
 name|StreamingUtil
 operator|.
@@ -507,14 +508,6 @@ name|is
 argument_list|,
 name|file
 argument_list|)
-expr_stmt|;
-block|}
-finally|finally
-block|{
-name|is
-operator|.
-name|close
-argument_list|()
 expr_stmt|;
 block|}
 name|GameSettings
