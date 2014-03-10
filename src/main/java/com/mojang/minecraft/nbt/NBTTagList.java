@@ -88,9 +88,7 @@ name|tagList
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|NBTBase
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 comment|/**      * The type byte for the tags in the list - they must all be of the same type.      */
@@ -262,9 +260,7 @@ name|tagList
 operator|=
 operator|new
 name|ArrayList
-argument_list|<
-name|NBTBase
-argument_list|>
+argument_list|<>
 argument_list|()
 expr_stmt|;
 for|for

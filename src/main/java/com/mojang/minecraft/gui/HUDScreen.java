@@ -202,9 +202,7 @@ name|chat
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|ChatLine
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -297,9 +295,7 @@ name|chatsOnScreen
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|ChatScreenData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 name|int
@@ -470,9 +466,7 @@ name|namesToPrint
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|PlayerListNameData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 for|for
@@ -2794,9 +2788,7 @@ name|namesToPrint
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|PlayerListNameData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 for|for

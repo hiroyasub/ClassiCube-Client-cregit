@@ -209,11 +209,7 @@ name|threadTimeMap
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|Long
-argument_list|,
-name|ThreadTime
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -310,9 +306,7 @@ name|values
 operator|=
 operator|new
 name|HashSet
-argument_list|<
-name|ThreadTime
-argument_list|>
+argument_list|<>
 argument_list|(
 name|threadTimeMap
 operator|.
@@ -575,9 +569,7 @@ name|mappedIds
 operator|=
 operator|new
 name|HashSet
-argument_list|<
-name|Long
-argument_list|>
+argument_list|<>
 argument_list|(
 name|threadTimeMap
 operator|.
@@ -638,9 +630,7 @@ name|values
 operator|=
 operator|new
 name|HashSet
-argument_list|<
-name|ThreadTime
-argument_list|>
+argument_list|<>
 argument_list|(
 name|threadTimeMap
 operator|.

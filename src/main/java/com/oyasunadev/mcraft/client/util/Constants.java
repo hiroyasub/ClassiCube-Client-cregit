@@ -137,9 +137,7 @@ name|SERVER_SUPPORTED_EXTENSIONS
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|ExtData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 block|}

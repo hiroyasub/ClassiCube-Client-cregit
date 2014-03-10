@@ -341,9 +341,7 @@ name|links
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|LinkData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 name|Matcher
