@@ -1467,9 +1467,7 @@ name|selectionBoxes
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|SelectionBoxData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -1481,9 +1479,7 @@ name|hotKeys
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|HotKeyData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -1499,9 +1495,7 @@ name|playerListNameData
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|PlayerListNameData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -1513,9 +1507,7 @@ name|disallowedPlacementBlocks
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|Block
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -1527,9 +1519,7 @@ name|DisallowedBreakingBlocks
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|Block
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -13470,9 +13460,7 @@ name|temp
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|ExtData
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 for|for

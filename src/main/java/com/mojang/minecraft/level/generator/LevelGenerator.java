@@ -231,10 +231,7 @@ name|var21
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|int
-index|[]
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 name|byte

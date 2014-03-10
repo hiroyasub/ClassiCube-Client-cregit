@@ -319,9 +319,7 @@ name|listeners
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|LevelRenderer
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -445,9 +443,7 @@ name|tickList
 operator|=
 operator|new
 name|ArrayList
-argument_list|<
-name|NextTickListEntry
-argument_list|>
+argument_list|<>
 argument_list|()
 expr_stmt|;
 name|networkMode
@@ -4081,9 +4077,7 @@ name|var2
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|AABB
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 name|int
@@ -4622,9 +4616,7 @@ name|listeners
 operator|=
 operator|new
 name|ArrayList
-argument_list|<
-name|LevelRenderer
-argument_list|>
+argument_list|<>
 argument_list|()
 expr_stmt|;
 name|blockers
@@ -4674,9 +4666,7 @@ name|tickList
 operator|=
 operator|new
 name|ArrayList
-argument_list|<
-name|NextTickListEntry
-argument_list|>
+argument_list|<>
 argument_list|()
 expr_stmt|;
 if|if

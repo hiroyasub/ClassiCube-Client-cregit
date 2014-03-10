@@ -615,11 +615,7 @@ name|textures
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|String
-argument_list|,
-name|Integer
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -633,11 +629,7 @@ name|textureImages
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|Integer
-argument_list|,
-name|BufferedImage
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -671,9 +663,7 @@ name|animations
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|TextureFX
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -689,9 +679,7 @@ name|textureAtlas
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|BufferedImage
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public

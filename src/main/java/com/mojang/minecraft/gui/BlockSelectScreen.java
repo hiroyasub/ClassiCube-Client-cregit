@@ -873,7 +873,7 @@ block|}
 block|}
 block|}
 name|void
-name|Rotate
+name|rotate
 parameter_list|()
 block|{
 name|lastRotation
@@ -901,7 +901,7 @@ name|void
 name|run
 parameter_list|()
 block|{
-name|Rotate
+name|rotate
 argument_list|()
 expr_stmt|;
 comment|// timer.cancel();

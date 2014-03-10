@@ -167,9 +167,7 @@ name|moveQueue
 init|=
 operator|new
 name|LinkedList
-argument_list|<
-name|PositionUpdate
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private

@@ -216,9 +216,7 @@ name|all
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|Entity
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -230,9 +228,7 @@ name|tmp
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|Entity
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 annotation|@
@@ -378,9 +374,7 @@ index|]
 operator|=
 operator|new
 name|ArrayList
-argument_list|<
-name|Entity
-argument_list|>
+argument_list|<>
 argument_list|()
 expr_stmt|;
 block|}
