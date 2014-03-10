@@ -77,6 +77,18 @@ name|util
 operator|.
 name|logging
 operator|.
+name|ConsoleHandler
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|logging
+operator|.
 name|FileHandler
 import|;
 end_import
@@ -90,6 +102,18 @@ operator|.
 name|logging
 operator|.
 name|Formatter
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|logging
+operator|.
+name|Handler
 import|;
 end_import
 
@@ -211,13 +235,7 @@ argument_list|()
 argument_list|)
 decl_stmt|;
 comment|// Sets up logging to file (%AppData%/.net.classicube.client/client.log)
-specifier|public
-specifier|static
-name|void
-name|init
-parameter_list|()
-throws|throws
-name|IOException
+static|static
 block|{
 name|logger
 operator|.
@@ -228,6 +246,45 @@ operator|.
 name|ALL
 argument_list|)
 expr_stmt|;
+name|CustomFormatter
+name|formatter
+init|=
+operator|new
+name|CustomFormatter
+argument_list|()
+decl_stmt|;
+comment|// Disable the default logger
+name|logger
+operator|.
+name|setUseParentHandlers
+argument_list|(
+literal|false
+argument_list|)
+expr_stmt|;
+comment|// Set up our console logger
+specifier|final
+name|ConsoleHandler
+name|consoleHandler
+init|=
+operator|new
+name|ConsoleHandler
+argument_list|()
+decl_stmt|;
+name|consoleHandler
+operator|.
+name|setFormatter
+argument_list|(
+name|formatter
+argument_list|)
+expr_stmt|;
+name|logger
+operator|.
+name|addHandler
+argument_list|(
+name|consoleHandler
+argument_list|)
+expr_stmt|;
+comment|// Locate our log files
 name|File
 name|directory
 init|=
@@ -291,12 +348,12 @@ name|logOldFile
 argument_list|)
 expr_stmt|;
 block|}
-comment|// Set up log file handler for this session
+comment|// Set up our logfile handler
 try|try
 block|{
 specifier|final
 name|FileHandler
-name|handler
+name|fileHandler
 init|=
 operator|new
 name|FileHandler
@@ -307,20 +364,18 @@ name|getAbsolutePath
 argument_list|()
 argument_list|)
 decl_stmt|;
-name|handler
+name|fileHandler
 operator|.
 name|setFormatter
 argument_list|(
-operator|new
-name|CustomFormatter
-argument_list|()
+name|formatter
 argument_list|)
 expr_stmt|;
 name|logger
 operator|.
 name|addHandler
 argument_list|(
-name|handler
+name|fileHandler
 argument_list|)
 expr_stmt|;
 block|}
