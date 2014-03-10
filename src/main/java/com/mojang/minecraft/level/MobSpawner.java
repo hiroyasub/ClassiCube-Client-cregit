@@ -198,7 +198,7 @@ name|ProgressBarDisplay
 name|var3
 parameter_list|)
 block|{
-comment|// System.out.println(Count);
+comment|// LogUtil.logInfo(Count);
 if|if
 condition|(
 name|HasStopped
@@ -963,7 +963,7 @@ operator|)
 name|var21
 argument_list|)
 expr_stmt|;
-comment|// System.out.println("Added mob");
+comment|// LogUtil.logInfo("Added mob");
 block|}
 block|}
 block|}

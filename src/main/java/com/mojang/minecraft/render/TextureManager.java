@@ -425,7 +425,7 @@ parameter_list|)
 throws|throws
 name|IOException
 block|{
-comment|// System.out.println("---" + src.getWidth() + " - " + src.getHeight() +
+comment|// LogUtil.logInfo("---" + src.getWidth() + " - " + src.getHeight() +
 comment|// " - " + x + " - " + y);
 name|BufferedImage
 name|clipping
@@ -2200,11 +2200,9 @@ operator|.
 name|smoothing
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Using OpenGL 3.0 for mipmap generation."
 argument_list|)
@@ -2236,11 +2234,9 @@ operator|.
 name|smoothing
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Using GL_EXT_framebuffer_object extension for mipmap generation."
 argument_list|)
@@ -2272,11 +2268,9 @@ operator|.
 name|smoothing
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Using OpenGL 1.4 for mipmap generation."
 argument_list|)
@@ -2319,11 +2313,9 @@ operator|.
 name|smoothing
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Using custom system for mipmap generation."
 argument_list|)

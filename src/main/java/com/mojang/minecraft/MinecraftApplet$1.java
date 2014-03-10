@@ -412,11 +412,9 @@ operator|+=
 name|numRead
 expr_stmt|;
 block|}
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 name|localFileName
 operator|+
@@ -429,13 +427,19 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error downloading an applet resource from "
+operator|+
+name|address
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 finally|finally

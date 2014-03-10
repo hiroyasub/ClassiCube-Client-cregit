@@ -1586,31 +1586,25 @@ argument_list|(
 name|error
 argument_list|)
 decl_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
 literal|"########## GL ERROR ##########"
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
 literal|"@ "
 operator|+
 name|context
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
 name|error
 operator|+
@@ -3541,11 +3535,9 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Using LWJGL Version: "
 operator|+
@@ -13346,11 +13338,9 @@ index|[
 literal|1
 index|]
 decl_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Connecting to AppName: "
 operator|+
@@ -13465,11 +13455,9 @@ name|size
 argument_list|()
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Sending client's supported Exts"
 argument_list|)
@@ -13615,11 +13603,9 @@ name|k
 operator|++
 control|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Sending ext: "
 operator|+
@@ -13851,7 +13837,7 @@ operator|.
 name|shortValue
 argument_list|()
 decl_stmt|;
-comment|// System.out.println(ID + " " + Name +
+comment|// LogUtil.logInfo(ID + " " + Name +
 comment|// " " + X1 + " " + Y1
 comment|// + " " + Z1 + " " + X2 + " " + Y2 +
 comment|// " " + Z2);
@@ -15106,11 +15092,9 @@ operator|.
 name|CUSTOM_BLOCK_SUPPORT_LEVEL
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Custom blocks packet recieved"
 argument_list|)
@@ -15255,11 +15239,9 @@ argument_list|(
 name|block
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"DisallowingPlacement block: "
 operator|+
@@ -15287,11 +15269,9 @@ argument_list|(
 name|block
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"AllowingPlacement block: "
 operator|+
@@ -15325,11 +15305,9 @@ argument_list|(
 name|block
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"DisallowingDeletion block: "
 operator|+
@@ -15357,11 +15335,9 @@ argument_list|(
 name|block
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"AllowingDeletion block: "
 operator|+

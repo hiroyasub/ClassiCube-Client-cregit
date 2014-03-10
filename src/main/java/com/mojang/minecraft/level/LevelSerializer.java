@@ -69,6 +69,18 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
 name|Minecraft
 import|;
 end_import
@@ -253,11 +265,9 @@ name|IOException
 throws|,
 name|Exception
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Saving level "
 operator|+

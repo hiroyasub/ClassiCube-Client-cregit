@@ -35,16 +35,6 @@ name|java
 operator|.
 name|io
 operator|.
-name|FileNotFoundException
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|io
-operator|.
 name|IOException
 import|;
 end_import
@@ -515,11 +505,9 @@ name|StatusString
 operator|=
 literal|"Downloading music and sounds..."
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Downloading music and sounds..."
 argument_list|)
@@ -591,17 +579,13 @@ name|fileName
 operator|+
 literal|"..."
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Downloading https://s3.amazonaws.com/MinecraftResources/"
 operator|+
 name|fileName
-operator|+
-literal|"..."
 argument_list|)
 expr_stmt|;
 name|URL
@@ -653,17 +637,13 @@ name|fileName
 operator|+
 literal|"!"
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Downloaded https://s3.amazonaws.com/MinecraftResources/"
 operator|+
 name|fileName
-operator|+
-literal|"!"
 argument_list|)
 expr_stmt|;
 block|}
@@ -680,13 +660,11 @@ name|StatusString
 operator|=
 literal|"Downloaded music and sounds!"
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
-literal|"Downloaded music and sounds!"
+literal|"Done downloading music and sounds!"
 argument_list|)
 expr_stmt|;
 name|GameSettings
@@ -716,7 +694,7 @@ name|LogUtil
 operator|.
 name|logError
 argument_list|(
-literal|"Error downloading resources"
+literal|"Error downloading music and sounds!"
 argument_list|,
 name|ex
 argument_list|)
@@ -1189,13 +1167,13 @@ name|void
 name|unpack
 parameter_list|(
 name|String
-name|filename1
+name|zipFileName
 parameter_list|)
 block|{
 name|String
 name|filename
 init|=
-name|filename1
+name|zipFileName
 decl_stmt|;
 name|File
 name|srcFile
@@ -1312,17 +1290,17 @@ name|isDirectory
 argument_list|()
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Extracting file: "
 operator|+
 name|destinationPath
 argument_list|)
 expr_stmt|;
+try|try
+init|(
 name|InputStream
 name|is
 init|=
@@ -1332,8 +1310,7 @@ name|getInputStream
 argument_list|(
 name|entry
 argument_list|)
-decl_stmt|;
-try|try
+init|)
 block|{
 name|StreamingUtil
 operator|.
@@ -1345,32 +1322,24 @@ name|destinationPath
 argument_list|)
 expr_stmt|;
 block|}
-finally|finally
-block|{
-name|is
-operator|.
-name|close
-argument_list|()
-expr_stmt|;
-block|}
 block|}
 block|}
 block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e1
+name|ex
 parameter_list|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
-literal|"Error opening zip file"
+literal|"Error opening zip file "
 operator|+
-name|e1
+name|zipFileName
+argument_list|,
+name|ex
 argument_list|)
 expr_stmt|;
 block|}
@@ -1395,18 +1364,18 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e2
+name|ex2
 parameter_list|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
-literal|"Error while closing zip file"
+literal|"Error closing zip file "
 operator|+
-name|e2
+name|zipFileName
+argument_list|,
+name|ex2
 argument_list|)
 expr_stmt|;
 block|}
@@ -1434,27 +1403,16 @@ name|isDirectory
 argument_list|()
 condition|)
 block|{
-if|if
-condition|(
-operator|!
 name|dest
 operator|.
-name|exists
-argument_list|()
-condition|)
-block|{
-name|dest
-operator|.
-name|mkdir
+name|mkdirs
 argument_list|()
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
-literal|"Directory copied from "
+literal|"Copying directory from "
 operator|+
 name|src
 operator|+
@@ -1463,22 +1421,15 @@ operator|+
 name|dest
 argument_list|)
 expr_stmt|;
-block|}
-name|String
-name|files
-index|[]
-init|=
-name|src
-operator|.
-name|list
-argument_list|()
-decl_stmt|;
 for|for
 control|(
 name|String
 name|file
 range|:
-name|files
+name|src
+operator|.
+name|list
+argument_list|()
 control|)
 block|{
 name|File
@@ -1514,6 +1465,8 @@ block|}
 block|}
 else|else
 block|{
+try|try
+init|(
 name|InputStream
 name|in
 init|=
@@ -1522,8 +1475,7 @@ name|FileInputStream
 argument_list|(
 name|src
 argument_list|)
-decl_stmt|;
-try|try
+init|)
 block|{
 name|StreamingUtil
 operator|.
@@ -1535,19 +1487,9 @@ name|dest
 argument_list|)
 expr_stmt|;
 block|}
-finally|finally
-block|{
-name|in
+name|LogUtil
 operator|.
-name|close
-argument_list|()
-expr_stmt|;
-block|}
-name|System
-operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"File copied from "
 operator|+
