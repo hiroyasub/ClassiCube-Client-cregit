@@ -255,7 +255,7 @@ specifier|public
 name|float
 name|xRotO
 decl_stmt|;
-comment|/** 	 * The bounding box of this Entity. 	 */
+comment|/**      * The bounding box of this Entity.      */
 specifier|public
 name|AABB
 name|boundingBox
@@ -456,7 +456,7 @@ name|var1
 parameter_list|)
 block|{
 block|}
-comment|/** 	 * Calculates the distance from this entity to the specified entity. 	 *  	 * @param otherEntity 	 *            Entity to calculate the distance to. 	 * @return The distance between the two entities. 	 */
+comment|/**      * Calculates the distance from this entity to the specified entity.      *       * @param otherEntity      *            Entity to calculate the distance to.      * @return The distance between the two entities.      */
 specifier|public
 name|float
 name|distanceTo
@@ -482,7 +482,7 @@ name|z
 argument_list|)
 return|;
 block|}
-comment|/** 	 * Calculates the distance from this entity to the specified position. 	 *  	 * @param posX 	 *            X-Coordinate of the position to calculate the distance to. 	 * @param posY 	 *            Y-Coordinate of the position to calculate the distance to. 	 * @param posZ 	 *            Z-Coordinate of the position to calculate the distance to. 	 * @return The distance between the entity and the position. 	 */
+comment|/**      * Calculates the distance from this entity to the specified position.      *       * @param posX      *            X-Coordinate of the position to calculate the distance to.      * @param posY      *            Y-Coordinate of the position to calculate the distance to.      * @param posZ      *            Z-Coordinate of the position to calculate the distance to.      * @return The distance between the entity and the position.      */
 specifier|public
 name|float
 name|distanceTo
@@ -544,7 +544,7 @@ operator|)
 argument_list|)
 return|;
 block|}
-comment|/** 	 * Calculates the distance from this entity to the specified entity squared. 	 * This is basically calculating distance without using the expensive 	 * Math.sqrt function. Should only be used for relative distance. 	 *  	 * @param otherEntity 	 *            Entity to calculate the distance to. 	 * @return The distance between the two entities squared. 	 */
+comment|/**      * Calculates the distance from this entity to the specified entity squared.      * This is basically calculating distance without using the expensive      * Math.sqrt function. Should only be used for relative distance.      *       * @param otherEntity      *            Entity to calculate the distance to.      * @return The distance between the two entities squared.      */
 specifier|public
 name|float
 name|distanceToSqr
@@ -600,7 +600,7 @@ name|dz
 operator|)
 return|;
 block|}
-comment|/** 	 * Gets the brightness of this entity 	 *  	 * @return Brightness of the entity. 	 */
+comment|/**      * Gets the brightness of this entity      *       * @return Brightness of the entity.      */
 specifier|public
 name|float
 name|getBrightness
@@ -651,7 +651,7 @@ name|posZ
 argument_list|)
 return|;
 block|}
-comment|/** 	 * Gets the brightness color of this entity. 	 *  	 * @return ColorCache containing brightness color information. 	 */
+comment|/**      * Gets the brightness color of this entity.      *       * @return ColorCache containing brightness color information.      */
 specifier|public
 name|ColorCache
 name|getBrightnessColor
@@ -702,7 +702,7 @@ name|posZ
 argument_list|)
 return|;
 block|}
-comment|/** 	 * Gets the texture ID of this entity. 	 *  	 * @return Entity's Texture ID. 	 */
+comment|/**      * Gets the texture ID of this entity.      *       * @return Entity's Texture ID.      */
 specifier|public
 name|int
 name|getTexture

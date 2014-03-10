@@ -240,7 +240,7 @@ operator|.
 name|currentTimeMillis
 argument_list|()
 expr_stmt|;
-comment|/* 			 * sock = channel.socket(); sock.setTcpNoDelay(true); 			 * sock.setTrafficClass(soTrafficClass); sock.setKeepAlive(false); 			 * sock.setReuseAddress(false); sock.setSoTimeout(100); 			 * sock.getInetAddress().toString(); 			 */
+comment|/*              * sock = channel.socket(); sock.setTcpNoDelay(true);              * sock.setTrafficClass(soTrafficClass); sock.setKeepAlive(false);              * sock.setReuseAddress(false); sock.setSoTimeout(100);              * sock.getInetAddress().toString();              */
 name|connected
 operator|=
 literal|true
