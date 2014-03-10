@@ -142,7 +142,7 @@ import|;
 end_import
 
 begin_comment
-comment|// Global logging class (to make life easier)
+comment|/**  * Global logging class (to make life easier)  *   * @author fragmer  *   */
 end_comment
 
 begin_class
@@ -222,7 +222,7 @@ name|getName
 argument_list|()
 argument_list|)
 decl_stmt|;
-comment|// Sets up logging to file (%AppData%/.net.classicube.client/client.log)
+comment|/** 	 * Sets up logging to file (%AppData%/.net.classicube.client/client.log) 	 */
 static|static
 block|{
 name|logger

@@ -219,7 +219,7 @@ decl_stmt|;
 specifier|public
 specifier|static
 name|boolean
-name|Done
+name|done
 init|=
 literal|false
 decl_stmt|;
@@ -562,7 +562,7 @@ name|PercentString
 operator|=
 literal|""
 expr_stmt|;
-name|Done
+name|done
 operator|=
 literal|true
 expr_stmt|;

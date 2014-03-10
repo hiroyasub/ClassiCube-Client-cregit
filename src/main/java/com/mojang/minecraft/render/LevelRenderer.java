@@ -576,7 +576,8 @@ name|listsCount
 argument_list|)
 expr_stmt|;
 block|}
-comment|// So that worlds that are not multiples of 16 do not have invisible chunks.
+comment|// So that worlds that are not multiples of 16 do not have invisible
+comment|// chunks.
 name|int
 name|paddedWidth
 init|=
@@ -1673,7 +1674,8 @@ argument_list|,
 literal|0F
 argument_list|)
 expr_stmt|;
-comment|// Seems to be rendered twice? Not sure why, possibly used for animated textures?
+comment|// Seems to be rendered twice? Not sure why, possibly used
+comment|// for animated textures?
 name|renderer
 operator|.
 name|vertexUV

@@ -937,7 +937,7 @@ operator|)
 name|var21
 operator|)
 operator|.
-name|bb
+name|boundingBox
 argument_list|)
 operator|&&
 operator|!

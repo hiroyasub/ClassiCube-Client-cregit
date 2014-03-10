@@ -28,7 +28,7 @@ argument_list|(
 literal|1
 argument_list|)
 block|,
-comment|/*      * Not very sure about these values.      */
+comment|/* 	 * Not very sure about these values. 	 */
 name|Front
 argument_list|(
 literal|2

@@ -77,6 +77,10 @@ name|FontRenderer
 import|;
 end_import
 
+begin_comment
+comment|/**  * Class used to store data for clicking URLs in the chat sceen  *   * @author Jon  *   */
+end_comment
+
 begin_class
 specifier|public
 class|class
@@ -102,29 +106,34 @@ specifier|public
 name|LinkData
 parameter_list|(
 name|String
-name|s
+name|textualLink
 parameter_list|,
 name|int
-name|a
+name|x0
 parameter_list|,
 name|int
-name|b
+name|x1
 parameter_list|)
 block|{
 name|link
 operator|=
-name|s
+name|textualLink
 expr_stmt|;
+name|this
+operator|.
 name|x0
 operator|=
-name|a
+name|x0
 expr_stmt|;
+name|this
+operator|.
 name|x1
 operator|=
-name|b
+name|x1
 expr_stmt|;
 block|}
 block|}
+comment|/** 	 * The idea is to work with urls http, fpt, sftp, gopher, telnet and file 	 * (tee hee) 	 */
 specifier|private
 specifier|final
 name|String
@@ -205,12 +214,6 @@ name|fontRenderer
 parameter_list|,
 name|ChatLine
 name|chatLine
-parameter_list|,
-name|int
-name|x
-parameter_list|,
-name|int
-name|y
 parameter_list|)
 block|{
 name|message
@@ -313,12 +316,15 @@ name|URISyntaxException
 name|uriE
 parameter_list|)
 block|{
+comment|// Not sure if we need to do anything here
+comment|// I'm sure no error needs to be recorded
 block|}
 block|}
 return|return
 literal|null
 return|;
 block|}
+comment|/** 	 * Strips any URLs from the the line where the user clicked 	 *  	 * @param text 	 *            The text in question 	 * @param fr 	 *            The font renderer instance 	 * @return ArrayList of LinkData 	 */
 specifier|private
 name|ArrayList
 argument_list|<

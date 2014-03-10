@@ -167,15 +167,15 @@ operator|!
 operator|(
 name|HackState
 operator|.
-name|Fly
+name|fly
 operator|||
 name|HackState
 operator|.
-name|Speed
+name|speed
 operator|||
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 operator|)
 condition|)
 block|{
@@ -664,7 +664,7 @@ index|]
 expr_stmt|;
 name|Minecraft
 operator|.
-name|PlayerIsRunning
+name|playerIsRunning
 operator|=
 name|keyStates
 index|[

@@ -105,7 +105,7 @@ operator|*
 literal|1024
 decl_stmt|;
 comment|// 64 KB
-comment|/**      * Reads given stream to the end, and writes its contents to a file      * @param inStream The input buffer stream.      * @param file The file to write to.      * @throws IOException      */
+comment|/** 	 * Reads given stream to the end, and writes its contents to a file 	 *  	 * @param inStream 	 *            The input buffer stream. 	 * @param file 	 *            The file to write to. 	 * @throws IOException 	 */
 specifier|public
 specifier|static
 name|void

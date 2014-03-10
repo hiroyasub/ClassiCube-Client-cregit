@@ -1983,7 +1983,7 @@ name|var24
 init|=
 name|var22
 operator|.
-name|bb
+name|boundingBox
 decl_stmt|;
 if|if
 condition|(

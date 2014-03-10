@@ -222,12 +222,12 @@ name|id
 argument_list|)
 expr_stmt|;
 block|}
-comment|//if (finished || loaded&& var1.id == 5) {
-comment|//frozen = true;
-comment|//LevelDialog var2;
-comment|//(var2 = new LevelDialog(this)).setDaemon(true);
-comment|//SwingUtilities.invokeLater(var2);
-comment|//}
+comment|// if (finished || loaded&& var1.id == 5) {
+comment|// frozen = true;
+comment|// LevelDialog var2;
+comment|// (var2 = new LevelDialog(this)).setDaemon(true);
+comment|// SwingUtilities.invokeLater(var2);
+comment|// }
 if|if
 condition|(
 name|finished
@@ -360,7 +360,8 @@ operator|=
 literal|false
 expr_stmt|;
 block|}
-comment|//buttons.add(new Button(5, width / 2 - 100, height / 6 + 120 + 12, "Load file..."));
+comment|// buttons.add(new Button(5, width / 2 - 100, height / 6 + 120 + 12,
+comment|// "Load file..."));
 name|buttons
 operator|.
 name|add

@@ -19,6 +19,10 @@ name|Serializable
 import|;
 end_import
 
+begin_comment
+comment|/**  * Holds information about a keybinding  *   */
+end_comment
+
 begin_class
 specifier|public
 class|class

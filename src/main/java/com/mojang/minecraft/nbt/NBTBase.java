@@ -88,7 +88,7 @@ specifier|private
 name|String
 name|name
 decl_stmt|;
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes      */
+comment|/** 	 * Write the actual data contents of the tag, implemented in NBT extension 	 * classes 	 */
 specifier|abstract
 name|void
 name|write
@@ -99,7 +99,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes      */
+comment|/** 	 * Read the actual data contents of the tag, implemented in NBT extension 	 * classes 	 */
 specifier|abstract
 name|void
 name|load
@@ -110,7 +110,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/**      * Gets the type byte for the tag.      */
+comment|/** 	 * Gets the type byte for the tag. 	 */
 specifier|public
 specifier|abstract
 name|byte
@@ -148,7 +148,7 @@ name|name
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Sets the name for this tag and returns this for convenience.      */
+comment|/** 	 * Sets the name for this tag and returns this for convenience. 	 */
 specifier|public
 name|NBTBase
 name|setName
@@ -184,7 +184,7 @@ return|return
 name|this
 return|;
 block|}
-comment|/**      * Gets the name corresponding to the tag, or an empty string if none set.      */
+comment|/** 	 * Gets the name corresponding to the tag, or an empty string if none set. 	 */
 specifier|public
 name|String
 name|getName
@@ -204,7 +204,7 @@ operator|.
 name|name
 return|;
 block|}
-comment|/**      * Reads and returns a tag from the given DataInput, or the End tag if no tag could be read.      */
+comment|/** 	 * Reads and returns a tag from the given DataInput, or the End tag if no 	 * tag could be read. 	 */
 specifier|public
 specifier|static
 name|NBTBase
@@ -269,7 +269,7 @@ name|nbtbase
 return|;
 block|}
 block|}
-comment|/**      * Writes the specified tag to the given DataOutput, writing the type byte, the UTF string key and then calling the      * tag to write its data.      */
+comment|/** 	 * Writes the specified tag to the given DataOutput, writing the type byte, 	 * the UTF string key and then calling the tag to write its data. 	 */
 specifier|public
 specifier|static
 name|void
@@ -323,7 +323,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Creates and returns a new tag of the specified type, or null if invalid.      */
+comment|/** 	 * Creates and returns a new tag of the specified type, or null if invalid. 	 */
 specifier|public
 specifier|static
 name|NBTBase
@@ -465,7 +465,7 @@ literal|null
 return|;
 block|}
 block|}
-comment|/**      * Returns the string name of a tag with the specified type, or 'UNKNOWN' if invalid.      */
+comment|/** 	 * Returns the string name of a tag with the specified type, or 'UNKNOWN' if 	 * invalid. 	 */
 specifier|public
 specifier|static
 name|String
@@ -558,7 +558,7 @@ literal|"UNKNOWN"
 return|;
 block|}
 block|}
-comment|/**      * Creates a clone of the tag.      */
+comment|/** 	 * Creates a clone of the tag. 	 */
 specifier|public
 specifier|abstract
 name|NBTBase

@@ -9,6 +9,10 @@ name|minecraft
 package|;
 end_package
 
+begin_comment
+comment|/**  * A custom implementation of AABB designed to stop the graphical glitches in  * SelectionBoxes  *   * @author Jon  *   */
+end_comment
+
 begin_class
 specifier|public
 class|class

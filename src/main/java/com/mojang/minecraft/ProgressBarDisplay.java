@@ -717,11 +717,6 @@ operator|=
 name|minecraft
 expr_stmt|;
 block|}
-annotation|@
-name|SuppressWarnings
-argument_list|(
-literal|"deprecation"
-argument_list|)
 specifier|public
 name|boolean
 name|passServerCommand
@@ -1509,7 +1504,7 @@ condition|)
 block|{
 name|HackState
 operator|.
-name|Fly
+name|fly
 operator|=
 literal|true
 expr_stmt|;
@@ -1526,7 +1521,7 @@ condition|)
 block|{
 name|HackState
 operator|.
-name|Fly
+name|fly
 operator|=
 literal|false
 expr_stmt|;
@@ -1543,7 +1538,7 @@ condition|)
 block|{
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 operator|=
 literal|true
 expr_stmt|;
@@ -1560,7 +1555,7 @@ condition|)
 block|{
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 operator|=
 literal|false
 expr_stmt|;
@@ -1577,7 +1572,7 @@ condition|)
 block|{
 name|HackState
 operator|.
-name|Speed
+name|speed
 operator|=
 literal|true
 expr_stmt|;
@@ -1594,7 +1589,7 @@ condition|)
 block|{
 name|HackState
 operator|.
-name|Speed
+name|speed
 operator|=
 literal|false
 expr_stmt|;
@@ -1611,7 +1606,7 @@ condition|)
 block|{
 name|HackState
 operator|.
-name|Respawn
+name|respawn
 operator|=
 literal|true
 expr_stmt|;
@@ -1628,7 +1623,7 @@ condition|)
 block|{
 name|HackState
 operator|.
-name|Respawn
+name|respawn
 operator|=
 literal|false
 expr_stmt|;

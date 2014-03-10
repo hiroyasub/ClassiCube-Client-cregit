@@ -272,7 +272,7 @@ name|ProgressBarDisplay
 operator|.
 name|title
 operator|=
-literal|"SinglePlayer"
+literal|"Singleplayer"
 expr_stmt|;
 name|minecraft
 operator|.
@@ -1181,14 +1181,6 @@ name|ProgressBarDisplay
 operator|.
 name|title
 decl_stmt|;
-name|String
-name|t
-init|=
-name|titlePrint
-operator|.
-name|toLowerCase
-argument_list|()
-decl_stmt|;
 if|if
 condition|(
 name|minecraft
@@ -1200,7 +1192,7 @@ condition|)
 block|{
 name|titlePrint
 operator|=
-literal|"SinglePlayer"
+literal|"Singleplayer"
 expr_stmt|;
 block|}
 name|drawFadingBox

@@ -154,22 +154,6 @@ import|;
 end_import
 
 begin_import
-import|import static
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|mob
-operator|.
-name|Mob
-operator|.
-name|modelCache
-import|;
-end_import
-
-begin_import
 import|import
 name|com
 operator|.
@@ -488,15 +472,15 @@ operator|!
 operator|(
 name|HackState
 operator|.
-name|Fly
+name|fly
 operator|||
 name|HackState
 operator|.
-name|Speed
+name|speed
 operator|||
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 operator|)
 operator|&&
 name|input
@@ -645,7 +629,7 @@ name|findEntities
 argument_list|(
 name|this
 argument_list|,
-name|bb
+name|boundingBox
 operator|.
 name|grow
 argument_list|(
@@ -893,7 +877,7 @@ if|if
 condition|(
 name|HackState
 operator|.
-name|Fly
+name|fly
 condition|)
 block|{
 name|flyTrig
@@ -913,7 +897,7 @@ if|if
 condition|(
 name|HackState
 operator|.
-name|Speed
+name|speed
 condition|)
 block|{
 name|speedTrig
@@ -933,7 +917,7 @@ if|if
 condition|(
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 condition|)
 block|{
 name|noclipTrig

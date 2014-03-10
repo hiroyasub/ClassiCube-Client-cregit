@@ -448,7 +448,7 @@ condition|(
 operator|!
 name|HackState
 operator|.
-name|Fly
+name|fly
 condition|)
 block|{
 name|flyingDown
@@ -471,7 +471,7 @@ condition|(
 operator|!
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 condition|)
 block|{
 name|mob
@@ -486,7 +486,7 @@ condition|(
 operator|!
 name|HackState
 operator|.
-name|Speed
+name|speed
 condition|)
 block|{
 name|running
@@ -1004,7 +1004,7 @@ name|var2
 argument_list|,
 name|var2
 operator|.
-name|bb
+name|boundingBox
 operator|.
 name|grow
 argument_list|(

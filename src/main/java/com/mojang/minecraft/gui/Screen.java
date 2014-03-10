@@ -46,7 +46,7 @@ specifier|public
 class|class
 name|Screen
 block|{
-comment|/**      * Draws a box to the screen      *       * @param x1      *            X coordinate of the first point of the box.      * @param y1      *            Y coordinate of the first point of the box.      * @param x2      *            X coordinate of the second point of the box.      * @param y2      *            Y coordinate of the second point of the box.      * @param colorRGB      *            The color of the box. See {@Color}      */
+comment|/** 	 * Draws a box to the screen 	 *  	 * @param x1 	 *            X coordinate of the first point of the box. 	 * @param y1 	 *            Y coordinate of the first point of the box. 	 * @param x2 	 *            X coordinate of the second point of the box. 	 * @param y2 	 *            Y coordinate of the second point of the box. 	 * @param colorRGB 	 *            The color of the box. See {@Color} 	 */
 specifier|protected
 specifier|static
 name|void
@@ -240,7 +240,7 @@ name|GL_BLEND
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Draws a box to the screen      *       * @param x1      *            X coordinate of the first point of the box.      * @param y1      *            Y coordinate of the first point of the box.      * @param x2      *            X coordinate of the second point of the box.      * @param y2      *            Y coordinate of the second point of the box.      * @param colorRGB      *            The color of the box. See {@Color}      */
+comment|/** 	 * Draws a box to the screen 	 *  	 * @param x1 	 *            X coordinate of the first point of the box. 	 * @param y1 	 *            Y coordinate of the first point of the box. 	 * @param x2 	 *            X coordinate of the second point of the box. 	 * @param y2 	 *            Y coordinate of the second point of the box. 	 * @param colorRGB 	 *            The color of the box. See {@Color} 	 */
 specifier|protected
 specifier|static
 name|void
@@ -288,7 +288,7 @@ name|colorRGB
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Draws a string that is centered.      *       * @param renderer      *            {@FontRenderer} used to render the used font.      * @param text      *            Text to draw and center      * @param x      *            X-Coordinate of position to draw.      * @param y      *            Y-Coordinate of position to draw.      * @param colorRGB      *            The color of the box. See {@Color}      */
+comment|/** 	 * Draws a string that is centered. 	 *  	 * @param renderer 	 *            {@FontRenderer} used to render the used font. 	 * @param text 	 *            Text to draw and center 	 * @param x 	 *            X-Coordinate of position to draw. 	 * @param y 	 *            Y-Coordinate of position to draw. 	 * @param colorRGB 	 *            The color of the box. See {@Color} 	 */
 specifier|public
 specifier|static
 name|void
@@ -310,7 +310,8 @@ name|int
 name|colorRGB
 parameter_list|)
 block|{
-comment|// Measure the length of the text with the current font and then divide it by two
+comment|// Measure the length of the text with the current font and then divide
+comment|// it by two
 name|drawString
 argument_list|(
 name|renderer
@@ -334,7 +335,7 @@ name|colorRGB
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Draws a given string      *       * @param renderer      *            {@FontRenderer} used to render the used font.      * @param text      *            Text to draw       * @param x      *            X-Coordinate of position to draw.      * @param y      *            Y-Coordinate of position to draw.      * @param colorRGB      *            The color of the box. See {@Color}      */
+comment|/** 	 * Draws a given string 	 *  	 * @param renderer 	 *            {@FontRenderer} used to render the used font. 	 * @param text 	 *            Text to draw 	 * @param x 	 *            X-Coordinate of position to draw. 	 * @param y 	 *            Y-Coordinate of position to draw. 	 * @param colorRGB 	 *            The color of the box. See {@Color} 	 */
 specifier|public
 specifier|static
 name|void

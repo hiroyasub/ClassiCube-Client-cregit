@@ -1182,7 +1182,7 @@ name|MB_MIDDLE
 init|=
 literal|2
 decl_stmt|;
-comment|/**      * True if the application is waiting for something.      */
+comment|/** 	 * True if the application is waiting for something. 	 */
 specifier|public
 specifier|volatile
 name|boolean
@@ -1190,34 +1190,34 @@ name|isWaiting
 init|=
 literal|false
 decl_stmt|;
-comment|/**      * Is the game running?      */
+comment|/** 	 * Is the game running? 	 */
 specifier|public
 specifier|volatile
 name|boolean
 name|isRunning
 decl_stmt|;
-comment|/**      * True if the player is running, false if otherwise.      */
+comment|/** 	 * True if the player is running, false if otherwise. 	 */
 specifier|public
 specifier|static
 name|boolean
-name|PlayerIsRunning
+name|playerIsRunning
 init|=
 literal|false
 decl_stmt|;
-comment|/**      * The Minecraft directory.      */
+comment|/** 	 * The Minecraft directory. 	 */
 specifier|public
 specifier|static
 name|File
 name|mcDir
 decl_stmt|;
-comment|/**      * True if we are in full screen mode, false if otherwise.      */
+comment|/** 	 * True if we are in full screen mode, false if otherwise. 	 */
 specifier|public
 name|boolean
 name|isFullScreen
 init|=
 literal|false
 decl_stmt|;
-comment|/**      * This timer determines how much time will pass between block modifications. It is used to      * prevent really fast block spamming.      */
+comment|/** 	 * This timer determines how much time will pass between block 	 * modifications. It is used to prevent really fast block spamming. 	 */
 specifier|private
 name|Timer
 name|timer
@@ -1249,7 +1249,7 @@ specifier|private
 name|Cursor
 name|cursor
 decl_stmt|;
-comment|/**      * Are we playing single player mode?      */
+comment|/** 	 * Are we playing single player mode? 	 */
 specifier|public
 specifier|static
 name|boolean
@@ -1257,14 +1257,14 @@ name|isSinglePlayer
 init|=
 literal|false
 decl_stmt|;
-comment|/**      * The url of the skin server where the skins are located.      */
+comment|/** 	 * The url of the skin server where the skins are located. 	 */
 specifier|public
 name|String
 name|skinServer
 init|=
 literal|"http://www.classicube.net/static/skins/"
 decl_stmt|;
-comment|/**      * The current Gamemode.      */
+comment|/** 	 * The current Gamemode. 	 */
 specifier|public
 name|GameMode
 name|gamemode
@@ -1275,78 +1275,78 @@ argument_list|(
 name|this
 argument_list|)
 decl_stmt|;
-comment|/**      * The width of the playing window.      */
+comment|/** 	 * The width of the playing window. 	 */
 specifier|public
 name|int
 name|width
 decl_stmt|;
-comment|/**      * The height of the playing window.      */
+comment|/** 	 * The height of the playing window. 	 */
 specifier|public
 name|int
 name|height
 decl_stmt|;
-comment|/**      * The level we are playing in.      */
+comment|/** 	 * The level we are playing in. 	 */
 specifier|public
 name|Level
 name|level
 decl_stmt|;
-comment|/**      * The renderer of the level we are in.      */
+comment|/** 	 * The renderer of the level we are in. 	 */
 specifier|public
 name|LevelRenderer
 name|levelRenderer
 decl_stmt|;
-comment|/**      * The main player (Us) who is playing.      */
+comment|/** 	 * The main player (Us) who is playing. 	 */
 specifier|public
 name|Player
 name|player
 decl_stmt|;
-comment|/**      * Manages the particle system.      */
+comment|/** 	 * Manages the particle system. 	 */
 specifier|public
 name|ParticleManager
 name|particleManager
 decl_stmt|;
-comment|/**      * SessionData for when playing online.      */
+comment|/** 	 * SessionData for when playing online. 	 */
 specifier|public
 name|SessionData
 name|session
 init|=
 literal|null
 decl_stmt|;
-comment|/**      * The host we are connected to.      */
+comment|/** 	 * The host we are connected to. 	 */
 specifier|public
 name|String
 name|host
 decl_stmt|;
-comment|/**      * The main screen canvas.      */
+comment|/** 	 * The main screen canvas. 	 */
 specifier|public
 name|Canvas
 name|canvas
 decl_stmt|;
-comment|/**      * True if the level has been loaded.      */
+comment|/** 	 * True if the level has been loaded. 	 */
 specifier|public
 name|boolean
 name|isLevelLoaded
 init|=
 literal|false
 decl_stmt|;
-comment|/**      * Manages the textures of the game.      */
+comment|/** 	 * Manages the textures of the game. 	 */
 specifier|public
 name|TextureManager
 name|textureManager
 decl_stmt|;
-comment|/**      * Renders the font of the game.      */
+comment|/** 	 * Renders the font of the game. 	 */
 specifier|public
 name|FontRenderer
 name|fontRenderer
 decl_stmt|;
-comment|/**      * The current screen      */
+comment|/** 	 * The current screen 	 */
 specifier|public
 name|GuiScreen
 name|currentScreen
 init|=
 literal|null
 decl_stmt|;
-comment|/**      * Used to display progress when needed.      */
+comment|/** 	 * Used to display progress when needed. 	 */
 specifier|public
 name|ProgressBarDisplay
 name|progressBar
@@ -1357,7 +1357,7 @@ argument_list|(
 name|this
 argument_list|)
 decl_stmt|;
-comment|/**      * This is used to render whatever we need to render.      */
+comment|/** 	 * This is used to render whatever we need to render. 	 */
 specifier|public
 name|Renderer
 name|renderer
@@ -1368,92 +1368,92 @@ argument_list|(
 name|this
 argument_list|)
 decl_stmt|;
-comment|/**      * Manages the sound.      */
+comment|/** 	 * Manages the sound. 	 */
 specifier|public
 name|SoundManager
 name|sound
 decl_stmt|;
-comment|/**      * The name of the current level.      */
+comment|/** 	 * The name of the current level. 	 */
 specifier|public
 name|String
 name|levelName
 decl_stmt|;
-comment|/**      * The ID of the current level.      */
+comment|/** 	 * The ID of the current level. 	 */
 specifier|public
 name|int
 name|levelId
 decl_stmt|;
-comment|/**      * Can do automated tasks.      */
+comment|/** 	 * Can do automated tasks. 	 */
 specifier|public
 name|Robot
 name|robot
 decl_stmt|;
-comment|/**      * The game's HUD.      */
+comment|/** 	 * The game's HUD. 	 */
 specifier|public
 name|HUDScreen
 name|hud
 decl_stmt|;
-comment|/**      * True if the player is online.      */
+comment|/** 	 * True if the player is online. 	 */
 specifier|public
 name|boolean
 name|isOnline
 decl_stmt|;
-comment|/**      * Manages networking.      */
+comment|/** 	 * Manages networking. 	 */
 specifier|public
 name|NetworkManager
 name|networkManager
 decl_stmt|;
-comment|/**      * Plays sounds.      */
+comment|/** 	 * Plays sounds. 	 */
 specifier|public
 name|SoundPlayer
 name|soundPlayer
 decl_stmt|;
-comment|/**      * The position of the selected object we are looking at.      */
+comment|/** 	 * The position of the selected object we are looking at. 	 */
 specifier|public
 name|MovingObjectPosition
 name|selected
 decl_stmt|;
-comment|/**      * The settings of the game.      */
+comment|/** 	 * The settings of the game. 	 */
 specifier|public
 name|GameSettings
 name|settings
 decl_stmt|;
-comment|/**      * True if the application is an applet.      */
+comment|/** 	 * True if the application is an applet. 	 */
 specifier|public
 name|boolean
 name|isApplet
 decl_stmt|;
-comment|/**      * Address of the server we are playing in.      */
+comment|/** 	 * Address of the server we are playing in. 	 */
 specifier|public
 name|String
 name|server
 decl_stmt|;
-comment|/**      * Port of the server we are playing in.      */
+comment|/** 	 * Port of the server we are playing in. 	 */
 specifier|public
 name|int
 name|port
 decl_stmt|;
-comment|/**      * Set this to whatever you want to show as debug information in the HUD. It will occupy one      * line. Right now it shows FPS and Chunk Updates.      */
+comment|/** 	 * Set this to whatever you want to show as debug information in the HUD. It 	 * will occupy one line. Right now it shows FPS and Chunk Updates. 	 */
 specifier|public
 name|String
 name|debug
 decl_stmt|;
-comment|/**      * True if the application has the mouse's focus.      */
+comment|/** 	 * True if the application has the mouse's focus. 	 */
 specifier|public
 name|boolean
 name|hasMouse
 decl_stmt|;
-comment|/**      * True if it is raining.      */
+comment|/** 	 * True if it is raining. 	 */
 specifier|public
 name|boolean
 name|isRaining
 decl_stmt|;
-comment|/**      * True if it snowing.      */
+comment|/** 	 * True if it snowing. 	 */
 specifier|public
 name|boolean
 name|isSnowing
 decl_stmt|;
-comment|/**      * The applet of this game.      */
+comment|/** 	 * The applet of this game. 	 */
 specifier|public
 name|MinecraftApplet
 name|applet
@@ -1911,7 +1911,7 @@ name|isLoadingMap
 init|=
 literal|false
 decl_stmt|;
-comment|/**      * Creates a new Minecraft instance.      *      * @param canvas Canvas to use for drawing.      * @param applet Applet of this instance      * @param width Width of the window      * @param height Height of the window      * @param fullscreen True if game should be in fullscreen      * @param isApplet True if the game is running as an applet      */
+comment|/** 	 * Creates a new Minecraft instance. 	 *  	 * @param canvas 	 *            Canvas to use for drawing. 	 * @param applet 	 *            Applet of this instance 	 * @param width 	 *            Width of the window 	 * @param height 	 *            Height of the window 	 * @param fullscreen 	 *            True if game should be in fullscreen 	 * @param isApplet 	 *            True if the game is running as an applet 	 */
 specifier|public
 name|Minecraft
 parameter_list|(
@@ -2209,7 +2209,8 @@ operator|.
 name|length
 index|]
 expr_stmt|;
-comment|// There are 3 bytes per cell
+comment|// There are 3 bytes
+comment|// per cell
 for|for
 control|(
 name|int
@@ -2256,7 +2257,8 @@ return|return
 name|flippedBuffer
 return|;
 block|}
-comment|// Scale of 0 is 128x128 level. Incrementing the scale doubles the level size.
+comment|// Scale of 0 is 128x128 level. Incrementing the scale doubles the level
+comment|// size.
 specifier|public
 specifier|final
 name|void
@@ -2751,7 +2753,8 @@ operator|!=
 name|MB_LEFT
 condition|)
 block|{
-comment|// When right-clicking on side of a block, figure out where to place the new block.
+comment|// When right-clicking on side of a block, figure out where to
+comment|// place the new block.
 if|if
 condition|(
 name|selected
@@ -3014,7 +3017,7 @@ operator|!
 operator|(
 name|player
 operator|.
-name|bb
+name|boundingBox
 operator|.
 name|intersects
 argument_list|(
@@ -3047,7 +3050,8 @@ name|blockID
 argument_list|)
 condition|)
 block|{
-comment|// Ignore if gameMode does not allow placing this block type (survival)
+comment|// Ignore if gameMode does not allow placing this block type
+comment|// (survival)
 return|return;
 block|}
 if|if
@@ -3115,13 +3119,15 @@ operator|.
 name|SNOW
 condition|)
 block|{
-comment|// Ignore placing snow-on-snow. Snow blocks don't stack, they just merge.
+comment|// Ignore placing snow-on-snow. Snow blocks don't stack,
+comment|// they just merge.
 return|return;
 block|}
 else|else
 block|{
 comment|// When clicking on top face of a snow block,
-comment|// replace it instead of stacking another block on top of it
+comment|// replace it instead of stacking another block on top
+comment|// of it
 name|y
 operator|-=
 literal|1
@@ -3875,7 +3881,8 @@ literal|null
 condition|)
 block|{
 comment|// We're in multiplayer, connecting to a server!
-comment|// Create a tiny temporary empty level while we wait for map to be sent
+comment|// Create a tiny temporary empty level while we wait for map to be
+comment|// sent
 name|Level
 name|defaultLevel
 init|=
@@ -4541,7 +4548,8 @@ argument_list|()
 operator|/
 literal|1000000L
 decl_stmt|;
-comment|// JRE's internal counter
+comment|// JRE's internal
+comment|// counter
 name|long
 name|clockTimeSinceLastFrame
 init|=
@@ -5428,7 +5436,7 @@ name|player
 argument_list|,
 name|player
 operator|.
-name|bb
+name|boundingBox
 operator|.
 name|expand
 argument_list|(
@@ -5495,7 +5503,7 @@ name|var78
 init|=
 name|var88
 operator|.
-name|bb
+name|boundingBox
 operator|.
 name|grow
 argument_list|(
@@ -9022,7 +9030,7 @@ argument_list|(
 name|i
 argument_list|)
 operator|.
-name|Bounds
+name|bounds
 decl_stmt|;
 name|ColorCache
 name|color
@@ -9034,7 +9042,7 @@ argument_list|(
 name|i
 argument_list|)
 operator|.
-name|Color
+name|color
 decl_stmt|;
 name|GL11
 operator|.
@@ -13937,7 +13945,7 @@ argument_list|(
 name|q
 argument_list|)
 operator|.
-name|ID
+name|id
 operator|==
 name|ID
 condition|)
@@ -14845,7 +14853,8 @@ name|NameId
 condition|)
 block|{
 comment|// --
-comment|// Already exists, update the entry.
+comment|// Already exists, update the
+comment|// entry.
 name|playerIndex
 operator|=
 name|playerListNameData
@@ -18388,7 +18397,8 @@ block|}
 block|}
 block|}
 comment|// Note sure if needed:
-comment|// This only triggers if currentScreen is set while handling mouse input in-game (?)
+comment|// This only triggers if currentScreen is set while handling
+comment|// mouse input in-game (?)
 if|if
 condition|(
 name|currentScreen
@@ -18493,7 +18503,7 @@ if|if
 condition|(
 name|HackState
 operator|.
-name|Respawn
+name|respawn
 condition|)
 block|{
 if|if
@@ -18666,7 +18676,7 @@ if|if
 condition|(
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 condition|)
 block|{
 operator|++
@@ -18771,11 +18781,11 @@ if|if
 condition|(
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 operator|||
 name|HackState
 operator|.
-name|Noclip
+name|noclip
 operator|&&
 name|player
 operator|.
@@ -18820,7 +18830,7 @@ if|if
 condition|(
 name|HackState
 operator|.
-name|Fly
+name|fly
 condition|)
 block|{
 name|player
@@ -19272,7 +19282,7 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|/**      * Toggles FullScreen on or off.      */
+comment|/** 	 * Toggles FullScreen on or off. 	 */
 specifier|public
 name|void
 name|toggleFullscreen

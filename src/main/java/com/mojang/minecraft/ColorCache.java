@@ -29,6 +29,10 @@ name|Serializable
 import|;
 end_import
 
+begin_comment
+comment|/**  * Custom class used to store data compatible with GL11.Color3f Each color (R G  * B A) is fixed to become a maximum of 1f  *   * @author Jon  *   */
+end_comment
+
 begin_class
 specifier|public
 class|class

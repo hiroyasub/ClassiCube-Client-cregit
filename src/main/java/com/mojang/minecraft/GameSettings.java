@@ -273,7 +273,8 @@ specifier|public
 name|int
 name|settingCount
 decl_stmt|;
-comment|//==== BINDINGS ===============================================================================
+comment|// ==== BINDINGS
+comment|// ===============================================================================
 specifier|public
 name|KeyBinding
 name|forwardKey
@@ -283,7 +284,9 @@ name|KeyBinding
 argument_list|(
 literal|"Forward"
 argument_list|,
-literal|17
+name|Keyboard
+operator|.
+name|KEY_W
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -295,7 +298,9 @@ name|KeyBinding
 argument_list|(
 literal|"Left"
 argument_list|,
-literal|30
+name|Keyboard
+operator|.
+name|KEY_A
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -307,7 +312,9 @@ name|KeyBinding
 argument_list|(
 literal|"Back"
 argument_list|,
-literal|31
+name|Keyboard
+operator|.
+name|KEY_S
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -319,7 +326,9 @@ name|KeyBinding
 argument_list|(
 literal|"Right"
 argument_list|,
-literal|32
+name|Keyboard
+operator|.
+name|KEY_D
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -331,7 +340,9 @@ name|KeyBinding
 argument_list|(
 literal|"Jump"
 argument_list|,
-literal|57
+name|Keyboard
+operator|.
+name|KEY_SPACE
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -343,7 +354,9 @@ name|KeyBinding
 argument_list|(
 literal|"Block List"
 argument_list|,
-literal|48
+name|Keyboard
+operator|.
+name|KEY_B
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -355,7 +368,9 @@ name|KeyBinding
 argument_list|(
 literal|"Chat"
 argument_list|,
-literal|20
+name|Keyboard
+operator|.
+name|KEY_T
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -367,7 +382,9 @@ name|KeyBinding
 argument_list|(
 literal|"Toggle fog"
 argument_list|,
-literal|33
+name|Keyboard
+operator|.
+name|KEY_F
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -379,7 +396,9 @@ name|KeyBinding
 argument_list|(
 literal|"Save location"
 argument_list|,
-literal|28
+name|Keyboard
+operator|.
+name|KEY_RETURN
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -391,7 +410,9 @@ name|KeyBinding
 argument_list|(
 literal|"Load location"
 argument_list|,
-literal|19
+name|Keyboard
+operator|.
+name|KEY_R
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -403,7 +424,9 @@ name|KeyBinding
 argument_list|(
 literal|"Run"
 argument_list|,
-literal|42
+name|Keyboard
+operator|.
+name|KEY_LSHIFT
 argument_list|)
 decl_stmt|;
 specifier|public
@@ -472,7 +495,8 @@ name|KeyBinding
 index|[]
 name|bindingsmore
 decl_stmt|;
-comment|//==== SETTINGS ===============================================================================
+comment|// ==== SETTINGS
+comment|// ===============================================================================
 specifier|public
 name|int
 name|HackType
@@ -517,7 +541,8 @@ specifier|public
 name|int
 name|viewDistance
 decl_stmt|;
-comment|// 0 = off, higher values mean powers-of-2 (e.g. 1=>2x, 2=>4x, 3=>8x, 4=>16x)
+comment|// 0 = off, higher values mean powers-of-2 (e.g. 1=>2x, 2=>4x, 3=>8x,
+comment|// 4=>16x)
 specifier|public
 name|int
 name|anisotropy
@@ -1023,6 +1048,11 @@ argument_list|(
 name|rawSettings
 argument_list|)
 expr_stmt|;
+name|reader
+operator|.
+name|close
+argument_list|()
+expr_stmt|;
 block|}
 block|}
 block|}
@@ -1509,6 +1539,11 @@ name|key
 argument_list|)
 expr_stmt|;
 block|}
+name|writer
+operator|.
+name|close
+argument_list|()
+expr_stmt|;
 block|}
 block|}
 catch|catch
@@ -1728,7 +1763,6 @@ operator|.
 name|clear
 argument_list|()
 expr_stmt|;
-comment|// minecraft.levelRenderer.refresh(); // (?)
 break|break;
 case|case
 name|ANISOTROPIC

@@ -3516,7 +3516,7 @@ name|z2
 argument_list|)
 return|;
 block|}
-comment|/**      * Gets the texture ID of a block depending on the side you want to use.      * @param texture Side of the block to render.      * @return ID of the texture side requested.      */
+comment|/** 	 * Gets the texture ID of a block depending on the side you want to use. 	 *  	 * @param texture 	 *            Side of the block to render. 	 * @return ID of the texture side requested. 	 */
 specifier|public
 name|int
 name|getTextureId
@@ -3529,7 +3529,7 @@ return|return
 name|textureId
 return|;
 block|}
-comment|/**      * Gets the texture ID of a block depending on the side you want to use.      * @param side Side of the block to render.      * @return ID of the texture side requested.      */
+comment|/** 	 * Gets the texture ID of a block depending on the side you want to use. 	 *  	 * @param side 	 *            Side of the block to render. 	 * @return ID of the texture side requested. 	 */
 specifier|public
 name|int
 name|getTextureId
@@ -4577,7 +4577,7 @@ expr_stmt|;
 block|}
 comment|// TODO past here.
 comment|// TODO.
-comment|/**      * Renders a side of this block.      * @param renderer Shape renderer that will render this.      * @param var2      * @param var3      * @param var4      * @param side Side of the block to render. See @{TextureSide}      */
+comment|/** 	 * Renders a side of this block. 	 *  	 * @param renderer 	 *            Shape renderer that will render this. 	 * @param var2 	 * @param var3 	 * @param var4 	 * @param side 	 *            Side of the block to render. See @{TextureSide} 	 */
 specifier|public
 name|void
 name|renderSide
@@ -4617,7 +4617,8 @@ literal|16
 operator|/
 literal|16F
 decl_stmt|;
-comment|// Which place in the grid of the texture file are we in?
+comment|// Which place in the grid of the
+comment|// texture file are we in?
 name|float
 name|var8
 init|=

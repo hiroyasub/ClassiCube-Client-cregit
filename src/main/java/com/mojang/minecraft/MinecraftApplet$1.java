@@ -567,7 +567,7 @@ condition|(
 operator|!
 name|ResourceDownloadThread
 operator|.
-name|Done
+name|done
 condition|)
 block|{
 name|g

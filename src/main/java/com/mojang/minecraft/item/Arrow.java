@@ -1352,7 +1352,7 @@ block|{
 name|AABB
 name|unknown5
 init|=
-name|bb
+name|boundingBox
 operator|.
 name|expand
 argument_list|(
@@ -1471,7 +1471,7 @@ operator|!
 name|collision
 condition|)
 block|{
-name|bb
+name|boundingBox
 operator|.
 name|move
 argument_list|(

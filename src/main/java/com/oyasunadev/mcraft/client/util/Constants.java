@@ -42,7 +42,7 @@ specifier|public
 class|class
 name|Constants
 block|{
-comment|/**      * Just a reference to the MCraft version if needed.      */
+comment|/** 	 * Just a reference to the MCraft version if needed. 	 */
 specifier|public
 specifier|static
 specifier|final
@@ -51,7 +51,7 @@ name|MCRAFT_VERSION
 init|=
 literal|"1.0"
 decl_stmt|;
-comment|/**      * Just a reference to the Minecraft version if needed.      */
+comment|/** 	 * Just a reference to the Minecraft version if needed. 	 */
 specifier|public
 specifier|static
 specifier|final
@@ -60,7 +60,7 @@ name|MINECRAFT_VERSION
 init|=
 literal|"0.30"
 decl_stmt|;
-comment|/**      * ClassiCube Version.      */
+comment|/** 	 * ClassiCube Version. 	 */
 specifier|public
 specifier|static
 specifier|final
@@ -69,7 +69,7 @@ name|CLASSICUBE_VERSION
 init|=
 literal|"0.12"
 decl_stmt|;
-comment|/**      * The Minecraft Classic protocol version. Default is 0x07.      */
+comment|/** 	 * The Minecraft Classic protocol version. Default is 0x07. 	 */
 specifier|public
 specifier|static
 specifier|final
@@ -78,7 +78,7 @@ name|PROTOCOL_VERSION
 init|=
 literal|0x07
 decl_stmt|;
-comment|/**      * The client type sent to the server to identify what client is being used.      * Default is 0x00.      */
+comment|/** 	 * The client type sent to the server to identify what client is being used. 	 * Default is 0x00. 	 */
 specifier|public
 specifier|static
 specifier|final

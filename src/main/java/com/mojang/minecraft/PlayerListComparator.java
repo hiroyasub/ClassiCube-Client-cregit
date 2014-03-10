@@ -42,7 +42,6 @@ name|PlayerListNameData
 name|o2
 parameter_list|)
 block|{
-comment|// TODO Auto-generated method stub
 return|return
 name|o1
 operator|.

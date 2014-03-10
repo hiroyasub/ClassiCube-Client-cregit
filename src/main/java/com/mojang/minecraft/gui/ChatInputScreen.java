@@ -615,7 +615,7 @@ name|x1
 init|=
 literal|2
 decl_stmt|;
-comment|/* Add the beginning position of the box          * + the length of '> _'          * + the length of the trimmed message          * + the x position of the '>  _' string.          */
+comment|/* 		 * Add the beginning position of the box + the length of '> _' + the 		 * length of the trimmed message + the x position of the '> _' string. 		 */
 name|int
 name|x2
 init|=
@@ -663,7 +663,8 @@ operator|.
 name|ChatRGB
 argument_list|)
 expr_stmt|;
-comment|//drawBox(2, height - 14, width - 2, height - 2, ChatInputScreenExtension.ChatRGB);
+comment|// drawBox(2, height - 14, width - 2, height - 2,
+comment|// ChatInputScreenExtension.ChatRGB);
 name|drawString
 argument_list|(
 name|fontRenderer
