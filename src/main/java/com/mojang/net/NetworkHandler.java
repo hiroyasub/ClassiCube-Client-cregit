@@ -11,6 +11,18 @@ end_package
 
 begin_import
 import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|net
@@ -228,7 +240,7 @@ operator|.
 name|currentTimeMillis
 argument_list|()
 expr_stmt|;
-comment|/*sock = channel.socket();             sock.setTcpNoDelay(true);             sock.setTrafficClass(soTrafficClass);             sock.setKeepAlive(false);             sock.setReuseAddress(false);             sock.setSoTimeout(100);             sock.getInetAddress().toString();*/
+comment|/*sock = channel.socket();              sock.setTcpNoDelay(true);              sock.setTrafficClass(soTrafficClass);              sock.setKeepAlive(false);              sock.setReuseAddress(false);              sock.setSoTimeout(100);              sock.getInetAddress().toString();*/
 name|connected
 operator|=
 literal|true
@@ -247,13 +259,23 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Error initializing network connection to "
+operator|+
+name|ip
+operator|+
+literal|":"
+operator|+
+name|port
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 name|mc
 operator|.

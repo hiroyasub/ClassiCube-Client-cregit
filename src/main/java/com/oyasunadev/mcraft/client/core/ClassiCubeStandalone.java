@@ -277,6 +277,18 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
 name|Minecraft
 import|;
 end_import
@@ -401,13 +413,17 @@ block|}
 catch|catch
 parameter_list|(
 name|MalformedURLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error getting applet code base."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 return|return
@@ -435,13 +451,17 @@ block|}
 catch|catch
 parameter_list|(
 name|MalformedURLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error getting applet document base."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 return|return
@@ -684,13 +704,17 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|exception
+name|ex
 parameter_list|)
 block|{
-name|exception
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error downloading an applet resource."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 finally|finally
@@ -777,14 +801,17 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
-comment|// TODO Auto-generated catch block
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error setting applet background image."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -1034,14 +1061,17 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
-comment|// TODO Auto-generated catch block
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error setting applet background image #2."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -1283,13 +1313,17 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Interrupted while waiting for Minecraft to shut down."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 name|minecraft
 operator|.
@@ -1630,13 +1664,17 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Interrupted while running Minecraft from applet."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -1671,13 +1709,18 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+comment|// TODO: figure out wtf we're doing here
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Something happened."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 if|if

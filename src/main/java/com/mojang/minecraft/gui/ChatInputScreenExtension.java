@@ -167,6 +167,18 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
 name|net
 operator|.
 name|NetworkManager
@@ -904,7 +916,7 @@ operator|)
 argument_list|)
 expr_stmt|;
 block|}
-if|else  if
+if|else if
 condition|(
 name|str1
 operator|.
@@ -978,7 +990,7 @@ literal|"&eTell us what you want as a command!"
 argument_list|)
 expr_stmt|;
 block|}
-if|else  if
+if|else if
 condition|(
 name|str1
 operator|.
@@ -1410,7 +1422,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/*      * if (paramInt == Keyboard.KEY_TAB) { String namePart = this.inputLine;      * if (namePart == null || namePart.length() == 0) return; List<String>      * potentials = new ArrayList<String>(); for (int index = 0; index<      * this.minecraft.networkManager.players.size(); index++) { if      * (this.minecraft      * .networkManager.players.get(index).name.toLowerCase().contains      * (namePart .toLowerCase())) {      * potentials.add(this.minecraft.networkManager      * .players.get(index).name); } } if (potentials.size() == 0) return; if      * (potentials.size() == 1) { this.inputLine = potentials.get(0); } else      * { try { this.minecraft.hud.addChat(joinToString((String[])      * potentials.toArray())); } catch (Exception e) { e.printStackTrace();      * } } }      */
+comment|/*          * if (paramInt == Keyboard.KEY_TAB) { String namePart = this.inputLine;          * if (namePart == null || namePart.length() == 0) return; List<String>          * potentials = new ArrayList<String>(); for (int index = 0; index<          * this.minecraft.networkManager.players.size(); index++) { if          * (this.minecraft          * .networkManager.players.get(index).name.toLowerCase().contains          * (namePart .toLowerCase())) {          * potentials.add(this.minecraft.networkManager          * .players.get(index).name); } } if (potentials.size() == 0) return; if          * (potentials.size() == 1) { this.inputLine = potentials.get(0); } else          * { try { this.minecraft.hud.addChat(joinToString((String[])          * potentials.toArray())); } catch (Exception e) { e.printStackTrace();          * } } }          */
 if|if
 condition|(
 name|paramInt
@@ -1873,13 +1885,19 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error opening a chat link: "
+operator|+
+name|uri
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}

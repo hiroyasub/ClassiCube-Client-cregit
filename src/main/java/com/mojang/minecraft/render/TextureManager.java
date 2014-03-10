@@ -287,6 +287,18 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
 name|Minecraft
 import|;
 end_import
@@ -935,9 +947,7 @@ name|atlases
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|BufferedImage
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 comment|// 256 x 1
@@ -1050,14 +1060,17 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
-comment|// TODO Auto-generated catch block
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Error extracting texture from an atlas."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -1652,13 +1665,17 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e1
+name|ex
 parameter_list|)
 block|{
-name|e1
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error loading default texture atlas."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}

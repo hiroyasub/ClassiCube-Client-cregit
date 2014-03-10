@@ -13,6 +13,18 @@ end_package
 
 begin_import
 import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|io
@@ -475,28 +487,19 @@ block|}
 block|}
 catch|catch
 parameter_list|(
-name|FileNotFoundException
-name|e
-parameter_list|)
-block|{
-comment|// TODO Auto-generated catch block
-name|e
-operator|.
-name|printStackTrace
-argument_list|()
-expr_stmt|;
-block|}
-catch|catch
-parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
 comment|// TODO Auto-generated catch block
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error loading level from file."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 name|minecraft
@@ -614,13 +617,17 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|var3
+name|ex
 parameter_list|)
 block|{
-name|var3
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error waiting to render LoadLevelScreen."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -690,13 +697,17 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|var2
+name|ex
 parameter_list|)
 block|{
-name|var2
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error waiting to run LoadLevelScreen."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -744,13 +755,17 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|var3
+name|ex
 parameter_list|)
 block|{
-name|var3
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error while running LoadLevelScreen."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 name|status
 operator|=
