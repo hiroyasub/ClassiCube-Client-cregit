@@ -108,10 +108,7 @@ name|Override
 specifier|public
 name|float
 name|getBrightness
-parameter_list|(
-name|float
-name|var1
-parameter_list|)
+parameter_list|()
 block|{
 return|return
 literal|80

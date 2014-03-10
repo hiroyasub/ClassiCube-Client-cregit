@@ -1151,7 +1151,7 @@ name|i
 operator|++
 index|]
 operator|=
-literal|1.0f
+literal|1F
 control|)
 empty_stmt|;
 for|for

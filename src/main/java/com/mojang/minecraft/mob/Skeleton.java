@@ -82,9 +82,9 @@ name|random
 argument_list|()
 operator|)
 operator|*
-literal|3.0D
+literal|3D
 operator|+
-literal|4.0D
+literal|4D
 operator|)
 decl_stmt|;
 for|for
@@ -144,7 +144,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|360.0F
+literal|360F
 argument_list|,
 operator|-
 operator|(
@@ -157,7 +157,7 @@ name|random
 argument_list|()
 operator|)
 operator|*
-literal|60.0F
+literal|60F
 argument_list|,
 literal|0.4F
 argument_list|)
@@ -257,7 +257,7 @@ name|z
 argument_list|,
 name|yRot
 operator|+
-literal|180.0F
+literal|180F
 operator|+
 operator|(
 name|float
@@ -268,7 +268,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|45.0D
+literal|45D
 operator|-
 literal|22.5D
 operator|)
@@ -284,12 +284,12 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|45.0D
+literal|45D
 operator|-
-literal|10.0D
+literal|10D
 operator|)
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|)
 argument_list|)
 expr_stmt|;

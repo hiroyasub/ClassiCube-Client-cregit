@@ -200,7 +200,7 @@ operator|)
 operator|(
 name|var1
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 expr_stmt|;
 name|ySlot
@@ -211,7 +211,7 @@ operator|)
 operator|(
 name|var2
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 expr_stmt|;
 name|zSlot
@@ -222,7 +222,7 @@ operator|)
 operator|(
 name|var3
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 expr_stmt|;
 if|if

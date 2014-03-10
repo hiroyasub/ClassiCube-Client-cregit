@@ -65,6 +65,18 @@ name|GameSettings
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
+import|;
+end_import
+
 begin_comment
 comment|// TODO.
 end_comment
@@ -96,9 +108,7 @@ name|audioQueue
 init|=
 operator|new
 name|ArrayList
-argument_list|<
-name|Audio
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -250,13 +260,17 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Error waiting to play a sound"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 name|Arrays

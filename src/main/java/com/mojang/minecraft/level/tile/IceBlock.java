@@ -268,9 +268,13 @@ name|GL11
 operator|.
 name|glBlendFunc
 argument_list|(
-literal|770
+name|GL11
+operator|.
+name|GL_SRC_ALPHA
 argument_list|,
-literal|771
+name|GL11
+operator|.
+name|GL_ONE_MINUS_SRC_ALPHA
 argument_list|)
 expr_stmt|;
 for|for
@@ -288,7 +292,7 @@ operator|++
 name|face
 control|)
 block|{
-comment|/* 			 * if (face == 0) { shapeRenderer.useNormal(0.0F, 1.0F, 0.0F); } 			 *  			 * if (face == 1) { shapeRenderer.useNormal(0.0F, -1.0F, 0.0F); } 			 *  			 * if (face == 2) { shapeRenderer.useNormal(0.0F, 0.0F, 1.0F); } 			 *  			 * if (face == 3) { shapeRenderer.useNormal(0.0F, 0.0F, -1.0F); } 			 *  			 * if (face == 4) { shapeRenderer.useNormal(1.0F, 0.0F, 0.0F); } 			 *  			 * if (face == 5) { shapeRenderer.useNormal(-1.0F, 0.0F, 0.0F); } 			 */
+comment|/*              * if (face == 0) { shapeRenderer.useNormal(0F, 1F, 0F); }              *              * if (face == 1) { shapeRenderer.useNormal(0F, -1F, 0F); }              *              * if (face == 2) { shapeRenderer.useNormal(0F, 0F, 1F); }              *              * if (face == 3) { shapeRenderer.useNormal(0F, 0F, -1F); }              *              * if (face == 4) { shapeRenderer.useNormal(1F, 0F, 0F); }              *              * if (face == 5) { shapeRenderer.useNormal(-1F, 0F, 0F); }              */
 name|renderInside
 argument_list|(
 name|shapeRenderer

@@ -13,6 +13,18 @@ end_package
 
 begin_import
 import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|nio
@@ -263,11 +275,9 @@ operator|/
 name|size_x
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Anti aliasing reset to "
 operator|+
@@ -298,11 +308,9 @@ operator|/
 name|size_y
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Anti aliasing reset to "
 operator|+
@@ -535,7 +543,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -595,7 +605,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -755,7 +767,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -915,7 +929,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -1214,11 +1230,9 @@ operator|.
 name|GL_ARB_framebuffer_object
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Swapping to FBO EXT"
 argument_list|)
@@ -1261,7 +1275,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -1421,7 +1437,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -1581,7 +1599,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -1879,11 +1899,9 @@ operator|<
 literal|3
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Swapping to FBO ARB"
 argument_list|)
@@ -1926,7 +1944,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -2086,7 +2106,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -2246,7 +2268,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 name|texture_index
 operator|.
@@ -2576,7 +2600,9 @@ name|GL11
 operator|.
 name|glBindTexture
 argument_list|(
-literal|3553
+name|GL11
+operator|.
+name|GL_TEXTURE_2D
 argument_list|,
 literal|0
 argument_list|)
@@ -2635,11 +2661,9 @@ operator|/
 name|size_x
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Anti aliasing reset to "
 operator|+
@@ -2670,11 +2694,9 @@ operator|/
 name|size_y
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Anti aliasing reset to "
 operator|+

@@ -20,7 +20,7 @@ specifier|public
 name|float
 name|volume
 init|=
-literal|1.0F
+literal|1F
 decl_stmt|;
 specifier|public
 name|boolean

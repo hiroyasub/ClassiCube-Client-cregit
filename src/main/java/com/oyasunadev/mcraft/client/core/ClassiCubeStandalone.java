@@ -277,6 +277,18 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
 name|Minecraft
 import|;
 end_import
@@ -330,21 +342,21 @@ specifier|public
 class|class
 name|ClassiCubeStandalone
 block|{
-comment|/** 	 * A class representing the Minecraft Classic game. 	 */
+comment|/**      * A class representing the Minecraft Classic game.      */
 specifier|public
 class|class
 name|MinecraftFrame
 extends|extends
 name|JFrame
 block|{
-comment|/** 		 * Override the MinecraftApplet class because we need to fake the 		 * Document Base and Code Base. 		 */
+comment|/**          * Override the MinecraftApplet class because we need to fake the          * Document Base and Code Base.          */
 specifier|public
 class|class
 name|MCraftApplet
 extends|extends
 name|MinecraftApplet
 block|{
-comment|/** 	     *  	     */
+comment|/**          *           */
 specifier|private
 specifier|static
 specifier|final
@@ -353,7 +365,7 @@ name|serialVersionUID
 init|=
 literal|1L
 decl_stmt|;
-comment|/** 			 * Use our own parameters map. 			 */
+comment|/**              * Use our own parameters map.              */
 specifier|private
 name|Map
 argument_list|<
@@ -363,7 +375,7 @@ name|String
 argument_list|>
 name|parameters
 decl_stmt|;
-comment|/** 			 * Default constructor. 			 */
+comment|/**              * Default constructor.              */
 specifier|public
 name|MCraftApplet
 parameter_list|()
@@ -372,15 +384,11 @@ name|parameters
 operator|=
 operator|new
 name|HashMap
-argument_list|<
-name|String
-argument_list|,
-name|String
-argument_list|>
+argument_list|<>
 argument_list|()
 expr_stmt|;
 block|}
-comment|/** 			 * Fake the Code Base. 			 *  			 * @return new URL("http://minecraft.net:80/") 			 */
+comment|/**              * Fake the Code Base.              *               * @return new URL("http://minecraft.net:80/")              */
 annotation|@
 name|Override
 specifier|public
@@ -401,20 +409,24 @@ block|}
 catch|catch
 parameter_list|(
 name|MalformedURLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error getting applet code base."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 return|return
 literal|null
 return|;
 block|}
-comment|/** 			 * Fake the Document Base. 			 *  			 * @return new URL("http://minecraft.net:80/play.jsp") 			 */
+comment|/**              * Fake the Document Base.              *               * @return new URL("http://minecraft.net:80/play.jsp")              */
 annotation|@
 name|Override
 specifier|public
@@ -435,20 +447,24 @@ block|}
 catch|catch
 parameter_list|(
 name|MalformedURLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error getting applet document base."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 return|return
 literal|null
 return|;
 block|}
-comment|/** 			 * Return our own parameters variable. 			 *  			 * @param name 			 * @return 			 */
+comment|/**              * Return our own parameters variable.              *               * @param name              * @return              */
 annotation|@
 name|Override
 specifier|public
@@ -469,7 +485,7 @@ argument_list|)
 return|;
 block|}
 block|}
-comment|/** 		 * A canvas for the Minecraft thread. 		 */
+comment|/**          * A canvas for the Minecraft thread.          */
 specifier|public
 class|class
 name|MinecraftCanvas
@@ -492,23 +508,23 @@ name|serialVersionUID
 init|=
 literal|1L
 decl_stmt|;
-comment|/** 			 * The Minecraft variable. 			 */
+comment|/**              * The Minecraft variable.              */
 specifier|private
 name|Minecraft
 name|minecraft
 decl_stmt|;
-comment|/** 			 * The Minecraft thread. 			 */
+comment|/**              * The Minecraft thread.              */
 specifier|private
 name|Thread
 name|thread
 decl_stmt|;
-comment|/** 			 * Default constructor. 			 */
+comment|/**              * Default constructor.              */
 specifier|public
 name|MinecraftCanvas
 parameter_list|()
 block|{
 block|}
-comment|/** 			 * Start the thread. 			 */
+comment|/**              * Start the thread.              */
 annotation|@
 name|Override
 specifier|public
@@ -684,13 +700,17 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|exception
+name|ex
 parameter_list|)
 block|{
-name|exception
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error downloading an applet resource."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 finally|finally
@@ -777,14 +797,17 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
-comment|// TODO Auto-generated catch block
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error setting applet background image."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -1034,14 +1057,17 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
-comment|// TODO Auto-generated catch block
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error setting applet background image #2."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -1067,7 +1093,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/** 			 * Stop the thread. 			 */
+comment|/**              * Stop the thread.              */
 annotation|@
 name|Override
 specifier|public
@@ -1205,7 +1231,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 			 * Set the "minecraft" variable. 			 *  			 * @param minecraft 			 *            The new Minecraft variable. 			 */
+comment|/**              * Set the "minecraft" variable.              *               * @param minecraft              *            The new Minecraft variable.              */
 specifier|public
 name|void
 name|setMinecraft
@@ -1221,7 +1247,7 @@ operator|=
 name|minecraft
 expr_stmt|;
 block|}
-comment|/** 			 * Start the Minecraft client thread. 			 */
+comment|/**              * Start the Minecraft client thread.              */
 specifier|public
 specifier|synchronized
 name|void
@@ -1252,7 +1278,7 @@ argument_list|()
 expr_stmt|;
 block|}
 block|}
-comment|/** 			 * Stop the Minecraft client. 			 */
+comment|/**              * Stop the Minecraft client.              */
 specifier|private
 specifier|synchronized
 name|void
@@ -1268,7 +1294,7 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;
@@ -1283,13 +1309,17 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Interrupted while waiting for Minecraft to shut down."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 name|minecraft
 operator|.
@@ -1304,7 +1334,7 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|/** 	 *  	 */
+comment|/**      *       */
 specifier|private
 specifier|static
 specifier|final
@@ -1313,12 +1343,12 @@ name|serialVersionUID
 init|=
 literal|1L
 decl_stmt|;
-comment|/** 		 * Minecraft reference. 		 */
+comment|/**          * Minecraft reference.          */
 specifier|private
 name|Minecraft
 name|minecraft
 decl_stmt|;
-comment|/** 		 * Default constructor. 		 */
+comment|/**          * Default constructor.          */
 specifier|public
 name|MinecraftFrame
 parameter_list|()
@@ -1363,7 +1393,7 @@ parameter_list|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;
@@ -1372,7 +1402,7 @@ block|}
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 		 * Start Minecraft Classic. 		 */
+comment|/**          * Starts Minecraft Classic          *           * @param Player          *            Player name          * @param Server          *            Server address          * @param Mppass          *            The player's MPPass          * @param Port          *            Server port          * @param skinServer          *            The url of the skin server.          * @param fullscreen          *            True if the game should be in fullScreen.          */
 specifier|public
 name|void
 name|startMinecraft
@@ -1605,7 +1635,7 @@ condition|(
 operator|!
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 name|minecraft
@@ -1630,13 +1660,17 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Interrupted while running Minecraft from applet."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -1671,20 +1705,25 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+comment|// TODO: figure out wtf we're doing here
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Something happened."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 if|if
 condition|(
 name|minecraft
 operator|.
-name|running
+name|isRunning
 condition|)
 block|{
 name|pass
@@ -1897,7 +1936,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/** 	 * Default constructor. 	 */
+comment|/**      * Default constructor.      */
 specifier|public
 name|ClassiCubeStandalone
 parameter_list|()

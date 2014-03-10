@@ -200,7 +200,7 @@ argument_list|)
 expr_stmt|;
 name|minecraft
 operator|.
-name|online
+name|isOnline
 operator|=
 literal|false
 expr_stmt|;

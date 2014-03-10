@@ -69,6 +69,18 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
 name|Minecraft
 import|;
 end_import
@@ -253,13 +265,16 @@ name|IOException
 throws|,
 name|Exception
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
-literal|"Saving level"
+literal|"Saving level "
+operator|+
+name|fullFilePath
+operator|.
+name|getAbsolutePath
+argument_list|()
 argument_list|)
 expr_stmt|;
 if|if
@@ -268,6 +283,7 @@ name|level
 operator|==
 literal|null
 condition|)
+block|{
 throw|throw
 operator|new
 name|Exception
@@ -275,6 +291,7 @@ argument_list|(
 literal|"level"
 argument_list|)
 throw|;
+block|}
 name|NBTTagCompound
 name|master
 init|=
@@ -359,7 +376,7 @@ name|short
 operator|)
 name|level
 operator|.
-name|depth
+name|length
 argument_list|)
 expr_stmt|;
 name|master

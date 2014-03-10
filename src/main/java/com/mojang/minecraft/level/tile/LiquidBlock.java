@@ -182,9 +182,9 @@ name|setBounds
 argument_list|(
 name|var4
 operator|+
-literal|0.0F
+literal|0F
 argument_list|,
-literal|0.0F
+literal|0F
 operator|-
 name|var3
 operator|+
@@ -192,13 +192,13 @@ name|var4
 argument_list|,
 name|var4
 operator|+
-literal|0.0F
+literal|0F
 argument_list|,
 name|var4
 operator|+
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 operator|-
 name|var3
 operator|+
@@ -206,7 +206,7 @@ name|var4
 argument_list|,
 name|var4
 operator|+
-literal|1.0F
+literal|1F
 argument_list|)
 expr_stmt|;
 name|setPhysics
@@ -379,7 +379,7 @@ name|z
 operator|<
 name|level
 operator|.
-name|height
+name|length
 condition|?
 operator|(
 name|var6

@@ -73,7 +73,7 @@ return|;
 block|}
 annotation|@
 name|Override
-specifier|protected
+specifier|public
 specifier|final
 name|int
 name|getTextureId

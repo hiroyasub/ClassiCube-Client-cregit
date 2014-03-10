@@ -124,9 +124,9 @@ name|player
 expr_stmt|;
 name|setSize
 argument_list|(
-literal|1.0F
+literal|1F
 argument_list|,
-literal|1.0F
+literal|1F
 argument_list|)
 expr_stmt|;
 name|xorg
@@ -201,7 +201,7 @@ name|distance
 operator|=
 name|time
 operator|/
-literal|3.0F
+literal|3F
 operator|)
 operator|*
 name|distance
@@ -267,7 +267,7 @@ name|player
 operator|.
 name|y
 operator|-
-literal|1.0F
+literal|1F
 operator|-
 name|yorg
 operator|)

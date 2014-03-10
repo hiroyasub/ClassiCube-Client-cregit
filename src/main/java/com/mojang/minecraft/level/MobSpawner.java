@@ -198,14 +198,16 @@ name|ProgressBarDisplay
 name|var3
 parameter_list|)
 block|{
-comment|// System.out.println(Count);
+comment|// LogUtil.logInfo(Count);
 if|if
 condition|(
 name|HasStopped
 condition|)
+block|{
 return|return
 literal|0
 return|;
+block|}
 name|int
 name|var4
 init|=
@@ -230,7 +232,9 @@ if|if
 condition|(
 name|HasStopped
 condition|)
+block|{
 break|break;
+block|}
 if|if
 condition|(
 name|var3
@@ -320,7 +324,7 @@ name|this
 operator|.
 name|level
 operator|.
-name|depth
+name|height
 operator|)
 decl_stmt|;
 name|int
@@ -338,7 +342,7 @@ name|this
 operator|.
 name|level
 operator|.
-name|height
+name|length
 argument_list|)
 decl_stmt|;
 if|if
@@ -423,7 +427,9 @@ if|if
 condition|(
 name|HasStopped
 condition|)
+block|{
 break|break;
+block|}
 name|int
 name|var11
 init|=
@@ -458,7 +464,9 @@ if|if
 condition|(
 name|HasStopped
 condition|)
+block|{
 break|break;
+block|}
 name|var11
 operator|+=
 name|this
@@ -551,7 +559,7 @@ name|this
 operator|.
 name|level
 operator|.
-name|depth
+name|height
 operator|-
 literal|2
 operator|&&
@@ -569,7 +577,7 @@ name|this
 operator|.
 name|level
 operator|.
-name|height
+name|length
 operator|&&
 name|this
 operator|.
@@ -629,7 +637,7 @@ name|var16
 init|=
 name|var12
 operator|+
-literal|1.0F
+literal|1F
 decl_stmt|;
 name|float
 name|var17
@@ -692,7 +700,7 @@ name|var20
 operator|*
 name|var20
 operator|<
-literal|256.0F
+literal|256F
 condition|)
 block|{
 continue|continue;
@@ -744,7 +752,7 @@ name|var20
 operator|*
 name|var20
 operator|<
-literal|256.0F
+literal|256F
 condition|)
 block|{
 continue|continue;
@@ -955,7 +963,7 @@ operator|)
 name|var21
 argument_list|)
 expr_stmt|;
-comment|// System.out.println("Added mob");
+comment|// LogUtil.logInfo("Added mob");
 block|}
 block|}
 block|}

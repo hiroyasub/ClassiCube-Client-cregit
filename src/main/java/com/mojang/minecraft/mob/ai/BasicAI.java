@@ -352,7 +352,7 @@ name|var6
 operator|*
 name|var6
 operator|<
-literal|1024.0F
+literal|1024F
 condition|)
 block|{
 name|noActionTime
@@ -403,15 +403,15 @@ literal|false
 expr_stmt|;
 name|xxa
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 name|yya
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 name|yRotA
 operator|=
-literal|0.0F
+literal|0F
 expr_stmt|;
 block|}
 else|else
@@ -529,7 +529,7 @@ condition|(
 name|flyingUp
 condition|)
 block|{
-comment|// System.out.println("flying up");
+comment|// LogUtil.logInfo("flying up");
 if|if
 condition|(
 name|running
@@ -557,7 +557,7 @@ condition|(
 name|flyingDown
 condition|)
 block|{
-comment|// System.out.println("flying down");
+comment|// LogUtil.logInfo("flying down");
 if|if
 condition|(
 name|running
@@ -722,7 +722,7 @@ condition|(
 name|flyingUp
 condition|)
 block|{
-comment|// System.out.println("flying up");
+comment|// LogUtil.logInfo("flying up");
 if|if
 condition|(
 name|running
@@ -750,7 +750,7 @@ condition|(
 name|flyingDown
 condition|)
 block|{
-comment|// System.out.println("flying down");
+comment|// LogUtil.logInfo("flying down");
 if|if
 condition|(
 name|running
@@ -1010,7 +1010,7 @@ name|grow
 argument_list|(
 literal|0.2F
 argument_list|,
-literal|0.0F
+literal|0F
 argument_list|,
 literal|0.2F
 argument_list|)
@@ -1144,7 +1144,7 @@ operator|-
 literal|0.5F
 operator|)
 operator|*
-literal|60.0F
+literal|60F
 expr_stmt|;
 block|}
 name|mob

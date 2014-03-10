@@ -13,6 +13,18 @@ end_package
 
 begin_import
 import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|io
@@ -115,14 +127,19 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
-comment|// TODO Auto-generated catch block
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error loading texture pack from "
+operator|+
+name|file
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 name|mc

@@ -39,9 +39,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
-name|model
+name|util
 operator|.
 name|Vec3D
 import|;
@@ -66,7 +64,7 @@ specifier|private
 name|float
 name|epsilon
 init|=
-literal|0.0F
+literal|0F
 decl_stmt|;
 specifier|public
 name|float
@@ -638,7 +636,7 @@ if|if
 condition|(
 name|var2
 operator|>
-literal|0.0F
+literal|0F
 operator|&&
 name|var1
 operator|.
@@ -670,7 +668,7 @@ if|if
 condition|(
 name|var2
 operator|<
-literal|0.0F
+literal|0F
 operator|&&
 name|var1
 operator|.
@@ -764,7 +762,7 @@ if|if
 condition|(
 name|var2
 operator|>
-literal|0.0F
+literal|0F
 operator|&&
 name|var1
 operator|.
@@ -796,7 +794,7 @@ if|if
 condition|(
 name|var2
 operator|<
-literal|0.0F
+literal|0F
 operator|&&
 name|var1
 operator|.
@@ -890,7 +888,7 @@ if|if
 condition|(
 name|var2
 operator|>
-literal|0.0F
+literal|0F
 operator|&&
 name|var1
 operator|.
@@ -922,7 +920,7 @@ if|if
 condition|(
 name|var2
 operator|<
-literal|0.0F
+literal|0F
 operator|&&
 name|var1
 operator|.
@@ -1133,7 +1131,7 @@ if|if
 condition|(
 name|var1
 operator|<
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var4
@@ -1145,7 +1143,7 @@ if|if
 condition|(
 name|var1
 operator|>
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var7
@@ -1157,7 +1155,7 @@ if|if
 condition|(
 name|var2
 operator|<
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var5
@@ -1169,7 +1167,7 @@ if|if
 condition|(
 name|var2
 operator|>
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var8
@@ -1181,7 +1179,7 @@ if|if
 condition|(
 name|var3
 operator|<
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var6
@@ -1193,7 +1191,7 @@ if|if
 condition|(
 name|var3
 operator|>
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var9
@@ -1254,7 +1252,7 @@ operator|+
 name|var3
 operator|)
 operator|/
-literal|3.0F
+literal|3F
 return|;
 block|}
 specifier|public
@@ -1565,7 +1563,7 @@ if|if
 condition|(
 name|var1
 operator|<
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var4
@@ -1577,7 +1575,7 @@ if|if
 condition|(
 name|var1
 operator|>
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var7
@@ -1589,7 +1587,7 @@ if|if
 condition|(
 name|var2
 operator|<
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var5
@@ -1601,7 +1599,7 @@ if|if
 condition|(
 name|var2
 operator|>
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var8
@@ -1613,7 +1611,7 @@ if|if
 condition|(
 name|var3
 operator|<
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var6
@@ -1625,7 +1623,7 @@ if|if
 condition|(
 name|var3
 operator|>
-literal|0.0F
+literal|0F
 condition|)
 block|{
 name|var9

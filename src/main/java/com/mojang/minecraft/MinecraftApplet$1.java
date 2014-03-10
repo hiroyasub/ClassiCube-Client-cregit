@@ -11,6 +11,22 @@ end_package
 
 begin_import
 import|import
+name|com
+operator|.
+name|oyasunadev
+operator|.
+name|mcraft
+operator|.
+name|client
+operator|.
+name|util
+operator|.
+name|Constants
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|awt
@@ -312,7 +328,9 @@ name|setRequestProperty
 argument_list|(
 literal|"User-Agent"
 argument_list|,
-literal|"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"
+name|Constants
+operator|.
+name|USER_AGENT
 argument_list|)
 expr_stmt|;
 name|connection
@@ -394,11 +412,9 @@ operator|+=
 name|numRead
 expr_stmt|;
 block|}
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 name|localFileName
 operator|+
@@ -411,13 +427,19 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|exception
+name|ex
 parameter_list|)
 block|{
-name|exception
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error downloading an applet resource from "
+operator|+
+name|address
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 finally|finally

@@ -175,7 +175,7 @@ name|heightOffset
 operator|=
 name|bbHeight
 operator|/
-literal|2.0F
+literal|2F
 expr_stmt|;
 name|this
 operator|.
@@ -194,7 +194,7 @@ name|gCol
 operator|=
 name|bCol
 operator|=
-literal|1.0F
+literal|1F
 expr_stmt|;
 name|xd
 operator|=
@@ -209,9 +209,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|2.0D
+literal|2D
 operator|-
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.4F
@@ -229,9 +229,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|2.0D
+literal|2D
 operator|-
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.4F
@@ -249,9 +249,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|2.0D
+literal|2D
 operator|-
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.4F
@@ -273,7 +273,7 @@ operator|.
 name|random
 argument_list|()
 operator|+
-literal|1.0D
+literal|1D
 operator|)
 operator|*
 literal|0.15F
@@ -339,7 +339,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|3.0F
+literal|3F
 expr_stmt|;
 name|vo
 operator|=
@@ -351,7 +351,7 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|3.0F
+literal|3F
 expr_stmt|;
 name|size
 operator|=
@@ -375,7 +375,7 @@ operator|(
 name|int
 operator|)
 operator|(
-literal|4.0D
+literal|4D
 operator|/
 operator|(
 name|Math
@@ -446,7 +446,7 @@ name|tex
 operator|%
 literal|16
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 operator|+
 literal|0.0624375F
@@ -464,7 +464,7 @@ name|tex
 operator|/
 literal|16
 operator|/
-literal|16.0F
+literal|16F
 operator|)
 operator|+
 literal|0.0624375F
@@ -519,9 +519,7 @@ name|ColorCache
 name|var21
 init|=
 name|getBrightnessColor
-argument_list|(
-name|var2
-argument_list|)
+argument_list|()
 decl_stmt|;
 name|var1
 operator|.

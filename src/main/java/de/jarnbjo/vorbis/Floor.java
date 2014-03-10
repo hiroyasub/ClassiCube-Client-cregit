@@ -561,7 +561,7 @@ literal|0.88168307f
 block|,
 literal|0.9389798f
 block|,
-literal|1.0f
+literal|1F
 block|}
 decl_stmt|;
 specifier|static

@@ -99,6 +99,18 @@ name|GameSettings
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
@@ -281,11 +293,9 @@ condition|(
 name|useVBO
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"GPU allows VBOs: Enabling"
 argument_list|)
@@ -369,7 +379,7 @@ operator|)
 operator|(
 name|r
 operator|*
-literal|255.0F
+literal|255F
 operator|)
 argument_list|,
 operator|(
@@ -378,7 +388,7 @@ operator|)
 operator|(
 name|g
 operator|*
-literal|255.0F
+literal|255F
 operator|)
 argument_list|,
 operator|(
@@ -387,7 +397,7 @@ operator|)
 operator|(
 name|b
 operator|*
-literal|255.0F
+literal|255F
 operator|)
 argument_list|)
 expr_stmt|;
@@ -417,7 +427,7 @@ operator|)
 operator|(
 name|r
 operator|*
-literal|255.0F
+literal|255F
 operator|)
 argument_list|,
 operator|(
@@ -426,7 +436,7 @@ operator|)
 operator|(
 name|g
 operator|*
-literal|255.0F
+literal|255F
 operator|)
 argument_list|,
 operator|(
@@ -435,7 +445,7 @@ operator|)
 operator|(
 name|b
 operator|*
-literal|255.0F
+literal|255F
 operator|)
 argument_list|,
 operator|(
@@ -444,7 +454,7 @@ operator|)
 operator|(
 name|a
 operator|*
-literal|255.0F
+literal|255F
 operator|)
 argument_list|)
 expr_stmt|;
@@ -1372,7 +1382,7 @@ operator|)
 operator|(
 name|x
 operator|*
-literal|127.0F
+literal|127F
 operator|)
 decl_stmt|;
 name|byte
@@ -1387,7 +1397,7 @@ operator|)
 operator|(
 name|y
 operator|*
-literal|127.0F
+literal|127F
 operator|)
 decl_stmt|;
 name|byte
@@ -1402,7 +1412,7 @@ operator|)
 operator|(
 name|z
 operator|*
-literal|127.0F
+literal|127F
 operator|)
 decl_stmt|;
 name|normal

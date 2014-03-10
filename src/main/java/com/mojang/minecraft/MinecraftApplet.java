@@ -149,13 +149,17 @@ block|}
 catch|catch
 parameter_list|(
 name|MalformedURLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error getting applet code base"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 return|return
@@ -182,13 +186,17 @@ block|}
 catch|catch
 parameter_list|(
 name|MalformedURLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error getting applet document base"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 return|return
@@ -557,7 +565,7 @@ expr_stmt|;
 block|}
 name|minecraft
 operator|.
-name|levelLoaded
+name|isLevelLoaded
 operator|=
 literal|true
 expr_stmt|;
@@ -595,7 +603,7 @@ parameter_list|()
 block|{
 name|minecraft
 operator|.
-name|waiting
+name|isWaiting
 operator|=
 literal|false
 expr_stmt|;
@@ -636,7 +644,7 @@ parameter_list|()
 block|{
 name|minecraft
 operator|.
-name|waiting
+name|isWaiting
 operator|=
 literal|true
 expr_stmt|;
@@ -655,7 +663,7 @@ condition|)
 block|{
 name|minecraft
 operator|.
-name|running
+name|isRunning
 operator|=
 literal|false
 expr_stmt|;
