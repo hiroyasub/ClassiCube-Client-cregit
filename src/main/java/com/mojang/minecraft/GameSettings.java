@@ -1096,7 +1096,7 @@ argument_list|)
 decl_stmt|;
 switch|switch
 condition|(
-name|value
+name|key
 condition|)
 block|{
 case|case
