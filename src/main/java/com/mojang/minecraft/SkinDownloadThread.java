@@ -291,19 +291,22 @@ argument_list|()
 argument_list|)
 expr_stmt|;
 block|}
-return|return;
 block|}
 block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Error downloading skin."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 finally|finally

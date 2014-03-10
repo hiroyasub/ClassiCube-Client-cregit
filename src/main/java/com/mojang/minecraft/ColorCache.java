@@ -36,7 +36,6 @@ name|ColorCache
 implements|implements
 name|Serializable
 block|{
-comment|/**      *       */
 specifier|private
 specifier|static
 specifier|final

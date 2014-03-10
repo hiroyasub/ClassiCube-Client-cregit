@@ -289,11 +289,7 @@ name|serverConfig
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|String
-argument_list|,
-name|String
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
@@ -318,7 +314,7 @@ name|fileChannel2
 init|=
 literal|null
 decl_stmt|;
-comment|// System.out.println("Copy " + paramFile1 + " to " + paramFile2);
+comment|// LogUtil.logInfo("Copy " + paramFile1 + " to " + paramFile2);
 try|try
 block|{
 if|if
@@ -379,21 +375,25 @@ name|IOException
 name|ex
 parameter_list|)
 block|{
+name|LogUtil
+operator|.
+name|logError
+argument_list|(
+literal|"Error copying a file from "
+operator|+
+name|paramFile1
+operator|+
+literal|" to "
+operator|+
+name|paramFile2
+argument_list|,
+name|ex
+argument_list|)
+expr_stmt|;
 name|paramFile2
 operator|.
 name|delete
 argument_list|()
-expr_stmt|;
-name|System
-operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-literal|"IO Error copying file: "
-operator|+
-name|ex
-argument_list|)
 expr_stmt|;
 block|}
 finally|finally
@@ -527,8 +527,7 @@ operator|!=
 literal|null
 condition|)
 block|{
-comment|// System.out
-comment|// .println(new
+comment|// LogUtil.logInfo(new
 comment|// StringBuilder().append("Read line: ").append(str).toString());
 name|String
 index|[]
@@ -573,7 +572,7 @@ name|trim
 argument_list|()
 argument_list|)
 expr_stmt|;
-comment|// System.out.println(new
+comment|// LogUtil.logInfo(new
 comment|// StringBuilder().append("Adding config ")
 comment|// .append(arrayOfString[0].trim()).append(" = ")
 comment|// .append(arrayOfString[1].trim()).toString());
@@ -588,31 +587,18 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
-operator|new
-name|StringBuilder
-argument_list|()
-operator|.
-name|append
-argument_list|(
-literal|"Caught exception: "
-argument_list|)
-operator|.
-name|append
-argument_list|(
-name|e
-argument_list|)
-operator|.
-name|toString
-argument_list|()
+literal|"Error fetching config from "
+operator|+
+name|location
+argument_list|,
+name|ex
 argument_list|)
 expr_stmt|;
 block|}
@@ -745,51 +731,22 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|localIOException
+name|ex
 parameter_list|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
-argument_list|(
-operator|new
-name|StringBuilder
-argument_list|()
-operator|.
-name|append
+name|logError
 argument_list|(
 literal|"Error fetching "
-argument_list|)
-operator|.
-name|append
-argument_list|(
+operator|+
 name|paramString1
-argument_list|)
-operator|.
-name|append
-argument_list|(
-literal|" to file: "
-argument_list|)
-operator|.
-name|append
-argument_list|(
+operator|+
+literal|" to file "
+operator|+
 name|paramFile
-argument_list|)
-operator|.
-name|append
-argument_list|(
-literal|": "
-argument_list|)
-operator|.
-name|append
-argument_list|(
-name|localIOException
-argument_list|)
-operator|.
-name|toString
-argument_list|()
+argument_list|,
+name|ex
 argument_list|)
 expr_stmt|;
 name|paramFile
@@ -937,7 +894,7 @@ parameter_list|)
 throws|throws
 name|IOException
 block|{
-comment|// System.out.println(new
+comment|// LogUtil.logInfo(new
 comment|// StringBuilder().append("Making connection to ").append(url)
 comment|// .toString());
 name|URLConnection
@@ -1215,7 +1172,15 @@ operator|.
 name|username
 argument_list|)
 decl_stmt|;
-comment|// System.out.println("Fetching config from: " + Url);
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"Fetching config from: "
+operator|+
+name|Url
+argument_list|)
+expr_stmt|;
 name|serverConfig
 operator|=
 name|fetchConfig
@@ -1248,19 +1213,16 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logWarning
 argument_list|(
-name|e
-operator|.
-name|getMessage
-argument_list|()
+literal|"Error getting server.detail parameter from cfg"
+argument_list|,
+name|ex
 argument_list|)
 expr_stmt|;
 block|}

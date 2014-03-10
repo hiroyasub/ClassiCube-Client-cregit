@@ -1029,22 +1029,17 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
-literal|"Failed to load options"
+literal|"Failed to load options."
+argument_list|,
+name|ex
 argument_list|)
-expr_stmt|;
-name|e
-operator|.
-name|printStackTrace
-argument_list|()
 expr_stmt|;
 block|}
 block|}
@@ -1519,22 +1514,17 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
-literal|"Failed to save options"
+literal|"Failed to save options."
+argument_list|,
+name|ex
 argument_list|)
-expr_stmt|;
-name|e
-operator|.
-name|printStackTrace
-argument_list|()
 expr_stmt|;
 block|}
 block|}

@@ -149,13 +149,17 @@ block|}
 catch|catch
 parameter_list|(
 name|MalformedURLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error getting applet code base"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 return|return
@@ -182,13 +186,17 @@ block|}
 catch|catch
 parameter_list|(
 name|MalformedURLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error getting applet document base"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 return|return

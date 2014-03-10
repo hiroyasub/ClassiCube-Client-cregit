@@ -15,6 +15,18 @@ end_package
 
 begin_import
 import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|util
@@ -477,11 +489,9 @@ operator|!=
 name|var13
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logWarning
 argument_list|(
 literal|"Diagonal flood!?"
 argument_list|)

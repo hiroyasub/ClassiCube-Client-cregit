@@ -99,6 +99,18 @@ name|GameSettings
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
@@ -281,11 +293,9 @@ condition|(
 name|useVBO
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"GPU allows VBOs: Enabling"
 argument_list|)

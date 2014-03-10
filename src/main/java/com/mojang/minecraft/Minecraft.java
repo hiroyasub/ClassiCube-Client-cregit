@@ -1586,31 +1586,25 @@ argument_list|(
 name|error
 argument_list|)
 decl_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
 literal|"########## GL ERROR ##########"
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
 literal|"@ "
 operator|+
 name|context
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logError
 argument_list|(
 name|error
 operator|+
@@ -1700,13 +1694,19 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Failed to check for an image at "
+operator|+
+name|url
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 return|return
 literal|false
@@ -2061,10 +2061,14 @@ name|Exception
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Failed to set UI look and feel."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 if|if
@@ -2089,10 +2093,14 @@ name|AWTException
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Failed to create the AWT Robot!"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -2152,15 +2160,24 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Failed download an image from "
+operator|+
+name|url
+operator|+
+literal|" to "
+operator|+
+name|dest
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
-return|return;
 block|}
 block|}
 specifier|public
@@ -2423,10 +2440,14 @@ name|LWJGLException
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Failed grab mouse!"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -2541,10 +2562,14 @@ name|Exception
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Failed to detect system shutdown."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 return|return
 literal|false
@@ -3510,11 +3535,9 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Using LWJGL Version: "
 operator|+
@@ -3552,10 +3575,14 @@ name|LWJGLException
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Failed to create the OpenGL context."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 try|try
 block|{
@@ -3975,10 +4002,14 @@ name|Exception
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Failed to load a saved singleplayer level."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 if|if
@@ -4045,10 +4076,14 @@ name|LWJGLException
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Failed to create a transparent native cursor."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -4158,10 +4193,14 @@ name|running
 operator|=
 literal|false
 expr_stmt|;
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Failed to start the sound player."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 name|checkGLError
@@ -4249,10 +4288,14 @@ name|Exception
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Failed to start ClassiCube!"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 name|JOptionPane
 operator|.
@@ -4369,10 +4412,14 @@ name|Exception
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Fatal error in main loop (run)"
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 finally|finally
@@ -4473,13 +4520,17 @@ block|}
 catch|catch
 parameter_list|(
 name|LWJGLException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error resizing the OpenGL context."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 name|resize
@@ -11467,6 +11518,15 @@ name|Exception
 name|ex
 parameter_list|)
 block|{
+name|LogUtil
+operator|.
+name|logError
+argument_list|(
+literal|"Fatal error in main loop (onFrame)"
+argument_list|,
+name|ex
+argument_list|)
+expr_stmt|;
 name|setCurrentScreen
 argument_list|(
 operator|new
@@ -11481,11 +11541,6 @@ operator|+
 literal|"]"
 argument_list|)
 argument_list|)
-expr_stmt|;
-name|ex
-operator|.
-name|printStackTrace
-argument_list|()
 expr_stmt|;
 block|}
 block|}
@@ -11590,10 +11645,14 @@ name|LWJGLException
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error showing the mouse cursor."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -12175,10 +12234,14 @@ name|Exception
 name|ex
 parameter_list|)
 block|{
-name|ex
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error shutting down threads."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 if|if
@@ -12240,13 +12303,17 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error saving single-player level."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -12670,13 +12737,17 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error taking a screenshot."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -13267,11 +13338,9 @@ index|[
 literal|1
 index|]
 decl_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Connecting to AppName: "
 operator|+
@@ -13386,11 +13455,9 @@ name|size
 argument_list|()
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Sending client's supported Exts"
 argument_list|)
@@ -13536,11 +13603,9 @@ name|k
 operator|++
 control|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Sending ext: "
 operator|+
@@ -13772,7 +13837,7 @@ operator|.
 name|shortValue
 argument_list|()
 decl_stmt|;
-comment|// System.out.println(ID + " " + Name +
+comment|// LogUtil.logInfo(ID + " " + Name +
 comment|// " " + X1 + " " + Y1
 comment|// + " " + Z1 + " " + X2 + " " + Y2 +
 comment|// " " + Z2);
@@ -14463,13 +14528,17 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e1
+name|ex2
 parameter_list|)
 block|{
-name|e1
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error reading default terrain texture."
+argument_list|,
+name|ex2
+argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -15023,11 +15092,9 @@ operator|.
 name|CUSTOM_BLOCK_SUPPORT_LEVEL
 condition|)
 block|{
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"Custom blocks packet recieved"
 argument_list|)
@@ -15172,11 +15239,9 @@ argument_list|(
 name|block
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"DisallowingPlacement block: "
 operator|+
@@ -15204,11 +15269,9 @@ argument_list|(
 name|block
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"AllowingPlacement block: "
 operator|+
@@ -15242,11 +15305,9 @@ argument_list|(
 name|block
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"DisallowingDeletion block: "
 operator|+
@@ -15274,11 +15335,9 @@ argument_list|(
 name|block
 argument_list|)
 expr_stmt|;
-name|System
+name|LogUtil
 operator|.
-name|out
-operator|.
-name|println
+name|logInfo
 argument_list|(
 literal|"AllowingDeletion block: "
 operator|+
@@ -15746,13 +15805,17 @@ block|}
 catch|catch
 parameter_list|(
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logError
+argument_list|(
+literal|"Error receiving level data."
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 name|byte
@@ -17393,6 +17456,15 @@ name|Exception
 name|ex
 parameter_list|)
 block|{
+name|LogUtil
+operator|.
+name|logWarning
+argument_list|(
+literal|"Error in network handling code."
+argument_list|,
+name|ex
+argument_list|)
+expr_stmt|;
 name|var20
 operator|.
 name|minecraft
@@ -17415,11 +17487,6 @@ operator|.
 name|isOnline
 operator|=
 literal|false
-expr_stmt|;
-name|ex
-operator|.
-name|printStackTrace
-argument_list|()
 expr_stmt|;
 name|var20
 operator|.
@@ -19366,13 +19433,25 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
-name|e
+name|ex
 parameter_list|)
 block|{
-name|e
+name|LogUtil
 operator|.
-name|printStackTrace
-argument_list|()
+name|logWarning
+argument_list|(
+literal|"Error toggling fullscreen "
+operator|+
+operator|(
+name|isFullScreen
+condition|?
+literal|"ON"
+else|:
+literal|"OFF"
+operator|)
+argument_list|,
+name|ex
+argument_list|)
 expr_stmt|;
 block|}
 block|}

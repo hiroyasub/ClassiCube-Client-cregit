@@ -529,7 +529,7 @@ condition|(
 name|flyingUp
 condition|)
 block|{
-comment|// System.out.println("flying up");
+comment|// LogUtil.logInfo("flying up");
 if|if
 condition|(
 name|running
@@ -557,7 +557,7 @@ condition|(
 name|flyingDown
 condition|)
 block|{
-comment|// System.out.println("flying down");
+comment|// LogUtil.logInfo("flying down");
 if|if
 condition|(
 name|running
@@ -722,7 +722,7 @@ condition|(
 name|flyingUp
 condition|)
 block|{
-comment|// System.out.println("flying up");
+comment|// LogUtil.logInfo("flying up");
 if|if
 condition|(
 name|running
@@ -750,7 +750,7 @@ condition|(
 name|flyingDown
 condition|)
 block|{
-comment|// System.out.println("flying down");
+comment|// LogUtil.logInfo("flying down");
 if|if
 condition|(
 name|running
