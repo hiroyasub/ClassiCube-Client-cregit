@@ -133,7 +133,7 @@ name|x1
 expr_stmt|;
 block|}
 block|}
-comment|/** 	 * The idea is to work with urls http, fpt, sftp, gopher, telnet and file 	 * (tee hee) 	 */
+comment|/**      * The idea is to work with urls http, fpt, sftp, gopher, telnet and file      * (tee hee)      */
 specifier|private
 specifier|final
 name|String
@@ -324,7 +324,7 @@ return|return
 literal|null
 return|;
 block|}
-comment|/** 	 * Strips any URLs from the the line where the user clicked 	 *  	 * @param text 	 *            The text in question 	 * @param fr 	 *            The font renderer instance 	 * @return ArrayList of LinkData 	 */
+comment|/**      * Strips any URLs from the the line where the user clicked      *       * @param text      *            The text in question      * @param fr      *            The font renderer instance      * @return ArrayList of LinkData      */
 specifier|private
 name|ArrayList
 argument_list|<

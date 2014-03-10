@@ -1420,7 +1420,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/* 		 * if (paramInt == Keyboard.KEY_TAB) { String namePart = this.inputLine; 		 * if (namePart == null || namePart.length() == 0) return; List<String> 		 * potentials = new ArrayList<String>(); for (int index = 0; index< 		 * this.minecraft.networkManager.players.size(); index++) { if 		 * (this.minecraft 		 * .networkManager.players.get(index).name.toLowerCase().contains 		 * (namePart .toLowerCase())) { 		 * potentials.add(this.minecraft.networkManager 		 * .players.get(index).name); } } if (potentials.size() == 0) return; if 		 * (potentials.size() == 1) { this.inputLine = potentials.get(0); } else 		 * { try { this.minecraft.hud.addChat(joinToString((String[]) 		 * potentials.toArray())); } catch (Exception e) { e.printStackTrace(); 		 * } } } 		 */
+comment|/*          * if (paramInt == Keyboard.KEY_TAB) { String namePart = this.inputLine;          * if (namePart == null || namePart.length() == 0) return; List<String>          * potentials = new ArrayList<String>(); for (int index = 0; index<          * this.minecraft.networkManager.players.size(); index++) { if          * (this.minecraft          * .networkManager.players.get(index).name.toLowerCase().contains          * (namePart .toLowerCase())) {          * potentials.add(this.minecraft.networkManager          * .players.get(index).name); } } if (potentials.size() == 0) return; if          * (potentials.size() == 1) { this.inputLine = potentials.get(0); } else          * { try { this.minecraft.hud.addChat(joinToString((String[])          * potentials.toArray())); } catch (Exception e) { e.printStackTrace();          * } } }          */
 if|if
 condition|(
 name|paramInt
@@ -1896,7 +1896,7 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|/** 	 * The background color of the chat. 	 */
+comment|/**      * The background color of the chat.      */
 specifier|public
 specifier|static
 name|int
@@ -2084,7 +2084,7 @@ name|x1
 init|=
 literal|2
 decl_stmt|;
-comment|/* 		 * Add the beginning position of the box + the length of '> _' + the 		 * length of the trimmed message + the x position of the '> _' string. 		 */
+comment|/*          * Add the beginning position of the box + the length of '> _' + the          * length of the trimmed message + the x position of the '> _' string.          */
 name|int
 name|x2
 init|=

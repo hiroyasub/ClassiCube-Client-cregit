@@ -435,7 +435,7 @@ literal|0F
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Sets the models various rotation angles then renders the model. 	 */
+comment|/**      * Sets the models various rotation angles then renders the model.      */
 annotation|@
 name|Override
 specifier|public
@@ -533,7 +533,7 @@ name|par7
 argument_list|)
 expr_stmt|;
 block|}
-comment|/** 	 * Sets the model's various rotation angles. For bipeds, par1 and par2 are 	 * used for animating the movement of arms and legs, where par1 represents 	 * the time(so that arms and legs swing back and forth) and par2 represents 	 * how "far" arms and legs can swing at most. 	 */
+comment|/**      * Sets the model's various rotation angles. For bipeds, par1 and par2 are      * used for animating the movement of arms and legs, where par1 represents      * the time(so that arms and legs swing back and forth) and par2 represents      * how "far" arms and legs can swing at most.      */
 specifier|public
 name|void
 name|setRotationAngles

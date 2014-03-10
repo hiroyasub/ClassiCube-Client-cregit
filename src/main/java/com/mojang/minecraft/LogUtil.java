@@ -222,7 +222,7 @@ name|getName
 argument_list|()
 argument_list|)
 decl_stmt|;
-comment|/** 	 * Sets up logging to file (%AppData%/.net.classicube.client/client.log) 	 */
+comment|/**      * Sets up logging to file (%AppData%/.net.classicube.client/client.log)      */
 static|static
 block|{
 name|logger
