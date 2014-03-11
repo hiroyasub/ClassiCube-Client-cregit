@@ -69,7 +69,6 @@ block|}
 block|}
 specifier|public
 specifier|static
-specifier|final
 name|float
 name|cos
 parameter_list|(
@@ -97,7 +96,6 @@ return|;
 block|}
 specifier|public
 specifier|static
-specifier|final
 name|float
 name|sin
 parameter_list|(
@@ -123,7 +121,6 @@ return|;
 block|}
 specifier|public
 specifier|static
-specifier|final
 name|float
 name|sqrt
 parameter_list|(

@@ -69,12 +69,12 @@ literal|0F
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Creates a new humanoid model with the specified scaling. The scaling      * seems to make the model wider but still making it occupy the same space.      *       * @param var1      *            Scale value to use for the model.      */
+comment|/**      * Creates a new humanoid model with the specified scaling. The scaling      * seems to make the model wider but still making it occupy the same space.      *      * @param scale Scale value to use for the model.      */
 specifier|public
 name|HumanoidModel
 parameter_list|(
 name|float
-name|var1
+name|scale
 parameter_list|)
 block|{
 name|head
@@ -106,7 +106,7 @@ literal|8
 argument_list|,
 literal|8
 argument_list|,
-name|var1
+name|scale
 argument_list|)
 expr_stmt|;
 name|head
@@ -144,7 +144,7 @@ literal|8
 argument_list|,
 literal|8
 argument_list|,
-name|var1
+name|scale
 operator|+
 literal|0.5F
 argument_list|)
@@ -177,7 +177,7 @@ literal|12
 argument_list|,
 literal|4
 argument_list|,
-name|var1
+name|scale
 argument_list|)
 expr_stmt|;
 name|body
@@ -215,7 +215,7 @@ literal|12
 argument_list|,
 literal|4
 argument_list|,
-name|var1
+name|scale
 argument_list|)
 expr_stmt|;
 name|rightArm
@@ -271,7 +271,7 @@ literal|12
 argument_list|,
 literal|4
 argument_list|,
-name|var1
+name|scale
 argument_list|)
 expr_stmt|;
 name|leftArm
@@ -319,7 +319,7 @@ literal|12
 argument_list|,
 literal|4
 argument_list|,
-name|var1
+name|scale
 argument_list|)
 expr_stmt|;
 name|rightLeg
@@ -374,7 +374,7 @@ literal|12
 argument_list|,
 literal|4
 argument_list|,
-name|var1
+name|scale
 argument_list|)
 expr_stmt|;
 name|leftLeg

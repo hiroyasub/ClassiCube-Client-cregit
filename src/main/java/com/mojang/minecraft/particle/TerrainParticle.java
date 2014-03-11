@@ -86,7 +86,7 @@ specifier|public
 name|TerrainParticle
 parameter_list|(
 name|Level
-name|var1
+name|level
 parameter_list|,
 name|float
 name|var2
@@ -107,12 +107,12 @@ name|float
 name|var7
 parameter_list|,
 name|Block
-name|var8
+name|block
 parameter_list|)
 block|{
 name|super
 argument_list|(
-name|var1
+name|level
 argument_list|,
 name|var2
 argument_list|,
@@ -129,13 +129,13 @@ argument_list|)
 expr_stmt|;
 name|tex
 operator|=
-name|var8
+name|block
 operator|.
 name|textureId
 expr_stmt|;
 name|gravity
 operator|=
-name|var8
+name|block
 operator|.
 name|particleGravity
 expr_stmt|;
@@ -166,7 +166,7 @@ name|void
 name|render
 parameter_list|(
 name|ShapeRenderer
-name|var1
+name|shapeRenderer
 parameter_list|,
 name|float
 name|var2
@@ -287,7 +287,7 @@ init|=
 name|getBrightnessColor
 argument_list|()
 decl_stmt|;
-name|var1
+name|shapeRenderer
 operator|.
 name|color
 argument_list|(
@@ -310,7 +310,7 @@ operator|*
 name|bCol
 argument_list|)
 expr_stmt|;
-name|var1
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -345,7 +345,7 @@ argument_list|,
 name|var11
 argument_list|)
 expr_stmt|;
-name|var1
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -380,7 +380,7 @@ argument_list|,
 name|var10
 argument_list|)
 expr_stmt|;
-name|var1
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(
@@ -415,7 +415,7 @@ argument_list|,
 name|var10
 argument_list|)
 expr_stmt|;
-name|var1
+name|shapeRenderer
 operator|.
 name|vertexUV
 argument_list|(

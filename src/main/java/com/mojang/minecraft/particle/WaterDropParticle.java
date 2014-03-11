@@ -58,7 +58,7 @@ specifier|public
 name|WaterDropParticle
 parameter_list|(
 name|Level
-name|var1
+name|level
 parameter_list|,
 name|float
 name|var2
@@ -72,7 +72,7 @@ parameter_list|)
 block|{
 name|super
 argument_list|(
-name|var1
+name|level
 argument_list|,
 name|var2
 argument_list|,
@@ -160,7 +160,7 @@ name|void
 name|render
 parameter_list|(
 name|ShapeRenderer
-name|var1
+name|shapeRenderer
 parameter_list|,
 name|float
 name|var2
@@ -185,7 +185,7 @@ name|super
 operator|.
 name|render
 argument_list|(
-name|var1
+name|shapeRenderer
 argument_list|,
 name|var2
 argument_list|,

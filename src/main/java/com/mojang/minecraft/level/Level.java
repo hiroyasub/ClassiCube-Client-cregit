@@ -175,7 +175,7 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
-name|phys
+name|physics
 operator|.
 name|AABB
 import|;
@@ -1627,7 +1627,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|x0
+name|maxX
 decl_stmt|;
 name|int
 name|var3
@@ -1637,7 +1637,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|x1
+name|minX
 operator|+
 literal|1
 decl_stmt|;
@@ -1649,7 +1649,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|y0
+name|maxY
 decl_stmt|;
 name|int
 name|var5
@@ -1659,7 +1659,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|y1
+name|minY
 operator|+
 literal|1
 decl_stmt|;
@@ -1671,7 +1671,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|z0
+name|maxZ
 decl_stmt|;
 name|int
 name|var7
@@ -1681,7 +1681,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|z1
+name|minZ
 operator|+
 literal|1
 decl_stmt|;
@@ -1689,7 +1689,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|x0
+name|maxX
 operator|<
 literal|0F
 condition|)
@@ -1702,7 +1702,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|y0
+name|maxY
 operator|<
 literal|0F
 condition|)
@@ -1715,7 +1715,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|z0
+name|maxZ
 operator|<
 literal|0F
 condition|)
@@ -1905,7 +1905,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|x0
+name|maxX
 decl_stmt|;
 name|int
 name|var4
@@ -1915,7 +1915,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|x1
+name|minX
 operator|+
 literal|1
 decl_stmt|;
@@ -1927,7 +1927,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|y0
+name|maxY
 decl_stmt|;
 name|int
 name|var6
@@ -1937,7 +1937,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|y1
+name|minY
 operator|+
 literal|1
 decl_stmt|;
@@ -1949,7 +1949,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|z0
+name|maxZ
 decl_stmt|;
 name|int
 name|var8
@@ -1959,7 +1959,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|z1
+name|minZ
 operator|+
 literal|1
 decl_stmt|;
@@ -1967,7 +1967,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|x0
+name|maxX
 operator|<
 literal|0F
 condition|)
@@ -1980,7 +1980,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|y0
+name|maxY
 operator|<
 literal|0F
 condition|)
@@ -1993,7 +1993,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|z0
+name|maxZ
 operator|<
 literal|0F
 condition|)
@@ -2178,7 +2178,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|x0
+name|maxX
 decl_stmt|;
 name|int
 name|var4
@@ -2188,7 +2188,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|x1
+name|minX
 operator|+
 literal|1
 decl_stmt|;
@@ -2200,7 +2200,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|y0
+name|maxY
 decl_stmt|;
 name|int
 name|var6
@@ -2210,7 +2210,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|y1
+name|minY
 operator|+
 literal|1
 decl_stmt|;
@@ -2222,7 +2222,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|z0
+name|maxZ
 decl_stmt|;
 name|int
 name|var8
@@ -2232,7 +2232,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|z1
+name|minZ
 operator|+
 literal|1
 decl_stmt|;
@@ -2240,7 +2240,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|x0
+name|maxX
 operator|<
 literal|0F
 condition|)
@@ -2253,7 +2253,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|y0
+name|maxY
 operator|<
 literal|0F
 condition|)
@@ -2266,7 +2266,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|z0
+name|maxZ
 operator|<
 literal|0F
 condition|)
@@ -4088,7 +4088,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|x0
+name|maxX
 decl_stmt|;
 name|int
 name|var4
@@ -4098,7 +4098,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|x1
+name|minX
 operator|+
 literal|1
 decl_stmt|;
@@ -4110,7 +4110,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|y0
+name|maxY
 decl_stmt|;
 name|int
 name|var6
@@ -4120,7 +4120,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|y1
+name|minY
 operator|+
 literal|1
 decl_stmt|;
@@ -4132,7 +4132,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|z0
+name|maxZ
 decl_stmt|;
 name|int
 name|var8
@@ -4142,7 +4142,7 @@ name|int
 operator|)
 name|var1
 operator|.
-name|z1
+name|minZ
 operator|+
 literal|1
 decl_stmt|;
@@ -4150,7 +4150,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|x0
+name|maxX
 operator|<
 literal|0F
 condition|)
@@ -4163,7 +4163,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|y0
+name|maxY
 operator|<
 literal|0F
 condition|)
@@ -4176,7 +4176,7 @@ if|if
 condition|(
 name|var1
 operator|.
-name|z0
+name|maxZ
 operator|<
 literal|0F
 condition|)

@@ -83,7 +83,7 @@ name|projectionMatrixBuffer
 decl_stmt|;
 specifier|private
 name|FloatBuffer
-name|modelviewMatrixBuffer
+name|modelViewMatrixBuffer
 decl_stmt|;
 specifier|private
 name|FloatBuffer
@@ -102,16 +102,7 @@ argument_list|(
 literal|16
 argument_list|)
 expr_stmt|;
-name|modelviewMatrixBuffer
-operator|=
-name|GLAllocation
-operator|.
-name|createDirectFloatBuffer
-argument_list|(
-literal|16
-argument_list|)
-expr_stmt|;
-name|unused
+name|modelViewMatrixBuffer
 operator|=
 name|GLAllocation
 operator|.
@@ -131,12 +122,7 @@ operator|.
 name|clear
 argument_list|()
 expr_stmt|;
-name|modelviewMatrixBuffer
-operator|.
-name|clear
-argument_list|()
-expr_stmt|;
-name|unused
+name|modelViewMatrixBuffer
 operator|.
 name|clear
 argument_list|()
@@ -145,8 +131,9 @@ name|GL11
 operator|.
 name|glGetFloat
 argument_list|(
-literal|2983
-comment|/* GL_PROJECTION_MATRIX */
+name|GL11
+operator|.
+name|GL_PROJECTION_MATRIX
 argument_list|,
 name|projectionMatrixBuffer
 argument_list|)
@@ -155,10 +142,11 @@ name|GL11
 operator|.
 name|glGetFloat
 argument_list|(
-literal|2982
-comment|/* GL_MODELVIEW_MATRIX */
+name|GL11
+operator|.
+name|GL_MODELVIEW_MATRIX
 argument_list|,
-name|modelviewMatrixBuffer
+name|modelViewMatrixBuffer
 argument_list|)
 expr_stmt|;
 name|projectionMatrixBuffer
@@ -178,7 +166,7 @@ argument_list|(
 name|projectionMatrix
 argument_list|)
 expr_stmt|;
-name|modelviewMatrixBuffer
+name|modelViewMatrixBuffer
 operator|.
 name|flip
 argument_list|()
@@ -188,11 +176,11 @@ argument_list|(
 literal|16
 argument_list|)
 expr_stmt|;
-name|modelviewMatrixBuffer
+name|modelViewMatrixBuffer
 operator|.
 name|get
 argument_list|(
-name|modelviewMatrix
+name|modelViewMatrix
 argument_list|)
 expr_stmt|;
 name|clippingMatrix
@@ -200,7 +188,7 @@ index|[
 literal|0
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|0
 index|]
@@ -210,7 +198,7 @@ index|[
 literal|0
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|1
 index|]
@@ -220,7 +208,7 @@ index|[
 literal|4
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|2
 index|]
@@ -230,7 +218,7 @@ index|[
 literal|8
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|3
 index|]
@@ -245,7 +233,7 @@ index|[
 literal|1
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|0
 index|]
@@ -255,7 +243,7 @@ index|[
 literal|1
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|1
 index|]
@@ -265,7 +253,7 @@ index|[
 literal|5
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|2
 index|]
@@ -275,7 +263,7 @@ index|[
 literal|9
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|3
 index|]
@@ -290,7 +278,7 @@ index|[
 literal|2
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|0
 index|]
@@ -300,7 +288,7 @@ index|[
 literal|2
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|1
 index|]
@@ -310,7 +298,7 @@ index|[
 literal|6
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|2
 index|]
@@ -320,7 +308,7 @@ index|[
 literal|10
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|3
 index|]
@@ -335,7 +323,7 @@ index|[
 literal|3
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|0
 index|]
@@ -345,7 +333,7 @@ index|[
 literal|3
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|1
 index|]
@@ -355,7 +343,7 @@ index|[
 literal|7
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|2
 index|]
@@ -365,7 +353,7 @@ index|[
 literal|11
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|3
 index|]
@@ -380,7 +368,7 @@ index|[
 literal|4
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|4
 index|]
@@ -390,7 +378,7 @@ index|[
 literal|0
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|5
 index|]
@@ -400,7 +388,7 @@ index|[
 literal|4
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|6
 index|]
@@ -410,7 +398,7 @@ index|[
 literal|8
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|7
 index|]
@@ -425,7 +413,7 @@ index|[
 literal|5
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|4
 index|]
@@ -435,7 +423,7 @@ index|[
 literal|1
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|5
 index|]
@@ -445,7 +433,7 @@ index|[
 literal|5
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|6
 index|]
@@ -455,7 +443,7 @@ index|[
 literal|9
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|7
 index|]
@@ -470,7 +458,7 @@ index|[
 literal|6
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|4
 index|]
@@ -480,7 +468,7 @@ index|[
 literal|2
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|5
 index|]
@@ -490,7 +478,7 @@ index|[
 literal|6
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|6
 index|]
@@ -500,7 +488,7 @@ index|[
 literal|10
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|7
 index|]
@@ -515,7 +503,7 @@ index|[
 literal|7
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|4
 index|]
@@ -525,7 +513,7 @@ index|[
 literal|3
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|5
 index|]
@@ -535,7 +523,7 @@ index|[
 literal|7
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|6
 index|]
@@ -545,7 +533,7 @@ index|[
 literal|11
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|7
 index|]
@@ -560,7 +548,7 @@ index|[
 literal|8
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|8
 index|]
@@ -570,7 +558,7 @@ index|[
 literal|0
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|9
 index|]
@@ -580,7 +568,7 @@ index|[
 literal|4
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|10
 index|]
@@ -590,7 +578,7 @@ index|[
 literal|8
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|11
 index|]
@@ -605,7 +593,7 @@ index|[
 literal|9
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|8
 index|]
@@ -615,7 +603,7 @@ index|[
 literal|1
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|9
 index|]
@@ -625,7 +613,7 @@ index|[
 literal|5
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|10
 index|]
@@ -635,7 +623,7 @@ index|[
 literal|9
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|11
 index|]
@@ -650,7 +638,7 @@ index|[
 literal|10
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|8
 index|]
@@ -660,7 +648,7 @@ index|[
 literal|2
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|9
 index|]
@@ -670,7 +658,7 @@ index|[
 literal|6
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|10
 index|]
@@ -680,7 +668,7 @@ index|[
 literal|10
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|11
 index|]
@@ -695,7 +683,7 @@ index|[
 literal|11
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|8
 index|]
@@ -705,7 +693,7 @@ index|[
 literal|3
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|9
 index|]
@@ -715,7 +703,7 @@ index|[
 literal|7
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|10
 index|]
@@ -725,7 +713,7 @@ index|[
 literal|11
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|11
 index|]
@@ -740,7 +728,7 @@ index|[
 literal|12
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|12
 index|]
@@ -750,7 +738,7 @@ index|[
 literal|0
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|13
 index|]
@@ -760,7 +748,7 @@ index|[
 literal|4
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|14
 index|]
@@ -770,7 +758,7 @@ index|[
 literal|8
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|15
 index|]
@@ -785,7 +773,7 @@ index|[
 literal|13
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|12
 index|]
@@ -795,7 +783,7 @@ index|[
 literal|1
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|13
 index|]
@@ -805,7 +793,7 @@ index|[
 literal|5
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|14
 index|]
@@ -815,7 +803,7 @@ index|[
 literal|9
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|15
 index|]
@@ -830,7 +818,7 @@ index|[
 literal|14
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|12
 index|]
@@ -840,7 +828,7 @@ index|[
 literal|2
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|13
 index|]
@@ -850,7 +838,7 @@ index|[
 literal|6
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|14
 index|]
@@ -860,7 +848,7 @@ index|[
 literal|10
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|15
 index|]
@@ -875,7 +863,7 @@ index|[
 literal|15
 index|]
 operator|=
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|12
 index|]
@@ -885,7 +873,7 @@ index|[
 literal|3
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|13
 index|]
@@ -895,7 +883,7 @@ index|[
 literal|7
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|14
 index|]
@@ -905,7 +893,7 @@ index|[
 literal|11
 index|]
 operator|+
-name|modelviewMatrix
+name|modelViewMatrix
 index|[
 literal|15
 index|]

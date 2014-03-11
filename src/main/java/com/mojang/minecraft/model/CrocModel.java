@@ -32,7 +32,7 @@ name|Model
 block|{
 comment|// fields
 name|ModelPart
-name|Tail
+name|tail
 decl_stmt|;
 name|ModelPart
 name|head
@@ -56,7 +56,7 @@ specifier|public
 name|CrocModel
 parameter_list|()
 block|{
-name|Tail
+name|tail
 operator|=
 operator|new
 name|ModelPart
@@ -66,7 +66,7 @@ argument_list|,
 literal|0
 argument_list|)
 expr_stmt|;
-name|Tail
+name|tail
 operator|.
 name|setBounds
 argument_list|(
@@ -85,7 +85,7 @@ argument_list|,
 literal|0F
 argument_list|)
 expr_stmt|;
-name|Tail
+name|tail
 operator|.
 name|setPosition
 argument_list|(
@@ -97,25 +97,25 @@ argument_list|,
 literal|5F
 argument_list|)
 expr_stmt|;
-name|Tail
+name|tail
 operator|.
 name|pitch
 operator|=
 literal|0F
 expr_stmt|;
-name|Tail
+name|tail
 operator|.
 name|yaw
 operator|=
 literal|0F
 expr_stmt|;
-name|Tail
+name|tail
 operator|.
 name|roll
 operator|=
 literal|0F
 expr_stmt|;
-name|Tail
+name|tail
 operator|.
 name|mirror
 operator|=
@@ -582,7 +582,7 @@ argument_list|,
 name|f5
 argument_list|)
 expr_stmt|;
-name|Tail
+name|tail
 operator|.
 name|render
 argument_list|(
@@ -656,7 +656,7 @@ name|f5
 parameter_list|)
 block|{
 comment|// super.setRotationAngles(f, f1, f2, f3, f4, f5);
-name|Tail
+name|tail
 operator|.
 name|yaw
 operator|=
@@ -667,12 +667,19 @@ argument_list|(
 name|f
 operator|/
 operator|(
-literal|1.919107651F
-operator|*
-literal|0.5F
+literal|0.9595538255F
 operator|)
 operator|*
-literal|0.0349065850398866F
+operator|(
+name|float
+operator|)
+operator|(
+name|Math
+operator|.
+name|PI
+operator|/
+literal|90
+operator|)
 operator|*
 name|f1
 operator|+

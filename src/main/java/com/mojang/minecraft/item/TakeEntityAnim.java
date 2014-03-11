@@ -96,7 +96,7 @@ specifier|public
 name|TakeEntityAnim
 parameter_list|(
 name|Level
-name|level1
+name|level
 parameter_list|,
 name|Entity
 name|item
@@ -107,7 +107,7 @@ parameter_list|)
 block|{
 name|super
 argument_list|(
-name|level1
+name|level
 argument_list|)
 expr_stmt|;
 name|this

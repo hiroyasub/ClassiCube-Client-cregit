@@ -47,7 +47,7 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
-name|phys
+name|physics
 operator|.
 name|AABB
 import|;
@@ -599,7 +599,7 @@ name|Override
 specifier|public
 specifier|final
 name|void
-name|renderFullbright
+name|renderFullBrightness
 parameter_list|(
 name|ShapeRenderer
 name|shapeRenderer

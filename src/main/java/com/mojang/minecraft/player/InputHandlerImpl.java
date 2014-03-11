@@ -708,8 +708,6 @@ name|keylist
 index|[
 literal|0
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|move
@@ -723,8 +721,6 @@ name|keylist
 index|[
 literal|1
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|strafe
@@ -738,8 +734,6 @@ name|keylist
 index|[
 literal|2
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|move
@@ -753,8 +747,6 @@ name|keylist
 index|[
 literal|3
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|strafe
@@ -775,8 +767,6 @@ name|keylist
 index|[
 literal|5
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|elevate
@@ -790,8 +780,6 @@ name|keylist
 index|[
 literal|6
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|elevate
@@ -810,8 +798,6 @@ name|keylist
 index|[
 literal|7
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|mult
@@ -825,8 +811,6 @@ name|keylist
 index|[
 literal|8
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|mult
@@ -846,8 +830,6 @@ name|keylist
 index|[
 literal|9
 index|]
-operator|!=
-literal|false
 condition|)
 block|{
 name|player
