@@ -488,12 +488,12 @@ name|void
 name|bindTexture
 parameter_list|(
 name|TextureManager
-name|var1
+name|textureManager
 parameter_list|)
 block|{
 name|textures
 operator|=
-name|var1
+name|textureManager
 expr_stmt|;
 if|if
 condition|(
@@ -602,7 +602,7 @@ condition|)
 block|{
 name|a
 operator|=
-name|var1
+name|textureManager
 operator|.
 name|load
 argument_list|(
@@ -631,7 +631,7 @@ name|GL11
 operator|.
 name|GL_TEXTURE_2D
 argument_list|,
-name|var1
+name|textureManager
 operator|.
 name|load
 argument_list|(
@@ -660,7 +660,7 @@ name|GL11
 operator|.
 name|GL_TEXTURE_2D
 argument_list|,
-name|var1
+name|textureManager
 operator|.
 name|load
 argument_list|(
@@ -696,7 +696,7 @@ name|GL11
 operator|.
 name|GL_TEXTURE_2D
 argument_list|,
-name|var1
+name|textureManager
 operator|.
 name|load
 argument_list|(

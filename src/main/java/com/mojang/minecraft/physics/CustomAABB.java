@@ -6,6 +6,8 @@ operator|.
 name|mojang
 operator|.
 name|minecraft
+operator|.
+name|physics
 package|;
 end_package
 
@@ -93,7 +95,7 @@ operator|.
 name|minX
 operator|=
 name|minX
-operator|-
+operator|+
 literal|0.02F
 expr_stmt|;
 name|this
@@ -101,7 +103,7 @@ operator|.
 name|minY
 operator|=
 name|minY
-operator|-
+operator|+
 literal|0.02F
 expr_stmt|;
 name|this
@@ -109,7 +111,7 @@ operator|.
 name|minZ
 operator|=
 name|minZ
-operator|-
+operator|+
 literal|0.02F
 expr_stmt|;
 block|}

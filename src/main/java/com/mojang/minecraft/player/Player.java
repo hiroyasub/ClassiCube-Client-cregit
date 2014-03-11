@@ -2067,7 +2067,7 @@ name|void
 name|die
 parameter_list|(
 name|Entity
-name|var1
+name|killedBy
 parameter_list|)
 block|{
 name|setSize
@@ -2094,7 +2094,7 @@ literal|0.1F
 expr_stmt|;
 if|if
 condition|(
-name|var1
+name|killedBy
 operator|!=
 literal|null
 condition|)
@@ -2197,10 +2197,10 @@ name|void
 name|hurt
 parameter_list|(
 name|Entity
-name|var1
+name|entity
 parameter_list|,
 name|int
-name|var2
+name|hurtBy
 parameter_list|)
 block|{
 if|if
@@ -2215,9 +2215,9 @@ name|super
 operator|.
 name|hurt
 argument_list|(
-name|var1
+name|entity
 argument_list|,
-name|var2
+name|hurtBy
 argument_list|)
 expr_stmt|;
 block|}
