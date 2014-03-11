@@ -89,7 +89,7 @@ name|minecraft
 operator|.
 name|render
 operator|.
-name|Frustrum
+name|Frustum
 import|;
 end_import
 
@@ -1192,8 +1192,8 @@ parameter_list|(
 name|Vec3D
 name|var1
 parameter_list|,
-name|Frustrum
-name|frustrum
+name|Frustum
+name|frustum
 parameter_list|,
 name|TextureManager
 name|textureManager
@@ -1354,7 +1354,7 @@ literal|2
 decl_stmt|;
 if|if
 condition|(
-name|frustrum
+name|frustum
 operator|.
 name|isBoxInFrustum
 argument_list|(
@@ -1400,10 +1400,10 @@ name|var18
 init|=
 name|var6
 decl_stmt|;
-name|Frustrum
+name|Frustum
 name|var19
 init|=
-name|frustrum
+name|frustum
 decl_stmt|;
 name|int
 name|var20
@@ -1955,7 +1955,7 @@ decl_stmt|;
 if|if
 condition|(
 operator|!
-name|frustrum
+name|frustum
 operator|.
 name|isBoxInFrustum
 argument_list|(

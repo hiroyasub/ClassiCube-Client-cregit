@@ -680,7 +680,7 @@ block|}
 catch|catch
 parameter_list|(
 name|InterruptedException
-name|var3
+name|e
 parameter_list|)
 block|{
 name|minecraft

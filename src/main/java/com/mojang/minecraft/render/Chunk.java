@@ -248,13 +248,13 @@ specifier|final
 name|void
 name|clip
 parameter_list|(
-name|Frustrum
-name|frustrum
+name|Frustum
+name|frustum
 parameter_list|)
 block|{
 name|visible
 operator|=
-name|frustrum
+name|frustum
 operator|.
 name|isBoxInFrustum
 argument_list|(
