@@ -133,7 +133,8 @@ operator|new
 name|CrocModel
 argument_list|()
 decl_stmt|;
-comment|/**      * Gets a model from its name. You can also get block models by providing      * their ID.      *       * @param modelName      *            String representing the name of the model      * @return The Model with the name that was requested or null if not found.      */
+comment|/**      * Gets a model from its name. You can also get block models by providing      * their ID.      *      * @param modelName      *            String representing the name of the model      * @return The Model with the name that was requested or null if not found.      */
+comment|// TODO Use an enum
 specifier|public
 specifier|final
 name|Model

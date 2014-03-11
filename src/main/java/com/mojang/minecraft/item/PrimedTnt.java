@@ -198,7 +198,7 @@ specifier|public
 name|PrimedTnt
 parameter_list|(
 name|Level
-name|level1
+name|level
 parameter_list|,
 name|float
 name|x
@@ -212,7 +212,7 @@ parameter_list|)
 block|{
 name|super
 argument_list|(
-name|level1
+name|level
 argument_list|)
 expr_stmt|;
 name|setSize
@@ -249,7 +249,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|3.1415927410125732D
+name|Math
+operator|.
+name|PI
 operator|*
 literal|2D
 operator|)

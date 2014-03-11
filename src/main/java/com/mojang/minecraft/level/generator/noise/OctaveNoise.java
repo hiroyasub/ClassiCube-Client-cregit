@@ -116,7 +116,6 @@ name|noiseLevel
 init|=
 literal|1D
 decl_stmt|;
-comment|// unknown0
 for|for
 control|(
 name|int

@@ -149,7 +149,7 @@ name|void
 name|generateList
 parameter_list|(
 name|float
-name|var1
+name|scale
 parameter_list|)
 block|{
 name|list
@@ -199,27 +199,17 @@ name|var2
 control|)
 block|{
 name|TexturedQuad
-name|var10000
+name|var4
 init|=
 name|quads
 index|[
 name|var2
 index|]
 decl_stmt|;
-name|float
-name|var3
-init|=
-name|var1
-decl_stmt|;
-name|TexturedQuad
-name|var4
-init|=
-name|var10000
-decl_stmt|;
 name|Vec3D
 name|var5
 init|=
-name|var10000
+name|var4
 operator|.
 name|vertices
 index|[
@@ -270,6 +260,7 @@ operator|.
 name|normalize
 argument_list|()
 decl_stmt|;
+comment|// TODO ???
 name|GL11
 operator|.
 name|glNormal3f
@@ -394,7 +385,7 @@ name|vector
 operator|.
 name|x
 operator|*
-name|var3
+name|scale
 argument_list|,
 name|var8
 operator|.
@@ -402,7 +393,7 @@ name|vector
 operator|.
 name|y
 operator|*
-name|var3
+name|scale
 argument_list|,
 name|var8
 operator|.
@@ -410,7 +401,7 @@ name|vector
 operator|.
 name|z
 operator|*
-name|var3
+name|scale
 argument_list|)
 expr_stmt|;
 block|}

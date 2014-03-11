@@ -73,7 +73,7 @@ name|mojang
 operator|.
 name|minecraft
 operator|.
-name|phys
+name|physics
 operator|.
 name|AABB
 import|;

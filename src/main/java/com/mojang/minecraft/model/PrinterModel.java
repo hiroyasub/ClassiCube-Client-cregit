@@ -12,7 +12,7 @@ package|;
 end_package
 
 begin_comment
-comment|/*  * Based on PrinterModel.java from Minechem v4.x. Minechem v4.x is licensed under Creative Commons  * Attribution-ShareAlike 3.0 Unported.   * The details of the licence can be found at: http://creativecommons.org/licenses/by-sa/3.0/us/  */
+comment|/*  * Based on PrinterModel.java from Minechem v4.x. Minechem v4.x is licensed under Creative Commons  * Attribution-ShareAlike 3.0 Unported.  * The details of the licence can be found at: http://creativecommons.org/licenses/by-sa/3.0/us/  */
 end_comment
 
 begin_class

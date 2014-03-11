@@ -1658,7 +1658,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|x0
+name|maxX
 operator|&&
 name|x
 argument_list|<
@@ -1666,7 +1666,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|x1
+name|minX
 operator|&&
 name|y
 argument_list|>
@@ -1674,7 +1674,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|y0
+name|maxY
 operator|&&
 name|y
 operator|<
@@ -1682,7 +1682,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|y1
+name|minY
 condition|)
 block|{
 name|ChatClickData
@@ -1754,7 +1754,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|y0
+name|maxY
 operator|&&
 name|y
 operator|<
@@ -1762,7 +1762,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|y1
+name|minY
 condition|)
 block|{
 name|String
@@ -2236,7 +2236,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|x0
+name|maxX
 operator|&&
 name|x
 argument_list|<
@@ -2244,7 +2244,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|x1
+name|minX
 operator|&&
 name|y
 argument_list|>
@@ -2252,7 +2252,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|y0
+name|maxY
 operator|&&
 name|y
 operator|<
@@ -2260,7 +2260,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|y1
+name|minY
 condition|)
 block|{
 name|ChatClickData
@@ -2332,7 +2332,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|y0
+name|maxY
 operator|&&
 name|y
 operator|<
@@ -2340,7 +2340,7 @@ name|data
 operator|.
 name|bounds
 operator|.
-name|y1
+name|minY
 condition|)
 block|{
 name|super

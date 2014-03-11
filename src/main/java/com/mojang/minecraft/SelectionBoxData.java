@@ -103,7 +103,7 @@ name|x
 operator|-
 name|bounds
 operator|.
-name|x0
+name|maxX
 decl_stmt|;
 name|float
 name|dy
@@ -114,7 +114,7 @@ name|y
 operator|-
 name|bounds
 operator|.
-name|y0
+name|maxY
 decl_stmt|;
 name|float
 name|dz
@@ -125,7 +125,7 @@ name|z
 operator|-
 name|bounds
 operator|.
-name|z0
+name|maxZ
 decl_stmt|;
 return|return
 name|dx
@@ -159,7 +159,7 @@ name|x
 operator|-
 name|bounds
 operator|.
-name|x1
+name|minX
 decl_stmt|;
 name|float
 name|dy
@@ -170,7 +170,7 @@ name|y
 operator|-
 name|bounds
 operator|.
-name|y1
+name|minY
 decl_stmt|;
 name|float
 name|dz
@@ -181,7 +181,7 @@ name|z
 operator|-
 name|bounds
 operator|.
-name|z1
+name|minZ
 decl_stmt|;
 return|return
 name|dx

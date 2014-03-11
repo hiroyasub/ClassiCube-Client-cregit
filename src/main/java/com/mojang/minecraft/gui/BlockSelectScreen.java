@@ -854,7 +854,7 @@ argument_list|()
 expr_stmt|;
 name|var4
 operator|.
-name|renderFullbright
+name|renderFullBrightness
 argument_list|(
 name|var8
 argument_list|)
