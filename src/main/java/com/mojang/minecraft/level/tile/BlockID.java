@@ -18,6 +18,7 @@ specifier|public
 enum|enum
 name|BlockID
 block|{
+comment|// TODO Separate CPE blocks from standard ones
 name|Undefined
 argument_list|(
 literal|255

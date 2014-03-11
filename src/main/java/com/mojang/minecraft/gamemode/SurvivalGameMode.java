@@ -179,7 +179,7 @@ name|this
 operator|.
 name|spawner
 operator|.
-name|HasStopped
+name|hasStopped
 operator|=
 literal|true
 expr_stmt|;
@@ -781,7 +781,7 @@ name|this
 operator|.
 name|spawner
 operator|.
-name|HasStopped
+name|hasStopped
 condition|)
 block|{
 return|return;

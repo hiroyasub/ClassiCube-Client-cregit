@@ -61,9 +61,6 @@ name|IceBlock
 extends|extends
 name|Block
 block|{
-name|int
-name|ID
-decl_stmt|;
 name|boolean
 name|showNeighborSides
 init|=
@@ -73,23 +70,19 @@ specifier|protected
 name|IceBlock
 parameter_list|(
 name|int
-name|var1
+name|id
 parameter_list|)
 block|{
 name|super
 argument_list|(
-name|var1
+name|id
 argument_list|)
-expr_stmt|;
-name|ID
-operator|=
-name|var1
 expr_stmt|;
 name|Block
 operator|.
 name|liquid
 index|[
-name|var1
+name|id
 index|]
 operator|=
 literal|true
@@ -119,7 +112,7 @@ name|side
 parameter_list|)
 block|{
 name|int
-name|var6
+name|tile
 init|=
 name|level
 operator|.
@@ -134,14 +127,15 @@ argument_list|)
 decl_stmt|;
 return|return
 operator|!
+operator|(
+operator|!
 name|showNeighborSides
 operator|&&
-name|var6
+name|tile
 operator|==
 name|id
-condition|?
-literal|false
-else|:
+operator|)
+operator|&&
 name|super
 operator|.
 name|canRenderSide
@@ -292,7 +286,7 @@ operator|++
 name|face
 control|)
 block|{
-comment|/*              * if (face == 0) { shapeRenderer.useNormal(0F, 1F, 0F); }              *               * if (face == 1) { shapeRenderer.useNormal(0F, -1F, 0F); }              *               * if (face == 2) { shapeRenderer.useNormal(0F, 0F, 1F); }              *               * if (face == 3) { shapeRenderer.useNormal(0F, 0F, -1F); }              *               * if (face == 4) { shapeRenderer.useNormal(1F, 0F, 0F); }              *               * if (face == 5) { shapeRenderer.useNormal(-1F, 0F, 0F); }              */
+comment|/*              * if (face == 0) { shapeRenderer.useNormal(0F, 1F, 0F); }              *              * if (face == 1) { shapeRenderer.useNormal(0F, -1F, 0F); }              *              * if (face == 2) { shapeRenderer.useNormal(0F, 0F, 1F); }              *              * if (face == 3) { shapeRenderer.useNormal(0F, 0F, -1F); }              *              * if (face == 4) { shapeRenderer.useNormal(1F, 0F, 0F); }              *              * if (face == 5) { shapeRenderer.useNormal(-1F, 0F, 0F); }              */
 name|renderInside
 argument_list|(
 name|shapeRenderer

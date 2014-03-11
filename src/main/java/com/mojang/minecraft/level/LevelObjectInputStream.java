@@ -108,14 +108,14 @@ specifier|public
 name|LevelObjectInputStream
 parameter_list|(
 name|InputStream
-name|var1
+name|inputStream
 parameter_list|)
 throws|throws
 name|IOException
 block|{
 name|super
 argument_list|(
-name|var1
+name|inputStream
 argument_list|)
 expr_stmt|;
 name|classes
