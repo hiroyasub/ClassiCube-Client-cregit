@@ -189,7 +189,7 @@ name|int
 name|port
 parameter_list|,
 name|Minecraft
-name|mc
+name|minecraft
 parameter_list|)
 block|{
 try|try
@@ -263,7 +263,7 @@ argument_list|,
 name|ex
 argument_list|)
 expr_stmt|;
-name|mc
+name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
@@ -276,13 +276,13 @@ literal|"You failed to connect to the server. It\'s probably down!"
 argument_list|)
 argument_list|)
 expr_stmt|;
-name|mc
+name|minecraft
 operator|.
 name|isOnline
 operator|=
 literal|false
 expr_stmt|;
-name|mc
+name|minecraft
 operator|.
 name|networkManager
 operator|=
