@@ -119,7 +119,7 @@ decl_stmt|;
 name|String
 name|VersionString
 init|=
-literal|"0.12"
+literal|"0.13"
 decl_stmt|;
 annotation|@
 name|Override
@@ -129,7 +129,7 @@ name|void
 name|onButtonClick
 parameter_list|(
 name|Button
-name|var1
+name|button
 parameter_list|)
 block|{
 if|if
@@ -143,7 +143,7 @@ condition|)
 block|{
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -157,8 +157,6 @@ argument_list|(
 operator|new
 name|OptionsScreen
 argument_list|(
-name|this
-argument_list|,
 name|minecraft
 operator|.
 name|settings
@@ -168,7 +166,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -189,7 +187,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -210,7 +208,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -316,7 +314,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -341,7 +339,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -400,7 +398,7 @@ block|}
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -462,7 +460,7 @@ else|else
 block|{
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -476,8 +474,6 @@ argument_list|(
 operator|new
 name|OptionsScreen
 argument_list|(
-name|this
-argument_list|,
 name|minecraft
 operator|.
 name|settings
@@ -487,7 +483,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -508,7 +504,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -529,7 +525,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -550,7 +546,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -571,7 +567,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -596,7 +592,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -655,7 +651,7 @@ block|}
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==

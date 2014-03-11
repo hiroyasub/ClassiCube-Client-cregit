@@ -39,12 +39,12 @@ name|void
 name|onButtonClick
 parameter_list|(
 name|Button
-name|var1
+name|button
 parameter_list|)
 block|{
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -58,8 +58,6 @@ argument_list|(
 operator|new
 name|OptionsScreen
 argument_list|(
-name|this
-argument_list|,
 name|minecraft
 operator|.
 name|settings
@@ -69,7 +67,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -96,7 +94,7 @@ name|session
 operator|!=
 literal|null
 operator|&&
-name|var1
+name|button
 operator|.
 name|id
 operator|==

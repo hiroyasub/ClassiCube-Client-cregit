@@ -85,10 +85,6 @@ specifier|private
 name|FloatBuffer
 name|modelViewMatrixBuffer
 decl_stmt|;
-specifier|private
-name|FloatBuffer
-name|unused
-decl_stmt|;
 specifier|public
 name|FrustrumImpl
 parameter_list|()

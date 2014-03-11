@@ -428,12 +428,12 @@ name|int
 name|getWidth
 parameter_list|(
 name|String
-name|paramString
+name|text
 parameter_list|)
 block|{
 if|if
 condition|(
-name|paramString
+name|text
 operator|==
 literal|null
 condition|)
@@ -446,7 +446,7 @@ name|char
 index|[]
 name|arrayOfChar
 init|=
-name|paramString
+name|text
 operator|.
 name|toCharArray
 argument_list|()
@@ -618,13 +618,6 @@ name|y
 operator|*
 name|f2
 expr_stmt|;
-comment|// if(shadow){
-comment|// float f3 = 1F * this.userScale;
-comment|// float f3 = x - (2 - x);
-comment|// GL11.glTranslatef(f3, f3, 0F);
-comment|// x = x+f3;
-comment|// y= y+f3;
-comment|// }
 name|GL11
 operator|.
 name|glBindTexture
@@ -1004,11 +997,6 @@ operator|.
 name|glPushMatrix
 argument_list|()
 expr_stmt|;
-comment|// if (shadow)
-comment|// {
-comment|// float f3 = 1F * this.userScale;
-comment|// GL11.glTranslatef(f3, f3, 0F);
-comment|// }
 name|GL11
 operator|.
 name|glScalef

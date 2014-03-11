@@ -1170,9 +1170,6 @@ name|float
 name|var3
 decl_stmt|;
 name|float
-name|var4
-decl_stmt|;
-name|float
 name|var7
 decl_stmt|;
 name|float

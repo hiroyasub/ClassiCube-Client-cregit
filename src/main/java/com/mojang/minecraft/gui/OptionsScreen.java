@@ -110,9 +110,6 @@ decl_stmt|;
 specifier|public
 name|OptionsScreen
 parameter_list|(
-name|GuiScreen
-name|parent
-parameter_list|,
 name|GameSettings
 name|settings
 parameter_list|)
@@ -227,8 +224,6 @@ argument_list|(
 operator|new
 name|ControlsScreen
 argument_list|(
-name|this
-argument_list|,
 name|settings
 argument_list|)
 argument_list|)

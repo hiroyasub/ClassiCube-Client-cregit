@@ -307,7 +307,7 @@ specifier|public
 name|HUDScreen
 parameter_list|(
 name|Minecraft
-name|var1
+name|minecraft
 parameter_list|,
 name|int
 name|var2
@@ -318,7 +318,7 @@ parameter_list|)
 block|{
 name|mc
 operator|=
-name|var1
+name|minecraft
 expr_stmt|;
 name|width
 operator|=
@@ -343,12 +343,12 @@ name|void
 name|addChat
 parameter_list|(
 name|String
-name|var1
+name|text
 parameter_list|)
 block|{
 if|if
 condition|(
-name|var1
+name|text
 operator|.
 name|contains
 argument_list|(
@@ -358,7 +358,7 @@ condition|)
 block|{
 name|Compass
 operator|=
-name|var1
+name|text
 operator|.
 name|replace
 argument_list|(
@@ -378,7 +378,7 @@ argument_list|,
 operator|new
 name|ChatLine
 argument_list|(
-name|var1
+name|text
 argument_list|)
 argument_list|)
 expr_stmt|;
@@ -408,7 +408,7 @@ block|}
 block|}
 specifier|public
 name|int
-name|FindGroupChanges
+name|findGroupChanges
 parameter_list|(
 name|int
 name|Page
@@ -500,11 +500,11 @@ block|}
 for|for
 control|(
 name|int
-name|var11
+name|i
 init|=
 literal|0
 init|;
-name|var11
+name|i
 operator|<
 name|namesToPrint
 operator|.
@@ -512,7 +512,7 @@ name|size
 argument_list|()
 condition|;
 operator|++
-name|var11
+name|i
 control|)
 block|{
 name|PlayerListNameData
@@ -522,7 +522,7 @@ name|namesToPrint
 operator|.
 name|get
 argument_list|(
-name|var11
+name|i
 argument_list|)
 decl_stmt|;
 if|if
@@ -774,7 +774,7 @@ literal|false
 expr_stmt|;
 block|}
 name|int
-name|var10
+name|health
 init|=
 name|mc
 operator|.
@@ -783,7 +783,7 @@ operator|.
 name|health
 decl_stmt|;
 name|int
-name|var11
+name|lastHealth
 init|=
 name|mc
 operator|.
@@ -873,7 +873,7 @@ literal|32
 expr_stmt|;
 if|if
 condition|(
-name|var10
+name|health
 operator|<=
 literal|4
 condition|)
@@ -922,7 +922,7 @@ operator|)
 operator|+
 literal|1
 operator|<
-name|var11
+name|lastHealth
 condition|)
 block|{
 name|drawImage
@@ -951,7 +951,7 @@ operator|)
 operator|+
 literal|1
 operator|==
-name|var11
+name|lastHealth
 condition|)
 block|{
 name|drawImage
@@ -981,7 +981,7 @@ operator|)
 operator|+
 literal|1
 operator|<
-name|var10
+name|health
 condition|)
 block|{
 name|drawImage
@@ -1010,7 +1010,7 @@ operator|)
 operator|+
 literal|1
 operator|==
-name|var10
+name|health
 condition|)
 block|{
 name|drawImage
@@ -2057,7 +2057,7 @@ name|mc
 operator|.
 name|currentScreen
 operator|instanceof
-name|ChatInputScreenExtension
+name|ChatInputScreen
 condition|)
 block|{
 name|chatLinesInScreen
@@ -2217,7 +2217,7 @@ name|chatWidth
 argument_list|,
 name|chatHeight
 argument_list|,
-name|ChatInputScreenExtension
+name|ChatInputScreen
 operator|.
 name|ChatRGB
 argument_list|)
@@ -2642,11 +2642,11 @@ condition|)
 block|{
 for|for
 control|(
-name|var11
+name|lastHealth
 operator|=
 literal|0
 init|;
-name|var11
+name|lastHealth
 operator|<
 name|playersOnWorld
 operator|.
@@ -2654,7 +2654,7 @@ name|size
 argument_list|()
 condition|;
 operator|++
-name|var11
+name|lastHealth
 control|)
 block|{
 name|int
@@ -2662,7 +2662,7 @@ name|var28
 init|=
 name|i
 operator|+
-name|var11
+name|lastHealth
 operator|%
 literal|2
 operator|*
@@ -2678,7 +2678,7 @@ operator|-
 literal|64
 operator|+
 operator|(
-name|var11
+name|lastHealth
 operator|/
 literal|2
 operator|<<
@@ -2716,7 +2716,7 @@ name|playersOnWorld
 operator|.
 name|get
 argument_list|(
-name|var11
+name|lastHealth
 argument_list|)
 expr_stmt|;
 name|fontRenderer
@@ -2727,7 +2727,7 @@ name|playersOnWorld
 operator|.
 name|get
 argument_list|(
-name|var11
+name|lastHealth
 argument_list|)
 argument_list|,
 name|var28
@@ -2750,7 +2750,7 @@ name|playersOnWorld
 operator|.
 name|get
 argument_list|(
-name|var11
+name|lastHealth
 argument_list|)
 argument_list|,
 name|var28
@@ -2823,7 +2823,7 @@ control|)
 block|{
 name|groupChanges
 operator|+=
-name|FindGroupChanges
+name|findGroupChanges
 argument_list|(
 name|m
 argument_list|,
@@ -2847,7 +2847,7 @@ name|rangeA
 operator|+
 name|maxStringsPerScreen
 operator|-
-name|FindGroupChanges
+name|findGroupChanges
 argument_list|(
 name|Page
 argument_list|,
@@ -2903,11 +2903,11 @@ literal|0
 decl_stmt|;
 for|for
 control|(
-name|var11
+name|lastHealth
 operator|=
 literal|0
 init|;
-name|var11
+name|lastHealth
 operator|<
 name|namesToPrint
 operator|.
@@ -2915,12 +2915,12 @@ name|size
 argument_list|()
 condition|;
 operator|++
-name|var11
+name|lastHealth
 control|)
 block|{
 if|if
 condition|(
-name|var11
+name|lastHealth
 operator|<
 name|maxStringsPerColumn
 operator|-
@@ -2940,7 +2940,7 @@ else|else
 block|{
 if|if
 condition|(
-name|var11
+name|lastHealth
 operator|>=
 name|maxStringsPerColumn
 operator|-
@@ -2979,7 +2979,7 @@ name|namesToPrint
 operator|.
 name|get
 argument_list|(
-name|var11
+name|lastHealth
 argument_list|)
 decl_stmt|;
 if|if

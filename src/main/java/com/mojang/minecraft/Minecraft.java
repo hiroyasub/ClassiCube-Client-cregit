@@ -545,7 +545,7 @@ name|minecraft
 operator|.
 name|gui
 operator|.
-name|ChatInputScreenExtension
+name|ChatInputScreen
 import|;
 end_import
 
@@ -4432,9 +4432,6 @@ name|x
 decl_stmt|;
 name|int
 name|y
-decl_stmt|;
-name|int
-name|z
 decl_stmt|;
 name|int
 name|i
@@ -18681,11 +18678,11 @@ operator|.
 name|releaseAllKeys
 argument_list|()
 expr_stmt|;
-name|ChatInputScreenExtension
+name|ChatInputScreen
 name|s
 init|=
 operator|new
-name|ChatInputScreenExtension
+name|ChatInputScreen
 argument_list|()
 decl_stmt|;
 name|setCurrentScreen
@@ -18932,7 +18929,7 @@ expr_stmt|;
 name|setCurrentScreen
 argument_list|(
 operator|new
-name|ChatInputScreenExtension
+name|ChatInputScreen
 argument_list|()
 argument_list|)
 expr_stmt|;

@@ -151,12 +151,12 @@ name|void
 name|onButtonClick
 parameter_list|(
 name|Button
-name|var1
+name|button
 parameter_list|)
 block|{
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==
@@ -166,7 +166,7 @@ block|{
 block|}
 if|if
 condition|(
-name|var1
+name|button
 operator|.
 name|id
 operator|==

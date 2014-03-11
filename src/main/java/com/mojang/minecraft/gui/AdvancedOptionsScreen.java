@@ -890,8 +890,6 @@ argument_list|(
 operator|new
 name|OptionsScreen
 argument_list|(
-name|this
-argument_list|,
 name|settings
 argument_list|)
 argument_list|)
