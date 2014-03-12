@@ -4221,11 +4221,6 @@ block|{
 name|shutdown
 argument_list|()
 expr_stmt|;
-name|Display
-operator|.
-name|destroy
-argument_list|()
-expr_stmt|;
 block|}
 block|}
 comment|// Called by run() every frame. Handles timing and rendering. Calls tick().

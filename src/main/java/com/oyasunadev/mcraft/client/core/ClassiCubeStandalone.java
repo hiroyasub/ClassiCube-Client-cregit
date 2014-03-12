@@ -1537,9 +1537,6 @@ operator|.
 name|shutdown
 argument_list|()
 expr_stmt|;
-name|dispose
-argument_list|()
-expr_stmt|;
 name|System
 operator|.
 name|exit
