@@ -2806,6 +2806,12 @@ expr_stmt|;
 break|break;
 block|}
 block|}
+name|yRot
+operator|=
+name|level
+operator|.
+name|rotSpawn
+expr_stmt|;
 block|}
 block|}
 specifier|public
