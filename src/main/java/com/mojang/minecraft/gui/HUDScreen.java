@@ -585,6 +585,14 @@ operator|.
 name|enableGuiMode
 argument_list|()
 expr_stmt|;
+if|if
+condition|(
+operator|!
+name|mc
+operator|.
+name|canRenderGUI
+condition|)
+return|return;
 name|TextureManager
 name|var6
 init|=
