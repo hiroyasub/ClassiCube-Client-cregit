@@ -2690,9 +2690,6 @@ name|renderHover
 parameter_list|(
 name|TextureManager
 name|textureManager
-parameter_list|,
-name|float
-name|var2
 parameter_list|)
 block|{
 block|}

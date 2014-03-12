@@ -425,7 +425,7 @@ argument_list|,
 name|yTranslation
 argument_list|,
 operator|-
-literal|0.5F
+literal|0.2F
 argument_list|)
 expr_stmt|;
 name|GL11
