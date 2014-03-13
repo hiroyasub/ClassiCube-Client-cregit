@@ -1974,6 +1974,15 @@ name|hyp
 operator|*
 literal|3F
 expr_stmt|;
+if|if
+condition|(
+operator|!
+operator|(
+name|this
+operator|instanceof
+name|Player
+operator|)
+condition|)
 name|var4
 operator|=
 operator|(
