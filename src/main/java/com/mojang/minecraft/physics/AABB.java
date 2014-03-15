@@ -13,16 +13,6 @@ end_package
 
 begin_import
 import|import
-name|java
-operator|.
-name|io
-operator|.
-name|Serializable
-import|;
-end_import
-
-begin_import
-import|import
 name|com
 operator|.
 name|mojang
@@ -54,6 +44,16 @@ operator|.
 name|util
 operator|.
 name|Vec3D
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|Serializable
 import|;
 end_import
 
@@ -998,7 +998,7 @@ name|z
 argument_list|)
 return|;
 block|}
-comment|/**      * Checks if the AABB contains the vector.      * @param vector      * @return      */
+comment|/**      * Checks if the AABB contains the vector.      * @param vector The vector to check against.      * @return boolean      */
 specifier|public
 name|boolean
 name|contains

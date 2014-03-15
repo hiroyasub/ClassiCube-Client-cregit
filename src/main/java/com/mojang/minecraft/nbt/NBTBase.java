@@ -94,7 +94,7 @@ name|void
 name|write
 parameter_list|(
 name|DataOutput
-name|dataoutput
+name|output
 parameter_list|)
 throws|throws
 name|IOException
@@ -105,7 +105,7 @@ name|void
 name|load
 parameter_list|(
 name|DataInput
-name|datainput
+name|input
 parameter_list|)
 throws|throws
 name|IOException
@@ -148,7 +148,7 @@ name|name
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Sets the name for this tag and returns this for convenience.      */
+comment|/**      * Sets the name for this tag and returns this for convenience.      * @param name The tag name.      */
 specifier|public
 name|NBTBase
 name|setName
@@ -184,7 +184,7 @@ return|return
 name|this
 return|;
 block|}
-comment|/**      * Gets the name corresponding to the tag, or an empty string if none set.      */
+comment|/**      * Gets the name corresponding to the tag, or an empty string if none set.      * @return String The tag's name.      */
 specifier|public
 name|String
 name|getName
@@ -211,7 +211,7 @@ name|NBTBase
 name|readNamedTag
 parameter_list|(
 name|DataInput
-name|par0DataInput
+name|input
 parameter_list|)
 throws|throws
 name|IOException
@@ -219,7 +219,7 @@ block|{
 name|byte
 name|b0
 init|=
-name|par0DataInput
+name|input
 operator|.
 name|readByte
 argument_list|()
@@ -242,7 +242,7 @@ block|{
 name|String
 name|s
 init|=
-name|par0DataInput
+name|input
 operator|.
 name|readUTF
 argument_list|()
@@ -261,7 +261,7 @@ name|nbtbase
 operator|.
 name|load
 argument_list|(
-name|par0DataInput
+name|input
 argument_list|)
 expr_stmt|;
 return|return
@@ -269,26 +269,26 @@ name|nbtbase
 return|;
 block|}
 block|}
-comment|/**      * Writes the specified tag to the given DataOutput, writing the type byte,      * the UTF string key and then calling the tag to write its data.      */
+comment|/**      * Writes the specified tag to the given DataOutput, writing the type byte,      * the UTF string key and then calling the tag to write its data.      * @param tag The NBT Tag to write.      * @param output The data output.      */
 specifier|public
 specifier|static
 name|void
 name|writeNamedTag
 parameter_list|(
 name|NBTBase
-name|par0NBTBase
+name|tag
 parameter_list|,
 name|DataOutput
-name|par1DataOutput
+name|output
 parameter_list|)
 throws|throws
 name|IOException
 block|{
-name|par1DataOutput
+name|output
 operator|.
 name|writeByte
 argument_list|(
-name|par0NBTBase
+name|tag
 operator|.
 name|getId
 argument_list|()
@@ -296,7 +296,7 @@ argument_list|)
 expr_stmt|;
 if|if
 condition|(
-name|par0NBTBase
+name|tag
 operator|.
 name|getId
 argument_list|()
@@ -304,21 +304,21 @@ operator|!=
 literal|0
 condition|)
 block|{
-name|par1DataOutput
+name|output
 operator|.
 name|writeUTF
 argument_list|(
-name|par0NBTBase
+name|tag
 operator|.
 name|getName
 argument_list|()
 argument_list|)
 expr_stmt|;
-name|par0NBTBase
+name|tag
 operator|.
 name|write
 argument_list|(
-name|par1DataOutput
+name|output
 argument_list|)
 expr_stmt|;
 block|}
@@ -604,14 +604,12 @@ name|this
 operator|.
 name|getId
 argument_list|()
-operator|!=
+operator|==
 name|tempOther
 operator|.
 name|getId
 argument_list|()
-condition|?
-literal|false
-else|:
+operator|&&
 operator|(
 operator|(
 name|this
@@ -640,7 +638,8 @@ name|name
 operator|!=
 literal|null
 operator|)
-condition|?
+operator|&&
+operator|(
 name|this
 operator|.
 name|name
@@ -657,8 +656,7 @@ name|tempOther
 operator|.
 name|name
 argument_list|)
-else|:
-literal|false
+operator|)
 operator|)
 return|;
 block|}

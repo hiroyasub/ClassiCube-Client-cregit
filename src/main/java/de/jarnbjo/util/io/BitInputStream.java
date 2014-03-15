@@ -26,7 +26,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  * An interface with methods allowing bit-wise reading from an input stream. All  * methods in this interface are optional and an implementation not support a  * method or a specific state (e.g. endian) will throw an  * UnspportedOperationException if such a method is being called. This should be  * speicified in the implementation documentation.  */
+comment|/**  * An interface with methods allowing bit-wise reading from an input stream. All  * methods in this interface are optional and an implementation not support a  * method or a specific state (e.g. endian) will throw an  * UnsupportedOperationException if such a method is being called. This should be  * specified in the implementation documentation.  */
 end_comment
 
 begin_interface
@@ -142,7 +142,7 @@ parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/**      * changes the endian mode used when reading bit-wise from the stream,      * changing the mode mid-stream will cause the read cursor to move to the      * beginning of the next byte (as if calling the<code>allign</code> method      *       * @see #align()      *       * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+comment|/**      * changes the endian mode used when reading bit-wise from the stream,      * changing the mode mid-stream will cause the read cursor to move to the      * beginning of the next byte (as if calling the<code>align</code> method      *       * @see #align()      *       * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|void
 name|setEndian

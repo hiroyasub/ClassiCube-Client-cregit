@@ -324,9 +324,6 @@ return|return
 name|root
 operator|.
 name|value
-operator|.
-name|intValue
-argument_list|()
 return|;
 block|}
 specifier|public

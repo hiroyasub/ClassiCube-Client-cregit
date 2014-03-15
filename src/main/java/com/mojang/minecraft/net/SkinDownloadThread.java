@@ -41,6 +41,16 @@ end_import
 
 begin_import
 import|import
+name|javax
+operator|.
+name|imageio
+operator|.
+name|ImageIO
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|awt
@@ -68,16 +78,6 @@ operator|.
 name|net
 operator|.
 name|URL
-import|;
-end_import
-
-begin_import
-import|import
-name|javax
-operator|.
-name|imageio
-operator|.
-name|ImageIO
 import|;
 end_import
 

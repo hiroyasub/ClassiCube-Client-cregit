@@ -95,12 +95,12 @@ name|void
 name|write
 parameter_list|(
 name|DataOutput
-name|par1DataOutput
+name|output
 parameter_list|)
 throws|throws
 name|IOException
 block|{
-name|par1DataOutput
+name|output
 operator|.
 name|writeLong
 argument_list|(
@@ -117,7 +117,7 @@ name|void
 name|load
 parameter_list|(
 name|DataInput
-name|par1DataInput
+name|input
 parameter_list|)
 throws|throws
 name|IOException
@@ -126,7 +126,7 @@ name|this
 operator|.
 name|data
 operator|=
-name|par1DataInput
+name|input
 operator|.
 name|readLong
 argument_list|()

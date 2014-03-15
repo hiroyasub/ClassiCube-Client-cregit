@@ -91,8 +91,6 @@ index|[]
 name|getNextOggPacket
 parameter_list|()
 throws|throws
-name|OggFormatException
-throws|,
 name|IOException
 function_decl|;
 comment|/**      *<i>Note:</i> To read from the stream, you must use either this method or      * the method<code>getNextOggPacket</code>. Mixing calls to the two methods      * will cause data corruption.      *       * @return the next Ogg page      *       * @see #getNextOggPacket()      *       * @throws OggFormatException      *             if the ogg stream is corrupted      * @throws IOException      *             if some other IO error occurs      */
@@ -101,8 +99,6 @@ name|OggPage
 name|getNextOggPage
 parameter_list|()
 throws|throws
-name|OggFormatException
-throws|,
 name|IOException
 function_decl|;
 comment|/**      * @return the last parsed granule position of this stream      */
@@ -123,8 +119,6 @@ name|void
 name|reset
 parameter_list|()
 throws|throws
-name|OggFormatException
-throws|,
 name|IOException
 function_decl|;
 comment|/**      * This method is invoked on all logical streams when calling the same      * method on the physical stream. The same restrictions as mentioned there      * apply. This method does not work if the physical Ogg stream is not      * seekable.      *       * @param granulePosition      *       * @see PhysicalOggStream#setTime(long)      *       * @throws IOException      *             if an IO error occurs      */

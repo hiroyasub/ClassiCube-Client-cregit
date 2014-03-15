@@ -13,18 +13,6 @@ end_package
 
 begin_import
 import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
-name|opengl
-operator|.
-name|GL11
-import|;
-end_import
-
-begin_import
-import|import
 name|com
 operator|.
 name|mojang
@@ -160,6 +148,18 @@ operator|.
 name|util
 operator|.
 name|MathHelper
+import|;
+end_import
+
+begin_import
+import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
+name|GL11
 import|;
 end_import
 
@@ -546,9 +546,6 @@ condition|)
 block|{
 name|hurt
 argument_list|(
-operator|(
-name|Entity
-operator|)
 literal|null
 argument_list|,
 name|var2
@@ -1855,9 +1852,6 @@ else|else
 block|{
 name|hurt
 argument_list|(
-operator|(
-name|Entity
-operator|)
 literal|null
 argument_list|,
 literal|2
@@ -1891,9 +1885,6 @@ condition|)
 block|{
 name|hurt
 argument_list|(
-operator|(
-name|Entity
-operator|)
 literal|null
 argument_list|,
 literal|10
@@ -2333,8 +2324,6 @@ block|}
 block|}
 if|else if
 condition|(
-name|flyingMode
-operator|&&
 name|ai
 operator|.
 name|running

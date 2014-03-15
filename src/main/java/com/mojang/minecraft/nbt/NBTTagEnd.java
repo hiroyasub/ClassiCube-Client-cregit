@@ -68,7 +68,7 @@ name|void
 name|load
 parameter_list|(
 name|DataInput
-name|par1DataInput
+name|input
 parameter_list|)
 throws|throws
 name|IOException
@@ -81,7 +81,7 @@ name|void
 name|write
 parameter_list|(
 name|DataOutput
-name|par1DataOutput
+name|output
 parameter_list|)
 throws|throws
 name|IOException

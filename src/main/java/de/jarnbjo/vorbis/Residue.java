@@ -15,6 +15,20 @@ end_package
 
 begin_import
 import|import
+name|de
+operator|.
+name|jarnbjo
+operator|.
+name|util
+operator|.
+name|io
+operator|.
+name|BitInputStream
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|io
@@ -30,20 +44,6 @@ operator|.
 name|util
 operator|.
 name|HashMap
-import|;
-end_import
-
-begin_import
-import|import
-name|de
-operator|.
-name|jarnbjo
-operator|.
-name|util
-operator|.
-name|io
-operator|.
-name|*
 import|;
 end_import
 
@@ -514,8 +514,6 @@ name|SetupHeader
 name|header
 parameter_list|)
 throws|throws
-name|VorbisFormatException
-throws|,
 name|IOException
 block|{
 name|int
@@ -630,11 +628,7 @@ name|looks
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|Mode
-argument_list|,
-name|Look
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|protected
@@ -652,8 +646,6 @@ name|SetupHeader
 name|header
 parameter_list|)
 throws|throws
-name|VorbisFormatException
-throws|,
 name|IOException
 block|{
 name|begin
@@ -909,8 +901,6 @@ index|[]
 name|vectors
 parameter_list|)
 throws|throws
-name|VorbisFormatException
-throws|,
 name|IOException
 function_decl|;
 comment|// public abstract double[][] getDecodedVectors();
@@ -1038,9 +1028,6 @@ comment|// return new Look(source, key);
 name|Look
 name|look
 init|=
-operator|(
-name|Look
-operator|)
 name|looks
 operator|.
 name|get
