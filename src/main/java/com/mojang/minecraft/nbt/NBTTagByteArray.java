@@ -100,7 +100,7 @@ operator|=
 name|byteArrayInput
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension      * classes      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
 annotation|@
 name|Override
 name|void
@@ -133,7 +133,7 @@ name|byteArray
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension      * classes      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
 annotation|@
 name|Override
 name|void
@@ -173,7 +173,7 @@ name|byteArray
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Gets the type byte for the tag.      */
+comment|/**      * Gets the type byte for the tag.      * @return byte.      */
 annotation|@
 name|Override
 specifier|public

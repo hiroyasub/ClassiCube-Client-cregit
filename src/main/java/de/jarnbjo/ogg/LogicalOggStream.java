@@ -69,8 +69,6 @@ specifier|public
 name|void
 name|close
 parameter_list|()
-throws|throws
-name|IOException
 function_decl|;
 comment|/**      * @return the content type of this stream      *       * @see #FORMAT_UNKNOWN      * @see #FORMAT_VORBIS      * @see #FORMAT_FLAC      * @see #FORMAT_THEORA      */
 specifier|public
@@ -118,8 +116,6 @@ specifier|public
 name|void
 name|reset
 parameter_list|()
-throws|throws
-name|IOException
 function_decl|;
 comment|/**      * This method is invoked on all logical streams when calling the same      * method on the physical stream. The same restrictions as mentioned there      * apply. This method does not work if the physical Ogg stream is not      * seekable.      *       * @param granulePosition      *       * @see PhysicalOggStream#setTime(long)      *       * @throws IOException      *             if an IO error occurs      */
 specifier|public

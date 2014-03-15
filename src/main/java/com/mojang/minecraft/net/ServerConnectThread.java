@@ -182,7 +182,7 @@ block|}
 catch|catch
 parameter_list|(
 name|ConnectException
-name|var3
+name|e
 parameter_list|)
 block|{
 name|minecraft

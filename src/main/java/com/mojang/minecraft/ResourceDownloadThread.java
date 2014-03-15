@@ -237,8 +237,6 @@ parameter_list|,
 name|Minecraft
 name|minecraft
 parameter_list|)
-throws|throws
-name|IOException
 block|{
 name|this
 operator|.
