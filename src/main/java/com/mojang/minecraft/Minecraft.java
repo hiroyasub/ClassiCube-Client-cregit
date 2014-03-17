@@ -3128,6 +3128,11 @@ name|height
 expr_stmt|;
 name|currentScreen
 operator|.
+name|clearButtons
+argument_list|()
+expr_stmt|;
+name|currentScreen
+operator|.
 name|onOpen
 argument_list|()
 expr_stmt|;
