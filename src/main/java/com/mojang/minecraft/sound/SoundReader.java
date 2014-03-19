@@ -13,16 +13,6 @@ end_package
 
 begin_import
 import|import
-name|java
-operator|.
-name|net
-operator|.
-name|URL
-import|;
-end_import
-
-begin_import
-import|import
 name|com
 operator|.
 name|mojang
@@ -78,6 +68,16 @@ operator|.
 name|vorbis
 operator|.
 name|VorbisStream
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|net
+operator|.
+name|URL
 import|;
 end_import
 

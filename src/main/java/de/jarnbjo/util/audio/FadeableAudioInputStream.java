@@ -13,23 +13,23 @@ end_package
 
 begin_import
 import|import
-name|java
-operator|.
-name|io
-operator|.
-name|*
-import|;
-end_import
-
-begin_import
-import|import
 name|javax
 operator|.
 name|sound
 operator|.
 name|sampled
 operator|.
-name|*
+name|AudioInputStream
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|IOException
 import|;
 end_import
 
@@ -58,8 +58,6 @@ parameter_list|(
 name|AudioInputStream
 name|stream
 parameter_list|)
-throws|throws
-name|IOException
 block|{
 name|super
 argument_list|(

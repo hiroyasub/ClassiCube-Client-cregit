@@ -15,7 +15,7 @@ name|java
 operator|.
 name|awt
 operator|.
-name|Color
+name|*
 import|;
 end_import
 

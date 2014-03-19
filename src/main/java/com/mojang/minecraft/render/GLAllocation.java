@@ -13,6 +13,18 @@ end_package
 
 begin_import
 import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
+name|GL11
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|nio
@@ -100,18 +112,6 @@ operator|.
 name|Map
 operator|.
 name|Entry
-import|;
-end_import
-
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
-name|opengl
-operator|.
-name|GL11
 import|;
 end_import
 
@@ -304,14 +304,6 @@ name|Integer
 argument_list|>
 name|entity
 init|=
-operator|(
-name|Entry
-argument_list|<
-name|Integer
-argument_list|,
-name|Integer
-argument_list|>
-operator|)
 name|i
 decl_stmt|;
 name|GL11
