@@ -33,7 +33,7 @@ name|util
 operator|.
 name|io
 operator|.
-name|*
+name|BitInputStream
 import|;
 end_import
 

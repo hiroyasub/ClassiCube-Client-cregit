@@ -47,7 +47,7 @@ name|mojang
 operator|.
 name|util
 operator|.
-name|Vec3D
+name|MathHelper
 import|;
 end_import
 
@@ -59,7 +59,7 @@ name|mojang
 operator|.
 name|util
 operator|.
-name|MathHelper
+name|Vec3D
 import|;
 end_import
 

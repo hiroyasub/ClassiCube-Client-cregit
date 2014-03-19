@@ -19,7 +19,17 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|IOException
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|RandomAccessFile
 import|;
 end_import
 
@@ -29,7 +39,37 @@ name|java
 operator|.
 name|util
 operator|.
-name|*
+name|ArrayList
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Collection
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|HashMap
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Iterator
 import|;
 end_import
 
@@ -77,7 +117,7 @@ name|LogicalOggStreamImpl
 argument_list|>
 argument_list|()
 decl_stmt|;
-comment|/**      * Creates access to the specified file through the      *<code>PhysicalOggStream</code> interface. The specified source file must      * have been opened for reading.      *       * @param source      *            the file to read from      *       * @throws OggFormatException      *             if the stream format is incorrect      * @throws IOException      *             if some other IO error occurs when reading the file      */
+comment|/**      * Creates access to the specified file through the      *<code>PhysicalOggStream</code> interface. The specified source file must      * have been opened for reading.      *      * @param source      *            the file to read from      *      * @throws OggFormatException      *             if the stream format is incorrect      * @throws IOException      *             if some other IO error occurs when reading the file      */
 specifier|public
 name|FileStream
 parameter_list|(

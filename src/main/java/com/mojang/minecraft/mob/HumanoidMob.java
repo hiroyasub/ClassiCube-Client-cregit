@@ -65,7 +65,7 @@ name|level
 operator|.
 name|tile
 operator|.
-name|FlowerBlock
+name|FireBlock
 import|;
 end_import
 
@@ -81,7 +81,7 @@ name|level
 operator|.
 name|tile
 operator|.
-name|FireBlock
+name|FlowerBlock
 import|;
 end_import
 

@@ -25,20 +25,6 @@ name|IOException
 import|;
 end_import
 
-begin_import
-import|import
-name|de
-operator|.
-name|jarnbjo
-operator|.
-name|util
-operator|.
-name|io
-operator|.
-name|BitInputStream
-import|;
-end_import
-
 begin_comment
 comment|/**  * Representation of a node in a Huffman tree, used to read Huffman compressed  * codewords from e.g. a Vorbis stream.  */
 end_comment
@@ -309,7 +295,7 @@ operator|=
 name|value
 return|;
 block|}
-comment|/**      * creates a new tree node at the first free location at the given depth,      * and assigns the value to it      *       * @param depth      *            the tree depth of the new node (codeword length in bits)      * @param value      *            the node's new value      */
+comment|/**      * creates a new tree node at the first free location at the given depth,      * and assigns the value to it      *      * @param depth      *            the tree depth of the new node (codeword length in bits)      * @param value      *            the node's new value      */
 specifier|public
 name|boolean
 name|setNewValue

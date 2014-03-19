@@ -19,7 +19,27 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|IOException
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|InputStream
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|RandomAccessFile
 import|;
 end_import
 
@@ -29,7 +49,17 @@ name|java
 operator|.
 name|net
 operator|.
-name|*
+name|URL
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|net
+operator|.
+name|URLConnection
 import|;
 end_import
 
@@ -39,7 +69,37 @@ name|java
 operator|.
 name|util
 operator|.
-name|*
+name|ArrayList
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Collection
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|HashMap
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Iterator
 import|;
 end_import
 
@@ -812,7 +872,7 @@ argument_list|)
 argument_list|)
 return|;
 block|}
-comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *       * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
+comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *      * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
 specifier|public
 name|Collection
 argument_list|<

@@ -129,18 +129,6 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|util
-operator|.
-name|Vec3D
-import|;
-end_import
-
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
 name|minecraft
 operator|.
 name|player
@@ -158,6 +146,18 @@ operator|.
 name|util
 operator|.
 name|MathHelper
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|util
+operator|.
+name|Vec3D
 import|;
 end_import
 

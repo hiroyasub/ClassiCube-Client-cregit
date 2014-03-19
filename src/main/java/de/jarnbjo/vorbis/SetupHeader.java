@@ -19,7 +19,7 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|IOException
 import|;
 end_import
 
@@ -33,7 +33,7 @@ name|util
 operator|.
 name|io
 operator|.
-name|*
+name|BitInputStream
 import|;
 end_import
 

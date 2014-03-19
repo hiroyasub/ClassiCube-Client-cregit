@@ -19,7 +19,17 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|ByteArrayOutputStream
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|IOException
 import|;
 end_import
 
@@ -29,7 +39,7 @@ name|java
 operator|.
 name|util
 operator|.
-name|*
+name|ArrayList
 import|;
 end_import
 

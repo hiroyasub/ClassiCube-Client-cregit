@@ -13,18 +13,6 @@ end_package
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|LogUtil
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|io
@@ -80,6 +68,18 @@ operator|.
 name|util
 operator|.
 name|Set
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|LogUtil
 import|;
 end_import
 
