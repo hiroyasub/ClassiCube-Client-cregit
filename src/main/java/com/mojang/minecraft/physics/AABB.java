@@ -998,7 +998,7 @@ name|z
 argument_list|)
 return|;
 block|}
-comment|/**      * Checks if the AABB contains the vector.      * @param vector      * @return      */
+comment|/**      * Checks if the AABB contains the vector.      * @param vector The vector to check against.      * @return boolean      */
 specifier|public
 name|boolean
 name|contains
