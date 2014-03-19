@@ -309,10 +309,6 @@ name|System
 operator|.
 name|arraycopy
 argument_list|(
-operator|(
-name|byte
-index|[]
-operator|)
 name|source
 argument_list|,
 literal|0
@@ -749,9 +745,6 @@ condition|)
 block|{
 name|l
 operator|=
-operator|(
-name|int
-operator|)
 operator|(
 operator|(
 name|InputStream

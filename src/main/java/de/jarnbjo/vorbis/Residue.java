@@ -630,11 +630,7 @@ name|looks
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|Mode
-argument_list|,
-name|Look
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|protected
@@ -1038,9 +1034,6 @@ comment|// return new Look(source, key);
 name|Look
 name|look
 init|=
-operator|(
-name|Look
-operator|)
 name|looks
 operator|.
 name|get

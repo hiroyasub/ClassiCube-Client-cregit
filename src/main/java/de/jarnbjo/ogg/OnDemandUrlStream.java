@@ -121,11 +121,7 @@ name|logicalStreams
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|Integer
-argument_list|,
-name|LogicalOggStreamImpl
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -206,14 +202,10 @@ name|logicalStreams
 operator|.
 name|put
 argument_list|(
-operator|new
-name|Integer
-argument_list|(
 name|firstPage
 operator|.
 name|getStreamSerialNumber
 argument_list|()
-argument_list|)
 argument_list|,
 name|los
 argument_list|)

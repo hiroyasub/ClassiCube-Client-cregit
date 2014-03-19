@@ -168,8 +168,6 @@ specifier|public
 name|boolean
 name|getBit
 parameter_list|()
-throws|throws
-name|IOException
 block|{
 if|if
 condition|(
@@ -262,8 +260,6 @@ parameter_list|(
 name|HuffmanNode
 name|root
 parameter_list|)
-throws|throws
-name|IOException
 block|{
 while|while
 condition|(
@@ -324,9 +320,6 @@ return|return
 name|root
 operator|.
 name|value
-operator|.
-name|intValue
-argument_list|()
 return|;
 block|}
 specifier|public
@@ -814,6 +807,8 @@ name|order
 parameter_list|)
 throws|throws
 name|IOException
+throws|,
+name|UnsupportedOperationException
 block|{
 name|int
 name|msbs
@@ -1177,13 +1172,15 @@ index|[]
 name|buffer
 parameter_list|,
 name|int
-name|off
+name|offset
 parameter_list|,
 name|int
 name|len
 parameter_list|)
 throws|throws
 name|IOException
+throws|,
+name|UnsupportedOperationException
 block|{
 if|if
 condition|(
@@ -1209,11 +1206,11 @@ control|(
 name|int
 name|i
 init|=
-name|off
+name|offset
 init|;
 name|i
 operator|<
-name|off
+name|offset
 operator|+
 name|len
 condition|;
