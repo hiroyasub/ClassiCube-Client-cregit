@@ -157,7 +157,7 @@ decl_stmt|;
 specifier|private
 specifier|final
 name|int
-name|miliseconds
+name|milliseconds
 init|=
 literal|30
 decl_stmt|;
@@ -449,9 +449,6 @@ name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
-operator|(
-name|GuiScreen
-operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -908,9 +905,9 @@ expr_stmt|;
 block|}
 block|}
 argument_list|,
-name|miliseconds
+name|milliseconds
 argument_list|,
-name|miliseconds
+name|milliseconds
 argument_list|)
 expr_stmt|;
 block|}

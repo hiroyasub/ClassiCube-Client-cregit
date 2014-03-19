@@ -303,14 +303,9 @@ block|}
 catch|catch
 parameter_list|(
 name|UnsupportedFlavorException
-name|ex
-parameter_list|)
-block|{
-block|}
-catch|catch
-parameter_list|(
+decl||
 name|IOException
-name|e
+name|ex
 parameter_list|)
 block|{
 block|}
@@ -564,9 +559,6 @@ name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
-operator|(
-name|GuiScreen
-operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -585,9 +577,6 @@ name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
-operator|(
-name|GuiScreen
-operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -637,7 +626,7 @@ condition|)
 block|{
 comment|// 28
 name|String
-name|str1
+name|message
 init|=
 name|inputLine
 operator|.
@@ -646,7 +635,7 @@ argument_list|()
 decl_stmt|;
 if|if
 condition|(
-name|str1
+name|message
 operator|.
 name|toLowerCase
 argument_list|()
@@ -659,7 +648,7 @@ condition|)
 block|{
 if|if
 condition|(
-name|str1
+name|message
 operator|.
 name|equalsIgnoreCase
 argument_list|(
@@ -719,7 +708,7 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|str1
+name|message
 operator|.
 name|equalsIgnoreCase
 argument_list|(
@@ -771,7 +760,7 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|str1
+name|message
 operator|.
 name|equalsIgnoreCase
 argument_list|(
@@ -831,7 +820,7 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|str1
+name|message
 operator|.
 name|equalsIgnoreCase
 argument_list|(
@@ -866,7 +855,8 @@ operator|.
 name|settings
 operator|.
 name|HackType
-operator|++
+operator|=
+literal|1
 expr_stmt|;
 block|}
 name|minecraft
@@ -916,7 +906,7 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|str1
+name|message
 operator|.
 name|equalsIgnoreCase
 argument_list|(
@@ -990,7 +980,7 @@ expr_stmt|;
 block|}
 if|else if
 condition|(
-name|str1
+name|message
 operator|.
 name|equalsIgnoreCase
 argument_list|(
@@ -1124,13 +1114,13 @@ name|addChat
 argument_list|(
 literal|"&f"
 operator|+
-name|str1
+name|message
 argument_list|)
 expr_stmt|;
 block|}
 if|else if
 condition|(
-name|str1
+name|message
 operator|.
 name|length
 argument_list|()
@@ -1138,24 +1128,12 @@ operator|>
 literal|0
 condition|)
 block|{
-name|NetworkManager
-name|var10000
-init|=
-name|minecraft
-operator|.
-name|networkManager
-decl_stmt|;
-name|NetworkManager
-name|var3
-init|=
-name|var10000
-decl_stmt|;
 if|if
 condition|(
 operator|(
-name|str1
+name|message
 operator|=
-name|str1
+name|message
 operator|.
 name|trim
 argument_list|()
@@ -1167,7 +1145,9 @@ operator|>
 literal|0
 condition|)
 block|{
-name|var3
+name|minecraft
+operator|.
+name|networkManager
 operator|.
 name|netHandler
 operator|.
@@ -1177,20 +1157,10 @@ name|PacketType
 operator|.
 name|CHAT_MESSAGE
 argument_list|,
-operator|new
-name|Object
-index|[]
-block|{
-name|Integer
-operator|.
-name|valueOf
-argument_list|(
 operator|-
 literal|1
-argument_list|)
-block|,
-name|str1
-block|}
+argument_list|,
+name|message
 argument_list|)
 expr_stmt|;
 block|}
@@ -1199,16 +1169,13 @@ name|history
 operator|.
 name|add
 argument_list|(
-name|str1
+name|message
 argument_list|)
 expr_stmt|;
 name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
-operator|(
-name|GuiScreen
-operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -1710,10 +1677,13 @@ condition|(
 name|data
 operator|.
 name|string
-operator|==
+operator|.
+name|equals
+argument_list|(
 name|chatClickData
 operator|.
 name|message
+argument_list|)
 condition|)
 block|{
 for|for
@@ -1794,7 +1764,7 @@ operator|!=
 literal|null
 condition|)
 block|{
-name|openWebpage
+name|openWebPage
 argument_list|(
 name|uri
 argument_list|)
@@ -1827,7 +1797,7 @@ expr_stmt|;
 block|}
 specifier|public
 name|void
-name|openWebpage
+name|openWebPage
 parameter_list|(
 name|URI
 name|uri
@@ -2288,10 +2258,13 @@ condition|(
 name|data
 operator|.
 name|string
-operator|==
+operator|.
+name|equals
+argument_list|(
 name|chatClickData
 operator|.
 name|message
+argument_list|)
 condition|)
 block|{
 for|for
@@ -2310,10 +2283,8 @@ condition|(
 name|ld
 operator|!=
 literal|null
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
+operator|(
 name|x
 operator|>
 name|ld
@@ -2341,6 +2312,7 @@ operator|.
 name|bounds
 operator|.
 name|minY
+operator|)
 condition|)
 block|{
 name|super
@@ -2377,7 +2349,6 @@ operator|-
 literal|2147483648
 argument_list|)
 expr_stmt|;
-block|}
 block|}
 block|}
 block|}

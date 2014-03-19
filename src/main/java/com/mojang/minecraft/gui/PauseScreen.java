@@ -203,9 +203,6 @@ name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
-operator|(
-name|GuiScreen
-operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -456,9 +453,6 @@ name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
-operator|(
-name|GuiScreen
-operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -1118,7 +1112,7 @@ name|minecraft
 operator|.
 name|monitoringThread
 operator|.
-name|getAvarageUsagePerCPU
+name|getAverageUsagePerCPU
 argument_list|()
 decl_stmt|;
 name|double

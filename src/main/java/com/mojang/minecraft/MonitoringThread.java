@@ -273,7 +273,7 @@ expr_stmt|;
 block|}
 specifier|public
 name|double
-name|getAvarageUsagePerCPU
+name|getAverageUsagePerCPU
 parameter_list|()
 block|{
 return|return

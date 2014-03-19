@@ -147,9 +147,6 @@ name|mc
 operator|.
 name|setCurrentScreen
 argument_list|(
-operator|(
-name|GuiScreen
-operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -192,12 +189,7 @@ name|FileNameExtensionFilter
 argument_list|(
 literal|".Zip Texture Packs"
 argument_list|,
-operator|new
-name|String
-index|[]
-block|{
 literal|"zip"
-block|}
 argument_list|)
 decl_stmt|;
 name|screen

@@ -109,12 +109,7 @@ name|FileNameExtensionFilter
 argument_list|(
 literal|"ClassicWorld format (.cw)"
 argument_list|,
-operator|new
-name|String
-index|[]
-block|{
 literal|"cw"
-block|}
 argument_list|)
 decl_stmt|;
 name|screen
