@@ -13,13 +13,21 @@ end_package
 
 begin_import
 import|import
-name|com
+name|java
 operator|.
-name|mojang
+name|util
 operator|.
-name|minecraft
+name|ArrayList
+import|;
+end_import
+
+begin_import
+import|import
+name|java
 operator|.
-name|Minecraft
+name|util
+operator|.
+name|List
 import|;
 end_import
 
@@ -61,21 +69,13 @@ end_import
 
 begin_import
 import|import
-name|java
+name|com
 operator|.
-name|util
+name|mojang
 operator|.
-name|ArrayList
-import|;
-end_import
-
-begin_import
-import|import
-name|java
+name|minecraft
 operator|.
-name|util
-operator|.
-name|List
+name|Minecraft
 import|;
 end_import
 
@@ -277,6 +277,9 @@ name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
+operator|(
+name|GuiScreen
+operator|)
 literal|null
 argument_list|)
 expr_stmt|;

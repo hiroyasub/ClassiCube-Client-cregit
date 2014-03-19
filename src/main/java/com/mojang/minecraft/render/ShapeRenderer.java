@@ -13,25 +13,41 @@ end_package
 
 begin_import
 import|import
-name|com
+name|java
 operator|.
-name|mojang
+name|nio
 operator|.
-name|minecraft
-operator|.
-name|GameSettings
+name|ByteBuffer
 import|;
 end_import
 
 begin_import
 import|import
-name|com
+name|java
 operator|.
-name|mojang
+name|nio
 operator|.
-name|minecraft
+name|ByteOrder
+import|;
+end_import
+
+begin_import
+import|import
+name|java
 operator|.
-name|LogUtil
+name|nio
+operator|.
+name|FloatBuffer
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|nio
+operator|.
+name|IntBuffer
 import|;
 end_import
 
@@ -73,41 +89,25 @@ end_import
 
 begin_import
 import|import
-name|java
+name|com
 operator|.
-name|nio
+name|mojang
 operator|.
-name|ByteBuffer
+name|minecraft
+operator|.
+name|GameSettings
 import|;
 end_import
 
 begin_import
 import|import
-name|java
+name|com
 operator|.
-name|nio
+name|mojang
 operator|.
-name|ByteOrder
-import|;
-end_import
-
-begin_import
-import|import
-name|java
+name|minecraft
 operator|.
-name|nio
-operator|.
-name|FloatBuffer
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|nio
-operator|.
-name|IntBuffer
+name|LogUtil
 import|;
 end_import
 
@@ -121,13 +121,11 @@ specifier|static
 name|boolean
 name|convertQuadsToTriangles
 decl_stmt|;
-comment|// TODO Never assigned
 specifier|public
 specifier|static
 name|boolean
 name|tryVBO
 decl_stmt|;
-comment|// TODO Never used
 specifier|private
 name|ByteBuffer
 name|byteBuffer

@@ -13,6 +13,18 @@ end_package
 
 begin_import
 import|import
+name|org
+operator|.
+name|lwjgl
+operator|.
+name|opengl
+operator|.
+name|GL11
+import|;
+end_import
+
+begin_import
+import|import
 name|com
 operator|.
 name|mojang
@@ -53,7 +65,7 @@ name|level
 operator|.
 name|tile
 operator|.
-name|FireBlock
+name|FlowerBlock
 import|;
 end_import
 
@@ -69,7 +81,7 @@ name|level
 operator|.
 name|tile
 operator|.
-name|FlowerBlock
+name|FireBlock
 import|;
 end_import
 
@@ -140,18 +152,6 @@ operator|.
 name|render
 operator|.
 name|TextureManager
-import|;
-end_import
-
-begin_import
-import|import
-name|org
-operator|.
-name|lwjgl
-operator|.
-name|opengl
-operator|.
-name|GL11
 import|;
 end_import
 
@@ -293,11 +293,8 @@ block|{
 if|if
 condition|(
 name|modelName
-operator|.
-name|equals
-argument_list|(
+operator|==
 literal|"sheep"
-argument_list|)
 condition|)
 block|{
 name|renderSheep

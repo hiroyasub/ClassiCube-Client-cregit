@@ -11,20 +11,6 @@ end_package
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|gui
-operator|.
-name|FontRenderer
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|net
@@ -77,8 +63,22 @@ name|Pattern
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|gui
+operator|.
+name|FontRenderer
+import|;
+end_import
+
 begin_comment
-comment|/**  * Class used to store data for clicking URLs in the chat screen  *   * @author Jon  *   */
+comment|/**  * Class used to store data for clicking URLs in the chat sceen  *   * @author Jon  *   */
 end_comment
 
 begin_class

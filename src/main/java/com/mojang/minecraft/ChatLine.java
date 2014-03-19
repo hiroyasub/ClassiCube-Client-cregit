@@ -11,20 +11,6 @@ end_package
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|gui
-operator|.
-name|FontRenderer
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|io
@@ -73,6 +59,20 @@ name|Calendar
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|gui
+operator|.
+name|FontRenderer
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
@@ -98,7 +98,7 @@ argument_list|(
 literal|"line.separator"
 argument_list|)
 decl_stmt|;
-comment|/**      * Constructs a new chatline, logs to the userdata as well      *       * @param message      *            The chatline      */
+comment|/**      * Constructs a new chatline, logs to the userdata aswell      *       * @param message      *            The chatline      */
 specifier|public
 name|ChatLine
 parameter_list|(
