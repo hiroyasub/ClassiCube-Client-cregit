@@ -14210,17 +14210,12 @@ name|short
 name|sideLevel
 init|=
 operator|(
-operator|(
 name|Short
 operator|)
 name|packetParams
 index|[
 literal|3
 index|]
-operator|)
-operator|.
-name|byteValue
-argument_list|()
 decl_stmt|;
 if|if
 condition|(
