@@ -78,7 +78,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  * Class used to store data for clicking URLs in the chat sceen  *   * @author Jon  *   */
+comment|/**  * Class used to store data for clicking URLs in the chat screen  *   * @author Jon  *   */
 end_comment
 
 begin_class

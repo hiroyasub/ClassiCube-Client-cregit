@@ -150,7 +150,7 @@ name|List
 argument_list|<
 name|String
 argument_list|>
-name|typinglog
+name|typingLog
 init|=
 operator|new
 name|ArrayList
@@ -160,7 +160,7 @@ decl_stmt|;
 specifier|public
 specifier|static
 name|int
-name|typinglogpos
+name|typingLogPos
 init|=
 literal|0
 decl_stmt|;

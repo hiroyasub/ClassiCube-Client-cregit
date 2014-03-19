@@ -98,7 +98,7 @@ argument_list|(
 literal|"line.separator"
 argument_list|)
 decl_stmt|;
-comment|/**      * Constructs a new chatline, logs to the userdata aswell      *       * @param message      *            The chatline      */
+comment|/**      * Constructs a new chatline, logs to the userdata as well      *       * @param message      *            The chatline      */
 specifier|public
 name|ChatLine
 parameter_list|(
