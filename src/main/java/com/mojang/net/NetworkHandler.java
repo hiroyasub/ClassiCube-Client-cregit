@@ -401,15 +401,10 @@ name|TYPE
 condition|)
 block|{
 return|return
-name|Long
-operator|.
-name|valueOf
-argument_list|(
 name|in
 operator|.
 name|getLong
 argument_list|()
-argument_list|)
 return|;
 block|}
 if|else if
@@ -422,15 +417,10 @@ name|TYPE
 condition|)
 block|{
 return|return
-name|Integer
-operator|.
-name|valueOf
-argument_list|(
 name|in
 operator|.
 name|getInt
 argument_list|()
-argument_list|)
 return|;
 block|}
 if|else if
@@ -443,15 +433,10 @@ name|TYPE
 condition|)
 block|{
 return|return
-name|Short
-operator|.
-name|valueOf
-argument_list|(
 name|in
 operator|.
 name|getShort
 argument_list|()
-argument_list|)
 return|;
 block|}
 if|else if
@@ -464,15 +449,10 @@ name|TYPE
 condition|)
 block|{
 return|return
-name|Byte
-operator|.
-name|valueOf
-argument_list|(
 name|in
 operator|.
 name|get
 argument_list|()
-argument_list|)
 return|;
 block|}
 if|else if
@@ -485,15 +465,10 @@ name|TYPE
 condition|)
 block|{
 return|return
-name|Double
-operator|.
-name|valueOf
-argument_list|(
 name|in
 operator|.
 name|getDouble
 argument_list|()
-argument_list|)
 return|;
 block|}
 if|else if
@@ -506,15 +481,10 @@ name|TYPE
 condition|)
 block|{
 return|return
-name|Float
-operator|.
-name|valueOf
-argument_list|(
 name|in
 operator|.
 name|getFloat
 argument_list|()
-argument_list|)
 return|;
 block|}
 if|else if
@@ -691,14 +661,9 @@ operator|.
 name|putLong
 argument_list|(
 operator|(
-operator|(
 name|Long
 operator|)
 name|packetObject
-operator|)
-operator|.
-name|longValue
-argument_list|()
 argument_list|)
 expr_stmt|;
 block|}
@@ -716,14 +681,9 @@ operator|.
 name|putInt
 argument_list|(
 operator|(
-operator|(
-name|Number
+name|Integer
 operator|)
 name|packetObject
-operator|)
-operator|.
-name|intValue
-argument_list|()
 argument_list|)
 expr_stmt|;
 block|}
@@ -791,14 +751,9 @@ operator|.
 name|putDouble
 argument_list|(
 operator|(
-operator|(
 name|Double
 operator|)
 name|packetObject
-operator|)
-operator|.
-name|doubleValue
-argument_list|()
 argument_list|)
 expr_stmt|;
 block|}
@@ -816,14 +771,9 @@ operator|.
 name|putFloat
 argument_list|(
 operator|(
-operator|(
 name|Float
 operator|)
 name|packetObject
-operator|)
-operator|.
-name|floatValue
-argument_list|()
 argument_list|)
 expr_stmt|;
 block|}
