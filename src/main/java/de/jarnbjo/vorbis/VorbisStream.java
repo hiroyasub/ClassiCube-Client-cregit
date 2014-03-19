@@ -15,13 +15,23 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|io
+operator|.
+name|*
+import|;
+end_import
+
+begin_import
+import|import
 name|de
 operator|.
 name|jarnbjo
 operator|.
 name|ogg
 operator|.
-name|LogicalOggStream
+name|*
 import|;
 end_import
 
@@ -35,31 +45,7 @@ name|util
 operator|.
 name|io
 operator|.
-name|BitInputStream
-import|;
-end_import
-
-begin_import
-import|import
-name|de
-operator|.
-name|jarnbjo
-operator|.
-name|util
-operator|.
-name|io
-operator|.
-name|ByteArrayBitInputStream
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|io
-operator|.
-name|IOException
+name|*
 import|;
 end_import
 
@@ -175,6 +161,8 @@ name|LogicalOggStream
 name|oggStream
 parameter_list|)
 throws|throws
+name|VorbisFormatException
+throws|,
 name|IOException
 block|{
 name|this
@@ -385,6 +373,8 @@ name|AudioPacket
 name|getNextAudioPacket
 parameter_list|()
 throws|throws
+name|VorbisFormatException
+throws|,
 name|IOException
 block|{
 name|byte
@@ -494,6 +484,8 @@ index|[]
 name|packet
 parameter_list|)
 throws|throws
+name|VorbisFormatException
+throws|,
 name|IOException
 block|{
 if|if

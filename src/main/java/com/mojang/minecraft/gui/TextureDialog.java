@@ -25,13 +25,11 @@ end_import
 
 begin_import
 import|import
-name|com
+name|java
 operator|.
-name|mojang
+name|io
 operator|.
-name|minecraft
-operator|.
-name|Minecraft
+name|IOException
 import|;
 end_import
 
@@ -41,7 +39,7 @@ name|javax
 operator|.
 name|swing
 operator|.
-name|*
+name|JFileChooser
 import|;
 end_import
 
@@ -59,11 +57,13 @@ end_import
 
 begin_import
 import|import
-name|java
+name|com
 operator|.
-name|io
+name|mojang
 operator|.
-name|IOException
+name|minecraft
+operator|.
+name|Minecraft
 import|;
 end_import
 
@@ -147,6 +147,9 @@ name|mc
 operator|.
 name|setCurrentScreen
 argument_list|(
+operator|(
+name|GuiScreen
+operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -189,7 +192,12 @@ name|FileNameExtensionFilter
 argument_list|(
 literal|".Zip Texture Packs"
 argument_list|,
+operator|new
+name|String
+index|[]
+block|{
 literal|"zip"
+block|}
 argument_list|)
 decl_stmt|;
 name|screen

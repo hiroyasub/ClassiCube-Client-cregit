@@ -19,17 +19,7 @@ name|java
 operator|.
 name|io
 operator|.
-name|IOException
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|io
-operator|.
-name|InputStream
+name|*
 import|;
 end_import
 
@@ -39,17 +29,7 @@ name|java
 operator|.
 name|util
 operator|.
-name|Collection
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|HashMap
+name|*
 import|;
 end_import
 
@@ -91,7 +71,11 @@ name|logicalStreams
 init|=
 operator|new
 name|HashMap
-argument_list|<>
+argument_list|<
+name|Integer
+argument_list|,
+name|LogicalOggStreamImpl
+argument_list|>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -110,6 +94,8 @@ name|InputStream
 name|sourceStream
 parameter_list|)
 throws|throws
+name|OggFormatException
+throws|,
 name|IOException
 block|{
 name|firstPage
@@ -141,10 +127,14 @@ name|logicalStreams
 operator|.
 name|put
 argument_list|(
+operator|new
+name|Integer
+argument_list|(
 name|firstPage
 operator|.
 name|getStreamSerialNumber
 argument_list|()
+argument_list|)
 argument_list|,
 name|los
 argument_list|)

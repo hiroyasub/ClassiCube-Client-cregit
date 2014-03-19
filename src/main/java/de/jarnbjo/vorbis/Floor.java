@@ -15,6 +15,16 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|io
+operator|.
+name|IOException
+import|;
+end_import
+
+begin_import
+import|import
 name|de
 operator|.
 name|jarnbjo
@@ -24,16 +34,6 @@ operator|.
 name|io
 operator|.
 name|BitInputStream
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|io
-operator|.
-name|IOException
 import|;
 end_import
 
@@ -575,6 +575,8 @@ name|SetupHeader
 name|header
 parameter_list|)
 throws|throws
+name|VorbisFormatException
+throws|,
 name|IOException
 block|{
 name|int
@@ -650,6 +652,8 @@ name|BitInputStream
 name|source
 parameter_list|)
 throws|throws
+name|VorbisFormatException
+throws|,
 name|IOException
 function_decl|;
 specifier|abstract

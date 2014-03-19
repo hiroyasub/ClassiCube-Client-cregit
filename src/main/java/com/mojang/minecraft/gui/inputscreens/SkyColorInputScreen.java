@@ -67,6 +67,10 @@ name|GuiScreen
 import|;
 end_import
 
+begin_empty_stmt
+empty_stmt|;
+end_empty_stmt
+
 begin_class
 specifier|public
 class|class
@@ -111,19 +115,19 @@ name|void
 name|onButtonClick
 parameter_list|(
 name|Button
-name|button
+name|var1
 parameter_list|)
 block|{
 if|if
 condition|(
-name|button
+name|var1
 operator|.
 name|active
 condition|)
 block|{
 if|if
 condition|(
-name|button
+name|var1
 operator|.
 name|id
 operator|==
@@ -185,7 +189,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|button
+name|var1
 operator|.
 name|id
 operator|==
@@ -210,7 +214,7 @@ expr_stmt|;
 block|}
 if|if
 condition|(
-name|button
+name|var1
 operator|.
 name|id
 operator|==

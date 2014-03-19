@@ -13,13 +13,11 @@ end_package
 
 begin_import
 import|import
-name|com
+name|java
 operator|.
-name|mojang
+name|nio
 operator|.
-name|util
-operator|.
-name|MathHelper
+name|FloatBuffer
 import|;
 end_import
 
@@ -37,11 +35,13 @@ end_import
 
 begin_import
 import|import
-name|java
+name|com
 operator|.
-name|nio
+name|mojang
 operator|.
-name|FloatBuffer
+name|util
+operator|.
+name|MathHelper
 import|;
 end_import
 

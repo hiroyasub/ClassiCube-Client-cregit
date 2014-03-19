@@ -15,6 +15,16 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|io
+operator|.
+name|*
+import|;
+end_import
+
+begin_import
+import|import
 name|de
 operator|.
 name|jarnbjo
@@ -23,17 +33,7 @@ name|util
 operator|.
 name|io
 operator|.
-name|BitInputStream
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|io
-operator|.
-name|IOException
+name|*
 import|;
 end_import
 
@@ -85,6 +85,8 @@ name|BitInputStream
 name|source
 parameter_list|)
 throws|throws
+name|VorbisFormatException
+throws|,
 name|IOException
 block|{
 if|if

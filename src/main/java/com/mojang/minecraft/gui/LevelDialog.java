@@ -13,11 +13,21 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|io
+operator|.
+name|File
+import|;
+end_import
+
+begin_import
+import|import
 name|javax
 operator|.
 name|swing
 operator|.
-name|*
+name|JFileChooser
 import|;
 end_import
 
@@ -30,16 +40,6 @@ operator|.
 name|filechooser
 operator|.
 name|FileNameExtensionFilter
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|io
-operator|.
-name|File
 import|;
 end_import
 
@@ -109,7 +109,12 @@ name|FileNameExtensionFilter
 argument_list|(
 literal|"ClassicWorld format (.cw)"
 argument_list|,
+operator|new
+name|String
+index|[]
+block|{
 literal|"cw"
+block|}
 argument_list|)
 decl_stmt|;
 name|screen

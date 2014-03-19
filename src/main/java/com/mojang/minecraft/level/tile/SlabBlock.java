@@ -323,7 +323,6 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|// TODO
 annotation|@
 name|Override
 specifier|public
@@ -354,6 +353,7 @@ operator|==
 name|SLAB
 condition|)
 block|{
+empty_stmt|;
 block|}
 block|}
 block|}

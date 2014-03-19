@@ -100,19 +100,19 @@ operator|=
 name|intArrayInput
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension      * classes      */
 annotation|@
 name|Override
 name|void
 name|write
 parameter_list|(
 name|DataOutput
-name|output
+name|par1DataOutput
 parameter_list|)
 throws|throws
 name|IOException
 block|{
-name|output
+name|par1DataOutput
 operator|.
 name|writeInt
 argument_list|(
@@ -126,30 +126,44 @@ expr_stmt|;
 for|for
 control|(
 name|int
-name|anIntArray
-range|:
+name|i
+init|=
+literal|0
+init|;
+name|i
+operator|<
 name|this
 operator|.
 name|intArray
+operator|.
+name|length
+condition|;
+operator|++
+name|i
 control|)
 block|{
-name|output
+name|par1DataOutput
 operator|.
 name|writeInt
 argument_list|(
-name|anIntArray
+name|this
+operator|.
+name|intArray
+index|[
+name|i
+index|]
 argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension      * classes      */
 annotation|@
 name|Override
 name|void
 name|load
 parameter_list|(
 name|DataInput
-name|input
+name|par1DataInput
 parameter_list|)
 throws|throws
 name|IOException
@@ -157,7 +171,7 @@ block|{
 name|int
 name|i
 init|=
-name|input
+name|par1DataInput
 operator|.
 name|readInt
 argument_list|()
@@ -194,14 +208,14 @@ index|[
 name|j
 index|]
 operator|=
-name|input
+name|par1DataInput
 operator|.
 name|readInt
 argument_list|()
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Gets the type byte for the tag.      * @return byte.      */
+comment|/**      * Gets the type byte for the tag.      */
 annotation|@
 name|Override
 specifier|public

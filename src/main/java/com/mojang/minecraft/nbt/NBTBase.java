@@ -88,29 +88,29 @@ specifier|private
 name|String
 name|name
 decl_stmt|;
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension      * classes      */
 specifier|abstract
 name|void
 name|write
 parameter_list|(
 name|DataOutput
-name|output
+name|dataoutput
 parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension      * classes      */
 specifier|abstract
 name|void
 name|load
 parameter_list|(
 name|DataInput
-name|input
+name|datainput
 parameter_list|)
 throws|throws
 name|IOException
 function_decl|;
-comment|/**      * Gets the type byte for the tag.      * @return byte      */
+comment|/**      * Gets the type byte for the tag.      */
 specifier|public
 specifier|abstract
 name|byte
@@ -148,7 +148,7 @@ name|name
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Sets the name for this tag and returns this for convenience.      * @param name The tag name.      */
+comment|/**      * Sets the name for this tag and returns this for convenience.      */
 specifier|public
 name|NBTBase
 name|setName
@@ -184,7 +184,7 @@ return|return
 name|this
 return|;
 block|}
-comment|/**      * Gets the name corresponding to the tag, or an empty string if none set.      * @return String The tag's name.      */
+comment|/**      * Gets the name corresponding to the tag, or an empty string if none set.      */
 specifier|public
 name|String
 name|getName
@@ -211,7 +211,7 @@ name|NBTBase
 name|readNamedTag
 parameter_list|(
 name|DataInput
-name|input
+name|par0DataInput
 parameter_list|)
 throws|throws
 name|IOException
@@ -219,7 +219,7 @@ block|{
 name|byte
 name|b0
 init|=
-name|input
+name|par0DataInput
 operator|.
 name|readByte
 argument_list|()
@@ -242,7 +242,7 @@ block|{
 name|String
 name|s
 init|=
-name|input
+name|par0DataInput
 operator|.
 name|readUTF
 argument_list|()
@@ -261,7 +261,7 @@ name|nbtbase
 operator|.
 name|load
 argument_list|(
-name|input
+name|par0DataInput
 argument_list|)
 expr_stmt|;
 return|return
@@ -269,26 +269,26 @@ name|nbtbase
 return|;
 block|}
 block|}
-comment|/**      * Writes the specified tag to the given DataOutput, writing the type byte,      * the UTF string key and then calling the tag to write its data.      * @param tag The NBT Tag to write.      * @param output The data output.      */
+comment|/**      * Writes the specified tag to the given DataOutput, writing the type byte,      * the UTF string key and then calling the tag to write its data.      */
 specifier|public
 specifier|static
 name|void
 name|writeNamedTag
 parameter_list|(
 name|NBTBase
-name|tag
+name|par0NBTBase
 parameter_list|,
 name|DataOutput
-name|output
+name|par1DataOutput
 parameter_list|)
 throws|throws
 name|IOException
 block|{
-name|output
+name|par1DataOutput
 operator|.
 name|writeByte
 argument_list|(
-name|tag
+name|par0NBTBase
 operator|.
 name|getId
 argument_list|()
@@ -296,7 +296,7 @@ argument_list|)
 expr_stmt|;
 if|if
 condition|(
-name|tag
+name|par0NBTBase
 operator|.
 name|getId
 argument_list|()
@@ -304,21 +304,21 @@ operator|!=
 literal|0
 condition|)
 block|{
-name|output
+name|par1DataOutput
 operator|.
 name|writeUTF
 argument_list|(
-name|tag
+name|par0NBTBase
 operator|.
 name|getName
 argument_list|()
 argument_list|)
 expr_stmt|;
-name|tag
+name|par0NBTBase
 operator|.
 name|write
 argument_list|(
-name|output
+name|par1DataOutput
 argument_list|)
 expr_stmt|;
 block|}
@@ -604,12 +604,14 @@ name|this
 operator|.
 name|getId
 argument_list|()
-operator|==
+operator|!=
 name|tempOther
 operator|.
 name|getId
 argument_list|()
-operator|&&
+condition|?
+literal|false
+else|:
 operator|(
 operator|(
 name|this
@@ -638,8 +640,7 @@ name|name
 operator|!=
 literal|null
 operator|)
-operator|&&
-operator|(
+condition|?
 name|this
 operator|.
 name|name
@@ -656,7 +657,8 @@ name|tempOther
 operator|.
 name|name
 argument_list|)
-operator|)
+else|:
+literal|false
 operator|)
 return|;
 block|}

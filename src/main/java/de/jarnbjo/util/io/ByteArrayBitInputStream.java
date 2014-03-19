@@ -168,6 +168,8 @@ specifier|public
 name|boolean
 name|getBit
 parameter_list|()
+throws|throws
+name|IOException
 block|{
 if|if
 condition|(
@@ -260,6 +262,8 @@ parameter_list|(
 name|HuffmanNode
 name|root
 parameter_list|)
+throws|throws
+name|IOException
 block|{
 while|while
 condition|(
@@ -320,6 +324,9 @@ return|return
 name|root
 operator|.
 name|value
+operator|.
+name|intValue
+argument_list|()
 return|;
 block|}
 specifier|public
@@ -805,6 +812,8 @@ parameter_list|(
 name|int
 name|order
 parameter_list|)
+throws|throws
+name|IOException
 block|{
 name|int
 name|msbs
@@ -1155,7 +1164,7 @@ literal|1
 operator|)
 return|;
 block|}
-comment|/**      *<p>      * fills the array from<code>offset</code> with<code>len</code> integers      * encoded as "signed rice" as described in the FLAC audio format      * specification      *</p>      *       *<p>      *<b>not supported for little endian</b>      *</p>      *       * @param order      * @param buffer      * @param off      * @param len      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+comment|/**      *<p>      * fills the array from<code>offset</code> with<code>len</code> integers      * encoded as "signed rice" as described in the FLAC audio format      * specification      *</p>      *       *<p>      *<b>not supported for little endian</b>      *</p>      *       * @param order      * @param buffer      * @param offset      * @param len      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|void
 name|readSignedRice
@@ -1173,6 +1182,8 @@ parameter_list|,
 name|int
 name|len
 parameter_list|)
+throws|throws
+name|IOException
 block|{
 if|if
 condition|(

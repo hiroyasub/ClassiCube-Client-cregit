@@ -68,6 +68,8 @@ name|int
 name|index
 parameter_list|)
 throws|throws
+name|OggFormatException
+throws|,
 name|IOException
 function_decl|;
 comment|/**      * Checks if this stream is open for reading.      *       * @return<code>true</code> if this stream is open for reading,      *<code>false</code> otherwise      */
@@ -91,6 +93,8 @@ name|long
 name|granulePosition
 parameter_list|)
 throws|throws
+name|OggFormatException
+throws|,
 name|IOException
 function_decl|;
 block|}

@@ -80,6 +80,9 @@ name|minecraft
 operator|.
 name|setCurrentScreen
 argument_list|(
+operator|(
+name|GuiScreen
+operator|)
 literal|null
 argument_list|)
 expr_stmt|;

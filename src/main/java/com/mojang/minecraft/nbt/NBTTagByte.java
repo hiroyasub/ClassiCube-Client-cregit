@@ -88,19 +88,19 @@ operator|=
 name|data
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension      * classes      */
 annotation|@
 name|Override
 name|void
 name|write
 parameter_list|(
 name|DataOutput
-name|output
+name|par1DataOutput
 parameter_list|)
 throws|throws
 name|IOException
 block|{
-name|output
+name|par1DataOutput
 operator|.
 name|writeByte
 argument_list|(
@@ -110,14 +110,14 @@ name|data
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension      * classes      */
 annotation|@
 name|Override
 name|void
 name|load
 parameter_list|(
 name|DataInput
-name|input
+name|par1DataInput
 parameter_list|)
 throws|throws
 name|IOException
@@ -126,13 +126,13 @@ name|this
 operator|.
 name|data
 operator|=
-name|input
+name|par1DataInput
 operator|.
 name|readByte
 argument_list|()
 expr_stmt|;
 block|}
-comment|/**      * Gets the type byte for the tag.      * @return byte.      */
+comment|/**      * Gets the type byte for the tag.      */
 annotation|@
 name|Override
 specifier|public
