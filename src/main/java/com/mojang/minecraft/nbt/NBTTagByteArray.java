@@ -100,19 +100,19 @@ operator|=
 name|byteArrayInput
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension      * classes      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
 annotation|@
 name|Override
 name|void
 name|write
 parameter_list|(
 name|DataOutput
-name|par1DataOutput
+name|output
 parameter_list|)
 throws|throws
 name|IOException
 block|{
-name|par1DataOutput
+name|output
 operator|.
 name|writeInt
 argument_list|(
@@ -123,7 +123,7 @@ operator|.
 name|length
 argument_list|)
 expr_stmt|;
-name|par1DataOutput
+name|output
 operator|.
 name|write
 argument_list|(
@@ -133,14 +133,14 @@ name|byteArray
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension      * classes      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
 annotation|@
 name|Override
 name|void
 name|load
 parameter_list|(
 name|DataInput
-name|par1DataInput
+name|input
 parameter_list|)
 throws|throws
 name|IOException
@@ -148,7 +148,7 @@ block|{
 name|int
 name|i
 init|=
-name|par1DataInput
+name|input
 operator|.
 name|readInt
 argument_list|()
@@ -163,7 +163,7 @@ index|[
 name|i
 index|]
 expr_stmt|;
-name|par1DataInput
+name|input
 operator|.
 name|readFully
 argument_list|(
@@ -173,7 +173,7 @@ name|byteArray
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Gets the type byte for the tag.      */
+comment|/**      * Gets the type byte for the tag.      * @return byte      */
 annotation|@
 name|Override
 specifier|public
@@ -280,7 +280,7 @@ name|equals
 argument_list|(
 name|other
 argument_list|)
-condition|?
+operator|&&
 name|Arrays
 operator|.
 name|equals
@@ -298,8 +298,6 @@ operator|)
 operator|.
 name|byteArray
 argument_list|)
-else|:
-literal|false
 return|;
 block|}
 annotation|@
