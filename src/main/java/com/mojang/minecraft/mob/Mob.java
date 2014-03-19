@@ -521,13 +521,8 @@ name|creativeMode
 condition|)
 block|{
 name|int
-name|var2
-decl_stmt|;
-if|if
-condition|(
-operator|(
-name|var2
-operator|=
+name|fallHeight
+init|=
 operator|(
 name|int
 operator|)
@@ -539,19 +534,20 @@ name|height
 operator|-
 literal|3F
 argument_list|)
-operator|)
+decl_stmt|;
+comment|// Allow short falls
+if|if
+condition|(
+name|fallHeight
 operator|>
 literal|0
 condition|)
 block|{
 name|hurt
 argument_list|(
-operator|(
-name|Entity
-operator|)
 literal|null
 argument_list|,
-name|var2
+name|fallHeight
 argument_list|)
 expr_stmt|;
 block|}
@@ -649,7 +645,7 @@ name|Entity
 name|entity
 parameter_list|,
 name|int
-name|hurtBy
+name|amount
 parameter_list|)
 block|{
 if|if
@@ -680,7 +676,7 @@ name|hurt
 argument_list|(
 name|entity
 argument_list|,
-name|hurtBy
+name|amount
 argument_list|)
 expr_stmt|;
 block|}
@@ -697,7 +693,7 @@ if|if
 condition|(
 name|lastHealth
 operator|-
-name|hurtBy
+name|amount
 operator|>=
 name|health
 condition|)
@@ -708,7 +704,7 @@ name|health
 operator|=
 name|lastHealth
 operator|-
-name|hurtBy
+name|amount
 expr_stmt|;
 block|}
 else|else
@@ -723,7 +719,7 @@ name|invulnerableDuration
 expr_stmt|;
 name|health
 operator|-=
-name|hurtBy
+name|amount
 expr_stmt|;
 name|hurtTime
 operator|=
@@ -789,7 +785,7 @@ name|knockback
 argument_list|(
 name|entity
 argument_list|,
-name|hurtBy
+name|amount
 argument_list|,
 name|distanceX
 argument_list|,
@@ -876,7 +872,7 @@ name|void
 name|knockback
 parameter_list|(
 name|Entity
-name|var1
+name|entity
 parameter_list|,
 name|int
 name|var2
@@ -1855,9 +1851,6 @@ else|else
 block|{
 name|hurt
 argument_list|(
-operator|(
-name|Entity
-operator|)
 literal|null
 argument_list|,
 literal|2
@@ -1891,9 +1884,6 @@ condition|)
 block|{
 name|hurt
 argument_list|(
-operator|(
-name|Entity
-operator|)
 literal|null
 argument_list|,
 literal|10
@@ -2333,8 +2323,6 @@ block|}
 block|}
 if|else if
 condition|(
-name|flyingMode
-operator|&&
 name|ai
 operator|.
 name|running

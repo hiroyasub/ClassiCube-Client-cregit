@@ -2199,7 +2199,7 @@ name|Entity
 name|entity
 parameter_list|,
 name|int
-name|hurtBy
+name|amount
 parameter_list|)
 block|{
 if|if
@@ -2216,7 +2216,7 @@ name|hurt
 argument_list|(
 name|entity
 argument_list|,
-name|hurtBy
+name|amount
 argument_list|)
 expr_stmt|;
 block|}

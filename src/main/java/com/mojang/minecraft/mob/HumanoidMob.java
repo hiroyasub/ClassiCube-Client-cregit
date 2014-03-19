@@ -293,8 +293,11 @@ block|{
 if|if
 condition|(
 name|modelName
-operator|==
+operator|.
+name|equals
+argument_list|(
 literal|"sheep"
+argument_list|)
 condition|)
 block|{
 name|renderSheep

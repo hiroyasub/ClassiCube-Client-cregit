@@ -96,10 +96,10 @@ name|void
 name|hurt
 parameter_list|(
 name|Entity
-name|var1
+name|other
 parameter_list|,
 name|int
-name|var2
+name|amount
 parameter_list|)
 block|{
 block|}
@@ -108,10 +108,10 @@ name|void
 name|tick
 parameter_list|(
 name|Level
-name|var1
+name|level
 parameter_list|,
 name|Mob
-name|var2
+name|mob
 parameter_list|)
 block|{
 block|}
