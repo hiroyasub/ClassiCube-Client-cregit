@@ -284,6 +284,7 @@ operator|==
 literal|null
 condition|)
 block|{
+comment|// TODO Don't throw generic exception
 throw|throw
 operator|new
 name|Exception

@@ -724,9 +724,7 @@ name|int
 name|z
 parameter_list|)
 block|{
-name|AABB
-name|aabb
-init|=
+return|return
 operator|new
 name|AABB
 argument_list|(
@@ -754,10 +752,6 @@ name|z
 operator|+
 name|z2
 argument_list|)
-decl_stmt|;
-empty_stmt|;
-return|return
-name|aabb
 return|;
 block|}
 specifier|public
@@ -774,9 +768,7 @@ name|int
 name|z
 parameter_list|)
 block|{
-name|AABB
-name|aabb
-init|=
+return|return
 operator|new
 name|AABB
 argument_list|(
@@ -804,10 +796,6 @@ name|z
 operator|+
 name|z2
 argument_list|)
-decl_stmt|;
-empty_stmt|;
-return|return
-name|aabb
 return|;
 block|}
 specifier|protected
