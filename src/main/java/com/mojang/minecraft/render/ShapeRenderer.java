@@ -121,11 +121,13 @@ specifier|static
 name|boolean
 name|convertQuadsToTriangles
 decl_stmt|;
+comment|// TODO Never assigned
 specifier|public
 specifier|static
 name|boolean
 name|tryVBO
 decl_stmt|;
+comment|// TODO Never used
 specifier|private
 name|ByteBuffer
 name|byteBuffer
