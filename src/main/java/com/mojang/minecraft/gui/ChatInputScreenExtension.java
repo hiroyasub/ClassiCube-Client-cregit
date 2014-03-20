@@ -165,23 +165,9 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
+name|util
 operator|.
 name|LogUtil
-import|;
-end_import
-
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|net
-operator|.
-name|NetworkManager
 import|;
 end_import
 

@@ -89,7 +89,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
+name|util
 operator|.
 name|LogUtil
 import|;
@@ -100,8 +100,6 @@ import|import
 name|com
 operator|.
 name|mojang
-operator|.
-name|minecraft
 operator|.
 name|nbt
 operator|.
@@ -114,8 +112,6 @@ import|import
 name|com
 operator|.
 name|mojang
-operator|.
-name|minecraft
 operator|.
 name|nbt
 operator|.

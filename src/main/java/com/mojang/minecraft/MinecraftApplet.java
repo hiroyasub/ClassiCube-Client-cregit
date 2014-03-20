@@ -89,6 +89,18 @@ name|URL
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|util
+operator|.
+name|LogUtil
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class

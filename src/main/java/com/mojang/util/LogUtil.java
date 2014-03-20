@@ -5,7 +5,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
+name|util
 package|;
 end_package
 
@@ -138,6 +138,18 @@ operator|.
 name|logging
 operator|.
 name|Logger
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|Minecraft
 import|;
 end_import
 

@@ -5,8 +5,6 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
 name|nbt
 package|;
 end_package
@@ -48,16 +46,6 @@ operator|.
 name|util
 operator|.
 name|ArrayList
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Iterator
 import|;
 end_import
 

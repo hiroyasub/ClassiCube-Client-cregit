@@ -5,8 +5,6 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
 name|nbt
 package|;
 end_package
@@ -44,17 +42,17 @@ end_import
 begin_class
 specifier|public
 class|class
-name|NBTTagShort
+name|NBTTagByte
 extends|extends
 name|NBTBase
 block|{
-comment|/**      * The short value for the tag.      */
+comment|/**      * The byte value for the tag.      */
 specifier|public
-name|short
+name|byte
 name|data
 decl_stmt|;
 specifier|public
-name|NBTTagShort
+name|NBTTagByte
 parameter_list|(
 name|String
 name|name
@@ -67,13 +65,13 @@ argument_list|)
 expr_stmt|;
 block|}
 specifier|public
-name|NBTTagShort
+name|NBTTagByte
 parameter_list|(
 name|String
 name|name
 parameter_list|,
-name|short
-name|par2
+name|byte
+name|data
 parameter_list|)
 block|{
 name|super
@@ -85,7 +83,7 @@ name|this
 operator|.
 name|data
 operator|=
-name|par2
+name|data
 expr_stmt|;
 block|}
 comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      *      * @param output The output stream to write to.      */
@@ -102,7 +100,7 @@ name|IOException
 block|{
 name|output
 operator|.
-name|writeShort
+name|writeByte
 argument_list|(
 name|this
 operator|.
@@ -128,7 +126,7 @@ name|data
 operator|=
 name|input
 operator|.
-name|readShort
+name|readByte
 argument_list|()
 expr_stmt|;
 block|}
@@ -144,7 +142,7 @@ return|return
 operator|(
 name|byte
 operator|)
-literal|2
+literal|1
 return|;
 block|}
 annotation|@
@@ -172,7 +170,7 @@ parameter_list|()
 block|{
 return|return
 operator|new
-name|NBTTagShort
+name|NBTTagByte
 argument_list|(
 name|this
 operator|.
@@ -205,11 +203,11 @@ name|other
 argument_list|)
 condition|)
 block|{
-name|NBTTagShort
+name|NBTTagByte
 name|tempOther
 init|=
 operator|(
-name|NBTTagShort
+name|NBTTagByte
 operator|)
 name|other
 decl_stmt|;

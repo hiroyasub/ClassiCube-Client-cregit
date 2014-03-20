@@ -5,7 +5,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
+name|util
 package|;
 end_package
 

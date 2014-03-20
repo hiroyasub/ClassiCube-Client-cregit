@@ -5,8 +5,6 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
 name|nbt
 package|;
 end_package
@@ -44,17 +42,17 @@ end_import
 begin_class
 specifier|public
 class|class
-name|NBTTagFloat
+name|NBTTagInt
 extends|extends
 name|NBTBase
 block|{
-comment|/**      * The float value for the tag.      */
+comment|/**      * The integer value for the tag.      */
 specifier|public
-name|float
+name|int
 name|data
 decl_stmt|;
 specifier|public
-name|NBTTagFloat
+name|NBTTagInt
 parameter_list|(
 name|String
 name|name
@@ -67,12 +65,12 @@ argument_list|)
 expr_stmt|;
 block|}
 specifier|public
-name|NBTTagFloat
+name|NBTTagInt
 parameter_list|(
 name|String
 name|name
 parameter_list|,
-name|float
+name|int
 name|data
 parameter_list|)
 block|{
@@ -102,7 +100,7 @@ name|IOException
 block|{
 name|output
 operator|.
-name|writeFloat
+name|writeInt
 argument_list|(
 name|this
 operator|.
@@ -128,7 +126,7 @@ name|data
 operator|=
 name|input
 operator|.
-name|readFloat
+name|readInt
 argument_list|()
 expr_stmt|;
 block|}
@@ -144,7 +142,7 @@ return|return
 operator|(
 name|byte
 operator|)
-literal|5
+literal|3
 return|;
 block|}
 annotation|@
@@ -172,7 +170,7 @@ parameter_list|()
 block|{
 return|return
 operator|new
-name|NBTTagFloat
+name|NBTTagInt
 argument_list|(
 name|this
 operator|.
@@ -205,11 +203,11 @@ name|other
 argument_list|)
 condition|)
 block|{
-name|NBTTagFloat
+name|NBTTagInt
 name|tempOther
 init|=
 operator|(
-name|NBTTagFloat
+name|NBTTagInt
 operator|)
 name|other
 decl_stmt|;
@@ -243,14 +241,9 @@ operator|.
 name|hashCode
 argument_list|()
 operator|^
-name|Float
-operator|.
-name|floatToIntBits
-argument_list|(
 name|this
 operator|.
 name|data
-argument_list|)
 return|;
 block|}
 block|}

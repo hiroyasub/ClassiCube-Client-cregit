@@ -5,8 +5,6 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
 name|nbt
 package|;
 end_package

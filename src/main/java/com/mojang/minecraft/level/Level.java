@@ -67,7 +67,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
+name|util
 operator|.
 name|ColorCache
 import|;
