@@ -797,7 +797,7 @@ return|return
 name|source
 return|;
 block|}
-comment|/**      *<p>      * reads an integer encoded as "signed rice" as described in the FLAC audio      * format specification      *</p>      *       *<p>      *<b>not supported for little endian</b>      *</p>      *       * @param order      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+comment|/**      *<p>      * reads an integer encoded as "signed rice" as described in the FLAC audio      * format specification      *</p>      *      *<p>      *<b>not supported for little endian</b>      *</p>      *      * @param order      * @return the decoded integer value read from the stream      *      * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|int
 name|readSignedRice
@@ -1159,7 +1159,7 @@ literal|1
 operator|)
 return|;
 block|}
-comment|/**      *<p>      * fills the array from<code>offset</code> with<code>len</code> integers      * encoded as "signed rice" as described in the FLAC audio format      * specification      *</p>      *       *<p>      *<b>not supported for little endian</b>      *</p>      *       * @param order      * @param buffer      * @param offset      * @param len      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+comment|/**      *<p>      * fills the array from<code>offset</code> with<code>len</code> integers      * encoded as "signed rice" as described in the FLAC audio format      * specification      *</p>      *      *<p>      *<b>not supported for little endian</b>      *</p>      *      * @param order      * @param buffer      * @param offset      * @param len      * @return the decoded integer value read from the stream      *      * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|void
 name|readSignedRice
@@ -1325,7 +1325,7 @@ operator|&
 literal|0xff
 decl_stmt|;
 name|int
-name|offset
+name|bitOffset
 init|=
 literal|1
 operator|+
@@ -1346,7 +1346,7 @@ operator|-
 literal|1
 operator|)
 operator|<<
-name|offset
+name|bitOffset
 decl_stmt|;
 name|lsbs
 operator|=
@@ -1356,7 +1356,7 @@ operator|&
 name|mask
 operator|)
 operator|>>
-name|offset
+name|bitOffset
 expr_stmt|;
 name|bitIndex
 operator|-=
