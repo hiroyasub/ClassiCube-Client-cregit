@@ -58,7 +58,7 @@ literal|null
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      *      * @param input The input stream to read from.      */
 annotation|@
 name|Override
 name|void
@@ -71,7 +71,7 @@ throws|throws
 name|IOException
 block|{
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      *      * @param output The output stream to write to.      */
 annotation|@
 name|Override
 name|void
@@ -84,7 +84,7 @@ throws|throws
 name|IOException
 block|{
 block|}
-comment|/**      * Gets the type byte for the tag.      * @return byte      */
+comment|/**      * Gets the type byte for the tag.      *      * @return byte      */
 annotation|@
 name|Override
 specifier|public

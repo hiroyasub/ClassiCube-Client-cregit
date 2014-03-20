@@ -18,12 +18,6 @@ name|Button
 extends|extends
 name|Screen
 block|{
-name|int
-name|width
-decl_stmt|;
-name|int
-name|height
-decl_stmt|;
 specifier|public
 name|int
 name|x
@@ -47,6 +41,12 @@ decl_stmt|;
 specifier|public
 name|boolean
 name|visible
+decl_stmt|;
+name|int
+name|width
+decl_stmt|;
+name|int
+name|height
 decl_stmt|;
 specifier|public
 name|Button

@@ -58,7 +58,7 @@ name|NBTTagIntArray
 extends|extends
 name|NBTBase
 block|{
-comment|/** The array of saved integers */
+comment|/**      * The array of saved integers      */
 specifier|public
 name|int
 index|[]
@@ -100,7 +100,7 @@ operator|=
 name|intArrayInput
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      *      * @param output The output stream to write to.      */
 annotation|@
 name|Override
 name|void
@@ -142,7 +142,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      *      * @param input The input stream to read from.      */
 annotation|@
 name|Override
 name|void
@@ -201,7 +201,7 @@ argument_list|()
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Gets the type byte for the tag.      * @return byte      */
+comment|/**      * Gets the type byte for the tag.      *      * @return byte      */
 annotation|@
 name|Override
 specifier|public

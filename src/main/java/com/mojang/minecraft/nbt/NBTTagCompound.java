@@ -126,7 +126,27 @@ name|name
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
+comment|/**      * Return the tag map for this compound.      *      * @param compound The compound.      * @return Map The tag map.      */
+specifier|static
+name|Map
+argument_list|<
+name|String
+argument_list|,
+name|NBTBase
+argument_list|>
+name|getTagMap
+parameter_list|(
+name|NBTTagCompound
+name|compound
+parameter_list|)
+block|{
+return|return
+name|compound
+operator|.
+name|tagMap
+return|;
+block|}
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      *      * @param output The output stream to write to.      */
 annotation|@
 name|Override
 name|void
@@ -170,7 +190,7 @@ literal|0
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes. classes.      * @param input The data input.      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes. classes.      *      * @param input The data input.      */
 annotation|@
 name|Override
 name|void
@@ -227,7 +247,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Returns all the values in the tagMap HashMap.      * @return Collection      */
+comment|/**      * Returns all the values in the tagMap HashMap.      *      * @return Collection      */
 specifier|public
 name|Collection
 argument_list|<
@@ -245,7 +265,7 @@ name|values
 argument_list|()
 return|;
 block|}
-comment|/**      * Gets the type byte for the tag.      * @return byte      */
+comment|/**      * Gets the type byte for the tag.      *      * @return byte      */
 annotation|@
 name|Override
 specifier|public
@@ -260,7 +280,7 @@ operator|)
 literal|10
 return|;
 block|}
-comment|/**      * Stores the given tag into the map with the given string key. This is mostly used to store      * tag lists.      * @param name The tag name.      * @param tag The tag to be set.      */
+comment|/**      * Stores the given tag into the map with the given string key. This is mostly used to store      * tag lists.      *      * @param name The tag name.      * @param tag  The tag to be set.      */
 specifier|public
 name|void
 name|setTag
@@ -289,7 +309,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagByte with the given byte value into the map with the given string key.      * @param name The tag name.      * @param theByte The byte value to be set.      */
+comment|/**      * Stores a new NBTTagByte with the given byte value into the map with the given string key.      *      * @param name    The tag name.      * @param theByte The byte value to be set.      */
 specifier|public
 name|void
 name|setByte
@@ -319,7 +339,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagShort with the given short value into the map with the given string key.      * @param name The tag name.      * @param theShort The short value to be set.      */
+comment|/**      * Stores a new NBTTagShort with the given short value into the map with the given string key.      *      * @param name     The tag name.      * @param theShort The short value to be set.      */
 specifier|public
 name|void
 name|setShort
@@ -349,7 +369,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagInt with the given integer value into the map with the given string key.      * @param name The tag name.      * @param theInt The int value to be set.      */
+comment|/**      * Stores a new NBTTagInt with the given integer value into the map with the given string key.      *      * @param name   The tag name.      * @param theInt The int value to be set.      */
 specifier|public
 name|void
 name|setInteger
@@ -379,7 +399,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagLong with the given long value into the map with the given string key.      * @param name The tag name.      * @param theLong The long value to be set.      */
+comment|/**      * Stores a new NBTTagLong with the given long value into the map with the given string key.      *      * @param name    The tag name.      * @param theLong The long value to be set.      */
 specifier|public
 name|void
 name|setLong
@@ -409,7 +429,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagFloat with the given float value into the map with the given string key.      * @param name The tag name.      * @param theFloat The float value to be set.      */
+comment|/**      * Stores a new NBTTagFloat with the given float value into the map with the given string key.      *      * @param name     The tag name.      * @param theFloat The float value to be set.      */
 specifier|public
 name|void
 name|setFloat
@@ -439,7 +459,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagDouble with the given double value into the map with the given string key.      * @param name The tag name.      * @param theDouble The double value to be set.      */
+comment|/**      * Stores a new NBTTagDouble with the given double value into the map with the given string key.      *      * @param name      The tag name.      * @param theDouble The double value to be set.      */
 specifier|public
 name|void
 name|setDouble
@@ -469,7 +489,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagString with the given string value into the map with the given string key.      * @param name The tag name.      * @param theString The string value to be set.      */
+comment|/**      * Stores a new NBTTagString with the given string value into the map with the given string key.      *      * @param name      The tag name.      * @param theString The string value to be set.      */
 specifier|public
 name|void
 name|setString
@@ -499,7 +519,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagByteArray with the given array as data into the map with the given      * string key.      * @param name The tag name.      * @param theByteArray The ByteArray value to be set.      */
+comment|/**      * Stores a new NBTTagByteArray with the given array as data into the map with the given      * string key.      *      * @param name         The tag name.      * @param theByteArray The ByteArray value to be set.      */
 specifier|public
 name|void
 name|setByteArray
@@ -530,7 +550,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores a new NBTTagIntArray with the given array as data into the map with the given      * string key.      * @param name The tag name.      * @param theIntArray The IntArray value to be set.      */
+comment|/**      * Stores a new NBTTagIntArray with the given array as data into the map with the given      * string key.      *      * @param name        The tag name.      * @param theIntArray The IntArray value to be set.      */
 specifier|public
 name|void
 name|setIntArray
@@ -561,7 +581,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores the given NBTTagCompound into the map with the given string key.      * @param name The tag name.      * @param theCompound The compound value to be set.      */
+comment|/**      * Stores the given NBTTagCompound into the map with the given string key.      *      * @param name        The tag name.      * @param theCompound The compound value to be set.      */
 specifier|public
 name|void
 name|setCompoundTag
@@ -590,7 +610,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Stores the given boolean value as a NBTTagByte, storing 1 for true and 0 for false,      * using the given string key.      * @param name The tag name.      * @param theBool The boolean value to be set.      */
+comment|/**      * Stores the given boolean value as a NBTTagByte, storing 1 for true and 0 for false,      * using the given string key.      *      * @param name    The tag name.      * @param theBool The boolean value to be set.      */
 specifier|public
 name|void
 name|setBoolean
@@ -621,7 +641,7 @@ operator|)
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Gets a generic tag with the specified name.      * @param name The tag name.      * @return NBTBase The NBT Tag.      */
+comment|/**      * Gets a generic tag with the specified name.      *      * @param name The tag name.      * @return NBTBase The NBT Tag.      */
 specifier|public
 name|NBTBase
 name|getTag
@@ -641,7 +661,7 @@ name|name
 argument_list|)
 return|;
 block|}
-comment|/**      * Returns whether the given string has been previously stored as a key in the map.      * @param name The tag name.      * @return boolean      */
+comment|/**      * Returns whether the given string has been previously stored as a key in the map.      *      * @param name The tag name.      * @return boolean      */
 specifier|public
 name|boolean
 name|hasKey
@@ -661,7 +681,7 @@ name|name
 argument_list|)
 return|;
 block|}
-comment|/**      * Retrieves a byte value using the specified key, or 0 if no such key was stored.      * @param name The tag name.      * @return byte The byte stored.      */
+comment|/**      * Retrieves a byte value using the specified key, or 0 if no such key was stored.      *      * @param name The tag name.      * @return byte The byte stored.      */
 specifier|public
 name|byte
 name|getByte
@@ -700,7 +720,7 @@ operator|.
 name|data
 return|;
 block|}
-comment|/**      * Retrieves a short value using the specified key, or 0 if no such key was stored.      * @param name The tag name.      * @return short The short stored.      */
+comment|/**      * Retrieves a short value using the specified key, or 0 if no such key was stored.      *      * @param name The tag name.      * @return short The short stored.      */
 specifier|public
 name|short
 name|getShort
@@ -739,7 +759,7 @@ operator|.
 name|data
 return|;
 block|}
-comment|/**      * Retrieves an integer value using the specified key, or 0 if no such key was stored.      * @param name The tag name.      * @return int The integer stored.      */
+comment|/**      * Retrieves an integer value using the specified key, or 0 if no such key was stored.      *      * @param name The tag name.      * @return int The integer stored.      */
 specifier|public
 name|int
 name|getInteger
@@ -778,7 +798,7 @@ operator|.
 name|data
 return|;
 block|}
-comment|/**      * Retrieves a long value using the specified key, or 0 if no such key was stored.      * @param name The tag name.      * @return long The long value.      */
+comment|/**      * Retrieves a long value using the specified key, or 0 if no such key was stored.      *      * @param name The tag name.      * @return long The long value.      */
 specifier|public
 name|long
 name|getLong
@@ -817,7 +837,7 @@ operator|.
 name|data
 return|;
 block|}
-comment|/**      * Retrieves a float value using the specified key, or 0 if no such key was stored.      * @param name The tag name.      * @return float The float stored.      */
+comment|/**      * Retrieves a float value using the specified key, or 0 if no such key was stored.      *      * @param name The tag name.      * @return float The float stored.      */
 specifier|public
 name|float
 name|getFloat
@@ -856,7 +876,7 @@ operator|.
 name|data
 return|;
 block|}
-comment|/**      * Retrieves a double value using the specified key, or 0 if no such key was stored.      * @param name The tag name.      * @return double The double stored.      */
+comment|/**      * Retrieves a double value using the specified key, or 0 if no such key was stored.      *      * @param name The tag name.      * @return double The double stored.      */
 specifier|public
 name|double
 name|getDouble
@@ -895,7 +915,7 @@ operator|.
 name|data
 return|;
 block|}
-comment|/**      * Retrieves a string value using the specified key, or an empty string if no such key      * was stored.      * @param name The tag name.      * @return String The string stored.      */
+comment|/**      * Retrieves a string value using the specified key, or an empty string if no such key      * was stored.      *      * @param name The tag name.      * @return String The string stored.      */
 specifier|public
 name|String
 name|getString
@@ -934,7 +954,7 @@ operator|.
 name|data
 return|;
 block|}
-comment|/**      * Retrieves a byte array using the specified key, or a zero-length array if no such key      * was stored.      * @param name The tag name.      * @return byte The byte array stored.      */
+comment|/**      * Retrieves a byte array using the specified key, or a zero-length array if no such key      * was stored.      *      * @param name The tag name.      * @return byte The byte array stored.      */
 specifier|public
 name|byte
 index|[]
@@ -978,7 +998,7 @@ operator|.
 name|byteArray
 return|;
 block|}
-comment|/**      * Retrieves an int array using the specified key, or a zero-length array if no such key      * was stored.      * @param name The tag name.      * @return int[] The int array stored.      */
+comment|/**      * Retrieves an int array using the specified key, or a zero-length array if no such key      * was stored.      *      * @param name The tag name.      * @return int[] The int array stored.      */
 specifier|public
 name|int
 index|[]
@@ -1022,7 +1042,7 @@ operator|.
 name|intArray
 return|;
 block|}
-comment|/**      * Retrieves a NBTTagCompound subtag matching the specified key, or a new empty NBTTagCompound      * if no such key was stored.      * @param name The tag name.      * @return NBTTagCompound The compound stored.      */
+comment|/**      * Retrieves a NBTTagCompound subtag matching the specified key, or a new empty NBTTagCompound      * if no such key was stored.      *      * @param name The tag name.      * @return NBTTagCompound The compound stored.      */
 specifier|public
 name|NBTTagCompound
 name|getCompoundTag
@@ -1061,7 +1081,7 @@ name|name
 argument_list|)
 return|;
 block|}
-comment|/**      * Retrieves a NBTTagList subtag matching the specified key, or a new empty NBTTagList if      * no such key was stored.      * @param name The tag name.      * @return NBTTagList The tag list stored.      */
+comment|/**      * Retrieves a NBTTagList subtag matching the specified key, or a new empty NBTTagList if      * no such key was stored.      *      * @param name The tag name.      * @return NBTTagList The tag list stored.      */
 specifier|public
 name|NBTTagList
 name|getTagList
@@ -1100,7 +1120,7 @@ name|name
 argument_list|)
 return|;
 block|}
-comment|/**      * Retrieves a boolean value using the specified key, or false if no such key was stored.      * This uses the getByte method.      * @param name The tag name.      * @return boolean The boolean stored.      */
+comment|/**      * Retrieves a boolean value using the specified key, or false if no such key was stored.      * This uses the getByte method.      *      * @param name The tag name.      * @return boolean The boolean stored.      */
 specifier|public
 name|boolean
 name|getBoolean
@@ -1120,7 +1140,7 @@ operator|!=
 literal|0
 return|;
 block|}
-comment|/**      * Remove the specified tag.      * @param name The tag name to be removed.      */
+comment|/**      * Remove the specified tag.      *      * @param name The tag name to be removed.      */
 specifier|public
 name|void
 name|removeTag
@@ -1138,26 +1158,6 @@ argument_list|(
 name|name
 argument_list|)
 expr_stmt|;
-block|}
-comment|/**      * Return the tag map for this compound.      * @param compound The compound.      * @return Map The tag map.      */
-specifier|static
-name|Map
-argument_list|<
-name|String
-argument_list|,
-name|NBTBase
-argument_list|>
-name|getTagMap
-parameter_list|(
-name|NBTTagCompound
-name|compound
-parameter_list|)
-block|{
-return|return
-name|compound
-operator|.
-name|tagMap
-return|;
 block|}
 annotation|@
 name|Override
@@ -1236,7 +1236,7 @@ operator|+
 literal|"]"
 return|;
 block|}
-comment|/**      * Return whether this compound has no tags.      * @return boolean      */
+comment|/**      * Return whether this compound has no tags.      *      * @return boolean      */
 specifier|public
 name|boolean
 name|hasNoTags
@@ -1251,7 +1251,7 @@ name|isEmpty
 argument_list|()
 return|;
 block|}
-comment|/**      * Creates a clone of the tag.      * @return NBTTagCompound The clone.      */
+comment|/**      * Creates a clone of the tag.      *      * @return NBTTagCompound The clone.      */
 annotation|@
 name|Override
 specifier|public

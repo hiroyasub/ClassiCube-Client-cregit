@@ -111,12 +111,6 @@ argument_list|(
 literal|176400
 argument_list|)
 decl_stmt|;
-specifier|private
-name|ByteBuffer
-name|processing
-init|=
-literal|null
-decl_stmt|;
 name|ByteBuffer
 name|previous
 init|=
@@ -137,6 +131,12 @@ name|boolean
 name|stopped
 init|=
 literal|false
+decl_stmt|;
+specifier|private
+name|ByteBuffer
+name|processing
+init|=
+literal|null
 decl_stmt|;
 specifier|public
 name|Music

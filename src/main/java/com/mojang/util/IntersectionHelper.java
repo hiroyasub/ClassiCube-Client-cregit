@@ -18,7 +18,7 @@ specifier|public
 class|class
 name|IntersectionHelper
 block|{
-comment|/**      * Returns whether the given YZ plane intersects the vector.      * @param vec      * @param y0      * @param z0      * @param y1      * @param z1      * @return      */
+comment|/**      * Returns whether the given YZ plane intersects the vector.      *      * @param vec      * @param y0      * @param z0      * @param y1      * @param z1      * @return      */
 specifier|public
 specifier|static
 name|boolean
@@ -70,7 +70,7 @@ operator|<=
 name|z1
 return|;
 block|}
-comment|/**      * Returns whether the given XZ plane intersects the vector.      * @param vec      * @param x0      * @param z0      * @param x1      * @param z1      * @return      */
+comment|/**      * Returns whether the given XZ plane intersects the vector.      *      * @param vec      * @param x0      * @param z0      * @param x1      * @param z1      * @return      */
 specifier|public
 specifier|static
 name|boolean
@@ -122,7 +122,7 @@ operator|<=
 name|z1
 return|;
 block|}
-comment|/**      * Returns whether the given XZ plane intersects the vector.      * @param vec      * @param x0      * @param y0      * @param x1      * @param y1      * @return      */
+comment|/**      * Returns whether the given XZ plane intersects the vector.      *      * @param vec      * @param x0      * @param y0      * @param x1      * @param y1      * @return      */
 specifier|public
 specifier|static
 name|boolean

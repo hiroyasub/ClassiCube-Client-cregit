@@ -48,7 +48,7 @@ name|NBTTagShort
 extends|extends
 name|NBTBase
 block|{
-comment|/** The short value for the tag. */
+comment|/**      * The short value for the tag.      */
 specifier|public
 name|short
 name|data
@@ -88,7 +88,7 @@ operator|=
 name|par2
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      *      * @param output The output stream to write to.      */
 annotation|@
 name|Override
 name|void
@@ -110,7 +110,7 @@ name|data
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      *      * @param input The input stream to read from.      */
 annotation|@
 name|Override
 name|void
@@ -132,7 +132,7 @@ name|readShort
 argument_list|()
 expr_stmt|;
 block|}
-comment|/**      * Gets the type byte for the tag.      * @return byte      */
+comment|/**      * Gets the type byte for the tag.      *      * @return byte      */
 annotation|@
 name|Override
 specifier|public

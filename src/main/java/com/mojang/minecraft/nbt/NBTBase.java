@@ -83,40 +83,11 @@ block|,
 literal|"INT[]"
 block|}
 decl_stmt|;
-comment|/** The UTF string key used to lookup values. */
+comment|/**      * The UTF string key used to lookup values.      */
 specifier|private
 name|String
 name|name
 decl_stmt|;
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      * @param output The output stream to write to.      */
-specifier|abstract
-name|void
-name|write
-parameter_list|(
-name|DataOutput
-name|output
-parameter_list|)
-throws|throws
-name|IOException
-function_decl|;
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      * @param input The input stream to read from.      */
-specifier|abstract
-name|void
-name|load
-parameter_list|(
-name|DataInput
-name|input
-parameter_list|)
-throws|throws
-name|IOException
-function_decl|;
-comment|/**      * Gets the type byte for the tag.      * @return byte      */
-specifier|public
-specifier|abstract
-name|byte
-name|getId
-parameter_list|()
-function_decl|;
 specifier|protected
 name|NBTBase
 parameter_list|(
@@ -147,62 +118,6 @@ operator|=
 name|name
 expr_stmt|;
 block|}
-block|}
-comment|/**      * Sets the name for this tag and returns this for convenience.      * @param name The tag name.      */
-specifier|public
-name|NBTBase
-name|setName
-parameter_list|(
-name|String
-name|name
-parameter_list|)
-block|{
-if|if
-condition|(
-name|name
-operator|==
-literal|null
-condition|)
-block|{
-name|this
-operator|.
-name|name
-operator|=
-literal|""
-expr_stmt|;
-block|}
-else|else
-block|{
-name|this
-operator|.
-name|name
-operator|=
-name|name
-expr_stmt|;
-block|}
-return|return
-name|this
-return|;
-block|}
-comment|/**      * Gets the name corresponding to the tag, or an empty string if none set.      * @return String The tag's name.      */
-specifier|public
-name|String
-name|getName
-parameter_list|()
-block|{
-return|return
-name|this
-operator|.
-name|name
-operator|==
-literal|null
-condition|?
-literal|""
-else|:
-name|this
-operator|.
-name|name
-return|;
 block|}
 comment|/**      * Reads and returns a tag from the given DataInput, or the End tag if no      * tag could be read.      */
 specifier|public
@@ -269,7 +184,7 @@ name|nbtbase
 return|;
 block|}
 block|}
-comment|/**      * Writes the specified tag to the given DataOutput, writing the type byte,      * the UTF string key and then calling the tag to write its data.      * @param tag The NBT Tag to write.      * @param output The data output.      */
+comment|/**      * Writes the specified tag to the given DataOutput, writing the type byte,      * the UTF string key and then calling the tag to write its data.      *      * @param tag    The NBT Tag to write.      * @param output The data output.      */
 specifier|public
 specifier|static
 name|void
@@ -557,6 +472,91 @@ return|return
 literal|"UNKNOWN"
 return|;
 block|}
+block|}
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      *      * @param output The output stream to write to.      */
+specifier|abstract
+name|void
+name|write
+parameter_list|(
+name|DataOutput
+name|output
+parameter_list|)
+throws|throws
+name|IOException
+function_decl|;
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      *      * @param input The input stream to read from.      */
+specifier|abstract
+name|void
+name|load
+parameter_list|(
+name|DataInput
+name|input
+parameter_list|)
+throws|throws
+name|IOException
+function_decl|;
+comment|/**      * Gets the type byte for the tag.      *      * @return byte      */
+specifier|public
+specifier|abstract
+name|byte
+name|getId
+parameter_list|()
+function_decl|;
+comment|/**      * Gets the name corresponding to the tag, or an empty string if none set.      *      * @return String The tag's name.      */
+specifier|public
+name|String
+name|getName
+parameter_list|()
+block|{
+return|return
+name|this
+operator|.
+name|name
+operator|==
+literal|null
+condition|?
+literal|""
+else|:
+name|this
+operator|.
+name|name
+return|;
+block|}
+comment|/**      * Sets the name for this tag and returns this for convenience.      *      * @param name The tag name.      */
+specifier|public
+name|NBTBase
+name|setName
+parameter_list|(
+name|String
+name|name
+parameter_list|)
+block|{
+if|if
+condition|(
+name|name
+operator|==
+literal|null
+condition|)
+block|{
+name|this
+operator|.
+name|name
+operator|=
+literal|""
+expr_stmt|;
+block|}
+else|else
+block|{
+name|this
+operator|.
+name|name
+operator|=
+name|name
+expr_stmt|;
+block|}
+return|return
+name|this
+return|;
 block|}
 comment|/**      * Creates a clone of the tag.      */
 specifier|public

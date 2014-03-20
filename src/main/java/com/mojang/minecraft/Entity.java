@@ -332,12 +332,6 @@ name|fallDistance
 init|=
 literal|0F
 decl_stmt|;
-specifier|private
-name|int
-name|nextStep
-init|=
-literal|1
-decl_stmt|;
 specifier|public
 name|BlockMap
 name|blockMap
@@ -396,10 +390,6 @@ name|flyingMode
 init|=
 literal|false
 decl_stmt|;
-specifier|private
-name|int
-name|nextStepDistance
-decl_stmt|;
 specifier|public
 name|float
 name|prevDistanceWalkedModified
@@ -411,6 +401,16 @@ decl_stmt|;
 specifier|public
 name|float
 name|distanceWalkedOnStepModified
+decl_stmt|;
+specifier|private
+name|int
+name|nextStep
+init|=
+literal|1
+decl_stmt|;
+specifier|private
+name|int
+name|nextStepDistance
 decl_stmt|;
 specifier|public
 name|Entity
@@ -456,7 +456,7 @@ name|var1
 parameter_list|)
 block|{
 block|}
-comment|/**      * Calculates the distance from this entity to the specified entity.      *      * @param otherEntity      *            Entity to calculate the distance to.      * @return The distance between the two entities.      */
+comment|/**      * Calculates the distance from this entity to the specified entity.      *      * @param otherEntity Entity to calculate the distance to.      * @return The distance between the two entities.      */
 specifier|public
 name|float
 name|distanceTo
@@ -482,7 +482,7 @@ name|z
 argument_list|)
 return|;
 block|}
-comment|/**      * Calculates the distance from this entity to the specified position.      *      * @param posX      *            X-Coordinate of the position to calculate the distance to.      * @param posY      *            Y-Coordinate of the position to calculate the distance to.      * @param posZ      *            Z-Coordinate of the position to calculate the distance to.      * @return The distance between the entity and the position.      */
+comment|/**      * Calculates the distance from this entity to the specified position.      *      * @param posX X-Coordinate of the position to calculate the distance to.      * @param posY Y-Coordinate of the position to calculate the distance to.      * @param posZ Z-Coordinate of the position to calculate the distance to.      * @return The distance between the entity and the position.      */
 specifier|public
 name|float
 name|distanceTo
@@ -544,7 +544,7 @@ operator|)
 argument_list|)
 return|;
 block|}
-comment|/**      * Calculates the distance from this entity to the specified entity squared.      * This is basically calculating distance without using the expensive      * Math.sqrt function. Should only be used for relative distance.      *      * @param otherEntity      *            Entity to calculate the distance to.      * @return The distance between the two entities squared.      */
+comment|/**      * Calculates the distance from this entity to the specified entity squared.      * This is basically calculating distance without using the expensive      * Math.sqrt function. Should only be used for relative distance.      *      * @param otherEntity Entity to calculate the distance to.      * @return The distance between the two entities squared.      */
 specifier|public
 name|float
 name|distanceToSqr

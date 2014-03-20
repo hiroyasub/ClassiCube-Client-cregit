@@ -99,6 +99,10 @@ specifier|public
 name|SourceDataLine
 name|dataLine
 decl_stmt|;
+specifier|public
+name|GameSettings
+name|settings
+decl_stmt|;
 specifier|private
 name|List
 argument_list|<
@@ -110,10 +114,6 @@ operator|new
 name|ArrayList
 argument_list|<>
 argument_list|()
-decl_stmt|;
-specifier|public
-name|GameSettings
-name|settings
 decl_stmt|;
 specifier|public
 name|SoundPlayer

@@ -116,18 +116,23 @@ specifier|public
 class|class
 name|ShapeRenderer
 block|{
-specifier|private
-specifier|static
-name|boolean
-name|convertQuadsToTriangles
-decl_stmt|;
-comment|// TODO Never assigned
 specifier|public
 specifier|static
 name|boolean
 name|tryVBO
 decl_stmt|;
 comment|// TODO Never used
+specifier|public
+specifier|static
+name|ShapeRenderer
+name|instance
+decl_stmt|;
+specifier|private
+specifier|static
+name|boolean
+name|convertQuadsToTriangles
+decl_stmt|;
+comment|// TODO Never assigned
 specifier|private
 name|ByteBuffer
 name|byteBuffer
@@ -204,11 +209,6 @@ decl_stmt|;
 specifier|private
 name|int
 name|normal
-decl_stmt|;
-specifier|public
-specifier|static
-name|ShapeRenderer
-name|instance
 decl_stmt|;
 specifier|private
 name|boolean

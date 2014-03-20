@@ -27,7 +27,7 @@ specifier|public
 name|float
 name|v
 decl_stmt|;
-comment|/**      * Build a Vertex object with the vector coordinates and UV.      *       * @param x      * @param y      * @param z      * @param u      * @param v      */
+comment|/**      * Build a Vertex object with the vector coordinates and UV.      *      * @param x      * @param y      * @param z      * @param u      * @param v      */
 specifier|public
 name|Vertex
 parameter_list|(
@@ -65,7 +65,7 @@ name|v
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Build a Vertex object with a prebuilt Vector3D object and UV.      *       * @param vector      * @param u      * @param v      */
+comment|/**      * Build a Vertex object with a prebuilt Vector3D object and UV.      *      * @param vector      * @param u      * @param v      */
 specifier|private
 name|Vertex
 parameter_list|(
@@ -98,7 +98,7 @@ operator|=
 name|v
 expr_stmt|;
 block|}
-comment|/**      * Build a Vertex object with another Vertex object and UV.      *       * @param vertex      * @param u      * @param v      */
+comment|/**      * Build a Vertex object with another Vertex object and UV.      *      * @param vertex      * @param u      * @param v      */
 specifier|private
 name|Vertex
 parameter_list|(
@@ -131,7 +131,7 @@ operator|=
 name|v
 expr_stmt|;
 block|}
-comment|/**      * Build a Vertex object without specifying a coordinate set.      *       * @param u      * @param v      * @return Vertex      */
+comment|/**      * Build a Vertex object without specifying a coordinate set.      *      * @param u      * @param v      * @return Vertex      */
 specifier|public
 specifier|final
 name|Vertex

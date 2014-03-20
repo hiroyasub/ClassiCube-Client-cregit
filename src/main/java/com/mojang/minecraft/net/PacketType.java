@@ -259,14 +259,14 @@ name|PacketType
 name|MESSAGE_TYPES
 decl_stmt|;
 comment|// [Placeholder]
-specifier|public
-name|int
-name|length
-decl_stmt|;
 specifier|private
 specifier|static
 name|int
 name|nextOpcode
+decl_stmt|;
+specifier|public
+name|int
+name|length
 decl_stmt|;
 specifier|public
 name|byte

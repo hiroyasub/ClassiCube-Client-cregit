@@ -79,14 +79,6 @@ class|class
 name|ChatLine
 block|{
 specifier|public
-name|String
-name|message
-decl_stmt|;
-specifier|public
-name|int
-name|time
-decl_stmt|;
-specifier|public
 specifier|static
 name|String
 name|eol
@@ -98,7 +90,15 @@ argument_list|(
 literal|"line.separator"
 argument_list|)
 decl_stmt|;
-comment|/**      * Constructs a new chatline, logs to the userdata as well      *       * @param message      *            The chatline      */
+specifier|public
+name|String
+name|message
+decl_stmt|;
+specifier|public
+name|int
+name|time
+decl_stmt|;
+comment|/**      * Constructs a new chatline, logs to the userdata as well      *      * @param message The chatline      */
 specifier|public
 name|ChatLine
 parameter_list|(
