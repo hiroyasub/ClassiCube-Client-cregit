@@ -168,8 +168,6 @@ specifier|public
 name|boolean
 name|getBit
 parameter_list|()
-throws|throws
-name|IOException
 block|{
 if|if
 condition|(
@@ -262,8 +260,6 @@ parameter_list|(
 name|HuffmanNode
 name|root
 parameter_list|)
-throws|throws
-name|IOException
 block|{
 while|while
 condition|(
@@ -324,9 +320,6 @@ return|return
 name|root
 operator|.
 name|value
-operator|.
-name|intValue
-argument_list|()
 return|;
 block|}
 specifier|public
@@ -804,7 +797,7 @@ return|return
 name|source
 return|;
 block|}
-comment|/**      *<p>      * reads an integer encoded as "signed rice" as described in the FLAC audio      * format specification      *</p>      *       *<p>      *<b>not supported for little endian</b>      *</p>      *       * @param order      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+comment|/**      *<p>      * reads an integer encoded as "signed rice" as described in the FLAC audio      * format specification      *</p>      *      *<p>      *<b>not supported for little endian</b>      *</p>      *      * @param order      * @return the decoded integer value read from the stream      *      * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|int
 name|readSignedRice
@@ -814,6 +807,8 @@ name|order
 parameter_list|)
 throws|throws
 name|IOException
+throws|,
+name|UnsupportedOperationException
 block|{
 name|int
 name|msbs
@@ -1164,7 +1159,7 @@ literal|1
 operator|)
 return|;
 block|}
-comment|/**      *<p>      * fills the array from<code>offset</code> with<code>len</code> integers      * encoded as "signed rice" as described in the FLAC audio format      * specification      *</p>      *       *<p>      *<b>not supported for little endian</b>      *</p>      *       * @param order      * @param buffer      * @param offset      * @param len      * @return the decoded integer value read from the stream      *       * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
+comment|/**      *<p>      * fills the array from<code>offset</code> with<code>len</code> integers      * encoded as "signed rice" as described in the FLAC audio format      * specification      *</p>      *      *<p>      *<b>not supported for little endian</b>      *</p>      *      * @param order      * @param buffer      * @param offset      * @param len      * @return the decoded integer value read from the stream      *      * @throws IOException      *             if an I/O error occurs      * @throws UnsupportedOperationException      *             if the method is not supported by the implementation      */
 specifier|public
 name|void
 name|readSignedRice
@@ -1177,13 +1172,15 @@ index|[]
 name|buffer
 parameter_list|,
 name|int
-name|off
+name|offset
 parameter_list|,
 name|int
 name|len
 parameter_list|)
 throws|throws
 name|IOException
+throws|,
+name|UnsupportedOperationException
 block|{
 if|if
 condition|(
@@ -1209,11 +1206,11 @@ control|(
 name|int
 name|i
 init|=
-name|off
+name|offset
 init|;
 name|i
 operator|<
-name|off
+name|offset
 operator|+
 name|len
 condition|;
@@ -1328,7 +1325,7 @@ operator|&
 literal|0xff
 decl_stmt|;
 name|int
-name|offset
+name|bitOffset
 init|=
 literal|1
 operator|+
@@ -1349,7 +1346,7 @@ operator|-
 literal|1
 operator|)
 operator|<<
-name|offset
+name|bitOffset
 decl_stmt|;
 name|lsbs
 operator|=
@@ -1359,7 +1356,7 @@ operator|&
 name|mask
 operator|)
 operator|>>
-name|offset
+name|bitOffset
 expr_stmt|;
 name|bitIndex
 operator|-=

@@ -19,7 +19,17 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|IOException
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|InputStream
 import|;
 end_import
 
@@ -29,7 +39,17 @@ name|java
 operator|.
 name|net
 operator|.
-name|*
+name|URL
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|net
+operator|.
+name|URLConnection
 import|;
 end_import
 
@@ -39,7 +59,27 @@ name|java
 operator|.
 name|util
 operator|.
-name|*
+name|Collection
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|HashMap
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|LinkedList
 import|;
 end_import
 
@@ -215,14 +255,10 @@ name|logicalStreams
 operator|.
 name|put
 argument_list|(
-operator|new
-name|Integer
-argument_list|(
 name|op
 operator|.
 name|getStreamSerialNumber
 argument_list|()
-argument_list|)
 argument_list|,
 name|los
 argument_list|)
@@ -318,9 +354,7 @@ name|pageCache
 init|=
 operator|new
 name|LinkedList
-argument_list|<
-name|OggPage
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -334,11 +368,7 @@ name|logicalStreams
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|Integer
-argument_list|,
-name|LogicalOggStreamImpl
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -467,9 +497,6 @@ name|serialNumber
 parameter_list|)
 block|{
 return|return
-operator|(
-name|LogicalOggStream
-operator|)
 name|logicalStreams
 operator|.
 name|get
@@ -483,7 +510,7 @@ argument_list|)
 return|;
 block|}
 comment|/*      * public long getCacheLength() { return cacheLength; }      */
-comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *       * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
+comment|/*      * private OggPage getNextPage() throws EndOfOggStreamException,      * IOException, OggFormatException { return getNextPage(false); }      *      * private OggPage getNextPage(boolean skipData) throws      * EndOfOggStreamException, IOException, OggFormatException { return      * OggPage.create(sourceStream, skipData); }      */
 specifier|public
 name|Collection
 argument_list|<
@@ -546,9 +573,6 @@ comment|// OggPage page=(OggPage)pageCache.getFirst();
 comment|// pageCache.removeFirst();
 comment|// return page;
 return|return
-operator|(
-name|OggPage
-operator|)
 name|pageCache
 operator|.
 name|removeFirst

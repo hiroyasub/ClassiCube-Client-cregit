@@ -18,11 +18,6 @@ specifier|public
 class|class
 name|LiquidType
 block|{
-specifier|private
-name|LiquidType
-index|[]
-name|values
-decl_stmt|;
 specifier|public
 specifier|static
 specifier|final
@@ -70,6 +65,11 @@ name|LiquidType
 argument_list|(
 literal|3
 argument_list|)
+decl_stmt|;
+specifier|private
+name|LiquidType
+index|[]
+name|values
 decl_stmt|;
 specifier|private
 name|LiquidType

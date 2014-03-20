@@ -46,11 +46,6 @@ name|flyingUp
 init|=
 literal|false
 decl_stmt|;
-name|boolean
-name|canMove
-init|=
-literal|true
-decl_stmt|;
 specifier|public
 name|boolean
 name|flyingDown
@@ -112,6 +107,11 @@ init|=
 literal|0
 decl_stmt|;
 comment|// java doesn't have package aliasing
+name|boolean
+name|canMove
+init|=
+literal|true
+decl_stmt|;
 comment|// eg import x as y
 comment|// so this has to be unique from the module name
 comment|// so that I can import that module to check status of

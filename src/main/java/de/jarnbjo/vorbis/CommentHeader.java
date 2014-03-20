@@ -19,7 +19,7 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|IOException
 import|;
 end_import
 
@@ -29,7 +29,17 @@ name|java
 operator|.
 name|util
 operator|.
-name|*
+name|ArrayList
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|HashMap
 import|;
 end_import
 
@@ -194,14 +204,7 @@ name|comments
 init|=
 operator|new
 name|HashMap
-argument_list|<
-name|String
-argument_list|,
-name|ArrayList
-argument_list|<
-name|String
-argument_list|>
-argument_list|>
+argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
@@ -363,9 +366,7 @@ name|al
 operator|=
 operator|new
 name|ArrayList
-argument_list|<
-name|String
-argument_list|>
+argument_list|<>
 argument_list|()
 expr_stmt|;
 name|comments
@@ -462,14 +463,8 @@ name|al
 operator|==
 literal|null
 condition|?
-operator|(
-name|String
-operator|)
 literal|null
 else|:
-operator|(
-name|String
-operator|)
 name|al
 operator|.
 name|get
@@ -511,10 +506,6 @@ index|[
 literal|0
 index|]
 else|:
-operator|(
-name|String
-index|[]
-operator|)
 name|al
 operator|.
 name|toArray

@@ -390,7 +390,7 @@ name|Entity
 name|entity
 parameter_list|,
 name|int
-name|hurtBy
+name|amount
 parameter_list|)
 block|{
 if|if
@@ -425,16 +425,16 @@ operator|)
 decl_stmt|;
 for|for
 control|(
-name|hurtBy
+name|amount
 operator|=
 literal|0
 init|;
-name|hurtBy
+name|amount
 operator|<
 name|var3
 condition|;
 operator|++
-name|hurtBy
+name|amount
 control|)
 block|{
 name|level
@@ -470,7 +470,7 @@ name|hurt
 argument_list|(
 name|entity
 argument_list|,
-name|hurtBy
+name|amount
 argument_list|)
 expr_stmt|;
 block|}

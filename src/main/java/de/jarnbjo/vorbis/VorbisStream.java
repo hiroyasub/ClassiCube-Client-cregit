@@ -19,7 +19,7 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|IOException
 import|;
 end_import
 
@@ -31,7 +31,7 @@ name|jarnbjo
 operator|.
 name|ogg
 operator|.
-name|*
+name|LogicalOggStream
 import|;
 end_import
 
@@ -45,7 +45,21 @@ name|util
 operator|.
 name|io
 operator|.
-name|*
+name|BitInputStream
+import|;
+end_import
+
+begin_import
+import|import
+name|de
+operator|.
+name|jarnbjo
+operator|.
+name|util
+operator|.
+name|io
+operator|.
+name|ByteArrayBitInputStream
 import|;
 end_import
 

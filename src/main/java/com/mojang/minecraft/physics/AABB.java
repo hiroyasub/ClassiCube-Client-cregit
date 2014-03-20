@@ -72,12 +72,6 @@ name|serialVersionUID
 init|=
 literal|0L
 decl_stmt|;
-specifier|private
-name|float
-name|epsilon
-init|=
-literal|0F
-decl_stmt|;
 specifier|public
 name|float
 name|maxX
@@ -101,6 +95,12 @@ decl_stmt|;
 specifier|public
 name|float
 name|minZ
+decl_stmt|;
+specifier|private
+name|float
+name|epsilon
+init|=
+literal|0F
 decl_stmt|;
 specifier|public
 name|AABB
@@ -998,7 +998,7 @@ name|z
 argument_list|)
 return|;
 block|}
-comment|/**      * Checks if the AABB contains the vector.      * @param vector      * @return      */
+comment|/**      * Checks if the AABB contains the vector.      *      * @param vector The vector to check against.      * @return boolean      */
 specifier|public
 name|boolean
 name|contains
@@ -1076,7 +1076,7 @@ name|minZ
 argument_list|)
 return|;
 block|}
-comment|/**      * Expands the AABB by the dimensions specified.      * @param x      * @param y      * @param z      * @return      */
+comment|/**      * Expands the AABB by the dimensions specified.      *      * @param x      * @param y      * @param z      * @return      */
 specifier|public
 name|AABB
 name|expand
@@ -1211,7 +1211,7 @@ name|var9
 argument_list|)
 return|;
 block|}
-comment|/**      * Gets the size of the AABB.      * @return The size of the AABB.      */
+comment|/**      * Gets the size of the AABB.      *      * @return The size of the AABB.      */
 specifier|public
 name|float
 name|getSize
@@ -1235,7 +1235,7 @@ operator|/
 literal|3F
 return|;
 block|}
-comment|/**      * Grows the AABB by the dimensions specified.      * @param x      * @param y      * @param z      * @return      */
+comment|/**      * Grows the AABB by the dimensions specified.      *      * @param x      * @param y      * @param z      * @return      */
 specifier|public
 name|AABB
 name|grow
@@ -1304,7 +1304,7 @@ name|newZ1
 argument_list|)
 return|;
 block|}
-comment|/**      * Returns whether the given bounding box intersects with this one.      * @param aabb      * @return      */
+comment|/**      * Returns whether the given bounding box intersects with this one.      *      * @param aabb      * @return      */
 specifier|public
 name|boolean
 name|intersects
@@ -1359,7 +1359,7 @@ operator|)
 operator|)
 return|;
 block|}
-comment|/**      * Returns whether the given bounding box intersects with this one.      * @param x0      * @param y0      * @param z0      * @param x1      * @param y1      * @param z1      * @return      */
+comment|/**      * Returns whether the given bounding box intersects with this one.      *      * @param x0      * @param y0      * @param z0      * @param x1      * @param y1      * @param z1      * @return      */
 specifier|public
 name|boolean
 name|intersects
@@ -1429,7 +1429,7 @@ operator|)
 operator|)
 return|;
 block|}
-comment|/**      * Returns if the supplied AABB is completely inside the bounding box      * @param aabb      * @return      */
+comment|/**      * Returns if the supplied AABB is completely inside the bounding box      *      * @param aabb      * @return      */
 specifier|public
 name|boolean
 name|intersectsInner
@@ -1484,7 +1484,7 @@ operator|)
 operator|)
 return|;
 block|}
-comment|/**      * Shifts the AABB by the dimensions specified.      * @param x      * @param y      * @param z      */
+comment|/**      * Shifts the AABB by the dimensions specified.      *      * @param x      * @param y      * @param z      */
 specifier|public
 name|void
 name|move
@@ -1524,7 +1524,7 @@ operator|+=
 name|z
 expr_stmt|;
 block|}
-comment|/**      * Shrinks the AABB by the dimensions specified.      * @param x      * @param y      * @param z      * @return A new AABB instance with the new dimensions.      */
+comment|/**      * Shrinks the AABB by the dimensions specified.      *      * @param x      * @param y      * @param z      * @return A new AABB instance with the new dimensions.      */
 specifier|public
 name|AABB
 name|shrink

@@ -13,18 +13,6 @@ end_package
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|LogUtil
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|io
@@ -52,6 +40,18 @@ operator|.
 name|filechooser
 operator|.
 name|FileNameExtensionFilter
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|util
+operator|.
+name|LogUtil
 import|;
 end_import
 
@@ -147,9 +147,6 @@ name|mc
 operator|.
 name|setCurrentScreen
 argument_list|(
-operator|(
-name|GuiScreen
-operator|)
 literal|null
 argument_list|)
 expr_stmt|;
@@ -192,12 +189,7 @@ name|FileNameExtensionFilter
 argument_list|(
 literal|".Zip Texture Packs"
 argument_list|,
-operator|new
-name|String
-index|[]
-block|{
 literal|"zip"
-block|}
 argument_list|)
 decl_stmt|;
 name|screen

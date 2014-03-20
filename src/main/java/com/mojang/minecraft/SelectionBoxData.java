@@ -37,6 +37,18 @@ name|Player
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|util
+operator|.
+name|ColorCache
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class

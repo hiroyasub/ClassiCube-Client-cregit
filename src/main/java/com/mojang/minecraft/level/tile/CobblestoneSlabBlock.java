@@ -346,7 +346,6 @@ operator|==
 name|COBBLESTONE_SLAB
 condition|)
 block|{
-empty_stmt|;
 block|}
 block|}
 block|}

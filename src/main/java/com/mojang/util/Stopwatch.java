@@ -44,89 +44,11 @@ specifier|public
 class|class
 name|Stopwatch
 block|{
-comment|/**      * Inner class to hold data about one task executed within the stop watch.      */
-specifier|public
-specifier|static
-specifier|final
-class|class
-name|TaskInfo
-block|{
-specifier|private
-specifier|final
-name|String
-name|taskName
-decl_stmt|;
-specifier|private
-specifier|final
-name|long
-name|timeMillis
-decl_stmt|;
-name|TaskInfo
-parameter_list|(
-name|String
-name|taskName
-parameter_list|,
-name|long
-name|timeMillis
-parameter_list|)
-block|{
-name|this
-operator|.
-name|taskName
-operator|=
-name|taskName
-expr_stmt|;
-name|this
-operator|.
-name|timeMillis
-operator|=
-name|timeMillis
-expr_stmt|;
-block|}
-comment|/**          * Return the name of this task.          */
-specifier|public
-name|String
-name|getTaskName
-parameter_list|()
-block|{
-return|return
-name|taskName
-return|;
-block|}
-comment|/**          * Return the time in milliseconds this task took.          */
-specifier|public
-name|long
-name|getTimeMillis
-parameter_list|()
-block|{
-return|return
-name|timeMillis
-return|;
-block|}
-comment|/**          * Return the time in seconds this task took.          */
-specifier|public
-name|double
-name|getTimeSeconds
-parameter_list|()
-block|{
-return|return
-name|timeMillis
-operator|/
-literal|1000.0
-return|;
-block|}
-block|}
 comment|/**      * Identifier of this stop watch. Handy when we have output from multiple      * stop watches and need to distinguish between them in log or console      * output.      */
 specifier|private
 specifier|final
 name|String
 name|id
-decl_stmt|;
-specifier|private
-name|boolean
-name|keepTaskList
-init|=
-literal|true
 decl_stmt|;
 specifier|private
 specifier|final
@@ -141,17 +63,23 @@ name|LinkedList
 argument_list|<>
 argument_list|()
 decl_stmt|;
-comment|/** Start time of the current task */
+specifier|private
+name|boolean
+name|keepTaskList
+init|=
+literal|true
+decl_stmt|;
+comment|/**      * Start time of the current task      */
 specifier|private
 name|long
 name|startTimeMillis
 decl_stmt|;
-comment|/** Is the stop watch currently running? */
+comment|/**      * Is the stop watch currently running?      */
 specifier|private
 name|boolean
 name|running
 decl_stmt|;
-comment|/** Name of the current task */
+comment|/**      * Name of the current task      */
 specifier|private
 name|String
 name|currentTaskName
@@ -164,7 +92,7 @@ specifier|private
 name|int
 name|taskCount
 decl_stmt|;
-comment|/** Total running time */
+comment|/**      * Total running time      */
 specifier|private
 name|long
 name|totalTimeMillis
@@ -179,7 +107,7 @@ operator|=
 literal|""
 expr_stmt|;
 block|}
-comment|/**      * Construct a new stop watch with the given id. Does not start any task.      *       * @param id      *            identifier for this stop watch. Handy when we have output from      *            multiple stop watches and need to distinguish between them.      */
+comment|/**      * Construct a new stop watch with the given id. Does not start any task.      *      * @param id identifier for this stop watch. Handy when we have output from      *           multiple stop watches and need to distinguish between them.      */
 specifier|public
 name|Stopwatch
 parameter_list|(
@@ -573,7 +501,7 @@ name|getTotalTimeMillis
 argument_list|()
 return|;
 block|}
-comment|/**      * Start an unnamed task. The results are undefined if {@link #stop()} or      * timing methods are called without invoking this method.      *       * @see #stop()      */
+comment|/**      * Start an unnamed task. The results are undefined if {@link #stop()} or      * timing methods are called without invoking this method.      *      * @see #stop()      */
 specifier|public
 name|void
 name|start
@@ -587,7 +515,7 @@ literal|""
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Start a named task. The results are undefined if {@link #stop()} or      * timing methods are called without invoking this method.      *       * @param taskName      *            the name of the task to start      * @see #stop()      */
+comment|/**      * Start a named task. The results are undefined if {@link #stop()} or      * timing methods are called without invoking this method.      *      * @param taskName the name of the task to start      * @see #stop()      */
 specifier|public
 name|void
 name|start
@@ -627,7 +555,7 @@ operator|=
 name|taskName
 expr_stmt|;
 block|}
-comment|/**      * Stop the current task. The results are undefined if timing methods are      * called without invoking at least one pair {@link #start()} /      * {@link #stop()} methods.      *       * @see #start()      */
+comment|/**      * Stop the current task. The results are undefined if timing methods are      * called without invoking at least one pair {@link #start()} /      * {@link #stop()} methods.      *      * @see #start()      */
 specifier|public
 name|void
 name|stop
@@ -811,6 +739,78 @@ operator|.
 name|toString
 argument_list|()
 return|;
+block|}
+comment|/**      * Inner class to hold data about one task executed within the stop watch.      */
+specifier|public
+specifier|static
+specifier|final
+class|class
+name|TaskInfo
+block|{
+specifier|private
+specifier|final
+name|String
+name|taskName
+decl_stmt|;
+specifier|private
+specifier|final
+name|long
+name|timeMillis
+decl_stmt|;
+name|TaskInfo
+parameter_list|(
+name|String
+name|taskName
+parameter_list|,
+name|long
+name|timeMillis
+parameter_list|)
+block|{
+name|this
+operator|.
+name|taskName
+operator|=
+name|taskName
+expr_stmt|;
+name|this
+operator|.
+name|timeMillis
+operator|=
+name|timeMillis
+expr_stmt|;
+block|}
+comment|/**          * Return the name of this task.          */
+specifier|public
+name|String
+name|getTaskName
+parameter_list|()
+block|{
+return|return
+name|taskName
+return|;
+block|}
+comment|/**          * Return the time in milliseconds this task took.          */
+specifier|public
+name|long
+name|getTimeMillis
+parameter_list|()
+block|{
+return|return
+name|timeMillis
+return|;
+block|}
+comment|/**          * Return the time in seconds this task took.          */
+specifier|public
+name|double
+name|getTimeSeconds
+parameter_list|()
+block|{
+return|return
+name|timeMillis
+operator|/
+literal|1000.0
+return|;
+block|}
 block|}
 block|}
 end_class

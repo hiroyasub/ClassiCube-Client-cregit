@@ -5,7 +5,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
+name|util
 package|;
 end_package
 
@@ -14,9 +14,11 @@ specifier|public
 class|class
 name|Timer
 block|{
+specifier|public
 name|float
 name|tps
 decl_stmt|;
+specifier|public
 name|double
 name|lastHR
 decl_stmt|;
@@ -40,12 +42,15 @@ name|elapsedDelta
 init|=
 literal|0F
 decl_stmt|;
+specifier|public
 name|long
 name|lastSysClock
 decl_stmt|;
+specifier|public
 name|long
 name|lastHRClock
 decl_stmt|;
+specifier|public
 name|double
 name|adjustment
 init|=

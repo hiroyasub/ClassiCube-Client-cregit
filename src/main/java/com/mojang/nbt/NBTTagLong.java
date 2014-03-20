@@ -5,8 +5,6 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
 name|nbt
 package|;
 end_package
@@ -44,17 +42,17 @@ end_import
 begin_class
 specifier|public
 class|class
-name|NBTTagShort
+name|NBTTagLong
 extends|extends
 name|NBTBase
 block|{
-comment|/** The short value for the tag. */
+comment|/**      * The long value for the tag.      */
 specifier|public
-name|short
+name|long
 name|data
 decl_stmt|;
 specifier|public
-name|NBTTagShort
+name|NBTTagLong
 parameter_list|(
 name|String
 name|name
@@ -67,13 +65,13 @@ argument_list|)
 expr_stmt|;
 block|}
 specifier|public
-name|NBTTagShort
+name|NBTTagLong
 parameter_list|(
 name|String
 name|name
 parameter_list|,
-name|short
-name|par2
+name|long
+name|data
 parameter_list|)
 block|{
 name|super
@@ -85,24 +83,24 @@ name|this
 operator|.
 name|data
 operator|=
-name|par2
+name|data
 expr_stmt|;
 block|}
-comment|/**      * Write the actual data contents of the tag, implemented in NBT extension      * classes      */
+comment|/**      * Write the actual data contents of the tag, implemented in NBT extension classes.      *      * @param output The output stream to write to.      */
 annotation|@
 name|Override
 name|void
 name|write
 parameter_list|(
 name|DataOutput
-name|par1DataOutput
+name|output
 parameter_list|)
 throws|throws
 name|IOException
 block|{
-name|par1DataOutput
+name|output
 operator|.
-name|writeShort
+name|writeLong
 argument_list|(
 name|this
 operator|.
@@ -110,14 +108,14 @@ name|data
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Read the actual data contents of the tag, implemented in NBT extension      * classes      */
+comment|/**      * Read the actual data contents of the tag, implemented in NBT extension classes.      *      * @param input The input stream to read from.      */
 annotation|@
 name|Override
 name|void
 name|load
 parameter_list|(
 name|DataInput
-name|par1DataInput
+name|input
 parameter_list|)
 throws|throws
 name|IOException
@@ -126,13 +124,13 @@ name|this
 operator|.
 name|data
 operator|=
-name|par1DataInput
+name|input
 operator|.
-name|readShort
+name|readLong
 argument_list|()
 expr_stmt|;
 block|}
-comment|/**      * Gets the type byte for the tag.      */
+comment|/**      * Gets the type byte for the tag.      *      * @return byte      */
 annotation|@
 name|Override
 specifier|public
@@ -144,7 +142,7 @@ return|return
 operator|(
 name|byte
 operator|)
-literal|2
+literal|4
 return|;
 block|}
 annotation|@
@@ -172,7 +170,7 @@ parameter_list|()
 block|{
 return|return
 operator|new
-name|NBTTagShort
+name|NBTTagLong
 argument_list|(
 name|this
 operator|.
@@ -205,11 +203,11 @@ name|other
 argument_list|)
 condition|)
 block|{
-name|NBTTagShort
+name|NBTTagLong
 name|tempOther
 init|=
 operator|(
-name|NBTTagShort
+name|NBTTagLong
 operator|)
 name|other
 decl_stmt|;
@@ -243,9 +241,20 @@ operator|.
 name|hashCode
 argument_list|()
 operator|^
+operator|(
+name|int
+operator|)
+operator|(
 name|this
 operator|.
 name|data
+operator|^
+name|this
+operator|.
+name|data
+operator|>>>
+literal|32
+operator|)
 return|;
 block|}
 block|}

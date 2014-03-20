@@ -304,14 +304,6 @@ name|Integer
 argument_list|>
 name|entity
 init|=
-operator|(
-name|Entry
-argument_list|<
-name|Integer
-argument_list|,
-name|Integer
-argument_list|>
-operator|)
 name|i
 decl_stmt|;
 name|GL11

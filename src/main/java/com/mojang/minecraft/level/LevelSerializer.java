@@ -67,7 +67,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
+name|util
 operator|.
 name|LogUtil
 import|;
@@ -91,8 +91,6 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
 name|nbt
 operator|.
 name|CompressedStreamTools
@@ -104,8 +102,6 @@ import|import
 name|com
 operator|.
 name|mojang
-operator|.
-name|minecraft
 operator|.
 name|nbt
 operator|.
@@ -284,6 +280,7 @@ operator|==
 literal|null
 condition|)
 block|{
+comment|// TODO Don't throw generic exception
 throw|throw
 operator|new
 name|Exception

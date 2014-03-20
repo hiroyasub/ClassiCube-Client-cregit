@@ -158,7 +158,7 @@ argument_list|()
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Spawn a particle.      * @param entity The entity spawning the particle.      */
+comment|/**      * Spawn a particle.      *      * @param entity The entity spawning the particle.      */
 annotation|@
 name|SuppressWarnings
 argument_list|(

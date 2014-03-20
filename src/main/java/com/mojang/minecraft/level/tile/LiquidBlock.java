@@ -29,7 +29,7 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
+name|util
 operator|.
 name|ColorCache
 import|;
@@ -569,6 +569,7 @@ argument_list|,
 name|movingId
 argument_list|)
 expr_stmt|;
+comment|// TODO Actually return true here?
 block|}
 block|}
 return|return

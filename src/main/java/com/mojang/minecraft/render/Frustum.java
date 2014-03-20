@@ -77,7 +77,7 @@ literal|16
 index|]
 expr_stmt|;
 block|}
-comment|/**      * Returns true if the box is inside all 6 clipping planes, otherwise returns false.      * @param F0      * @param F1      * @param F2      * @param F3      * @param F4      * @param F5      * @return boolean      */
+comment|/**      * Returns true if the box is inside all 6 clipping planes, otherwise returns false.      *      * @param F0      * @param F1      * @param F2      * @param F3      * @param F4      * @param F5      * @return boolean      */
 comment|// TODO Looks like some kind of product - simplify?
 specifier|public
 name|boolean

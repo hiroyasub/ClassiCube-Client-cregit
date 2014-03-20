@@ -172,6 +172,12 @@ name|serialVersionUID
 init|=
 literal|0L
 decl_stmt|;
+specifier|public
+name|int
+name|life
+init|=
+literal|0
+decl_stmt|;
 specifier|private
 name|float
 name|xd
@@ -183,12 +189,6 @@ decl_stmt|;
 specifier|private
 name|float
 name|zd
-decl_stmt|;
-specifier|public
-name|int
-name|life
-init|=
-literal|0
 decl_stmt|;
 specifier|private
 name|boolean

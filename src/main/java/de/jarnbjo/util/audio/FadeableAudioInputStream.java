@@ -17,7 +17,7 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|IOException
 import|;
 end_import
 
@@ -29,7 +29,7 @@ name|sound
 operator|.
 name|sampled
 operator|.
-name|*
+name|AudioInputStream
 import|;
 end_import
 

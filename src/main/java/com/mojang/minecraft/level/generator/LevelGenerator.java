@@ -15,18 +15,6 @@ end_package
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|LogUtil
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|util
@@ -42,6 +30,18 @@ operator|.
 name|util
 operator|.
 name|Random
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|util
+operator|.
+name|LogUtil
 import|;
 end_import
 
@@ -818,7 +818,7 @@ return|return
 name|var11
 return|;
 block|}
-comment|/**      * Generates a level      * @param creator      * @param width      * @param depth      * @param height Seems to be unused.      * @return      */
+comment|/**      * Generates a level      *      * @param creator      * @param width      * @param depth      * @param height  Seems to be unused.      * @return      */
 specifier|public
 specifier|final
 name|Level

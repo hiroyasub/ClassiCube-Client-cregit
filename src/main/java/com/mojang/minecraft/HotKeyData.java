@@ -10,7 +10,7 @@ package|;
 end_package
 
 begin_comment
-comment|/**  * Class used to store data for the Hotkey CPE extension  *   * @author Jon  *   */
+comment|/**  * Class used to store data for the Hotkey CPE extension  *  * @author Jon  */
 end_comment
 
 begin_class

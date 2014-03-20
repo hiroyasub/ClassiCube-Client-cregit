@@ -47,6 +47,37 @@ name|serialVersionUID
 init|=
 literal|0L
 decl_stmt|;
+comment|// $FF: synthetic field
+specifier|final
+name|BlockMap
+name|blockMap
+decl_stmt|;
+specifier|private
+name|int
+name|xSlot
+decl_stmt|;
+specifier|private
+name|int
+name|ySlot
+decl_stmt|;
+specifier|private
+name|int
+name|zSlot
+decl_stmt|;
+specifier|public
+name|BlockMap$Slot
+parameter_list|(
+name|BlockMap
+name|blockMap
+parameter_list|)
+block|{
+name|this
+operator|.
+name|blockMap
+operator|=
+name|blockMap
+expr_stmt|;
+block|}
 comment|// $FF: synthetic method
 specifier|static
 name|int
@@ -91,37 +122,6 @@ name|slot
 operator|.
 name|zSlot
 return|;
-block|}
-specifier|private
-name|int
-name|xSlot
-decl_stmt|;
-specifier|private
-name|int
-name|ySlot
-decl_stmt|;
-specifier|private
-name|int
-name|zSlot
-decl_stmt|;
-comment|// $FF: synthetic field
-specifier|final
-name|BlockMap
-name|blockMap
-decl_stmt|;
-specifier|public
-name|BlockMap$Slot
-parameter_list|(
-name|BlockMap
-name|blockMap
-parameter_list|)
-block|{
-name|this
-operator|.
-name|blockMap
-operator|=
-name|blockMap
-expr_stmt|;
 block|}
 specifier|public
 name|BlockMap$Slot
@@ -282,7 +282,7 @@ return|return
 name|this
 return|;
 block|}
-comment|/**      * Adds an entity to the BlockMap slot.      * @param entity      */
+comment|/**      * Adds an entity to the BlockMap slot.      *      * @param entity      */
 specifier|public
 name|void
 name|add
@@ -340,7 +340,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Removes an entity from the BlockMap slot.      * @param entity      */
+comment|/**      * Removes an entity from the BlockMap slot.      *      * @param entity      */
 specifier|public
 name|void
 name|remove

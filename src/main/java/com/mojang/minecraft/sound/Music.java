@@ -13,18 +13,6 @@ end_package
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|LogUtil
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|net
@@ -40,6 +28,18 @@ operator|.
 name|nio
 operator|.
 name|ByteBuffer
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|util
+operator|.
+name|LogUtil
 import|;
 end_import
 
@@ -111,12 +111,6 @@ argument_list|(
 literal|176400
 argument_list|)
 decl_stmt|;
-specifier|private
-name|ByteBuffer
-name|processing
-init|=
-literal|null
-decl_stmt|;
 name|ByteBuffer
 name|previous
 init|=
@@ -137,6 +131,12 @@ name|boolean
 name|stopped
 init|=
 literal|false
+decl_stmt|;
+specifier|private
+name|ByteBuffer
+name|processing
+init|=
+literal|null
 decl_stmt|;
 specifier|public
 name|Music

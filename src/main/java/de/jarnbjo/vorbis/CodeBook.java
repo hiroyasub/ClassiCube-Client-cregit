@@ -19,7 +19,7 @@ name|java
 operator|.
 name|io
 operator|.
-name|*
+name|IOException
 import|;
 end_import
 
@@ -29,7 +29,7 @@ name|java
 operator|.
 name|util
 operator|.
-name|*
+name|Arrays
 import|;
 end_import
 
@@ -43,7 +43,21 @@ name|util
 operator|.
 name|io
 operator|.
-name|*
+name|BitInputStream
+import|;
+end_import
+
+begin_import
+import|import
+name|de
+operator|.
+name|jarnbjo
+operator|.
+name|util
+operator|.
+name|io
+operator|.
+name|HuffmanNode
 import|;
 end_import
 
@@ -894,7 +908,7 @@ block|}
 block|}
 block|}
 block|}
-comment|/*      * public void readVAdd(double[] a, ReadableBitChannel source, int offset,      * int length) throws FormatException, IOException {      *       * int i,j,entry; int t;      *       * if(dimensions>8){ for(i=0;i<length;){ entry = readInt(source);      * //if(entry==-1)return(-1); //t=entry*dimensions; for(j=0;j<dimensions;){      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; } } }      * else{ for(i=0;i<length;){ entry=readInt(source);      * //if(entry==-1)return(-1); //t=entry*dim; j=0; switch(dimensions){ case      * 8: a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 7:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 6:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 5:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 4:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 3:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 2:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 1:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 0:      * break; } } } }      */
+comment|/*      * public void readVAdd(double[] a, ReadableBitChannel source, int offset,      * int length) throws FormatException, IOException {      *      * int i,j,entry; int t;      *      * if(dimensions>8){ for(i=0;i<length;){ entry = readInt(source);      * //if(entry==-1)return(-1); //t=entry*dimensions; for(j=0;j<dimensions;){      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; } } }      * else{ for(i=0;i<length;){ entry=readInt(source);      * //if(entry==-1)return(-1); //t=entry*dim; j=0; switch(dimensions){ case      * 8: a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 7:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 6:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 5:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 4:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 3:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 2:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 1:      * a[offset+(i++)]+=valueVector[entry][j++];//valuelist[t+(j++)]; case 0:      * break; } } } }      */
 block|}
 end_class
 
