@@ -26,7 +26,11 @@ operator|.
 name|util
 operator|.
 name|Arrays
-name|import
+import|;
+end_import
+
+begin_import
+import|import
 name|java
 operator|.
 name|util
