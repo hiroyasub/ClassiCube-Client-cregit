@@ -17782,11 +17782,21 @@ expr_stmt|;
 break|break;
 block|}
 block|}
+comment|// If the player presses lots of keys and presses the left mouse button,
+comment|// sometimes the screen is closed even though there are still keys left to process.
+if|if
+condition|(
+name|currentScreen
+operator|!=
+literal|null
+condition|)
+block|{
 name|currentScreen
 operator|.
 name|keyboardEvent
 argument_list|()
 expr_stmt|;
+block|}
 block|}
 block|}
 if|else if
