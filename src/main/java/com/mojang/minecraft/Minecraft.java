@@ -11551,16 +11551,6 @@ parameter_list|)
 block|{
 if|if
 condition|(
-operator|!
-operator|(
-name|currentScreen
-operator|instanceof
-name|ErrorScreen
-operator|)
-condition|)
-block|{
-if|if
-condition|(
 name|currentScreen
 operator|!=
 literal|null
@@ -11698,7 +11688,6 @@ block|}
 name|grabMouse
 argument_list|()
 expr_stmt|;
-block|}
 block|}
 specifier|private
 name|void
@@ -13373,6 +13362,13 @@ expr_stmt|;
 name|receivedExtensionLength
 operator|=
 name|ExtensionCount
+expr_stmt|;
+name|Constants
+operator|.
+name|SERVER_SUPPORTED_EXTENSIONS
+operator|.
+name|clear
+argument_list|()
 expr_stmt|;
 block|}
 if|else if
