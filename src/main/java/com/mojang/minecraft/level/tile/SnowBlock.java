@@ -64,6 +64,12 @@ argument_list|(
 name|id
 argument_list|)
 expr_stmt|;
+name|this
+operator|.
+name|id
+operator|=
+name|id
+expr_stmt|;
 name|setBounds
 argument_list|(
 literal|0F
