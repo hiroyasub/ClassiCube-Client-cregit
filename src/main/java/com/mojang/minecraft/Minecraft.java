@@ -15534,6 +15534,11 @@ operator|.
 name|LEVEL_INIT
 condition|)
 block|{
+name|selectionBoxes
+operator|.
+name|clear
+argument_list|()
+expr_stmt|;
 name|networkManager
 operator|.
 name|minecraft
