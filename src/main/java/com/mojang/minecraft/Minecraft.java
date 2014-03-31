@@ -1449,7 +1449,7 @@ specifier|public
 name|int
 name|port
 decl_stmt|;
-comment|/**      * Set this to whatever you want to show as debug information in the HUD. It      * will occupy one line. Right now it shows FPS and Chunk Updates.      */
+comment|/**      * Set this to whatever you want to show as debug information in the HUD. It will occupy one      * line. Right now it shows FPS and Chunk Updates.      */
 specifier|public
 name|String
 name|debug
@@ -1591,7 +1591,7 @@ name|isLoadingMap
 init|=
 literal|false
 decl_stmt|;
-comment|/**      * This timer determines how much time will pass between block      * modifications. It is used to prevent really fast block spamming.      */
+comment|/**      * This timer determines how much time will pass between block modifications. It is used to      * prevent really fast block spamming.      */
 specifier|private
 name|Timer
 name|timer
@@ -1624,7 +1624,7 @@ specifier|private
 name|Cursor
 name|cursor
 decl_stmt|;
-comment|/**      * Creates a new Minecraft instance.      *      * @param canvas     Canvas to use for drawing.      * @param applet     Applet of this instance      * @param width      Width of the window      * @param height     Height of the window      * @param fullscreen True if game should be in fullscreen      * @param isApplet   True if the game is running as an applet      */
+comment|/**      * Creates a new Minecraft instance.      *      * @param canvas Canvas to use for drawing.      * @param applet Applet of this instance      * @param width Width of the window      * @param height Height of the window      * @param fullscreen True if game should be in fullscreen      * @param isApplet True if the game is running as an applet      */
 specifier|public
 name|Minecraft
 parameter_list|(
@@ -6230,11 +6230,13 @@ operator|<
 operator|-
 literal|5.1F
 condition|)
+block|{
 name|cameraDistance
 operator|=
 operator|-
 literal|5.1F
 expr_stmt|;
+block|}
 block|}
 if|if
 condition|(
@@ -12311,6 +12313,14 @@ parameter_list|)
 block|{
 try|try
 block|{
+if|if
+condition|(
+name|isLoadingMap
+condition|)
+block|{
+comment|// Ignore attempts to screenshot while we're still connecting
+return|return;
+block|}
 name|int
 name|size
 init|=
@@ -12623,26 +12633,7 @@ name|title
 decl_stmt|;
 if|if
 condition|(
-literal|"Loading level"
-operator|.
-name|equals
-argument_list|(
-name|serverName
-argument_list|)
-operator|||
-literal|"Connecting.."
-operator|.
-name|equals
-argument_list|(
-name|serverName
-argument_list|)
-operator|||
-literal|""
-operator|.
-name|equals
-argument_list|(
-name|serverName
-argument_list|)
+name|isSinglePlayer
 condition|)
 block|{
 name|serverName
