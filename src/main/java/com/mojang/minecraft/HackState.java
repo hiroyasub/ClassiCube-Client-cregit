@@ -25,8 +25,6 @@ name|fly
 decl_stmt|,
 name|respawn
 decl_stmt|,
-name|thirdPerson
-decl_stmt|,
 name|opHacks
 init|=
 literal|true
@@ -50,10 +48,6 @@ operator|=
 literal|false
 expr_stmt|;
 name|opHacks
-operator|=
-literal|false
-expr_stmt|;
-name|thirdPerson
 operator|=
 literal|false
 expr_stmt|;
@@ -81,10 +75,6 @@ operator|=
 literal|true
 expr_stmt|;
 name|opHacks
-operator|=
-literal|true
-expr_stmt|;
-name|thirdPerson
 operator|=
 literal|true
 expr_stmt|;
