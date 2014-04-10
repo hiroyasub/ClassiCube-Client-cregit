@@ -3986,8 +3986,6 @@ operator|=
 operator|new
 name|ParticleManager
 argument_list|(
-name|level
-argument_list|,
 name|textureManager
 argument_list|)
 expr_stmt|;
@@ -11861,7 +11859,7 @@ name|fontRenderer
 expr_stmt|;
 name|theLevel
 operator|.
-name|rendererContext$5cd64a7f
+name|rendererContext
 operator|=
 name|this
 expr_stmt|;
