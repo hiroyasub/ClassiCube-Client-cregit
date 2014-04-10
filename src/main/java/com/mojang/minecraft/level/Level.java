@@ -325,7 +325,7 @@ decl_stmt|;
 specifier|public
 specifier|transient
 name|Minecraft
-name|rendererContext$5cd64a7f
+name|rendererContext
 decl_stmt|;
 specifier|public
 name|boolean
@@ -6057,7 +6057,7 @@ parameter_list|)
 block|{
 if|if
 condition|(
-name|rendererContext$5cd64a7f
+name|rendererContext
 operator|!=
 literal|null
 condition|)
@@ -6070,7 +6070,7 @@ condition|(
 operator|(
 name|var5
 operator|=
-name|rendererContext$5cd64a7f
+name|rendererContext
 operator|)
 operator|.
 name|soundPlayer
@@ -6170,7 +6170,7 @@ parameter_list|)
 block|{
 if|if
 condition|(
-name|rendererContext$5cd64a7f
+name|rendererContext
 operator|!=
 literal|null
 condition|)
@@ -6183,7 +6183,7 @@ condition|(
 operator|(
 name|var7
 operator|=
-name|rendererContext$5cd64a7f
+name|rendererContext
 operator|)
 operator|.
 name|soundPlayer

@@ -317,7 +317,7 @@ block|}
 name|canvas
 operator|=
 operator|new
-name|MinecraftApplet$1
+name|MinecraftCanvas
 argument_list|(
 name|this
 argument_list|)
