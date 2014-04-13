@@ -14403,13 +14403,6 @@ block|}
 block|}
 else|else
 block|{
-name|textureManager
-operator|.
-name|animations
-operator|.
-name|clear
-argument_list|()
-expr_stmt|;
 try|try
 block|{
 name|textureManager
@@ -14448,13 +14441,6 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-name|textureManager
-operator|.
-name|textures
-operator|.
-name|clear
-argument_list|()
-expr_stmt|;
 name|level
 operator|.
 name|waterLevel
