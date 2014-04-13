@@ -13,6 +13,18 @@ end_package
 
 begin_import
 import|import
+name|java
+operator|.
+name|awt
+operator|.
+name|image
+operator|.
+name|BufferedImage
+import|;
+end_import
+
+begin_import
+import|import
 name|org
 operator|.
 name|lwjgl
@@ -383,6 +395,13 @@ name|boolean
 name|dead
 init|=
 literal|false
+decl_stmt|;
+specifier|public
+specifier|transient
+name|BufferedImage
+name|newTexture
+init|=
+literal|null
 decl_stmt|;
 specifier|public
 name|Mob
