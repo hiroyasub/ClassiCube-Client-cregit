@@ -414,6 +414,15 @@ argument_list|,
 literal|"ClassiCube User"
 argument_list|)
 expr_stmt|;
+name|master
+operator|.
+name|setCompoundTag
+argument_list|(
+literal|"CreatedBy"
+argument_list|,
+name|createdBy
+argument_list|)
+expr_stmt|;
 name|NBTTagCompound
 name|spawn
 init|=
@@ -507,23 +516,27 @@ name|master
 operator|.
 name|setCompoundTag
 argument_list|(
-literal|"CreatedBy"
-argument_list|,
-name|createdBy
-argument_list|)
-expr_stmt|;
-name|master
-operator|.
-name|setCompoundTag
-argument_list|(
 literal|"Spawn"
 argument_list|,
 name|spawn
 argument_list|)
 expr_stmt|;
+comment|// Metadata tag is required by ClassicWorld specs, even if empty.
+name|master
+operator|.
+name|setCompoundTag
+argument_list|(
+literal|"Metadata"
+argument_list|,
+operator|new
+name|NBTTagCompound
+argument_list|(
+literal|"Metadata"
+argument_list|)
+argument_list|;
 name|String
 name|fileName
-init|=
+operator|=
 name|fullFilePath
 operator|+
 operator|(
@@ -541,12 +554,11 @@ literal|""
 else|:
 name|EXT
 operator|)
-decl_stmt|;
-try|try
-init|(
+argument_list|;         try
+operator|(
 name|FileOutputStream
 name|fs
-init|=
+operator|=
 operator|new
 name|FileOutputStream
 argument_list|(
@@ -556,7 +568,7 @@ argument_list|(
 name|fileName
 argument_list|)
 argument_list|)
-init|)
+operator|)
 block|{
 name|CompressedStreamTools
 operator|.
@@ -566,8 +578,7 @@ name|master
 argument_list|,
 name|fs
 argument_list|)
-expr_stmt|;
-block|}
+block|;         }
 block|}
 specifier|public
 name|void
