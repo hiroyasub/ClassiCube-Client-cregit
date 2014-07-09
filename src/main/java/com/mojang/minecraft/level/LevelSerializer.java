@@ -414,6 +414,15 @@ argument_list|,
 literal|"ClassiCube User"
 argument_list|)
 expr_stmt|;
+name|master
+operator|.
+name|setCompoundTag
+argument_list|(
+literal|"CreatedBy"
+argument_list|,
+name|createdBy
+argument_list|)
+expr_stmt|;
 name|NBTTagCompound
 name|spawn
 init|=
@@ -507,18 +516,23 @@ name|master
 operator|.
 name|setCompoundTag
 argument_list|(
-literal|"CreatedBy"
+literal|"Spawn"
 argument_list|,
-name|createdBy
+name|spawn
 argument_list|)
 expr_stmt|;
+comment|// Metadata tag is required by ClassicWorld specs, even if empty.
 name|master
 operator|.
 name|setCompoundTag
 argument_list|(
-literal|"Spawn"
+literal|"Metadata"
 argument_list|,
-name|spawn
+operator|new
+name|NBTTagCompound
+argument_list|(
+literal|"Metadata"
+argument_list|)
 argument_list|)
 expr_stmt|;
 name|String
