@@ -533,10 +533,11 @@ name|NBTTagCompound
 argument_list|(
 literal|"Metadata"
 argument_list|)
-argument_list|;
+argument_list|)
+expr_stmt|;
 name|String
 name|fileName
-operator|=
+init|=
 name|fullFilePath
 operator|+
 operator|(
@@ -554,11 +555,12 @@ literal|""
 else|:
 name|EXT
 operator|)
-argument_list|;         try
-operator|(
+decl_stmt|;
+try|try
+init|(
 name|FileOutputStream
 name|fs
-operator|=
+init|=
 operator|new
 name|FileOutputStream
 argument_list|(
@@ -568,7 +570,7 @@ argument_list|(
 name|fileName
 argument_list|)
 argument_list|)
-operator|)
+init|)
 block|{
 name|CompressedStreamTools
 operator|.
@@ -578,7 +580,8 @@ name|master
 argument_list|,
 name|fs
 argument_list|)
-block|;         }
+expr_stmt|;
+block|}
 block|}
 specifier|public
 name|void
