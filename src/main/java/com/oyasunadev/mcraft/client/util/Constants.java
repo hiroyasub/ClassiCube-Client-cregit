@@ -115,20 +115,6 @@ name|CUSTOM_BLOCK_SUPPORT_LEVEL
 init|=
 literal|1
 decl_stmt|;
-comment|// TODO move out of constants and into something more appropriate
-specifier|public
-specifier|static
-name|List
-argument_list|<
-name|ExtData
-argument_list|>
-name|SERVER_SUPPORTED_EXTENSIONS
-init|=
-operator|new
-name|ArrayList
-argument_list|<>
-argument_list|()
-decl_stmt|;
 block|}
 end_class
 
