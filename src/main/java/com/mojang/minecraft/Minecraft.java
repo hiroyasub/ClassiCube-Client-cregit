@@ -1389,10 +1389,10 @@ specifier|public
 name|HUDScreen
 name|hud
 decl_stmt|;
-comment|/**      * True if the player is online.      */
+comment|/**      * True if the player is connecting to a server,      * from the moment connection is established and until LEVEL_FINALIZE packet is received.      */
 specifier|public
 name|boolean
-name|isOnline
+name|isConnecting
 decl_stmt|;
 comment|/**      * Manages networking.      */
 specifier|public
@@ -1685,7 +1685,7 @@ name|levelId
 operator|=
 literal|0
 expr_stmt|;
-name|isOnline
+name|isConnecting
 operator|=
 literal|false
 expr_stmt|;
@@ -4695,7 +4695,7 @@ expr_stmt|;
 if|if
 condition|(
 operator|!
-name|isOnline
+name|isConnecting
 condition|)
 block|{
 name|gamemode
@@ -4897,7 +4897,7 @@ block|}
 if|if
 condition|(
 operator|!
-name|isOnline
+name|isConnecting
 condition|)
 block|{
 name|int
@@ -6074,6 +6074,7 @@ name|ShapeRenderer
 operator|.
 name|instance
 decl_stmt|;
+comment|// If player is inside a solid block (noclip?)
 if|if
 condition|(
 name|level
@@ -10363,6 +10364,7 @@ name|onClose
 argument_list|()
 expr_stmt|;
 block|}
+comment|// SURVIVAL: Game over
 if|if
 condition|(
 name|newScreen
@@ -10480,7 +10482,7 @@ argument_list|,
 name|var3
 argument_list|)
 expr_stmt|;
-name|isOnline
+name|isConnecting
 operator|=
 literal|false
 expr_stmt|;
@@ -12028,7 +12030,7 @@ literal|"You\'ve lost connection to the server"
 argument_list|)
 argument_list|)
 expr_stmt|;
-name|isOnline
+name|isConnecting
 operator|=
 literal|false
 expr_stmt|;
@@ -12208,6 +12210,7 @@ block|}
 block|}
 return|return;
 block|}
+comment|// SURVIVAL: Show game over screen
 if|if
 condition|(
 name|currentScreen
