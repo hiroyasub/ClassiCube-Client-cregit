@@ -259,6 +259,22 @@ block|{
 specifier|public
 specifier|static
 specifier|final
+name|int
+name|DEFAULT_CLOUD_COLOR
+init|=
+literal|16777215
+decl_stmt|,
+name|DEFAULT_FOG_COLOR
+init|=
+literal|16777215
+decl_stmt|,
+name|DEFAULT_SKY_COLOR
+init|=
+literal|10079487
+decl_stmt|;
+specifier|public
+specifier|static
+specifier|final
 name|long
 name|serialVersionUID
 init|=
@@ -463,7 +479,6 @@ operator|=
 literal|false
 expr_stmt|;
 block|}
-comment|/**      * Adds an entity to the level.      *      * @param entity      */
 specifier|public
 name|void
 name|addEntity
@@ -4708,7 +4723,7 @@ condition|)
 block|{
 name|skyColor
 operator|=
-literal|10079487
+name|DEFAULT_SKY_COLOR
 expr_stmt|;
 block|}
 if|if
@@ -4720,7 +4735,7 @@ condition|)
 block|{
 name|fogColor
 operator|=
-literal|16777215
+name|DEFAULT_FOG_COLOR
 expr_stmt|;
 block|}
 if|if
@@ -4732,7 +4747,7 @@ condition|)
 block|{
 name|cloudColor
 operator|=
-literal|16777215
+name|DEFAULT_CLOUD_COLOR
 expr_stmt|;
 block|}
 if|if

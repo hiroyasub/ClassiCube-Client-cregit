@@ -42,15 +42,6 @@ specifier|public
 class|class
 name|Constants
 block|{
-comment|/**      * Just a reference to the MCraft version if needed.      */
-specifier|public
-specifier|static
-specifier|final
-name|String
-name|MCRAFT_VERSION
-init|=
-literal|"1.0"
-decl_stmt|;
 comment|/**      * Just a reference to the Minecraft version if needed.      */
 specifier|public
 specifier|static
@@ -122,23 +113,7 @@ specifier|final
 name|byte
 name|CUSTOM_BLOCK_SUPPORT_LEVEL
 init|=
-operator|(
-name|byte
-operator|)
 literal|1
-decl_stmt|;
-specifier|public
-specifier|static
-name|List
-argument_list|<
-name|ExtData
-argument_list|>
-name|SERVER_SUPPORTED_EXTENSIONS
-init|=
-operator|new
-name|ArrayList
-argument_list|<>
-argument_list|()
 decl_stmt|;
 block|}
 end_class

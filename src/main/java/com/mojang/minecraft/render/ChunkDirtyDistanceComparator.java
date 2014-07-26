@@ -46,6 +46,7 @@ name|Chunk
 argument_list|>
 block|{
 specifier|private
+specifier|final
 name|Player
 name|player
 decl_stmt|;
