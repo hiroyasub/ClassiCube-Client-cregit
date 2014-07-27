@@ -3318,7 +3318,7 @@ name|networkManager
 operator|.
 name|minecraft
 operator|.
-name|isOnline
+name|isConnecting
 operator|=
 literal|false
 expr_stmt|;

@@ -174,7 +174,7 @@ parameter_list|)
 block|{
 name|minecraft
 operator|.
-name|isOnline
+name|isConnecting
 operator|=
 literal|true
 expr_stmt|;
