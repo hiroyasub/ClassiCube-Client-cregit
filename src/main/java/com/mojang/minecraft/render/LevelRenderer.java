@@ -147,7 +147,7 @@ name|List
 argument_list|<
 name|Chunk
 argument_list|>
-name|chunks
+name|chunksToUpdate
 init|=
 operator|new
 name|ArrayList
@@ -209,7 +209,7 @@ init|=
 operator|new
 name|int
 index|[
-literal|'\uc350'
+literal|50000
 index|]
 decl_stmt|;
 specifier|private
@@ -510,7 +510,7 @@ name|loaded
 operator|=
 literal|true
 expr_stmt|;
-name|chunks
+name|chunksToUpdate
 operator|.
 name|add
 argument_list|(
@@ -568,8 +568,7 @@ name|listsCount
 argument_list|)
 expr_stmt|;
 block|}
-comment|// So that worlds that are not multiples of 16 do not have invisible
-comment|// chunks.
+comment|// So that worlds that are not multiples of 16 do not have invisible chunks.
 name|int
 name|paddedWidth
 init|=
@@ -790,7 +789,7 @@ control|(
 name|Chunk
 name|chunk
 range|:
-name|chunks
+name|chunksToUpdate
 control|)
 block|{
 name|chunk
@@ -800,7 +799,7 @@ operator|=
 literal|false
 expr_stmt|;
 block|}
-name|chunks
+name|chunksToUpdate
 operator|.
 name|clear
 argument_list|()

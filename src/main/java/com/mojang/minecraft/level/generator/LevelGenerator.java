@@ -4655,14 +4655,14 @@ name|void
 name|setProgress
 parameter_list|(
 name|int
-name|var1
+name|percentage
 parameter_list|)
 block|{
 name|progressBar
 operator|.
 name|setProgress
 argument_list|(
-name|var1
+name|percentage
 argument_list|)
 expr_stmt|;
 block|}

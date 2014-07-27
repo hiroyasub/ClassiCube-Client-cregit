@@ -177,6 +177,15 @@ specifier|final
 class|class
 name|Renderer
 block|{
+comment|// TODO: adaptive chunk update rate, based on framerate
+specifier|public
+specifier|static
+specifier|final
+name|int
+name|MAX_CHUNK_UPDATES_PER_FRAME
+init|=
+literal|4
+decl_stmt|;
 specifier|public
 name|Minecraft
 name|minecraft

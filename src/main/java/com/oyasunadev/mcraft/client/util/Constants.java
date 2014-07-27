@@ -13,26 +13,6 @@ name|util
 package|;
 end_package
 
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|ArrayList
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|List
-import|;
-end_import
-
 begin_comment
 comment|/**  * Created with IntelliJ IDEA. User: Oliver Yasuna Date: 9/30/12 Time: 7:57 PM  */
 end_comment

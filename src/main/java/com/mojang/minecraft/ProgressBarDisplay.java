@@ -974,7 +974,7 @@ operator|>=
 literal|20L
 condition|)
 block|{
-comment|//start = currentTime; //Kinda fixed the flashing loading screen
+comment|// TODO: fix flicker on rendering
 name|int
 name|var4
 init|=
