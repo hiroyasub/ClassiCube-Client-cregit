@@ -818,7 +818,7 @@ return|return
 name|var11
 return|;
 block|}
-comment|/**      * Generates a level      *      * @param creator      * @param width      * @param depth      * @param height  Seems to be unused.      * @return      */
+comment|/**      * Generates a level      *      * @param creator      * @param width      * @param depth      * @param height Seems to be unused.      * @return      */
 specifier|public
 specifier|final
 name|Level
@@ -1213,6 +1213,15 @@ operator|++
 name|var51
 control|)
 block|{
+if|if
+condition|(
+name|var51
+operator|%
+literal|4
+operator|==
+literal|0
+condition|)
+block|{
 name|this
 operator|.
 name|setProgress
@@ -1230,6 +1239,7 @@ literal|1
 operator|)
 argument_list|)
 expr_stmt|;
+block|}
 for|for
 control|(
 name|var54
@@ -1404,6 +1414,15 @@ operator|++
 name|var24
 control|)
 block|{
+if|if
+condition|(
+name|var24
+operator|%
+literal|4
+operator|==
+literal|0
+condition|)
+block|{
 name|this
 operator|.
 name|setProgress
@@ -1421,6 +1440,7 @@ literal|1
 operator|)
 argument_list|)
 expr_stmt|;
+block|}
 for|for
 control|(
 name|var11
@@ -1702,6 +1722,15 @@ operator|++
 name|var11
 control|)
 block|{
+if|if
+condition|(
+name|var11
+operator|%
+literal|4
+operator|==
+literal|0
+condition|)
+block|{
 name|this
 operator|.
 name|setProgress
@@ -1719,6 +1748,7 @@ operator|/
 literal|4
 argument_list|)
 expr_stmt|;
+block|}
 name|float
 name|var55
 init|=
@@ -2866,6 +2896,15 @@ operator|++
 name|var11
 control|)
 block|{
+if|if
+condition|(
+name|var11
+operator|%
+literal|4
+operator|==
+literal|0
+condition|)
+block|{
 name|this
 operator|.
 name|setProgress
@@ -2883,6 +2922,7 @@ literal|1
 operator|)
 argument_list|)
 expr_stmt|;
+block|}
 for|for
 control|(
 name|var12
@@ -3137,6 +3177,15 @@ argument_list|(
 literal|2
 argument_list|)
 expr_stmt|;
+if|if
+condition|(
+name|var51
+operator|%
+literal|4
+operator|==
+literal|0
+condition|)
+block|{
 name|this
 operator|.
 name|setProgress
@@ -3152,6 +3201,7 @@ literal|1
 operator|)
 argument_list|)
 expr_stmt|;
+block|}
 name|var24
 operator|=
 name|this
@@ -3498,6 +3548,15 @@ argument_list|(
 literal|2
 argument_list|)
 expr_stmt|;
+if|if
+condition|(
+name|var51
+operator|%
+literal|4
+operator|==
+literal|0
+condition|)
+block|{
 name|this
 operator|.
 name|setProgress
@@ -3515,6 +3574,7 @@ operator|+
 literal|50
 argument_list|)
 expr_stmt|;
+block|}
 name|var11
 operator|=
 name|this
@@ -3927,6 +3987,15 @@ operator|++
 name|var54
 control|)
 block|{
+if|if
+condition|(
+name|var51
+operator|%
+literal|4
+operator|==
+literal|0
+condition|)
+block|{
 name|this
 operator|.
 name|setProgress
@@ -3944,6 +4013,7 @@ operator|+
 literal|50
 argument_list|)
 expr_stmt|;
+block|}
 name|var24
 operator|=
 name|this
