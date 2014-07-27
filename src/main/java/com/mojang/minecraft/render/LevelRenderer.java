@@ -1745,7 +1745,7 @@ expr_stmt|;
 block|}
 specifier|public
 specifier|final
-name|void
+name|int
 name|sortChunks
 parameter_list|(
 name|Player
@@ -1913,6 +1913,12 @@ name|buffer
 argument_list|)
 expr_stmt|;
 block|}
+return|return
+name|buffer
+operator|.
+name|remaining
+argument_list|()
+return|;
 block|}
 specifier|public
 name|void
