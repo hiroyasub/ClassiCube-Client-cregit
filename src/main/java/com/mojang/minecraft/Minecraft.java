@@ -1389,7 +1389,7 @@ specifier|public
 name|HUDScreen
 name|hud
 decl_stmt|;
-comment|/**      * True if the player is connecting to a server,      * from the moment connection is established and until LEVEL_FINALIZE packet is received.      */
+comment|/**      * True if the player is connecting to a server, from the moment connection is established and      * until LEVEL_FINALIZE packet is received.      */
 specifier|public
 name|boolean
 name|isConnecting
@@ -1549,13 +1549,6 @@ name|canRenderGUI
 init|=
 literal|true
 decl_stmt|;
-name|float
-name|cameraDistance
-init|=
-operator|-
-literal|0.1F
-decl_stmt|;
-comment|// TODO Never used
 name|boolean
 name|isShuttingDown
 init|=
@@ -11214,9 +11207,6 @@ operator|.
 name|spawnMob
 argument_list|()
 expr_stmt|;
-name|int
-name|i
-decl_stmt|;
 if|if
 condition|(
 name|canRenderGUI
@@ -11231,8 +11221,9 @@ name|ticks
 expr_stmt|;
 for|for
 control|(
+name|int
 name|i
-operator|=
+init|=
 literal|0
 init|;
 name|i
@@ -11289,8 +11280,9 @@ name|textureManager
 decl_stmt|;
 for|for
 control|(
+name|int
 name|i
-operator|=
+init|=
 literal|0
 init|;
 name|i
@@ -11306,6 +11298,7 @@ operator|++
 name|i
 control|)
 block|{
+comment|// Animate textures, like lava and water
 name|TextureFX
 name|texFX
 init|=
@@ -11424,9 +11417,13 @@ literal|16
 argument_list|,
 literal|16
 argument_list|,
-literal|6408
+name|GL11
+operator|.
+name|GL_RGBA
 argument_list|,
-literal|5121
+name|GL11
+operator|.
+name|GL_UNSIGNED_BYTE
 argument_list|,
 name|texManager
 operator|.
@@ -11483,10 +11480,7 @@ condition|(
 name|networkManager
 operator|.
 name|successful
-condition|)
-block|{
-if|if
-condition|(
+operator|&&
 name|networkManager
 operator|.
 name|netHandler
@@ -11494,6 +11488,7 @@ operator|.
 name|connected
 condition|)
 block|{
+comment|// Do network communication
 name|NetworkHandler
 name|networkHandler
 init|=
@@ -11636,7 +11631,6 @@ literal|null
 expr_stmt|;
 block|}
 block|}
-block|}
 if|if
 condition|(
 name|networkManager
@@ -11644,6 +11638,7 @@ operator|.
 name|levelLoaded
 condition|)
 block|{
+comment|// Send player position to the server
 name|int
 name|playerXUnits
 init|=
@@ -11765,6 +11760,7 @@ condition|(
 name|isLoadingMap
 condition|)
 block|{
+comment|// Ignore all keyboard input while loading map, unless Esc is pressed.
 while|while
 condition|(
 name|Keyboard
@@ -12001,7 +11997,7 @@ operator|=
 name|heldBlock
 expr_stmt|;
 block|}
-comment|// Render rainfall
+comment|// If it's raining, spawn raindrop particles on ground
 if|if
 condition|(
 name|renderer
@@ -12043,8 +12039,9 @@ name|z
 decl_stmt|;
 for|for
 control|(
+name|int
 name|i
-operator|=
+init|=
 literal|0
 init|;
 name|i
@@ -12056,7 +12053,7 @@ name|i
 control|)
 block|{
 name|int
-name|var60
+name|raindropBlockX
 init|=
 name|playerX
 operator|+
@@ -12072,7 +12069,7 @@ operator|-
 literal|4
 decl_stmt|;
 name|int
-name|var52
+name|raindropBlockY
 init|=
 name|playerZ
 operator|+
@@ -12088,26 +12085,26 @@ operator|-
 literal|4
 decl_stmt|;
 name|int
-name|var57
+name|groundLevel
 init|=
 name|level
 operator|.
 name|getHighestTile
 argument_list|(
-name|var60
+name|raindropBlockX
 argument_list|,
-name|var52
+name|raindropBlockY
 argument_list|)
 decl_stmt|;
 if|if
 condition|(
-name|var57
+name|groundLevel
 operator|<=
 name|playerY
 operator|+
 literal|4
 operator|&&
-name|var57
+name|groundLevel
 operator|>=
 name|playerY
 operator|-
@@ -12143,15 +12140,15 @@ name|WaterDropParticle
 argument_list|(
 name|level
 argument_list|,
-name|var60
+name|raindropBlockX
 operator|+
 name|offsetX
 argument_list|,
-name|var57
+name|groundLevel
 operator|+
 literal|0.1F
 argument_list|,
-name|var52
+name|raindropBlockY
 operator|+
 name|offsetZ
 argument_list|)
@@ -12483,9 +12480,8 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|// Note sure if needed:
-comment|// This only triggers if currentScreen is set while handling
-comment|// mouse input in-game (?)
+comment|// Not sure if needed:
+comment|// This only triggers if currentScreen is set while handling mouse input in-game (?)
 if|if
 condition|(
 name|currentScreen
@@ -12507,7 +12503,7 @@ operator|>
 literal|0
 condition|)
 block|{
-comment|// Decrement punching cooldown (survival)
+comment|// SURVIVAL: Decrement punching cooldown
 operator|--
 name|punchingCooldown
 expr_stmt|;
@@ -12975,7 +12971,7 @@ operator|>
 literal|0
 condition|)
 block|{
-comment|// Shoot arrows (survival)
+comment|// SURVIVAL: Shoot arrows
 name|level
 operator|.
 name|addEntity
@@ -13263,7 +13259,7 @@ operator|<=
 literal|0
 condition|)
 block|{
-comment|// survival: slow block-breaking
+comment|// SURVIVAL: slow block-breaking
 if|if
 condition|(
 operator|(
@@ -13364,7 +13360,6 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|/**      * Toggles FullScreen on or off.      */
 specifier|public
 name|void
 name|toggleFullscreen
@@ -13405,30 +13400,6 @@ operator|.
 name|getHeight
 argument_list|()
 expr_stmt|;
-if|if
-condition|(
-name|width
-operator|<=
-literal|0
-condition|)
-block|{
-name|width
-operator|=
-literal|1
-expr_stmt|;
-block|}
-if|if
-condition|(
-name|height
-operator|<=
-literal|0
-condition|)
-block|{
-name|height
-operator|=
-literal|1
-expr_stmt|;
-block|}
 block|}
 else|else
 block|{
@@ -13453,6 +13424,7 @@ name|height
 operator|=
 name|tempDisplayHeight
 expr_stmt|;
+block|}
 if|if
 condition|(
 name|width
@@ -13476,7 +13448,6 @@ name|height
 operator|=
 literal|1
 expr_stmt|;
-block|}
 block|}
 name|resize
 argument_list|()
