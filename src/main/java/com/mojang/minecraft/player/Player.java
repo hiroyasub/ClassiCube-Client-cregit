@@ -291,11 +291,6 @@ name|noPush
 init|=
 literal|false
 decl_stmt|;
-specifier|public
-specifier|static
-name|BufferedImage
-name|newTexture
-decl_stmt|;
 specifier|private
 specifier|static
 name|int

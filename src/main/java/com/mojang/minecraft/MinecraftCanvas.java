@@ -204,7 +204,7 @@ end_comment
 begin_class
 specifier|public
 class|class
-name|MinecraftApplet$1
+name|MinecraftCanvas
 extends|extends
 name|Canvas
 block|{
@@ -229,7 +229,7 @@ name|MinecraftApplet
 name|applet
 decl_stmt|;
 specifier|public
-name|MinecraftApplet$1
+name|MinecraftCanvas
 parameter_list|(
 name|MinecraftApplet
 name|minecraftApplet

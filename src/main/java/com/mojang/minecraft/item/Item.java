@@ -600,7 +600,9 @@ name|GL11
 operator|.
 name|GL_SRC_ALPHA
 argument_list|,
-literal|1
+name|GL11
+operator|.
+name|GL_ONE
 argument_list|)
 expr_stmt|;
 name|GL11
@@ -646,7 +648,9 @@ name|GL11
 operator|.
 name|GL_SRC_ALPHA
 argument_list|,
-literal|771
+name|GL11
+operator|.
+name|GL_ONE_MINUS_SRC_ALPHA
 argument_list|)
 expr_stmt|;
 name|GL11

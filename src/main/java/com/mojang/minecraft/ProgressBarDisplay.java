@@ -974,10 +974,7 @@ operator|>=
 literal|20L
 condition|)
 block|{
-name|start
-operator|=
-name|currentTime
-expr_stmt|;
+comment|// TODO: fix flicker on rendering
 name|int
 name|var4
 init|=

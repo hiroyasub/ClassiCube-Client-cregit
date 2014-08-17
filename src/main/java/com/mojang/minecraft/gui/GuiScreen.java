@@ -121,6 +121,12 @@ name|FontRenderer
 name|fontRenderer
 decl_stmt|;
 specifier|public
+name|boolean
+name|isOpaque
+init|=
+literal|false
+decl_stmt|;
+specifier|public
 specifier|final
 name|void
 name|clearButtons

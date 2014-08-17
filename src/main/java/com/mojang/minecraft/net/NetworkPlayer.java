@@ -138,13 +138,6 @@ argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|public
-specifier|transient
-name|BufferedImage
-name|newTexture
-init|=
-literal|null
-decl_stmt|;
-specifier|public
 name|String
 name|name
 decl_stmt|;
@@ -319,7 +312,7 @@ name|allowAlpha
 operator|=
 literal|false
 expr_stmt|;
-comment|/*if (name.equalsIgnoreCase("Jonty800") || name.equalsIgnoreCase("Jonty800+")                 || name.equalsIgnoreCase("Jonty800@")) {             modelName = "sheep";         }*/
+comment|/*if (name.equalsIgnoreCase("Jonty800") || name.equalsIgnoreCase("Jonty800+")          || name.equalsIgnoreCase("Jonty800@")) {          modelName = "sheep";          }*/
 if|if
 condition|(
 name|modelName
@@ -774,10 +767,25 @@ name|void
 name|downloadSkin
 parameter_list|()
 block|{
+name|String
+name|skinToDownload
+init|=
+operator|(
+name|SkinName
+operator|==
+literal|null
+condition|?
+name|name
+else|:
+name|SkinName
+operator|)
+decl_stmt|;
 operator|new
 name|SkinDownloadThread
 argument_list|(
 name|this
+argument_list|,
+name|skinToDownload
 argument_list|,
 name|minecraft
 operator|.
@@ -1342,6 +1350,7 @@ argument_list|)
 expr_stmt|;
 block|}
 else|else
+block|{
 name|GL11
 operator|.
 name|glScalef
@@ -1354,6 +1363,7 @@ argument_list|,
 literal|0.05F
 argument_list|)
 expr_stmt|;
+block|}
 name|GL11
 operator|.
 name|glTranslatef

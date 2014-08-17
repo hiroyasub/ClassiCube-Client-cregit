@@ -106,6 +106,15 @@ specifier|public
 class|class
 name|NetworkManager
 block|{
+comment|// max number of packets to receive per tick
+specifier|public
+specifier|static
+specifier|final
+name|int
+name|MAX_PACKETS_PER_TICK
+init|=
+literal|100
+decl_stmt|;
 specifier|public
 name|ByteArrayOutputStream
 name|levelData
@@ -165,7 +174,7 @@ parameter_list|)
 block|{
 name|minecraft
 operator|.
-name|isOnline
+name|isConnecting
 operator|=
 literal|true
 expr_stmt|;

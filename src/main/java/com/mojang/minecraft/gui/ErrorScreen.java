@@ -129,6 +129,10 @@ name|text
 operator|=
 name|subtitle
 expr_stmt|;
+name|isOpaque
+operator|=
+literal|true
+expr_stmt|;
 block|}
 annotation|@
 name|Override
