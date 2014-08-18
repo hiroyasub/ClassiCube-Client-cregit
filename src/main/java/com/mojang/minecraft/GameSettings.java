@@ -1499,7 +1499,7 @@ operator|)
 operator|.
 name|equals
 argument_list|(
-name|value
+name|key
 argument_list|)
 condition|)
 block|{
