@@ -4295,6 +4295,15 @@ literal|100
 case|:
 name|HUDScreen
 operator|.
+name|AnnouncementTimer
+operator|=
+name|System
+operator|.
+name|currentTimeMillis
+argument_list|()
+expr_stmt|;
+name|HUDScreen
+operator|.
 name|Announcement
 operator|=
 name|message

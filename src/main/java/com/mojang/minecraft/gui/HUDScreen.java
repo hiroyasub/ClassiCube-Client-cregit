@@ -243,6 +243,13 @@ init|=
 literal|""
 decl_stmt|;
 specifier|public
+specifier|static
+name|long
+name|AnnouncementTimer
+init|=
+literal|0
+decl_stmt|;
+specifier|public
 name|List
 argument_list|<
 name|ChatLine
