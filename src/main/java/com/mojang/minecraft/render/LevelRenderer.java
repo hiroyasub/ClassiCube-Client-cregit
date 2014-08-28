@@ -128,10 +128,6 @@ name|TextureManager
 name|textureManager
 decl_stmt|;
 specifier|public
-name|int
-name|listId
-decl_stmt|;
-specifier|public
 name|IntBuffer
 name|buffer
 init|=
@@ -174,6 +170,13 @@ name|float
 name|cracks
 decl_stmt|;
 specifier|private
+specifier|final
+name|int
+name|bedrockListId
+decl_stmt|,
+name|waterListId
+decl_stmt|;
+specifier|private
 name|Chunk
 index|[]
 name|loadQueue
@@ -181,13 +184,9 @@ decl_stmt|;
 specifier|private
 name|int
 name|xChunks
-decl_stmt|;
-specifier|private
-name|int
+decl_stmt|,
 name|yChunks
-decl_stmt|;
-specifier|private
-name|int
+decl_stmt|,
 name|zChunks
 decl_stmt|;
 specifier|private
@@ -202,6 +201,7 @@ operator|-
 literal|1
 decl_stmt|;
 specifier|private
+specifier|final
 name|int
 index|[]
 name|chunkDataCache
@@ -255,13 +255,50 @@ name|textureManager
 operator|=
 name|textureManager
 expr_stmt|;
-name|listId
+name|bedrockListId
 operator|=
 name|GL11
 operator|.
 name|glGenLists
 argument_list|(
 literal|2
+argument_list|)
+expr_stmt|;
+name|waterListId
+operator|=
+name|bedrockListId
+operator|+
+literal|1
+expr_stmt|;
+block|}
+comment|// Requires GL_TEXTURE_2D to be enabled and rock.png to be set as texture.
+comment|// Sets ambient color (with glColor4f)
+specifier|public
+name|void
+name|renderBedrock
+parameter_list|()
+block|{
+name|GL11
+operator|.
+name|glCallList
+argument_list|(
+name|bedrockListId
+argument_list|)
+expr_stmt|;
+comment|// rock edges
+block|}
+comment|// Requires GL_TEXTURE_2D to be enabled and water.png to be set as texture.
+comment|// Enables GL_BLEND and changes the BlendFunc.
+specifier|public
+name|void
+name|renderOutsideWater
+parameter_list|()
+block|{
+name|GL11
+operator|.
+name|glCallList
+argument_list|(
+name|waterListId
 argument_list|)
 expr_stmt|;
 block|}
@@ -731,16 +768,16 @@ argument_list|(
 name|level
 argument_list|,
 name|x
-operator|<<
-literal|4
+operator|*
+literal|16
 argument_list|,
 name|y
-operator|<<
-literal|4
+operator|*
+literal|16
 argument_list|,
 name|z
-operator|<<
-literal|4
+operator|*
+literal|16
 argument_list|,
 name|baseListId
 operator|+
@@ -833,9 +870,11 @@ name|GL11
 operator|.
 name|glNewList
 argument_list|(
-name|listId
+name|bedrockListId
 argument_list|,
-literal|4864
+name|GL11
+operator|.
+name|GL_COMPILE
 argument_list|)
 expr_stmt|;
 if|if
@@ -1433,11 +1472,11 @@ name|GL11
 operator|.
 name|glNewList
 argument_list|(
-name|listId
-operator|+
-literal|1
+name|waterListId
 argument_list|,
-literal|4864
+name|GL11
+operator|.
+name|GL_COMPILE
 argument_list|)
 expr_stmt|;
 if|if
@@ -1483,6 +1522,15 @@ operator|.
 name|getWaterLevel
 argument_list|()
 decl_stmt|;
+name|GL11
+operator|.
+name|glEnable
+argument_list|(
+name|GL11
+operator|.
+name|GL_BLEND
+argument_list|)
+expr_stmt|;
 name|GL11
 operator|.
 name|glBlendFunc
@@ -1651,7 +1699,7 @@ literal|0F
 argument_list|)
 expr_stmt|;
 comment|// Seems to be rendered twice? Not sure why, possibly used
-comment|// for animated textures?
+comment|// for animated textures? TODO: investigate
 name|renderer
 operator|.
 name|vertexUV
@@ -1727,15 +1775,6 @@ name|renderer
 operator|.
 name|end
 argument_list|()
-expr_stmt|;
-name|GL11
-operator|.
-name|glDisable
-argument_list|(
-name|GL11
-operator|.
-name|GL_BLEND
-argument_list|)
 expr_stmt|;
 name|GL11
 operator|.
