@@ -372,7 +372,7 @@ name|tickCount
 init|=
 literal|0
 decl_stmt|;
-specifier|protected
+specifier|public
 name|String
 name|textureName
 init|=
