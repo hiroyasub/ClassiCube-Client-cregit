@@ -4146,11 +4146,13 @@ name|SkinDownloadThread
 argument_list|(
 name|player
 argument_list|,
+name|skinServer
+operator|+
 name|session
 operator|.
 name|username
-argument_list|,
-name|skinServer
+operator|+
+literal|".png"
 argument_list|)
 operator|.
 name|start
