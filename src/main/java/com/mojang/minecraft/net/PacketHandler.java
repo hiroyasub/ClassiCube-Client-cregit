@@ -2495,6 +2495,15 @@ name|displayName
 operator|=
 name|InGameName
 expr_stmt|;
+name|tmp
+operator|.
+name|renderHover
+argument_list|(
+name|minecraft
+operator|.
+name|textureManager
+argument_list|)
+expr_stmt|;
 block|}
 block|}
 if|else if
