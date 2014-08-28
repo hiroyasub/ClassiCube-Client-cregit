@@ -1973,6 +1973,8 @@ name|equals
 argument_list|(
 literal|"humanoid"
 argument_list|)
+operator|||
+name|defaultTexture
 condition|?
 name|textureManager
 operator|.

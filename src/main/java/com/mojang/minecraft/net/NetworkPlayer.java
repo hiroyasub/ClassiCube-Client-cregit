@@ -566,6 +566,11 @@ expr_stmt|;
 comment|//if (modelName.equals("humanoid")) {
 name|a
 operator|=
+name|defaultTexture
+condition|?
+operator|-
+literal|1
+else|:
 name|textureManager
 operator|.
 name|load
@@ -1538,6 +1543,13 @@ operator|.
 name|renderNoShadow
 argument_list|(
 name|displayName
+operator|.
+name|replaceAll
+argument_list|(
+literal|"(&[0-9a-g])"
+argument_list|,
+literal|""
+argument_list|)
 argument_list|,
 literal|0
 argument_list|,

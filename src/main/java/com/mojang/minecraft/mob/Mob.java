@@ -378,6 +378,12 @@ name|textureName
 init|=
 literal|"/char.png"
 decl_stmt|;
+specifier|public
+name|boolean
+name|defaultTexture
+init|=
+literal|true
+decl_stmt|;
 specifier|protected
 name|float
 name|bobStrength
