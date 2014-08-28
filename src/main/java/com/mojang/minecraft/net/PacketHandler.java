@@ -2411,7 +2411,7 @@ literal|0
 index|]
 decl_stmt|;
 name|String
-name|skinName
+name|InGameName
 init|=
 operator|(
 name|String
@@ -2419,6 +2419,17 @@ operator|)
 name|packetParams
 index|[
 literal|1
+index|]
+decl_stmt|;
+name|String
+name|skinName
+init|=
+operator|(
+name|String
+operator|)
+name|packetParams
+index|[
+literal|2
 index|]
 decl_stmt|;
 if|if
@@ -2478,6 +2489,12 @@ operator|.
 name|textureManager
 argument_list|)
 expr_stmt|;
+name|tmp
+operator|.
+name|displayName
+operator|=
+name|InGameName
+expr_stmt|;
 block|}
 block|}
 if|else if
@@ -2520,6 +2537,7 @@ operator|.
 name|textureManager
 argument_list|)
 expr_stmt|;
+comment|//No need to set the display name for yourself
 block|}
 block|}
 block|}
