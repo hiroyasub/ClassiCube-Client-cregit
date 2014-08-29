@@ -3268,22 +3268,6 @@ operator|=
 name|getMinecraftDirectory
 argument_list|()
 expr_stmt|;
-name|resourceThread
-operator|=
-operator|new
-name|ResourceDownloadThread
-argument_list|(
-name|mcDir
-argument_list|,
-name|this
-argument_list|)
-expr_stmt|;
-name|resourceThread
-operator|.
-name|run
-argument_list|()
-expr_stmt|;
-comment|// TODO: run asynchronously
 if|if
 condition|(
 operator|!
@@ -3313,6 +3297,7 @@ literal|"/natives"
 argument_list|)
 expr_stmt|;
 block|}
+comment|// if LWJGL dependencies are missing, a NoClassDefFoundError will be thrown here
 name|LogUtil
 operator|.
 name|logInfo
@@ -3325,6 +3310,22 @@ name|getVersion
 argument_list|()
 argument_list|)
 expr_stmt|;
+name|resourceThread
+operator|=
+operator|new
+name|ResourceDownloadThread
+argument_list|(
+name|mcDir
+argument_list|,
+name|this
+argument_list|)
+expr_stmt|;
+name|resourceThread
+operator|.
+name|run
+argument_list|()
+expr_stmt|;
+comment|// TODO: run asynchronously
 if|if
 condition|(
 name|session
@@ -4258,6 +4259,8 @@ block|}
 catch|catch
 parameter_list|(
 name|Exception
+decl||
+name|NoClassDefFoundError
 name|ex
 parameter_list|)
 block|{
@@ -4287,6 +4290,10 @@ name|JOptionPane
 operator|.
 name|ERROR_MESSAGE
 argument_list|)
+expr_stmt|;
+name|isRunning
+operator|=
+literal|false
 expr_stmt|;
 return|return;
 block|}
