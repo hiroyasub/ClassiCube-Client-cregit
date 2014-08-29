@@ -3297,7 +3297,7 @@ literal|"/natives"
 argument_list|)
 expr_stmt|;
 block|}
-comment|// if LWJGL dependencies are missing, a NoClassDefFoundError will be thrown here
+comment|// if LWJGL dependencies are missing, NoClassDefFoundError or UnsatisfiedLinkError will be thrown here
 name|LogUtil
 operator|.
 name|logInfo
@@ -4261,6 +4261,8 @@ parameter_list|(
 name|Exception
 decl||
 name|NoClassDefFoundError
+decl||
+name|UnsatisfiedLinkError
 name|ex
 parameter_list|)
 block|{
