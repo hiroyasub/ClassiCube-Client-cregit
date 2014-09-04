@@ -250,6 +250,7 @@ init|=
 literal|0
 decl_stmt|;
 specifier|public
+specifier|static
 name|List
 argument_list|<
 name|ChatLine
@@ -309,6 +310,13 @@ decl_stmt|;
 specifier|private
 name|Minecraft
 name|minecraft
+decl_stmt|;
+specifier|public
+specifier|static
+name|int
+name|chatLocation
+init|=
+literal|0
 decl_stmt|;
 specifier|public
 name|HUDScreen
@@ -402,7 +410,7 @@ operator|.
 name|size
 argument_list|()
 operator|>
-literal|50
+literal|1000
 condition|)
 block|{
 name|chat
@@ -2232,7 +2240,7 @@ for|for
 control|(
 name|i
 operator|=
-literal|0
+name|chatLocation
 init|;
 name|i
 operator|<
@@ -2244,6 +2252,8 @@ operator|&&
 name|i
 operator|<
 name|chatLinesInScreen
+operator|+
+name|chatLocation
 condition|;
 operator|++
 name|i
@@ -2289,7 +2299,11 @@ name|height
 operator|-
 literal|8
 operator|-
+operator|(
 name|i
+operator|-
+name|chatLocation
+operator|)
 operator|*
 literal|9
 operator|-
@@ -2316,7 +2330,11 @@ name|height
 operator|-
 literal|8
 operator|-
+operator|(
 name|i
+operator|-
+name|chatLocation
+operator|)
 operator|*
 literal|9
 operator|-
