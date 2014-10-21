@@ -26,7 +26,7 @@ name|VIEW_DISTANCE
 block|,
 name|VIEW_BOBBING
 block|,
-name|LIMIT_FRAMERATE
+name|FRAMERATE_LIMIT
 block|,
 name|SMOOTHING
 block|,

@@ -76,7 +76,7 @@ name|VIEW_DISTANCE
 block|,
 name|Setting
 operator|.
-name|LIMIT_FRAMERATE
+name|FRAMERATE_LIMIT
 block|,
 name|Setting
 operator|.
