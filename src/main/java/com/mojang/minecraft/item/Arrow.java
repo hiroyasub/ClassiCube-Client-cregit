@@ -117,6 +117,10 @@ name|MathHelper
 import|;
 end_import
 
+begin_comment
+comment|// SURVIVAL: arrow
+end_comment
+
 begin_class
 specifier|public
 class|class
@@ -618,7 +622,7 @@ name|TextureManager
 name|textureManager
 parameter_list|,
 name|float
-name|unknown0
+name|delta
 parameter_list|)
 block|{
 name|textureId
@@ -694,7 +698,7 @@ operator|-
 name|xo
 operator|)
 operator|*
-name|unknown0
+name|delta
 argument_list|,
 name|yo
 operator|+
@@ -704,7 +708,7 @@ operator|-
 name|yo
 operator|)
 operator|*
-name|unknown0
+name|delta
 operator|-
 name|heightOffset
 operator|/
@@ -718,7 +722,7 @@ operator|-
 name|zo
 operator|)
 operator|*
-name|unknown0
+name|delta
 argument_list|)
 expr_stmt|;
 name|GL11
@@ -733,7 +737,7 @@ operator|-
 name|yRotO
 operator|)
 operator|*
-name|unknown0
+name|delta
 operator|-
 literal|90F
 argument_list|,
@@ -756,7 +760,7 @@ operator|-
 name|xRotO
 operator|)
 operator|*
-name|unknown0
+name|delta
 argument_list|,
 literal|0F
 argument_list|,
@@ -785,7 +789,7 @@ name|ShapeRenderer
 operator|.
 name|instance
 decl_stmt|;
-name|unknown0
+name|delta
 operator|=
 literal|0.5F
 expr_stmt|;
@@ -1112,7 +1116,7 @@ literal|2F
 argument_list|,
 literal|0F
 argument_list|,
-name|unknown0
+name|delta
 argument_list|,
 name|unknown1
 argument_list|)
@@ -1127,7 +1131,7 @@ literal|2F
 argument_list|,
 literal|0F
 argument_list|,
-name|unknown0
+name|delta
 argument_list|,
 name|unknown2
 argument_list|)

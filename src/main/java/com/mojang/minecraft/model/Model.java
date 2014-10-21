@@ -41,7 +41,7 @@ name|float
 name|var5
 parameter_list|,
 name|float
-name|var6
+name|scale
 parameter_list|)
 block|{
 block|}

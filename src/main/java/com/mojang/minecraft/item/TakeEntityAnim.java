@@ -158,7 +158,7 @@ name|TextureManager
 name|textureManager
 parameter_list|,
 name|float
-name|unknown0
+name|delta
 parameter_list|)
 block|{
 name|item
@@ -167,7 +167,7 @@ name|render
 argument_list|(
 name|textureManager
 argument_list|,
-name|unknown0
+name|delta
 argument_list|)
 expr_stmt|;
 block|}

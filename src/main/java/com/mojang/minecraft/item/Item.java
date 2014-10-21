@@ -384,7 +384,7 @@ name|TextureManager
 name|textureManager
 parameter_list|,
 name|float
-name|unknown0
+name|delta
 parameter_list|)
 block|{
 name|textureId
@@ -438,7 +438,7 @@ operator|+
 operator|(
 name|tickCount
 operator|+
-name|unknown0
+name|delta
 operator|)
 operator|*
 literal|3F
@@ -493,7 +493,7 @@ operator|-
 name|xo
 operator|)
 operator|*
-name|unknown0
+name|delta
 argument_list|,
 name|yo
 operator|+
@@ -503,7 +503,7 @@ operator|-
 name|yo
 operator|)
 operator|*
-name|unknown0
+name|delta
 operator|+
 name|unknown2
 argument_list|,
@@ -515,7 +515,7 @@ operator|-
 name|zo
 operator|)
 operator|*
-name|unknown0
+name|delta
 argument_list|)
 expr_stmt|;
 name|GL11

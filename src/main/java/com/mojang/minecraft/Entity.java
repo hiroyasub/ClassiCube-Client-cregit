@@ -2582,7 +2582,6 @@ operator|=
 literal|true
 expr_stmt|;
 block|}
-comment|// TODO var2
 specifier|public
 name|void
 name|render
@@ -2591,7 +2590,7 @@ name|TextureManager
 name|textureManager
 parameter_list|,
 name|float
-name|var2
+name|delta
 parameter_list|)
 block|{
 block|}
@@ -2697,10 +2696,8 @@ argument_list|(
 name|boundingBox
 argument_list|)
 operator|.
-name|size
+name|isEmpty
 argument_list|()
-operator|==
-literal|0
 condition|)
 block|{
 break|break;
