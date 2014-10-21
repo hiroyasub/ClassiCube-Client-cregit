@@ -10552,7 +10552,9 @@ block|}
 block|}
 if|if
 condition|(
-name|isLoadingMap
+name|packetHandler
+operator|.
+name|isLoadingLevel
 condition|)
 block|{
 comment|// Ignore all keyboard input while loading map, unless Esc is pressed.
