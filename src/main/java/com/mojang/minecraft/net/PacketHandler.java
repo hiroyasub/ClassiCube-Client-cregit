@@ -396,7 +396,6 @@ specifier|public
 class|class
 name|PacketHandler
 block|{
-comment|// TODO move out of constants and into something more appropriate
 specifier|private
 specifier|static
 specifier|final
@@ -433,6 +432,12 @@ init|=
 literal|false
 decl_stmt|;
 specifier|public
+name|boolean
+name|isLoadingLevel
+init|=
+literal|true
+decl_stmt|;
+specifier|public
 name|PacketHandler
 parameter_list|(
 name|Minecraft
@@ -444,6 +449,28 @@ operator|.
 name|minecraft
 operator|=
 name|minecraft
+expr_stmt|;
+block|}
+specifier|public
+name|void
+name|setLoadingLevel
+parameter_list|(
+name|boolean
+name|value
+parameter_list|)
+block|{
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"isLoadingLevel="
+operator|+
+name|value
+argument_list|)
+expr_stmt|;
+name|isLoadingLevel
+operator|=
+name|value
 expr_stmt|;
 block|}
 comment|// return true if more packets should be read; return false if that's it
@@ -2387,9 +2414,12 @@ literal|false
 expr_stmt|;
 if|if
 condition|(
-name|skinName
-operator|==
 literal|"default"
+operator|.
+name|equals
+argument_list|(
+name|skinName
+argument_list|)
 condition|)
 block|{
 name|tmp
@@ -3105,6 +3135,11 @@ index|[
 literal|3
 index|]
 expr_stmt|;
+name|setLoadingLevel
+argument_list|(
+literal|true
+argument_list|)
+expr_stmt|;
 block|}
 if|else if
 condition|(
@@ -3136,6 +3171,11 @@ operator|=
 operator|new
 name|ByteArrayOutputStream
 argument_list|()
+expr_stmt|;
+name|setLoadingLevel
+argument_list|(
+literal|true
+argument_list|)
 expr_stmt|;
 block|}
 if|else if
@@ -3193,12 +3233,6 @@ argument_list|(
 name|percentComplete
 argument_list|)
 expr_stmt|;
-name|minecraft
-operator|.
-name|isLoadingMap
-operator|=
-literal|false
-expr_stmt|;
 name|networkManager
 operator|.
 name|levelData
@@ -3222,6 +3256,17 @@ operator|.
 name|LEVEL_FINALIZE
 condition|)
 block|{
+name|networkManager
+operator|.
+name|minecraft
+operator|.
+name|progressBar
+operator|.
+name|setProgress
+argument_list|(
+literal|100
+argument_list|)
+expr_stmt|;
 try|try
 block|{
 name|networkManager
@@ -3361,6 +3406,11 @@ literal|true
 expr_stmt|;
 comment|// ProgressBarDisplay.InitEnv(this);
 comment|// this.levelRenderer.refresh();
+name|setLoadingLevel
+argument_list|(
+literal|false
+argument_list|)
+expr_stmt|;
 block|}
 if|else if
 condition|(
