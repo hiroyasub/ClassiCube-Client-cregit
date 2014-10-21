@@ -985,7 +985,7 @@ name|TextureManager
 name|textureManager
 parameter_list|,
 name|float
-name|var2
+name|delta
 parameter_list|)
 block|{
 if|if
@@ -1000,7 +1000,7 @@ name|var3
 init|=
 name|attackTime
 operator|-
-name|var2
+name|delta
 decl_stmt|;
 if|if
 condition|(
@@ -1112,7 +1112,7 @@ operator|-
 name|yBodyRotO
 operator|)
 operator|*
-name|var2
+name|delta
 decl_stmt|;
 name|float
 name|var5
@@ -1125,7 +1125,7 @@ operator|-
 name|oRun
 operator|)
 operator|*
-name|var2
+name|delta
 decl_stmt|;
 name|float
 name|var6
@@ -1138,7 +1138,7 @@ operator|-
 name|yRotO
 operator|)
 operator|*
-name|var2
+name|delta
 decl_stmt|;
 name|float
 name|var7
@@ -1151,7 +1151,7 @@ operator|-
 name|xRotO
 operator|)
 operator|*
-name|var2
+name|delta
 decl_stmt|;
 name|var6
 operator|-=
@@ -1173,7 +1173,7 @@ operator|-
 name|animStepO
 operator|)
 operator|*
-name|var2
+name|delta
 decl_stmt|;
 name|ColorCache
 name|brightness
@@ -1241,7 +1241,7 @@ operator|-
 name|xo
 operator|)
 operator|*
-name|var2
+name|delta
 argument_list|,
 name|yo
 operator|+
@@ -1251,7 +1251,7 @@ operator|-
 name|yo
 operator|)
 operator|*
-name|var2
+name|delta
 operator|-
 literal|1.62F
 operator|+
@@ -1265,7 +1265,7 @@ operator|-
 name|zo
 operator|)
 operator|*
-name|var2
+name|delta
 argument_list|)
 expr_stmt|;
 name|float
@@ -1278,7 +1278,7 @@ name|var11
 operator|=
 name|hurtTime
 operator|-
-name|var2
+name|delta
 operator|)
 operator|>
 literal|0F
@@ -1348,7 +1348,7 @@ operator|=
 operator|(
 name|deathTime
 operator|+
-name|var2
+name|delta
 operator|)
 operator|/
 literal|20F
@@ -1575,7 +1575,7 @@ name|textureManager
 argument_list|,
 name|var8
 argument_list|,
-name|var2
+name|delta
 argument_list|,
 name|var5
 argument_list|,
@@ -1641,7 +1641,7 @@ name|textureManager
 argument_list|,
 name|var8
 argument_list|,
-name|var2
+name|delta
 argument_list|,
 name|var5
 argument_list|,
@@ -1742,7 +1742,7 @@ name|float
 name|var6
 parameter_list|,
 name|float
-name|var7
+name|scale
 parameter_list|)
 block|{
 name|modelCache
@@ -1766,7 +1766,7 @@ name|var5
 argument_list|,
 name|var6
 argument_list|,
-name|var7
+name|scale
 argument_list|)
 expr_stmt|;
 block|}

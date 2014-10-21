@@ -1199,7 +1199,7 @@ name|TextureManager
 name|textureManager
 parameter_list|,
 name|float
-name|var4
+name|delta
 parameter_list|)
 block|{
 for|for
@@ -1974,7 +1974,7 @@ name|render
 argument_list|(
 name|textureManager
 argument_list|,
-name|var4
+name|delta
 argument_list|)
 expr_stmt|;
 block|}

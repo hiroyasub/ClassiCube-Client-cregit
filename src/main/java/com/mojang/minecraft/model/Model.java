@@ -21,6 +21,7 @@ specifier|public
 name|float
 name|attackOffset
 decl_stmt|;
+comment|/**      * Sets the model's various rotation angles. For bipeds, var1 and var2 are      * used for animating the movement of arms and legs, where var1 represents      * the time(so that arms and legs swing back and forth) and var2 represents      * how "far" arms and legs can swing at most.      */
 specifier|public
 name|void
 name|render
@@ -35,13 +36,13 @@ name|float
 name|var3
 parameter_list|,
 name|float
-name|var4
+name|yawDegrees
 parameter_list|,
 name|float
-name|var5
+name|pitchDegrees
 parameter_list|,
 name|float
-name|var6
+name|scale
 parameter_list|)
 block|{
 block|}

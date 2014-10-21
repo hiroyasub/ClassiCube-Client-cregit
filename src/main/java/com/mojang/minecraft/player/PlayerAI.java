@@ -34,7 +34,7 @@ end_comment
 begin_class
 specifier|public
 class|class
-name|Player$1
+name|PlayerAI
 extends|extends
 name|BasicAI
 block|{
@@ -47,11 +47,12 @@ init|=
 literal|0L
 decl_stmt|;
 specifier|private
+specifier|final
 name|Player
 name|player
 decl_stmt|;
 specifier|public
-name|Player$1
+name|PlayerAI
 parameter_list|(
 name|Player
 name|player

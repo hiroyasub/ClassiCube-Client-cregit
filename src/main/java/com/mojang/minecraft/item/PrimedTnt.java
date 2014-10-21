@@ -477,7 +477,7 @@ name|TextureManager
 name|textureManager
 parameter_list|,
 name|float
-name|unknown0
+name|delta
 parameter_list|)
 block|{
 name|int
@@ -554,7 +554,7 @@ operator|-
 name|xo
 operator|)
 operator|*
-name|unknown0
+name|delta
 operator|-
 literal|0.5F
 argument_list|,
@@ -566,7 +566,7 @@ operator|-
 name|yo
 operator|)
 operator|*
-name|unknown0
+name|delta
 operator|-
 literal|0.5F
 argument_list|,
@@ -578,7 +578,7 @@ operator|-
 name|zo
 operator|)
 operator|*
-name|unknown0
+name|delta
 operator|-
 literal|0.5F
 argument_list|)
