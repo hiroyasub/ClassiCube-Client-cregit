@@ -229,14 +229,20 @@ specifier|final
 class|class
 name|Renderer
 block|{
-comment|// TODO: adaptive chunk update rate, based on framerate
 specifier|public
 specifier|static
 specifier|final
 name|int
-name|MAX_CHUNK_UPDATES_PER_FRAME
+name|MIN_CHUNK_UPDATES_PER_FRAME
 init|=
 literal|4
+decl_stmt|;
+specifier|public
+specifier|static
+name|int
+name|dynamicChunkUpdateLimit
+init|=
+name|MIN_CHUNK_UPDATES_PER_FRAME
 decl_stmt|;
 specifier|public
 name|Minecraft
@@ -1335,7 +1341,7 @@ name|GL11
 operator|.
 name|GL_FOG_DENSITY
 argument_list|,
-literal|2F
+literal|1.5F
 argument_list|)
 expr_stmt|;
 name|float
@@ -1399,7 +1405,9 @@ name|GL11
 operator|.
 name|GL_FOG_START
 argument_list|,
-literal|0F
+name|fogEnd
+operator|/
+literal|2
 argument_list|)
 expr_stmt|;
 name|GL11

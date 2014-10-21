@@ -22,7 +22,7 @@ name|INVERT_MOUSE
 block|,
 name|SHOW_DEBUG
 block|,
-name|RENDER_DISTANCE
+name|VIEW_DISTANCE
 block|,
 name|VIEW_BOBBING
 block|,
