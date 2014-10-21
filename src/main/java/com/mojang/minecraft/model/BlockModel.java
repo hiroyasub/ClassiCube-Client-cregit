@@ -39,13 +39,13 @@ name|float
 name|f2
 parameter_list|,
 name|float
-name|f3
+name|yawDegrees
 parameter_list|,
 name|float
-name|f4
+name|pitchDegrees
 parameter_list|,
 name|float
-name|f5
+name|scale
 parameter_list|)
 block|{
 block|}

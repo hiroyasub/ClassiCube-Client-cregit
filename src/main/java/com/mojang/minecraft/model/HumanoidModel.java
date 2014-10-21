@@ -69,7 +69,7 @@ literal|0F
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Creates a new humanoid model with the specified scaling. The scaling      * seems to make the model wider but still making it occupy the same space.      *      * @param scale Scale value to use for the model.      */
+comment|/**      * Creates a new humanoid model with the specified scaling. The scaling seems to make the model      * wider but still making it occupy the same space.      *      * @param scale Scale value to use for the model.      */
 specifier|public
 name|HumanoidModel
 parameter_list|(
@@ -412,10 +412,10 @@ name|float
 name|var3
 parameter_list|,
 name|float
-name|var4
+name|yawDegrees
 parameter_list|,
 name|float
-name|var5
+name|pitchDegrees
 parameter_list|,
 name|float
 name|scale
@@ -429,9 +429,9 @@ name|var2
 argument_list|,
 name|var3
 argument_list|,
-name|var4
+name|yawDegrees
 argument_list|,
-name|var5
+name|pitchDegrees
 argument_list|,
 name|scale
 argument_list|)
@@ -493,10 +493,10 @@ name|float
 name|var3
 parameter_list|,
 name|float
-name|var4
+name|yawDegrees
 parameter_list|,
 name|float
-name|var5
+name|pitchDegrees
 parameter_list|,
 name|float
 name|scale
@@ -506,7 +506,7 @@ name|head
 operator|.
 name|yaw
 operator|=
-name|var4
+name|yawDegrees
 operator|/
 operator|(
 name|float
@@ -523,7 +523,7 @@ name|head
 operator|.
 name|pitch
 operator|=
-name|var5
+name|pitchDegrees
 operator|/
 operator|(
 name|float

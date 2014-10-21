@@ -348,10 +348,10 @@ name|float
 name|var3
 parameter_list|,
 name|float
-name|var4
+name|yawDegrees
 parameter_list|,
 name|float
-name|var5
+name|pitchDegrees
 parameter_list|,
 name|float
 name|scale
@@ -361,7 +361,7 @@ name|head
 operator|.
 name|yaw
 operator|=
-name|var4
+name|yawDegrees
 operator|/
 operator|(
 name|float
@@ -378,7 +378,7 @@ name|head
 operator|.
 name|pitch
 operator|=
-name|var5
+name|pitchDegrees
 operator|/
 operator|(
 name|float
