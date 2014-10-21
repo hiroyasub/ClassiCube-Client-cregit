@@ -72,7 +72,7 @@ name|VIEW_BOBBING
 block|,
 name|Setting
 operator|.
-name|RENDER_DISTANCE
+name|VIEW_DISTANCE
 block|,
 name|Setting
 operator|.

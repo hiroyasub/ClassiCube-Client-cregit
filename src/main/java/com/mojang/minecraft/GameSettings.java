@@ -234,13 +234,21 @@ operator|new
 name|String
 index|[]
 block|{
-literal|"FAR"
+literal|"TINY (8)"
 block|,
-literal|"NORMAL"
+literal|"TINY (16)"
 block|,
-literal|"SHORT"
+literal|"SHORT (32)"
 block|,
-literal|"TINY"
+literal|"SHORT (64)"
+block|,
+literal|"NORMAL (128)"
+block|,
+literal|"NORMAL (256)"
+block|,
+literal|"FAR (512)"
+block|,
+literal|"FAR (1024)"
 block|}
 decl_stmt|;
 comment|// valid range of values for viewDistance
@@ -894,10 +902,10 @@ name|showDebug
 argument_list|)
 return|;
 case|case
-name|RENDER_DISTANCE
+name|VIEW_DISTANCE
 case|:
 return|return
-literal|"Render distance: "
+literal|"View distance: "
 operator|+
 name|viewDistanceOptions
 index|[
@@ -1829,7 +1837,7 @@ name|showDebug
 expr_stmt|;
 break|break;
 case|case
-name|RENDER_DISTANCE
+name|VIEW_DISTANCE
 case|:
 name|int
 name|newViewDist
