@@ -229,6 +229,7 @@ specifier|final
 class|class
 name|Renderer
 block|{
+comment|// Chunk update timing
 specifier|public
 specifier|static
 specifier|final
@@ -238,11 +239,16 @@ init|=
 literal|4
 decl_stmt|;
 specifier|public
-specifier|static
 name|int
 name|dynamicChunkUpdateLimit
 init|=
 name|MIN_CHUNK_UPDATES_PER_FRAME
+decl_stmt|;
+specifier|public
+name|boolean
+name|everBackedOffFromChunkUpdates
+init|=
+literal|false
 decl_stmt|;
 specifier|public
 name|Minecraft
