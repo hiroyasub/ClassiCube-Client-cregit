@@ -435,7 +435,7 @@ specifier|public
 name|boolean
 name|isLoadingLevel
 init|=
-literal|true
+literal|false
 decl_stmt|;
 specifier|public
 name|PacketHandler
@@ -459,15 +459,6 @@ name|boolean
 name|value
 parameter_list|)
 block|{
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"isLoadingLevel="
-operator|+
-name|value
-argument_list|)
-expr_stmt|;
 name|isLoadingLevel
 operator|=
 name|value
