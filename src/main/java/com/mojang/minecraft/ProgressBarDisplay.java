@@ -250,6 +250,7 @@ argument_list|<>
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|Minecraft
 name|minecraft
 decl_stmt|;
