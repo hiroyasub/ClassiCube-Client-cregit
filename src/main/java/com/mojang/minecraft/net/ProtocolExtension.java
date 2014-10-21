@@ -160,7 +160,7 @@ argument_list|,
 literal|1
 argument_list|)
 decl_stmt|;
-comment|//public static final ProtocolExtension ExtPlayerList2 = new ProtocolExtension("ExtPlayerList", 2);
+comment|//public static final ProtocolExtension EXT_PLAYER_LIST_2 = new ProtocolExtension("ExtPlayerList", 2);
 specifier|public
 specifier|static
 specifier|final
@@ -245,7 +245,7 @@ argument_list|,
 literal|1
 argument_list|)
 decl_stmt|;
-comment|//public static final ProtocolExtension HackControl = new ProtocolExtension("HackControl", 1);
+comment|//public static final ProtocolExtension HACK_CONTROL = new ProtocolExtension("HackControl", 1);
 specifier|public
 specifier|static
 specifier|final
