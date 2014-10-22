@@ -816,14 +816,14 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HacksEnabled
+name|hacksEnabled
 operator|=
 operator|!
 name|minecraft
 operator|.
 name|settings
 operator|.
-name|HacksEnabled
+name|hacksEnabled
 expr_stmt|;
 name|minecraft
 operator|.
@@ -839,7 +839,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HacksEnabled
+name|hacksEnabled
 condition|?
 literal|"Enabled"
 else|:
@@ -853,7 +853,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HacksEnabled
+name|hacksEnabled
 condition|?
 literal|"Enabled"
 else|:
@@ -878,7 +878,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HackType
+name|hackType
 operator|==
 literal|1
 condition|)
@@ -887,7 +887,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HackType
+name|hackType
 operator|=
 literal|0
 expr_stmt|;
@@ -898,7 +898,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HackType
+name|hackType
 operator|++
 expr_stmt|;
 block|}
@@ -917,7 +917,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HackType
+name|hackType
 operator|==
 literal|0
 operator|)
@@ -935,7 +935,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HackType
+name|hackType
 operator|==
 literal|0
 operator|)
@@ -1093,7 +1093,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HacksEnabled
+name|hacksEnabled
 condition|?
 literal|"Enabled"
 else|:
@@ -1115,7 +1115,7 @@ name|minecraft
 operator|.
 name|settings
 operator|.
-name|HackType
+name|hackType
 operator|==
 literal|0
 operator|)

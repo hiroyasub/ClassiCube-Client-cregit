@@ -645,7 +645,7 @@ if|if
 condition|(
 name|settings
 operator|.
-name|HacksEnabled
+name|hacksEnabled
 condition|)
 block|{
 if|if
