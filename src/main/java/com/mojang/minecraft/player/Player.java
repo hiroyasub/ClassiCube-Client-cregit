@@ -2812,7 +2812,7 @@ argument_list|)
 expr_stmt|;
 return|return;
 block|}
-comment|// If model is humanoid, render its outer layer ("hair")
+comment|// Render the rest of the model
 name|Model
 name|model
 init|=
@@ -2823,6 +2823,26 @@ argument_list|(
 name|modelName
 argument_list|)
 decl_stmt|;
+name|model
+operator|.
+name|render
+argument_list|(
+name|var2
+argument_list|,
+name|var4
+argument_list|,
+name|tickCount
+operator|+
+name|var3
+argument_list|,
+name|yawDegrees
+argument_list|,
+name|pitchDegrees
+argument_list|,
+name|scale
+argument_list|)
+expr_stmt|;
+comment|// If model is humanoid, render its outer layer ("hair")
 if|if
 condition|(
 name|hasHair
@@ -2892,26 +2912,6 @@ name|GL_CULL_FACE
 argument_list|)
 expr_stmt|;
 block|}
-comment|// Render the rest of the model
-name|model
-operator|.
-name|render
-argument_list|(
-name|var2
-argument_list|,
-name|var4
-argument_list|,
-name|tickCount
-operator|+
-name|var3
-argument_list|,
-name|yawDegrees
-argument_list|,
-name|pitchDegrees
-argument_list|,
-name|scale
-argument_list|)
-expr_stmt|;
 block|}
 specifier|private
 name|void
