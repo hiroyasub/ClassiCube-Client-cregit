@@ -259,11 +259,11 @@ parameter_list|)
 block|{
 if|if
 condition|(
-name|modelName
+literal|"sheep"
 operator|.
 name|equals
 argument_list|(
-literal|"sheep"
+name|modelName
 argument_list|)
 condition|)
 block|{
@@ -284,7 +284,6 @@ argument_list|,
 name|scale
 argument_list|)
 expr_stmt|;
-return|return;
 block|}
 if|else if
 condition|(
@@ -450,8 +449,9 @@ operator|=
 literal|"humanoid"
 expr_stmt|;
 block|}
-return|return;
 block|}
+else|else
+block|{
 name|super
 operator|.
 name|renderModel
@@ -845,6 +845,7 @@ name|GL_ALPHA_TEST
 argument_list|)
 expr_stmt|;
 block|}
+block|}
 specifier|public
 name|void
 name|renderSheep
@@ -862,10 +863,10 @@ name|float
 name|var4
 parameter_list|,
 name|float
-name|var5
+name|yawDegrees
 parameter_list|,
 name|float
-name|var6
+name|pitchDegrees
 parameter_list|,
 name|float
 name|scale
@@ -914,9 +915,9 @@ name|var3
 argument_list|,
 name|var4
 argument_list|,
-name|var5
+name|yawDegrees
 argument_list|,
-name|var6
+name|pitchDegrees
 argument_list|,
 name|scale
 argument_list|)

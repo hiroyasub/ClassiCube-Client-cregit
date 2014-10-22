@@ -1736,10 +1736,10 @@ name|float
 name|var4
 parameter_list|,
 name|float
-name|var5
+name|yawDegrees
 parameter_list|,
 name|float
-name|var6
+name|pitchDegrees
 parameter_list|,
 name|float
 name|scale
@@ -1762,9 +1762,9 @@ name|tickCount
 operator|+
 name|var3
 argument_list|,
-name|var5
+name|yawDegrees
 argument_list|,
-name|var6
+name|pitchDegrees
 argument_list|,
 name|scale
 argument_list|)

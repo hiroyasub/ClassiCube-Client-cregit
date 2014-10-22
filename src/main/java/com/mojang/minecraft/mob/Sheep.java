@@ -494,13 +494,13 @@ name|float
 name|var4
 parameter_list|,
 name|float
-name|var5
+name|yawDegrees
 parameter_list|,
 name|float
-name|var6
+name|pitchDegrees
 parameter_list|,
 name|float
-name|var7
+name|scale
 parameter_list|)
 block|{
 name|AnimalModel
@@ -584,11 +584,11 @@ name|var3
 argument_list|,
 name|var4
 argument_list|,
-name|var5
+name|yawDegrees
 argument_list|,
-name|var6
+name|pitchDegrees
 argument_list|,
-name|var7
+name|scale
 argument_list|)
 expr_stmt|;
 if|if
@@ -769,7 +769,7 @@ name|head
 operator|.
 name|render
 argument_list|(
-name|var7
+name|scale
 argument_list|)
 expr_stmt|;
 name|var11
@@ -778,7 +778,7 @@ name|body
 operator|.
 name|render
 argument_list|(
-name|var7
+name|scale
 argument_list|)
 expr_stmt|;
 name|var11
@@ -787,7 +787,7 @@ name|leg1
 operator|.
 name|render
 argument_list|(
-name|var7
+name|scale
 argument_list|)
 expr_stmt|;
 name|var11
@@ -796,7 +796,7 @@ name|leg2
 operator|.
 name|render
 argument_list|(
-name|var7
+name|scale
 argument_list|)
 expr_stmt|;
 name|var11
@@ -805,7 +805,7 @@ name|leg3
 operator|.
 name|render
 argument_list|(
-name|var7
+name|scale
 argument_list|)
 expr_stmt|;
 name|var11
@@ -814,7 +814,7 @@ name|leg4
 operator|.
 name|render
 argument_list|(
-name|var7
+name|scale
 argument_list|)
 expr_stmt|;
 block|}
