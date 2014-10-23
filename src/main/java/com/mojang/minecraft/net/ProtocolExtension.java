@@ -13,18 +13,6 @@ end_package
 
 begin_import
 import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|util
-operator|.
-name|LogUtil
-import|;
-end_import
-
-begin_import
-import|import
 name|java
 operator|.
 name|util
@@ -91,13 +79,14 @@ operator|=
 name|version
 expr_stmt|;
 block|}
+comment|/**      * Checks whether an extension is supported by this client.      */
 specifier|public
 specifier|static
 name|boolean
 name|isSupported
 parameter_list|(
 name|ProtocolExtension
-name|other
+name|ext
 parameter_list|)
 block|{
 return|return
@@ -105,7 +94,7 @@ name|supportedExtensions
 operator|.
 name|contains
 argument_list|(
-name|other
+name|ext
 argument_list|)
 return|;
 block|}
@@ -288,6 +277,7 @@ argument_list|(
 name|HELD_BLOCK
 argument_list|)
 expr_stmt|;
+comment|// TODO: implement EXT_PLAYER_LIST_2
 name|supportedExtensions
 operator|.
 name|add
@@ -330,6 +320,7 @@ argument_list|(
 name|ENV_WEATHER_TYPE
 argument_list|)
 expr_stmt|;
+comment|// TODO: implement HACK_CONTROL
 name|supportedExtensions
 operator|.
 name|add
