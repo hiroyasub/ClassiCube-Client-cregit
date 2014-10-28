@@ -4259,9 +4259,7 @@ name|minecraft
 operator|.
 name|networkManager
 operator|.
-name|players
-operator|.
-name|values
+name|getPlayers
 argument_list|()
 control|)
 block|{

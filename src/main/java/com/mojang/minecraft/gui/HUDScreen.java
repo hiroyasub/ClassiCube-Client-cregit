@@ -2438,7 +2438,7 @@ name|minecraft
 operator|.
 name|networkManager
 operator|.
-name|getPlayers
+name|getPlayerNames
 argument_list|()
 decl_stmt|;
 name|GL11
