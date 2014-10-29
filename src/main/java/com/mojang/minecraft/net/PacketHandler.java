@@ -2255,9 +2255,9 @@ literal|"Expected %d ExtEntries but received too many (%d)! "
 operator|+
 literal|"This ext will be ignored: %s with version %d"
 argument_list|,
-name|extEntriesReceived
-argument_list|,
 name|extEntriesExpected
+argument_list|,
+name|extEntriesReceived
 argument_list|,
 name|extName
 argument_list|,
