@@ -678,7 +678,10 @@ decl_stmt|;
 specifier|public
 name|int
 name|viewDistance
+init|=
+literal|4
 decl_stmt|;
+comment|// default to "normal (128)"
 comment|// 0 = off, higher values mean nth-powers-of-2 (e.g. 1 => 2x, 2 => 4x, 3 => 8x, 4 => 16x)
 specifier|public
 name|int
@@ -2000,6 +2003,7 @@ operator|==
 literal|0
 condition|)
 block|{
+comment|// From "Off" to lowest limit
 name|framerateLimit
 operator|=
 name|FRAMERATE_LIMITS
@@ -2012,16 +2016,10 @@ if|else if
 condition|(
 name|framerateLimit
 operator|==
-name|FRAMERATE_LIMITS
-index|[
-name|FRAMERATE_LIMITS
-operator|.
-name|length
-operator|-
-literal|1
-index|]
+name|MAX_SUPPORTED_FRAMERATE
 condition|)
 block|{
+comment|// From highest limit to "Off"
 name|framerateLimit
 operator|=
 literal|0
@@ -2029,6 +2027,7 @@ expr_stmt|;
 block|}
 else|else
 block|{
+comment|// Go to the next higher framerate
 for|for
 control|(
 name|int
@@ -2056,6 +2055,46 @@ name|i
 index|]
 condition|)
 block|{
+if|if
+condition|(
+name|FRAMERATE_LIMITS
+index|[
+name|i
+operator|+
+literal|1
+index|]
+operator|>
+name|MAX_SUPPORTED_FRAMERATE
+condition|)
+block|{
+if|if
+condition|(
+name|FRAMERATE_LIMITS
+index|[
+name|i
+index|]
+operator|<
+name|MAX_SUPPORTED_FRAMERATE
+condition|)
+block|{
+comment|// Special case: go up to screen refresh rate that's not on our list
+name|framerateLimit
+operator|=
+name|MAX_SUPPORTED_FRAMERATE
+expr_stmt|;
+block|}
+else|else
+block|{
+comment|// Wrap around to "Off"
+name|framerateLimit
+operator|=
+literal|0
+expr_stmt|;
+block|}
+block|}
+else|else
+block|{
+comment|// Go up to the next higher limit
 name|framerateLimit
 operator|=
 name|FRAMERATE_LIMITS
@@ -2065,21 +2104,10 @@ operator|+
 literal|1
 index|]
 expr_stmt|;
+block|}
 break|break;
 block|}
 block|}
-block|}
-if|if
-condition|(
-name|framerateLimit
-operator|>
-name|MAX_SUPPORTED_FRAMERATE
-condition|)
-block|{
-name|framerateLimit
-operator|=
-literal|0
-expr_stmt|;
 block|}
 if|if
 condition|(
@@ -2089,6 +2117,7 @@ name|isCreated
 argument_list|()
 condition|)
 block|{
+comment|// TODO: decouple vsync from framerate limit
 name|Display
 operator|.
 name|setVSyncEnabled
@@ -2360,47 +2389,10 @@ operator|>
 name|maxRefreshRate
 condition|)
 block|{
-for|for
-control|(
-name|int
-name|i
-init|=
-name|FRAMERATE_LIMITS
-operator|.
-name|length
-operator|-
-literal|1
-init|;
-name|i
-operator|>=
-literal|0
-condition|;
-name|i
-operator|--
-control|)
-block|{
-name|int
-name|limit
-init|=
-name|FRAMERATE_LIMITS
-index|[
-name|i
-index|]
-decl_stmt|;
-if|if
-condition|(
-name|limit
-operator|<=
-name|maxRefreshRate
-condition|)
-block|{
 name|framerateLimit
 operator|=
-name|limit
+name|maxRefreshRate
 expr_stmt|;
-break|break;
-block|}
-block|}
 block|}
 block|}
 block|}

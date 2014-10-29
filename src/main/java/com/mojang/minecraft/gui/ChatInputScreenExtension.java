@@ -1192,8 +1192,6 @@ name|minecraft
 operator|.
 name|networkManager
 operator|.
-name|netHandler
-operator|.
 name|send
 argument_list|(
 name|PacketType
