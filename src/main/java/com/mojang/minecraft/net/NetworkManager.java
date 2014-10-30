@@ -960,6 +960,7 @@ block|}
 block|}
 block|}
 block|}
+comment|// Flips the buffer and writes out all pending data.
 specifier|public
 name|void
 name|writeOut
