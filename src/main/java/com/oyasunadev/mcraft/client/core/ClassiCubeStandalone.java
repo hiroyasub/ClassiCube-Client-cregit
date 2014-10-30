@@ -1150,7 +1150,7 @@ name|Thread
 argument_list|(
 name|minecraft
 argument_list|,
-literal|"Client"
+literal|"GameLoop-Standalone"
 argument_list|)
 expr_stmt|;
 name|thread
@@ -1520,7 +1520,7 @@ name|Thread
 operator|.
 name|sleep
 argument_list|(
-literal|1
+literal|10
 argument_list|)
 expr_stmt|;
 block|}

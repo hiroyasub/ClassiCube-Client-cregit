@@ -94,7 +94,7 @@ import|;
 end_import
 
 begin_comment
-comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading  * and caching an Ogg stream from a URL. This class reads the data as fast as  * possible from the URL, caches it locally either in memory or on disk, and  * supports seeking within the available data.  */
+comment|/**  * Implementation of the<code>PhysicalOggStream</code> interface for reading and caching an Ogg  * stream from a URL. This class reads the data as fast as possible from the URL, caches it locally  * either in memory or on disk, and supports seeking within the available data.  */
 end_comment
 
 begin_class
@@ -635,7 +635,7 @@ literal|null
 argument_list|)
 expr_stmt|;
 block|}
-comment|/**      * Creates an instance of this class, using the specified file as cache. The      * file is not automatically deleted when this class is disposed.      */
+comment|/**      * Creates an instance of this class, using the specified file as cache. The file is not      * automatically deleted when this class is disposed.      */
 specifier|public
 name|CachedUrlStream
 parameter_list|(
@@ -734,6 +734,8 @@ operator|new
 name|Thread
 argument_list|(
 name|loaderThread
+argument_list|,
+literal|"Ogg-CachedUrlStream"
 argument_list|)
 operator|.
 name|start

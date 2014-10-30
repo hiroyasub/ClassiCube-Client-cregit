@@ -2109,14 +2109,6 @@ break|break;
 block|}
 block|}
 block|}
-if|if
-condition|(
-name|Display
-operator|.
-name|isCreated
-argument_list|()
-condition|)
-block|{
 comment|// TODO: decouple vsync from framerate limit
 name|Display
 operator|.
@@ -2127,7 +2119,6 @@ operator|!=
 literal|0
 argument_list|)
 expr_stmt|;
-block|}
 break|break;
 case|case
 name|SMOOTHING

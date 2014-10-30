@@ -141,7 +141,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|customShadowColour
+name|customShadowColor
 operator|=
 name|ColorCache
 operator|.
@@ -211,7 +211,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|customShadowColour
+name|customShadowColor
 operator|=
 operator|new
 name|ColorCache
