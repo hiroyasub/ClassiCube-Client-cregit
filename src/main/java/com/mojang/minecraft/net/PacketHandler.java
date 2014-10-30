@@ -436,6 +436,10 @@ name|isLoadingLevel
 init|=
 literal|false
 decl_stmt|;
+specifier|private
+name|Level
+name|newLevel
+decl_stmt|;
 specifier|public
 name|PacketHandler
 parameter_list|(
@@ -458,6 +462,34 @@ name|boolean
 name|value
 parameter_list|)
 block|{
+if|if
+condition|(
+name|value
+operator|&&
+operator|!
+name|isLoadingLevel
+condition|)
+block|{
+name|newLevel
+operator|=
+operator|new
+name|Level
+argument_list|()
+expr_stmt|;
+block|}
+if|else if
+condition|(
+operator|!
+name|value
+operator|&&
+name|isLoadingLevel
+condition|)
+block|{
+name|newLevel
+operator|=
+literal|null
+expr_stmt|;
+block|}
 name|isLoadingLevel
 operator|=
 name|value
@@ -1057,13 +1089,6 @@ index|[
 literal|2
 index|]
 decl_stmt|;
-name|Level
-name|newLevel
-init|=
-operator|new
-name|Level
-argument_list|()
-decl_stmt|;
 name|newLevel
 operator|.
 name|setNetworkMode
@@ -1084,8 +1109,6 @@ argument_list|,
 name|decompressedStream
 argument_list|)
 expr_stmt|;
-name|networkManager
-operator|.
 name|minecraft
 operator|.
 name|setLevel
@@ -1093,8 +1116,6 @@ argument_list|(
 name|newLevel
 argument_list|)
 expr_stmt|;
-name|networkManager
-operator|.
 name|minecraft
 operator|.
 name|isConnecting
@@ -1107,8 +1128,6 @@ name|levelLoaded
 operator|=
 literal|true
 expr_stmt|;
-comment|// ProgressBarDisplay.InitEnv(this);
-comment|// this.levelRenderer.refresh();
 name|setLoadingLevel
 argument_list|(
 literal|false
@@ -1126,8 +1145,6 @@ condition|)
 block|{
 if|if
 condition|(
-name|networkManager
-operator|.
 name|minecraft
 operator|.
 name|level
@@ -3052,6 +3069,29 @@ name|b
 operator|&
 literal|0x0ff
 decl_stmt|;
+comment|// Don't mess with "minecraft.level" if we're still in the process of loading a level.
+name|Level
+name|level
+decl_stmt|;
+if|if
+condition|(
+name|isLoadingLevel
+condition|)
+block|{
+name|level
+operator|=
+name|newLevel
+expr_stmt|;
+block|}
+else|else
+block|{
+name|level
+operator|=
+name|minecraft
+operator|.
+name|level
+expr_stmt|;
+block|}
 switch|switch
 condition|(
 name|envVariable
@@ -3066,8 +3106,6 @@ condition|(
 name|doReset
 condition|)
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|skyColor
@@ -3079,8 +3117,6 @@ expr_stmt|;
 block|}
 else|else
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|skyColor
@@ -3098,8 +3134,6 @@ condition|(
 name|doReset
 condition|)
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|cloudColor
@@ -3111,8 +3145,6 @@ expr_stmt|;
 block|}
 else|else
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|cloudColor
@@ -3130,8 +3162,6 @@ condition|(
 name|doReset
 condition|)
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|fogColor
@@ -3143,8 +3173,6 @@ expr_stmt|;
 block|}
 else|else
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|fogColor
@@ -3162,8 +3190,6 @@ condition|(
 name|doReset
 condition|)
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|customShadowColor
@@ -3173,8 +3199,6 @@ expr_stmt|;
 block|}
 else|else
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|customShadowColor
@@ -3196,6 +3220,11 @@ literal|255F
 argument_list|)
 expr_stmt|;
 block|}
+if|if
+condition|(
+operator|!
+name|isLoadingLevel
+condition|)
 name|minecraft
 operator|.
 name|levelRenderer
@@ -3213,8 +3242,6 @@ condition|(
 name|doReset
 condition|)
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|customLightColor
@@ -3224,8 +3251,6 @@ expr_stmt|;
 block|}
 else|else
 block|{
-name|minecraft
-operator|.
 name|level
 operator|.
 name|customLightColor
@@ -3247,6 +3272,11 @@ literal|255F
 argument_list|)
 expr_stmt|;
 block|}
+if|if
+condition|(
+operator|!
+name|isLoadingLevel
+condition|)
 name|minecraft
 operator|.
 name|levelRenderer
