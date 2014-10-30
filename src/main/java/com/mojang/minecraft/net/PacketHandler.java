@@ -436,6 +436,9 @@ name|isLoadingLevel
 init|=
 literal|false
 decl_stmt|;
+comment|// This object is used to store the level object while it's being loaded.
+comment|// Packets that modify can modify the level before it loaded (like ENV_SET_COLOR)
+comment|// should modify this object instead of "minecraft.level" while isLoadingLevel is true.
 specifier|private
 name|Level
 name|newLevel
