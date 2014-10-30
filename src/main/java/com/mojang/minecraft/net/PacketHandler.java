@@ -399,6 +399,7 @@ end_comment
 
 begin_class
 specifier|public
+specifier|final
 class|class
 name|PacketHandler
 block|{
@@ -433,8 +434,6 @@ decl_stmt|;
 specifier|public
 name|boolean
 name|isLoadingLevel
-init|=
-literal|false
 decl_stmt|;
 comment|// This object is used to store the level object while it's being loaded.
 comment|// Packets that modify can modify the level before it loaded (like ENV_SET_COLOR)
@@ -455,6 +454,11 @@ operator|.
 name|minecraft
 operator|=
 name|minecraft
+expr_stmt|;
+name|setLoadingLevel
+argument_list|(
+literal|true
+argument_list|)
 expr_stmt|;
 block|}
 specifier|public
@@ -2171,9 +2175,10 @@ operator|.
 name|DISCONNECT
 condition|)
 block|{
-name|isLoadingLevel
-operator|=
+name|setLoadingLevel
+argument_list|(
 literal|false
+argument_list|)
 expr_stmt|;
 comment|// Reset this, in case we get kicked while changing levels.
 name|networkManager
@@ -3228,6 +3233,7 @@ condition|(
 operator|!
 name|isLoadingLevel
 condition|)
+block|{
 name|minecraft
 operator|.
 name|levelRenderer
@@ -3235,6 +3241,7 @@ operator|.
 name|refresh
 argument_list|()
 expr_stmt|;
+block|}
 break|break;
 case|case
 literal|4
@@ -3280,6 +3287,7 @@ condition|(
 operator|!
 name|isLoadingLevel
 condition|)
+block|{
 name|minecraft
 operator|.
 name|levelRenderer
@@ -3287,6 +3295,7 @@ operator|.
 name|refresh
 argument_list|()
 expr_stmt|;
+block|}
 break|break;
 block|}
 block|}

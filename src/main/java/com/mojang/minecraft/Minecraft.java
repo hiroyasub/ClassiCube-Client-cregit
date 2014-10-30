@@ -8771,13 +8771,6 @@ name|vsync
 operator|=
 literal|false
 expr_stmt|;
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"VSYNC OFF"
-argument_list|)
-expr_stmt|;
 block|}
 block|}
 else|else
@@ -8798,13 +8791,6 @@ expr_stmt|;
 name|vsync
 operator|=
 literal|true
-expr_stmt|;
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"VSYNC ON"
-argument_list|)
 expr_stmt|;
 block|}
 block|}
@@ -10387,13 +10373,6 @@ argument_list|(
 literal|0
 argument_list|)
 expr_stmt|;
-name|packetHandler
-operator|.
-name|setLoadingLevel
-argument_list|(
-literal|true
-argument_list|)
-expr_stmt|;
 block|}
 block|}
 comment|// SURVIVAL: Show game over screen
@@ -10835,14 +10814,6 @@ name|void
 name|doNetworking
 parameter_list|()
 block|{
-if|if
-condition|(
-name|networkManager
-operator|.
-name|isConnected
-argument_list|()
-condition|)
-block|{
 comment|// Do network communication
 try|try
 block|{
@@ -11112,7 +11083,6 @@ name|networkManager
 operator|=
 literal|null
 expr_stmt|;
-block|}
 block|}
 block|}
 specifier|private
