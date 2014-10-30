@@ -638,6 +638,8 @@ operator|new
 name|Thread
 argument_list|(
 name|minecraft
+argument_list|,
+literal|"GameLoop-Applet"
 argument_list|)
 expr_stmt|;
 name|thread

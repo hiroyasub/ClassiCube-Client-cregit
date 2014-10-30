@@ -1211,7 +1211,6 @@ name|var9
 argument_list|)
 return|;
 block|}
-comment|/**      * Gets the size of the AABB.      *      * @return The size of the AABB.      */
 specifier|public
 name|float
 name|getSize
@@ -1279,13 +1278,10 @@ name|y
 operator|+=
 name|minY
 expr_stmt|;
-name|float
-name|newZ1
-init|=
-name|minZ
-operator|+
 name|z
-decl_stmt|;
+operator|+=
+name|minZ
+expr_stmt|;
 return|return
 operator|new
 name|AABB
@@ -1300,7 +1296,7 @@ name|x
 argument_list|,
 name|y
 argument_list|,
-name|newZ1
+name|z
 argument_list|)
 return|;
 block|}

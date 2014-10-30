@@ -590,7 +590,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|customLightColour
+name|customLightColor
 decl_stmt|;
 name|Color
 name|color
@@ -740,7 +740,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|customShadowColour
+name|customShadowColor
 decl_stmt|;
 name|Color
 name|color

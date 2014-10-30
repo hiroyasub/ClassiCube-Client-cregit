@@ -429,6 +429,8 @@ operator|new
 name|Thread
 argument_list|(
 name|loaderThread
+argument_list|,
+literal|"Ogg-UncachedUrlStream"
 argument_list|)
 operator|.
 name|start
