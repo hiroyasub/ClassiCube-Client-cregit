@@ -3375,6 +3375,7 @@ index|]
 decl_stmt|;
 if|if
 condition|(
+operator|!
 name|minecraft
 operator|.
 name|settings
@@ -3382,6 +3383,15 @@ operator|.
 name|canServerChangeTextures
 condition|)
 block|{
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"Denied server's request to change the texture pack."
+argument_list|)
+expr_stmt|;
+return|return;
+block|}
 if|if
 condition|(
 name|sideBlock
@@ -3519,7 +3529,7 @@ literal|0
 condition|)
 block|{
 name|File
-name|path
+name|textureDir
 init|=
 operator|new
 name|File
@@ -3535,13 +3545,13 @@ decl_stmt|;
 if|if
 condition|(
 operator|!
-name|path
+name|textureDir
 operator|.
 name|exists
 argument_list|()
 condition|)
 block|{
-name|path
+name|textureDir
 operator|.
 name|mkdirs
 argument_list|()
@@ -3570,7 +3580,7 @@ init|=
 operator|new
 name|File
 argument_list|(
-name|path
+name|textureDir
 argument_list|,
 name|hash
 operator|+
@@ -3655,6 +3665,7 @@ block|}
 block|}
 else|else
 block|{
+comment|// Reset texture to default
 try|try
 block|{
 name|minecraft
@@ -3695,6 +3706,16 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
+if|if
+condition|(
+name|minecraft
+operator|.
+name|level
+operator|!=
+literal|null
+condition|)
+block|{
+comment|// Change waterLevel after level loading
 name|minecraft
 operator|.
 name|level
@@ -3709,6 +3730,16 @@ name|levelRenderer
 operator|.
 name|refresh
 argument_list|()
+expr_stmt|;
+block|}
+else|else
+block|{
+comment|// Change waterLevel during level loading
+name|newLevel
+operator|.
+name|waterLevel
+operator|=
+name|sideLevel
 expr_stmt|;
 block|}
 block|}
