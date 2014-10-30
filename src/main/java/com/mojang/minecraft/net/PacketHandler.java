@@ -3373,24 +3373,35 @@ index|[
 literal|3
 index|]
 decl_stmt|;
+comment|//LogUtil.logInfo("ENV_SET_MAP_APPEARANCE(" + textureUrl + "," + sideBlock + "," + edgeBlock + "," + sideLevel + ")");
 if|if
 condition|(
-operator|!
 name|minecraft
 operator|.
-name|settings
-operator|.
-name|canServerChangeTextures
+name|level
+operator|!=
+literal|null
 condition|)
 block|{
-name|LogUtil
+comment|// Change waterLevel after level loading
+name|minecraft
 operator|.
-name|logInfo
-argument_list|(
-literal|"Denied server's request to change the texture pack."
-argument_list|)
+name|level
+operator|.
+name|waterLevel
+operator|=
+name|sideLevel
 expr_stmt|;
-return|return;
+block|}
+else|else
+block|{
+comment|// Change waterLevel during level loading
+name|newLevel
+operator|.
+name|waterLevel
+operator|=
+name|sideLevel
+expr_stmt|;
 block|}
 if|if
 condition|(
@@ -3520,6 +3531,41 @@ expr_stmt|;
 block|}
 if|if
 condition|(
+name|minecraft
+operator|.
+name|level
+operator|!=
+literal|null
+condition|)
+block|{
+name|minecraft
+operator|.
+name|levelRenderer
+operator|.
+name|refreshEnvironment
+argument_list|()
+expr_stmt|;
+block|}
+if|if
+condition|(
+operator|!
+name|minecraft
+operator|.
+name|settings
+operator|.
+name|canServerChangeTextures
+condition|)
+block|{
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"Denied server's request to change the texture pack."
+argument_list|)
+expr_stmt|;
+block|}
+if|else if
+condition|(
 name|textureUrl
 operator|.
 name|length
@@ -3599,6 +3645,19 @@ name|exists
 argument_list|()
 condition|)
 block|{
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"Downloading texture pack "
+operator|+
+name|hash
+operator|+
+literal|" from "
+operator|+
+name|textureUrl
+argument_list|)
+expr_stmt|;
 name|minecraft
 operator|.
 name|downloadImage
@@ -3705,42 +3764,6 @@ name|ex2
 argument_list|)
 expr_stmt|;
 block|}
-block|}
-if|if
-condition|(
-name|minecraft
-operator|.
-name|level
-operator|!=
-literal|null
-condition|)
-block|{
-comment|// Change waterLevel after level loading
-name|minecraft
-operator|.
-name|level
-operator|.
-name|waterLevel
-operator|=
-name|sideLevel
-expr_stmt|;
-name|minecraft
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
-expr_stmt|;
-block|}
-else|else
-block|{
-comment|// Change waterLevel during level loading
-name|newLevel
-operator|.
-name|waterLevel
-operator|=
-name|sideLevel
-expr_stmt|;
 block|}
 block|}
 if|else if
@@ -4627,9 +4650,9 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"DisallowingPlacement block: "
+literal|"Disallowing placement of block: "
 operator|+
-name|block
+name|blockType
 argument_list|)
 expr_stmt|;
 block|}
@@ -4650,9 +4673,9 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"AllowingPlacement block: "
+literal|"Allowing placement of block: "
 operator|+
-name|block
+name|blockType
 argument_list|)
 expr_stmt|;
 block|}
@@ -4679,9 +4702,9 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"DisallowingDeletion block: "
+literal|"Disallowing deletion of block: "
 operator|+
-name|block
+name|blockType
 argument_list|)
 expr_stmt|;
 block|}
@@ -4702,9 +4725,9 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"AllowingDeletion block: "
+literal|"Allowing deletion of block: "
 operator|+
-name|block
+name|blockType
 argument_list|)
 expr_stmt|;
 block|}

@@ -286,6 +286,25 @@ break|break;
 case|case
 name|BUTTON_DEFAULT
 case|:
+try|try
+block|{
+comment|// Save preference
+name|minecraft
+operator|.
+name|settings
+operator|.
+name|lastUsedTexturePack
+operator|=
+literal|null
+expr_stmt|;
+name|minecraft
+operator|.
+name|settings
+operator|.
+name|save
+argument_list|()
+expr_stmt|;
+comment|// Reset the texture pack
 name|minecraft
 operator|.
 name|textureManager
@@ -311,17 +330,6 @@ argument_list|()
 expr_stmt|;
 name|minecraft
 operator|.
-name|textureManager
-operator|.
-name|textures
-operator|.
-name|clear
-argument_list|()
-expr_stmt|;
-try|try
-block|{
-name|minecraft
-operator|.
 name|fontRenderer
 operator|=
 operator|new
@@ -338,38 +346,6 @@ operator|.
 name|textureManager
 argument_list|)
 expr_stmt|;
-block|}
-catch|catch
-parameter_list|(
-name|IOException
-name|ex
-parameter_list|)
-block|{
-name|LogUtil
-operator|.
-name|logError
-argument_list|(
-literal|"Error creating default font renderer."
-argument_list|,
-name|ex
-argument_list|)
-expr_stmt|;
-block|}
-name|minecraft
-operator|.
-name|settings
-operator|.
-name|lastUsedTexturePack
-operator|=
-literal|null
-expr_stmt|;
-name|minecraft
-operator|.
-name|settings
-operator|.
-name|save
-argument_list|()
-expr_stmt|;
 name|minecraft
 operator|.
 name|textureManager
@@ -377,6 +353,7 @@ operator|.
 name|registerAnimations
 argument_list|()
 expr_stmt|;
+comment|// Return back to the main menu
 name|minecraft
 operator|.
 name|setCurrentScreen
@@ -384,6 +361,41 @@ argument_list|(
 name|parent
 argument_list|)
 expr_stmt|;
+block|}
+catch|catch
+parameter_list|(
+name|IOException
+name|ex
+parameter_list|)
+block|{
+comment|// If the default texture could not be loaded, something went seriously wrong
+name|LogUtil
+operator|.
+name|logError
+argument_list|(
+literal|"Error loading default texture pack."
+argument_list|,
+name|ex
+argument_list|)
+expr_stmt|;
+name|minecraft
+operator|.
+name|setCurrentScreen
+argument_list|(
+operator|new
+name|ErrorScreen
+argument_list|(
+literal|"Client error"
+argument_list|,
+literal|"The game broke! ["
+operator|+
+name|ex
+operator|+
+literal|"]"
+argument_list|)
+argument_list|)
+expr_stmt|;
+block|}
 break|break;
 case|case
 name|BUTTON_PREVIOUS

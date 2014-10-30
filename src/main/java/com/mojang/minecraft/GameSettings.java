@@ -1791,6 +1791,13 @@ operator|+
 name|showNames
 argument_list|)
 expr_stmt|;
+if|if
+condition|(
+name|lastUsedTexturePack
+operator|!=
+literal|null
+condition|)
+block|{
 name|writer
 operator|.
 name|println
@@ -1800,6 +1807,7 @@ operator|+
 name|lastUsedTexturePack
 argument_list|)
 expr_stmt|;
+block|}
 for|for
 control|(
 name|KeyBinding
@@ -2142,9 +2150,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|textures
-operator|.
-name|clear
+name|forceTextureReload
 argument_list|()
 expr_stmt|;
 break|break;
@@ -2173,9 +2179,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|textures
-operator|.
-name|clear
+name|forceTextureReload
 argument_list|()
 expr_stmt|;
 break|break;
