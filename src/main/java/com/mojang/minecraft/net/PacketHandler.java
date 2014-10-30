@@ -3166,7 +3166,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|customShadowColour
+name|customShadowColor
 operator|=
 literal|null
 expr_stmt|;
@@ -3177,7 +3177,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|customShadowColour
+name|customShadowColor
 operator|=
 operator|new
 name|ColorCache
@@ -3217,7 +3217,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|customLightColour
+name|customLightColor
 operator|=
 literal|null
 expr_stmt|;
@@ -3228,7 +3228,7 @@ name|minecraft
 operator|.
 name|level
 operator|.
-name|customLightColour
+name|customLightColor
 operator|=
 operator|new
 name|ColorCache

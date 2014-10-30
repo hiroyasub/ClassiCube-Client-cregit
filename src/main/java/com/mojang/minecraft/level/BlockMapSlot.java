@@ -13,16 +13,6 @@ end_package
 
 begin_import
 import|import
-name|java
-operator|.
-name|io
-operator|.
-name|Serializable
-import|;
-end_import
-
-begin_import
-import|import
 name|com
 operator|.
 name|mojang
@@ -33,9 +23,19 @@ name|Entity
 import|;
 end_import
 
+begin_import
+import|import
+name|java
+operator|.
+name|io
+operator|.
+name|Serializable
+import|;
+end_import
+
 begin_class
 class|class
-name|BlockMap$Slot
+name|BlockMapSlot
 implements|implements
 name|Serializable
 block|{
@@ -47,7 +47,6 @@ name|serialVersionUID
 init|=
 literal|0L
 decl_stmt|;
-comment|// $FF: synthetic field
 specifier|final
 name|BlockMap
 name|blockMap
@@ -65,7 +64,7 @@ name|int
 name|zSlot
 decl_stmt|;
 specifier|public
-name|BlockMap$Slot
+name|BlockMapSlot
 parameter_list|(
 name|BlockMap
 name|blockMap
@@ -78,12 +77,11 @@ operator|=
 name|blockMap
 expr_stmt|;
 block|}
-comment|// $FF: synthetic method
 specifier|static
 name|int
 name|getXSlot
 parameter_list|(
-name|BlockMap$Slot
+name|BlockMapSlot
 name|slot
 parameter_list|)
 block|{
@@ -93,12 +91,11 @@ operator|.
 name|xSlot
 return|;
 block|}
-comment|// $FF: synthetic method
 specifier|static
 name|int
 name|getYSlot
 parameter_list|(
-name|BlockMap$Slot
+name|BlockMapSlot
 name|slot
 parameter_list|)
 block|{
@@ -108,12 +105,11 @@ operator|.
 name|ySlot
 return|;
 block|}
-comment|// $FF: synthetic method
 specifier|static
 name|int
 name|getZSlot
 parameter_list|(
-name|BlockMap$Slot
+name|BlockMapSlot
 name|slot
 parameter_list|)
 block|{
@@ -124,7 +120,7 @@ name|zSlot
 return|;
 block|}
 specifier|public
-name|BlockMap$Slot
+name|BlockMapSlot
 name|init
 parameter_list|(
 name|float
@@ -282,7 +278,6 @@ return|return
 name|this
 return|;
 block|}
-comment|/**      * Adds an entity to the BlockMap slot.      *      * @param entity      */
 specifier|public
 name|void
 name|add
@@ -340,7 +335,6 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-comment|/**      * Removes an entity from the BlockMap slot.      *      * @param entity      */
 specifier|public
 name|void
 name|remove
