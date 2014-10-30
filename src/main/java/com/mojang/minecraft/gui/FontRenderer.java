@@ -952,6 +952,15 @@ name|i
 operator|+=
 literal|2
 expr_stmt|;
+name|ch
+operator|=
+name|text
+operator|.
+name|charAt
+argument_list|(
+name|i
+argument_list|)
+expr_stmt|;
 block|}
 name|color
 operator|=
