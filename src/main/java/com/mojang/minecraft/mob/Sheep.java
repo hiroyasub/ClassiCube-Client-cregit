@@ -121,6 +121,22 @@ name|TextureManager
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|render
+operator|.
+name|texture
+operator|.
+name|Textures
+import|;
+end_import
+
 begin_class
 specifier|public
 class|class
@@ -615,7 +631,9 @@ name|var1
 operator|.
 name|load
 argument_list|(
-literal|"/mob/sheep_fur.png"
+name|Textures
+operator|.
+name|SHEEP_FUR
 argument_list|)
 argument_list|)
 expr_stmt|;

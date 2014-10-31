@@ -115,6 +115,22 @@ name|TextureManager
 import|;
 end_import
 
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|render
+operator|.
+name|texture
+operator|.
+name|Textures
+import|;
+end_import
+
 begin_class
 specifier|public
 specifier|final
@@ -639,7 +655,9 @@ name|textureManager
 operator|.
 name|load
 argument_list|(
-literal|"/terrain.png"
+name|Textures
+operator|.
+name|TERRAIN
 argument_list|)
 expr_stmt|;
 name|GL11
