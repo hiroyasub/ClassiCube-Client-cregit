@@ -2151,7 +2151,9 @@ operator|.
 name|textureManager
 operator|.
 name|forceTextureReload
-argument_list|()
+argument_list|(
+literal|"customTerrain"
+argument_list|)
 expr_stmt|;
 break|break;
 case|case
@@ -2180,7 +2182,9 @@ operator|.
 name|textureManager
 operator|.
 name|forceTextureReload
-argument_list|()
+argument_list|(
+literal|"customTerrain"
+argument_list|)
 expr_stmt|;
 break|break;
 case|case

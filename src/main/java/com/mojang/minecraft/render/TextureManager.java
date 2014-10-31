@@ -4324,7 +4324,7 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"Freed "
+literal|"Reloaded all "
 operator|+
 name|textures
 operator|.
@@ -4339,6 +4339,47 @@ operator|.
 name|clear
 argument_list|()
 expr_stmt|;
+block|}
+specifier|public
+name|void
+name|forceTextureReload
+parameter_list|(
+name|String
+name|textureName
+parameter_list|)
+block|{
+if|if
+condition|(
+name|textures
+operator|.
+name|containsKey
+argument_list|(
+name|textureName
+argument_list|)
+condition|)
+block|{
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"Reloaded texture: "
+operator|+
+name|textureName
+argument_list|)
+expr_stmt|;
+name|GL11
+operator|.
+name|glDeleteTextures
+argument_list|(
+name|textures
+operator|.
+name|remove
+argument_list|(
+name|textureName
+argument_list|)
+argument_list|)
+expr_stmt|;
+block|}
 block|}
 specifier|public
 name|void
