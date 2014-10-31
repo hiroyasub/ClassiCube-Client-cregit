@@ -1630,7 +1630,7 @@ specifier|private
 name|Cursor
 name|cursor
 decl_stmt|;
-comment|/**      * Creates a new Minecraft instance.      *      * @param canvas Canvas to use for drawing.      * @param applet Applet of this instance      * @param width Width of the window      * @param height Height of the window      * @param fullscreen True if game should be in fullscreen      * @param isApplet True if the game is running as an applet      */
+comment|/**      * Creates a new Minecraft instance.      *      * @param canvas Canvas to use for drawing.      * @param applet applet of this instance      * @param width Width of the window      * @param height Height of the window      * @param fullscreen True if game should be in fullscreen      * @param isApplet True if the game is running as an applet      */
 specifier|public
 name|Minecraft
 parameter_list|(
