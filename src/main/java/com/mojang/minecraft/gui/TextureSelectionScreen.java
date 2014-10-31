@@ -357,7 +357,9 @@ name|minecraft
 operator|.
 name|settings
 argument_list|,
-literal|"/default.png"
+name|Textures
+operator|.
+name|FONT
 argument_list|,
 name|minecraft
 operator|.
@@ -750,7 +752,9 @@ name|minecraft
 operator|.
 name|settings
 argument_list|,
-literal|"/default.png"
+name|Textures
+operator|.
+name|FONT
 argument_list|,
 name|minecraft
 operator|.

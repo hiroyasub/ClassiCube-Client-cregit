@@ -3784,7 +3784,9 @@ name|FontRenderer
 argument_list|(
 name|settings
 argument_list|,
-literal|"/default.png"
+name|Textures
+operator|.
+name|FONT
 argument_list|,
 name|textureManager
 argument_list|)
