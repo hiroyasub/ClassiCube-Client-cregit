@@ -3373,34 +3373,42 @@ index|[
 literal|3
 index|]
 decl_stmt|;
+comment|//LogUtil.logInfo("ENV_SET_MAP_APPEARANCE(" + textureUrl + "," + sideBlock + "," + edgeBlock + "," + sideLevel + ")");
 if|if
 condition|(
 name|minecraft
 operator|.
-name|settings
-operator|.
-name|canServerChangeTextures
+name|level
+operator|!=
+literal|null
 condition|)
 block|{
+comment|// Change waterLevel after level loading
+name|minecraft
+operator|.
+name|level
+operator|.
+name|waterLevel
+operator|=
+name|sideLevel
+expr_stmt|;
+block|}
+else|else
+block|{
+comment|// Change waterLevel during level loading
+name|newLevel
+operator|.
+name|waterLevel
+operator|=
+name|sideLevel
+expr_stmt|;
+block|}
 if|if
 condition|(
 name|sideBlock
-operator|==
-operator|-
-literal|1
-condition|)
-block|{
-name|minecraft
-operator|.
-name|textureManager
-operator|.
-name|customSideBlock
-operator|=
-literal|null
-expr_stmt|;
-block|}
-if|else if
-condition|(
+operator|>
+literal|0
+operator|&&
 name|sideBlock
 operator|<
 name|Block
@@ -3440,25 +3448,23 @@ name|ID
 argument_list|)
 expr_stmt|;
 block|}
-if|if
-condition|(
-name|edgeBlock
-operator|==
-operator|-
-literal|1
-condition|)
+else|else
 block|{
 name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|customEdgeBlock
+name|customSideBlock
 operator|=
 literal|null
 expr_stmt|;
 block|}
-if|else if
+if|if
 condition|(
+name|edgeBlock
+operator|>
+literal|0
+operator|&&
 name|edgeBlock
 operator|<
 name|Block
@@ -3508,7 +3514,71 @@ name|ID
 argument_list|)
 expr_stmt|;
 block|}
+else|else
+block|{
+name|minecraft
+operator|.
+name|textureManager
+operator|.
+name|customEdgeBlock
+operator|=
+literal|null
+expr_stmt|;
+block|}
+name|minecraft
+operator|.
+name|textureManager
+operator|.
+name|forceTextureReload
+argument_list|(
+literal|"customEdge"
+argument_list|)
+expr_stmt|;
+name|minecraft
+operator|.
+name|textureManager
+operator|.
+name|forceTextureReload
+argument_list|(
+literal|"customSide"
+argument_list|)
+expr_stmt|;
 if|if
+condition|(
+name|minecraft
+operator|.
+name|level
+operator|!=
+literal|null
+condition|)
+block|{
+name|minecraft
+operator|.
+name|levelRenderer
+operator|.
+name|refreshEnvironment
+argument_list|()
+expr_stmt|;
+block|}
+if|if
+condition|(
+operator|!
+name|minecraft
+operator|.
+name|settings
+operator|.
+name|canServerChangeTextures
+condition|)
+block|{
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"Denied server's request to change the texture pack."
+argument_list|)
+expr_stmt|;
+block|}
+if|else if
 condition|(
 name|textureUrl
 operator|.
@@ -3519,7 +3589,7 @@ literal|0
 condition|)
 block|{
 name|File
-name|path
+name|textureDir
 init|=
 operator|new
 name|File
@@ -3535,13 +3605,13 @@ decl_stmt|;
 if|if
 condition|(
 operator|!
-name|path
+name|textureDir
 operator|.
 name|exists
 argument_list|()
 condition|)
 block|{
-name|path
+name|textureDir
 operator|.
 name|mkdirs
 argument_list|()
@@ -3570,7 +3640,7 @@ init|=
 operator|new
 name|File
 argument_list|(
-name|path
+name|textureDir
 argument_list|,
 name|hash
 operator|+
@@ -3589,6 +3659,19 @@ name|exists
 argument_list|()
 condition|)
 block|{
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"Downloading texture pack "
+operator|+
+name|hash
+operator|+
+literal|" from "
+operator|+
+name|textureUrl
+argument_list|)
+expr_stmt|;
 name|minecraft
 operator|.
 name|downloadImage
@@ -3655,6 +3738,7 @@ block|}
 block|}
 else|else
 block|{
+comment|// Reset texture to default
 try|try
 block|{
 name|minecraft
@@ -3694,22 +3778,6 @@ name|ex2
 argument_list|)
 expr_stmt|;
 block|}
-block|}
-name|minecraft
-operator|.
-name|level
-operator|.
-name|waterLevel
-operator|=
-name|sideLevel
-expr_stmt|;
-name|minecraft
-operator|.
-name|levelRenderer
-operator|.
-name|refresh
-argument_list|()
-expr_stmt|;
 block|}
 block|}
 if|else if
@@ -4596,9 +4664,9 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"DisallowingPlacement block: "
+literal|"Disallowing placement of block: "
 operator|+
-name|block
+name|blockType
 argument_list|)
 expr_stmt|;
 block|}
@@ -4619,9 +4687,9 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"AllowingPlacement block: "
+literal|"Allowing placement of block: "
 operator|+
-name|block
+name|blockType
 argument_list|)
 expr_stmt|;
 block|}
@@ -4648,9 +4716,9 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"DisallowingDeletion block: "
+literal|"Disallowing deletion of block: "
 operator|+
-name|block
+name|blockType
 argument_list|)
 expr_stmt|;
 block|}
@@ -4671,9 +4739,9 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"AllowingDeletion block: "
+literal|"Allowing deletion of block: "
 operator|+
-name|block
+name|blockType
 argument_list|)
 expr_stmt|;
 block|}
