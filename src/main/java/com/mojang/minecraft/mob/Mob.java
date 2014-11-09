@@ -185,14 +185,6 @@ block|{
 specifier|public
 specifier|static
 specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
-specifier|public
-specifier|static
-specifier|final
 name|int
 name|ATTACK_DURATION
 init|=
@@ -265,12 +257,6 @@ name|float
 name|rotOffs
 init|=
 literal|0F
-decl_stmt|;
-specifier|public
-name|String
-name|modelName
-init|=
-literal|null
 decl_stmt|;
 specifier|public
 name|float
@@ -372,18 +358,6 @@ name|tickCount
 init|=
 literal|0
 decl_stmt|;
-specifier|public
-name|String
-name|textureName
-init|=
-literal|"/char.png"
-decl_stmt|;
-specifier|public
-name|boolean
-name|defaultTexture
-init|=
-literal|true
-decl_stmt|;
 specifier|protected
 name|float
 name|bobStrength
@@ -402,12 +376,13 @@ name|dead
 init|=
 literal|false
 decl_stmt|;
-specifier|public
-specifier|transient
-name|BufferedImage
-name|newTexture
-init|=
-literal|null
+specifier|protected
+name|String
+name|modelName
+decl_stmt|;
+specifier|protected
+name|String
+name|textureName
 decl_stmt|;
 specifier|public
 name|Mob
@@ -527,6 +502,7 @@ name|textureId
 argument_list|)
 expr_stmt|;
 block|}
+comment|// SURVIVAL
 annotation|@
 name|Override
 specifier|protected
@@ -578,6 +554,7 @@ expr_stmt|;
 block|}
 block|}
 block|}
+comment|// SURVIVAL
 specifier|public
 name|void
 name|die
@@ -621,6 +598,7 @@ literal|true
 expr_stmt|;
 block|}
 block|}
+comment|// SURVIVAL
 specifier|public
 name|void
 name|heal
@@ -660,6 +638,7 @@ literal|2
 expr_stmt|;
 block|}
 block|}
+comment|// SURVIVAL
 annotation|@
 name|Override
 specifier|public
@@ -891,6 +870,7 @@ return|return
 literal|true
 return|;
 block|}
+comment|// SURVIVAL
 comment|// TODO First two variable never used
 specifier|public
 name|void
@@ -3036,6 +3016,9 @@ argument_list|(
 name|s
 argument_list|)
 expr_stmt|;
+return|return
+literal|true
+return|;
 block|}
 catch|catch
 parameter_list|(
@@ -3047,8 +3030,14 @@ return|return
 literal|false
 return|;
 block|}
+block|}
+specifier|public
+name|String
+name|getModelName
+parameter_list|()
+block|{
 return|return
-literal|true
+name|modelName
 return|;
 block|}
 block|}

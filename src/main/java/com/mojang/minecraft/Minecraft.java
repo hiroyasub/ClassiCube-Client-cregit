@@ -1283,6 +1283,7 @@ literal|false
 decl_stmt|;
 comment|/**      * The url of the skin server where the skins are located.      */
 specifier|public
+specifier|static
 name|String
 name|skinServer
 init|=
@@ -4188,22 +4189,14 @@ operator|!=
 literal|null
 condition|)
 block|{
-operator|new
-name|SkinDownloadThread
-argument_list|(
 name|player
-argument_list|,
-name|skinServer
-operator|+
+operator|.
+name|setSkin
+argument_list|(
 name|session
 operator|.
 name|username
-operator|+
-literal|".png"
 argument_list|)
-operator|.
-name|start
-argument_list|()
 expr_stmt|;
 block|}
 if|if
@@ -9238,6 +9231,12 @@ name|newLevel
 argument_list|,
 name|settings
 argument_list|)
+expr_stmt|;
+name|newLevel
+operator|.
+name|player
+operator|=
+name|player
 expr_stmt|;
 block|}
 name|player
