@@ -32,11 +32,14 @@ name|QuadrupedMob
 extends|extends
 name|Mob
 block|{
-specifier|public
+specifier|protected
 name|QuadrupedMob
 parameter_list|(
 name|Level
 name|level
+parameter_list|,
+name|String
+name|modelName
 parameter_list|,
 name|float
 name|posX
@@ -51,6 +54,8 @@ block|{
 name|super
 argument_list|(
 name|level
+argument_list|,
+name|modelName
 argument_list|)
 expr_stmt|;
 name|setSize
@@ -70,11 +75,6 @@ name|posY
 argument_list|,
 name|posZ
 argument_list|)
-expr_stmt|;
-comment|// TODO wat
-name|modelName
-operator|=
-literal|"pig"
 expr_stmt|;
 block|}
 block|}

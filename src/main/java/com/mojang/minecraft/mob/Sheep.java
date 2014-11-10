@@ -190,6 +190,8 @@ name|super
 argument_list|(
 name|level
 argument_list|,
+literal|"sheep"
+argument_list|,
 name|posX
 argument_list|,
 name|posY
@@ -218,10 +220,6 @@ expr_stmt|;
 name|heightOffset
 operator|=
 literal|1.72F
-expr_stmt|;
-name|modelName
-operator|=
-literal|"sheep"
 expr_stmt|;
 name|textureName
 operator|=

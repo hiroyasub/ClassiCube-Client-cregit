@@ -51,15 +51,13 @@ block|{
 name|super
 argument_list|(
 name|level
+argument_list|,
+literal|"creeper"
 argument_list|)
 expr_stmt|;
 name|heightOffset
 operator|=
 literal|1.62F
-expr_stmt|;
-name|modelName
-operator|=
-literal|"creeper"
 expr_stmt|;
 name|textureName
 operator|=

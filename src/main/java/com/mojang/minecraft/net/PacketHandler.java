@@ -4745,6 +4745,17 @@ condition|(
 name|targetPlayer
 operator|!=
 literal|null
+operator|&&
+operator|!
+name|targetPlayer
+operator|.
+name|getModelName
+argument_list|()
+operator|.
+name|equals
+argument_list|(
+name|modelName
+argument_list|)
 condition|)
 block|{
 name|ModelManager

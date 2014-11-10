@@ -233,6 +233,18 @@ name|mojang
 operator|.
 name|util
 operator|.
+name|LogUtil
+import|;
+end_import
+
+begin_import
+import|import
+name|com
+operator|.
+name|mojang
+operator|.
+name|util
+operator|.
 name|MathHelper
 import|;
 end_import
@@ -511,6 +523,15 @@ name|Entity
 name|entity
 parameter_list|)
 block|{
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"Adding entity: "
+operator|+
+name|entity
+argument_list|)
+expr_stmt|;
 name|blockMap
 operator|.
 name|insert
