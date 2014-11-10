@@ -5321,13 +5321,6 @@ operator|*
 name|reachDistance
 argument_list|)
 expr_stmt|;
-comment|// SURVIVAL: find a nearby entity to pick up
-if|if
-condition|(
-name|isSurvival
-argument_list|()
-condition|)
-block|{
 name|renderer
 operator|.
 name|entity
@@ -5368,8 +5361,15 @@ name|reachDistance
 argument_list|)
 argument_list|)
 decl_stmt|;
+comment|// Find the closest entity (player)
+specifier|final
 name|float
-name|var35
+name|growFactor
+init|=
+literal|0.1F
+decl_stmt|;
+name|float
+name|closestDist
 init|=
 literal|0F
 decl_stmt|;
@@ -5389,10 +5389,6 @@ name|isPickable
 argument_list|()
 condition|)
 block|{
-name|var74
-operator|=
-literal|0.1F
-expr_stmt|;
 name|MovingObjectPosition
 name|var78
 init|=
@@ -5402,11 +5398,11 @@ name|boundingBox
 operator|.
 name|grow
 argument_list|(
-name|var74
+name|growFactor
 argument_list|,
-name|var74
+name|growFactor
 argument_list|,
-name|var74
+name|growFactor
 argument_list|)
 operator|.
 name|clip
@@ -5423,8 +5419,9 @@ operator|!=
 literal|null
 condition|)
 block|{
-name|var74
-operator|=
+name|float
+name|distanceToPlayer
+init|=
 name|newPlayerVector
 operator|.
 name|distance
@@ -5433,14 +5430,14 @@ name|var78
 operator|.
 name|vec
 argument_list|)
-expr_stmt|;
+decl_stmt|;
 if|if
 condition|(
-name|var74
+name|distanceToPlayer
 operator|<
-name|var35
+name|closestDist
 operator|||
-name|var35
+name|closestDist
 operator|==
 literal|0F
 condition|)
@@ -5451,15 +5448,15 @@ name|entity
 operator|=
 name|entity
 expr_stmt|;
-name|var35
+name|closestDist
 operator|=
-name|var74
+name|distanceToPlayer
 expr_stmt|;
 block|}
 block|}
 block|}
 block|}
-comment|// SURVIVAL: place picked-up object into hand
+comment|// SURVIVAL: target entity
 if|if
 condition|(
 name|renderer
@@ -5482,7 +5479,6 @@ operator|.
 name|entity
 argument_list|)
 expr_stmt|;
-block|}
 block|}
 name|GL11
 operator|.
