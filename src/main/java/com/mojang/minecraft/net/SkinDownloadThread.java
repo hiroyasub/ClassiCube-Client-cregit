@@ -417,13 +417,11 @@ name|String
 operator|.
 name|format
 argument_list|(
-literal|"Network error while downloading skin from \"%s\": \"%s\""
+literal|"Network error while downloading skin from \"%s\""
 argument_list|,
 name|this
 operator|.
 name|URL
-argument_list|,
-name|ex
 argument_list|)
 decl_stmt|;
 name|LogUtil
@@ -431,6 +429,8 @@ operator|.
 name|logWarning
 argument_list|(
 name|errorMsg
+argument_list|,
+name|ex
 argument_list|)
 expr_stmt|;
 block|}
@@ -448,13 +448,11 @@ name|String
 operator|.
 name|format
 argument_list|(
-literal|"Unexpected error while downloading skin from \"%s\": \"%s\""
+literal|"Unexpected error while downloading skin from \"%s\""
 argument_list|,
 name|this
 operator|.
 name|URL
-argument_list|,
-name|ex
 argument_list|)
 decl_stmt|;
 name|LogUtil
@@ -462,6 +460,8 @@ operator|.
 name|logWarning
 argument_list|(
 name|errorMsg
+argument_list|,
+name|ex
 argument_list|)
 expr_stmt|;
 block|}

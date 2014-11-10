@@ -376,14 +376,6 @@ extends|extends
 name|MinecraftApplet
 block|{
 specifier|private
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|1L
-decl_stmt|;
-specifier|private
 specifier|final
 name|Map
 argument_list|<
@@ -499,14 +491,6 @@ name|MinecraftCanvas
 extends|extends
 name|Canvas
 block|{
-specifier|private
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|1L
-decl_stmt|;
 specifier|public
 name|Image
 name|image
@@ -1207,21 +1191,10 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|/**          *          */
-specifier|private
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|1L
-decl_stmt|;
-comment|/**          * Minecraft reference.          */
 specifier|private
 name|Minecraft
 name|minecraft
 decl_stmt|;
-comment|/**          * Default constructor.          */
 specifier|public
 name|MinecraftFrame
 parameter_list|()

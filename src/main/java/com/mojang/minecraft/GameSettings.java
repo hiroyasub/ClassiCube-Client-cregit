@@ -2166,7 +2166,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 name|Textures
 operator|.
@@ -2177,7 +2177,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 name|Textures
 operator|.
@@ -2188,7 +2188,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 name|Textures
 operator|.
@@ -2199,7 +2199,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 literal|"customTerrain"
 argument_list|)
@@ -2208,7 +2208,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 literal|"customEdge"
 argument_list|)
@@ -2217,7 +2217,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 literal|"customSide"
 argument_list|)
@@ -2248,7 +2248,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 name|Textures
 operator|.
@@ -2259,7 +2259,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 name|Textures
 operator|.
@@ -2270,7 +2270,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 name|Textures
 operator|.
@@ -2281,7 +2281,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 literal|"customTerrain"
 argument_list|)
@@ -2290,7 +2290,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 literal|"customEdge"
 argument_list|)
@@ -2299,7 +2299,7 @@ name|minecraft
 operator|.
 name|textureManager
 operator|.
-name|forceTextureReload
+name|unloadTexture
 argument_list|(
 literal|"customSide"
 argument_list|)

@@ -7907,11 +7907,6 @@ operator|&&
 name|networkManager
 operator|!=
 literal|null
-operator|&&
-name|networkManager
-operator|.
-name|hasPlayers
-argument_list|()
 condition|)
 block|{
 comment|// Render other players' names
@@ -7940,6 +7935,7 @@ operator|>=
 literal|100
 condition|)
 block|{
+comment|// Render all names
 for|for
 control|(
 name|NetworkPlayer
@@ -7969,6 +7965,7 @@ operator|!=
 literal|null
 condition|)
 block|{
+comment|// Render on-hover
 name|renderer
 operator|.
 name|entity
