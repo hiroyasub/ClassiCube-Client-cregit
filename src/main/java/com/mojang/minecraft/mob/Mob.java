@@ -3032,6 +3032,7 @@ literal|false
 return|;
 block|}
 block|}
+comment|// Returns current model name. Will not be null.
 specifier|public
 name|String
 name|getModelName
