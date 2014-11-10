@@ -154,7 +154,21 @@ argument_list|,
 literal|1
 argument_list|)
 decl_stmt|;
-comment|//public static final ProtocolExtension EXT_PLAYER_LIST_2 = new ProtocolExtension("ExtPlayerList", 2);
+comment|//public static final ProtocolExtension EXT_PLAYER_LIST = new ProtocolExtension("ExtPlayerList", 1);
+specifier|public
+specifier|static
+specifier|final
+name|ProtocolExtension
+name|EXT_PLAYER_LIST_2
+init|=
+operator|new
+name|ProtocolExtension
+argument_list|(
+literal|"ExtPlayerList"
+argument_list|,
+literal|2
+argument_list|)
+decl_stmt|;
 specifier|public
 specifier|static
 specifier|final
@@ -277,7 +291,13 @@ argument_list|(
 name|HELD_BLOCK
 argument_list|)
 expr_stmt|;
-comment|// TODO: implement EXT_PLAYER_LIST_2
+name|supportedExtensions
+operator|.
+name|add
+argument_list|(
+name|EXT_PLAYER_LIST_2
+argument_list|)
+expr_stmt|;
 name|supportedExtensions
 operator|.
 name|add

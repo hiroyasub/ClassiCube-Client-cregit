@@ -293,6 +293,10 @@ operator|!
 name|nonHumanoidSkin
 operator|&&
 name|image
+operator|!=
+literal|null
+operator|&&
+name|image
 operator|.
 name|getHeight
 argument_list|()

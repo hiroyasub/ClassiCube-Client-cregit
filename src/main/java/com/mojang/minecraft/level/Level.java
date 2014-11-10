@@ -523,15 +523,6 @@ name|Entity
 name|entity
 parameter_list|)
 block|{
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"Adding entity: "
-operator|+
-name|entity
-argument_list|)
-expr_stmt|;
 name|blockMap
 operator|.
 name|insert

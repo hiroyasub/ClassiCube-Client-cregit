@@ -228,6 +228,10 @@ name|HumanoidMob
 extends|extends
 name|Mob
 block|{
+specifier|public
+name|String
+name|lastHumanoidSkinName
+decl_stmt|;
 specifier|private
 name|String
 name|skinName
@@ -989,7 +993,17 @@ literal|"newName cannot be null"
 argument_list|)
 throw|;
 block|}
-comment|//LogUtil.logInfo("setModel(" + newName + ")");
+name|LogUtil
+operator|.
+name|logInfo
+argument_list|(
+literal|"setModel("
+operator|+
+name|newName
+operator|+
+literal|")"
+argument_list|)
+expr_stmt|;
 name|resetSkin
 argument_list|()
 expr_stmt|;

@@ -210,7 +210,7 @@ name|displayName
 operator|=
 name|displayName
 expr_stmt|;
-name|displayName
+name|name
 operator|=
 name|FontRenderer
 operator|.
@@ -219,9 +219,9 @@ argument_list|(
 name|displayName
 argument_list|)
 expr_stmt|;
-name|name
+name|lastHumanoidSkinName
 operator|=
-name|displayName
+name|name
 expr_stmt|;
 name|xp
 operator|=
@@ -312,6 +312,8 @@ expr_stmt|;
 block|}
 name|setSkin
 argument_list|(
+name|this
+operator|.
 name|name
 argument_list|)
 expr_stmt|;
