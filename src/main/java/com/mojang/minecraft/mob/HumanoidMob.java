@@ -1092,6 +1092,13 @@ name|image
 expr_stmt|;
 block|}
 block|}
+comment|// Sets this player's skin.
+comment|// Can accept usernames (skin will be downloaded from location of Minecraft.skinServer).
+comment|// Can also accept absolute URLs, as long as they begin with "http://" or "https://" and end with ".png" (case-insensitive).
+comment|// Can also accept null or empty strings (which act exactly like resetSkin()).
+comment|// NOTE: If modelName is an integer (i.e. is a block model), given skin will be ignored.
+comment|// NOTE: If modelName is not "humanoid", only absolute URLs will be accepted.
+comment|// NOTE: Does not block -- skins are downloaded asynchronously by SkinDownloadThread.
 specifier|public
 specifier|synchronized
 name|void
@@ -1117,17 +1124,8 @@ literal|0
 condition|)
 block|{
 comment|// Blank values of "skinName" reset skin to default.
-name|this
-operator|.
-name|newSkinBitmap
-operator|=
-literal|null
-expr_stmt|;
-name|this
-operator|.
-name|skinName
-operator|=
-literal|null
+name|resetSkin
+argument_list|()
 expr_stmt|;
 return|return;
 block|}
