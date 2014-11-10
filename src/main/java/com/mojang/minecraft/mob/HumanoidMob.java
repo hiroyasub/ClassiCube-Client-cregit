@@ -228,6 +228,27 @@ name|HumanoidMob
 extends|extends
 name|Mob
 block|{
+specifier|private
+name|String
+name|skinName
+decl_stmt|;
+specifier|private
+name|BufferedImage
+name|skinBitmap
+decl_stmt|;
+specifier|private
+specifier|volatile
+name|BufferedImage
+name|newSkinBitmap
+decl_stmt|;
+specifier|private
+specifier|volatile
+name|int
+name|textureId
+init|=
+operator|-
+literal|1
+decl_stmt|;
 specifier|protected
 name|HumanoidMob
 parameter_list|(
@@ -303,14 +324,45 @@ name|modelName
 argument_list|)
 condition|)
 block|{
+comment|// Special handling for block models
 name|renderBlock
 argument_list|(
 name|textures
 argument_list|)
 expr_stmt|;
-return|return;
 block|}
-comment|// Render the rest of the model
+if|else if
+condition|(
+literal|"sheep"
+operator|.
+name|equals
+argument_list|(
+name|modelName
+argument_list|)
+condition|)
+block|{
+comment|// Special handling for sheep models (because of the fur)
+name|renderSheep
+argument_list|(
+name|textures
+argument_list|,
+name|var2
+argument_list|,
+name|var3
+argument_list|,
+name|var4
+argument_list|,
+name|yawDegrees
+argument_list|,
+name|pitchDegrees
+argument_list|,
+name|scale
+argument_list|)
+expr_stmt|;
+block|}
+else|else
+block|{
+comment|// Regular rendering for the rest
 name|Model
 name|model
 init|=
@@ -409,6 +461,7 @@ operator|.
 name|GL_CULL_FACE
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 block|}
 specifier|private
@@ -696,7 +749,7 @@ argument_list|)
 argument_list|)
 expr_stmt|;
 name|AnimalModel
-name|sheepModel
+name|furModel
 init|=
 operator|(
 name|AnimalModel
@@ -708,7 +761,7 @@ argument_list|(
 literal|"sheep.fur"
 argument_list|)
 decl_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|head
 operator|.
@@ -720,7 +773,7 @@ name|head
 operator|.
 name|yaw
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|head
 operator|.
@@ -732,7 +785,7 @@ name|head
 operator|.
 name|pitch
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|head
 operator|.
@@ -744,7 +797,7 @@ name|head
 operator|.
 name|y
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|head
 operator|.
@@ -756,7 +809,7 @@ name|head
 operator|.
 name|x
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|body
 operator|.
@@ -768,7 +821,7 @@ name|body
 operator|.
 name|yaw
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|body
 operator|.
@@ -780,7 +833,7 @@ name|body
 operator|.
 name|pitch
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|leg1
 operator|.
@@ -792,7 +845,7 @@ name|leg1
 operator|.
 name|pitch
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|leg2
 operator|.
@@ -804,7 +857,7 @@ name|leg2
 operator|.
 name|pitch
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|leg3
 operator|.
@@ -816,7 +869,7 @@ name|leg3
 operator|.
 name|pitch
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|leg4
 operator|.
@@ -828,7 +881,7 @@ name|leg4
 operator|.
 name|pitch
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|head
 operator|.
@@ -837,7 +890,7 @@ argument_list|(
 name|scale
 argument_list|)
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|body
 operator|.
@@ -846,7 +899,7 @@ argument_list|(
 name|scale
 argument_list|)
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|leg1
 operator|.
@@ -855,7 +908,7 @@ argument_list|(
 name|scale
 argument_list|)
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|leg2
 operator|.
@@ -864,7 +917,7 @@ argument_list|(
 name|scale
 argument_list|)
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|leg3
 operator|.
@@ -873,7 +926,7 @@ argument_list|(
 name|scale
 argument_list|)
 expr_stmt|;
-name|sheepModel
+name|furModel
 operator|.
 name|leg4
 operator|.
@@ -899,27 +952,6 @@ operator|=
 name|headZ
 expr_stmt|;
 block|}
-specifier|private
-name|String
-name|skinName
-decl_stmt|;
-specifier|private
-name|BufferedImage
-name|skinBitmap
-decl_stmt|;
-specifier|private
-specifier|volatile
-name|BufferedImage
-name|newSkinBitmap
-decl_stmt|;
-specifier|private
-specifier|volatile
-name|int
-name|textureId
-init|=
-operator|-
-literal|1
-decl_stmt|;
 comment|// Gets the name of the current skin. Can be 'null' (meaning 'use default').
 specifier|public
 name|String
@@ -957,17 +989,7 @@ literal|"newName cannot be null"
 argument_list|)
 throw|;
 block|}
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"setModel("
-operator|+
-name|newName
-operator|+
-literal|")"
-argument_list|)
-expr_stmt|;
+comment|//LogUtil.logInfo("setModel(" + newName + ")");
 name|resetSkin
 argument_list|()
 expr_stmt|;
@@ -1079,17 +1101,7 @@ name|String
 name|skinName
 parameter_list|)
 block|{
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"setSkin("
-operator|+
-name|skinName
-operator|+
-literal|")"
-argument_list|)
-expr_stmt|;
+comment|//LogUtil.logInfo("setSkin(" + skinName + ")");
 if|if
 condition|(
 name|skinName
