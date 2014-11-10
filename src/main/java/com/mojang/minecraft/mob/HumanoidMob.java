@@ -1013,6 +1013,11 @@ name|newSkinBitmap
 operator|=
 literal|null
 expr_stmt|;
+name|textureId
+operator|=
+operator|-
+literal|1
+expr_stmt|;
 block|}
 comment|// Causes current skin to be re-downloaded (if any is set).
 specifier|public
