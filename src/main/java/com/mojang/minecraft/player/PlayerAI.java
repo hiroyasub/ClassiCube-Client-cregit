@@ -38,14 +38,6 @@ name|PlayerAI
 extends|extends
 name|BasicAI
 block|{
-specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
 specifier|private
 specifier|final
 name|Player

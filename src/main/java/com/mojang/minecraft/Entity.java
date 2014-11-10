@@ -204,14 +204,6 @@ implements|implements
 name|Serializable
 block|{
 specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
-specifier|public
 name|Level
 name|level
 decl_stmt|;
@@ -1981,7 +1973,7 @@ name|floor
 argument_list|(
 name|y
 operator|-
-literal|0.20000000298023224D
+literal|0.2
 operator|-
 name|heightOffset
 argument_list|)

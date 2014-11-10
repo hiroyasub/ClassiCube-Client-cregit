@@ -39,14 +39,6 @@ name|BlockMapSlot
 implements|implements
 name|Serializable
 block|{
-specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
 specifier|final
 name|BlockMap
 name|blockMap

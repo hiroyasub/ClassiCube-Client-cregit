@@ -71,14 +71,6 @@ block|{
 specifier|public
 specifier|static
 specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
-specifier|public
-specifier|static
-specifier|final
 name|int
 name|POP_TIME_DURATION
 init|=

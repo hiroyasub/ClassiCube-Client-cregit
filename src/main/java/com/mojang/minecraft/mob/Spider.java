@@ -49,14 +49,6 @@ extends|extends
 name|QuadrupedMob
 block|{
 specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
-specifier|public
 name|Spider
 parameter_list|(
 name|Level

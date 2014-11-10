@@ -33,14 +33,6 @@ extends|extends
 name|Mob
 block|{
 specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
-specifier|public
 name|QuadrupedMob
 parameter_list|(
 name|Level

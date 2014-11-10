@@ -48,14 +48,6 @@ name|Skeleton$1
 extends|extends
 name|BasicAttackAI
 block|{
-specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
 comment|// $FF: synthetic field
 specifier|final
 name|Skeleton

@@ -72,14 +72,6 @@ implements|implements
 name|Serializable
 block|{
 specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
-specifier|public
 name|int
 name|defaultLookAngle
 init|=
