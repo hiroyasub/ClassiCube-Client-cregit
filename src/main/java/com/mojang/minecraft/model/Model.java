@@ -18,6 +18,14 @@ class|class
 name|Model
 block|{
 specifier|public
+specifier|static
+specifier|final
+name|String
+name|HUMANOID
+init|=
+literal|"humanoid"
+decl_stmt|;
+specifier|public
 name|float
 name|attackOffset
 decl_stmt|;

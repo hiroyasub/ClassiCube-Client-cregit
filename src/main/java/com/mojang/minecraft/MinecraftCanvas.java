@@ -209,14 +209,6 @@ extends|extends
 name|Canvas
 block|{
 specifier|private
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|1L
-decl_stmt|;
-specifier|private
 name|Image
 name|image
 decl_stmt|;
@@ -225,6 +217,7 @@ name|Image
 name|image2
 decl_stmt|;
 specifier|private
+specifier|final
 name|MinecraftApplet
 name|applet
 decl_stmt|;

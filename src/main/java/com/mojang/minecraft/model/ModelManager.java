@@ -34,6 +34,7 @@ class|class
 name|ModelManager
 block|{
 specifier|private
+specifier|final
 name|HumanoidModel
 name|human
 init|=
@@ -44,6 +45,7 @@ literal|0F
 argument_list|)
 decl_stmt|;
 specifier|private
+specifier|final
 name|HumanoidModel
 name|armoredHuman
 init|=
@@ -54,6 +56,7 @@ literal|1F
 argument_list|)
 decl_stmt|;
 specifier|private
+specifier|final
 name|CreeperModel
 name|creeper
 init|=
@@ -62,6 +65,7 @@ name|CreeperModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|SkeletonModel
 name|skeleton
 init|=
@@ -70,6 +74,7 @@ name|SkeletonModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|ZombieModel
 name|zombie
 init|=
@@ -78,6 +83,7 @@ name|ZombieModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|AnimalModel
 name|pig
 init|=
@@ -86,6 +92,7 @@ name|PigModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|AnimalModel
 name|sheep
 init|=
@@ -94,6 +101,7 @@ name|SheepModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|SpiderModel
 name|spider
 init|=
@@ -102,6 +110,7 @@ name|SpiderModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|SheepFurModel
 name|sheepFur
 init|=
@@ -110,6 +119,7 @@ name|SheepFurModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|ChickenModel
 name|chicken
 init|=
@@ -118,6 +128,7 @@ name|ChickenModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|PrinterModel
 name|printer
 init|=
@@ -126,6 +137,7 @@ name|PrinterModel
 argument_list|()
 decl_stmt|;
 specifier|private
+specifier|final
 name|CrocModel
 name|croc
 init|=
@@ -133,7 +145,7 @@ operator|new
 name|CrocModel
 argument_list|()
 decl_stmt|;
-comment|/**      * Gets a model from its name. You can also get block models by providing      * their ID.      *      * @param modelName String representing the name of the model      * @return The Model with the name that was requested or null if not found.      */
+comment|/**      * Gets a model from its name. You can also get block models by providing their ID.      *      * @param modelName String representing the name of the model      * @return The Model with the name that was requested or null if not found.      */
 comment|// TODO Use an enum
 specifier|public
 specifier|final

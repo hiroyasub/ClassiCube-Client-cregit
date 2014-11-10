@@ -144,14 +144,6 @@ name|Arrow
 extends|extends
 name|Entity
 block|{
-specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
 specifier|private
 name|float
 name|xd

@@ -82,14 +82,6 @@ name|Particle
 extends|extends
 name|Entity
 block|{
-specifier|private
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|1L
-decl_stmt|;
 specifier|protected
 name|int
 name|tex

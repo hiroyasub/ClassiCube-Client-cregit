@@ -62,14 +62,6 @@ name|Sheep$1
 extends|extends
 name|BasicAI
 block|{
-specifier|private
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|1L
-decl_stmt|;
 comment|// $FF: synthetic field
 specifier|final
 name|Sheep

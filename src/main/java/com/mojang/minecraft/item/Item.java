@@ -128,16 +128,9 @@ name|Item
 extends|extends
 name|Entity
 block|{
-specifier|public
-specifier|static
-specifier|final
-name|long
-name|serialVersionUID
-init|=
-literal|0L
-decl_stmt|;
 specifier|private
 specifier|static
+specifier|final
 name|ItemModel
 index|[]
 name|models
@@ -165,6 +158,7 @@ name|float
 name|rot
 decl_stmt|;
 specifier|private
+specifier|final
 name|int
 name|resource
 decl_stmt|;
