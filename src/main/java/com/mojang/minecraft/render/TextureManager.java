@@ -2470,6 +2470,7 @@ specifier|public
 name|int
 name|load
 parameter_list|(
+specifier|final
 name|String
 name|file
 parameter_list|)
@@ -3288,7 +3289,7 @@ name|textures
 operator|.
 name|get
 argument_list|(
-literal|"customGUI"
+literal|"customFont"
 argument_list|)
 return|;
 block|}
@@ -4058,14 +4059,11 @@ block|}
 block|}
 specifier|public
 name|void
-name|reloadTexturePack
+name|reloadTextures
 parameter_list|()
 throws|throws
 name|IOException
 block|{
-name|resetCustomTextures
-argument_list|()
-expr_stmt|;
 name|initAtlas
 argument_list|()
 expr_stmt|;
@@ -4165,7 +4163,7 @@ literal|".zip"
 argument_list|)
 condition|)
 block|{
-name|resetCustomTextures
+name|useDefaultTextures
 argument_list|()
 expr_stmt|;
 try|try
@@ -4343,7 +4341,7 @@ argument_list|)
 expr_stmt|;
 block|}
 block|}
-name|reloadTexturePack
+name|reloadTextures
 argument_list|()
 expr_stmt|;
 block|}
@@ -4522,7 +4520,7 @@ comment|// Does *not* affect block types for map edges/sides.
 comment|// Use resetSideBlock/resetEdgeBlock for that.
 specifier|public
 name|void
-name|resetCustomTextures
+name|useDefaultTextures
 parameter_list|()
 block|{
 name|currentTerrainPng
@@ -4733,9 +4731,6 @@ name|Textures
 operator|.
 name|MOB_ZOMBIE
 argument_list|)
-expr_stmt|;
-name|registerAnimations
-argument_list|()
 expr_stmt|;
 block|}
 specifier|public
