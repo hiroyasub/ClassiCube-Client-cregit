@@ -1553,12 +1553,6 @@ block|}
 block|}
 specifier|public
 specifier|static
-name|String
-index|[]
-name|storedArgs
-decl_stmt|;
-specifier|public
-specifier|static
 name|void
 name|main
 parameter_list|(
@@ -1567,10 +1561,6 @@ index|[]
 name|args
 parameter_list|)
 block|{
-name|storedArgs
-operator|=
-name|args
-expr_stmt|;
 name|String
 name|player
 init|=
@@ -1608,6 +1598,12 @@ condition|(
 name|args
 operator|!=
 literal|null
+operator|&&
+name|args
+operator|.
+name|length
+operator|>
+literal|0
 operator|&&
 name|args
 operator|.
