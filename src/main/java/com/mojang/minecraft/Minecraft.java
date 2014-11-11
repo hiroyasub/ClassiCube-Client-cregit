@@ -3599,7 +3599,7 @@ name|glShadeModel
 argument_list|(
 name|GL11
 operator|.
-name|GL_SMOOTH
+name|GL_FLAT
 argument_list|)
 expr_stmt|;
 name|GL11
@@ -3801,10 +3801,6 @@ name|FontRenderer
 argument_list|(
 name|settings
 argument_list|,
-name|Textures
-operator|.
-name|FONT
-argument_list|,
 name|textureManager
 argument_list|)
 expr_stmt|;
@@ -3817,11 +3813,6 @@ literal|1000
 argument_list|)
 expr_stmt|;
 comment|// 1s refresh
-name|textureManager
-operator|.
-name|initAtlas
-argument_list|()
-expr_stmt|;
 name|levelRenderer
 operator|=
 operator|new
