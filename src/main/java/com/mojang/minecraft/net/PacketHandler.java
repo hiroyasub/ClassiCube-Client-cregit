@@ -1242,9 +1242,7 @@ condition|)
 block|{
 if|if
 condition|(
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -2493,9 +2491,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -2828,9 +2824,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -2894,9 +2888,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -3243,9 +3235,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -3654,9 +3644,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -3706,9 +3694,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -3891,6 +3877,17 @@ operator|.
 name|EXT_ADD_PLAYER_NAME
 condition|)
 block|{
+if|if
+condition|(
+operator|!
+name|isExtEnabled
+argument_list|(
+name|ProtocolExtension
+operator|.
+name|EXT_PLAYER_LIST_2
+argument_list|)
+condition|)
+block|{
 name|LogUtil
 operator|.
 name|logWarning
@@ -3898,6 +3895,7 @@ argument_list|(
 literal|"Server attempted to use unsupported extension: ExtPlayerList"
 argument_list|)
 expr_stmt|;
+block|}
 name|short
 name|nameId
 init|=
@@ -4225,9 +4223,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -4296,9 +4292,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -4514,9 +4508,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -4701,9 +4693,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.
@@ -4809,9 +4799,7 @@ block|{
 if|if
 condition|(
 operator|!
-name|ProtocolExtension
-operator|.
-name|isSupported
+name|isExtEnabled
 argument_list|(
 name|ProtocolExtension
 operator|.

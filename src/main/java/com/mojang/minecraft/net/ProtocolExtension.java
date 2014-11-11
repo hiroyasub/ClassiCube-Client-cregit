@@ -154,7 +154,20 @@ argument_list|,
 literal|1
 argument_list|)
 decl_stmt|;
-comment|//public static final ProtocolExtension EXT_PLAYER_LIST = new ProtocolExtension("ExtPlayerList", 1);
+specifier|public
+specifier|static
+specifier|final
+name|ProtocolExtension
+name|EMOTE_FIX
+init|=
+operator|new
+name|ProtocolExtension
+argument_list|(
+literal|"EmoteFix"
+argument_list|,
+literal|1
+argument_list|)
+decl_stmt|;
 specifier|public
 specifier|static
 specifier|final
@@ -289,6 +302,13 @@ operator|.
 name|add
 argument_list|(
 name|HELD_BLOCK
+argument_list|)
+expr_stmt|;
+name|supportedExtensions
+operator|.
+name|add
+argument_list|(
+name|EMOTE_FIX
 argument_list|)
 expr_stmt|;
 name|supportedExtensions

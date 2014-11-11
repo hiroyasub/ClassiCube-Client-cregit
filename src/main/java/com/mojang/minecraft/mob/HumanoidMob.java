@@ -1111,6 +1111,18 @@ name|image
 expr_stmt|;
 block|}
 block|}
+comment|// Used by TextureManager to reload char.png after texture pack change.
+specifier|public
+name|void
+name|forceTextureReload
+parameter_list|()
+block|{
+name|textureId
+operator|=
+operator|-
+literal|1
+expr_stmt|;
+block|}
 comment|// Sets this player's skin.
 comment|// Can accept usernames (skin will be downloaded from location of Minecraft.skinServer).
 comment|// Can also accept absolute URLs, as long as they begin with "http://" or "https://" and end with ".png" (case-insensitive).

@@ -279,9 +279,9 @@ operator|.
 name|random
 argument_list|()
 operator|*
-literal|0.10000000149011612D
+literal|0.1
 operator|+
-literal|0.20000000298023224D
+literal|0.2
 operator|)
 expr_stmt|;
 block|}
