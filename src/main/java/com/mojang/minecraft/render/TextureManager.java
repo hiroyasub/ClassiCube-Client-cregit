@@ -3928,7 +3928,7 @@ name|getTextureId
 argument_list|(
 name|TextureSide
 operator|.
-name|Front
+name|Top
 argument_list|)
 decl_stmt|;
 name|unloadTexture
