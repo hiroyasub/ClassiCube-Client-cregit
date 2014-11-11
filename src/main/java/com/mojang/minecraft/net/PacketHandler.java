@@ -89,7 +89,27 @@ name|java
 operator|.
 name|util
 operator|.
+name|HashSet
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
 name|List
+import|;
+end_import
+
+begin_import
+import|import
+name|java
+operator|.
+name|util
+operator|.
+name|Set
 import|;
 end_import
 
@@ -337,36 +357,6 @@ name|com
 operator|.
 name|mojang
 operator|.
-name|minecraft
-operator|.
-name|render
-operator|.
-name|TextureManager
-import|;
-end_import
-
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|render
-operator|.
-name|texture
-operator|.
-name|Textures
-import|;
-end_import
-
-begin_import
-import|import
-name|com
-operator|.
-name|mojang
-operator|.
 name|util
 operator|.
 name|ColorCache
@@ -410,26 +400,6 @@ operator|.
 name|util
 operator|.
 name|Constants
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|HashSet
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Set
 import|;
 end_import
 
@@ -4562,19 +4532,7 @@ decl_stmt|;
 name|HumanoidMob
 name|targetPlayer
 decl_stmt|;
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"CM: "
-operator|+
-name|playerId
-operator|+
-literal|" "
-operator|+
-name|modelName
-argument_list|)
-expr_stmt|;
+comment|//LogUtil.logInfo("CM: " + playerId + " " + modelName);
 if|if
 condition|(
 name|playerId
@@ -4917,23 +4875,7 @@ index|[
 literal|7
 index|]
 decl_stmt|;
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"EAE2: "
-operator|+
-name|playerID
-operator|+
-literal|" "
-operator|+
-name|inGameName
-operator|+
-literal|" "
-operator|+
-name|skinName
-argument_list|)
-expr_stmt|;
+comment|//LogUtil.logInfo("EAE2: " + playerID + " " + inGameName + " " + skinName);
 if|if
 condition|(
 name|playerID

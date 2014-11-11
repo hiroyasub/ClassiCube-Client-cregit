@@ -3608,15 +3608,7 @@ name|textureName
 argument_list|)
 condition|)
 block|{
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"Unloaded texture: "
-operator|+
-name|textureName
-argument_list|)
-expr_stmt|;
+comment|//LogUtil.logInfo("Unloaded texture: " + textureName);
 name|GL11
 operator|.
 name|glDeleteTextures
@@ -3639,65 +3631,6 @@ name|int
 name|textureId
 parameter_list|)
 block|{
-name|boolean
-name|found
-init|=
-literal|false
-decl_stmt|;
-for|for
-control|(
-name|Entry
-argument_list|<
-name|String
-argument_list|,
-name|Integer
-argument_list|>
-name|entry
-range|:
-name|textures
-operator|.
-name|entrySet
-argument_list|()
-control|)
-block|{
-if|if
-condition|(
-name|entry
-operator|.
-name|getValue
-argument_list|()
-operator|.
-name|equals
-argument_list|(
-name|textureId
-argument_list|)
-condition|)
-block|{
-comment|// For logging purposes, find the names of all textures being unloaded.
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"Unloaded texture: "
-operator|+
-name|entry
-operator|.
-name|getKey
-argument_list|()
-argument_list|)
-expr_stmt|;
-name|found
-operator|=
-literal|true
-expr_stmt|;
-block|}
-block|}
-if|if
-condition|(
-name|found
-condition|)
-block|{
-comment|// If any were found, remove them.
 while|while
 condition|(
 name|textures
@@ -3719,7 +3652,6 @@ argument_list|(
 name|textureId
 argument_list|)
 expr_stmt|;
-block|}
 block|}
 comment|// Resets all custom textures to their defaults.
 comment|// Frees all previosly-loaded textures (including the font).

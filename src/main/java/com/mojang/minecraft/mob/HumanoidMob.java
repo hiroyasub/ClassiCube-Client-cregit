@@ -993,17 +993,7 @@ literal|"newName cannot be null"
 argument_list|)
 throw|;
 block|}
-name|LogUtil
-operator|.
-name|logInfo
-argument_list|(
-literal|"setModel("
-operator|+
-name|newName
-operator|+
-literal|")"
-argument_list|)
-expr_stmt|;
+comment|//LogUtil.logInfo("setModel(" + newName + ")");
 name|resetSkin
 argument_list|()
 expr_stmt|;
