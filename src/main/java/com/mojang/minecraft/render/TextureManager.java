@@ -24,20 +24,6 @@ import|;
 end_import
 
 begin_import
-import|import static
-name|com
-operator|.
-name|mojang
-operator|.
-name|minecraft
-operator|.
-name|GameSettings
-operator|.
-name|SMOOTHING_OFF
-import|;
-end_import
-
-begin_import
 import|import
 name|com
 operator|.
@@ -274,16 +260,6 @@ operator|.
 name|util
 operator|.
 name|ArrayList
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Collections
 import|;
 end_import
 
@@ -3535,6 +3511,33 @@ block|}
 name|reloadTextures
 argument_list|()
 expr_stmt|;
+name|load
+argument_list|(
+name|Textures
+operator|.
+name|TERRAIN
+argument_list|)
+expr_stmt|;
+if|if
+condition|(
+name|currentTerrainPng
+operator|!=
+literal|null
+condition|)
+block|{
+comment|// Disable animations for non-standard texture packs
+name|animations
+operator|.
+name|clear
+argument_list|()
+expr_stmt|;
+block|}
+else|else
+block|{
+name|registerAnimations
+argument_list|()
+expr_stmt|;
+block|}
 block|}
 specifier|public
 name|void

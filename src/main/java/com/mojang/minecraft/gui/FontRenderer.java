@@ -260,6 +260,7 @@ name|FONT
 argument_list|)
 expr_stmt|;
 block|}
+comment|// Calculates width and offset of every character, to space characters correctly.
 specifier|private
 name|void
 name|calculateCharWidths
@@ -520,6 +521,7 @@ name|int
 name|maxCharHeight
 parameter_list|)
 block|{
+comment|// Checks if a column of pixels contains any non-transparent pixels
 for|for
 control|(
 name|int
@@ -700,21 +702,6 @@ argument_list|()
 return|;
 block|}
 specifier|public
-name|float
-name|getScale
-parameter_list|()
-block|{
-return|return
-literal|7F
-operator|/
-name|textureHeight
-operator|*
-name|settings
-operator|.
-name|scale
-return|;
-block|}
-specifier|public
 name|int
 name|getWidth
 parameter_list|(
@@ -722,13 +709,6 @@ name|String
 name|text
 parameter_list|)
 block|{
-name|float
-name|charWidthScale
-init|=
-literal|128f
-operator|/
-name|textureWidth
-decl_stmt|;
 if|if
 condition|(
 name|text
@@ -740,8 +720,15 @@ return|return
 literal|0
 return|;
 block|}
-name|int
-name|i
+name|float
+name|charWidthScale
+init|=
+literal|128f
+operator|/
+name|textureWidth
+decl_stmt|;
+name|float
+name|width
 init|=
 literal|0
 decl_stmt|;
@@ -777,7 +764,7 @@ if|if
 condition|(
 name|k
 operator|==
-literal|38
+literal|'&'
 condition|)
 block|{
 name|j
@@ -786,7 +773,7 @@ expr_stmt|;
 block|}
 else|else
 block|{
-name|i
+name|width
 operator|+=
 name|charWidths
 index|[
@@ -805,9 +792,9 @@ name|int
 operator|)
 name|Math
 operator|.
-name|floor
+name|ceil
 argument_list|(
-name|i
+name|width
 operator|*
 name|settings
 operator|.
