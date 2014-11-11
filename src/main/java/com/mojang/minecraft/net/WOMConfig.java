@@ -515,6 +515,15 @@ operator|+
 name|url
 argument_list|)
 expr_stmt|;
+name|minecraft
+operator|.
+name|progressBar
+operator|.
+name|setText
+argument_list|(
+literal|"Loading..."
+argument_list|)
+expr_stmt|;
 name|serverConfig
 operator|=
 name|fetchConfig

@@ -607,8 +607,6 @@ argument_list|)
 decl_stmt|;
 name|String
 name|colorString
-init|=
-literal|""
 decl_stmt|;
 if|if
 condition|(
