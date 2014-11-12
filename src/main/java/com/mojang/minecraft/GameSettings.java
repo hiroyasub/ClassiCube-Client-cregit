@@ -215,7 +215,7 @@ specifier|static
 name|int
 name|MAX_SUPPORTED_FRAMERATE
 init|=
-literal|60
+literal|144
 decl_stmt|;
 specifier|public
 specifier|static
