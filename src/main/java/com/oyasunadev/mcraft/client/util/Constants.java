@@ -38,7 +38,7 @@ specifier|final
 name|String
 name|CLASSICUBE_VERSION
 init|=
-literal|"0.12"
+literal|"0.13"
 decl_stmt|;
 comment|/**      * The Minecraft Classic protocol version. Default is 0x07.      */
 specifier|public

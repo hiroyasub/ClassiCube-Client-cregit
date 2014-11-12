@@ -3595,7 +3595,7 @@ name|LogUtil
 operator|.
 name|logInfo
 argument_list|(
-literal|"Reset texture to default."
+literal|"Reset terrain texture to default."
 argument_list|)
 expr_stmt|;
 name|minecraft
