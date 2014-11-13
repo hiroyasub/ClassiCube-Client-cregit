@@ -104,13 +104,25 @@ specifier|final
 name|String
 name|message
 decl_stmt|;
-comment|/**      * The idea is to work with urls http, fpt, sftp, gopher, telnet and file      * (tee hee)      */
+specifier|private
+specifier|final
+name|ArrayList
+argument_list|<
+name|LinkData
+argument_list|>
+name|clickedUrls
+decl_stmt|;
+comment|// Regex pattern courtesy of Matthew O'Riordan
 specifier|private
 specifier|final
 name|String
 name|urlPattern
 init|=
-literal|"((https?|ftp|sftp|gopher|telnet|file):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)"
+literal|"((([A-Za-z]{2,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\$,\\w]+@)?[A-Za-z0-9\\.\\-]+"
+operator|+
+literal|"|(?:www\\.|[\\-;:&=\\+\\$,\\w]+@)[A-Za-z0-9\\.\\-]+)"
+operator|+
+literal|"((?:\\/[\\+~%\\/\\.\\w\\-_]*)?\\??(?:[\\-\\+=&;%@\\.\\w_]*)#?(?:[\\.\\!\\/\\\\\\w]*))?)"
 decl_stmt|;
 specifier|private
 specifier|final
@@ -122,19 +134,7 @@ operator|.
 name|compile
 argument_list|(
 name|urlPattern
-argument_list|,
-name|Pattern
-operator|.
-name|CASE_INSENSITIVE
 argument_list|)
-decl_stmt|;
-specifier|private
-specifier|final
-name|ArrayList
-argument_list|<
-name|LinkData
-argument_list|>
-name|clickedUrls
 decl_stmt|;
 specifier|public
 name|ChatClickData
@@ -142,14 +142,14 @@ parameter_list|(
 name|FontRenderer
 name|fontRenderer
 parameter_list|,
-name|ChatLine
-name|chatLine
+name|String
+name|message
 parameter_list|)
 block|{
+name|this
+operator|.
 name|message
 operator|=
-name|chatLine
-operator|.
 name|message
 expr_stmt|;
 name|clickedUrls
@@ -237,17 +237,15 @@ argument_list|)
 decl_stmt|;
 if|if
 condition|(
-name|urlMatcher
+operator|!
+name|url
 operator|.
-name|group
+name|startsWith
 argument_list|(
-literal|1
+literal|"http://"
 argument_list|)
-operator|==
-literal|null
 condition|)
 block|{
-comment|// will dis happen?
 name|url
 operator|=
 literal|"http://"
@@ -277,7 +275,7 @@ return|return
 literal|null
 return|;
 block|}
-comment|/**      * Strips any URLs from the the line where the user clicked      *      * @param text The text in question      * @param fr   The font renderer instance      * @return ArrayList of LinkData      */
+comment|/**      * Strips any URLs from the the line where the user clicked      *      * @param text The text in question      * @param fr The font renderer instance      * @return ArrayList of LinkData      */
 specifier|private
 name|ArrayList
 argument_list|<
