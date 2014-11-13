@@ -11090,7 +11090,7 @@ name|PacketType
 operator|.
 name|POSITION_ROTATION
 argument_list|,
-name|packetHandler
+name|networkManager
 operator|.
 name|isExtEnabled
 argument_list|(
