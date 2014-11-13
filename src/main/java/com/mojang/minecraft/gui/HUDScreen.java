@@ -614,13 +614,6 @@ condition|)
 block|{
 return|return;
 block|}
-name|TextureManager
-name|var6
-init|=
-name|minecraft
-operator|.
-name|textureManager
-decl_stmt|;
 name|GL11
 operator|.
 name|glBindTexture
@@ -667,7 +660,7 @@ literal|3042
 argument_list|)
 expr_stmt|;
 name|Inventory
-name|var8
+name|inventory
 init|=
 name|minecraft
 operator|.
@@ -711,7 +704,7 @@ literal|91
 operator|-
 literal|1
 operator|+
-name|var8
+name|inventory
 operator|.
 name|selected
 operator|*
@@ -1227,7 +1220,7 @@ literal|0
 init|;
 name|var12
 operator|<
-name|var8
+name|inventory
 operator|.
 name|slots
 operator|.
@@ -1255,18 +1248,19 @@ name|height
 operator|-
 literal|16
 expr_stmt|;
-if|if
-condition|(
-operator|(
-name|var15
-operator|=
-name|var8
+name|int
+name|selectedBlock
+init|=
+name|inventory
 operator|.
 name|slots
 index|[
 name|var12
 index|]
-operator|)
+decl_stmt|;
+if|if
+condition|(
+name|selectedBlock
 operator|>
 literal|0
 condition|)
@@ -1290,7 +1284,7 @@ argument_list|)
 expr_stmt|;
 if|if
 condition|(
-name|var8
+name|inventory
 operator|.
 name|popTime
 index|[
@@ -1315,7 +1309,7 @@ operator|(
 name|var18
 operator|=
 operator|(
-name|var8
+name|inventory
 operator|.
 name|popTime
 index|[
@@ -1496,7 +1490,11 @@ expr_stmt|;
 name|int
 name|var20
 init|=
-name|var6
+operator|(
+name|minecraft
+operator|.
+name|textureManager
+operator|)
 operator|.
 name|load
 argument_list|(
@@ -1523,7 +1521,7 @@ name|Block
 operator|.
 name|blocks
 index|[
-name|var15
+name|selectedBlock
 index|]
 operator|.
 name|renderFullBrightness
@@ -1541,9 +1539,10 @@ operator|.
 name|glPopMatrix
 argument_list|()
 expr_stmt|;
+comment|// SURVIVAL: show number of blocks in hand
 if|if
 condition|(
-name|var8
+name|inventory
 operator|.
 name|count
 index|[
@@ -1557,7 +1556,7 @@ name|var23
 operator|=
 literal|""
 operator|+
-name|var8
+name|inventory
 operator|.
 name|count
 index|[
@@ -1591,8 +1590,6 @@ expr_stmt|;
 block|}
 block|}
 block|}
-comment|// if (Minecraft.isSinglePlayer)
-comment|// var5.render("Development Build", 2, 32, 16777215);
 if|if
 condition|(
 name|minecraft
@@ -2424,12 +2421,15 @@ literal|null
 expr_stmt|;
 if|if
 condition|(
+operator|!
 name|Keyboard
 operator|.
 name|isCreated
 argument_list|()
 condition|)
 block|{
+return|return;
+block|}
 if|if
 condition|(
 name|Keyboard
@@ -3197,7 +3197,6 @@ argument_list|,
 literal|15658734
 argument_list|)
 expr_stmt|;
-block|}
 block|}
 block|}
 block|}

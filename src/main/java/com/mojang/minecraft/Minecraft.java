@@ -6154,36 +6154,8 @@ operator|/
 literal|2
 argument_list|)
 decl_stmt|;
-name|int
-name|tempFps
-init|=
-operator|(
-name|int
-operator|)
-name|Math
-operator|.
-name|floor
-argument_list|(
-literal|1
-operator|/
-name|timer
-operator|.
-name|lastFrameDuration
-argument_list|)
-decl_stmt|;
-name|String
-name|fpsStr
-init|=
-literal|"["
-operator|+
-name|tempFps
-operator|+
-literal|" / "
-operator|+
-name|minDesiredFramerate
-operator|+
-literal|"] "
-decl_stmt|;
+comment|//int tempFps = (int) Math.floor(1 / timer.lastFrameDuration);
+comment|//String fpsStr = "[" + tempFps + " / " + minDesiredFramerate + "] ";
 if|if
 condition|(
 name|timer
