@@ -4486,8 +4486,6 @@ name|width
 operator|+
 name|x
 index|]
-operator|&
-literal|255
 else|:
 literal|0
 return|;

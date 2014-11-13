@@ -89,27 +89,7 @@ name|java
 operator|.
 name|util
 operator|.
-name|HashSet
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
 name|List
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|Set
 import|;
 end_import
 
@@ -435,6 +415,10 @@ decl_stmt|;
 specifier|public
 name|boolean
 name|isLoadingLevel
+decl_stmt|;
+specifier|private
+name|long
+name|lastLevelProgress
 decl_stmt|;
 comment|// This object is used to store the level object while it's being loaded.
 comment|// Packets that modify can modify the level before it loaded (like ENV_SET_COLOR)
@@ -965,6 +949,25 @@ index|[
 literal|2
 index|]
 decl_stmt|;
+comment|// Update progress bar at most 10 times per second, to avoid long map load times.
+name|long
+name|now
+init|=
+name|System
+operator|.
+name|currentTimeMillis
+argument_list|()
+decl_stmt|;
+if|if
+condition|(
+name|now
+operator|-
+name|lastLevelProgress
+operator|>
+literal|50
+condition|)
+block|{
+comment|// setProgress forces a full screen refresh, use sparingly!
 name|minecraft
 operator|.
 name|progressBar
@@ -974,6 +977,11 @@ argument_list|(
 name|percentComplete
 argument_list|)
 expr_stmt|;
+name|lastLevelProgress
+operator|=
+name|now
+expr_stmt|;
+block|}
 name|networkManager
 operator|.
 name|levelData

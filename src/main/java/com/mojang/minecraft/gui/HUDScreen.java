@@ -611,7 +611,9 @@ name|minecraft
 operator|.
 name|canRenderGUI
 condition|)
+block|{
 return|return;
+block|}
 name|TextureManager
 name|var6
 init|=
