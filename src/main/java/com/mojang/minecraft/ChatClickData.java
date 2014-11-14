@@ -77,30 +77,6 @@ name|FontRenderer
 import|;
 end_import
 
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|logging
-operator|.
-name|Level
-import|;
-end_import
-
-begin_import
-import|import
-name|java
-operator|.
-name|util
-operator|.
-name|logging
-operator|.
-name|Logger
-import|;
-end_import
-
 begin_comment
 comment|/**  * Class used to store data for clicking URLs in the chat screen  *  * @author Jon  */
 end_comment
@@ -121,7 +97,7 @@ specifier|final
 name|String
 name|urlPattern
 init|=
-literal|"\\(?((([A-Za-z]{2,9}:(\\/\\/)?)([\\-;:&=\\+\\$,\\w][\\-;:&=\\+\\$,\\w]+@)?([A-Za-z0-9]([A-Za-z0-9\\-]*[A-Za-z0-9])?)(\\.[A-Za-z0-9]([A-Za-z0-9\\-]*[A-Za-z0-9])?)+|(www\\.|[\\-;:&=\\+\\$,\\w]+@)([A-Za-z0-9]([A-Za-z0-9\\-]*[A-Za-z0-9])?)(\\.[A-Za-z0-9]([A-Za-z0-9\\-]*[A-Za-z0-9])?)+)(:\\d+)?((\\/[\\+~%\\/\\.\\w\\-_\\(\\)]*)?(\\?[\\-\\+=&;%@\\.\\w_]*)?(#\\S*)?))"
+literal|"\\(?(?:(?:[a-z]{2,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\$,\\w]+@)?[a-z0-9\\-]+(?:\\.[a-z0-9\\-]+)+|www\\.[a-z0-9\\-]+(?:\\.[a-z0-9\\-]+)+)(?::\\d{1,5})?(?:\\/[\\+~%\\/\\.\\w\\-\\(\\)]*)?(?:\\?[\\-\\+=&;%@\\.\\w]*)?(?:#\\S*)?"
 decl_stmt|;
 specifier|private
 specifier|final
@@ -133,6 +109,10 @@ operator|.
 name|compile
 argument_list|(
 name|urlPattern
+argument_list|,
+name|Pattern
+operator|.
+name|CASE_INSENSITIVE
 argument_list|)
 decl_stmt|;
 specifier|public
