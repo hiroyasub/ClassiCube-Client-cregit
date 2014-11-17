@@ -11767,6 +11767,13 @@ name|Keyboard
 operator|.
 name|KEY_F6
 case|:
+if|if
+condition|(
+name|HackState
+operator|.
+name|noclip
+condition|)
+block|{
 name|settings
 operator|.
 name|thirdPersonMode
@@ -11778,6 +11785,7 @@ operator|.
 name|next
 argument_list|()
 expr_stmt|;
+block|}
 break|break;
 case|case
 name|Keyboard
