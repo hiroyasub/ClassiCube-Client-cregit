@@ -450,7 +450,7 @@ operator|-
 literal|1
 init|;
 name|c
-operator|>
+operator|>=
 name|chStart
 condition|;
 name|c
