@@ -373,7 +373,7 @@ operator|==
 literal|32
 condition|)
 block|{
-comment|// Space is always 50% width
+comment|// Space is always 33% width
 name|charWidths
 index|[
 literal|32
@@ -387,7 +387,7 @@ block|}
 else|else
 block|{
 comment|// Other chars' width is determined by examining pixels
-comment|// First, find start of character (first non-empty row)
+comment|// First, find start of character (left-most non-empty column)
 name|int
 name|chStart
 init|=
@@ -432,7 +432,7 @@ block|{
 break|break;
 block|}
 block|}
-comment|// Next, find end of character (last non-empty row)
+comment|// Next, find end of character (right-most non-empty column)
 name|int
 name|chEnd
 init|=
