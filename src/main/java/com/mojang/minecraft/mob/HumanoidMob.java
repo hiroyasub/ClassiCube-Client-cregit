@@ -1237,6 +1237,13 @@ operator|.
 name|skinServer
 operator|+
 name|skinName
+operator|.
+name|replaceAll
+argument_list|(
+literal|"[^a-zA-Z0-9:._]"
+argument_list|,
+literal|""
+argument_list|)
 operator|+
 literal|".png"
 expr_stmt|;
