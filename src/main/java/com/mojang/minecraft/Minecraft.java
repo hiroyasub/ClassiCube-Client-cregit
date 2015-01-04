@@ -6359,6 +6359,19 @@ literal|0.1F
 argument_list|)
 condition|)
 block|{
+if|if
+condition|(
+operator|!
+name|player
+operator|.
+name|noPhysics
+operator|||
+operator|!
+name|HackState
+operator|.
+name|noclip
+condition|)
+block|{
 name|int
 name|playerX
 init|=
@@ -6620,6 +6633,7 @@ operator|.
 name|GL_LEQUAL
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 block|}
 block|}
