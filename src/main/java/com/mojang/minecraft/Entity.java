@@ -2511,6 +2511,14 @@ literal|1F
 operator|-
 name|pushthrough
 expr_stmt|;
+if|if
+condition|(
+operator|!
+name|entity
+operator|.
+name|noPhysics
+condition|)
+block|{
 name|this
 operator|.
 name|push
@@ -2535,6 +2543,7 @@ argument_list|,
 name|dz
 argument_list|)
 expr_stmt|;
+block|}
 block|}
 block|}
 specifier|protected
