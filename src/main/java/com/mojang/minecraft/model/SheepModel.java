@@ -28,6 +28,10 @@ argument_list|(
 literal|12
 argument_list|)
 expr_stmt|;
+name|headOffset
+operator|=
+literal|0.375F
+expr_stmt|;
 name|head
 operator|=
 operator|new

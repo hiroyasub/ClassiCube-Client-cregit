@@ -23,6 +23,10 @@ specifier|public
 name|SkeletonModel
 parameter_list|()
 block|{
+name|headOffset
+operator|=
+literal|0F
+expr_stmt|;
 name|rightArm
 operator|=
 operator|new

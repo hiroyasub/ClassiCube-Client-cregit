@@ -71,6 +71,10 @@ specifier|public
 name|CreeperModel
 parameter_list|()
 block|{
+name|headOffset
+operator|=
+literal|0.25F
+expr_stmt|;
 name|head
 operator|.
 name|setBounds

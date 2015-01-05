@@ -87,6 +87,10 @@ specifier|public
 name|SpiderModel
 parameter_list|()
 block|{
+name|headOffset
+operator|=
+literal|1F
+expr_stmt|;
 name|head
 operator|.
 name|setBounds

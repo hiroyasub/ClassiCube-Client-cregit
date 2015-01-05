@@ -736,6 +736,22 @@ import|;
 end_import
 
 begin_import
+import|import static
+name|com
+operator|.
+name|mojang
+operator|.
+name|minecraft
+operator|.
+name|mob
+operator|.
+name|Mob
+operator|.
+name|modelCache
+import|;
+end_import
+
+begin_import
 import|import
 name|com
 operator|.
@@ -5196,9 +5212,23 @@ name|var34
 operator|*
 name|reachDistance
 argument_list|,
+operator|(
 name|var33
 operator|*
 name|reachDistance
+operator|)
+operator|-
+name|modelCache
+operator|.
+name|getModel
+argument_list|(
+name|player
+operator|.
+name|getModelName
+argument_list|()
+argument_list|)
+operator|.
+name|headOffset
 argument_list|,
 name|var87
 operator|*

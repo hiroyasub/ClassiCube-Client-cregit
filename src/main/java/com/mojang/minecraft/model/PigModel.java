@@ -28,6 +28,10 @@ argument_list|(
 literal|6
 argument_list|)
 expr_stmt|;
+name|headOffset
+operator|=
+literal|1.125F
+expr_stmt|;
 block|}
 block|}
 end_class

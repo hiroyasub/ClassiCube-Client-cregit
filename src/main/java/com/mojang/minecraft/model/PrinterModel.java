@@ -62,6 +62,10 @@ specifier|public
 name|PrinterModel
 parameter_list|()
 block|{
+name|headOffset
+operator|=
+literal|1.4375F
+expr_stmt|;
 comment|// textureWidth = 128;
 comment|// textureHeight = 128;
 name|Base

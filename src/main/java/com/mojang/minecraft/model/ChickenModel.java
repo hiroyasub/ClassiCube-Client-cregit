@@ -66,6 +66,10 @@ specifier|public
 name|ChickenModel
 parameter_list|()
 block|{
+name|headOffset
+operator|=
+literal|1F
+expr_stmt|;
 name|byte
 name|var1
 init|=

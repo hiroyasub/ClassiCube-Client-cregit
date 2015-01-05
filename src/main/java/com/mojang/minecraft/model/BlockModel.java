@@ -22,6 +22,10 @@ specifier|public
 name|BlockModel
 parameter_list|()
 block|{
+name|headOffset
+operator|=
+literal|1F
+expr_stmt|;
 block|}
 annotation|@
 name|Override

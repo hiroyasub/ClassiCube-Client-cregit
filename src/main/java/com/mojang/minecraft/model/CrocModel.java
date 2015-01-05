@@ -56,6 +56,10 @@ specifier|public
 name|CrocModel
 parameter_list|()
 block|{
+name|headOffset
+operator|=
+literal|0.937F
+expr_stmt|;
 name|tail
 operator|=
 operator|new

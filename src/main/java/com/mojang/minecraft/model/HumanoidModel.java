@@ -77,6 +77,10 @@ name|float
 name|scale
 parameter_list|)
 block|{
+name|headOffset
+operator|=
+literal|0F
+expr_stmt|;
 name|head
 operator|=
 operator|new
