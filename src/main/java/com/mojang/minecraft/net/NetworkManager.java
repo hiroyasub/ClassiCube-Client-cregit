@@ -204,7 +204,7 @@ name|BUFFER_SIZE
 init|=
 literal|1048576
 decl_stmt|;
-specifier|private
+specifier|public
 specifier|final
 name|Set
 argument_list|<
