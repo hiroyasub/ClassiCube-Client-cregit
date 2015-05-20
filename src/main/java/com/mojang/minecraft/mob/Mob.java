@@ -2748,6 +2748,8 @@ operator|!=
 name|Block
 operator|.
 name|ICE
+operator|||
+name|noPhysics
 condition|)
 block|{
 if|if
