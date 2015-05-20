@@ -351,12 +351,6 @@ name|canvas
 argument_list|,
 name|this
 argument_list|,
-name|getWidth
-argument_list|()
-argument_list|,
-name|getHeight
-argument_list|()
-argument_list|,
 name|fullscreen
 argument_list|,
 literal|true
