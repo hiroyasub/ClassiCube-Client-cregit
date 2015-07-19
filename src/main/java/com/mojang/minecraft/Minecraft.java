@@ -10729,12 +10729,8 @@ operator|.
 name|KEY_ESCAPE
 condition|)
 block|{
-name|Mouse
-operator|.
-name|setGrabbed
-argument_list|(
-literal|false
-argument_list|)
+name|pause
+argument_list|()
 expr_stmt|;
 block|}
 block|}
