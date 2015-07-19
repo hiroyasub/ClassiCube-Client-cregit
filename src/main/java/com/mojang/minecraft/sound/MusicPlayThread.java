@@ -89,11 +89,15 @@ block|{
 if|if
 condition|(
 name|music
+operator|!=
+literal|null
+operator|&&
+name|music
 operator|.
 name|stopped
 condition|)
 block|{
-return|return;
+break|break;
 block|}
 name|ByteBuffer
 name|var2
